@@ -7,3 +7,9 @@ C:\Users\arias\Source\Repos\CAM\presentationLayer\obj\Debug\presentationLayer.cs
 C:\Users\arias\Source\Repos\CAM\presentationLayer\obj\Debug\presentationLayer.csproj.CoreCompileInputs.cache
 C:\Users\arias\Source\Repos\CAM\presentationLayer\obj\Debug\presentationLayer.exe
 C:\Users\arias\Source\Repos\CAM\presentationLayer\obj\Debug\presentationLayer.pdb
+C:\Users\arias\Source\Repos\CAM\presentationLayer\bin\Debug\1dataLayer.dll
+C:\Users\arias\Source\Repos\CAM\presentationLayer\bin\Debug\businessLayer.dll
+C:\Users\arias\Source\Repos\CAM\presentationLayer\bin\Debug\1dataLayer.pdb
+C:\Users\arias\Source\Repos\CAM\presentationLayer\bin\Debug\businessLayer.pdb
+C:\Users\arias\Source\Repos\CAM\presentationLayer\obj\Debug\presentationLayer.Form1.resources
+C:\Users\arias\Source\Repos\CAM\presentationLayer\obj\Debug\presentationLayer.csproj.CopyComplete
