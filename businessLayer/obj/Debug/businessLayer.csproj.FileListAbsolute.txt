@@ -9,3 +9,9 @@ C:\Users\arias\Source\Repos\CAM\businessLayer\obj\Debug\businessLayer.csprojAsse
 C:\Users\arias\Source\Repos\CAM\businessLayer\obj\Debug\businessLayer.csproj.CoreCompileInputs.cache
 C:\Users\arias\Source\Repos\CAM\businessLayer\obj\Debug\businessLayer.dll
 C:\Users\arias\Source\Repos\CAM\businessLayer\obj\Debug\businessLayer.pdb
+C:\Users\ferna\Source\Repos\CAM\businessLayer\bin\Debug\businessLayer.dll
+C:\Users\ferna\Source\Repos\CAM\businessLayer\bin\Debug\businessLayer.pdb
+C:\Users\ferna\Source\Repos\CAM\businessLayer\obj\Debug\businessLayer.csproj.AssemblyReference.cache
+C:\Users\ferna\Source\Repos\CAM\businessLayer\obj\Debug\businessLayer.csproj.CoreCompileInputs.cache
+C:\Users\ferna\Source\Repos\CAM\businessLayer\obj\Debug\businessLayer.dll
+C:\Users\ferna\Source\Repos\CAM\businessLayer\obj\Debug\businessLayer.pdb

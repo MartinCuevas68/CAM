@@ -7,3 +7,12 @@ C:\Users\arias\Source\Repos\CAM\presentationLayer\obj\Debug\presentationLayer.cs
 C:\Users\arias\Source\Repos\CAM\presentationLayer\obj\Debug\presentationLayer.csproj.CoreCompileInputs.cache
 C:\Users\arias\Source\Repos\CAM\presentationLayer\obj\Debug\presentationLayer.exe
 C:\Users\arias\Source\Repos\CAM\presentationLayer\obj\Debug\presentationLayer.pdb
+C:\Users\ferna\Source\Repos\CAM\presentationLayer\bin\Debug\presentationLayer.exe.config
+C:\Users\ferna\Source\Repos\CAM\presentationLayer\bin\Debug\presentationLayer.exe
+C:\Users\ferna\Source\Repos\CAM\presentationLayer\bin\Debug\presentationLayer.pdb
+C:\Users\ferna\Source\Repos\CAM\presentationLayer\obj\Debug\presentationLayer.csproj.AssemblyReference.cache
+C:\Users\ferna\Source\Repos\CAM\presentationLayer\obj\Debug\presentationLayer.Properties.Resources.resources
+C:\Users\ferna\Source\Repos\CAM\presentationLayer\obj\Debug\presentationLayer.csproj.GenerateResource.cache
+C:\Users\ferna\Source\Repos\CAM\presentationLayer\obj\Debug\presentationLayer.csproj.CoreCompileInputs.cache
+C:\Users\ferna\Source\Repos\CAM\presentationLayer\obj\Debug\presentationLayer.exe
+C:\Users\ferna\Source\Repos\CAM\presentationLayer\obj\Debug\presentationLayer.pdb
