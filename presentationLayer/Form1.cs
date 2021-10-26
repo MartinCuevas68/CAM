@@ -15,6 +15,12 @@ namespace presentationLayer
         public Form1()
         {
             InitializeComponent();
+            Claudia.altasTemplate(siguienteButton);
+        }
+
+        private void siguienteButton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
