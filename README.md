@@ -4,4 +4,4 @@ hola
 
 haciendo pruebas con los merge
 
-de2
+tengo dos de2
