@@ -8,19 +8,25 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace presentationLayer
 {
-    public partial class Form1 : Form
+    public partial class CAM : Form
     {
-        public Form1()
+        public CAM()
         {
             InitializeComponent();
-            Claudia.altasTemplate(siguienteButton);
+            //Claudia.altasTemplate(siguienteButton);
         }
 
         private void siguienteButton_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+           alumnosDGV.DataSource = businessLayer.Hueso.alumnosGet();
         }
     }
 }
