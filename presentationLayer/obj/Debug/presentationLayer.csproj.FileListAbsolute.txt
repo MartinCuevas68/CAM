@@ -25,6 +25,6 @@ C:\Users\edder\Source\Repos\CAM\presentationLayer\obj\Debug\presentationLayer.Fo
 C:\Users\edder\Source\Repos\CAM\presentationLayer\obj\Debug\presentationLayer.Properties.Resources.resources
 C:\Users\edder\Source\Repos\CAM\presentationLayer\obj\Debug\presentationLayer.csproj.GenerateResource.cache
 C:\Users\edder\Source\Repos\CAM\presentationLayer\obj\Debug\presentationLayer.csproj.CoreCompileInputs.cache
-C:\Users\edder\Source\Repos\CAM\presentationLayer\obj\Debug\presentationLayer.csproj.CopyComplete
 C:\Users\edder\Source\Repos\CAM\presentationLayer\obj\Debug\presentationLayer.exe
 C:\Users\edder\Source\Repos\CAM\presentationLayer\obj\Debug\presentationLayer.pdb
+C:\Users\edder\Source\Repos\CAM\presentationLayer\obj\Debug\presentationLayer.Consultas.resources

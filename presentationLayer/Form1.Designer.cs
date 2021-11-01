@@ -34,9 +34,10 @@ namespace presentationLayer
             // 
             // siguienteButton
             // 
-            this.siguienteButton.Location = new System.Drawing.Point(225, 102);
+            this.siguienteButton.Location = new System.Drawing.Point(169, 83);
+            this.siguienteButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.siguienteButton.Name = "siguienteButton";
-            this.siguienteButton.Size = new System.Drawing.Size(75, 23);
+            this.siguienteButton.Size = new System.Drawing.Size(56, 19);
             this.siguienteButton.TabIndex = 0;
             this.siguienteButton.Text = "Siguiente";
             this.siguienteButton.UseVisualStyleBackColor = true;
@@ -44,10 +45,11 @@ namespace presentationLayer
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.siguienteButton);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);

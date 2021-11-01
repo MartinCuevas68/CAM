@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\1dataLayer",
+    "\\businessLayer",
+    "\\presentationLayer"
   ],
   "PreviewInSolutionExplorer": false
 }
