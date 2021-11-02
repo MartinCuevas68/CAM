@@ -16,7 +16,7 @@ namespace presentationLayer
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CAM());
+            Application.Run(new altaAlumno());
         }
     }
 }
