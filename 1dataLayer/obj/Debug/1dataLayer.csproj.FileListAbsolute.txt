@@ -4,3 +4,15 @@ C:\Users\arias\Source\Repos\CAM\1dataLayer\obj\Debug\1dataLayer.csprojAssemblyRe
 C:\Users\arias\Source\Repos\CAM\1dataLayer\obj\Debug\1dataLayer.csproj.CoreCompileInputs.cache
 C:\Users\arias\Source\Repos\CAM\1dataLayer\obj\Debug\1dataLayer.dll
 C:\Users\arias\Source\Repos\CAM\1dataLayer\obj\Debug\1dataLayer.pdb
+C:\Users\diosk\source\repos\CAM\equipos\claudia\1dataLayer\bin\Debug\1dataLayer.dll.config
+C:\Users\diosk\source\repos\CAM\equipos\claudia\1dataLayer\bin\Debug\1dataLayer.dll
+C:\Users\diosk\source\repos\CAM\equipos\claudia\1dataLayer\bin\Debug\1dataLayer.pdb
+C:\Users\diosk\source\repos\CAM\equipos\claudia\1dataLayer\bin\Debug\EntityFramework.dll
+C:\Users\diosk\source\repos\CAM\equipos\claudia\1dataLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\diosk\source\repos\CAM\equipos\claudia\1dataLayer\bin\Debug\EntityFramework.xml
+C:\Users\diosk\source\repos\CAM\equipos\claudia\1dataLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\diosk\source\repos\CAM\equipos\claudia\1dataLayer\obj\Debug\1dataLayer.csprojAssemblyReference.cache
+C:\Users\diosk\source\repos\CAM\equipos\claudia\1dataLayer\obj\Debug\1dataLayer.csproj.CoreCompileInputs.cache
+C:\Users\diosk\source\repos\CAM\equipos\claudia\1dataLayer\obj\Debug\1dataLayer.csproj.CopyComplete
+C:\Users\diosk\source\repos\CAM\equipos\claudia\1dataLayer\obj\Debug\1dataLayer.dll
+C:\Users\diosk\source\repos\CAM\equipos\claudia\1dataLayer\obj\Debug\1dataLayer.pdb
