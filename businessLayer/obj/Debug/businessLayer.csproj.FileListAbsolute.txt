@@ -15,3 +15,15 @@ C:\Users\ferna\Source\Repos\CAM\businessLayer\obj\Debug\businessLayer.csproj.Ass
 C:\Users\ferna\Source\Repos\CAM\businessLayer\obj\Debug\businessLayer.csproj.CoreCompileInputs.cache
 C:\Users\ferna\Source\Repos\CAM\businessLayer\obj\Debug\businessLayer.dll
 C:\Users\ferna\Source\Repos\CAM\businessLayer\obj\Debug\businessLayer.pdb
+C:\Users\edder\Source\Repos\CAM\businessLayer\bin\Debug\businessLayer.dll
+C:\Users\edder\Source\Repos\CAM\businessLayer\bin\Debug\businessLayer.pdb
+C:\Users\edder\Source\Repos\CAM\businessLayer\obj\Debug\businessLayer.csproj.AssemblyReference.cache
+C:\Users\edder\Source\Repos\CAM\businessLayer\obj\Debug\businessLayer.csproj.CoreCompileInputs.cache
+C:\Users\edder\Source\Repos\CAM\businessLayer\obj\Debug\businessLayer.dll
+C:\Users\edder\Source\Repos\CAM\businessLayer\obj\Debug\businessLayer.pdb
+C:\Users\diosk\source\repos\CAM\equipos\claudia\businessLayer\bin\Debug\businessLayer.dll
+C:\Users\diosk\source\repos\CAM\equipos\claudia\businessLayer\bin\Debug\businessLayer.pdb
+C:\Users\diosk\source\repos\CAM\equipos\claudia\businessLayer\obj\Debug\businessLayer.csprojAssemblyReference.cache
+C:\Users\diosk\source\repos\CAM\equipos\claudia\businessLayer\obj\Debug\businessLayer.csproj.CoreCompileInputs.cache
+C:\Users\diosk\source\repos\CAM\equipos\claudia\businessLayer\obj\Debug\businessLayer.dll
+C:\Users\diosk\source\repos\CAM\equipos\claudia\businessLayer\obj\Debug\businessLayer.pdb
