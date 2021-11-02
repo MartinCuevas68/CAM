@@ -51,17 +51,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Hueso.cs" />
+    <Compile Include="Emanuel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\1dataLayer\1dataLayer.csproj">
       <Project>{359102c4-9758-448e-bc88-43303187219f}</Project>
       <Name>1dataLayer</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\presentationLayer\presentationLayer.csproj">
-      <Project>{26b9c71d-ecf5-4600-8897-25513ff6a847}</Project>
-      <Name>presentationLayer</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
