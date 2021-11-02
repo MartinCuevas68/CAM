@@ -159,6 +159,7 @@ namespace presentationLayer
             this.Controls.Add(this.panelConsulta_dataGridView);
             this.Name = "Consultas";
             this.Text = "Consultas";
+            this.Load += new System.EventHandler(this.Consultas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.panelConsulta_dataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -27,5 +27,10 @@ namespace presentationLayer
             Edder.buscartxt(buscartextBox);
 
         }
+
+        private void Consultas_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
