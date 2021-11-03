@@ -29,6 +29,7 @@ namespace presentationLayer
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(altaAlumno));
             this.realizarAltaButton = new System.Windows.Forms.Button();
             this.fechaElaboracionLabel = new System.Windows.Forms.Label();
             this.nombreAlumnoLabel = new System.Windows.Forms.Label();
@@ -47,8 +48,6 @@ namespace presentationLayer
             this.nuevoIngresoRadioButton = new System.Windows.Forms.RadioButton();
             this.nombreAlumnoTextBox = new System.Windows.Forms.TextBox();
             this.fechaElaboracionDateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.lugarNacimientoTextBox = new System.Windows.Forms.TextBox();
-            this.direccionTextBox = new System.Windows.Forms.TextBox();
             this.telefonoPersonalTextBox = new System.Windows.Forms.TextBox();
             this.discapacidadTextBox = new System.Windows.Forms.TextBox();
             this.escuelaProcedenciaTextBox = new System.Windows.Forms.TextBox();
@@ -66,10 +65,8 @@ namespace presentationLayer
             this.ocupacionPadreLabel = new System.Windows.Forms.Label();
             this.telefonosPadreLabel = new System.Windows.Forms.Label();
             this.nombreMadreTextBox = new System.Windows.Forms.TextBox();
-            this.domicilioMadreTextBox = new System.Windows.Forms.TextBox();
             this.ocupacionMadreTextBox = new System.Windows.Forms.TextBox();
             this.nombrePadreTextBox = new System.Windows.Forms.TextBox();
-            this.domicilioPadreTextBox = new System.Windows.Forms.TextBox();
             this.ocupacionPadreTextBox = new System.Windows.Forms.TextBox();
             this.telefonoCasaMadreLabel = new System.Windows.Forms.Label();
             this.telefonoCelularMadreLabel = new System.Windows.Forms.Label();
@@ -87,527 +84,854 @@ namespace presentationLayer
             this.padreCheckBox = new System.Windows.Forms.CheckBox();
             this.responablesAlumnoLabel = new System.Windows.Forms.Label();
             this.lugarTrabajoMadreLabel = new System.Windows.Forms.Label();
-            this.lugarTrabajoMadreTextBox = new System.Windows.Forms.TextBox();
-            this.lugarTrabajoPadreTextBox = new System.Windows.Forms.TextBox();
+            this.calleTrabajoMadreTextBox = new System.Windows.Forms.TextBox();
+            this.calleTrabajoPadreTextBox = new System.Windows.Forms.TextBox();
             this.lugarTrabajoPadreLabel = new System.Windows.Forms.Label();
+            this.ciudadNacimientoAlumnoLabel = new System.Windows.Forms.Label();
+            this.estadoNacimientoAlumnoLabel = new System.Windows.Forms.Label();
+            this.apellidoPaternoAlumnoLabel = new System.Windows.Forms.Label();
+            this.apellidoMaternoAlumnoLabel = new System.Windows.Forms.Label();
+            this.calleDireccionAlumnoLabel = new System.Windows.Forms.Label();
+            this.numeroDireccionAlumnoLabel = new System.Windows.Forms.Label();
+            this.coloniaDireccionAlumnoLabel = new System.Windows.Forms.Label();
+            this.apellidoPaternoAlumnoTextBox = new System.Windows.Forms.TextBox();
+            this.apellidoMaternoAlumnoTextBox = new System.Windows.Forms.TextBox();
+            this.ciudadNacimientoAlumnoTextBox = new System.Windows.Forms.TextBox();
+            this.estadoNacimientoAlumnoTextBox = new System.Windows.Forms.TextBox();
+            this.calleDireccionAlumnoTextBox = new System.Windows.Forms.TextBox();
+            this.numeroDireccionAlumnoTextBox = new System.Windows.Forms.TextBox();
+            this.coloniaDireccionAlumnoTextBox = new System.Windows.Forms.TextBox();
+            this.apellidoPaternoMadreLabel = new System.Windows.Forms.Label();
+            this.apellidoMaternoMadreLabel = new System.Windows.Forms.Label();
+            this.apellidoPaternoMadreTextBox = new System.Windows.Forms.TextBox();
+            this.apellidoMaternoMadreTextBox = new System.Windows.Forms.TextBox();
+            this.apellidoPaternoPadreLabel = new System.Windows.Forms.Label();
+            this.apellidoMaternoPadreLabel = new System.Windows.Forms.Label();
+            this.apellidoPaternoPadreTextBox = new System.Windows.Forms.TextBox();
+            this.apellidoMaternoPadreTextBox = new System.Windows.Forms.TextBox();
+            this.calleDireccionMadreLabel = new System.Windows.Forms.Label();
+            this.numeroDireccionMadreLabel = new System.Windows.Forms.Label();
+            this.coloniaDireccionMadreLabel = new System.Windows.Forms.Label();
+            this.calleDireccionPadreLabel = new System.Windows.Forms.Label();
+            this.numeroDireccionPadreLabel = new System.Windows.Forms.Label();
+            this.coloniaDireccionPadreLabel = new System.Windows.Forms.Label();
+            this.calleDireccionMadreTextBox = new System.Windows.Forms.TextBox();
+            this.numeroDireccionMadreTextBox = new System.Windows.Forms.TextBox();
+            this.coloniaDireccionMadreTextBox = new System.Windows.Forms.TextBox();
+            this.calleDireccionPadreTextBox = new System.Windows.Forms.TextBox();
+            this.numeroDireccionPadreTextBox = new System.Windows.Forms.TextBox();
+            this.coloniaDireccionPadreTextBox = new System.Windows.Forms.TextBox();
+            this.calleTrabajoMadreLabel = new System.Windows.Forms.Label();
+            this.numeroTrabajoMadreLabel = new System.Windows.Forms.Label();
+            this.coloniaTrabajoMadreLabel = new System.Windows.Forms.Label();
+            this.numeroTrabajoMadreTextBox = new System.Windows.Forms.TextBox();
+            this.coloniaTrabajoMadreTextBox = new System.Windows.Forms.TextBox();
+            this.calleTrabajoPadreLabel = new System.Windows.Forms.Label();
+            this.numeroTrabajoPadreLabel = new System.Windows.Forms.Label();
+            this.coloniaTrabajoPadreLabel = new System.Windows.Forms.Label();
+            this.numeroTrabajoPadreTextBox = new System.Windows.Forms.TextBox();
+            this.coloniaTrabajoPadreTextBox = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.otroAlumnoMadreGroupBox = new System.Windows.Forms.GroupBox();
+            this.noOtroAlumnoMadreRadioButton = new System.Windows.Forms.RadioButton();
+            this.siOtroAlumnoMadreRadioButton = new System.Windows.Forms.RadioButton();
+            this.otroAlumnoPadreGroupBox = new System.Windows.Forms.GroupBox();
+            this.noOtroAlumnoPadreRadioButton = new System.Windows.Forms.RadioButton();
+            this.siOtroAlumnoPadreRadioButton = new System.Windows.Forms.RadioButton();
+            this.label2 = new System.Windows.Forms.Label();
+            this.informacionMedicaAlumnoLabel = new System.Windows.Forms.Label();
+            this.servicioMedicoAlumnoLabel = new System.Windows.Forms.Label();
+            this.grupoSanguineoAlumnoLabel = new System.Windows.Forms.Label();
+            this.enfermedaresAlumnoLabel = new System.Windows.Forms.Label();
+            this.alergiasAlumnoLabel = new System.Windows.Forms.Label();
+            this.telefonoContactoMedicoAlumnoLabel = new System.Windows.Forms.Label();
+            this.documentacionAlumnoLabel = new System.Windows.Forms.Label();
+            this.servicioMedicoTextBox = new System.Windows.Forms.TextBox();
+            this.enfermedadesAlumnoTextBox = new System.Windows.Forms.TextBox();
+            this.telefonoContactoMedicoAlumnoTextBox = new System.Windows.Forms.TextBox();
+            this.alergiasAlumnoTextBox = new System.Windows.Forms.TextBox();
+            this.grupoSanguineoTextBox = new System.Windows.Forms.TextBox();
+            this.documentacionListBox = new System.Windows.Forms.CheckedListBox();
+            this.atendidoPorLabel = new System.Windows.Forms.Label();
+            this.atendidoPorComboBox = new System.Windows.Forms.ComboBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.aLTASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cONSULTASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mODIFICACIONESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.docentesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tipoIngresoGroupBox.SuspendLayout();
+            this.otroAlumnoMadreGroupBox.SuspendLayout();
+            this.otroAlumnoPadreGroupBox.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // realizarAltaButton
             // 
-            this.realizarAltaButton.Location = new System.Drawing.Point(977, 551);
+            resources.ApplyResources(this.realizarAltaButton, "realizarAltaButton");
             this.realizarAltaButton.Name = "realizarAltaButton";
-            this.realizarAltaButton.Size = new System.Drawing.Size(116, 23);
-            this.realizarAltaButton.TabIndex = 0;
-            this.realizarAltaButton.Text = "Realizar Alta";
             this.realizarAltaButton.UseVisualStyleBackColor = true;
             // 
             // fechaElaboracionLabel
             // 
-            this.fechaElaboracionLabel.AutoSize = true;
-            this.fechaElaboracionLabel.Location = new System.Drawing.Point(3, 5);
+            resources.ApplyResources(this.fechaElaboracionLabel, "fechaElaboracionLabel");
             this.fechaElaboracionLabel.Name = "fechaElaboracionLabel";
-            this.fechaElaboracionLabel.Size = new System.Drawing.Size(186, 17);
-            this.fechaElaboracionLabel.TabIndex = 1;
-            this.fechaElaboracionLabel.Text = "FECHA DE ELABORACIÓN: ";
             // 
             // nombreAlumnoLabel
             // 
-            this.nombreAlumnoLabel.AutoSize = true;
-            this.nombreAlumnoLabel.Location = new System.Drawing.Point(4, 28);
+            resources.ApplyResources(this.nombreAlumnoLabel, "nombreAlumnoLabel");
             this.nombreAlumnoLabel.Name = "nombreAlumnoLabel";
-            this.nombreAlumnoLabel.Size = new System.Drawing.Size(166, 17);
-            this.nombreAlumnoLabel.TabIndex = 2;
-            this.nombreAlumnoLabel.Text = "NOMBRE DEL ALUMNO:";
             // 
             // fechaNacimientoLabel
             // 
-            this.fechaNacimientoLabel.AutoSize = true;
-            this.fechaNacimientoLabel.Location = new System.Drawing.Point(4, 46);
+            resources.ApplyResources(this.fechaNacimientoLabel, "fechaNacimientoLabel");
             this.fechaNacimientoLabel.Name = "fechaNacimientoLabel";
-            this.fechaNacimientoLabel.Size = new System.Drawing.Size(168, 17);
-            this.fechaNacimientoLabel.TabIndex = 3;
-            this.fechaNacimientoLabel.Text = "FECHA DE NACIMIENTO:";
             // 
             // LugarNacimientoLabel
             // 
-            this.LugarNacimientoLabel.AutoSize = true;
-            this.LugarNacimientoLabel.Location = new System.Drawing.Point(3, 69);
+            resources.ApplyResources(this.LugarNacimientoLabel, "LugarNacimientoLabel");
             this.LugarNacimientoLabel.Name = "LugarNacimientoLabel";
-            this.LugarNacimientoLabel.Size = new System.Drawing.Size(171, 17);
-            this.LugarNacimientoLabel.TabIndex = 4;
-            this.LugarNacimientoLabel.Text = "LUGAR DE NACIMIENTO:";
             // 
             // direccionAlumnoLabel
             // 
-            this.direccionAlumnoLabel.AutoSize = true;
-            this.direccionAlumnoLabel.Location = new System.Drawing.Point(4, 96);
+            resources.ApplyResources(this.direccionAlumnoLabel, "direccionAlumnoLabel");
             this.direccionAlumnoLabel.Name = "direccionAlumnoLabel";
-            this.direccionAlumnoLabel.Size = new System.Drawing.Size(86, 17);
-            this.direccionAlumnoLabel.TabIndex = 5;
-            this.direccionAlumnoLabel.Text = "DIRECCIÓN:";
             // 
             // telefonoAlumnoLabel
             // 
-            this.telefonoAlumnoLabel.AutoSize = true;
-            this.telefonoAlumnoLabel.Location = new System.Drawing.Point(3, 121);
+            resources.ApplyResources(this.telefonoAlumnoLabel, "telefonoAlumnoLabel");
             this.telefonoAlumnoLabel.Name = "telefonoAlumnoLabel";
-            this.telefonoAlumnoLabel.Size = new System.Drawing.Size(166, 17);
-            this.telefonoAlumnoLabel.TabIndex = 6;
-            this.telefonoAlumnoLabel.Text = "TELÉFONO PERSONAL:";
             // 
             // discapacidadLabel
             // 
-            this.discapacidadLabel.AutoSize = true;
-            this.discapacidadLabel.Location = new System.Drawing.Point(4, 144);
+            resources.ApplyResources(this.discapacidadLabel, "discapacidadLabel");
             this.discapacidadLabel.Name = "discapacidadLabel";
-            this.discapacidadLabel.Size = new System.Drawing.Size(111, 17);
-            this.discapacidadLabel.TabIndex = 7;
-            this.discapacidadLabel.Text = "DISCAPACIDAD:";
             // 
             // curpLabel
             // 
-            this.curpLabel.AutoSize = true;
-            this.curpLabel.Location = new System.Drawing.Point(664, 96);
+            resources.ApplyResources(this.curpLabel, "curpLabel");
             this.curpLabel.Name = "curpLabel";
-            this.curpLabel.Size = new System.Drawing.Size(50, 17);
-            this.curpLabel.TabIndex = 8;
-            this.curpLabel.Text = "CURP:";
             // 
             // añosCumplidosLabel
             // 
-            this.añosCumplidosLabel.AutoSize = true;
-            this.añosCumplidosLabel.Location = new System.Drawing.Point(664, 130);
+            resources.ApplyResources(this.añosCumplidosLabel, "añosCumplidosLabel");
             this.añosCumplidosLabel.Name = "añosCumplidosLabel";
-            this.añosCumplidosLabel.Size = new System.Drawing.Size(135, 17);
-            this.añosCumplidosLabel.TabIndex = 9;
-            this.añosCumplidosLabel.Text = "AÑOS CUMPLIDOS:";
             // 
             // cicloEscolarLabel
             // 
-            this.cicloEscolarLabel.AutoSize = true;
-            this.cicloEscolarLabel.Location = new System.Drawing.Point(664, 62);
+            resources.ApplyResources(this.cicloEscolarLabel, "cicloEscolarLabel");
             this.cicloEscolarLabel.Name = "cicloEscolarLabel";
-            this.cicloEscolarLabel.Size = new System.Drawing.Size(121, 17);
-            this.cicloEscolarLabel.TabIndex = 10;
-            this.cicloEscolarLabel.Text = "CICLO ESCOLAR:";
             // 
             // escuelaProcedenciaLabel
             // 
-            this.escuelaProcedenciaLabel.AutoSize = true;
-            this.escuelaProcedenciaLabel.Location = new System.Drawing.Point(4, 166);
+            resources.ApplyResources(this.escuelaProcedenciaLabel, "escuelaProcedenciaLabel");
             this.escuelaProcedenciaLabel.Name = "escuelaProcedenciaLabel";
-            this.escuelaProcedenciaLabel.Size = new System.Drawing.Size(200, 17);
-            this.escuelaProcedenciaLabel.TabIndex = 12;
-            this.escuelaProcedenciaLabel.Text = "ESCUELA DE PROCEDENCIA:";
             // 
             // canalizadoPorLabel
             // 
-            this.canalizadoPorLabel.AutoSize = true;
-            this.canalizadoPorLabel.Location = new System.Drawing.Point(4, 188);
+            resources.ApplyResources(this.canalizadoPorLabel, "canalizadoPorLabel");
             this.canalizadoPorLabel.Name = "canalizadoPorLabel";
-            this.canalizadoPorLabel.Size = new System.Drawing.Size(133, 17);
-            this.canalizadoPorLabel.TabIndex = 13;
-            this.canalizadoPorLabel.Text = "CANALIZADO POR:";
             // 
             // reingresoRadioButton
             // 
-            this.reingresoRadioButton.AutoSize = true;
-            this.reingresoRadioButton.Location = new System.Drawing.Point(158, 28);
+            resources.ApplyResources(this.reingresoRadioButton, "reingresoRadioButton");
             this.reingresoRadioButton.Name = "reingresoRadioButton";
-            this.reingresoRadioButton.Size = new System.Drawing.Size(111, 21);
-            this.reingresoRadioButton.TabIndex = 16;
             this.reingresoRadioButton.TabStop = true;
-            this.reingresoRadioButton.Text = "REINGRESO";
             this.reingresoRadioButton.UseVisualStyleBackColor = true;
             // 
             // tipoIngresoGroupBox
             // 
             this.tipoIngresoGroupBox.Controls.Add(this.nuevoIngresoRadioButton);
             this.tipoIngresoGroupBox.Controls.Add(this.reingresoRadioButton);
-            this.tipoIngresoGroupBox.Location = new System.Drawing.Point(667, 165);
+            resources.ApplyResources(this.tipoIngresoGroupBox, "tipoIngresoGroupBox");
             this.tipoIngresoGroupBox.Name = "tipoIngresoGroupBox";
-            this.tipoIngresoGroupBox.Size = new System.Drawing.Size(269, 55);
-            this.tipoIngresoGroupBox.TabIndex = 17;
             this.tipoIngresoGroupBox.TabStop = false;
-            this.tipoIngresoGroupBox.Text = "TIPO DE INGRESO:";
             // 
             // nuevoIngresoRadioButton
             // 
-            this.nuevoIngresoRadioButton.AutoSize = true;
-            this.nuevoIngresoRadioButton.Location = new System.Drawing.Point(0, 28);
+            resources.ApplyResources(this.nuevoIngresoRadioButton, "nuevoIngresoRadioButton");
             this.nuevoIngresoRadioButton.Name = "nuevoIngresoRadioButton";
-            this.nuevoIngresoRadioButton.Size = new System.Drawing.Size(145, 21);
-            this.nuevoIngresoRadioButton.TabIndex = 17;
             this.nuevoIngresoRadioButton.TabStop = true;
-            this.nuevoIngresoRadioButton.Text = "NUEVO INGRESO";
             this.nuevoIngresoRadioButton.UseVisualStyleBackColor = true;
             // 
             // nombreAlumnoTextBox
             // 
-            this.nombreAlumnoTextBox.Location = new System.Drawing.Point(208, 28);
+            resources.ApplyResources(this.nombreAlumnoTextBox, "nombreAlumnoTextBox");
             this.nombreAlumnoTextBox.Name = "nombreAlumnoTextBox";
-            this.nombreAlumnoTextBox.Size = new System.Drawing.Size(265, 22);
-            this.nombreAlumnoTextBox.TabIndex = 18;
             // 
             // fechaElaboracionDateTimePicker
             // 
-            this.fechaElaboracionDateTimePicker.Location = new System.Drawing.Point(208, 5);
+            resources.ApplyResources(this.fechaElaboracionDateTimePicker, "fechaElaboracionDateTimePicker");
             this.fechaElaboracionDateTimePicker.Name = "fechaElaboracionDateTimePicker";
-            this.fechaElaboracionDateTimePicker.Size = new System.Drawing.Size(265, 22);
-            this.fechaElaboracionDateTimePicker.TabIndex = 19;
-            // 
-            // lugarNacimientoTextBox
-            // 
-            this.lugarNacimientoTextBox.Location = new System.Drawing.Point(208, 74);
-            this.lugarNacimientoTextBox.Name = "lugarNacimientoTextBox";
-            this.lugarNacimientoTextBox.Size = new System.Drawing.Size(265, 22);
-            this.lugarNacimientoTextBox.TabIndex = 21;
-            // 
-            // direccionTextBox
-            // 
-            this.direccionTextBox.Location = new System.Drawing.Point(208, 94);
-            this.direccionTextBox.Name = "direccionTextBox";
-            this.direccionTextBox.Size = new System.Drawing.Size(265, 22);
-            this.direccionTextBox.TabIndex = 22;
             // 
             // telefonoPersonalTextBox
             // 
-            this.telefonoPersonalTextBox.Location = new System.Drawing.Point(208, 119);
+            resources.ApplyResources(this.telefonoPersonalTextBox, "telefonoPersonalTextBox");
             this.telefonoPersonalTextBox.Name = "telefonoPersonalTextBox";
-            this.telefonoPersonalTextBox.Size = new System.Drawing.Size(265, 22);
-            this.telefonoPersonalTextBox.TabIndex = 23;
             // 
             // discapacidadTextBox
             // 
-            this.discapacidadTextBox.Location = new System.Drawing.Point(208, 142);
+            resources.ApplyResources(this.discapacidadTextBox, "discapacidadTextBox");
             this.discapacidadTextBox.Name = "discapacidadTextBox";
-            this.discapacidadTextBox.Size = new System.Drawing.Size(265, 22);
-            this.discapacidadTextBox.TabIndex = 24;
             // 
             // escuelaProcedenciaTextBox
             // 
-            this.escuelaProcedenciaTextBox.Location = new System.Drawing.Point(208, 164);
+            resources.ApplyResources(this.escuelaProcedenciaTextBox, "escuelaProcedenciaTextBox");
             this.escuelaProcedenciaTextBox.Name = "escuelaProcedenciaTextBox";
-            this.escuelaProcedenciaTextBox.Size = new System.Drawing.Size(265, 22);
-            this.escuelaProcedenciaTextBox.TabIndex = 25;
             // 
             // canalizadoPorTextBox
             // 
-            this.canalizadoPorTextBox.Location = new System.Drawing.Point(208, 186);
+            resources.ApplyResources(this.canalizadoPorTextBox, "canalizadoPorTextBox");
             this.canalizadoPorTextBox.Name = "canalizadoPorTextBox";
-            this.canalizadoPorTextBox.Size = new System.Drawing.Size(265, 22);
-            this.canalizadoPorTextBox.TabIndex = 26;
             // 
             // cicloEscolarTextBox
             // 
-            this.cicloEscolarTextBox.Location = new System.Drawing.Point(791, 59);
+            resources.ApplyResources(this.cicloEscolarTextBox, "cicloEscolarTextBox");
             this.cicloEscolarTextBox.Name = "cicloEscolarTextBox";
-            this.cicloEscolarTextBox.Size = new System.Drawing.Size(100, 22);
-            this.cicloEscolarTextBox.TabIndex = 27;
             // 
             // curpTextBox
             // 
-            this.curpTextBox.Location = new System.Drawing.Point(791, 87);
+            resources.ApplyResources(this.curpTextBox, "curpTextBox");
             this.curpTextBox.Name = "curpTextBox";
-            this.curpTextBox.Size = new System.Drawing.Size(100, 22);
-            this.curpTextBox.TabIndex = 28;
             // 
             // añosCumplidosTextBox
             // 
-            this.añosCumplidosTextBox.Location = new System.Drawing.Point(806, 130);
+            resources.ApplyResources(this.añosCumplidosTextBox, "añosCumplidosTextBox");
             this.añosCumplidosTextBox.Name = "añosCumplidosTextBox";
-            this.añosCumplidosTextBox.Size = new System.Drawing.Size(100, 22);
-            this.añosCumplidosTextBox.TabIndex = 29;
             // 
             // fechaNacimientoDateTimePicker
             // 
-            this.fechaNacimientoDateTimePicker.Location = new System.Drawing.Point(207, 52);
+            resources.ApplyResources(this.fechaNacimientoDateTimePicker, "fechaNacimientoDateTimePicker");
             this.fechaNacimientoDateTimePicker.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
             this.fechaNacimientoDateTimePicker.Name = "fechaNacimientoDateTimePicker";
-            this.fechaNacimientoDateTimePicker.Size = new System.Drawing.Size(266, 22);
-            this.fechaNacimientoDateTimePicker.TabIndex = 30;
             this.fechaNacimientoDateTimePicker.Value = new System.DateTime(2000, 1, 1, 1, 48, 0, 0);
             // 
             // nombreMadreLabel
             // 
-            this.nombreMadreLabel.AutoSize = true;
-            this.nombreMadreLabel.Location = new System.Drawing.Point(6, 280);
+            resources.ApplyResources(this.nombreMadreLabel, "nombreMadreLabel");
             this.nombreMadreLabel.Name = "nombreMadreLabel";
-            this.nombreMadreLabel.Size = new System.Drawing.Size(169, 17);
-            this.nombreMadreLabel.TabIndex = 31;
-            this.nombreMadreLabel.Text = "NOMBRE DE LA MADRE:";
             // 
             // domicilioMadreLabel
             // 
-            this.domicilioMadreLabel.AutoSize = true;
-            this.domicilioMadreLabel.Location = new System.Drawing.Point(6, 307);
+            resources.ApplyResources(this.domicilioMadreLabel, "domicilioMadreLabel");
             this.domicilioMadreLabel.Name = "domicilioMadreLabel";
-            this.domicilioMadreLabel.Size = new System.Drawing.Size(81, 17);
-            this.domicilioMadreLabel.TabIndex = 32;
-            this.domicilioMadreLabel.Text = "DOMICILIO:";
             // 
             // ocupacionMadreLabel
             // 
-            this.ocupacionMadreLabel.AutoSize = true;
-            this.ocupacionMadreLabel.Location = new System.Drawing.Point(3, 334);
+            resources.ApplyResources(this.ocupacionMadreLabel, "ocupacionMadreLabel");
             this.ocupacionMadreLabel.Name = "ocupacionMadreLabel";
-            this.ocupacionMadreLabel.Size = new System.Drawing.Size(93, 17);
-            this.ocupacionMadreLabel.TabIndex = 33;
-            this.ocupacionMadreLabel.Text = "OCUPACIÓN:";
             // 
             // telefonosMadreLabel
             // 
-            this.telefonosMadreLabel.AutoSize = true;
-            this.telefonosMadreLabel.Location = new System.Drawing.Point(6, 357);
+            resources.ApplyResources(this.telefonosMadreLabel, "telefonosMadreLabel");
             this.telefonosMadreLabel.Name = "telefonosMadreLabel";
-            this.telefonosMadreLabel.Size = new System.Drawing.Size(96, 17);
-            this.telefonosMadreLabel.TabIndex = 34;
-            this.telefonosMadreLabel.Text = "TELÉFONOS:";
             // 
             // nombrePadreLabel
             // 
-            this.nombrePadreLabel.AutoSize = true;
-            this.nombrePadreLabel.Location = new System.Drawing.Point(9, 424);
+            resources.ApplyResources(this.nombrePadreLabel, "nombrePadreLabel");
             this.nombrePadreLabel.Name = "nombrePadreLabel";
-            this.nombrePadreLabel.Size = new System.Drawing.Size(154, 17);
-            this.nombrePadreLabel.TabIndex = 35;
-            this.nombrePadreLabel.Text = "NOMBRE DEL PADRE:";
             // 
             // domicilioPadreLabel
             // 
-            this.domicilioPadreLabel.AutoSize = true;
-            this.domicilioPadreLabel.Location = new System.Drawing.Point(12, 447);
+            resources.ApplyResources(this.domicilioPadreLabel, "domicilioPadreLabel");
             this.domicilioPadreLabel.Name = "domicilioPadreLabel";
-            this.domicilioPadreLabel.Size = new System.Drawing.Size(81, 17);
-            this.domicilioPadreLabel.TabIndex = 36;
-            this.domicilioPadreLabel.Text = "DOMICILIO:";
             // 
             // ocupacionPadreLabel
             // 
-            this.ocupacionPadreLabel.AutoSize = true;
-            this.ocupacionPadreLabel.Location = new System.Drawing.Point(9, 472);
+            resources.ApplyResources(this.ocupacionPadreLabel, "ocupacionPadreLabel");
             this.ocupacionPadreLabel.Name = "ocupacionPadreLabel";
-            this.ocupacionPadreLabel.Size = new System.Drawing.Size(89, 17);
-            this.ocupacionPadreLabel.TabIndex = 37;
-            this.ocupacionPadreLabel.Text = "OCUPACIÓN\r\n";
             // 
             // telefonosPadreLabel
             // 
-            this.telefonosPadreLabel.AutoSize = true;
-            this.telefonosPadreLabel.Location = new System.Drawing.Point(9, 501);
+            resources.ApplyResources(this.telefonosPadreLabel, "telefonosPadreLabel");
             this.telefonosPadreLabel.Name = "telefonosPadreLabel";
-            this.telefonosPadreLabel.Size = new System.Drawing.Size(96, 17);
-            this.telefonosPadreLabel.TabIndex = 38;
-            this.telefonosPadreLabel.Text = "TELÉFONOS:";
             // 
             // nombreMadreTextBox
             // 
-            this.nombreMadreTextBox.Location = new System.Drawing.Point(274, 274);
+            resources.ApplyResources(this.nombreMadreTextBox, "nombreMadreTextBox");
             this.nombreMadreTextBox.Name = "nombreMadreTextBox";
-            this.nombreMadreTextBox.Size = new System.Drawing.Size(100, 22);
-            this.nombreMadreTextBox.TabIndex = 39;
-            // 
-            // domicilioMadreTextBox
-            // 
-            this.domicilioMadreTextBox.Location = new System.Drawing.Point(274, 304);
-            this.domicilioMadreTextBox.Name = "domicilioMadreTextBox";
-            this.domicilioMadreTextBox.Size = new System.Drawing.Size(100, 22);
-            this.domicilioMadreTextBox.TabIndex = 40;
             // 
             // ocupacionMadreTextBox
             // 
-            this.ocupacionMadreTextBox.Location = new System.Drawing.Point(274, 332);
+            resources.ApplyResources(this.ocupacionMadreTextBox, "ocupacionMadreTextBox");
             this.ocupacionMadreTextBox.Name = "ocupacionMadreTextBox";
-            this.ocupacionMadreTextBox.Size = new System.Drawing.Size(100, 22);
-            this.ocupacionMadreTextBox.TabIndex = 41;
             // 
             // nombrePadreTextBox
             // 
-            this.nombrePadreTextBox.Location = new System.Drawing.Point(274, 421);
+            resources.ApplyResources(this.nombrePadreTextBox, "nombrePadreTextBox");
             this.nombrePadreTextBox.Name = "nombrePadreTextBox";
-            this.nombrePadreTextBox.Size = new System.Drawing.Size(100, 22);
-            this.nombrePadreTextBox.TabIndex = 42;
-            // 
-            // domicilioPadreTextBox
-            // 
-            this.domicilioPadreTextBox.Location = new System.Drawing.Point(274, 444);
-            this.domicilioPadreTextBox.Name = "domicilioPadreTextBox";
-            this.domicilioPadreTextBox.Size = new System.Drawing.Size(100, 22);
-            this.domicilioPadreTextBox.TabIndex = 43;
             // 
             // ocupacionPadreTextBox
             // 
-            this.ocupacionPadreTextBox.Location = new System.Drawing.Point(274, 472);
+            resources.ApplyResources(this.ocupacionPadreTextBox, "ocupacionPadreTextBox");
             this.ocupacionPadreTextBox.Name = "ocupacionPadreTextBox";
-            this.ocupacionPadreTextBox.Size = new System.Drawing.Size(100, 22);
-            this.ocupacionPadreTextBox.TabIndex = 44;
             // 
             // telefonoCasaMadreLabel
             // 
-            this.telefonoCasaMadreLabel.AutoSize = true;
-            this.telefonoCasaMadreLabel.Location = new System.Drawing.Point(145, 357);
+            resources.ApplyResources(this.telefonoCasaMadreLabel, "telefonoCasaMadreLabel");
             this.telefonoCasaMadreLabel.Name = "telefonoCasaMadreLabel";
-            this.telefonoCasaMadreLabel.Size = new System.Drawing.Size(44, 17);
-            this.telefonoCasaMadreLabel.TabIndex = 45;
-            this.telefonoCasaMadreLabel.Text = "CASA";
             // 
             // telefonoCelularMadreLabel
             // 
-            this.telefonoCelularMadreLabel.AutoSize = true;
-            this.telefonoCelularMadreLabel.Location = new System.Drawing.Point(319, 358);
+            resources.ApplyResources(this.telefonoCelularMadreLabel, "telefonoCelularMadreLabel");
             this.telefonoCelularMadreLabel.Name = "telefonoCelularMadreLabel";
-            this.telefonoCelularMadreLabel.Size = new System.Drawing.Size(71, 17);
-            this.telefonoCelularMadreLabel.TabIndex = 46;
-            this.telefonoCelularMadreLabel.Text = "CELULAR";
             // 
             // telefonoTrabajoMadreLabel
             // 
-            this.telefonoTrabajoMadreLabel.AutoSize = true;
-            this.telefonoTrabajoMadreLabel.Location = new System.Drawing.Point(526, 357);
+            resources.ApplyResources(this.telefonoTrabajoMadreLabel, "telefonoTrabajoMadreLabel");
             this.telefonoTrabajoMadreLabel.Name = "telefonoTrabajoMadreLabel";
-            this.telefonoTrabajoMadreLabel.Size = new System.Drawing.Size(72, 17);
-            this.telefonoTrabajoMadreLabel.TabIndex = 47;
-            this.telefonoTrabajoMadreLabel.Text = "TRABAJO";
             // 
             // telefonoCasaPadreLabel
             // 
-            this.telefonoCasaPadreLabel.AutoSize = true;
-            this.telefonoCasaPadreLabel.Location = new System.Drawing.Point(145, 500);
+            resources.ApplyResources(this.telefonoCasaPadreLabel, "telefonoCasaPadreLabel");
             this.telefonoCasaPadreLabel.Name = "telefonoCasaPadreLabel";
-            this.telefonoCasaPadreLabel.Size = new System.Drawing.Size(44, 17);
-            this.telefonoCasaPadreLabel.TabIndex = 48;
-            this.telefonoCasaPadreLabel.Text = "CASA";
             // 
             // telefonoCelularPadreLabel
             // 
-            this.telefonoCelularPadreLabel.AutoSize = true;
-            this.telefonoCelularPadreLabel.Location = new System.Drawing.Point(319, 503);
+            resources.ApplyResources(this.telefonoCelularPadreLabel, "telefonoCelularPadreLabel");
             this.telefonoCelularPadreLabel.Name = "telefonoCelularPadreLabel";
-            this.telefonoCelularPadreLabel.Size = new System.Drawing.Size(71, 17);
-            this.telefonoCelularPadreLabel.TabIndex = 49;
-            this.telefonoCelularPadreLabel.Text = "CELULAR";
             // 
             // telefonoTrabajoPadreLabel
             // 
-            this.telefonoTrabajoPadreLabel.AutoSize = true;
-            this.telefonoTrabajoPadreLabel.Location = new System.Drawing.Point(526, 500);
+            resources.ApplyResources(this.telefonoTrabajoPadreLabel, "telefonoTrabajoPadreLabel");
             this.telefonoTrabajoPadreLabel.Name = "telefonoTrabajoPadreLabel";
-            this.telefonoTrabajoPadreLabel.Size = new System.Drawing.Size(72, 17);
-            this.telefonoTrabajoPadreLabel.TabIndex = 50;
-            this.telefonoTrabajoPadreLabel.Text = "TRABAJO";
             // 
             // telefonoCasaPadreTextBox
             // 
-            this.telefonoCasaPadreTextBox.Location = new System.Drawing.Point(194, 500);
+            resources.ApplyResources(this.telefonoCasaPadreTextBox, "telefonoCasaPadreTextBox");
             this.telefonoCasaPadreTextBox.Name = "telefonoCasaPadreTextBox";
-            this.telefonoCasaPadreTextBox.Size = new System.Drawing.Size(100, 22);
-            this.telefonoCasaPadreTextBox.TabIndex = 51;
             // 
             // telefonoCelularPadreTextBox
             // 
-            this.telefonoCelularPadreTextBox.Location = new System.Drawing.Point(396, 498);
+            resources.ApplyResources(this.telefonoCelularPadreTextBox, "telefonoCelularPadreTextBox");
             this.telefonoCelularPadreTextBox.Name = "telefonoCelularPadreTextBox";
-            this.telefonoCelularPadreTextBox.Size = new System.Drawing.Size(100, 22);
-            this.telefonoCelularPadreTextBox.TabIndex = 52;
             // 
             // telefonoTrabajoPadreTextBox
             // 
-            this.telefonoTrabajoPadreTextBox.Location = new System.Drawing.Point(614, 495);
+            resources.ApplyResources(this.telefonoTrabajoPadreTextBox, "telefonoTrabajoPadreTextBox");
             this.telefonoTrabajoPadreTextBox.Name = "telefonoTrabajoPadreTextBox";
-            this.telefonoTrabajoPadreTextBox.Size = new System.Drawing.Size(100, 22);
-            this.telefonoTrabajoPadreTextBox.TabIndex = 53;
             // 
             // telefonoCasaMadreTextBox
             // 
-            this.telefonoCasaMadreTextBox.Location = new System.Drawing.Point(194, 355);
+            resources.ApplyResources(this.telefonoCasaMadreTextBox, "telefonoCasaMadreTextBox");
             this.telefonoCasaMadreTextBox.Name = "telefonoCasaMadreTextBox";
-            this.telefonoCasaMadreTextBox.Size = new System.Drawing.Size(100, 22);
-            this.telefonoCasaMadreTextBox.TabIndex = 54;
             // 
             // telefonoCelularMadreTextBox
             // 
-            this.telefonoCelularMadreTextBox.Location = new System.Drawing.Point(396, 354);
+            resources.ApplyResources(this.telefonoCelularMadreTextBox, "telefonoCelularMadreTextBox");
             this.telefonoCelularMadreTextBox.Name = "telefonoCelularMadreTextBox";
-            this.telefonoCelularMadreTextBox.Size = new System.Drawing.Size(100, 22);
-            this.telefonoCelularMadreTextBox.TabIndex = 55;
             // 
             // telefonoTrabajoMadreTextBox
             // 
-            this.telefonoTrabajoMadreTextBox.Location = new System.Drawing.Point(604, 355);
+            resources.ApplyResources(this.telefonoTrabajoMadreTextBox, "telefonoTrabajoMadreTextBox");
             this.telefonoTrabajoMadreTextBox.Name = "telefonoTrabajoMadreTextBox";
-            this.telefonoTrabajoMadreTextBox.Size = new System.Drawing.Size(100, 22);
-            this.telefonoTrabajoMadreTextBox.TabIndex = 56;
             // 
             // madreCheckBox
             // 
-            this.madreCheckBox.AutoSize = true;
-            this.madreCheckBox.Location = new System.Drawing.Point(7, 245);
+            resources.ApplyResources(this.madreCheckBox, "madreCheckBox");
             this.madreCheckBox.Name = "madreCheckBox";
-            this.madreCheckBox.Size = new System.Drawing.Size(79, 21);
-            this.madreCheckBox.TabIndex = 57;
-            this.madreCheckBox.Text = "MADRE";
             this.madreCheckBox.UseVisualStyleBackColor = true;
             // 
             // padreCheckBox
             // 
-            this.padreCheckBox.AutoSize = true;
-            this.padreCheckBox.Location = new System.Drawing.Point(92, 245);
+            resources.ApplyResources(this.padreCheckBox, "padreCheckBox");
             this.padreCheckBox.Name = "padreCheckBox";
-            this.padreCheckBox.Size = new System.Drawing.Size(77, 21);
-            this.padreCheckBox.TabIndex = 58;
-            this.padreCheckBox.Text = "PADRE";
             this.padreCheckBox.UseVisualStyleBackColor = true;
             // 
             // responablesAlumnoLabel
             // 
-            this.responablesAlumnoLabel.AutoSize = true;
-            this.responablesAlumnoLabel.Location = new System.Drawing.Point(3, 225);
+            resources.ApplyResources(this.responablesAlumnoLabel, "responablesAlumnoLabel");
             this.responablesAlumnoLabel.Name = "responablesAlumnoLabel";
-            this.responablesAlumnoLabel.Size = new System.Drawing.Size(368, 17);
-            this.responablesAlumnoLabel.TabIndex = 59;
-            this.responablesAlumnoLabel.Text = "SELECCIONE EL/LOS RESPONSABLE/S DEL ALUMNO: ";
             // 
             // lugarTrabajoMadreLabel
             // 
-            this.lugarTrabajoMadreLabel.AutoSize = true;
-            this.lugarTrabajoMadreLabel.Location = new System.Drawing.Point(451, 321);
+            resources.ApplyResources(this.lugarTrabajoMadreLabel, "lugarTrabajoMadreLabel");
             this.lugarTrabajoMadreLabel.Name = "lugarTrabajoMadreLabel";
-            this.lugarTrabajoMadreLabel.Size = new System.Drawing.Size(147, 17);
-            this.lugarTrabajoMadreLabel.TabIndex = 60;
-            this.lugarTrabajoMadreLabel.Text = "LUGAR DE TRABAJO";
             // 
-            // lugarTrabajoMadreTextBox
+            // calleTrabajoMadreTextBox
             // 
-            this.lugarTrabajoMadreTextBox.Location = new System.Drawing.Point(602, 321);
-            this.lugarTrabajoMadreTextBox.Name = "lugarTrabajoMadreTextBox";
-            this.lugarTrabajoMadreTextBox.Size = new System.Drawing.Size(100, 22);
-            this.lugarTrabajoMadreTextBox.TabIndex = 61;
+            resources.ApplyResources(this.calleTrabajoMadreTextBox, "calleTrabajoMadreTextBox");
+            this.calleTrabajoMadreTextBox.Name = "calleTrabajoMadreTextBox";
             // 
-            // lugarTrabajoPadreTextBox
+            // calleTrabajoPadreTextBox
             // 
-            this.lugarTrabajoPadreTextBox.Location = new System.Drawing.Point(602, 460);
-            this.lugarTrabajoPadreTextBox.Name = "lugarTrabajoPadreTextBox";
-            this.lugarTrabajoPadreTextBox.Size = new System.Drawing.Size(100, 22);
-            this.lugarTrabajoPadreTextBox.TabIndex = 63;
+            resources.ApplyResources(this.calleTrabajoPadreTextBox, "calleTrabajoPadreTextBox");
+            this.calleTrabajoPadreTextBox.Name = "calleTrabajoPadreTextBox";
             // 
             // lugarTrabajoPadreLabel
             // 
-            this.lugarTrabajoPadreLabel.AutoSize = true;
-            this.lugarTrabajoPadreLabel.Location = new System.Drawing.Point(451, 460);
+            resources.ApplyResources(this.lugarTrabajoPadreLabel, "lugarTrabajoPadreLabel");
             this.lugarTrabajoPadreLabel.Name = "lugarTrabajoPadreLabel";
-            this.lugarTrabajoPadreLabel.Size = new System.Drawing.Size(147, 17);
-            this.lugarTrabajoPadreLabel.TabIndex = 62;
-            this.lugarTrabajoPadreLabel.Text = "LUGAR DE TRABAJO";
+            // 
+            // ciudadNacimientoAlumnoLabel
+            // 
+            resources.ApplyResources(this.ciudadNacimientoAlumnoLabel, "ciudadNacimientoAlumnoLabel");
+            this.ciudadNacimientoAlumnoLabel.Name = "ciudadNacimientoAlumnoLabel";
+            // 
+            // estadoNacimientoAlumnoLabel
+            // 
+            resources.ApplyResources(this.estadoNacimientoAlumnoLabel, "estadoNacimientoAlumnoLabel");
+            this.estadoNacimientoAlumnoLabel.Name = "estadoNacimientoAlumnoLabel";
+            // 
+            // apellidoPaternoAlumnoLabel
+            // 
+            resources.ApplyResources(this.apellidoPaternoAlumnoLabel, "apellidoPaternoAlumnoLabel");
+            this.apellidoPaternoAlumnoLabel.Name = "apellidoPaternoAlumnoLabel";
+            // 
+            // apellidoMaternoAlumnoLabel
+            // 
+            resources.ApplyResources(this.apellidoMaternoAlumnoLabel, "apellidoMaternoAlumnoLabel");
+            this.apellidoMaternoAlumnoLabel.Name = "apellidoMaternoAlumnoLabel";
+            // 
+            // calleDireccionAlumnoLabel
+            // 
+            resources.ApplyResources(this.calleDireccionAlumnoLabel, "calleDireccionAlumnoLabel");
+            this.calleDireccionAlumnoLabel.Name = "calleDireccionAlumnoLabel";
+            // 
+            // numeroDireccionAlumnoLabel
+            // 
+            resources.ApplyResources(this.numeroDireccionAlumnoLabel, "numeroDireccionAlumnoLabel");
+            this.numeroDireccionAlumnoLabel.Name = "numeroDireccionAlumnoLabel";
+            // 
+            // coloniaDireccionAlumnoLabel
+            // 
+            resources.ApplyResources(this.coloniaDireccionAlumnoLabel, "coloniaDireccionAlumnoLabel");
+            this.coloniaDireccionAlumnoLabel.Name = "coloniaDireccionAlumnoLabel";
+            // 
+            // apellidoPaternoAlumnoTextBox
+            // 
+            resources.ApplyResources(this.apellidoPaternoAlumnoTextBox, "apellidoPaternoAlumnoTextBox");
+            this.apellidoPaternoAlumnoTextBox.Name = "apellidoPaternoAlumnoTextBox";
+            // 
+            // apellidoMaternoAlumnoTextBox
+            // 
+            resources.ApplyResources(this.apellidoMaternoAlumnoTextBox, "apellidoMaternoAlumnoTextBox");
+            this.apellidoMaternoAlumnoTextBox.Name = "apellidoMaternoAlumnoTextBox";
+            // 
+            // ciudadNacimientoAlumnoTextBox
+            // 
+            resources.ApplyResources(this.ciudadNacimientoAlumnoTextBox, "ciudadNacimientoAlumnoTextBox");
+            this.ciudadNacimientoAlumnoTextBox.Name = "ciudadNacimientoAlumnoTextBox";
+            // 
+            // estadoNacimientoAlumnoTextBox
+            // 
+            resources.ApplyResources(this.estadoNacimientoAlumnoTextBox, "estadoNacimientoAlumnoTextBox");
+            this.estadoNacimientoAlumnoTextBox.Name = "estadoNacimientoAlumnoTextBox";
+            // 
+            // calleDireccionAlumnoTextBox
+            // 
+            resources.ApplyResources(this.calleDireccionAlumnoTextBox, "calleDireccionAlumnoTextBox");
+            this.calleDireccionAlumnoTextBox.Name = "calleDireccionAlumnoTextBox";
+            // 
+            // numeroDireccionAlumnoTextBox
+            // 
+            resources.ApplyResources(this.numeroDireccionAlumnoTextBox, "numeroDireccionAlumnoTextBox");
+            this.numeroDireccionAlumnoTextBox.Name = "numeroDireccionAlumnoTextBox";
+            // 
+            // coloniaDireccionAlumnoTextBox
+            // 
+            resources.ApplyResources(this.coloniaDireccionAlumnoTextBox, "coloniaDireccionAlumnoTextBox");
+            this.coloniaDireccionAlumnoTextBox.Name = "coloniaDireccionAlumnoTextBox";
+            // 
+            // apellidoPaternoMadreLabel
+            // 
+            resources.ApplyResources(this.apellidoPaternoMadreLabel, "apellidoPaternoMadreLabel");
+            this.apellidoPaternoMadreLabel.Name = "apellidoPaternoMadreLabel";
+            // 
+            // apellidoMaternoMadreLabel
+            // 
+            resources.ApplyResources(this.apellidoMaternoMadreLabel, "apellidoMaternoMadreLabel");
+            this.apellidoMaternoMadreLabel.Name = "apellidoMaternoMadreLabel";
+            // 
+            // apellidoPaternoMadreTextBox
+            // 
+            resources.ApplyResources(this.apellidoPaternoMadreTextBox, "apellidoPaternoMadreTextBox");
+            this.apellidoPaternoMadreTextBox.Name = "apellidoPaternoMadreTextBox";
+            // 
+            // apellidoMaternoMadreTextBox
+            // 
+            resources.ApplyResources(this.apellidoMaternoMadreTextBox, "apellidoMaternoMadreTextBox");
+            this.apellidoMaternoMadreTextBox.Name = "apellidoMaternoMadreTextBox";
+            // 
+            // apellidoPaternoPadreLabel
+            // 
+            resources.ApplyResources(this.apellidoPaternoPadreLabel, "apellidoPaternoPadreLabel");
+            this.apellidoPaternoPadreLabel.Name = "apellidoPaternoPadreLabel";
+            // 
+            // apellidoMaternoPadreLabel
+            // 
+            resources.ApplyResources(this.apellidoMaternoPadreLabel, "apellidoMaternoPadreLabel");
+            this.apellidoMaternoPadreLabel.Name = "apellidoMaternoPadreLabel";
+            // 
+            // apellidoPaternoPadreTextBox
+            // 
+            resources.ApplyResources(this.apellidoPaternoPadreTextBox, "apellidoPaternoPadreTextBox");
+            this.apellidoPaternoPadreTextBox.Name = "apellidoPaternoPadreTextBox";
+            // 
+            // apellidoMaternoPadreTextBox
+            // 
+            resources.ApplyResources(this.apellidoMaternoPadreTextBox, "apellidoMaternoPadreTextBox");
+            this.apellidoMaternoPadreTextBox.Name = "apellidoMaternoPadreTextBox";
+            // 
+            // calleDireccionMadreLabel
+            // 
+            resources.ApplyResources(this.calleDireccionMadreLabel, "calleDireccionMadreLabel");
+            this.calleDireccionMadreLabel.Name = "calleDireccionMadreLabel";
+            // 
+            // numeroDireccionMadreLabel
+            // 
+            resources.ApplyResources(this.numeroDireccionMadreLabel, "numeroDireccionMadreLabel");
+            this.numeroDireccionMadreLabel.Name = "numeroDireccionMadreLabel";
+            // 
+            // coloniaDireccionMadreLabel
+            // 
+            resources.ApplyResources(this.coloniaDireccionMadreLabel, "coloniaDireccionMadreLabel");
+            this.coloniaDireccionMadreLabel.Name = "coloniaDireccionMadreLabel";
+            // 
+            // calleDireccionPadreLabel
+            // 
+            resources.ApplyResources(this.calleDireccionPadreLabel, "calleDireccionPadreLabel");
+            this.calleDireccionPadreLabel.Name = "calleDireccionPadreLabel";
+            // 
+            // numeroDireccionPadreLabel
+            // 
+            resources.ApplyResources(this.numeroDireccionPadreLabel, "numeroDireccionPadreLabel");
+            this.numeroDireccionPadreLabel.Name = "numeroDireccionPadreLabel";
+            // 
+            // coloniaDireccionPadreLabel
+            // 
+            resources.ApplyResources(this.coloniaDireccionPadreLabel, "coloniaDireccionPadreLabel");
+            this.coloniaDireccionPadreLabel.Name = "coloniaDireccionPadreLabel";
+            // 
+            // calleDireccionMadreTextBox
+            // 
+            resources.ApplyResources(this.calleDireccionMadreTextBox, "calleDireccionMadreTextBox");
+            this.calleDireccionMadreTextBox.Name = "calleDireccionMadreTextBox";
+            // 
+            // numeroDireccionMadreTextBox
+            // 
+            resources.ApplyResources(this.numeroDireccionMadreTextBox, "numeroDireccionMadreTextBox");
+            this.numeroDireccionMadreTextBox.Name = "numeroDireccionMadreTextBox";
+            // 
+            // coloniaDireccionMadreTextBox
+            // 
+            resources.ApplyResources(this.coloniaDireccionMadreTextBox, "coloniaDireccionMadreTextBox");
+            this.coloniaDireccionMadreTextBox.Name = "coloniaDireccionMadreTextBox";
+            // 
+            // calleDireccionPadreTextBox
+            // 
+            resources.ApplyResources(this.calleDireccionPadreTextBox, "calleDireccionPadreTextBox");
+            this.calleDireccionPadreTextBox.Name = "calleDireccionPadreTextBox";
+            // 
+            // numeroDireccionPadreTextBox
+            // 
+            resources.ApplyResources(this.numeroDireccionPadreTextBox, "numeroDireccionPadreTextBox");
+            this.numeroDireccionPadreTextBox.Name = "numeroDireccionPadreTextBox";
+            // 
+            // coloniaDireccionPadreTextBox
+            // 
+            resources.ApplyResources(this.coloniaDireccionPadreTextBox, "coloniaDireccionPadreTextBox");
+            this.coloniaDireccionPadreTextBox.Name = "coloniaDireccionPadreTextBox";
+            // 
+            // calleTrabajoMadreLabel
+            // 
+            resources.ApplyResources(this.calleTrabajoMadreLabel, "calleTrabajoMadreLabel");
+            this.calleTrabajoMadreLabel.Name = "calleTrabajoMadreLabel";
+            // 
+            // numeroTrabajoMadreLabel
+            // 
+            resources.ApplyResources(this.numeroTrabajoMadreLabel, "numeroTrabajoMadreLabel");
+            this.numeroTrabajoMadreLabel.Name = "numeroTrabajoMadreLabel";
+            // 
+            // coloniaTrabajoMadreLabel
+            // 
+            resources.ApplyResources(this.coloniaTrabajoMadreLabel, "coloniaTrabajoMadreLabel");
+            this.coloniaTrabajoMadreLabel.Name = "coloniaTrabajoMadreLabel";
+            // 
+            // numeroTrabajoMadreTextBox
+            // 
+            resources.ApplyResources(this.numeroTrabajoMadreTextBox, "numeroTrabajoMadreTextBox");
+            this.numeroTrabajoMadreTextBox.Name = "numeroTrabajoMadreTextBox";
+            // 
+            // coloniaTrabajoMadreTextBox
+            // 
+            resources.ApplyResources(this.coloniaTrabajoMadreTextBox, "coloniaTrabajoMadreTextBox");
+            this.coloniaTrabajoMadreTextBox.Name = "coloniaTrabajoMadreTextBox";
+            // 
+            // calleTrabajoPadreLabel
+            // 
+            resources.ApplyResources(this.calleTrabajoPadreLabel, "calleTrabajoPadreLabel");
+            this.calleTrabajoPadreLabel.Name = "calleTrabajoPadreLabel";
+            // 
+            // numeroTrabajoPadreLabel
+            // 
+            resources.ApplyResources(this.numeroTrabajoPadreLabel, "numeroTrabajoPadreLabel");
+            this.numeroTrabajoPadreLabel.Name = "numeroTrabajoPadreLabel";
+            // 
+            // coloniaTrabajoPadreLabel
+            // 
+            resources.ApplyResources(this.coloniaTrabajoPadreLabel, "coloniaTrabajoPadreLabel");
+            this.coloniaTrabajoPadreLabel.Name = "coloniaTrabajoPadreLabel";
+            // 
+            // numeroTrabajoPadreTextBox
+            // 
+            resources.ApplyResources(this.numeroTrabajoPadreTextBox, "numeroTrabajoPadreTextBox");
+            this.numeroTrabajoPadreTextBox.Name = "numeroTrabajoPadreTextBox";
+            // 
+            // coloniaTrabajoPadreTextBox
+            // 
+            resources.ApplyResources(this.coloniaTrabajoPadreTextBox, "coloniaTrabajoPadreTextBox");
+            this.coloniaTrabajoPadreTextBox.Name = "coloniaTrabajoPadreTextBox";
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
+            // 
+            // otroAlumnoMadreGroupBox
+            // 
+            this.otroAlumnoMadreGroupBox.Controls.Add(this.noOtroAlumnoMadreRadioButton);
+            this.otroAlumnoMadreGroupBox.Controls.Add(this.siOtroAlumnoMadreRadioButton);
+            resources.ApplyResources(this.otroAlumnoMadreGroupBox, "otroAlumnoMadreGroupBox");
+            this.otroAlumnoMadreGroupBox.Name = "otroAlumnoMadreGroupBox";
+            this.otroAlumnoMadreGroupBox.TabStop = false;
+            // 
+            // noOtroAlumnoMadreRadioButton
+            // 
+            resources.ApplyResources(this.noOtroAlumnoMadreRadioButton, "noOtroAlumnoMadreRadioButton");
+            this.noOtroAlumnoMadreRadioButton.Name = "noOtroAlumnoMadreRadioButton";
+            this.noOtroAlumnoMadreRadioButton.TabStop = true;
+            this.noOtroAlumnoMadreRadioButton.UseVisualStyleBackColor = true;
+            // 
+            // siOtroAlumnoMadreRadioButton
+            // 
+            resources.ApplyResources(this.siOtroAlumnoMadreRadioButton, "siOtroAlumnoMadreRadioButton");
+            this.siOtroAlumnoMadreRadioButton.Name = "siOtroAlumnoMadreRadioButton";
+            this.siOtroAlumnoMadreRadioButton.TabStop = true;
+            this.siOtroAlumnoMadreRadioButton.UseVisualStyleBackColor = true;
+            // 
+            // otroAlumnoPadreGroupBox
+            // 
+            this.otroAlumnoPadreGroupBox.Controls.Add(this.noOtroAlumnoPadreRadioButton);
+            this.otroAlumnoPadreGroupBox.Controls.Add(this.siOtroAlumnoPadreRadioButton);
+            resources.ApplyResources(this.otroAlumnoPadreGroupBox, "otroAlumnoPadreGroupBox");
+            this.otroAlumnoPadreGroupBox.Name = "otroAlumnoPadreGroupBox";
+            this.otroAlumnoPadreGroupBox.TabStop = false;
+            // 
+            // noOtroAlumnoPadreRadioButton
+            // 
+            resources.ApplyResources(this.noOtroAlumnoPadreRadioButton, "noOtroAlumnoPadreRadioButton");
+            this.noOtroAlumnoPadreRadioButton.Name = "noOtroAlumnoPadreRadioButton";
+            this.noOtroAlumnoPadreRadioButton.TabStop = true;
+            this.noOtroAlumnoPadreRadioButton.UseVisualStyleBackColor = true;
+            // 
+            // siOtroAlumnoPadreRadioButton
+            // 
+            resources.ApplyResources(this.siOtroAlumnoPadreRadioButton, "siOtroAlumnoPadreRadioButton");
+            this.siOtroAlumnoPadreRadioButton.Name = "siOtroAlumnoPadreRadioButton";
+            this.siOtroAlumnoPadreRadioButton.TabStop = true;
+            this.siOtroAlumnoPadreRadioButton.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.Name = "label2";
+            // 
+            // informacionMedicaAlumnoLabel
+            // 
+            resources.ApplyResources(this.informacionMedicaAlumnoLabel, "informacionMedicaAlumnoLabel");
+            this.informacionMedicaAlumnoLabel.Name = "informacionMedicaAlumnoLabel";
+            // 
+            // servicioMedicoAlumnoLabel
+            // 
+            resources.ApplyResources(this.servicioMedicoAlumnoLabel, "servicioMedicoAlumnoLabel");
+            this.servicioMedicoAlumnoLabel.Name = "servicioMedicoAlumnoLabel";
+            // 
+            // grupoSanguineoAlumnoLabel
+            // 
+            resources.ApplyResources(this.grupoSanguineoAlumnoLabel, "grupoSanguineoAlumnoLabel");
+            this.grupoSanguineoAlumnoLabel.Name = "grupoSanguineoAlumnoLabel";
+            // 
+            // enfermedaresAlumnoLabel
+            // 
+            resources.ApplyResources(this.enfermedaresAlumnoLabel, "enfermedaresAlumnoLabel");
+            this.enfermedaresAlumnoLabel.Name = "enfermedaresAlumnoLabel";
+            // 
+            // alergiasAlumnoLabel
+            // 
+            resources.ApplyResources(this.alergiasAlumnoLabel, "alergiasAlumnoLabel");
+            this.alergiasAlumnoLabel.Name = "alergiasAlumnoLabel";
+            // 
+            // telefonoContactoMedicoAlumnoLabel
+            // 
+            resources.ApplyResources(this.telefonoContactoMedicoAlumnoLabel, "telefonoContactoMedicoAlumnoLabel");
+            this.telefonoContactoMedicoAlumnoLabel.Name = "telefonoContactoMedicoAlumnoLabel";
+            // 
+            // documentacionAlumnoLabel
+            // 
+            resources.ApplyResources(this.documentacionAlumnoLabel, "documentacionAlumnoLabel");
+            this.documentacionAlumnoLabel.Name = "documentacionAlumnoLabel";
+            // 
+            // servicioMedicoTextBox
+            // 
+            resources.ApplyResources(this.servicioMedicoTextBox, "servicioMedicoTextBox");
+            this.servicioMedicoTextBox.Name = "servicioMedicoTextBox";
+            // 
+            // enfermedadesAlumnoTextBox
+            // 
+            resources.ApplyResources(this.enfermedadesAlumnoTextBox, "enfermedadesAlumnoTextBox");
+            this.enfermedadesAlumnoTextBox.Name = "enfermedadesAlumnoTextBox";
+            // 
+            // telefonoContactoMedicoAlumnoTextBox
+            // 
+            resources.ApplyResources(this.telefonoContactoMedicoAlumnoTextBox, "telefonoContactoMedicoAlumnoTextBox");
+            this.telefonoContactoMedicoAlumnoTextBox.Name = "telefonoContactoMedicoAlumnoTextBox";
+            // 
+            // alergiasAlumnoTextBox
+            // 
+            resources.ApplyResources(this.alergiasAlumnoTextBox, "alergiasAlumnoTextBox");
+            this.alergiasAlumnoTextBox.Name = "alergiasAlumnoTextBox";
+            // 
+            // grupoSanguineoTextBox
+            // 
+            resources.ApplyResources(this.grupoSanguineoTextBox, "grupoSanguineoTextBox");
+            this.grupoSanguineoTextBox.Name = "grupoSanguineoTextBox";
+            // 
+            // documentacionListBox
+            // 
+            this.documentacionListBox.FormattingEnabled = true;
+            this.documentacionListBox.Items.AddRange(new object[] {
+            resources.GetString("documentacionListBox.Items"),
+            resources.GetString("documentacionListBox.Items1"),
+            resources.GetString("documentacionListBox.Items2"),
+            resources.GetString("documentacionListBox.Items3"),
+            resources.GetString("documentacionListBox.Items4"),
+            resources.GetString("documentacionListBox.Items5")});
+            resources.ApplyResources(this.documentacionListBox, "documentacionListBox");
+            this.documentacionListBox.Name = "documentacionListBox";
+            // 
+            // atendidoPorLabel
+            // 
+            resources.ApplyResources(this.atendidoPorLabel, "atendidoPorLabel");
+            this.atendidoPorLabel.Name = "atendidoPorLabel";
+            // 
+            // atendidoPorComboBox
+            // 
+            this.atendidoPorComboBox.FormattingEnabled = true;
+            resources.ApplyResources(this.atendidoPorComboBox, "atendidoPorComboBox");
+            this.atendidoPorComboBox.Name = "atendidoPorComboBox";
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem1,
+            this.docentesToolStripMenuItem});
+            resources.ApplyResources(this.menuStrip1, "menuStrip1");
+            this.menuStrip1.Name = "menuStrip1";
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aLTASToolStripMenuItem,
+            this.cONSULTASToolStripMenuItem,
+            this.mODIFICACIONESToolStripMenuItem});
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            resources.ApplyResources(this.toolStripMenuItem1, "toolStripMenuItem1");
+            // 
+            // aLTASToolStripMenuItem
+            // 
+            this.aLTASToolStripMenuItem.Name = "aLTASToolStripMenuItem";
+            resources.ApplyResources(this.aLTASToolStripMenuItem, "aLTASToolStripMenuItem");
+            // 
+            // cONSULTASToolStripMenuItem
+            // 
+            this.cONSULTASToolStripMenuItem.Name = "cONSULTASToolStripMenuItem";
+            resources.ApplyResources(this.cONSULTASToolStripMenuItem, "cONSULTASToolStripMenuItem");
+            // 
+            // mODIFICACIONESToolStripMenuItem
+            // 
+            this.mODIFICACIONESToolStripMenuItem.Name = "mODIFICACIONESToolStripMenuItem";
+            resources.ApplyResources(this.mODIFICACIONESToolStripMenuItem, "mODIFICACIONESToolStripMenuItem");
+            // 
+            // docentesToolStripMenuItem
+            // 
+            this.docentesToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.docentesToolStripMenuItem.Name = "docentesToolStripMenuItem";
+            resources.ApplyResources(this.docentesToolStripMenuItem, "docentesToolStripMenuItem");
             // 
             // altaAlumno
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1924, 1055);
-            this.Controls.Add(this.lugarTrabajoPadreTextBox);
+            this.Controls.Add(this.fechaElaboracionLabel);
+            this.Controls.Add(this.atendidoPorComboBox);
+            this.Controls.Add(this.atendidoPorLabel);
+            this.Controls.Add(this.documentacionListBox);
+            this.Controls.Add(this.alergiasAlumnoTextBox);
+            this.Controls.Add(this.grupoSanguineoTextBox);
+            this.Controls.Add(this.telefonoContactoMedicoAlumnoTextBox);
+            this.Controls.Add(this.enfermedadesAlumnoTextBox);
+            this.Controls.Add(this.servicioMedicoTextBox);
+            this.Controls.Add(this.documentacionAlumnoLabel);
+            this.Controls.Add(this.telefonoContactoMedicoAlumnoLabel);
+            this.Controls.Add(this.alergiasAlumnoLabel);
+            this.Controls.Add(this.enfermedaresAlumnoLabel);
+            this.Controls.Add(this.grupoSanguineoAlumnoLabel);
+            this.Controls.Add(this.servicioMedicoAlumnoLabel);
+            this.Controls.Add(this.informacionMedicaAlumnoLabel);
+            this.Controls.Add(this.otroAlumnoPadreGroupBox);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.otroAlumnoMadreGroupBox);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.coloniaTrabajoPadreTextBox);
+            this.Controls.Add(this.numeroTrabajoPadreTextBox);
+            this.Controls.Add(this.coloniaTrabajoPadreLabel);
+            this.Controls.Add(this.numeroTrabajoPadreLabel);
+            this.Controls.Add(this.calleTrabajoPadreLabel);
+            this.Controls.Add(this.coloniaTrabajoMadreTextBox);
+            this.Controls.Add(this.numeroTrabajoMadreTextBox);
+            this.Controls.Add(this.coloniaTrabajoMadreLabel);
+            this.Controls.Add(this.numeroTrabajoMadreLabel);
+            this.Controls.Add(this.calleTrabajoMadreLabel);
+            this.Controls.Add(this.coloniaDireccionPadreTextBox);
+            this.Controls.Add(this.numeroDireccionPadreTextBox);
+            this.Controls.Add(this.calleDireccionPadreTextBox);
+            this.Controls.Add(this.coloniaDireccionMadreTextBox);
+            this.Controls.Add(this.numeroDireccionMadreTextBox);
+            this.Controls.Add(this.calleDireccionMadreTextBox);
+            this.Controls.Add(this.coloniaDireccionPadreLabel);
+            this.Controls.Add(this.numeroDireccionPadreLabel);
+            this.Controls.Add(this.calleDireccionPadreLabel);
+            this.Controls.Add(this.coloniaDireccionMadreLabel);
+            this.Controls.Add(this.numeroDireccionMadreLabel);
+            this.Controls.Add(this.calleDireccionMadreLabel);
+            this.Controls.Add(this.apellidoMaternoPadreTextBox);
+            this.Controls.Add(this.apellidoPaternoPadreTextBox);
+            this.Controls.Add(this.apellidoMaternoPadreLabel);
+            this.Controls.Add(this.apellidoPaternoPadreLabel);
+            this.Controls.Add(this.apellidoMaternoMadreTextBox);
+            this.Controls.Add(this.apellidoPaternoMadreTextBox);
+            this.Controls.Add(this.apellidoMaternoMadreLabel);
+            this.Controls.Add(this.apellidoPaternoMadreLabel);
+            this.Controls.Add(this.coloniaDireccionAlumnoTextBox);
+            this.Controls.Add(this.numeroDireccionAlumnoTextBox);
+            this.Controls.Add(this.calleDireccionAlumnoTextBox);
+            this.Controls.Add(this.estadoNacimientoAlumnoTextBox);
+            this.Controls.Add(this.ciudadNacimientoAlumnoTextBox);
+            this.Controls.Add(this.apellidoMaternoAlumnoTextBox);
+            this.Controls.Add(this.apellidoPaternoAlumnoTextBox);
+            this.Controls.Add(this.coloniaDireccionAlumnoLabel);
+            this.Controls.Add(this.numeroDireccionAlumnoLabel);
+            this.Controls.Add(this.calleDireccionAlumnoLabel);
+            this.Controls.Add(this.apellidoMaternoAlumnoLabel);
+            this.Controls.Add(this.apellidoPaternoAlumnoLabel);
+            this.Controls.Add(this.estadoNacimientoAlumnoLabel);
+            this.Controls.Add(this.ciudadNacimientoAlumnoLabel);
+            this.Controls.Add(this.calleTrabajoPadreTextBox);
             this.Controls.Add(this.lugarTrabajoPadreLabel);
-            this.Controls.Add(this.lugarTrabajoMadreTextBox);
+            this.Controls.Add(this.calleTrabajoMadreTextBox);
             this.Controls.Add(this.lugarTrabajoMadreLabel);
             this.Controls.Add(this.responablesAlumnoLabel);
             this.Controls.Add(this.padreCheckBox);
@@ -625,10 +949,8 @@ namespace presentationLayer
             this.Controls.Add(this.telefonoCelularMadreLabel);
             this.Controls.Add(this.telefonoCasaMadreLabel);
             this.Controls.Add(this.ocupacionPadreTextBox);
-            this.Controls.Add(this.domicilioPadreTextBox);
             this.Controls.Add(this.nombrePadreTextBox);
             this.Controls.Add(this.ocupacionMadreTextBox);
-            this.Controls.Add(this.domicilioMadreTextBox);
             this.Controls.Add(this.nombreMadreTextBox);
             this.Controls.Add(this.telefonosPadreLabel);
             this.Controls.Add(this.ocupacionPadreLabel);
@@ -646,8 +968,6 @@ namespace presentationLayer
             this.Controls.Add(this.escuelaProcedenciaTextBox);
             this.Controls.Add(this.discapacidadTextBox);
             this.Controls.Add(this.telefonoPersonalTextBox);
-            this.Controls.Add(this.direccionTextBox);
-            this.Controls.Add(this.lugarNacimientoTextBox);
             this.Controls.Add(this.fechaElaboracionDateTimePicker);
             this.Controls.Add(this.nombreAlumnoTextBox);
             this.Controls.Add(this.tipoIngresoGroupBox);
@@ -662,13 +982,18 @@ namespace presentationLayer
             this.Controls.Add(this.LugarNacimientoLabel);
             this.Controls.Add(this.fechaNacimientoLabel);
             this.Controls.Add(this.nombreAlumnoLabel);
-            this.Controls.Add(this.fechaElaboracionLabel);
             this.Controls.Add(this.realizarAltaButton);
+            this.Controls.Add(this.menuStrip1);
             this.Name = "altaAlumno";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Alta Alumno";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.tipoIngresoGroupBox.ResumeLayout(false);
             this.tipoIngresoGroupBox.PerformLayout();
+            this.otroAlumnoMadreGroupBox.ResumeLayout(false);
+            this.otroAlumnoMadreGroupBox.PerformLayout();
+            this.otroAlumnoPadreGroupBox.ResumeLayout(false);
+            this.otroAlumnoPadreGroupBox.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -694,8 +1019,6 @@ namespace presentationLayer
         private System.Windows.Forms.RadioButton nuevoIngresoRadioButton;
         private System.Windows.Forms.TextBox nombreAlumnoTextBox;
         private System.Windows.Forms.DateTimePicker fechaElaboracionDateTimePicker;
-        private System.Windows.Forms.TextBox lugarNacimientoTextBox;
-        private System.Windows.Forms.TextBox direccionTextBox;
         private System.Windows.Forms.TextBox telefonoPersonalTextBox;
         private System.Windows.Forms.TextBox discapacidadTextBox;
         private System.Windows.Forms.TextBox escuelaProcedenciaTextBox;
@@ -713,10 +1036,8 @@ namespace presentationLayer
         private System.Windows.Forms.Label ocupacionPadreLabel;
         private System.Windows.Forms.Label telefonosPadreLabel;
         private System.Windows.Forms.TextBox nombreMadreTextBox;
-        private System.Windows.Forms.TextBox domicilioMadreTextBox;
         private System.Windows.Forms.TextBox ocupacionMadreTextBox;
         private System.Windows.Forms.TextBox nombrePadreTextBox;
-        private System.Windows.Forms.TextBox domicilioPadreTextBox;
         private System.Windows.Forms.TextBox ocupacionPadreTextBox;
         private System.Windows.Forms.Label telefonoCasaMadreLabel;
         private System.Windows.Forms.Label telefonoCelularMadreLabel;
@@ -734,9 +1055,82 @@ namespace presentationLayer
         private System.Windows.Forms.CheckBox padreCheckBox;
         private System.Windows.Forms.Label responablesAlumnoLabel;
         private System.Windows.Forms.Label lugarTrabajoMadreLabel;
-        private System.Windows.Forms.TextBox lugarTrabajoMadreTextBox;
-        private System.Windows.Forms.TextBox lugarTrabajoPadreTextBox;
+        private System.Windows.Forms.TextBox calleTrabajoMadreTextBox;
+        private System.Windows.Forms.TextBox calleTrabajoPadreTextBox;
         private System.Windows.Forms.Label lugarTrabajoPadreLabel;
+        private System.Windows.Forms.Label ciudadNacimientoAlumnoLabel;
+        private System.Windows.Forms.Label estadoNacimientoAlumnoLabel;
+        private System.Windows.Forms.Label apellidoPaternoAlumnoLabel;
+        private System.Windows.Forms.Label apellidoMaternoAlumnoLabel;
+        private System.Windows.Forms.Label calleDireccionAlumnoLabel;
+        private System.Windows.Forms.Label numeroDireccionAlumnoLabel;
+        private System.Windows.Forms.Label coloniaDireccionAlumnoLabel;
+        private System.Windows.Forms.TextBox apellidoPaternoAlumnoTextBox;
+        private System.Windows.Forms.TextBox apellidoMaternoAlumnoTextBox;
+        private System.Windows.Forms.TextBox ciudadNacimientoAlumnoTextBox;
+        private System.Windows.Forms.TextBox estadoNacimientoAlumnoTextBox;
+        private System.Windows.Forms.TextBox calleDireccionAlumnoTextBox;
+        private System.Windows.Forms.TextBox numeroDireccionAlumnoTextBox;
+        private System.Windows.Forms.TextBox coloniaDireccionAlumnoTextBox;
+        private System.Windows.Forms.Label apellidoPaternoMadreLabel;
+        private System.Windows.Forms.Label apellidoMaternoMadreLabel;
+        private System.Windows.Forms.TextBox apellidoPaternoMadreTextBox;
+        private System.Windows.Forms.TextBox apellidoMaternoMadreTextBox;
+        private System.Windows.Forms.Label apellidoPaternoPadreLabel;
+        private System.Windows.Forms.Label apellidoMaternoPadreLabel;
+        private System.Windows.Forms.TextBox apellidoPaternoPadreTextBox;
+        private System.Windows.Forms.TextBox apellidoMaternoPadreTextBox;
+        private System.Windows.Forms.Label calleDireccionMadreLabel;
+        private System.Windows.Forms.Label numeroDireccionMadreLabel;
+        private System.Windows.Forms.Label coloniaDireccionMadreLabel;
+        private System.Windows.Forms.Label calleDireccionPadreLabel;
+        private System.Windows.Forms.Label numeroDireccionPadreLabel;
+        private System.Windows.Forms.Label coloniaDireccionPadreLabel;
+        private System.Windows.Forms.TextBox calleDireccionMadreTextBox;
+        private System.Windows.Forms.TextBox numeroDireccionMadreTextBox;
+        private System.Windows.Forms.TextBox coloniaDireccionMadreTextBox;
+        private System.Windows.Forms.TextBox calleDireccionPadreTextBox;
+        private System.Windows.Forms.TextBox numeroDireccionPadreTextBox;
+        private System.Windows.Forms.TextBox coloniaDireccionPadreTextBox;
+        private System.Windows.Forms.Label calleTrabajoMadreLabel;
+        private System.Windows.Forms.Label numeroTrabajoMadreLabel;
+        private System.Windows.Forms.Label coloniaTrabajoMadreLabel;
+        private System.Windows.Forms.TextBox numeroTrabajoMadreTextBox;
+        private System.Windows.Forms.TextBox coloniaTrabajoMadreTextBox;
+        private System.Windows.Forms.Label calleTrabajoPadreLabel;
+        private System.Windows.Forms.Label numeroTrabajoPadreLabel;
+        private System.Windows.Forms.Label coloniaTrabajoPadreLabel;
+        private System.Windows.Forms.TextBox numeroTrabajoPadreTextBox;
+        private System.Windows.Forms.TextBox coloniaTrabajoPadreTextBox;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.GroupBox otroAlumnoMadreGroupBox;
+        private System.Windows.Forms.RadioButton noOtroAlumnoMadreRadioButton;
+        private System.Windows.Forms.RadioButton siOtroAlumnoMadreRadioButton;
+        private System.Windows.Forms.GroupBox otroAlumnoPadreGroupBox;
+        private System.Windows.Forms.RadioButton noOtroAlumnoPadreRadioButton;
+        private System.Windows.Forms.RadioButton siOtroAlumnoPadreRadioButton;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label informacionMedicaAlumnoLabel;
+        private System.Windows.Forms.Label servicioMedicoAlumnoLabel;
+        private System.Windows.Forms.Label grupoSanguineoAlumnoLabel;
+        private System.Windows.Forms.Label enfermedaresAlumnoLabel;
+        private System.Windows.Forms.Label alergiasAlumnoLabel;
+        private System.Windows.Forms.Label telefonoContactoMedicoAlumnoLabel;
+        private System.Windows.Forms.Label documentacionAlumnoLabel;
+        private System.Windows.Forms.TextBox servicioMedicoTextBox;
+        private System.Windows.Forms.TextBox enfermedadesAlumnoTextBox;
+        private System.Windows.Forms.TextBox telefonoContactoMedicoAlumnoTextBox;
+        private System.Windows.Forms.TextBox alergiasAlumnoTextBox;
+        private System.Windows.Forms.TextBox grupoSanguineoTextBox;
+        private System.Windows.Forms.CheckedListBox documentacionListBox;
+        private System.Windows.Forms.Label atendidoPorLabel;
+        private System.Windows.Forms.ComboBox atendidoPorComboBox;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem aLTASToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cONSULTASToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mODIFICACIONESToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem docentesToolStripMenuItem;
     }
 }
 
