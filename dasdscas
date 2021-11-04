@@ -1,0 +1,73 @@
+[33mcommit ceb052cb598e2a78300e923c0f1b903b8cb092c7[m[33m ([m[1;36mHEAD -> [m[1;32mclaudia[m[33m, [m[1;31morigin/claudia[m[33m)[m
+Author: MartinCuevas68 <martin.cuevas@uabc.edu.mx>
+Date:   Mon Nov 1 18:04:47 2021 -0700
+
+    x
+    
+    x
+
+[33mcommit 13848ec94c1cc5c19b4970e4bb5dff2e95843d20[m
+Author: ClaudiaArias01 <78814719+ClaudiaArias01@users.noreply.github.com>
+Date:   Mon Nov 1 12:45:41 2021 -0700
+
+    alta
+
+[33mcommit a1b725ce0c1b21d9dcea1f3d387945b9cee74792[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Merge: 718af02 f6cb6dc
+Author: MartinCuevas68 <martin.cuevas@uabc.edu.mx>
+Date:   Mon Oct 25 19:13:25 2021 -0700
+
+    Merge remote-tracking branch 'upstream/main'
+
+[33mcommit 467129bfbd15b4cfa2f8bcd41935e059192b4c5b[m
+Author: fernyx856 <fernando.lugo@uabc.edu.mx>
+Date:   Mon Oct 25 14:27:22 2021 -0600
+
+    Creacion de las referencias, entity framework y la coneccion con la base de datos
+    
+    El titulo lo dice xd
+
+[33mcommit 78deb7d8e4693f36cef35890803808781b137372[m
+Author: fernyx856 <fernando.lugo@uabc.edu.mx>
+Date:   Mon Oct 25 14:12:13 2021 -0600
+
+    Cambios al DTO
+    
+    Se agrego maestro
+
+[33mcommit 20ef733a6b581f31b29176f31398f43677922fbe[m
+Author: Alexis ortega <ortega.alexis@uabc.edu.mx>
+Date:   Mon Oct 25 12:59:50 2021 -0700
+
+    prueba
+    
+    hola
+
+[33mcommit 9ab44dbdaf5d7fa477bfde46107013b7ac309e37[m
+Author: fernyx856 <fernando.lugo@uabc.edu.mx>
+Date:   Mon Oct 25 13:25:11 2021 -0600
+
+    Modificacion base de datos en visual
+    
+    Creacion de la tabla de prueba y agregarla en visual studio
+
+[33mcommit da5ccd41da6f515bb9aafc642db9a17e3faf3f2a[m
+Author: EdderEscarrega <edder.peralta@uabc.edu.mx>
+Date:   Sun Oct 24 12:49:40 2021 -0600
+
+    sesion terminada
+
+[33mcommit 08ce62b357115f52cc5242856f786404e83e9720[m
+Author: EdderEscarrega <edder.peralta@uabc.edu.mx>
+Date:   Sun Oct 24 12:07:45 2021 -0600
+
+    Prueba rama edder
+
+[33mcommit ffce98300b0d3a9c9edca58ed54b0be01a4bf616[m
+Merge: 0ed2cce a79b8ef
+Author: Martin Cuevas Tavizon <70080639+MartinCuevas68@users.noreply.github.com>
+Date:   Fri Oct 22 16:35:08 2021 -0700
+
+    Merge pull request #3 from ClaudiaArias01/main
+    
+    Avances equipo diseño #1
