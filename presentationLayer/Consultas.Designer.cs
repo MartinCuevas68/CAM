@@ -169,8 +169,8 @@ namespace presentationLayer
             this.alumnosToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.alumnosToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.alumnosToolStripMenuItem.Name = "alumnosToolStripMenuItem";
-            this.alumnosToolStripMenuItem.Size = new System.Drawing.Size(72, 20);
-            this.alumnosToolStripMenuItem.Text = "Docentes";
+            this.alumnosToolStripMenuItem.Size = new System.Drawing.Size(79, 20);
+            this.alumnosToolStripMenuItem.Text = "DOCENTES";
             this.alumnosToolStripMenuItem.Click += new System.EventHandler(this.alumnosToolStripMenuItem_Click);
             // 
             // alumnosToolStripMenuItem1
@@ -183,8 +183,8 @@ namespace presentationLayer
             this.alumnosToolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.alumnosToolStripMenuItem1.ForeColor = System.Drawing.Color.White;
             this.alumnosToolStripMenuItem1.Name = "alumnosToolStripMenuItem1";
-            this.alumnosToolStripMenuItem1.Size = new System.Drawing.Size(67, 20);
-            this.alumnosToolStripMenuItem1.Text = "Alumnos";
+            this.alumnosToolStripMenuItem1.Size = new System.Drawing.Size(78, 20);
+            this.alumnosToolStripMenuItem1.Text = "ALUMNOS";
             // 
             // aLTASToolStripMenuItem
             // 
