@@ -29,6 +29,7 @@ namespace presentationLayer
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Consultas));
             this.buscarLabel = new System.Windows.Forms.Label();
             this.FiltradocomboBox1 = new System.Windows.Forms.ComboBox();
             this.eliminarButton = new System.Windows.Forms.Button();
@@ -39,7 +40,14 @@ namespace presentationLayer
             this.regresarButton = new System.Windows.Forms.Button();
             this.buscarButton1 = new System.Windows.Forms.Button();
             this.panelConsulta_dataGridView = new System.Windows.Forms.DataGridView();
+            this.menuStrip = new System.Windows.Forms.MenuStrip();
+            this.alumnosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.alumnosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.aLTASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cONSULTASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mODIFICACIONESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.panelConsulta_dataGridView)).BeginInit();
+            this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // buscarLabel
@@ -136,17 +144,75 @@ namespace presentationLayer
             // 
             // panelConsulta_dataGridView
             // 
+            this.panelConsulta_dataGridView.BackgroundColor = System.Drawing.Color.MediumPurple;
             this.panelConsulta_dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.panelConsulta_dataGridView.Location = new System.Drawing.Point(29, 53);
             this.panelConsulta_dataGridView.Name = "panelConsulta_dataGridView";
-            this.panelConsulta_dataGridView.Size = new System.Drawing.Size(738, 285);
+            this.panelConsulta_dataGridView.Size = new System.Drawing.Size(765, 285);
             this.panelConsulta_dataGridView.TabIndex = 10;
+            // 
+            // menuStrip
+            // 
+            this.menuStrip.BackColor = System.Drawing.Color.BlueViolet;
+            this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.alumnosToolStripMenuItem1,
+            this.alumnosToolStripMenuItem});
+            this.menuStrip.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip.Name = "menuStrip";
+            this.menuStrip.Size = new System.Drawing.Size(832, 24);
+            this.menuStrip.TabIndex = 20;
+            this.menuStrip.Text = "menuStrip1";
+            // 
+            // alumnosToolStripMenuItem
+            // 
+            this.alumnosToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.alumnosToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.alumnosToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.alumnosToolStripMenuItem.Name = "alumnosToolStripMenuItem";
+            this.alumnosToolStripMenuItem.Size = new System.Drawing.Size(72, 20);
+            this.alumnosToolStripMenuItem.Text = "Docentes";
+            this.alumnosToolStripMenuItem.Click += new System.EventHandler(this.alumnosToolStripMenuItem_Click);
+            // 
+            // alumnosToolStripMenuItem1
+            // 
+            this.alumnosToolStripMenuItem1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.alumnosToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aLTASToolStripMenuItem,
+            this.cONSULTASToolStripMenuItem,
+            this.mODIFICACIONESToolStripMenuItem});
+            this.alumnosToolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.alumnosToolStripMenuItem1.ForeColor = System.Drawing.Color.White;
+            this.alumnosToolStripMenuItem1.Name = "alumnosToolStripMenuItem1";
+            this.alumnosToolStripMenuItem1.Size = new System.Drawing.Size(67, 20);
+            this.alumnosToolStripMenuItem1.Text = "Alumnos";
+            // 
+            // aLTASToolStripMenuItem
+            // 
+            this.aLTASToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.aLTASToolStripMenuItem.Name = "aLTASToolStripMenuItem";
+            this.aLTASToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aLTASToolStripMenuItem.Text = "ALTAS";
+            // 
+            // cONSULTASToolStripMenuItem
+            // 
+            this.cONSULTASToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cONSULTASToolStripMenuItem.Name = "cONSULTASToolStripMenuItem";
+            this.cONSULTASToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cONSULTASToolStripMenuItem.Text = "CONSULTAS";
+            // 
+            // mODIFICACIONESToolStripMenuItem
+            // 
+            this.mODIFICACIONESToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mODIFICACIONESToolStripMenuItem.Name = "mODIFICACIONESToolStripMenuItem";
+            this.mODIFICACIONESToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.mODIFICACIONESToolStripMenuItem.Text = "MODIFICACIONES";
             // 
             // Consultas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(832, 496);
             this.Controls.Add(this.buscarLabel);
             this.Controls.Add(this.FiltradocomboBox1);
             this.Controls.Add(this.eliminarButton);
@@ -157,10 +223,15 @@ namespace presentationLayer
             this.Controls.Add(this.regresarButton);
             this.Controls.Add(this.buscarButton1);
             this.Controls.Add(this.panelConsulta_dataGridView);
+            this.Controls.Add(this.menuStrip);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MainMenuStrip = this.menuStrip;
             this.Name = "Consultas";
             this.Text = "Consultas";
             this.Load += new System.EventHandler(this.Consultas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.panelConsulta_dataGridView)).EndInit();
+            this.menuStrip.ResumeLayout(false);
+            this.menuStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -178,5 +249,11 @@ namespace presentationLayer
         private System.Windows.Forms.Button regresarButton;
         private System.Windows.Forms.Button buscarButton1;
         private System.Windows.Forms.DataGridView panelConsulta_dataGridView;
+        private System.Windows.Forms.MenuStrip menuStrip;
+        private System.Windows.Forms.ToolStripMenuItem alumnosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem alumnosToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem aLTASToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cONSULTASToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mODIFICACIONESToolStripMenuItem;
     }
 }
