@@ -33,21 +33,27 @@ namespace presentationLayer
             this.buscarLabel = new System.Windows.Forms.Label();
             this.FiltradocomboBox1 = new System.Windows.Forms.ComboBox();
             this.eliminarButton = new System.Windows.Forms.Button();
-            this.imprimirButton = new System.Windows.Forms.Button();
             this.consultaLabel = new System.Windows.Forms.Label();
-            this.buscartextBox = new System.Windows.Forms.TextBox();
             this.filtroLabel = new System.Windows.Forms.Label();
-            this.regresarButton = new System.Windows.Forms.Button();
+            this.ModificarButton = new System.Windows.Forms.Button();
             this.buscarButton1 = new System.Windows.Forms.Button();
             this.panelConsulta_dataGridView = new System.Windows.Forms.DataGridView();
-            this.menuStrip = new System.Windows.Forms.MenuStrip();
-            this.alumnosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.alumnosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.aLTASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cONSULTASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mODIFICACIONESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.NavBarPanel = new System.Windows.Forms.Panel();
+            this.DocentesButton = new System.Windows.Forms.Button();
+            this.AlumnosButton = new System.Windows.Forms.Button();
+            this.AgregarButton = new System.Windows.Forms.Button();
+            this.InferiorPanel = new System.Windows.Forms.Panel();
+            this.ApellidoMaternoTextBox2 = new System.Windows.Forms.TextBox();
+            this.ApellidoMaternoLabel = new System.Windows.Forms.Label();
+            this.ApellidoPaternoTextBox1 = new System.Windows.Forms.TextBox();
+            this.ApellidoPaternoLabel = new System.Windows.Forms.Label();
+            this.NombreLabel = new System.Windows.Forms.Label();
+            this.NombreTextBox = new System.Windows.Forms.TextBox();
+            this.VaciarButton = new System.Windows.Forms.Button();
+            this.ImprimirButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.panelConsulta_dataGridView)).BeginInit();
-            this.menuStrip.SuspendLayout();
+            this.NavBarPanel.SuspendLayout();
+            this.InferiorPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // buscarLabel
@@ -55,11 +61,11 @@ namespace presentationLayer
             this.buscarLabel.AutoSize = true;
             this.buscarLabel.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buscarLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.buscarLabel.Location = new System.Drawing.Point(26, 410);
+            this.buscarLabel.Location = new System.Drawing.Point(50, 418);
             this.buscarLabel.Name = "buscarLabel";
-            this.buscarLabel.Size = new System.Drawing.Size(54, 15);
+            this.buscarLabel.Size = new System.Drawing.Size(84, 15);
             this.buscarLabel.TabIndex = 19;
-            this.buscarLabel.Text = "Buscar:";
+            this.buscarLabel.Text = "BUSQUEDA";
             // 
             // FiltradocomboBox1
             // 
@@ -68,7 +74,7 @@ namespace presentationLayer
             "General",
             "Nombre",
             "Taller"});
-            this.FiltradocomboBox1.Location = new System.Drawing.Point(105, 356);
+            this.FiltradocomboBox1.Location = new System.Drawing.Point(161, 371);
             this.FiltradocomboBox1.Name = "FiltradocomboBox1";
             this.FiltradocomboBox1.Size = new System.Drawing.Size(121, 21);
             this.FiltradocomboBox1.TabIndex = 18;
@@ -76,162 +82,215 @@ namespace presentationLayer
             // eliminarButton
             // 
             this.eliminarButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.eliminarButton.Location = new System.Drawing.Point(638, 392);
+            this.eliminarButton.Location = new System.Drawing.Point(910, 133);
             this.eliminarButton.Name = "eliminarButton";
-            this.eliminarButton.Size = new System.Drawing.Size(55, 33);
+            this.eliminarButton.Size = new System.Drawing.Size(137, 33);
             this.eliminarButton.TabIndex = 17;
-            this.eliminarButton.Text = "Eliminar";
+            this.eliminarButton.Text = "ELIMINAR ALUMNO";
             this.eliminarButton.UseVisualStyleBackColor = true;
-            // 
-            // imprimirButton
-            // 
-            this.imprimirButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.imprimirButton.Location = new System.Drawing.Point(720, 344);
-            this.imprimirButton.Name = "imprimirButton";
-            this.imprimirButton.Size = new System.Drawing.Size(55, 33);
-            this.imprimirButton.TabIndex = 16;
-            this.imprimirButton.Text = "Imprimir";
-            this.imprimirButton.UseVisualStyleBackColor = true;
             // 
             // consultaLabel
             // 
             this.consultaLabel.AutoSize = true;
             this.consultaLabel.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.consultaLabel.Location = new System.Drawing.Point(26, 23);
+            this.consultaLabel.Location = new System.Drawing.Point(24, 35);
             this.consultaLabel.Name = "consultaLabel";
             this.consultaLabel.Size = new System.Drawing.Size(196, 21);
             this.consultaLabel.TabIndex = 15;
             this.consultaLabel.Text = "Consultas de alumnos";
-            // 
-            // buscartextBox
-            // 
-            this.buscartextBox.Location = new System.Drawing.Point(86, 408);
-            this.buscartextBox.Multiline = true;
-            this.buscartextBox.Name = "buscartextBox";
-            this.buscartextBox.Size = new System.Drawing.Size(165, 20);
-            this.buscartextBox.TabIndex = 14;
             // 
             // filtroLabel
             // 
             this.filtroLabel.AutoSize = true;
             this.filtroLabel.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.filtroLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.filtroLabel.Location = new System.Drawing.Point(26, 362);
+            this.filtroLabel.Location = new System.Drawing.Point(25, 371);
             this.filtroLabel.Name = "filtroLabel";
-            this.filtroLabel.Size = new System.Drawing.Size(73, 15);
+            this.filtroLabel.Size = new System.Drawing.Size(113, 15);
             this.filtroLabel.TabIndex = 13;
-            this.filtroLabel.Text = "Filtro por:";
+            this.filtroLabel.Text = "ORDENAR POR:";
             // 
-            // regresarButton
+            // ModificarButton
             // 
-            this.regresarButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.regresarButton.Location = new System.Drawing.Point(720, 392);
-            this.regresarButton.Name = "regresarButton";
-            this.regresarButton.Size = new System.Drawing.Size(55, 33);
-            this.regresarButton.TabIndex = 12;
-            this.regresarButton.Text = "Regresar";
-            this.regresarButton.UseVisualStyleBackColor = true;
+            this.ModificarButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ModificarButton.Location = new System.Drawing.Point(799, 133);
+            this.ModificarButton.Name = "ModificarButton";
+            this.ModificarButton.Size = new System.Drawing.Size(105, 33);
+            this.ModificarButton.TabIndex = 12;
+            this.ModificarButton.Text = "MODIFICAR";
+            this.ModificarButton.UseVisualStyleBackColor = true;
             // 
             // buscarButton1
             // 
             this.buscarButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.buscarButton1.Location = new System.Drawing.Point(638, 344);
+            this.buscarButton1.Location = new System.Drawing.Point(591, 133);
             this.buscarButton1.Name = "buscarButton1";
-            this.buscarButton1.Size = new System.Drawing.Size(55, 33);
+            this.buscarButton1.Size = new System.Drawing.Size(67, 33);
             this.buscarButton1.TabIndex = 11;
-            this.buscarButton1.Text = "Buscar";
+            this.buscarButton1.Text = "BUSCAR";
             this.buscarButton1.UseVisualStyleBackColor = true;
             // 
             // panelConsulta_dataGridView
             // 
             this.panelConsulta_dataGridView.BackgroundColor = System.Drawing.Color.MediumPurple;
             this.panelConsulta_dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.panelConsulta_dataGridView.Location = new System.Drawing.Point(29, 53);
+            this.panelConsulta_dataGridView.Location = new System.Drawing.Point(28, 74);
             this.panelConsulta_dataGridView.Name = "panelConsulta_dataGridView";
-            this.panelConsulta_dataGridView.Size = new System.Drawing.Size(765, 285);
+            this.panelConsulta_dataGridView.Size = new System.Drawing.Size(1058, 285);
             this.panelConsulta_dataGridView.TabIndex = 10;
             // 
-            // menuStrip
+            // NavBarPanel
             // 
-            this.menuStrip.BackColor = System.Drawing.Color.BlueViolet;
-            this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.alumnosToolStripMenuItem1,
-            this.alumnosToolStripMenuItem});
-            this.menuStrip.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(832, 24);
-            this.menuStrip.TabIndex = 20;
-            this.menuStrip.Text = "menuStrip1";
+            this.NavBarPanel.BackColor = System.Drawing.Color.BlueViolet;
+            this.NavBarPanel.Controls.Add(this.DocentesButton);
+            this.NavBarPanel.Controls.Add(this.AlumnosButton);
+            this.NavBarPanel.Location = new System.Drawing.Point(-19, 0);
+            this.NavBarPanel.Name = "NavBarPanel";
+            this.NavBarPanel.Size = new System.Drawing.Size(1121, 32);
+            this.NavBarPanel.TabIndex = 20;
             // 
-            // alumnosToolStripMenuItem
+            // DocentesButton
             // 
-            this.alumnosToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.alumnosToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.alumnosToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.alumnosToolStripMenuItem.Name = "alumnosToolStripMenuItem";
-            this.alumnosToolStripMenuItem.Size = new System.Drawing.Size(79, 20);
-            this.alumnosToolStripMenuItem.Text = "DOCENTES";
-            this.alumnosToolStripMenuItem.Click += new System.EventHandler(this.alumnosToolStripMenuItem_Click);
+            this.DocentesButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DocentesButton.Location = new System.Drawing.Point(1030, 6);
+            this.DocentesButton.Name = "DocentesButton";
+            this.DocentesButton.Size = new System.Drawing.Size(75, 23);
+            this.DocentesButton.TabIndex = 22;
+            this.DocentesButton.Text = "DOCENTES";
+            this.DocentesButton.UseVisualStyleBackColor = true;
             // 
-            // alumnosToolStripMenuItem1
+            // AlumnosButton
             // 
-            this.alumnosToolStripMenuItem1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.alumnosToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aLTASToolStripMenuItem,
-            this.cONSULTASToolStripMenuItem,
-            this.mODIFICACIONESToolStripMenuItem});
-            this.alumnosToolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.alumnosToolStripMenuItem1.ForeColor = System.Drawing.Color.White;
-            this.alumnosToolStripMenuItem1.Name = "alumnosToolStripMenuItem1";
-            this.alumnosToolStripMenuItem1.Size = new System.Drawing.Size(78, 20);
-            this.alumnosToolStripMenuItem1.Text = "ALUMNOS";
+            this.AlumnosButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AlumnosButton.Location = new System.Drawing.Point(948, 6);
+            this.AlumnosButton.Name = "AlumnosButton";
+            this.AlumnosButton.Size = new System.Drawing.Size(75, 23);
+            this.AlumnosButton.TabIndex = 21;
+            this.AlumnosButton.Text = "ALUMNOS";
+            this.AlumnosButton.UseVisualStyleBackColor = true;
             // 
-            // aLTASToolStripMenuItem
+            // AgregarButton
             // 
-            this.aLTASToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.aLTASToolStripMenuItem.Name = "aLTASToolStripMenuItem";
-            this.aLTASToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.aLTASToolStripMenuItem.Text = "ALTAS";
+            this.AgregarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AgregarButton.Location = new System.Drawing.Point(857, 45);
+            this.AgregarButton.Name = "AgregarButton";
+            this.AgregarButton.Size = new System.Drawing.Size(75, 23);
+            this.AgregarButton.TabIndex = 21;
+            this.AgregarButton.Text = "AGREGAR";
+            this.AgregarButton.UseVisualStyleBackColor = true;
             // 
-            // cONSULTASToolStripMenuItem
+            // InferiorPanel
             // 
-            this.cONSULTASToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cONSULTASToolStripMenuItem.Name = "cONSULTASToolStripMenuItem";
-            this.cONSULTASToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.cONSULTASToolStripMenuItem.Text = "CONSULTAS";
+            this.InferiorPanel.BackColor = System.Drawing.Color.Silver;
+            this.InferiorPanel.Controls.Add(this.VaciarButton);
+            this.InferiorPanel.Controls.Add(this.ApellidoMaternoTextBox2);
+            this.InferiorPanel.Controls.Add(this.ApellidoMaternoLabel);
+            this.InferiorPanel.Controls.Add(this.ApellidoPaternoTextBox1);
+            this.InferiorPanel.Controls.Add(this.ApellidoPaternoLabel);
+            this.InferiorPanel.Controls.Add(this.NombreLabel);
+            this.InferiorPanel.Controls.Add(this.NombreTextBox);
+            this.InferiorPanel.Controls.Add(this.buscarButton1);
+            this.InferiorPanel.Controls.Add(this.eliminarButton);
+            this.InferiorPanel.Controls.Add(this.ModificarButton);
+            this.InferiorPanel.Location = new System.Drawing.Point(28, 425);
+            this.InferiorPanel.Name = "InferiorPanel";
+            this.InferiorPanel.Size = new System.Drawing.Size(1058, 169);
+            this.InferiorPanel.TabIndex = 22;
             // 
-            // mODIFICACIONESToolStripMenuItem
+            // ApellidoMaternoTextBox2
             // 
-            this.mODIFICACIONESToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mODIFICACIONESToolStripMenuItem.Name = "mODIFICACIONESToolStripMenuItem";
-            this.mODIFICACIONESToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.mODIFICACIONESToolStripMenuItem.Text = "MODIFICACIONES";
+            this.ApellidoMaternoTextBox2.Location = new System.Drawing.Point(728, 79);
+            this.ApellidoMaternoTextBox2.Multiline = true;
+            this.ApellidoMaternoTextBox2.Name = "ApellidoMaternoTextBox2";
+            this.ApellidoMaternoTextBox2.Size = new System.Drawing.Size(165, 20);
+            this.ApellidoMaternoTextBox2.TabIndex = 23;
+            // 
+            // ApellidoMaternoLabel
+            // 
+            this.ApellidoMaternoLabel.AutoSize = true;
+            this.ApellidoMaternoLabel.Location = new System.Drawing.Point(593, 82);
+            this.ApellidoMaternoLabel.Name = "ApellidoMaternoLabel";
+            this.ApellidoMaternoLabel.Size = new System.Drawing.Size(119, 13);
+            this.ApellidoMaternoLabel.TabIndex = 22;
+            this.ApellidoMaternoLabel.Text = "APELLIDO MATERNO:";
+            // 
+            // ApellidoPaternoTextBox1
+            // 
+            this.ApellidoPaternoTextBox1.Location = new System.Drawing.Point(411, 79);
+            this.ApellidoPaternoTextBox1.Multiline = true;
+            this.ApellidoPaternoTextBox1.Name = "ApellidoPaternoTextBox1";
+            this.ApellidoPaternoTextBox1.Size = new System.Drawing.Size(165, 20);
+            this.ApellidoPaternoTextBox1.TabIndex = 21;
+            // 
+            // ApellidoPaternoLabel
+            // 
+            this.ApellidoPaternoLabel.AutoSize = true;
+            this.ApellidoPaternoLabel.Location = new System.Drawing.Point(278, 82);
+            this.ApellidoPaternoLabel.Name = "ApellidoPaternoLabel";
+            this.ApellidoPaternoLabel.Size = new System.Drawing.Size(117, 13);
+            this.ApellidoPaternoLabel.TabIndex = 20;
+            this.ApellidoPaternoLabel.Text = "APELLIDO PATERNO:";
+            // 
+            // NombreLabel
+            // 
+            this.NombreLabel.AutoSize = true;
+            this.NombreLabel.Location = new System.Drawing.Point(22, 82);
+            this.NombreLabel.Name = "NombreLabel";
+            this.NombreLabel.Size = new System.Drawing.Size(69, 13);
+            this.NombreLabel.TabIndex = 19;
+            this.NombreLabel.Text = "NOMBRE/S:";
+            // 
+            // NombreTextBox
+            // 
+            this.NombreTextBox.Location = new System.Drawing.Point(94, 79);
+            this.NombreTextBox.Multiline = true;
+            this.NombreTextBox.Name = "NombreTextBox";
+            this.NombreTextBox.Size = new System.Drawing.Size(165, 20);
+            this.NombreTextBox.TabIndex = 18;
+            // 
+            // VaciarButton
+            // 
+            this.VaciarButton.Location = new System.Drawing.Point(664, 133);
+            this.VaciarButton.Name = "VaciarButton";
+            this.VaciarButton.Size = new System.Drawing.Size(80, 33);
+            this.VaciarButton.TabIndex = 24;
+            this.VaciarButton.Text = "VACIAR";
+            this.VaciarButton.UseVisualStyleBackColor = true;
+            // 
+            // ImprimirButton
+            // 
+            this.ImprimirButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ImprimirButton.Location = new System.Drawing.Point(938, 45);
+            this.ImprimirButton.Name = "ImprimirButton";
+            this.ImprimirButton.Size = new System.Drawing.Size(75, 23);
+            this.ImprimirButton.TabIndex = 25;
+            this.ImprimirButton.Text = "IMPRIMIR";
+            this.ImprimirButton.UseVisualStyleBackColor = true;
             // 
             // Consultas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(832, 496);
+            this.ClientSize = new System.Drawing.Size(1098, 606);
+            this.Controls.Add(this.ImprimirButton);
             this.Controls.Add(this.buscarLabel);
+            this.Controls.Add(this.InferiorPanel);
+            this.Controls.Add(this.AgregarButton);
+            this.Controls.Add(this.NavBarPanel);
             this.Controls.Add(this.FiltradocomboBox1);
-            this.Controls.Add(this.eliminarButton);
-            this.Controls.Add(this.imprimirButton);
             this.Controls.Add(this.consultaLabel);
-            this.Controls.Add(this.buscartextBox);
             this.Controls.Add(this.filtroLabel);
-            this.Controls.Add(this.regresarButton);
-            this.Controls.Add(this.buscarButton1);
             this.Controls.Add(this.panelConsulta_dataGridView);
-            this.Controls.Add(this.menuStrip);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MainMenuStrip = this.menuStrip;
             this.Name = "Consultas";
             this.Text = "Consultas";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Consultas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.panelConsulta_dataGridView)).EndInit();
-            this.menuStrip.ResumeLayout(false);
-            this.menuStrip.PerformLayout();
+            this.NavBarPanel.ResumeLayout(false);
+            this.InferiorPanel.ResumeLayout(false);
+            this.InferiorPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -242,18 +301,23 @@ namespace presentationLayer
         private System.Windows.Forms.Label buscarLabel;
         private System.Windows.Forms.ComboBox FiltradocomboBox1;
         private System.Windows.Forms.Button eliminarButton;
-        private System.Windows.Forms.Button imprimirButton;
         private System.Windows.Forms.Label consultaLabel;
-        private System.Windows.Forms.TextBox buscartextBox;
         private System.Windows.Forms.Label filtroLabel;
-        private System.Windows.Forms.Button regresarButton;
+        private System.Windows.Forms.Button ModificarButton;
         private System.Windows.Forms.Button buscarButton1;
         private System.Windows.Forms.DataGridView panelConsulta_dataGridView;
-        private System.Windows.Forms.MenuStrip menuStrip;
-        private System.Windows.Forms.ToolStripMenuItem alumnosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem alumnosToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem aLTASToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cONSULTASToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem mODIFICACIONESToolStripMenuItem;
+        private System.Windows.Forms.Panel NavBarPanel;
+        private System.Windows.Forms.Button DocentesButton;
+        private System.Windows.Forms.Button AlumnosButton;
+        private System.Windows.Forms.Button AgregarButton;
+        private System.Windows.Forms.Panel InferiorPanel;
+        private System.Windows.Forms.Button VaciarButton;
+        private System.Windows.Forms.TextBox ApellidoMaternoTextBox2;
+        private System.Windows.Forms.Label ApellidoMaternoLabel;
+        private System.Windows.Forms.TextBox ApellidoPaternoTextBox1;
+        private System.Windows.Forms.Label ApellidoPaternoLabel;
+        private System.Windows.Forms.Label NombreLabel;
+        private System.Windows.Forms.TextBox NombreTextBox;
+        private System.Windows.Forms.Button ImprimirButton;
     }
 }
