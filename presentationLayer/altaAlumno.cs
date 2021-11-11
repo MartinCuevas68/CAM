@@ -14,14 +14,52 @@ namespace presentationLayer
     {
         public altaAlumno()
         {
-            int distanciaLabel = 70;
-            int distanciaLabelDerecha = 220;
-            int distanciaTextBox = 66;
-            int distanciaTextBoxDerecha = 216;
+            int distanciaLabel = 40;
+            //int distanciaLabelDerecha = 220;
+            int distanciaTextBox = 36;
+            int distanciaGroupBox = 1000;
+            //int distanciaTextBoxDerecha = 216;
 
             InitializeComponent();
 
+            Claudia.altasGroupBox(informacionGeneralAlumnoGroupBox);
+            Claudia.altasGroupBox2(informacionEscolarGroupBox);
 
+            distanciaLabel = Claudia.altasLabel(fechaElaboracionLabel, distanciaLabel);
+            distanciaTextBox = Claudia.altasDateTimePicker(fechaElaboracionDateTimePicker, distanciaTextBox);
+
+            distanciaLabel = Claudia.altasNombre(nombreAlumnoLabel,apellidoPaternoAlumnoLabel,apellidoMaternoAlumnoLabel,nombreAlumnoTextBox,apellidoPaternoAlumnoTextBox,apellidoMaternoAlumnoTextBox, distanciaLabel);
+            distanciaTextBox = distanciaTextBox + 40;
+
+            distanciaLabel = Claudia.altasLabel(fechaNacimientoLabel, distanciaLabel);
+            distanciaTextBox = Claudia.altasDateTimePicker(fechaNacimientoDateTimePicker, distanciaTextBox); 
+
+            //Lugar nacimiento Alumno
+            distanciaLabel = Claudia.altasLugarNacimiento(lugarNacimientoLabel, ciudadNacimientoAlumnoLabel,estadoNacimientoAlumnoLabel,ciudadNacimientoAlumnoTextBox,estadoNacimientoAlumnoTextBox, distanciaLabel);
+            distanciaTextBox = distanciaTextBox + 40;
+
+            //Direccion Alumno
+            distanciaLabel = Claudia.altasDireccion(direccionAlumnoLabel,calleDireccionAlumnoLabel,numeroDireccionAlumnoLabel,coloniaDireccionAlumnoLabel,calleDireccionAlumnoTextBox,numeroDireccionAlumnoTextBox,coloniaDireccionAlumnoTextBox, distanciaLabel);
+            distanciaTextBox = distanciaTextBox + 40;
+
+            distanciaLabel = Claudia.altasLabel(telefonoAlumnoLabel, distanciaLabel);
+            distanciaTextBox = Claudia.altasTextBox(telefonoAlumnoTextBox, distanciaTextBox);
+
+            distanciaLabel = Claudia.altasLabel(discapacidadLabel, distanciaLabel);
+            distanciaTextBox = Claudia.altasTextBox(discapacidadTextBox, distanciaTextBox);
+
+            distanciaLabel = Claudia.altasLabel(escuelaProcedenciaLabel, distanciaLabel);
+            distanciaTextBox = Claudia.altasTextBox(escuelaProcedenciaTextBox, distanciaTextBox);
+
+            distanciaLabel = Claudia.altasLabel(canalizadoPorLabel, distanciaLabel);
+            distanciaTextBox = Claudia.altasTextBox(canalizadoPorTextBox, distanciaTextBox);
+
+
+            Claudia.altasInformacionEscolar(cicloEscolarLabel, curpLabel, añosCumplidosLabel, cicloEscolarTextBox, curpTextBox, añosCumplidosTextBox, tipoIngresoGroupBox,nuevoIngresoRadioButton,reingresoRadioButton);
+           
+            
+            
+            /*
             Claudia.altasButton(realizarAltaButton);
             distanciaLabel = Claudia.altasLabel(fechaElaboracionLabel, distanciaLabel);
             distanciaLabel = Claudia.altasLabel(nombreAlumnoLabel, distanciaLabel);
@@ -121,6 +159,8 @@ namespace presentationLayer
             distanciaTextBox = distanciaLabel - 4;
             Claudia.altasLabel(atendidoPorLabel, distanciaLabel);
             Claudia.altasComboBox(atendidoPorComboBox, distanciaTextBox);
+
+            */
 
         }
 
