@@ -257,6 +257,7 @@ namespace presentationLayer
             this.BusquedaGroupBox.TabIndex = 26;
             this.BusquedaGroupBox.TabStop = false;
             this.BusquedaGroupBox.Text = "BUSQUEDA";
+            this.BusquedaGroupBox.Enter += new System.EventHandler(this.BusquedaGroupBox_Enter);
             // 
             // Consultas
             // 

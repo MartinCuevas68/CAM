@@ -52,5 +52,10 @@ namespace presentationLayer
         {
 
         }
+
+        private void BusquedaGroupBox_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
