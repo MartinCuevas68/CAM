@@ -146,11 +146,14 @@
   <data name="fechaElaboracionLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="fechaElaboracionLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
   <data name="fechaElaboracionLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
+    <value>4, 39</value>
   </data>
   <data name="fechaElaboracionLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>186, 17</value>
+    <value>201, 18</value>
   </data>
   <data name="fechaElaboracionLabel.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -174,7 +177,7 @@
     <value>True</value>
   </data>
   <data name="nombreAlumnoLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 45</value>
+    <value>5, 62</value>
   </data>
   <data name="nombreAlumnoLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>185, 17</value>
@@ -201,7 +204,7 @@
     <value>True</value>
   </data>
   <data name="fechaNacimientoLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 63</value>
+    <value>5, 80</value>
   </data>
   <data name="fechaNacimientoLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>168, 17</value>
@@ -228,7 +231,7 @@
     <value>True</value>
   </data>
   <data name="LugarNacimientoLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 86</value>
+    <value>4, 103</value>
   </data>
   <data name="LugarNacimientoLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>171, 17</value>
@@ -282,7 +285,7 @@
     <value>True</value>
   </data>
   <data name="telefonoAlumnoLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 121</value>
+    <value>3, 138</value>
   </data>
   <data name="telefonoAlumnoLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>166, 17</value>
@@ -309,7 +312,7 @@
     <value>True</value>
   </data>
   <data name="discapacidadLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 144</value>
+    <value>3, 159</value>
   </data>
   <data name="discapacidadLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>111, 17</value>
@@ -336,7 +339,7 @@
     <value>True</value>
   </data>
   <data name="curpLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1164, 59</value>
+    <value>1199, 81</value>
   </data>
   <data name="curpLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>50, 17</value>
@@ -363,7 +366,7 @@
     <value>True</value>
   </data>
   <data name="añosCumplidosLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1164, 93</value>
+    <value>1199, 115</value>
   </data>
   <data name="añosCumplidosLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>135, 17</value>
@@ -390,7 +393,7 @@
     <value>True</value>
   </data>
   <data name="cicloEscolarLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1164, 25</value>
+    <value>1199, 47</value>
   </data>
   <data name="cicloEscolarLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 17</value>
@@ -417,7 +420,7 @@
     <value>True</value>
   </data>
   <data name="escuelaProcedenciaLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 166</value>
+    <value>4, 183</value>
   </data>
   <data name="escuelaProcedenciaLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>200, 17</value>
@@ -444,7 +447,7 @@
     <value>True</value>
   </data>
   <data name="canalizadoPorLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 188</value>
+    <value>3, 206</value>
   </data>
   <data name="canalizadoPorLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>133, 17</value>
@@ -471,7 +474,7 @@
     <value>True</value>
   </data>
   <data name="reingresoRadioButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>154, 28</value>
+    <value>211, 28</value>
   </data>
   <data name="reingresoRadioButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>111, 21</value>
@@ -507,10 +510,10 @@
     <value>0</value>
   </data>
   <data name="tipoIngresoGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1167, 128</value>
+    <value>1202, 150</value>
   </data>
   <data name="tipoIngresoGroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>269, 55</value>
+    <value>337, 55</value>
   </data>
   <data name="tipoIngresoGroupBox.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -558,7 +561,7 @@
     <value>0</value>
   </data>
   <data name="nombreAlumnoTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>209, 45</value>
+    <value>209, 62</value>
   </data>
   <data name="nombreAlumnoTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>265, 22</value>
@@ -579,7 +582,7 @@
     <value>104</value>
   </data>
   <data name="fechaElaboracionDateTimePicker.Location" type="System.Drawing.Point, System.Drawing">
-    <value>209, 22</value>
+    <value>209, 39</value>
   </data>
   <data name="fechaElaboracionDateTimePicker.Size" type="System.Drawing.Size, System.Drawing">
     <value>265, 22</value>
@@ -600,7 +603,7 @@
     <value>103</value>
   </data>
   <data name="telefonoPersonalTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>208, 119</value>
+    <value>208, 136</value>
   </data>
   <data name="telefonoPersonalTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>265, 22</value>
@@ -621,7 +624,7 @@
     <value>102</value>
   </data>
   <data name="discapacidadTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>208, 142</value>
+    <value>208, 159</value>
   </data>
   <data name="discapacidadTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>265, 22</value>
@@ -642,7 +645,7 @@
     <value>101</value>
   </data>
   <data name="escuelaProcedenciaTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>208, 164</value>
+    <value>208, 181</value>
   </data>
   <data name="escuelaProcedenciaTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>265, 22</value>
@@ -663,7 +666,7 @@
     <value>100</value>
   </data>
   <data name="canalizadoPorTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>208, 186</value>
+    <value>208, 203</value>
   </data>
   <data name="canalizadoPorTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>265, 22</value>
@@ -684,7 +687,7 @@
     <value>99</value>
   </data>
   <data name="cicloEscolarTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1291, 22</value>
+    <value>1326, 44</value>
   </data>
   <data name="cicloEscolarTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 22</value>
@@ -705,7 +708,7 @@
     <value>98</value>
   </data>
   <data name="curpTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1291, 50</value>
+    <value>1326, 72</value>
   </data>
   <data name="curpTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 22</value>
@@ -726,7 +729,7 @@
     <value>97</value>
   </data>
   <data name="añosCumplidosTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1306, 93</value>
+    <value>1341, 115</value>
   </data>
   <data name="añosCumplidosTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 22</value>
@@ -747,7 +750,7 @@
     <value>96</value>
   </data>
   <data name="fechaNacimientoDateTimePicker.Location" type="System.Drawing.Point, System.Drawing">
-    <value>208, 69</value>
+    <value>208, 86</value>
   </data>
   <data name="fechaNacimientoDateTimePicker.Size" type="System.Drawing.Size, System.Drawing">
     <value>266, 22</value>
@@ -1075,13 +1078,13 @@
     <value>148, 432</value>
   </data>
   <data name="telefonoCasaMadreLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 17</value>
+    <value>48, 17</value>
   </data>
   <data name="telefonoCasaMadreLabel.TabIndex" type="System.Int32, mscorlib">
     <value>45</value>
   </data>
   <data name="telefonoCasaMadreLabel.Text" xml:space="preserve">
-    <value>CASA</value>
+    <value>CASA:</value>
   </data>
   <data name="&gt;&gt;telefonoCasaMadreLabel.Name" xml:space="preserve">
     <value>telefonoCasaMadreLabel</value>
@@ -1102,13 +1105,13 @@
     <value>322, 433</value>
   </data>
   <data name="telefonoCelularMadreLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 17</value>
+    <value>75, 17</value>
   </data>
   <data name="telefonoCelularMadreLabel.TabIndex" type="System.Int32, mscorlib">
     <value>46</value>
   </data>
   <data name="telefonoCelularMadreLabel.Text" xml:space="preserve">
-    <value>CELULAR</value>
+    <value>CELULAR:</value>
   </data>
   <data name="&gt;&gt;telefonoCelularMadreLabel.Name" xml:space="preserve">
     <value>telefonoCelularMadreLabel</value>
@@ -1129,13 +1132,13 @@
     <value>529, 432</value>
   </data>
   <data name="telefonoTrabajoMadreLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>72, 17</value>
+    <value>76, 17</value>
   </data>
   <data name="telefonoTrabajoMadreLabel.TabIndex" type="System.Int32, mscorlib">
     <value>47</value>
   </data>
   <data name="telefonoTrabajoMadreLabel.Text" xml:space="preserve">
-    <value>TRABAJO</value>
+    <value>TRABAJO:</value>
   </data>
   <data name="&gt;&gt;telefonoTrabajoMadreLabel.Name" xml:space="preserve">
     <value>telefonoTrabajoMadreLabel</value>
@@ -1414,7 +1417,7 @@
     <value>True</value>
   </data>
   <data name="responablesAlumnoLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 225</value>
+    <value>3, 228</value>
   </data>
   <data name="responablesAlumnoLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>368, 17</value>
@@ -1537,7 +1540,7 @@
     <value>True</value>
   </data>
   <data name="ciudadNacimientoAlumnoLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>479, 74</value>
+    <value>479, 91</value>
   </data>
   <data name="ciudadNacimientoAlumnoLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>63, 17</value>
@@ -1591,7 +1594,7 @@
     <value>True</value>
   </data>
   <data name="apellidoPaternoAlumnoLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>479, 28</value>
+    <value>479, 45</value>
   </data>
   <data name="apellidoPaternoAlumnoLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>150, 17</value>
@@ -1618,7 +1621,7 @@
     <value>True</value>
   </data>
   <data name="apellidoMaternoAlumnoLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>878, 33</value>
+    <value>775, 44</value>
   </data>
   <data name="apellidoMaternoAlumnoLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>152, 17</value>
@@ -1645,7 +1648,7 @@
     <value>True</value>
   </data>
   <data name="calleDireccionAlumnoLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>479, 99</value>
+    <value>479, 116</value>
   </data>
   <data name="calleDireccionAlumnoLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 17</value>
@@ -1723,7 +1726,7 @@
     <value>57</value>
   </data>
   <data name="apellidoPaternoAlumnoTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>635, 23</value>
+    <value>635, 42</value>
   </data>
   <data name="apellidoPaternoAlumnoTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 22</value>
@@ -1744,7 +1747,7 @@
     <value>56</value>
   </data>
   <data name="apellidoMaternoAlumnoTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1037, 28</value>
+    <value>934, 39</value>
   </data>
   <data name="apellidoMaternoAlumnoTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 22</value>
@@ -3235,26 +3238,11 @@
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <data name="toolStripMenuItem1.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>No</value>
-  </data>
-  <data name="toolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>81, 26</value>
-  </data>
-  <data name="toolStripMenuItem1.Text" xml:space="preserve">
-    <value>Alumnos</value>
-  </data>
-  <data name="docentesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>85, 26</value>
-  </data>
-  <data name="docentesToolStripMenuItem.Text" xml:space="preserve">
-    <value>Docentes</value>
-  </data>
   <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
   <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1924, 28</value>
+    <value>1924, 36</value>
   </data>
   <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
     <value>130</value>
@@ -3274,26 +3262,59 @@
   <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
     <value>118</value>
   </data>
+  <data name="toolStripMenuItem1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Leelawadee UI, 12pt, style=Bold</value>
+  </data>
+  <data name="toolStripMenuItem1.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="toolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 32</value>
+  </data>
+  <data name="toolStripMenuItem1.Text" xml:space="preserve">
+    <value>ALUMNOS</value>
+  </data>
+  <data name="aLTASToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Leelawadee UI, 10pt</value>
+  </data>
   <data name="aLTASToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 26</value>
+    <value>236, 28</value>
   </data>
   <data name="aLTASToolStripMenuItem.Text" xml:space="preserve">
     <value>ALTAS</value>
   </data>
+  <data name="cONSULTASToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Leelawadee UI, 10pt</value>
+  </data>
   <data name="cONSULTASToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 26</value>
+    <value>236, 28</value>
   </data>
   <data name="cONSULTASToolStripMenuItem.Text" xml:space="preserve">
     <value>CONSULTAS</value>
   </data>
+  <data name="mODIFICACIONESToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Leelawadee UI, 10pt</value>
+  </data>
   <data name="mODIFICACIONESToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 26</value>
+    <value>236, 28</value>
   </data>
   <data name="mODIFICACIONESToolStripMenuItem.Text" xml:space="preserve">
     <value>MODIFICACIONES</value>
   </data>
+  <data name="docentesToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Leelawadee UI, 12pt, style=Bold</value>
+  </data>
+  <data name="docentesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 32</value>
+  </data>
+  <data name="docentesToolStripMenuItem.Text" xml:space="preserve">
+    <value>DOCENTES</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>47</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>8, 16</value>

@@ -14,9 +14,9 @@ namespace presentationLayer
     {
         public altaAlumno()
         {
-            int distanciaLabel = 70;
+            int distanciaLabel = 100;
             int distanciaLabelDerecha = 220;
-            int distanciaTextBox = 66;
+            int distanciaTextBox = 96;
             int distanciaTextBoxDerecha = 216;
 
             InitializeComponent();
@@ -84,7 +84,7 @@ namespace presentationLayer
             distanciaTextBox = Claudia.altasDateTimePicker(fechaElaboracionDateTimePicker, distanciaTextBox);
             distanciaTextBox = Claudia.altasApellidosTextBox(nombreAlumnoTextBox, apellidoPaternoAlumnoTextBox, apellidoMaternoAlumnoTextBox, distanciaTextBox);
             distanciaTextBox = Claudia.altasDateTimePicker(fechaNacimientoDateTimePicker, distanciaTextBox);
-            distanciaTextBox = distanciaTextBox + 60;
+            distanciaTextBox = distanciaTextBox + 70;
             distanciaTextBox = Claudia.altasTextBox(telefonoPersonalTextBox, distanciaTextBox);
             distanciaTextBox = Claudia.altasTextBox(discapacidadTextBox, distanciaTextBox);
             distanciaTextBox = Claudia.altasTextBox(canalizadoPorTextBox, distanciaTextBox);
@@ -95,7 +95,7 @@ namespace presentationLayer
 
             distanciaTextBox = Claudia.altasResponsableAlumnoCheckBox(madreCheckBox, padreCheckBox, distanciaTextBox);
 
-            distanciaTextBox = distanciaTextBox + 90;
+            distanciaTextBox = distanciaTextBox + 120;
 
             distanciaTextBox = Claudia.altasApellidosTextBox(nombreMadreTextBox, apellidoPaternoMadreTextBox, apellidoMaternoMadreTextBox, distanciaTextBox);
             distanciaTextBox = distanciaTextBox + 34;
@@ -105,7 +105,7 @@ namespace presentationLayer
             
 
             //Datos del padre
-            distanciaTextBox = distanciaTextBox + 90;
+            distanciaTextBox = distanciaTextBox + 120;
             distanciaTextBox = Claudia.altasApellidosTextBox(nombrePadreTextBox, apellidoPaternoPadreTextBox, apellidoMaternoPadreTextBox, distanciaTextBox);
             distanciaTextBox = distanciaTextBox + 34;
             distanciaTextBox = Claudia.altasOcupacionPadres(ocupacionPadreTextBox,lugarTrabajoPadreLabel,calleTrabajoPadreLabel,calleTrabajoPadreTextBox,numeroTrabajoPadreLabel,numeroTrabajoPadreTextBox,coloniaTrabajoPadreLabel,coloniaTrabajoPadreTextBox, distanciaTextBox);
@@ -123,6 +123,5 @@ namespace presentationLayer
             Claudia.altasComboBox(atendidoPorComboBox, distanciaTextBox);
 
         }
-
     }
 }

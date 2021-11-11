@@ -823,6 +823,7 @@ namespace presentationLayer
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.Color.BlueViolet;
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem1,
@@ -837,34 +838,37 @@ namespace presentationLayer
             this.aLTASToolStripMenuItem,
             this.cONSULTASToolStripMenuItem,
             this.mODIFICACIONESToolStripMenuItem});
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             resources.ApplyResources(this.toolStripMenuItem1, "toolStripMenuItem1");
+            this.toolStripMenuItem1.ForeColor = System.Drawing.Color.White;
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             // 
             // aLTASToolStripMenuItem
             // 
-            this.aLTASToolStripMenuItem.Name = "aLTASToolStripMenuItem";
             resources.ApplyResources(this.aLTASToolStripMenuItem, "aLTASToolStripMenuItem");
+            this.aLTASToolStripMenuItem.Name = "aLTASToolStripMenuItem";
             // 
             // cONSULTASToolStripMenuItem
             // 
-            this.cONSULTASToolStripMenuItem.Name = "cONSULTASToolStripMenuItem";
             resources.ApplyResources(this.cONSULTASToolStripMenuItem, "cONSULTASToolStripMenuItem");
+            this.cONSULTASToolStripMenuItem.Name = "cONSULTASToolStripMenuItem";
             // 
             // mODIFICACIONESToolStripMenuItem
             // 
-            this.mODIFICACIONESToolStripMenuItem.Name = "mODIFICACIONESToolStripMenuItem";
             resources.ApplyResources(this.mODIFICACIONESToolStripMenuItem, "mODIFICACIONESToolStripMenuItem");
+            this.mODIFICACIONESToolStripMenuItem.Name = "mODIFICACIONESToolStripMenuItem";
             // 
             // docentesToolStripMenuItem
             // 
             this.docentesToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.docentesToolStripMenuItem.Name = "docentesToolStripMenuItem";
             resources.ApplyResources(this.docentesToolStripMenuItem, "docentesToolStripMenuItem");
+            this.docentesToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.docentesToolStripMenuItem.Name = "docentesToolStripMenuItem";
             // 
             // altaAlumno
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.fechaElaboracionLabel);
             this.Controls.Add(this.atendidoPorComboBox);
             this.Controls.Add(this.atendidoPorLabel);
@@ -984,6 +988,7 @@ namespace presentationLayer
             this.Controls.Add(this.nombreAlumnoLabel);
             this.Controls.Add(this.realizarAltaButton);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "altaAlumno";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.tipoIngresoGroupBox.ResumeLayout(false);
