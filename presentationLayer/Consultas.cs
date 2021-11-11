@@ -25,10 +25,16 @@ namespace presentationLayer
             Edder.buscar(buscarLabel);
             Edder.filtroCombo(FiltradocomboBox1);
             Edder.buscartxt(buscartextBox);
+            Edder.menuprincipal(menuStrip);
 
         }
 
         private void Consultas_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void alumnosToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }
