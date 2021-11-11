@@ -16,16 +16,25 @@ namespace presentationLayer
         {
             InitializeComponent();
             Edder.botonBuscar(buscarButton1);
-            Edder.botonImprimir(imprimirButton);
             Edder.botonEliminar(eliminarButton);
-            Edder.botonRegresar(regresarButton);
+            Edder.botonModificar(ModificarButton);
             Edder.consultaDataView(panelConsulta_dataGridView);
             Edder.etiquetaConsulta(consultaLabel);
             Edder.filtro(filtroLabel);
-            Edder.buscar(buscarLabel);
             Edder.filtroCombo(FiltradocomboBox1);
-            Edder.buscartxt(buscartextBox);
-            Edder.menuprincipal(menuStrip);
+            Edder.Nombretxt(NombreTextBox);
+            Edder.panelNavBar(NavBarPanel);
+            Edder.agregarBttn(AgregarButton);
+            Edder.alumnosbttn(AlumnosButton);
+            Edder.docentesbttn(DocentesButton);
+            Edder.Nombrelbl(NombreLabel);
+            Edder.ApellidopaternoTxt(ApellidoPaternoTextBox1);
+            Edder.ApellidomaternoTxt(ApellidoMaternoTextBox2);
+            Edder.Apellidopaterno(ApellidoPaternoLabel);
+            Edder.Apellidomaterno(ApellidoMaternoLabel);
+            Edder.Vaciarbttn(VaciarButton);
+            Edder.botonImprimir(ImprimirButton);
+            Edder.groupboxinferior(BusquedaGroupBox);
 
         }
 
@@ -35,6 +44,16 @@ namespace presentationLayer
         }
 
         private void alumnosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FiltradocomboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BusquedaGroupBox_Enter(object sender, EventArgs e)
         {
 
         }
