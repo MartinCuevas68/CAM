@@ -66,6 +66,7 @@ namespace presentationLayer
             this.FiltradocomboBox1.Name = "FiltradocomboBox1";
             this.FiltradocomboBox1.Size = new System.Drawing.Size(121, 21);
             this.FiltradocomboBox1.TabIndex = 18;
+            this.FiltradocomboBox1.SelectedIndexChanged += new System.EventHandler(this.FiltradocomboBox1_SelectedIndexChanged);
             // 
             // eliminarButton
             // 

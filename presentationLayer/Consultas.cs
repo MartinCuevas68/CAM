@@ -47,5 +47,10 @@ namespace presentationLayer
         {
 
         }
+
+        private void FiltradocomboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
