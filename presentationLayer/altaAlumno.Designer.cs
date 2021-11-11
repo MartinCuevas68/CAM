@@ -34,7 +34,7 @@ namespace presentationLayer
             this.fechaElaboracionLabel = new System.Windows.Forms.Label();
             this.nombreAlumnoLabel = new System.Windows.Forms.Label();
             this.fechaNacimientoLabel = new System.Windows.Forms.Label();
-            this.LugarNacimientoLabel = new System.Windows.Forms.Label();
+            this.lugarNacimientoLabel = new System.Windows.Forms.Label();
             this.direccionAlumnoLabel = new System.Windows.Forms.Label();
             this.telefonoAlumnoLabel = new System.Windows.Forms.Label();
             this.discapacidadLabel = new System.Windows.Forms.Label();
@@ -48,7 +48,7 @@ namespace presentationLayer
             this.nuevoIngresoRadioButton = new System.Windows.Forms.RadioButton();
             this.nombreAlumnoTextBox = new System.Windows.Forms.TextBox();
             this.fechaElaboracionDateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.telefonoPersonalTextBox = new System.Windows.Forms.TextBox();
+            this.telefonoAlumnoTextBox = new System.Windows.Forms.TextBox();
             this.discapacidadTextBox = new System.Windows.Forms.TextBox();
             this.escuelaProcedenciaTextBox = new System.Windows.Forms.TextBox();
             this.canalizadoPorTextBox = new System.Windows.Forms.TextBox();
@@ -160,10 +160,14 @@ namespace presentationLayer
             this.cONSULTASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mODIFICACIONESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.docentesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.informacionGeneralAlumnoGroupBox = new System.Windows.Forms.GroupBox();
+            this.informacionEscolarGroupBox = new System.Windows.Forms.GroupBox();
             this.tipoIngresoGroupBox.SuspendLayout();
             this.otroAlumnoMadreGroupBox.SuspendLayout();
             this.otroAlumnoPadreGroupBox.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            this.informacionGeneralAlumnoGroupBox.SuspendLayout();
+            this.informacionEscolarGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // realizarAltaButton
@@ -187,10 +191,10 @@ namespace presentationLayer
             resources.ApplyResources(this.fechaNacimientoLabel, "fechaNacimientoLabel");
             this.fechaNacimientoLabel.Name = "fechaNacimientoLabel";
             // 
-            // LugarNacimientoLabel
+            // lugarNacimientoLabel
             // 
-            resources.ApplyResources(this.LugarNacimientoLabel, "LugarNacimientoLabel");
-            this.LugarNacimientoLabel.Name = "LugarNacimientoLabel";
+            resources.ApplyResources(this.lugarNacimientoLabel, "lugarNacimientoLabel");
+            this.lugarNacimientoLabel.Name = "lugarNacimientoLabel";
             // 
             // direccionAlumnoLabel
             // 
@@ -264,10 +268,10 @@ namespace presentationLayer
             resources.ApplyResources(this.fechaElaboracionDateTimePicker, "fechaElaboracionDateTimePicker");
             this.fechaElaboracionDateTimePicker.Name = "fechaElaboracionDateTimePicker";
             // 
-            // telefonoPersonalTextBox
+            // telefonoAlumnoTextBox
             // 
-            resources.ApplyResources(this.telefonoPersonalTextBox, "telefonoPersonalTextBox");
-            this.telefonoPersonalTextBox.Name = "telefonoPersonalTextBox";
+            resources.ApplyResources(this.telefonoAlumnoTextBox, "telefonoAlumnoTextBox");
+            this.telefonoAlumnoTextBox.Name = "telefonoAlumnoTextBox";
             // 
             // discapacidadTextBox
             // 
@@ -823,7 +827,6 @@ namespace presentationLayer
             // 
             // menuStrip1
             // 
-            this.menuStrip1.BackColor = System.Drawing.Color.BlueViolet;
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem1,
@@ -838,38 +841,85 @@ namespace presentationLayer
             this.aLTASToolStripMenuItem,
             this.cONSULTASToolStripMenuItem,
             this.mODIFICACIONESToolStripMenuItem});
-            resources.ApplyResources(this.toolStripMenuItem1, "toolStripMenuItem1");
-            this.toolStripMenuItem1.ForeColor = System.Drawing.Color.White;
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            resources.ApplyResources(this.toolStripMenuItem1, "toolStripMenuItem1");
             // 
             // aLTASToolStripMenuItem
             // 
-            resources.ApplyResources(this.aLTASToolStripMenuItem, "aLTASToolStripMenuItem");
             this.aLTASToolStripMenuItem.Name = "aLTASToolStripMenuItem";
+            resources.ApplyResources(this.aLTASToolStripMenuItem, "aLTASToolStripMenuItem");
             // 
             // cONSULTASToolStripMenuItem
             // 
-            resources.ApplyResources(this.cONSULTASToolStripMenuItem, "cONSULTASToolStripMenuItem");
             this.cONSULTASToolStripMenuItem.Name = "cONSULTASToolStripMenuItem";
+            resources.ApplyResources(this.cONSULTASToolStripMenuItem, "cONSULTASToolStripMenuItem");
             // 
             // mODIFICACIONESToolStripMenuItem
             // 
-            resources.ApplyResources(this.mODIFICACIONESToolStripMenuItem, "mODIFICACIONESToolStripMenuItem");
             this.mODIFICACIONESToolStripMenuItem.Name = "mODIFICACIONESToolStripMenuItem";
+            resources.ApplyResources(this.mODIFICACIONESToolStripMenuItem, "mODIFICACIONESToolStripMenuItem");
             // 
             // docentesToolStripMenuItem
             // 
             this.docentesToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            resources.ApplyResources(this.docentesToolStripMenuItem, "docentesToolStripMenuItem");
-            this.docentesToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.docentesToolStripMenuItem.Name = "docentesToolStripMenuItem";
+            resources.ApplyResources(this.docentesToolStripMenuItem, "docentesToolStripMenuItem");
+            // 
+            // informacionGeneralAlumnoGroupBox
+            // 
+            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.fechaElaboracionLabel);
+            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.fechaElaboracionDateTimePicker);
+            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.nombreAlumnoLabel);
+            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.nombreAlumnoTextBox);
+            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.apellidoPaternoAlumnoLabel);
+            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.apellidoPaternoAlumnoTextBox);
+            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.apellidoMaternoAlumnoLabel);
+            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.apellidoMaternoAlumnoTextBox);
+            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.fechaNacimientoLabel);
+            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.fechaNacimientoDateTimePicker);
+            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.lugarNacimientoLabel);
+            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.ciudadNacimientoAlumnoLabel);
+            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.ciudadNacimientoAlumnoTextBox);
+            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.estadoNacimientoAlumnoLabel);
+            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.estadoNacimientoAlumnoTextBox);
+            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.direccionAlumnoLabel);
+            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.calleDireccionAlumnoLabel);
+            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.calleDireccionAlumnoTextBox);
+            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.numeroDireccionAlumnoLabel);
+            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.numeroDireccionAlumnoTextBox);
+            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.coloniaDireccionAlumnoLabel);
+            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.coloniaDireccionAlumnoTextBox);
+            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.telefonoAlumnoLabel);
+            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.telefonoAlumnoTextBox);
+            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.discapacidadLabel);
+            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.discapacidadTextBox);
+            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.escuelaProcedenciaLabel);
+            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.escuelaProcedenciaTextBox);
+            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.canalizadoPorLabel);
+            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.canalizadoPorTextBox);
+            resources.ApplyResources(this.informacionGeneralAlumnoGroupBox, "informacionGeneralAlumnoGroupBox");
+            this.informacionGeneralAlumnoGroupBox.Name = "informacionGeneralAlumnoGroupBox";
+            this.informacionGeneralAlumnoGroupBox.TabStop = false;
+            // 
+            // informacionEscolarGroupBox
+            // 
+            this.informacionEscolarGroupBox.Controls.Add(this.cicloEscolarLabel);
+            this.informacionEscolarGroupBox.Controls.Add(this.cicloEscolarTextBox);
+            this.informacionEscolarGroupBox.Controls.Add(this.curpLabel);
+            this.informacionEscolarGroupBox.Controls.Add(this.curpTextBox);
+            this.informacionEscolarGroupBox.Controls.Add(this.añosCumplidosLabel);
+            this.informacionEscolarGroupBox.Controls.Add(this.añosCumplidosTextBox);
+            this.informacionEscolarGroupBox.Controls.Add(this.tipoIngresoGroupBox);
+            resources.ApplyResources(this.informacionEscolarGroupBox, "informacionEscolarGroupBox");
+            this.informacionEscolarGroupBox.Name = "informacionEscolarGroupBox";
+            this.informacionEscolarGroupBox.TabStop = false;
             // 
             // altaAlumno
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.fechaElaboracionLabel);
+            this.Controls.Add(this.informacionEscolarGroupBox);
+            this.Controls.Add(this.informacionGeneralAlumnoGroupBox);
             this.Controls.Add(this.atendidoPorComboBox);
             this.Controls.Add(this.atendidoPorLabel);
             this.Controls.Add(this.documentacionListBox);
@@ -919,20 +969,6 @@ namespace presentationLayer
             this.Controls.Add(this.apellidoPaternoMadreTextBox);
             this.Controls.Add(this.apellidoMaternoMadreLabel);
             this.Controls.Add(this.apellidoPaternoMadreLabel);
-            this.Controls.Add(this.coloniaDireccionAlumnoTextBox);
-            this.Controls.Add(this.numeroDireccionAlumnoTextBox);
-            this.Controls.Add(this.calleDireccionAlumnoTextBox);
-            this.Controls.Add(this.estadoNacimientoAlumnoTextBox);
-            this.Controls.Add(this.ciudadNacimientoAlumnoTextBox);
-            this.Controls.Add(this.apellidoMaternoAlumnoTextBox);
-            this.Controls.Add(this.apellidoPaternoAlumnoTextBox);
-            this.Controls.Add(this.coloniaDireccionAlumnoLabel);
-            this.Controls.Add(this.numeroDireccionAlumnoLabel);
-            this.Controls.Add(this.calleDireccionAlumnoLabel);
-            this.Controls.Add(this.apellidoMaternoAlumnoLabel);
-            this.Controls.Add(this.apellidoPaternoAlumnoLabel);
-            this.Controls.Add(this.estadoNacimientoAlumnoLabel);
-            this.Controls.Add(this.ciudadNacimientoAlumnoLabel);
             this.Controls.Add(this.calleTrabajoPadreTextBox);
             this.Controls.Add(this.lugarTrabajoPadreLabel);
             this.Controls.Add(this.calleTrabajoMadreTextBox);
@@ -964,31 +1000,8 @@ namespace presentationLayer
             this.Controls.Add(this.ocupacionMadreLabel);
             this.Controls.Add(this.domicilioMadreLabel);
             this.Controls.Add(this.nombreMadreLabel);
-            this.Controls.Add(this.fechaNacimientoDateTimePicker);
-            this.Controls.Add(this.añosCumplidosTextBox);
-            this.Controls.Add(this.curpTextBox);
-            this.Controls.Add(this.cicloEscolarTextBox);
-            this.Controls.Add(this.canalizadoPorTextBox);
-            this.Controls.Add(this.escuelaProcedenciaTextBox);
-            this.Controls.Add(this.discapacidadTextBox);
-            this.Controls.Add(this.telefonoPersonalTextBox);
-            this.Controls.Add(this.fechaElaboracionDateTimePicker);
-            this.Controls.Add(this.nombreAlumnoTextBox);
-            this.Controls.Add(this.tipoIngresoGroupBox);
-            this.Controls.Add(this.canalizadoPorLabel);
-            this.Controls.Add(this.escuelaProcedenciaLabel);
-            this.Controls.Add(this.cicloEscolarLabel);
-            this.Controls.Add(this.añosCumplidosLabel);
-            this.Controls.Add(this.curpLabel);
-            this.Controls.Add(this.discapacidadLabel);
-            this.Controls.Add(this.telefonoAlumnoLabel);
-            this.Controls.Add(this.direccionAlumnoLabel);
-            this.Controls.Add(this.LugarNacimientoLabel);
-            this.Controls.Add(this.fechaNacimientoLabel);
-            this.Controls.Add(this.nombreAlumnoLabel);
             this.Controls.Add(this.realizarAltaButton);
             this.Controls.Add(this.menuStrip1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "altaAlumno";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.tipoIngresoGroupBox.ResumeLayout(false);
@@ -999,6 +1012,10 @@ namespace presentationLayer
             this.otroAlumnoPadreGroupBox.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.informacionGeneralAlumnoGroupBox.ResumeLayout(false);
+            this.informacionGeneralAlumnoGroupBox.PerformLayout();
+            this.informacionEscolarGroupBox.ResumeLayout(false);
+            this.informacionEscolarGroupBox.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1010,7 +1027,7 @@ namespace presentationLayer
         private System.Windows.Forms.Label fechaElaboracionLabel;
         private System.Windows.Forms.Label nombreAlumnoLabel;
         private System.Windows.Forms.Label fechaNacimientoLabel;
-        private System.Windows.Forms.Label LugarNacimientoLabel;
+        private System.Windows.Forms.Label lugarNacimientoLabel;
         private System.Windows.Forms.Label direccionAlumnoLabel;
         private System.Windows.Forms.Label telefonoAlumnoLabel;
         private System.Windows.Forms.Label discapacidadLabel;
@@ -1024,7 +1041,7 @@ namespace presentationLayer
         private System.Windows.Forms.RadioButton nuevoIngresoRadioButton;
         private System.Windows.Forms.TextBox nombreAlumnoTextBox;
         private System.Windows.Forms.DateTimePicker fechaElaboracionDateTimePicker;
-        private System.Windows.Forms.TextBox telefonoPersonalTextBox;
+        private System.Windows.Forms.TextBox telefonoAlumnoTextBox;
         private System.Windows.Forms.TextBox discapacidadTextBox;
         private System.Windows.Forms.TextBox escuelaProcedenciaTextBox;
         private System.Windows.Forms.TextBox canalizadoPorTextBox;
@@ -1136,6 +1153,8 @@ namespace presentationLayer
         private System.Windows.Forms.ToolStripMenuItem cONSULTASToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mODIFICACIONESToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem docentesToolStripMenuItem;
+        private System.Windows.Forms.GroupBox informacionGeneralAlumnoGroupBox;
+        private System.Windows.Forms.GroupBox informacionEscolarGroupBox;
     }
 }
 
