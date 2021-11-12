@@ -1,14 +1,286 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="BDCAMModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-  <EntityType Name="prueba">
+<Schema Namespace="BDDCAMModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'BDDCAM.dbo.alergias' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="alergias">
     <Key>
-      <PropertyRef Name="idPrueba" />
+      <PropertyRef Name="id_cartilla_medica" />
+      <PropertyRef Name="alergia" />
     </Key>
-    <Property Name="idPrueba" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="nombre" Type="nvarchar" MaxLength="20" Nullable="false" />
-    <Property Name="edad" Type="nvarchar" MaxLength="5" Nullable="false" />
+    <Property Name="id_cartilla_medica" Type="int" Nullable="false" />
+    <Property Name="alergia" Type="varchar" MaxLength="30" Nullable="false" />
   </EntityType>
-  <EntityContainer Name="BDCAMModelStoreContainer">
-    <EntitySet Name="prueba" EntityType="Self.prueba" Schema="dbo" store:Type="Tables" />
+  <EntityType Name="alumno">
+    <Key>
+      <PropertyRef Name="id_alumno" />
+    </Key>
+    <Property Name="id_alumno" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="fecha_registro" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+    <Property Name="ciclo_escolar" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="apellido_paterno" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="fecha_nacimiento" Type="date" Nullable="false" />
+    <Property Name="años_alumno" Type="varchar" MaxLength="2" Nullable="false" />
+    <Property Name="CURP_alumno" Type="varchar" MaxLength="18" Nullable="false" />
+    <Property Name="estado_nacimiento_alumno" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="ciudad_nacimiento_alumno" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="colonia_alumno" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="calle_alumno" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="numero_alumno" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="telefono_personal_alumno" Type="varchar" MaxLength="30" />
+    <Property Name="escuela_procedencia_alumno" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="documentacion_alumno" Type="nvarchar(max)" />
+    <Property Name="atendido_por" Type="varchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'BDDCAM.dbo.discapacidades' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="discapacidades">
+    <Key>
+      <PropertyRef Name="id_cartilla_medica" />
+      <PropertyRef Name="discapacidades" />
+    </Key>
+    <Property Name="id_cartilla_medica" Type="int" Nullable="false" />
+    <Property Name="discapacidades" Type="varchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'BDDCAM.dbo.enfermedades' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="enfermedades">
+    <Key>
+      <PropertyRef Name="id_cartilla_medica" />
+      <PropertyRef Name="enfermedad" />
+    </Key>
+    <Property Name="id_cartilla_medica" Type="int" Nullable="false" />
+    <Property Name="enfermedad" Type="varchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="tabla_indicadores_telefono">
+    <Key>
+      <PropertyRef Name="id_telefono" />
+    </Key>
+    <Property Name="id_telefono" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="telefono" Type="varchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tabla_medica">
+    <Key>
+      <PropertyRef Name="id_cartilla_medica" />
+    </Key>
+    <Property Name="id_alumno" Type="int" Nullable="false" />
+    <Property Name="id_cartilla_medica" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="servicio_medico" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="grupo_sanguineo" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="telefono_contacto" Type="varchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'BDDCAM.dbo.telefono-tutores' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="telefono-tutores">
+    <Key>
+      <PropertyRef Name="id_tutor" />
+      <PropertyRef Name="id_telefono" />
+      <PropertyRef Name="telefono" />
+    </Key>
+    <Property Name="id_tutor" Type="int" Nullable="false" />
+    <Property Name="id_telefono" Type="int" Nullable="false" />
+    <Property Name="telefono" Type="varchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tutor">
+    <Key>
+      <PropertyRef Name="id_tutor" />
+    </Key>
+    <Property Name="id_tutor" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="apellido_paterno" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="apellido_materno" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="colonia_tutor" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="calle_tutor" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="numero_tutor" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="ocupacion_tutor" Type="varchar" MaxLength="30" />
+    <Property Name="colonia_trabajo_tutor" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="calle_trabajo_tutor" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="numero_trabajo_tutor" Type="varchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'BDDCAM.dbo.tutor-alumno' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="tutor-alumno">
+    <Key>
+      <PropertyRef Name="id_alumno" />
+      <PropertyRef Name="id_tutor" />
+    </Key>
+    <Property Name="id_alumno" Type="int" Nullable="false" />
+    <Property Name="id_tutor" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_alumno">
+    <End Role="alumno" Type="Self.alumno" Multiplicity="1" />
+    <End Role="tutor-alumno" Type="Self.tutor-alumno" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="alumno">
+        <PropertyRef Name="id_alumno" />
+      </Principal>
+      <Dependent Role="tutor-alumno">
+        <PropertyRef Name="id_alumno" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_id">
+    <End Role="tabla_medica" Type="Self.tabla_medica" Multiplicity="1" />
+    <End Role="discapacidades" Type="Self.discapacidades" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tabla_medica">
+        <PropertyRef Name="id_cartilla_medica" />
+      </Principal>
+      <Dependent Role="discapacidades">
+        <PropertyRef Name="id_cartilla_medica" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_idalumno">
+    <End Role="alumno" Type="Self.alumno" Multiplicity="1" />
+    <End Role="tabla_medica" Type="Self.tabla_medica" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="alumno">
+        <PropertyRef Name="id_alumno" />
+      </Principal>
+      <Dependent Role="tabla_medica">
+        <PropertyRef Name="id_alumno" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_idcartilla">
+    <End Role="tabla_medica" Type="Self.tabla_medica" Multiplicity="1" />
+    <End Role="enfermedades" Type="Self.enfermedades" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tabla_medica">
+        <PropertyRef Name="id_cartilla_medica" />
+      </Principal>
+      <Dependent Role="enfermedades">
+        <PropertyRef Name="id_cartilla_medica" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_idcartillamedica">
+    <End Role="tabla_medica" Type="Self.tabla_medica" Multiplicity="1" />
+    <End Role="alergias" Type="Self.alergias" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tabla_medica">
+        <PropertyRef Name="id_cartilla_medica" />
+      </Principal>
+      <Dependent Role="alergias">
+        <PropertyRef Name="id_cartilla_medica" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tele">
+    <End Role="tabla_indicadores_telefono" Type="Self.tabla_indicadores_telefono" Multiplicity="1" />
+    <End Role="telefono-tutores" Type="Self.telefono-tutores" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tabla_indicadores_telefono">
+        <PropertyRef Name="id_telefono" />
+      </Principal>
+      <Dependent Role="telefono-tutores">
+        <PropertyRef Name="id_telefono" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tuto">
+    <End Role="tutor" Type="Self.tutor" Multiplicity="1" />
+    <End Role="telefono-tutores" Type="Self.telefono-tutores" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tutor">
+        <PropertyRef Name="id_tutor" />
+      </Principal>
+      <Dependent Role="telefono-tutores">
+        <PropertyRef Name="id_tutor" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tutor">
+    <End Role="tutor" Type="Self.tutor" Multiplicity="1" />
+    <End Role="tutor-alumno" Type="Self.tutor-alumno" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tutor">
+        <PropertyRef Name="id_tutor" />
+      </Principal>
+      <Dependent Role="tutor-alumno">
+        <PropertyRef Name="id_tutor" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="BDDCAMModelStoreContainer">
+    <EntitySet Name="alumno" EntityType="Self.alumno" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tabla_indicadores_telefono" EntityType="Self.tabla_indicadores_telefono" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tabla_medica" EntityType="Self.tabla_medica" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tutor" EntityType="Self.tutor" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="alergias" EntityType="Self.alergias" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [alergias].[id_cartilla_medica] AS [id_cartilla_medica], 
+    [alergias].[alergia] AS [alergia]
+    FROM [dbo].[alergias] AS [alergias]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="discapacidades" EntityType="Self.discapacidades" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [discapacidades].[id_cartilla_medica] AS [id_cartilla_medica], 
+    [discapacidades].[discapacidades] AS [discapacidades]
+    FROM [dbo].[discapacidades] AS [discapacidades]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="enfermedades" EntityType="Self.enfermedades" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [enfermedades].[id_cartilla_medica] AS [id_cartilla_medica], 
+    [enfermedades].[enfermedad] AS [enfermedad]
+    FROM [dbo].[enfermedades] AS [enfermedades]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="telefono-tutores" EntityType="Self.telefono-tutores" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [telefono-tutores].[id_tutor] AS [id_tutor], 
+    [telefono-tutores].[id_telefono] AS [id_telefono], 
+    [telefono-tutores].[telefono] AS [telefono]
+    FROM [dbo].[telefono-tutores] AS [telefono-tutores]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tutor-alumno" EntityType="Self.tutor-alumno" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tutor-alumno].[id_alumno] AS [id_alumno], 
+    [tutor-alumno].[id_tutor] AS [id_tutor]
+    FROM [dbo].[tutor-alumno] AS [tutor-alumno]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_alumno" Association="Self.FK_alumno">
+      <End Role="alumno" EntitySet="alumno" />
+      <End Role="tutor-alumno" EntitySet="tutor-alumno" />
+    </AssociationSet>
+    <AssociationSet Name="FK_id" Association="Self.FK_id">
+      <End Role="tabla_medica" EntitySet="tabla_medica" />
+      <End Role="discapacidades" EntitySet="discapacidades" />
+    </AssociationSet>
+    <AssociationSet Name="FK_idalumno" Association="Self.FK_idalumno">
+      <End Role="alumno" EntitySet="alumno" />
+      <End Role="tabla_medica" EntitySet="tabla_medica" />
+    </AssociationSet>
+    <AssociationSet Name="FK_idcartilla" Association="Self.FK_idcartilla">
+      <End Role="tabla_medica" EntitySet="tabla_medica" />
+      <End Role="enfermedades" EntitySet="enfermedades" />
+    </AssociationSet>
+    <AssociationSet Name="FK_idcartillamedica" Association="Self.FK_idcartillamedica">
+      <End Role="tabla_medica" EntitySet="tabla_medica" />
+      <End Role="alergias" EntitySet="alergias" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tele" Association="Self.FK_Tele">
+      <End Role="tabla_indicadores_telefono" EntitySet="tabla_indicadores_telefono" />
+      <End Role="telefono-tutores" EntitySet="telefono-tutores" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tuto" Association="Self.FK_Tuto">
+      <End Role="tutor" EntitySet="tutor" />
+      <End Role="telefono-tutores" EntitySet="telefono-tutores" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tutor" Association="Self.FK_tutor">
+      <End Role="tutor" EntitySet="tutor" />
+      <End Role="tutor-alumno" EntitySet="tutor-alumno" />
+    </AssociationSet>
   </EntityContainer>
 </Schema>

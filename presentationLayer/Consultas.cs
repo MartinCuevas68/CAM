@@ -18,7 +18,7 @@ namespace presentationLayer
             Edder.botonBuscar(buscarButton1);
             Edder.botonEliminar(eliminarButton);
             Edder.botonModificar(ModificarButton);
-            Edder.consultaDataView(panelConsulta_dataGridView);
+            Edder.consultaDataView(consultaDataGridView);
             Edder.etiquetaConsulta(consultaLabel);
             Edder.filtro(filtroLabel);
             Edder.filtroCombo(FiltradocomboBox1);
@@ -40,7 +40,7 @@ namespace presentationLayer
 
         private void Consultas_Load(object sender, EventArgs e)
         {
-
+            consultaDataGridView.DataSource = businessLayer.Gabriel.alumnosGet();
         }
 
         private void alumnosToolStripMenuItem_Click(object sender, EventArgs e)
@@ -56,6 +56,11 @@ namespace presentationLayer
         private void BusquedaGroupBox_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void eliminarButton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Hola mundo");
         }
     }
 }

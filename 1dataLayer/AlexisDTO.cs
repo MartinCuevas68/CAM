@@ -10,30 +10,31 @@ namespace _1dataLayer
     {
     }
 
-    public class alumno
+
+    public class alumnoDTO
     {
-        int id_alumno { get; }
+        public int id_alumno { get; set;  }
 
-        DateTime fecha_registo { get; set; }
-        string ciclo_escolar { get; set; }
-        string nombre { get; set; }
-        string apellido_mat { get; set; }
-        string apellido_pat { get; set; }
+        public DateTime fecha_registo { get; set; }
+        public string ciclo_escolar { get; set; }
+        public string nombre { get; set; }
+        public string apellido_mat { get; set; }
+        public string apellido_pat { get; set; }
 
-        DateTime fecha_nacimiento { get; set; }
-        string edad_alumno { get; set; }
-        string estado_nacimiento_alumno { get; set; }
-        string ciudad_nacimiento_alumno { get; set; }
-        string colonia_alumno { get; set; }
-        string calle_alumno { get; set; }
-        string numero_alumno { get; set; }
-        string telefono_personal_alumno { get; set; }
-        string discapacidad { get; set; }
-        string escuela_procedencia_alumno { get; set; }
+        public DateTime fecha_nacimiento { get; set; }
+        public string edad_alumno { get; set; }
+        public string estado_nacimiento_alumno { get; set; }
+        public string ciudad_nacimiento_alumno { get; set; }
+        public string colonia_alumno { get; set; }
+        public string calle_alumno { get; set; }
+        public string numero_alumno { get; set; }
+        public string telefono_personal_alumno { get; set; }
+        public string discapacidad { get; set; }
+        public string escuela_procedencia_alumno { get; set; }
 
-        string documentacion_alumno { get; set; }
+        public string documentacion_alumno { get; set; }
 
-        string atendido_por { get; set; }
+        public string atendido_por { get; set; }
     }
    
 
@@ -48,17 +49,17 @@ namespace _1dataLayer
         string telefono_contacto { get; set; }
 
     }
-    public class enfermedades
+    public class enfermedadesDTO
     {
         int id_cartilla_medica { get; }
         string enfermedad { get; set; }
     }
-    public class alergias
+    public class alergiasDTO
     {
         int id_cartilla_medica { get; }
         string alergia { get; set; }
     }
-    public class discapacidades
+    public class discapacidadesDTO
     {
         int id_cartilla_medica { get; }
         string discapacidad { get; set; }
