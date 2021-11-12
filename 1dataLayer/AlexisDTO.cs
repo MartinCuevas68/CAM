@@ -42,27 +42,27 @@ namespace _1dataLayer
 
     public class info_medica
     {
-        int id_alumno { get; }
-        int id_cartilla_medica { get; set; }
-        string servicio_medico { get; set; }
-        string grupo_sanguineo { get; set; }
-        string telefono_contacto { get; set; }
+        public int id_alumno { get; }
+        public int id_cartilla_medica { get; set; }
+        public string servicio_medico { get; set; }
+        public string grupo_sanguineo { get; set; }
+        public string telefono_contacto { get; set; }
 
     }
     public class enfermedadesDTO
     {
-        int id_cartilla_medica { get; }
-        string enfermedad { get; set; }
+        public int id_cartilla_medica { get; }
+        public string enfermedad { get; set; }
     }
     public class alergiasDTO
     {
-        int id_cartilla_medica { get; }
-        string alergia { get; set; }
+        public int id_cartilla_medica { get; }
+        public  string alergia { get; set; }
     }
     public class discapacidadesDTO
     {
-        int id_cartilla_medica { get; }
-        string discapacidad { get; set; }
+        public int id_cartilla_medica { get; }
+        public string discapacidad { get; set; }
     }
 
 }
