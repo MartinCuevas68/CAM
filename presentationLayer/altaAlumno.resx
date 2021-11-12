@@ -118,46 +118,43 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="realizarAltaButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>724, 792</value>
+  <data name="siguienteButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1214, 956</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="realizarAltaButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+  <data name="siguienteButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
-  <data name="realizarAltaButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>87, 19</value>
+  <data name="siguienteButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 23</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="realizarAltaButton.TabIndex" type="System.Int32, mscorlib">
+  <data name="siguienteButton.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="realizarAltaButton.Text" xml:space="preserve">
-    <value>Realizar Alta</value>
+  <data name="siguienteButton.Text" xml:space="preserve">
+    <value>Siguiente</value>
   </data>
-  <data name="&gt;&gt;realizarAltaButton.Name" xml:space="preserve">
-    <value>realizarAltaButton</value>
+  <data name="&gt;&gt;siguienteButton.Name" xml:space="preserve">
+    <value>siguienteButton</value>
   </data>
-  <data name="&gt;&gt;realizarAltaButton.Type" xml:space="preserve">
+  <data name="&gt;&gt;siguienteButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;realizarAltaButton.Parent" xml:space="preserve">
+  <data name="&gt;&gt;siguienteButton.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;realizarAltaButton.ZOrder" xml:space="preserve">
-    <value>82</value>
+  <data name="&gt;&gt;siguienteButton.ZOrder" xml:space="preserve">
+    <value>9</value>
   </data>
   <data name="fechaElaboracionLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="fechaElaboracionLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 22</value>
-  </data>
-  <data name="fechaElaboracionLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>7, 27</value>
   </data>
   <data name="fechaElaboracionLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>145, 13</value>
+    <value>186, 17</value>
   </data>
   <data name="fechaElaboracionLabel.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -181,13 +178,10 @@
     <value>True</value>
   </data>
   <data name="nombreAlumnoLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 49</value>
-  </data>
-  <data name="nombreAlumnoLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>9, 60</value>
   </data>
   <data name="nombreAlumnoLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 13</value>
+    <value>185, 17</value>
   </data>
   <data name="nombreAlumnoLabel.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -211,13 +205,10 @@
     <value>True</value>
   </data>
   <data name="fechaNacimientoLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 80</value>
-  </data>
-  <data name="fechaNacimientoLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>9, 98</value>
   </data>
   <data name="fechaNacimientoLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>133, 13</value>
+    <value>168, 17</value>
   </data>
   <data name="fechaNacimientoLabel.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -241,13 +232,10 @@
     <value>True</value>
   </data>
   <data name="lugarNacimientoLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 108</value>
-  </data>
-  <data name="lugarNacimientoLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>7, 133</value>
   </data>
   <data name="lugarNacimientoLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>135, 13</value>
+    <value>171, 17</value>
   </data>
   <data name="lugarNacimientoLabel.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -271,13 +259,10 @@
     <value>True</value>
   </data>
   <data name="direccionAlumnoLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 138</value>
-  </data>
-  <data name="direccionAlumnoLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>7, 170</value>
   </data>
   <data name="direccionAlumnoLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 13</value>
+    <value>86, 17</value>
   </data>
   <data name="direccionAlumnoLabel.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -301,13 +286,10 @@
     <value>True</value>
   </data>
   <data name="telefonoAlumnoLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 169</value>
-  </data>
-  <data name="telefonoAlumnoLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>7, 208</value>
   </data>
   <data name="telefonoAlumnoLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>128, 13</value>
+    <value>166, 17</value>
   </data>
   <data name="telefonoAlumnoLabel.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -331,13 +313,10 @@
     <value>True</value>
   </data>
   <data name="discapacidadLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 195</value>
-  </data>
-  <data name="discapacidadLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>9, 240</value>
   </data>
   <data name="discapacidadLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>89, 13</value>
+    <value>111, 17</value>
   </data>
   <data name="discapacidadLabel.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -361,13 +340,10 @@
     <value>True</value>
   </data>
   <data name="curpLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 42</value>
-  </data>
-  <data name="curpLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>7, 52</value>
   </data>
   <data name="curpLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 13</value>
+    <value>50, 17</value>
   </data>
   <data name="curpLabel.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -391,13 +367,10 @@
     <value>True</value>
   </data>
   <data name="añosCumplidosLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 70</value>
-  </data>
-  <data name="añosCumplidosLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>7, 86</value>
   </data>
   <data name="añosCumplidosLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>106, 13</value>
+    <value>135, 17</value>
   </data>
   <data name="añosCumplidosLabel.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -421,13 +394,10 @@
     <value>True</value>
   </data>
   <data name="cicloEscolarLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 16</value>
-  </data>
-  <data name="cicloEscolarLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>7, 20</value>
   </data>
   <data name="cicloEscolarLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>94, 13</value>
+    <value>121, 17</value>
   </data>
   <data name="cicloEscolarLabel.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -451,13 +421,10 @@
     <value>True</value>
   </data>
   <data name="escuelaProcedenciaLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 225</value>
-  </data>
-  <data name="escuelaProcedenciaLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>9, 277</value>
   </data>
   <data name="escuelaProcedenciaLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 13</value>
+    <value>200, 17</value>
   </data>
   <data name="escuelaProcedenciaLabel.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -481,13 +448,10 @@
     <value>True</value>
   </data>
   <data name="canalizadoPorLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 253</value>
-  </data>
-  <data name="canalizadoPorLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>7, 311</value>
   </data>
   <data name="canalizadoPorLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 13</value>
+    <value>133, 17</value>
   </data>
   <data name="canalizadoPorLabel.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -511,13 +475,13 @@
     <value>True</value>
   </data>
   <data name="reingresoRadioButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>116, 23</value>
+    <value>155, 28</value>
   </data>
   <data name="reingresoRadioButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="reingresoRadioButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>89, 17</value>
+    <value>111, 21</value>
   </data>
   <data name="reingresoRadioButton.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -541,13 +505,13 @@
     <value>True</value>
   </data>
   <data name="nuevoIngresoRadioButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 23</value>
+    <value>0, 28</value>
   </data>
   <data name="nuevoIngresoRadioButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="nuevoIngresoRadioButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 17</value>
+    <value>145, 21</value>
   </data>
   <data name="nuevoIngresoRadioButton.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -568,16 +532,16 @@
     <value>0</value>
   </data>
   <data name="tipoIngresoGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 114</value>
+    <value>11, 140</value>
   </data>
   <data name="tipoIngresoGroupBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="tipoIngresoGroupBox.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="tipoIngresoGroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>202, 45</value>
+    <value>269, 55</value>
   </data>
   <data name="tipoIngresoGroupBox.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -598,13 +562,13 @@
     <value>6</value>
   </data>
   <data name="nombreAlumnoTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>154, 46</value>
+    <value>205, 57</value>
   </data>
   <data name="nombreAlumnoTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="nombreAlumnoTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 20</value>
+    <value>265, 22</value>
   </data>
   <data name="nombreAlumnoTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
@@ -622,13 +586,13 @@
     <value>3</value>
   </data>
   <data name="fechaElaboracionDateTimePicker.Location" type="System.Drawing.Point, System.Drawing">
-    <value>153, 19</value>
+    <value>204, 23</value>
   </data>
   <data name="fechaElaboracionDateTimePicker.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="fechaElaboracionDateTimePicker.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 20</value>
+    <value>265, 22</value>
   </data>
   <data name="fechaElaboracionDateTimePicker.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
@@ -646,13 +610,13 @@
     <value>1</value>
   </data>
   <data name="telefonoAlumnoTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>142, 162</value>
+    <value>189, 199</value>
   </data>
   <data name="telefonoAlumnoTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="telefonoAlumnoTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 20</value>
+    <value>265, 22</value>
   </data>
   <data name="telefonoAlumnoTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>23</value>
@@ -670,13 +634,13 @@
     <value>23</value>
   </data>
   <data name="discapacidadTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>142, 192</value>
+    <value>189, 236</value>
   </data>
   <data name="discapacidadTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="discapacidadTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 20</value>
+    <value>265, 22</value>
   </data>
   <data name="discapacidadTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>24</value>
@@ -694,13 +658,13 @@
     <value>25</value>
   </data>
   <data name="escuelaProcedenciaTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>174, 222</value>
+    <value>232, 273</value>
   </data>
   <data name="escuelaProcedenciaTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="escuelaProcedenciaTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 20</value>
+    <value>265, 22</value>
   </data>
   <data name="escuelaProcedenciaTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>25</value>
@@ -718,13 +682,13 @@
     <value>27</value>
   </data>
   <data name="canalizadoPorTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>171, 251</value>
+    <value>228, 309</value>
   </data>
   <data name="canalizadoPorTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="canalizadoPorTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 20</value>
+    <value>265, 22</value>
   </data>
   <data name="canalizadoPorTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>26</value>
@@ -742,13 +706,13 @@
     <value>29</value>
   </data>
   <data name="cicloEscolarTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>103, 16</value>
+    <value>137, 20</value>
   </data>
   <data name="cicloEscolarTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="cicloEscolarTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
+    <value>100, 22</value>
   </data>
   <data name="cicloEscolarTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>27</value>
@@ -766,13 +730,13 @@
     <value>1</value>
   </data>
   <data name="curpTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>103, 40</value>
+    <value>137, 49</value>
   </data>
   <data name="curpTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="curpTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
+    <value>100, 22</value>
   </data>
   <data name="curpTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>28</value>
@@ -790,13 +754,13 @@
     <value>3</value>
   </data>
   <data name="añosCumplidosTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>119, 70</value>
+    <value>159, 86</value>
   </data>
   <data name="añosCumplidosTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="añosCumplidosTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
+    <value>100, 22</value>
   </data>
   <data name="añosCumplidosTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>29</value>
@@ -814,13 +778,13 @@
     <value>5</value>
   </data>
   <data name="fechaNacimientoDateTimePicker.Location" type="System.Drawing.Point, System.Drawing">
-    <value>153, 74</value>
+    <value>204, 91</value>
   </data>
   <data name="fechaNacimientoDateTimePicker.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="fechaNacimientoDateTimePicker.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 20</value>
+    <value>265, 22</value>
   </data>
   <data name="fechaNacimientoDateTimePicker.TabIndex" type="System.Int32, mscorlib">
     <value>30</value>
@@ -837,876 +801,323 @@
   <data name="&gt;&gt;fechaNacimientoDateTimePicker.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
-  <data name="nombreMadreLabel.AutoSize" type="System.Boolean, mscorlib">
+  <data name="nombreTutorLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="nombreMadreLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 279</value>
+  <data name="nombreTutorLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>30, 116</value>
   </data>
-  <data name="nombreMadreLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+  <data name="nombreTutorLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>187, 17</value>
   </data>
-  <data name="nombreMadreLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 13</value>
-  </data>
-  <data name="nombreMadreLabel.TabIndex" type="System.Int32, mscorlib">
+  <data name="nombreTutorLabel.TabIndex" type="System.Int32, mscorlib">
     <value>31</value>
   </data>
-  <data name="nombreMadreLabel.Text" xml:space="preserve">
+  <data name="nombreTutorLabel.Text" xml:space="preserve">
     <value>NOMBRE MADRE/TUTORA:</value>
   </data>
-  <data name="&gt;&gt;nombreMadreLabel.Name" xml:space="preserve">
-    <value>nombreMadreLabel</value>
+  <data name="&gt;&gt;nombreTutorLabel.Name" xml:space="preserve">
+    <value>nombreTutorLabel</value>
   </data>
-  <data name="&gt;&gt;nombreMadreLabel.Type" xml:space="preserve">
+  <data name="&gt;&gt;nombreTutorLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;nombreMadreLabel.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;nombreTutorLabel.Parent" xml:space="preserve">
+    <value>informacionTutorGroupBox</value>
   </data>
-  <data name="&gt;&gt;nombreMadreLabel.ZOrder" xml:space="preserve">
-    <value>81</value>
+  <data name="&gt;&gt;nombreTutorLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
-  <data name="domicilioMadreLabel.AutoSize" type="System.Boolean, mscorlib">
+  <data name="domicilioTutorLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="domicilioMadreLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 301</value>
+  <data name="domicilioTutorLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>30, 143</value>
   </data>
-  <data name="domicilioMadreLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+  <data name="domicilioTutorLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 17</value>
   </data>
-  <data name="domicilioMadreLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 13</value>
-  </data>
-  <data name="domicilioMadreLabel.TabIndex" type="System.Int32, mscorlib">
+  <data name="domicilioTutorLabel.TabIndex" type="System.Int32, mscorlib">
     <value>32</value>
   </data>
-  <data name="domicilioMadreLabel.Text" xml:space="preserve">
+  <data name="domicilioTutorLabel.Text" xml:space="preserve">
     <value>DOMICILIO:</value>
   </data>
-  <data name="&gt;&gt;domicilioMadreLabel.Name" xml:space="preserve">
-    <value>domicilioMadreLabel</value>
+  <data name="&gt;&gt;domicilioTutorLabel.Name" xml:space="preserve">
+    <value>domicilioTutorLabel</value>
   </data>
-  <data name="&gt;&gt;domicilioMadreLabel.Type" xml:space="preserve">
+  <data name="&gt;&gt;domicilioTutorLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;domicilioMadreLabel.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;domicilioTutorLabel.Parent" xml:space="preserve">
+    <value>informacionTutorGroupBox</value>
   </data>
-  <data name="&gt;&gt;domicilioMadreLabel.ZOrder" xml:space="preserve">
-    <value>80</value>
+  <data name="&gt;&gt;domicilioTutorLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
-  <data name="ocupacionMadreLabel.AutoSize" type="System.Boolean, mscorlib">
+  <data name="ocupacionTutorLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="ocupacionMadreLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 323</value>
+  <data name="ocupacionTutorLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>28, 171</value>
   </data>
-  <data name="ocupacionMadreLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+  <data name="ocupacionTutorLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 17</value>
   </data>
-  <data name="ocupacionMadreLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 13</value>
-  </data>
-  <data name="ocupacionMadreLabel.TabIndex" type="System.Int32, mscorlib">
+  <data name="ocupacionTutorLabel.TabIndex" type="System.Int32, mscorlib">
     <value>33</value>
   </data>
-  <data name="ocupacionMadreLabel.Text" xml:space="preserve">
+  <data name="ocupacionTutorLabel.Text" xml:space="preserve">
     <value>OCUPACIÓN:</value>
   </data>
-  <data name="&gt;&gt;ocupacionMadreLabel.Name" xml:space="preserve">
-    <value>ocupacionMadreLabel</value>
+  <data name="&gt;&gt;ocupacionTutorLabel.Name" xml:space="preserve">
+    <value>ocupacionTutorLabel</value>
   </data>
-  <data name="&gt;&gt;ocupacionMadreLabel.Type" xml:space="preserve">
+  <data name="&gt;&gt;ocupacionTutorLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;ocupacionMadreLabel.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;ocupacionTutorLabel.Parent" xml:space="preserve">
+    <value>informacionTutorGroupBox</value>
   </data>
-  <data name="&gt;&gt;ocupacionMadreLabel.ZOrder" xml:space="preserve">
-    <value>79</value>
+  <data name="&gt;&gt;ocupacionTutorLabel.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
-  <data name="telefonosMadreLabel.AutoSize" type="System.Boolean, mscorlib">
+  <data name="telefonosTutorLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="telefonosMadreLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 351</value>
+  <data name="telefonosTutorLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 205</value>
   </data>
-  <data name="telefonosMadreLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+  <data name="telefonosTutorLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 17</value>
   </data>
-  <data name="telefonosMadreLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>74, 13</value>
-  </data>
-  <data name="telefonosMadreLabel.TabIndex" type="System.Int32, mscorlib">
+  <data name="telefonosTutorLabel.TabIndex" type="System.Int32, mscorlib">
     <value>34</value>
   </data>
-  <data name="telefonosMadreLabel.Text" xml:space="preserve">
+  <data name="telefonosTutorLabel.Text" xml:space="preserve">
     <value>TELÉFONOS:</value>
   </data>
-  <data name="&gt;&gt;telefonosMadreLabel.Name" xml:space="preserve">
-    <value>telefonosMadreLabel</value>
+  <data name="&gt;&gt;telefonosTutorLabel.Name" xml:space="preserve">
+    <value>telefonosTutorLabel</value>
   </data>
-  <data name="&gt;&gt;telefonosMadreLabel.Type" xml:space="preserve">
+  <data name="&gt;&gt;telefonosTutorLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;telefonosMadreLabel.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;telefonosTutorLabel.Parent" xml:space="preserve">
+    <value>informacionTutorGroupBox</value>
   </data>
-  <data name="&gt;&gt;telefonosMadreLabel.ZOrder" xml:space="preserve">
-    <value>78</value>
+  <data name="&gt;&gt;telefonosTutorLabel.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
-  <data name="nombrePadreLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="nombreTutorTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>240, 110</value>
   </data>
-  <data name="nombrePadreLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 429</value>
+  <data name="nombreTutorTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
-  <data name="nombrePadreLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+  <data name="nombreTutorTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 22</value>
   </data>
-  <data name="nombrePadreLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>140, 13</value>
-  </data>
-  <data name="nombrePadreLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>35</value>
-  </data>
-  <data name="nombrePadreLabel.Text" xml:space="preserve">
-    <value>NOMBRE PADRE/TUTOR:</value>
-  </data>
-  <data name="&gt;&gt;nombrePadreLabel.Name" xml:space="preserve">
-    <value>nombrePadreLabel</value>
-  </data>
-  <data name="&gt;&gt;nombrePadreLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;nombrePadreLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;nombrePadreLabel.ZOrder" xml:space="preserve">
-    <value>77</value>
-  </data>
-  <data name="domicilioPadreLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="domicilioPadreLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 448</value>
-  </data>
-  <data name="domicilioPadreLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
-  <data name="domicilioPadreLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 13</value>
-  </data>
-  <data name="domicilioPadreLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>36</value>
-  </data>
-  <data name="domicilioPadreLabel.Text" xml:space="preserve">
-    <value>DOMICILIO:</value>
-  </data>
-  <data name="&gt;&gt;domicilioPadreLabel.Name" xml:space="preserve">
-    <value>domicilioPadreLabel</value>
-  </data>
-  <data name="&gt;&gt;domicilioPadreLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;domicilioPadreLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;domicilioPadreLabel.ZOrder" xml:space="preserve">
-    <value>76</value>
-  </data>
-  <data name="ocupacionPadreLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="ocupacionPadreLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 483</value>
-  </data>
-  <data name="ocupacionPadreLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
-  <data name="ocupacionPadreLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 13</value>
-  </data>
-  <data name="ocupacionPadreLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>37</value>
-  </data>
-  <data name="ocupacionPadreLabel.Text" xml:space="preserve">
-    <value>OCUPACIÓN
-</value>
-  </data>
-  <data name="&gt;&gt;ocupacionPadreLabel.Name" xml:space="preserve">
-    <value>ocupacionPadreLabel</value>
-  </data>
-  <data name="&gt;&gt;ocupacionPadreLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ocupacionPadreLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;ocupacionPadreLabel.ZOrder" xml:space="preserve">
-    <value>75</value>
-  </data>
-  <data name="telefonosPadreLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="telefonosPadreLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 514</value>
-  </data>
-  <data name="telefonosPadreLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
-  <data name="telefonosPadreLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>74, 13</value>
-  </data>
-  <data name="telefonosPadreLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>38</value>
-  </data>
-  <data name="telefonosPadreLabel.Text" xml:space="preserve">
-    <value>TELÉFONOS:</value>
-  </data>
-  <data name="&gt;&gt;telefonosPadreLabel.Name" xml:space="preserve">
-    <value>telefonosPadreLabel</value>
-  </data>
-  <data name="&gt;&gt;telefonosPadreLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;telefonosPadreLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;telefonosPadreLabel.ZOrder" xml:space="preserve">
-    <value>74</value>
-  </data>
-  <data name="nombreMadreTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>206, 274</value>
-  </data>
-  <data name="nombreMadreTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="nombreMadreTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
-  </data>
-  <data name="nombreMadreTextBox.TabIndex" type="System.Int32, mscorlib">
+  <data name="nombreTutorTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>39</value>
   </data>
-  <data name="&gt;&gt;nombreMadreTextBox.Name" xml:space="preserve">
-    <value>nombreMadreTextBox</value>
+  <data name="&gt;&gt;nombreTutorTextBox.Name" xml:space="preserve">
+    <value>nombreTutorTextBox</value>
   </data>
-  <data name="&gt;&gt;nombreMadreTextBox.Type" xml:space="preserve">
+  <data name="&gt;&gt;nombreTutorTextBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;nombreMadreTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;nombreTutorTextBox.Parent" xml:space="preserve">
+    <value>informacionTutorGroupBox</value>
   </data>
-  <data name="&gt;&gt;nombreMadreTextBox.ZOrder" xml:space="preserve">
-    <value>73</value>
+  <data name="&gt;&gt;nombreTutorTextBox.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
-  <data name="ocupacionMadreTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>95, 320</value>
+  <data name="ocupacionTutorTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>173, 165</value>
   </data>
-  <data name="ocupacionMadreTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+  <data name="ocupacionTutorTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
-  <data name="ocupacionMadreTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
+  <data name="ocupacionTutorTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 22</value>
   </data>
-  <data name="ocupacionMadreTextBox.TabIndex" type="System.Int32, mscorlib">
+  <data name="ocupacionTutorTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>41</value>
   </data>
-  <data name="&gt;&gt;ocupacionMadreTextBox.Name" xml:space="preserve">
-    <value>ocupacionMadreTextBox</value>
+  <data name="&gt;&gt;ocupacionTutorTextBox.Name" xml:space="preserve">
+    <value>ocupacionTutorTextBox</value>
   </data>
-  <data name="&gt;&gt;ocupacionMadreTextBox.Type" xml:space="preserve">
+  <data name="&gt;&gt;ocupacionTutorTextBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;ocupacionMadreTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;ocupacionTutorTextBox.Parent" xml:space="preserve">
+    <value>informacionTutorGroupBox</value>
   </data>
-  <data name="&gt;&gt;ocupacionMadreTextBox.ZOrder" xml:space="preserve">
-    <value>72</value>
+  <data name="&gt;&gt;ocupacionTutorTextBox.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
-  <data name="nombrePadreTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>206, 427</value>
-  </data>
-  <data name="nombrePadreTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="nombrePadreTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
-  </data>
-  <data name="nombrePadreTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>42</value>
-  </data>
-  <data name="&gt;&gt;nombrePadreTextBox.Name" xml:space="preserve">
-    <value>nombrePadreTextBox</value>
-  </data>
-  <data name="&gt;&gt;nombrePadreTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;nombrePadreTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;nombrePadreTextBox.ZOrder" xml:space="preserve">
-    <value>71</value>
-  </data>
-  <data name="ocupacionPadreTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>113, 483</value>
-  </data>
-  <data name="ocupacionPadreTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="ocupacionPadreTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
-  </data>
-  <data name="ocupacionPadreTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>44</value>
-  </data>
-  <data name="&gt;&gt;ocupacionPadreTextBox.Name" xml:space="preserve">
-    <value>ocupacionPadreTextBox</value>
-  </data>
-  <data name="&gt;&gt;ocupacionPadreTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ocupacionPadreTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;ocupacionPadreTextBox.ZOrder" xml:space="preserve">
-    <value>70</value>
-  </data>
-  <data name="telefonoCasaMadreLabel.AutoSize" type="System.Boolean, mscorlib">
+  <data name="telefonoCasaTutorLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="telefonoCasaMadreLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>111, 351</value>
+  <data name="telefonoCasaTutorLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>144, 207</value>
   </data>
-  <data name="telefonoCasaMadreLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+  <data name="telefonoCasaTutorLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 17</value>
   </data>
-  <data name="telefonoCasaMadreLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 13</value>
-  </data>
-  <data name="telefonoCasaMadreLabel.TabIndex" type="System.Int32, mscorlib">
+  <data name="telefonoCasaTutorLabel.TabIndex" type="System.Int32, mscorlib">
     <value>45</value>
   </data>
-  <data name="telefonoCasaMadreLabel.Text" xml:space="preserve">
+  <data name="telefonoCasaTutorLabel.Text" xml:space="preserve">
     <value>CASA</value>
   </data>
-  <data name="&gt;&gt;telefonoCasaMadreLabel.Name" xml:space="preserve">
-    <value>telefonoCasaMadreLabel</value>
+  <data name="&gt;&gt;telefonoCasaTutorLabel.Name" xml:space="preserve">
+    <value>telefonoCasaTutorLabel</value>
   </data>
-  <data name="&gt;&gt;telefonoCasaMadreLabel.Type" xml:space="preserve">
+  <data name="&gt;&gt;telefonoCasaTutorLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;telefonoCasaMadreLabel.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;telefonoCasaTutorLabel.Parent" xml:space="preserve">
+    <value>informacionTutorGroupBox</value>
   </data>
-  <data name="&gt;&gt;telefonoCasaMadreLabel.ZOrder" xml:space="preserve">
-    <value>69</value>
+  <data name="&gt;&gt;telefonoCasaTutorLabel.ZOrder" xml:space="preserve">
+    <value>8</value>
   </data>
-  <data name="telefonoCelularMadreLabel.AutoSize" type="System.Boolean, mscorlib">
+  <data name="telefonoCelularTutorLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="telefonoCelularMadreLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>242, 352</value>
+  <data name="telefonoCelularTutorLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>328, 205</value>
   </data>
-  <data name="telefonoCelularMadreLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+  <data name="telefonoCelularTutorLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 17</value>
   </data>
-  <data name="telefonoCelularMadreLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 13</value>
-  </data>
-  <data name="telefonoCelularMadreLabel.TabIndex" type="System.Int32, mscorlib">
+  <data name="telefonoCelularTutorLabel.TabIndex" type="System.Int32, mscorlib">
     <value>46</value>
   </data>
-  <data name="telefonoCelularMadreLabel.Text" xml:space="preserve">
+  <data name="telefonoCelularTutorLabel.Text" xml:space="preserve">
     <value>CELULAR</value>
   </data>
-  <data name="&gt;&gt;telefonoCelularMadreLabel.Name" xml:space="preserve">
-    <value>telefonoCelularMadreLabel</value>
+  <data name="&gt;&gt;telefonoCelularTutorLabel.Name" xml:space="preserve">
+    <value>telefonoCelularTutorLabel</value>
   </data>
-  <data name="&gt;&gt;telefonoCelularMadreLabel.Type" xml:space="preserve">
+  <data name="&gt;&gt;telefonoCelularTutorLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;telefonoCelularMadreLabel.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;telefonoCelularTutorLabel.Parent" xml:space="preserve">
+    <value>informacionTutorGroupBox</value>
   </data>
-  <data name="&gt;&gt;telefonoCelularMadreLabel.ZOrder" xml:space="preserve">
-    <value>68</value>
+  <data name="&gt;&gt;telefonoCelularTutorLabel.ZOrder" xml:space="preserve">
+    <value>10</value>
   </data>
-  <data name="telefonoTrabajoMadreLabel.AutoSize" type="System.Boolean, mscorlib">
+  <data name="telefonoTrabajoTutorLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="telefonoTrabajoMadreLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>397, 351</value>
+  <data name="telefonoTrabajoTutorLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>534, 204</value>
   </data>
-  <data name="telefonoTrabajoMadreLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+  <data name="telefonoTrabajoTutorLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 17</value>
   </data>
-  <data name="telefonoTrabajoMadreLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 13</value>
-  </data>
-  <data name="telefonoTrabajoMadreLabel.TabIndex" type="System.Int32, mscorlib">
+  <data name="telefonoTrabajoTutorLabel.TabIndex" type="System.Int32, mscorlib">
     <value>47</value>
   </data>
-  <data name="telefonoTrabajoMadreLabel.Text" xml:space="preserve">
+  <data name="telefonoTrabajoTutorLabel.Text" xml:space="preserve">
     <value>TRABAJO</value>
   </data>
-  <data name="&gt;&gt;telefonoTrabajoMadreLabel.Name" xml:space="preserve">
-    <value>telefonoTrabajoMadreLabel</value>
+  <data name="&gt;&gt;telefonoTrabajoTutorLabel.Name" xml:space="preserve">
+    <value>telefonoTrabajoTutorLabel</value>
   </data>
-  <data name="&gt;&gt;telefonoTrabajoMadreLabel.Type" xml:space="preserve">
+  <data name="&gt;&gt;telefonoTrabajoTutorLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;telefonoTrabajoMadreLabel.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;telefonoTrabajoTutorLabel.Parent" xml:space="preserve">
+    <value>informacionTutorGroupBox</value>
   </data>
-  <data name="&gt;&gt;telefonoTrabajoMadreLabel.ZOrder" xml:space="preserve">
-    <value>67</value>
+  <data name="&gt;&gt;telefonoTrabajoTutorLabel.ZOrder" xml:space="preserve">
+    <value>12</value>
   </data>
-  <data name="telefonoCasaPadreLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="telefonoCasaTutorTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>202, 202</value>
   </data>
-  <data name="telefonoCasaPadreLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>111, 513</value>
+  <data name="telefonoCasaTutorTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
-  <data name="telefonoCasaPadreLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+  <data name="telefonoCasaTutorTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 22</value>
   </data>
-  <data name="telefonoCasaPadreLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 13</value>
-  </data>
-  <data name="telefonoCasaPadreLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>48</value>
-  </data>
-  <data name="telefonoCasaPadreLabel.Text" xml:space="preserve">
-    <value>CASA</value>
-  </data>
-  <data name="&gt;&gt;telefonoCasaPadreLabel.Name" xml:space="preserve">
-    <value>telefonoCasaPadreLabel</value>
-  </data>
-  <data name="&gt;&gt;telefonoCasaPadreLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;telefonoCasaPadreLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;telefonoCasaPadreLabel.ZOrder" xml:space="preserve">
-    <value>66</value>
-  </data>
-  <data name="telefonoCelularPadreLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="telefonoCelularPadreLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>242, 515</value>
-  </data>
-  <data name="telefonoCelularPadreLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
-  <data name="telefonoCelularPadreLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 13</value>
-  </data>
-  <data name="telefonoCelularPadreLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>49</value>
-  </data>
-  <data name="telefonoCelularPadreLabel.Text" xml:space="preserve">
-    <value>CELULAR</value>
-  </data>
-  <data name="&gt;&gt;telefonoCelularPadreLabel.Name" xml:space="preserve">
-    <value>telefonoCelularPadreLabel</value>
-  </data>
-  <data name="&gt;&gt;telefonoCelularPadreLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;telefonoCelularPadreLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;telefonoCelularPadreLabel.ZOrder" xml:space="preserve">
-    <value>65</value>
-  </data>
-  <data name="telefonoTrabajoPadreLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="telefonoTrabajoPadreLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>397, 513</value>
-  </data>
-  <data name="telefonoTrabajoPadreLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
-  <data name="telefonoTrabajoPadreLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 13</value>
-  </data>
-  <data name="telefonoTrabajoPadreLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>50</value>
-  </data>
-  <data name="telefonoTrabajoPadreLabel.Text" xml:space="preserve">
-    <value>TRABAJO</value>
-  </data>
-  <data name="&gt;&gt;telefonoTrabajoPadreLabel.Name" xml:space="preserve">
-    <value>telefonoTrabajoPadreLabel</value>
-  </data>
-  <data name="&gt;&gt;telefonoTrabajoPadreLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;telefonoTrabajoPadreLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;telefonoTrabajoPadreLabel.ZOrder" xml:space="preserve">
-    <value>64</value>
-  </data>
-  <data name="telefonoCasaPadreTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>148, 513</value>
-  </data>
-  <data name="telefonoCasaPadreTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="telefonoCasaPadreTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
-  </data>
-  <data name="telefonoCasaPadreTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>51</value>
-  </data>
-  <data name="&gt;&gt;telefonoCasaPadreTextBox.Name" xml:space="preserve">
-    <value>telefonoCasaPadreTextBox</value>
-  </data>
-  <data name="&gt;&gt;telefonoCasaPadreTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;telefonoCasaPadreTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;telefonoCasaPadreTextBox.ZOrder" xml:space="preserve">
-    <value>63</value>
-  </data>
-  <data name="telefonoCelularPadreTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>299, 511</value>
-  </data>
-  <data name="telefonoCelularPadreTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="telefonoCelularPadreTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
-  </data>
-  <data name="telefonoCelularPadreTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>52</value>
-  </data>
-  <data name="&gt;&gt;telefonoCelularPadreTextBox.Name" xml:space="preserve">
-    <value>telefonoCelularPadreTextBox</value>
-  </data>
-  <data name="&gt;&gt;telefonoCelularPadreTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;telefonoCelularPadreTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;telefonoCelularPadreTextBox.ZOrder" xml:space="preserve">
-    <value>62</value>
-  </data>
-  <data name="telefonoTrabajoPadreTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>463, 509</value>
-  </data>
-  <data name="telefonoTrabajoPadreTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="telefonoTrabajoPadreTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
-  </data>
-  <data name="telefonoTrabajoPadreTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>53</value>
-  </data>
-  <data name="&gt;&gt;telefonoTrabajoPadreTextBox.Name" xml:space="preserve">
-    <value>telefonoTrabajoPadreTextBox</value>
-  </data>
-  <data name="&gt;&gt;telefonoTrabajoPadreTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;telefonoTrabajoPadreTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;telefonoTrabajoPadreTextBox.ZOrder" xml:space="preserve">
-    <value>61</value>
-  </data>
-  <data name="telefonoCasaMadreTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>148, 349</value>
-  </data>
-  <data name="telefonoCasaMadreTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="telefonoCasaMadreTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
-  </data>
-  <data name="telefonoCasaMadreTextBox.TabIndex" type="System.Int32, mscorlib">
+  <data name="telefonoCasaTutorTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>54</value>
   </data>
-  <data name="&gt;&gt;telefonoCasaMadreTextBox.Name" xml:space="preserve">
-    <value>telefonoCasaMadreTextBox</value>
+  <data name="&gt;&gt;telefonoCasaTutorTextBox.Name" xml:space="preserve">
+    <value>telefonoCasaTutorTextBox</value>
   </data>
-  <data name="&gt;&gt;telefonoCasaMadreTextBox.Type" xml:space="preserve">
+  <data name="&gt;&gt;telefonoCasaTutorTextBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;telefonoCasaMadreTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;telefonoCasaTutorTextBox.Parent" xml:space="preserve">
+    <value>informacionTutorGroupBox</value>
   </data>
-  <data name="&gt;&gt;telefonoCasaMadreTextBox.ZOrder" xml:space="preserve">
-    <value>60</value>
+  <data name="&gt;&gt;telefonoCasaTutorTextBox.ZOrder" xml:space="preserve">
+    <value>13</value>
   </data>
-  <data name="telefonoCelularMadreTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>299, 349</value>
+  <data name="telefonoCelularTutorTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>404, 202</value>
   </data>
-  <data name="telefonoCelularMadreTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+  <data name="telefonoCelularTutorTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
-  <data name="telefonoCelularMadreTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
+  <data name="telefonoCelularTutorTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 22</value>
   </data>
-  <data name="telefonoCelularMadreTextBox.TabIndex" type="System.Int32, mscorlib">
+  <data name="telefonoCelularTutorTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>55</value>
   </data>
-  <data name="&gt;&gt;telefonoCelularMadreTextBox.Name" xml:space="preserve">
-    <value>telefonoCelularMadreTextBox</value>
+  <data name="&gt;&gt;telefonoCelularTutorTextBox.Name" xml:space="preserve">
+    <value>telefonoCelularTutorTextBox</value>
   </data>
-  <data name="&gt;&gt;telefonoCelularMadreTextBox.Type" xml:space="preserve">
+  <data name="&gt;&gt;telefonoCelularTutorTextBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;telefonoCelularMadreTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;telefonoCelularTutorTextBox.Parent" xml:space="preserve">
+    <value>informacionTutorGroupBox</value>
   </data>
-  <data name="&gt;&gt;telefonoCelularMadreTextBox.ZOrder" xml:space="preserve">
-    <value>59</value>
+  <data name="&gt;&gt;telefonoCelularTutorTextBox.ZOrder" xml:space="preserve">
+    <value>14</value>
   </data>
-  <data name="telefonoTrabajoMadreTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>455, 349</value>
+  <data name="telefonoTrabajoTutorTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>612, 202</value>
   </data>
-  <data name="telefonoTrabajoMadreTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+  <data name="telefonoTrabajoTutorTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
-  <data name="telefonoTrabajoMadreTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
+  <data name="telefonoTrabajoTutorTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 22</value>
   </data>
-  <data name="telefonoTrabajoMadreTextBox.TabIndex" type="System.Int32, mscorlib">
+  <data name="telefonoTrabajoTutorTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>56</value>
   </data>
-  <data name="&gt;&gt;telefonoTrabajoMadreTextBox.Name" xml:space="preserve">
-    <value>telefonoTrabajoMadreTextBox</value>
+  <data name="&gt;&gt;telefonoTrabajoTutorTextBox.Name" xml:space="preserve">
+    <value>telefonoTrabajoTutorTextBox</value>
   </data>
-  <data name="&gt;&gt;telefonoTrabajoMadreTextBox.Type" xml:space="preserve">
+  <data name="&gt;&gt;telefonoTrabajoTutorTextBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;telefonoTrabajoMadreTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;telefonoTrabajoMadreTextBox.ZOrder" xml:space="preserve">
-    <value>58</value>
-  </data>
-  <data name="madreCheckBox.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="madreCheckBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 199</value>
-  </data>
-  <data name="madreCheckBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="madreCheckBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 17</value>
-  </data>
-  <data name="madreCheckBox.TabIndex" type="System.Int32, mscorlib">
-    <value>57</value>
-  </data>
-  <data name="madreCheckBox.Text" xml:space="preserve">
-    <value>MADRE/TUTORA</value>
-  </data>
-  <data name="&gt;&gt;madreCheckBox.Name" xml:space="preserve">
-    <value>madreCheckBox</value>
-  </data>
-  <data name="&gt;&gt;madreCheckBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;madreCheckBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;madreCheckBox.ZOrder" xml:space="preserve">
-    <value>57</value>
-  </data>
-  <data name="padreCheckBox.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="padreCheckBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>126, 199</value>
-  </data>
-  <data name="padreCheckBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="padreCheckBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>106, 17</value>
-  </data>
-  <data name="padreCheckBox.TabIndex" type="System.Int32, mscorlib">
-    <value>58</value>
-  </data>
-  <data name="padreCheckBox.Text" xml:space="preserve">
-    <value>PADRE/TUTOR</value>
-  </data>
-  <data name="&gt;&gt;padreCheckBox.Name" xml:space="preserve">
-    <value>padreCheckBox</value>
-  </data>
-  <data name="&gt;&gt;padreCheckBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;padreCheckBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;padreCheckBox.ZOrder" xml:space="preserve">
-    <value>56</value>
-  </data>
-  <data name="responablesAlumnoLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="responablesAlumnoLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 183</value>
-  </data>
-  <data name="responablesAlumnoLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
-  <data name="responablesAlumnoLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>289, 13</value>
-  </data>
-  <data name="responablesAlumnoLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>59</value>
-  </data>
-  <data name="responablesAlumnoLabel.Text" xml:space="preserve">
-    <value>SELECCIONE EL/LOS RESPONSABLE/S DEL ALUMNO: </value>
-  </data>
-  <data name="&gt;&gt;responablesAlumnoLabel.Name" xml:space="preserve">
-    <value>responablesAlumnoLabel</value>
-  </data>
-  <data name="&gt;&gt;responablesAlumnoLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;responablesAlumnoLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;responablesAlumnoLabel.ZOrder" xml:space="preserve">
-    <value>55</value>
-  </data>
-  <data name="lugarTrabajoMadreLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lugarTrabajoMadreLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>175, 320</value>
-  </data>
-  <data name="lugarTrabajoMadreLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
-  <data name="lugarTrabajoMadreLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>139, 13</value>
-  </data>
-  <data name="lugarTrabajoMadreLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>60</value>
-  </data>
-  <data name="lugarTrabajoMadreLabel.Text" xml:space="preserve">
-    <value>DIRECCIÓN DE TRABAJO:</value>
-  </data>
-  <data name="&gt;&gt;lugarTrabajoMadreLabel.Name" xml:space="preserve">
-    <value>lugarTrabajoMadreLabel</value>
-  </data>
-  <data name="&gt;&gt;lugarTrabajoMadreLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lugarTrabajoMadreLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lugarTrabajoMadreLabel.ZOrder" xml:space="preserve">
-    <value>54</value>
-  </data>
-  <data name="calleTrabajoMadreTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>397, 320</value>
-  </data>
-  <data name="calleTrabajoMadreTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="calleTrabajoMadreTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
-  </data>
-  <data name="calleTrabajoMadreTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>61</value>
-  </data>
-  <data name="&gt;&gt;calleTrabajoMadreTextBox.Name" xml:space="preserve">
-    <value>calleTrabajoMadreTextBox</value>
-  </data>
-  <data name="&gt;&gt;calleTrabajoMadreTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;calleTrabajoMadreTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;calleTrabajoMadreTextBox.ZOrder" xml:space="preserve">
-    <value>53</value>
-  </data>
-  <data name="calleTrabajoPadreTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>406, 477</value>
-  </data>
-  <data name="calleTrabajoPadreTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="calleTrabajoPadreTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
-  </data>
-  <data name="calleTrabajoPadreTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>63</value>
-  </data>
-  <data name="&gt;&gt;calleTrabajoPadreTextBox.Name" xml:space="preserve">
-    <value>calleTrabajoPadreTextBox</value>
-  </data>
-  <data name="&gt;&gt;calleTrabajoPadreTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;calleTrabajoPadreTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;calleTrabajoPadreTextBox.ZOrder" xml:space="preserve">
-    <value>51</value>
-  </data>
-  <data name="lugarTrabajoPadreLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lugarTrabajoPadreLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>203, 479</value>
-  </data>
-  <data name="lugarTrabajoPadreLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
-  <data name="lugarTrabajoPadreLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>139, 13</value>
-  </data>
-  <data name="lugarTrabajoPadreLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>62</value>
-  </data>
-  <data name="lugarTrabajoPadreLabel.Text" xml:space="preserve">
-    <value>DIRECCIÓN DE TRABAJO:</value>
-  </data>
-  <data name="&gt;&gt;lugarTrabajoPadreLabel.Name" xml:space="preserve">
-    <value>lugarTrabajoPadreLabel</value>
-  </data>
-  <data name="&gt;&gt;lugarTrabajoPadreLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lugarTrabajoPadreLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lugarTrabajoPadreLabel.ZOrder" xml:space="preserve">
-    <value>52</value>
+  <data name="&gt;&gt;telefonoTrabajoTutorTextBox.Parent" xml:space="preserve">
+    <value>informacionTutorGroupBox</value>
+  </data>
+  <data name="&gt;&gt;telefonoTrabajoTutorTextBox.ZOrder" xml:space="preserve">
+    <value>15</value>
   </data>
   <data name="ciudadNacimientoAlumnoLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="ciudadNacimientoAlumnoLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>156, 108</value>
-  </data>
-  <data name="ciudadNacimientoAlumnoLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>208, 133</value>
   </data>
   <data name="ciudadNacimientoAlumnoLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 13</value>
+    <value>63, 17</value>
   </data>
   <data name="ciudadNacimientoAlumnoLabel.TabIndex" type="System.Int32, mscorlib">
     <value>64</value>
@@ -1730,13 +1141,10 @@
     <value>True</value>
   </data>
   <data name="estadoNacimientoAlumnoLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>310, 108</value>
-  </data>
-  <data name="estadoNacimientoAlumnoLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>413, 133</value>
   </data>
   <data name="estadoNacimientoAlumnoLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 13</value>
+    <value>69, 17</value>
   </data>
   <data name="estadoNacimientoAlumnoLabel.TabIndex" type="System.Int32, mscorlib">
     <value>65</value>
@@ -1760,13 +1168,10 @@
     <value>True</value>
   </data>
   <data name="apellidoPaternoAlumnoLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>372, 49</value>
-  </data>
-  <data name="apellidoPaternoAlumnoLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>496, 60</value>
   </data>
   <data name="apellidoPaternoAlumnoLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>117, 13</value>
+    <value>150, 17</value>
   </data>
   <data name="apellidoPaternoAlumnoLabel.TabIndex" type="System.Int32, mscorlib">
     <value>66</value>
@@ -1790,13 +1195,10 @@
     <value>True</value>
   </data>
   <data name="apellidoMaternoAlumnoLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>603, 48</value>
-  </data>
-  <data name="apellidoMaternoAlumnoLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>804, 59</value>
   </data>
   <data name="apellidoMaternoAlumnoLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>119, 13</value>
+    <value>152, 17</value>
   </data>
   <data name="apellidoMaternoAlumnoLabel.TabIndex" type="System.Int32, mscorlib">
     <value>67</value>
@@ -1820,13 +1222,10 @@
     <value>True</value>
   </data>
   <data name="calleDireccionAlumnoLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>162, 138</value>
-  </data>
-  <data name="calleDireccionAlumnoLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>216, 170</value>
   </data>
   <data name="calleDireccionAlumnoLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 13</value>
+    <value>55, 17</value>
   </data>
   <data name="calleDireccionAlumnoLabel.TabIndex" type="System.Int32, mscorlib">
     <value>68</value>
@@ -1850,13 +1249,10 @@
     <value>True</value>
   </data>
   <data name="numeroDireccionAlumnoLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>306, 141</value>
-  </data>
-  <data name="numeroDireccionAlumnoLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>408, 174</value>
   </data>
   <data name="numeroDireccionAlumnoLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 13</value>
+    <value>73, 17</value>
   </data>
   <data name="numeroDireccionAlumnoLabel.TabIndex" type="System.Int32, mscorlib">
     <value>69</value>
@@ -1880,13 +1276,10 @@
     <value>True</value>
   </data>
   <data name="coloniaDireccionAlumnoLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>470, 137</value>
-  </data>
-  <data name="coloniaDireccionAlumnoLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>627, 169</value>
   </data>
   <data name="coloniaDireccionAlumnoLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 13</value>
+    <value>73, 17</value>
   </data>
   <data name="coloniaDireccionAlumnoLabel.TabIndex" type="System.Int32, mscorlib">
     <value>70</value>
@@ -1907,13 +1300,13 @@
     <value>20</value>
   </data>
   <data name="apellidoPaternoAlumnoTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>504, 49</value>
+    <value>672, 60</value>
   </data>
   <data name="apellidoPaternoAlumnoTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="apellidoPaternoAlumnoTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
+    <value>100, 22</value>
   </data>
   <data name="apellidoPaternoAlumnoTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>71</value>
@@ -1931,13 +1324,13 @@
     <value>5</value>
   </data>
   <data name="apellidoMaternoAlumnoTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>733, 45</value>
+    <value>977, 55</value>
   </data>
   <data name="apellidoMaternoAlumnoTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="apellidoMaternoAlumnoTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
+    <value>100, 22</value>
   </data>
   <data name="apellidoMaternoAlumnoTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>72</value>
@@ -1955,13 +1348,13 @@
     <value>7</value>
   </data>
   <data name="ciudadNacimientoAlumnoTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>216, 105</value>
+    <value>288, 129</value>
   </data>
   <data name="ciudadNacimientoAlumnoTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="ciudadNacimientoAlumnoTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
+    <value>100, 22</value>
   </data>
   <data name="ciudadNacimientoAlumnoTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>73</value>
@@ -1979,13 +1372,13 @@
     <value>12</value>
   </data>
   <data name="estadoNacimientoAlumnoTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>376, 105</value>
+    <value>501, 129</value>
   </data>
   <data name="estadoNacimientoAlumnoTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="estadoNacimientoAlumnoTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
+    <value>100, 22</value>
   </data>
   <data name="estadoNacimientoAlumnoTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>74</value>
@@ -2003,13 +1396,13 @@
     <value>14</value>
   </data>
   <data name="calleDireccionAlumnoTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>216, 134</value>
+    <value>288, 165</value>
   </data>
   <data name="calleDireccionAlumnoTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="calleDireccionAlumnoTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
+    <value>100, 22</value>
   </data>
   <data name="calleDireccionAlumnoTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>75</value>
@@ -2027,13 +1420,13 @@
     <value>17</value>
   </data>
   <data name="numeroDireccionAlumnoTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>375, 135</value>
+    <value>500, 166</value>
   </data>
   <data name="numeroDireccionAlumnoTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="numeroDireccionAlumnoTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
+    <value>100, 22</value>
   </data>
   <data name="numeroDireccionAlumnoTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>76</value>
@@ -2051,13 +1444,13 @@
     <value>19</value>
   </data>
   <data name="coloniaDireccionAlumnoTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>540, 135</value>
+    <value>720, 166</value>
   </data>
   <data name="coloniaDireccionAlumnoTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="coloniaDireccionAlumnoTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
+    <value>100, 22</value>
   </data>
   <data name="coloniaDireccionAlumnoTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>77</value>
@@ -2074,833 +1467,269 @@
   <data name="&gt;&gt;coloniaDireccionAlumnoTextBox.ZOrder" xml:space="preserve">
     <value>21</value>
   </data>
-  <data name="apellidoPaternoMadreLabel.AutoSize" type="System.Boolean, mscorlib">
+  <data name="apellidoPaternoTutorLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="apellidoPaternoMadreLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>309, 270</value>
+  <data name="apellidoPaternoTutorLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>377, 105</value>
   </data>
-  <data name="apellidoPaternoMadreLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+  <data name="apellidoPaternoTutorLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 17</value>
   </data>
-  <data name="apellidoPaternoMadreLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>117, 13</value>
-  </data>
-  <data name="apellidoPaternoMadreLabel.TabIndex" type="System.Int32, mscorlib">
+  <data name="apellidoPaternoTutorLabel.TabIndex" type="System.Int32, mscorlib">
     <value>78</value>
   </data>
-  <data name="apellidoPaternoMadreLabel.Text" xml:space="preserve">
+  <data name="apellidoPaternoTutorLabel.Text" xml:space="preserve">
     <value>APELLIDO PATERNO:</value>
   </data>
-  <data name="&gt;&gt;apellidoPaternoMadreLabel.Name" xml:space="preserve">
-    <value>apellidoPaternoMadreLabel</value>
+  <data name="&gt;&gt;apellidoPaternoTutorLabel.Name" xml:space="preserve">
+    <value>apellidoPaternoTutorLabel</value>
   </data>
-  <data name="&gt;&gt;apellidoPaternoMadreLabel.Type" xml:space="preserve">
+  <data name="&gt;&gt;apellidoPaternoTutorLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;apellidoPaternoMadreLabel.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;apellidoPaternoTutorLabel.Parent" xml:space="preserve">
+    <value>informacionTutorGroupBox</value>
   </data>
-  <data name="&gt;&gt;apellidoPaternoMadreLabel.ZOrder" xml:space="preserve">
-    <value>50</value>
+  <data name="&gt;&gt;apellidoPaternoTutorLabel.ZOrder" xml:space="preserve">
+    <value>19</value>
   </data>
-  <data name="apellidoMaternoMadreLabel.AutoSize" type="System.Boolean, mscorlib">
+  <data name="apellidoMaternoTutorLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="apellidoMaternoMadreLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>556, 270</value>
+  <data name="apellidoMaternoTutorLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>706, 105</value>
   </data>
-  <data name="apellidoMaternoMadreLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+  <data name="apellidoMaternoTutorLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 17</value>
   </data>
-  <data name="apellidoMaternoMadreLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>119, 13</value>
-  </data>
-  <data name="apellidoMaternoMadreLabel.TabIndex" type="System.Int32, mscorlib">
+  <data name="apellidoMaternoTutorLabel.TabIndex" type="System.Int32, mscorlib">
     <value>79</value>
   </data>
-  <data name="apellidoMaternoMadreLabel.Text" xml:space="preserve">
+  <data name="apellidoMaternoTutorLabel.Text" xml:space="preserve">
     <value>APELLIDO MATERNO:</value>
   </data>
-  <data name="&gt;&gt;apellidoMaternoMadreLabel.Name" xml:space="preserve">
-    <value>apellidoMaternoMadreLabel</value>
+  <data name="&gt;&gt;apellidoMaternoTutorLabel.Name" xml:space="preserve">
+    <value>apellidoMaternoTutorLabel</value>
   </data>
-  <data name="&gt;&gt;apellidoMaternoMadreLabel.Type" xml:space="preserve">
+  <data name="&gt;&gt;apellidoMaternoTutorLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;apellidoMaternoMadreLabel.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;apellidoMaternoTutorLabel.Parent" xml:space="preserve">
+    <value>informacionTutorGroupBox</value>
   </data>
-  <data name="&gt;&gt;apellidoMaternoMadreLabel.ZOrder" xml:space="preserve">
-    <value>49</value>
+  <data name="&gt;&gt;apellidoMaternoTutorLabel.ZOrder" xml:space="preserve">
+    <value>21</value>
   </data>
-  <data name="apellidoPaternoMadreTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>436, 267</value>
+  <data name="apellidoPaternoTutorTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>546, 102</value>
   </data>
-  <data name="apellidoPaternoMadreTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+  <data name="apellidoPaternoTutorTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
-  <data name="apellidoPaternoMadreTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
+  <data name="apellidoPaternoTutorTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 22</value>
   </data>
-  <data name="apellidoPaternoMadreTextBox.TabIndex" type="System.Int32, mscorlib">
+  <data name="apellidoPaternoTutorTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>80</value>
   </data>
-  <data name="&gt;&gt;apellidoPaternoMadreTextBox.Name" xml:space="preserve">
-    <value>apellidoPaternoMadreTextBox</value>
+  <data name="&gt;&gt;apellidoPaternoTutorTextBox.Name" xml:space="preserve">
+    <value>apellidoPaternoTutorTextBox</value>
   </data>
-  <data name="&gt;&gt;apellidoPaternoMadreTextBox.Type" xml:space="preserve">
+  <data name="&gt;&gt;apellidoPaternoTutorTextBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;apellidoPaternoMadreTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;apellidoPaternoTutorTextBox.Parent" xml:space="preserve">
+    <value>informacionTutorGroupBox</value>
   </data>
-  <data name="&gt;&gt;apellidoPaternoMadreTextBox.ZOrder" xml:space="preserve">
-    <value>48</value>
-  </data>
-  <data name="apellidoMaternoMadreTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>698, 267</value>
-  </data>
-  <data name="apellidoMaternoMadreTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="apellidoMaternoMadreTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
-  </data>
-  <data name="apellidoMaternoMadreTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>81</value>
-  </data>
-  <data name="&gt;&gt;apellidoMaternoMadreTextBox.Name" xml:space="preserve">
-    <value>apellidoMaternoMadreTextBox</value>
-  </data>
-  <data name="&gt;&gt;apellidoMaternoMadreTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;apellidoMaternoMadreTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;apellidoMaternoMadreTextBox.ZOrder" xml:space="preserve">
-    <value>47</value>
-  </data>
-  <data name="apellidoPaternoPadreLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="apellidoPaternoPadreLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>320, 427</value>
-  </data>
-  <data name="apellidoPaternoPadreLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
-  <data name="apellidoPaternoPadreLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>117, 13</value>
-  </data>
-  <data name="apellidoPaternoPadreLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>82</value>
-  </data>
-  <data name="apellidoPaternoPadreLabel.Text" xml:space="preserve">
-    <value>APELLIDO PATERNO:</value>
-  </data>
-  <data name="&gt;&gt;apellidoPaternoPadreLabel.Name" xml:space="preserve">
-    <value>apellidoPaternoPadreLabel</value>
-  </data>
-  <data name="&gt;&gt;apellidoPaternoPadreLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;apellidoPaternoPadreLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;apellidoPaternoPadreLabel.ZOrder" xml:space="preserve">
-    <value>46</value>
-  </data>
-  <data name="apellidoMaternoPadreLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="apellidoMaternoPadreLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>531, 427</value>
-  </data>
-  <data name="apellidoMaternoPadreLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
-  <data name="apellidoMaternoPadreLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>119, 13</value>
-  </data>
-  <data name="apellidoMaternoPadreLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>83</value>
-  </data>
-  <data name="apellidoMaternoPadreLabel.Text" xml:space="preserve">
-    <value>APELLIDO MATERNO:</value>
-  </data>
-  <data name="&gt;&gt;apellidoMaternoPadreLabel.Name" xml:space="preserve">
-    <value>apellidoMaternoPadreLabel</value>
-  </data>
-  <data name="&gt;&gt;apellidoMaternoPadreLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;apellidoMaternoPadreLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;apellidoMaternoPadreLabel.ZOrder" xml:space="preserve">
-    <value>45</value>
-  </data>
-  <data name="apellidoPaternoPadreTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>436, 425</value>
-  </data>
-  <data name="apellidoPaternoPadreTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="apellidoPaternoPadreTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
-  </data>
-  <data name="apellidoPaternoPadreTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>84</value>
-  </data>
-  <data name="&gt;&gt;apellidoPaternoPadreTextBox.Name" xml:space="preserve">
-    <value>apellidoPaternoPadreTextBox</value>
-  </data>
-  <data name="&gt;&gt;apellidoPaternoPadreTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;apellidoPaternoPadreTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;apellidoPaternoPadreTextBox.ZOrder" xml:space="preserve">
-    <value>44</value>
-  </data>
-  <data name="apellidoMaternoPadreTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>650, 427</value>
-  </data>
-  <data name="apellidoMaternoPadreTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="apellidoMaternoPadreTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
-  </data>
-  <data name="apellidoMaternoPadreTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>85</value>
-  </data>
-  <data name="&gt;&gt;apellidoMaternoPadreTextBox.Name" xml:space="preserve">
-    <value>apellidoMaternoPadreTextBox</value>
-  </data>
-  <data name="&gt;&gt;apellidoMaternoPadreTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;apellidoMaternoPadreTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;apellidoMaternoPadreTextBox.ZOrder" xml:space="preserve">
-    <value>43</value>
-  </data>
-  <data name="calleDireccionMadreLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="calleDireccionMadreLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>297, 297</value>
-  </data>
-  <data name="calleDireccionMadreLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
-  <data name="calleDireccionMadreLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 13</value>
-  </data>
-  <data name="calleDireccionMadreLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>86</value>
-  </data>
-  <data name="calleDireccionMadreLabel.Text" xml:space="preserve">
-    <value>CALLE:</value>
-  </data>
-  <data name="&gt;&gt;calleDireccionMadreLabel.Name" xml:space="preserve">
-    <value>calleDireccionMadreLabel</value>
-  </data>
-  <data name="&gt;&gt;calleDireccionMadreLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;calleDireccionMadreLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;calleDireccionMadreLabel.ZOrder" xml:space="preserve">
-    <value>42</value>
-  </data>
-  <data name="numeroDireccionMadreLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="numeroDireccionMadreLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>476, 293</value>
-  </data>
-  <data name="numeroDireccionMadreLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
-  <data name="numeroDireccionMadreLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 13</value>
-  </data>
-  <data name="numeroDireccionMadreLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>87</value>
-  </data>
-  <data name="numeroDireccionMadreLabel.Text" xml:space="preserve">
-    <value>NUMERO:</value>
-  </data>
-  <data name="&gt;&gt;numeroDireccionMadreLabel.Name" xml:space="preserve">
-    <value>numeroDireccionMadreLabel</value>
-  </data>
-  <data name="&gt;&gt;numeroDireccionMadreLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numeroDireccionMadreLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;numeroDireccionMadreLabel.ZOrder" xml:space="preserve">
-    <value>41</value>
-  </data>
-  <data name="coloniaDireccionMadreLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="coloniaDireccionMadreLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>623, 297</value>
-  </data>
-  <data name="coloniaDireccionMadreLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
-  <data name="coloniaDireccionMadreLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 13</value>
-  </data>
-  <data name="coloniaDireccionMadreLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>88</value>
-  </data>
-  <data name="coloniaDireccionMadreLabel.Text" xml:space="preserve">
-    <value>COLONIA:</value>
-  </data>
-  <data name="&gt;&gt;coloniaDireccionMadreLabel.Name" xml:space="preserve">
-    <value>coloniaDireccionMadreLabel</value>
-  </data>
-  <data name="&gt;&gt;coloniaDireccionMadreLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;coloniaDireccionMadreLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;coloniaDireccionMadreLabel.ZOrder" xml:space="preserve">
-    <value>40</value>
-  </data>
-  <data name="calleDireccionPadreLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="calleDireccionPadreLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>322, 448</value>
-  </data>
-  <data name="calleDireccionPadreLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
-  <data name="calleDireccionPadreLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 13</value>
-  </data>
-  <data name="calleDireccionPadreLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>89</value>
-  </data>
-  <data name="calleDireccionPadreLabel.Text" xml:space="preserve">
-    <value>CALLE:</value>
-  </data>
-  <data name="&gt;&gt;calleDireccionPadreLabel.Name" xml:space="preserve">
-    <value>calleDireccionPadreLabel</value>
-  </data>
-  <data name="&gt;&gt;calleDireccionPadreLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;calleDireccionPadreLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;calleDireccionPadreLabel.ZOrder" xml:space="preserve">
-    <value>39</value>
-  </data>
-  <data name="numeroDireccionPadreLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="numeroDireccionPadreLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>451, 447</value>
-  </data>
-  <data name="numeroDireccionPadreLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
-  <data name="numeroDireccionPadreLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 13</value>
-  </data>
-  <data name="numeroDireccionPadreLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>90</value>
-  </data>
-  <data name="numeroDireccionPadreLabel.Text" xml:space="preserve">
-    <value>NUMERO:</value>
-  </data>
-  <data name="&gt;&gt;numeroDireccionPadreLabel.Name" xml:space="preserve">
-    <value>numeroDireccionPadreLabel</value>
-  </data>
-  <data name="&gt;&gt;numeroDireccionPadreLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numeroDireccionPadreLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;numeroDireccionPadreLabel.ZOrder" xml:space="preserve">
-    <value>38</value>
-  </data>
-  <data name="coloniaDireccionPadreLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="coloniaDireccionPadreLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>628, 453</value>
-  </data>
-  <data name="coloniaDireccionPadreLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
-  <data name="coloniaDireccionPadreLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 13</value>
-  </data>
-  <data name="coloniaDireccionPadreLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>91</value>
-  </data>
-  <data name="coloniaDireccionPadreLabel.Text" xml:space="preserve">
-    <value>COLONIA:</value>
-  </data>
-  <data name="&gt;&gt;coloniaDireccionPadreLabel.Name" xml:space="preserve">
-    <value>coloniaDireccionPadreLabel</value>
-  </data>
-  <data name="&gt;&gt;coloniaDireccionPadreLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;coloniaDireccionPadreLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;coloniaDireccionPadreLabel.ZOrder" xml:space="preserve">
-    <value>37</value>
-  </data>
-  <data name="calleDireccionMadreTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>343, 295</value>
-  </data>
-  <data name="calleDireccionMadreTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="calleDireccionMadreTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
-  </data>
-  <data name="calleDireccionMadreTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>92</value>
-  </data>
-  <data name="&gt;&gt;calleDireccionMadreTextBox.Name" xml:space="preserve">
-    <value>calleDireccionMadreTextBox</value>
-  </data>
-  <data name="&gt;&gt;calleDireccionMadreTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;calleDireccionMadreTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;calleDireccionMadreTextBox.ZOrder" xml:space="preserve">
-    <value>36</value>
-  </data>
-  <data name="numeroDireccionMadreTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>536, 294</value>
-  </data>
-  <data name="numeroDireccionMadreTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="numeroDireccionMadreTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
-  </data>
-  <data name="numeroDireccionMadreTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>93</value>
-  </data>
-  <data name="&gt;&gt;numeroDireccionMadreTextBox.Name" xml:space="preserve">
-    <value>numeroDireccionMadreTextBox</value>
-  </data>
-  <data name="&gt;&gt;numeroDireccionMadreTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numeroDireccionMadreTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;numeroDireccionMadreTextBox.ZOrder" xml:space="preserve">
-    <value>35</value>
-  </data>
-  <data name="coloniaDireccionMadreTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>698, 289</value>
-  </data>
-  <data name="coloniaDireccionMadreTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="coloniaDireccionMadreTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
-  </data>
-  <data name="coloniaDireccionMadreTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>94</value>
-  </data>
-  <data name="&gt;&gt;coloniaDireccionMadreTextBox.Name" xml:space="preserve">
-    <value>coloniaDireccionMadreTextBox</value>
-  </data>
-  <data name="&gt;&gt;coloniaDireccionMadreTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;coloniaDireccionMadreTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;coloniaDireccionMadreTextBox.ZOrder" xml:space="preserve">
-    <value>34</value>
-  </data>
-  <data name="calleDireccionPadreTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>371, 445</value>
-  </data>
-  <data name="calleDireccionPadreTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="calleDireccionPadreTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
-  </data>
-  <data name="calleDireccionPadreTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>95</value>
-  </data>
-  <data name="&gt;&gt;calleDireccionPadreTextBox.Name" xml:space="preserve">
-    <value>calleDireccionPadreTextBox</value>
-  </data>
-  <data name="&gt;&gt;calleDireccionPadreTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;calleDireccionPadreTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;calleDireccionPadreTextBox.ZOrder" xml:space="preserve">
-    <value>33</value>
-  </data>
-  <data name="numeroDireccionPadreTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>510, 446</value>
-  </data>
-  <data name="numeroDireccionPadreTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="numeroDireccionPadreTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
-  </data>
-  <data name="numeroDireccionPadreTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>96</value>
-  </data>
-  <data name="&gt;&gt;numeroDireccionPadreTextBox.Name" xml:space="preserve">
-    <value>numeroDireccionPadreTextBox</value>
-  </data>
-  <data name="&gt;&gt;numeroDireccionPadreTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numeroDireccionPadreTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;numeroDireccionPadreTextBox.ZOrder" xml:space="preserve">
-    <value>32</value>
-  </data>
-  <data name="coloniaDireccionPadreTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>688, 453</value>
-  </data>
-  <data name="coloniaDireccionPadreTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="coloniaDireccionPadreTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
-  </data>
-  <data name="coloniaDireccionPadreTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>97</value>
-  </data>
-  <data name="&gt;&gt;coloniaDireccionPadreTextBox.Name" xml:space="preserve">
-    <value>coloniaDireccionPadreTextBox</value>
-  </data>
-  <data name="&gt;&gt;coloniaDireccionPadreTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;coloniaDireccionPadreTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;coloniaDireccionPadreTextBox.ZOrder" xml:space="preserve">
-    <value>31</value>
-  </data>
-  <data name="calleTrabajoMadreLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="calleTrabajoMadreLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>333, 320</value>
-  </data>
-  <data name="calleTrabajoMadreLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
-  <data name="calleTrabajoMadreLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 13</value>
-  </data>
-  <data name="calleTrabajoMadreLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>98</value>
-  </data>
-  <data name="calleTrabajoMadreLabel.Text" xml:space="preserve">
-    <value>CALLE:</value>
-  </data>
-  <data name="&gt;&gt;calleTrabajoMadreLabel.Name" xml:space="preserve">
-    <value>calleTrabajoMadreLabel</value>
-  </data>
-  <data name="&gt;&gt;calleTrabajoMadreLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;calleTrabajoMadreLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;calleTrabajoMadreLabel.ZOrder" xml:space="preserve">
-    <value>30</value>
-  </data>
-  <data name="numeroTrabajoMadreLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="numeroTrabajoMadreLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>488, 324</value>
-  </data>
-  <data name="numeroTrabajoMadreLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
-  <data name="numeroTrabajoMadreLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 13</value>
-  </data>
-  <data name="numeroTrabajoMadreLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>99</value>
-  </data>
-  <data name="numeroTrabajoMadreLabel.Text" xml:space="preserve">
-    <value>NUMERO:</value>
-  </data>
-  <data name="&gt;&gt;numeroTrabajoMadreLabel.Name" xml:space="preserve">
-    <value>numeroTrabajoMadreLabel</value>
-  </data>
-  <data name="&gt;&gt;numeroTrabajoMadreLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numeroTrabajoMadreLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;numeroTrabajoMadreLabel.ZOrder" xml:space="preserve">
-    <value>29</value>
-  </data>
-  <data name="coloniaTrabajoMadreLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="coloniaTrabajoMadreLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>647, 326</value>
-  </data>
-  <data name="coloniaTrabajoMadreLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
-  <data name="coloniaTrabajoMadreLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 13</value>
-  </data>
-  <data name="coloniaTrabajoMadreLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>100</value>
-  </data>
-  <data name="coloniaTrabajoMadreLabel.Text" xml:space="preserve">
-    <value>COLONIA:</value>
-  </data>
-  <data name="&gt;&gt;coloniaTrabajoMadreLabel.Name" xml:space="preserve">
-    <value>coloniaTrabajoMadreLabel</value>
-  </data>
-  <data name="&gt;&gt;coloniaTrabajoMadreLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;coloniaTrabajoMadreLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;coloniaTrabajoMadreLabel.ZOrder" xml:space="preserve">
-    <value>28</value>
-  </data>
-  <data name="numeroTrabajoMadreTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>547, 323</value>
-  </data>
-  <data name="numeroTrabajoMadreTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="numeroTrabajoMadreTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
-  </data>
-  <data name="numeroTrabajoMadreTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>101</value>
-  </data>
-  <data name="&gt;&gt;numeroTrabajoMadreTextBox.Name" xml:space="preserve">
-    <value>numeroTrabajoMadreTextBox</value>
-  </data>
-  <data name="&gt;&gt;numeroTrabajoMadreTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numeroTrabajoMadreTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;numeroTrabajoMadreTextBox.ZOrder" xml:space="preserve">
-    <value>27</value>
-  </data>
-  <data name="coloniaTrabajoMadreTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>706, 326</value>
-  </data>
-  <data name="coloniaTrabajoMadreTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="coloniaTrabajoMadreTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
-  </data>
-  <data name="coloniaTrabajoMadreTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>102</value>
-  </data>
-  <data name="&gt;&gt;coloniaTrabajoMadreTextBox.Name" xml:space="preserve">
-    <value>coloniaTrabajoMadreTextBox</value>
-  </data>
-  <data name="&gt;&gt;coloniaTrabajoMadreTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;coloniaTrabajoMadreTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;coloniaTrabajoMadreTextBox.ZOrder" xml:space="preserve">
-    <value>26</value>
-  </data>
-  <data name="calleTrabajoPadreLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="calleTrabajoPadreLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>359, 479</value>
-  </data>
-  <data name="calleTrabajoPadreLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
-  <data name="calleTrabajoPadreLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 13</value>
-  </data>
-  <data name="calleTrabajoPadreLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>103</value>
-  </data>
-  <data name="calleTrabajoPadreLabel.Text" xml:space="preserve">
-    <value>CALLE:</value>
-  </data>
-  <data name="&gt;&gt;calleTrabajoPadreLabel.Name" xml:space="preserve">
-    <value>calleTrabajoPadreLabel</value>
-  </data>
-  <data name="&gt;&gt;calleTrabajoPadreLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;calleTrabajoPadreLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;calleTrabajoPadreLabel.ZOrder" xml:space="preserve">
-    <value>25</value>
-  </data>
-  <data name="numeroTrabajoPadreLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="numeroTrabajoPadreLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>510, 482</value>
-  </data>
-  <data name="numeroTrabajoPadreLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
-  <data name="numeroTrabajoPadreLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 13</value>
-  </data>
-  <data name="numeroTrabajoPadreLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>104</value>
-  </data>
-  <data name="numeroTrabajoPadreLabel.Text" xml:space="preserve">
-    <value>NUMERO:</value>
-  </data>
-  <data name="&gt;&gt;numeroTrabajoPadreLabel.Name" xml:space="preserve">
-    <value>numeroTrabajoPadreLabel</value>
-  </data>
-  <data name="&gt;&gt;numeroTrabajoPadreLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numeroTrabajoPadreLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;numeroTrabajoPadreLabel.ZOrder" xml:space="preserve">
-    <value>24</value>
-  </data>
-  <data name="coloniaTrabajoPadreLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="coloniaTrabajoPadreLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>650, 485</value>
-  </data>
-  <data name="coloniaTrabajoPadreLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
-  <data name="coloniaTrabajoPadreLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 13</value>
-  </data>
-  <data name="coloniaTrabajoPadreLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>105</value>
-  </data>
-  <data name="coloniaTrabajoPadreLabel.Text" xml:space="preserve">
-    <value>COLONIA:</value>
-  </data>
-  <data name="&gt;&gt;coloniaTrabajoPadreLabel.Name" xml:space="preserve">
-    <value>coloniaTrabajoPadreLabel</value>
-  </data>
-  <data name="&gt;&gt;coloniaTrabajoPadreLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;coloniaTrabajoPadreLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;coloniaTrabajoPadreLabel.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;apellidoPaternoTutorTextBox.ZOrder" xml:space="preserve">
     <value>23</value>
   </data>
-  <data name="numeroTrabajoPadreTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>570, 486</value>
+  <data name="apellidoMaternoTutorTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>896, 102</value>
   </data>
-  <data name="numeroTrabajoPadreTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+  <data name="apellidoMaternoTutorTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
-  <data name="numeroTrabajoPadreTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
+  <data name="apellidoMaternoTutorTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 22</value>
   </data>
-  <data name="numeroTrabajoPadreTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>106</value>
+  <data name="apellidoMaternoTutorTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>81</value>
   </data>
-  <data name="&gt;&gt;numeroTrabajoPadreTextBox.Name" xml:space="preserve">
-    <value>numeroTrabajoPadreTextBox</value>
+  <data name="&gt;&gt;apellidoMaternoTutorTextBox.Name" xml:space="preserve">
+    <value>apellidoMaternoTutorTextBox</value>
   </data>
-  <data name="&gt;&gt;numeroTrabajoPadreTextBox.Type" xml:space="preserve">
+  <data name="&gt;&gt;apellidoMaternoTutorTextBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;numeroTrabajoPadreTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;apellidoMaternoTutorTextBox.Parent" xml:space="preserve">
+    <value>informacionTutorGroupBox</value>
   </data>
-  <data name="&gt;&gt;numeroTrabajoPadreTextBox.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;apellidoMaternoTutorTextBox.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="calleDireccionTutorLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="calleDireccionTutorLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>361, 139</value>
+  </data>
+  <data name="calleDireccionTutorLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 17</value>
+  </data>
+  <data name="calleDireccionTutorLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>86</value>
+  </data>
+  <data name="calleDireccionTutorLabel.Text" xml:space="preserve">
+    <value>CALLE:</value>
+  </data>
+  <data name="&gt;&gt;calleDireccionTutorLabel.Name" xml:space="preserve">
+    <value>calleDireccionTutorLabel</value>
+  </data>
+  <data name="&gt;&gt;calleDireccionTutorLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;calleDireccionTutorLabel.Parent" xml:space="preserve">
+    <value>informacionTutorGroupBox</value>
+  </data>
+  <data name="&gt;&gt;calleDireccionTutorLabel.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="numeroDireccionTutorLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="numeroDireccionTutorLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>600, 134</value>
+  </data>
+  <data name="numeroDireccionTutorLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 17</value>
+  </data>
+  <data name="numeroDireccionTutorLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>87</value>
+  </data>
+  <data name="numeroDireccionTutorLabel.Text" xml:space="preserve">
+    <value>NUMERO:</value>
+  </data>
+  <data name="&gt;&gt;numeroDireccionTutorLabel.Name" xml:space="preserve">
+    <value>numeroDireccionTutorLabel</value>
+  </data>
+  <data name="&gt;&gt;numeroDireccionTutorLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numeroDireccionTutorLabel.Parent" xml:space="preserve">
+    <value>informacionTutorGroupBox</value>
+  </data>
+  <data name="&gt;&gt;numeroDireccionTutorLabel.ZOrder" xml:space="preserve">
     <value>22</value>
   </data>
-  <data name="coloniaTrabajoPadreTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>709, 485</value>
+  <data name="coloniaDireccionTutorLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="coloniaTrabajoPadreTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+  <data name="coloniaDireccionTutorLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>796, 139</value>
   </data>
-  <data name="coloniaTrabajoPadreTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
+  <data name="coloniaDireccionTutorLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 17</value>
   </data>
-  <data name="coloniaTrabajoPadreTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>107</value>
+  <data name="coloniaDireccionTutorLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>88</value>
   </data>
-  <data name="&gt;&gt;coloniaTrabajoPadreTextBox.Name" xml:space="preserve">
-    <value>coloniaTrabajoPadreTextBox</value>
+  <data name="coloniaDireccionTutorLabel.Text" xml:space="preserve">
+    <value>COLONIA:</value>
   </data>
-  <data name="&gt;&gt;coloniaTrabajoPadreTextBox.Type" xml:space="preserve">
+  <data name="&gt;&gt;coloniaDireccionTutorLabel.Name" xml:space="preserve">
+    <value>coloniaDireccionTutorLabel</value>
+  </data>
+  <data name="&gt;&gt;coloniaDireccionTutorLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;coloniaDireccionTutorLabel.Parent" xml:space="preserve">
+    <value>informacionTutorGroupBox</value>
+  </data>
+  <data name="&gt;&gt;coloniaDireccionTutorLabel.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="calleDireccionTutorTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>422, 136</value>
+  </data>
+  <data name="calleDireccionTutorTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="calleDireccionTutorTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 22</value>
+  </data>
+  <data name="calleDireccionTutorTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>92</value>
+  </data>
+  <data name="&gt;&gt;calleDireccionTutorTextBox.Name" xml:space="preserve">
+    <value>calleDireccionTutorTextBox</value>
+  </data>
+  <data name="&gt;&gt;calleDireccionTutorTextBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;coloniaTrabajoPadreTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;calleDireccionTutorTextBox.Parent" xml:space="preserve">
+    <value>informacionTutorGroupBox</value>
   </data>
-  <data name="&gt;&gt;coloniaTrabajoPadreTextBox.ZOrder" xml:space="preserve">
-    <value>21</value>
+  <data name="&gt;&gt;calleDireccionTutorTextBox.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="numeroDireccionTutorTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>680, 135</value>
+  </data>
+  <data name="numeroDireccionTutorTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="numeroDireccionTutorTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 22</value>
+  </data>
+  <data name="numeroDireccionTutorTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>93</value>
+  </data>
+  <data name="&gt;&gt;numeroDireccionTutorTextBox.Name" xml:space="preserve">
+    <value>numeroDireccionTutorTextBox</value>
+  </data>
+  <data name="&gt;&gt;numeroDireccionTutorTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numeroDireccionTutorTextBox.Parent" xml:space="preserve">
+    <value>informacionTutorGroupBox</value>
+  </data>
+  <data name="&gt;&gt;numeroDireccionTutorTextBox.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="coloniaDireccionTutorTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>896, 129</value>
+  </data>
+  <data name="coloniaDireccionTutorTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="coloniaDireccionTutorTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 22</value>
+  </data>
+  <data name="coloniaDireccionTutorTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>94</value>
+  </data>
+  <data name="&gt;&gt;coloniaDireccionTutorTextBox.Name" xml:space="preserve">
+    <value>coloniaDireccionTutorTextBox</value>
+  </data>
+  <data name="&gt;&gt;coloniaDireccionTutorTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;coloniaDireccionTutorTextBox.Parent" xml:space="preserve">
+    <value>informacionTutorGroupBox</value>
+  </data>
+  <data name="&gt;&gt;coloniaDireccionTutorTextBox.ZOrder" xml:space="preserve">
+    <value>16</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 231</value>
-  </data>
-  <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>27, 105</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 13</value>
+    <value>0, 17</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>108</value>
@@ -2912,22 +1741,22 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>informacionTutorGroupBox</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>11</value>
   </data>
   <data name="noOtroAlumnoMadreRadioButton.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="noOtroAlumnoMadreRadioButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>92, 23</value>
+    <value>123, 28</value>
   </data>
   <data name="noOtroAlumnoMadreRadioButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="noOtroAlumnoMadreRadioButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 17</value>
+    <value>50, 21</value>
   </data>
   <data name="noOtroAlumnoMadreRadioButton.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -2942,7 +1771,7 @@
     <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;noOtroAlumnoMadreRadioButton.Parent" xml:space="preserve">
-    <value>otroAlumnoMadreGroupBox</value>
+    <value>otroAlumnoTutorGroupBox</value>
   </data>
   <data name="&gt;&gt;noOtroAlumnoMadreRadioButton.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -2951,13 +1780,13 @@
     <value>True</value>
   </data>
   <data name="siOtroAlumnoMadreRadioButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 24</value>
+    <value>5, 30</value>
   </data>
   <data name="siOtroAlumnoMadreRadioButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="siOtroAlumnoMadreRadioButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 17</value>
+    <value>41, 21</value>
   </data>
   <data name="siOtroAlumnoMadreRadioButton.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2972,142 +1801,49 @@
     <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;siOtroAlumnoMadreRadioButton.Parent" xml:space="preserve">
-    <value>otroAlumnoMadreGroupBox</value>
+    <value>otroAlumnoTutorGroupBox</value>
   </data>
   <data name="&gt;&gt;siOtroAlumnoMadreRadioButton.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="otroAlumnoMadreGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 222</value>
+  <data name="otroAlumnoTutorGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>28, 43</value>
   </data>
-  <data name="otroAlumnoMadreGroupBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+  <data name="otroAlumnoTutorGroupBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
-  <data name="otroAlumnoMadreGroupBox.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+  <data name="otroAlumnoTutorGroupBox.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
-  <data name="otroAlumnoMadreGroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>446, 41</value>
+  <data name="otroAlumnoTutorGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>385, 50</value>
   </data>
-  <data name="otroAlumnoMadreGroupBox.TabIndex" type="System.Int32, mscorlib">
+  <data name="otroAlumnoTutorGroupBox.TabIndex" type="System.Int32, mscorlib">
     <value>109</value>
   </data>
-  <data name="otroAlumnoMadreGroupBox.Text" xml:space="preserve">
-    <value>LA MADRE/TUTORA, ¿CUENTA YA CON ALGÚN OTRO ALUMNO INSCRITO?</value>
+  <data name="otroAlumnoTutorGroupBox.Text" xml:space="preserve">
+    <value>¿CUENTA CON ALGÚN OTRO ALUMNO INSCRITO?</value>
   </data>
-  <data name="&gt;&gt;otroAlumnoMadreGroupBox.Name" xml:space="preserve">
-    <value>otroAlumnoMadreGroupBox</value>
+  <data name="&gt;&gt;otroAlumnoTutorGroupBox.Name" xml:space="preserve">
+    <value>otroAlumnoTutorGroupBox</value>
   </data>
-  <data name="&gt;&gt;otroAlumnoMadreGroupBox.Type" xml:space="preserve">
+  <data name="&gt;&gt;otroAlumnoTutorGroupBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;otroAlumnoMadreGroupBox.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;otroAlumnoTutorGroupBox.Parent" xml:space="preserve">
+    <value>informacionTutorGroupBox</value>
   </data>
-  <data name="&gt;&gt;otroAlumnoMadreGroupBox.ZOrder" xml:space="preserve">
-    <value>19</value>
-  </data>
-  <data name="noOtroAlumnoPadreRadioButton.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="noOtroAlumnoPadreRadioButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>92, 23</value>
-  </data>
-  <data name="noOtroAlumnoPadreRadioButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="noOtroAlumnoPadreRadioButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 17</value>
-  </data>
-  <data name="noOtroAlumnoPadreRadioButton.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="noOtroAlumnoPadreRadioButton.Text" xml:space="preserve">
-    <value>NO</value>
-  </data>
-  <data name="&gt;&gt;noOtroAlumnoPadreRadioButton.Name" xml:space="preserve">
-    <value>noOtroAlumnoPadreRadioButton</value>
-  </data>
-  <data name="&gt;&gt;noOtroAlumnoPadreRadioButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;noOtroAlumnoPadreRadioButton.Parent" xml:space="preserve">
-    <value>otroAlumnoPadreGroupBox</value>
-  </data>
-  <data name="&gt;&gt;noOtroAlumnoPadreRadioButton.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="siOtroAlumnoPadreRadioButton.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="siOtroAlumnoPadreRadioButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 24</value>
-  </data>
-  <data name="siOtroAlumnoPadreRadioButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="siOtroAlumnoPadreRadioButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 17</value>
-  </data>
-  <data name="siOtroAlumnoPadreRadioButton.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="siOtroAlumnoPadreRadioButton.Text" xml:space="preserve">
-    <value>SÍ</value>
-  </data>
-  <data name="&gt;&gt;siOtroAlumnoPadreRadioButton.Name" xml:space="preserve">
-    <value>siOtroAlumnoPadreRadioButton</value>
-  </data>
-  <data name="&gt;&gt;siOtroAlumnoPadreRadioButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;siOtroAlumnoPadreRadioButton.Parent" xml:space="preserve">
-    <value>otroAlumnoPadreGroupBox</value>
-  </data>
-  <data name="&gt;&gt;siOtroAlumnoPadreRadioButton.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="otroAlumnoPadreGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 379</value>
-  </data>
-  <data name="otroAlumnoPadreGroupBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="otroAlumnoPadreGroupBox.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="otroAlumnoPadreGroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>446, 41</value>
-  </data>
-  <data name="otroAlumnoPadreGroupBox.TabIndex" type="System.Int32, mscorlib">
-    <value>113</value>
-  </data>
-  <data name="otroAlumnoPadreGroupBox.Text" xml:space="preserve">
-    <value>El PADRE/TUTOR, ¿CUENTA YA CON ALGÚN OTRO ALUMNO INSCRITO?</value>
-  </data>
-  <data name="&gt;&gt;otroAlumnoPadreGroupBox.Name" xml:space="preserve">
-    <value>otroAlumnoPadreGroupBox</value>
-  </data>
-  <data name="&gt;&gt;otroAlumnoPadreGroupBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;otroAlumnoPadreGroupBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;otroAlumnoPadreGroupBox.ZOrder" xml:space="preserve">
-    <value>17</value>
+  <data name="&gt;&gt;otroAlumnoTutorGroupBox.ZOrder" xml:space="preserve">
+    <value>9</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>468, 405</value>
-  </data>
-  <data name="label2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>624, 498</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 13</value>
+    <value>0, 17</value>
   </data>
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>112</value>
@@ -3122,49 +1858,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>18</value>
-  </data>
-  <data name="informacionMedicaAlumnoLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="informacionMedicaAlumnoLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 592</value>
-  </data>
-  <data name="informacionMedicaAlumnoLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
-  <data name="informacionMedicaAlumnoLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>199, 13</value>
-  </data>
-  <data name="informacionMedicaAlumnoLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>114</value>
-  </data>
-  <data name="informacionMedicaAlumnoLabel.Text" xml:space="preserve">
-    <value>INFORMACIÓN MEDICA DEL ALUMNO</value>
-  </data>
-  <data name="&gt;&gt;informacionMedicaAlumnoLabel.Name" xml:space="preserve">
-    <value>informacionMedicaAlumnoLabel</value>
-  </data>
-  <data name="&gt;&gt;informacionMedicaAlumnoLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;informacionMedicaAlumnoLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;informacionMedicaAlumnoLabel.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>8</value>
   </data>
   <data name="servicioMedicoAlumnoLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="servicioMedicoAlumnoLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 613</value>
-  </data>
-  <data name="servicioMedicoAlumnoLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>8, 26</value>
   </data>
   <data name="servicioMedicoAlumnoLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>105, 13</value>
+    <value>132, 17</value>
   </data>
   <data name="servicioMedicoAlumnoLabel.TabIndex" type="System.Int32, mscorlib">
     <value>115</value>
@@ -3179,22 +1882,19 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;servicioMedicoAlumnoLabel.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>informacionMedicaAlumnoGroupBox</value>
   </data>
   <data name="&gt;&gt;servicioMedicoAlumnoLabel.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>7</value>
   </data>
   <data name="grupoSanguineoAlumnoLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="grupoSanguineoAlumnoLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>315, 618</value>
-  </data>
-  <data name="grupoSanguineoAlumnoLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>412, 33</value>
   </data>
   <data name="grupoSanguineoAlumnoLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 13</value>
+    <value>149, 17</value>
   </data>
   <data name="grupoSanguineoAlumnoLabel.TabIndex" type="System.Int32, mscorlib">
     <value>116</value>
@@ -3209,22 +1909,19 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;grupoSanguineoAlumnoLabel.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>informacionMedicaAlumnoGroupBox</value>
   </data>
   <data name="&gt;&gt;grupoSanguineoAlumnoLabel.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>8</value>
   </data>
   <data name="enfermedaresAlumnoLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="enfermedaresAlumnoLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 639</value>
-  </data>
-  <data name="enfermedaresAlumnoLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>15, 58</value>
   </data>
   <data name="enfermedaresAlumnoLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>99, 13</value>
+    <value>125, 17</value>
   </data>
   <data name="enfermedaresAlumnoLabel.TabIndex" type="System.Int32, mscorlib">
     <value>117</value>
@@ -3239,22 +1936,19 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;enfermedaresAlumnoLabel.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>informacionMedicaAlumnoGroupBox</value>
   </data>
   <data name="&gt;&gt;enfermedaresAlumnoLabel.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>9</value>
   </data>
   <data name="alergiasAlumnoLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="alergiasAlumnoLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 668</value>
-  </data>
-  <data name="alergiasAlumnoLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>13, 94</value>
   </data>
   <data name="alergiasAlumnoLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>63, 13</value>
+    <value>80, 17</value>
   </data>
   <data name="alergiasAlumnoLabel.TabIndex" type="System.Int32, mscorlib">
     <value>118</value>
@@ -3269,22 +1963,19 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;alergiasAlumnoLabel.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>informacionMedicaAlumnoGroupBox</value>
   </data>
   <data name="&gt;&gt;alergiasAlumnoLabel.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>10</value>
   </data>
   <data name="telefonoContactoMedicoAlumnoLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="telefonoContactoMedicoAlumnoLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 692</value>
-  </data>
-  <data name="telefonoContactoMedicoAlumnoLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>8, 124</value>
   </data>
   <data name="telefonoContactoMedicoAlumnoLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>147, 13</value>
+    <value>191, 17</value>
   </data>
   <data name="telefonoContactoMedicoAlumnoLabel.TabIndex" type="System.Int32, mscorlib">
     <value>119</value>
@@ -3299,22 +1990,19 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;telefonoContactoMedicoAlumnoLabel.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>informacionMedicaAlumnoGroupBox</value>
   </data>
   <data name="&gt;&gt;telefonoContactoMedicoAlumnoLabel.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="documentacionAlumnoLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="documentacionAlumnoLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>556, 617</value>
-  </data>
-  <data name="documentacionAlumnoLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>733, 31</value>
   </data>
   <data name="documentacionAlumnoLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>193, 13</value>
+    <value>247, 17</value>
   </data>
   <data name="documentacionAlumnoLabel.TabIndex" type="System.Int32, mscorlib">
     <value>120</value>
@@ -3329,19 +2017,19 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;documentacionAlumnoLabel.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>informacionMedicaAlumnoGroupBox</value>
   </data>
   <data name="&gt;&gt;documentacionAlumnoLabel.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>14</value>
   </data>
   <data name="servicioMedicoTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>206, 613</value>
+    <value>267, 26</value>
   </data>
   <data name="servicioMedicoTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="servicioMedicoTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
+    <value>100, 22</value>
   </data>
   <data name="servicioMedicoTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>122</value>
@@ -3353,19 +2041,19 @@
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;servicioMedicoTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>informacionMedicaAlumnoGroupBox</value>
   </data>
   <data name="&gt;&gt;servicioMedicoTextBox.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>16</value>
   </data>
   <data name="enfermedadesAlumnoTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>206, 636</value>
+    <value>267, 55</value>
   </data>
   <data name="enfermedadesAlumnoTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="enfermedadesAlumnoTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
+    <value>100, 22</value>
   </data>
   <data name="enfermedadesAlumnoTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>123</value>
@@ -3377,19 +2065,19 @@
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;enfermedadesAlumnoTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>informacionMedicaAlumnoGroupBox</value>
   </data>
   <data name="&gt;&gt;enfermedadesAlumnoTextBox.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>17</value>
   </data>
   <data name="telefonoContactoMedicoAlumnoTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>206, 688</value>
+    <value>267, 119</value>
   </data>
   <data name="telefonoContactoMedicoAlumnoTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="telefonoContactoMedicoAlumnoTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
+    <value>100, 22</value>
   </data>
   <data name="telefonoContactoMedicoAlumnoTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>124</value>
@@ -3401,19 +2089,19 @@
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;telefonoContactoMedicoAlumnoTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>informacionMedicaAlumnoGroupBox</value>
   </data>
   <data name="&gt;&gt;telefonoContactoMedicoAlumnoTextBox.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>15</value>
   </data>
   <data name="alergiasAlumnoTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>206, 659</value>
+    <value>267, 83</value>
   </data>
   <data name="alergiasAlumnoTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="alergiasAlumnoTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
+    <value>100, 22</value>
   </data>
   <data name="alergiasAlumnoTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>126</value>
@@ -3425,19 +2113,19 @@
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;alergiasAlumnoTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>informacionMedicaAlumnoGroupBox</value>
   </data>
   <data name="&gt;&gt;alergiasAlumnoTextBox.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>11</value>
   </data>
   <data name="grupoSanguineoTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>432, 618</value>
+    <value>568, 33</value>
   </data>
   <data name="grupoSanguineoTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="grupoSanguineoTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
+    <value>100, 22</value>
   </data>
   <data name="grupoSanguineoTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>125</value>
@@ -3449,10 +2137,10 @@
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;grupoSanguineoTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>informacionMedicaAlumnoGroupBox</value>
   </data>
   <data name="&gt;&gt;grupoSanguineoTextBox.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>13</value>
   </data>
   <data name="documentacionListBox.Items" xml:space="preserve">
     <value>ACTA DE NACIMIENTO</value>
@@ -3473,13 +2161,13 @@
     <value>COMPROBANTE DE DOMICILIO</value>
   </data>
   <data name="documentacionListBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>559, 636</value>
+    <value>737, 55</value>
   </data>
   <data name="documentacionListBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="documentacionListBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>189, 109</value>
+    <value>251, 123</value>
   </data>
   <data name="documentacionListBox.TabIndex" type="System.Int32, mscorlib">
     <value>127</value>
@@ -3491,22 +2179,19 @@
     <value>System.Windows.Forms.CheckedListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;documentacionListBox.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>informacionMedicaAlumnoGroupBox</value>
   </data>
   <data name="&gt;&gt;documentacionListBox.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="atendidoPorLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="atendidoPorLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>42, 778</value>
-  </data>
-  <data name="atendidoPorLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>928, 962</value>
   </data>
   <data name="atendidoPorLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>92, 13</value>
+    <value>117, 17</value>
   </data>
   <data name="atendidoPorLabel.TabIndex" type="System.Int32, mscorlib">
     <value>128</value>
@@ -3524,16 +2209,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;atendidoPorLabel.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>7</value>
   </data>
   <data name="atendidoPorComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>156, 770</value>
+    <value>1062, 956</value>
   </data>
   <data name="atendidoPorComboBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="atendidoPorComboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>92, 21</value>
+    <value>121, 24</value>
   </data>
   <data name="atendidoPorComboBox.TabIndex" type="System.Int32, mscorlib">
     <value>129</value>
@@ -3548,76 +2233,19 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;atendidoPorComboBox.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <data name="aLTASToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>171, 22</value>
-  </data>
-  <data name="aLTASToolStripMenuItem.Text" xml:space="preserve">
-    <value>ALTAS</value>
-  </data>
-  <data name="cONSULTASToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>171, 22</value>
-  </data>
-  <data name="cONSULTASToolStripMenuItem.Text" xml:space="preserve">
-    <value>CONSULTAS</value>
-  </data>
-  <data name="mODIFICACIONESToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>171, 22</value>
-  </data>
-  <data name="mODIFICACIONESToolStripMenuItem.Text" xml:space="preserve">
-    <value>MODIFICACIONES</value>
-  </data>
-  <data name="toolStripMenuItem1.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>No</value>
-  </data>
-  <data name="toolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 20</value>
-  </data>
-  <data name="toolStripMenuItem1.Text" xml:space="preserve">
-    <value>Alumnos</value>
-  </data>
-  <data name="docentesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 20</value>
-  </data>
-  <data name="docentesToolStripMenuItem.Text" xml:space="preserve">
-    <value>Docentes</value>
-  </data>
-  <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="menuStrip1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 2, 0, 2</value>
-  </data>
-  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1037, 24</value>
-  </data>
-  <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
-    <value>130</value>
-  </data>
-  <data name="menuStrip1.Text" xml:space="preserve">
-    <value>menuStrip1</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.Name" xml:space="preserve">
-    <value>menuStrip1</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
-    <value>83</value>
+    <value>6</value>
   </data>
   <data name="informacionGeneralAlumnoGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 27</value>
+    <value>70, 104</value>
+  </data>
+  <data name="informacionGeneralAlumnoGroupBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="informacionGeneralAlumnoGroupBox.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="informacionGeneralAlumnoGroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>817, 283</value>
+    <value>1091, 348</value>
   </data>
   <data name="informacionGeneralAlumnoGroupBox.TabIndex" type="System.Int32, mscorlib">
     <value>131</value>
@@ -3635,13 +2263,19 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;informacionGeneralAlumnoGroupBox.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>5</value>
   </data>
   <data name="informacionEscolarGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>837, 37</value>
+    <value>1169, 131</value>
+  </data>
+  <data name="informacionEscolarGroupBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="informacionEscolarGroupBox.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="informacionEscolarGroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 179</value>
+    <value>267, 220</value>
   </data>
   <data name="informacionEscolarGroupBox.TabIndex" type="System.Int32, mscorlib">
     <value>132</value>
@@ -3656,6 +2290,363 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;informacionEscolarGroupBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="mostrarAlergiasLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mostrarAlergiasLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>479, 159</value>
+  </data>
+  <data name="mostrarAlergiasLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 17</value>
+  </data>
+  <data name="mostrarAlergiasLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>133</value>
+  </data>
+  <data name="mostrarAlergiasLabel.Text" xml:space="preserve">
+    <value>ALERGIAS</value>
+  </data>
+  <data name="&gt;&gt;mostrarAlergiasLabel.Name" xml:space="preserve">
+    <value>mostrarAlergiasLabel</value>
+  </data>
+  <data name="&gt;&gt;mostrarAlergiasLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mostrarAlergiasLabel.Parent" xml:space="preserve">
+    <value>informacionMedicaAlumnoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;mostrarAlergiasLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="mostrarEnfermedadesLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mostrarEnfermedadesLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>284, 160</value>
+  </data>
+  <data name="mostrarEnfermedadesLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 17</value>
+  </data>
+  <data name="mostrarEnfermedadesLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>132</value>
+  </data>
+  <data name="mostrarEnfermedadesLabel.Text" xml:space="preserve">
+    <value>ENFERMEDADES</value>
+  </data>
+  <data name="&gt;&gt;mostrarEnfermedadesLabel.Name" xml:space="preserve">
+    <value>mostrarEnfermedadesLabel</value>
+  </data>
+  <data name="&gt;&gt;mostrarEnfermedadesLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mostrarEnfermedadesLabel.Parent" xml:space="preserve">
+    <value>informacionMedicaAlumnoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;mostrarEnfermedadesLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="mostrarDiscapacidadLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mostrarDiscapacidadLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 161</value>
+  </data>
+  <data name="mostrarDiscapacidadLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 17</value>
+  </data>
+  <data name="mostrarDiscapacidadLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>131</value>
+  </data>
+  <data name="mostrarDiscapacidadLabel.Text" xml:space="preserve">
+    <value>DISCAPACIDADES</value>
+  </data>
+  <data name="&gt;&gt;mostrarDiscapacidadLabel.Name" xml:space="preserve">
+    <value>mostrarDiscapacidadLabel</value>
+  </data>
+  <data name="&gt;&gt;mostrarDiscapacidadLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mostrarDiscapacidadLabel.Parent" xml:space="preserve">
+    <value>informacionMedicaAlumnoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;mostrarDiscapacidadLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="mostrarAlergiasRichTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>458, 184</value>
+  </data>
+  <data name="mostrarAlergiasRichTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 37</value>
+  </data>
+  <data name="mostrarAlergiasRichTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>130</value>
+  </data>
+  <data name="mostrarAlergiasRichTextBox.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;mostrarAlergiasRichTextBox.Name" xml:space="preserve">
+    <value>mostrarAlergiasRichTextBox</value>
+  </data>
+  <data name="&gt;&gt;mostrarAlergiasRichTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mostrarAlergiasRichTextBox.Parent" xml:space="preserve">
+    <value>informacionMedicaAlumnoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;mostrarAlergiasRichTextBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="mostrarEnfermedadesRichTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>267, 184</value>
+  </data>
+  <data name="mostrarEnfermedadesRichTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 37</value>
+  </data>
+  <data name="mostrarEnfermedadesRichTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>129</value>
+  </data>
+  <data name="mostrarEnfermedadesRichTextBox.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;mostrarEnfermedadesRichTextBox.Name" xml:space="preserve">
+    <value>mostrarEnfermedadesRichTextBox</value>
+  </data>
+  <data name="&gt;&gt;mostrarEnfermedadesRichTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mostrarEnfermedadesRichTextBox.Parent" xml:space="preserve">
+    <value>informacionMedicaAlumnoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;mostrarEnfermedadesRichTextBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="mostrarDiscapacidadRichTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 184</value>
+  </data>
+  <data name="mostrarDiscapacidadRichTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 37</value>
+  </data>
+  <data name="mostrarDiscapacidadRichTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>128</value>
+  </data>
+  <data name="mostrarDiscapacidadRichTextBox.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;mostrarDiscapacidadRichTextBox.Name" xml:space="preserve">
+    <value>mostrarDiscapacidadRichTextBox</value>
+  </data>
+  <data name="&gt;&gt;mostrarDiscapacidadRichTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mostrarDiscapacidadRichTextBox.Parent" xml:space="preserve">
+    <value>informacionMedicaAlumnoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;mostrarDiscapacidadRichTextBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="informacionMedicaAlumnoGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>70, 470</value>
+  </data>
+  <data name="informacionMedicaAlumnoGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1023, 239</value>
+  </data>
+  <data name="informacionMedicaAlumnoGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>133</value>
+  </data>
+  <data name="informacionMedicaAlumnoGroupBox.Text" xml:space="preserve">
+    <value>INFORMACIÓN MEDICA ALUMNO</value>
+  </data>
+  <data name="&gt;&gt;informacionMedicaAlumnoGroupBox.Name" xml:space="preserve">
+    <value>informacionMedicaAlumnoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;informacionMedicaAlumnoGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;informacionMedicaAlumnoGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;informacionMedicaAlumnoGroupBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="regresarButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1244, 928</value>
+  </data>
+  <data name="regresarButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="regresarButton.TabIndex" type="System.Int32, mscorlib">
+    <value>134</value>
+  </data>
+  <data name="regresarButton.Text" xml:space="preserve">
+    <value>Regresar</value>
+  </data>
+  <data name="&gt;&gt;regresarButton.Name" xml:space="preserve">
+    <value>regresarButton</value>
+  </data>
+  <data name="&gt;&gt;regresarButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;regresarButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;regresarButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="seleccionarNombreLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="seleccionarNombreLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>492, 50</value>
+  </data>
+  <data name="seleccionarNombreLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>179, 17</value>
+  </data>
+  <data name="seleccionarNombreLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>111</value>
+  </data>
+  <data name="seleccionarNombreLabel.Text" xml:space="preserve">
+    <value>SELECCIONE EL NOMBRE</value>
+  </data>
+  <data name="&gt;&gt;seleccionarNombreLabel.Name" xml:space="preserve">
+    <value>seleccionarNombreLabel</value>
+  </data>
+  <data name="&gt;&gt;seleccionarNombreLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;seleccionarNombreLabel.Parent" xml:space="preserve">
+    <value>informacionTutorGroupBox</value>
+  </data>
+  <data name="&gt;&gt;seleccionarNombreLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="seleccionarNombreComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>495, 69</value>
+  </data>
+  <data name="seleccionarNombreComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>186, 24</value>
+  </data>
+  <data name="seleccionarNombreComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>110</value>
+  </data>
+  <data name="&gt;&gt;seleccionarNombreComboBox.Name" xml:space="preserve">
+    <value>seleccionarNombreComboBox</value>
+  </data>
+  <data name="&gt;&gt;seleccionarNombreComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;seleccionarNombreComboBox.Parent" xml:space="preserve">
+    <value>informacionTutorGroupBox</value>
+  </data>
+  <data name="&gt;&gt;seleccionarNombreComboBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="informacionTutorGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>60, 715</value>
+  </data>
+  <data name="informacionTutorGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1087, 236</value>
+  </data>
+  <data name="informacionTutorGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>135</value>
+  </data>
+  <data name="informacionTutorGroupBox.Text" xml:space="preserve">
+    <value>INFORMACIÓN TUTOR/RA</value>
+  </data>
+  <data name="&gt;&gt;informacionTutorGroupBox.Name" xml:space="preserve">
+    <value>informacionTutorGroupBox</value>
+  </data>
+  <data name="&gt;&gt;informacionTutorGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;informacionTutorGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;informacionTutorGroupBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="alumnosButton.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="alumnosButton.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="alumnosButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1256, 0</value>
+  </data>
+  <data name="alumnosButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 62</value>
+  </data>
+  <data name="alumnosButton.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="alumnosButton.Text" xml:space="preserve">
+    <value>ALUMNOS</value>
+  </data>
+  <data name="&gt;&gt;alumnosButton.Name" xml:space="preserve">
+    <value>alumnosButton</value>
+  </data>
+  <data name="&gt;&gt;alumnosButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;alumnosButton.Parent" xml:space="preserve">
+    <value>altaAlumnoPanel</value>
+  </data>
+  <data name="&gt;&gt;alumnosButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="docentesButton.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="docentesButton.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="docentesButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1342, 0</value>
+  </data>
+  <data name="docentesButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 62</value>
+  </data>
+  <data name="docentesButton.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="docentesButton.Text" xml:space="preserve">
+    <value>DOCENTES</value>
+  </data>
+  <data name="&gt;&gt;docentesButton.Name" xml:space="preserve">
+    <value>docentesButton</value>
+  </data>
+  <data name="&gt;&gt;docentesButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;docentesButton.Parent" xml:space="preserve">
+    <value>altaAlumnoPanel</value>
+  </data>
+  <data name="&gt;&gt;docentesButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="altaAlumnoPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="altaAlumnoPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="altaAlumnoPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1436, 62</value>
+  </data>
+  <data name="altaAlumnoPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>136</value>
+  </data>
+  <data name="&gt;&gt;altaAlumnoPanel.Name" xml:space="preserve">
+    <value>altaAlumnoPanel</value>
+  </data>
+  <data name="&gt;&gt;altaAlumnoPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;altaAlumnoPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;altaAlumnoPanel.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -3665,7 +2656,7 @@
     <value>47</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+    <value>8, 16</value>
   </data>
   <data name="$this.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3674,46 +2665,16 @@
     <value>True</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1028, 609</value>
+    <value>1371, 750</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Alta Alumno</value>
-  </data>
-  <data name="&gt;&gt;toolStripMenuItem1.Name" xml:space="preserve">
-    <value>toolStripMenuItem1</value>
-  </data>
-  <data name="&gt;&gt;toolStripMenuItem1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;aLTASToolStripMenuItem.Name" xml:space="preserve">
-    <value>aLTASToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;aLTASToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cONSULTASToolStripMenuItem.Name" xml:space="preserve">
-    <value>cONSULTASToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;cONSULTASToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;mODIFICACIONESToolStripMenuItem.Name" xml:space="preserve">
-    <value>mODIFICACIONESToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;mODIFICACIONESToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;docentesToolStripMenuItem.Name" xml:space="preserve">
-    <value>docentesToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;docentesToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>altaAlumno</value>
