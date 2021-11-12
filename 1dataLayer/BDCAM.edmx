@@ -4,49 +4,640 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="BDCAMModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-        <EntityType Name="prueba">
+      <Schema Namespace="BDDCAMModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'BDDCAM.dbo.alergias' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <EntityType Name="alergias">
           <Key>
-            <PropertyRef Name="idPrueba" />
+            <PropertyRef Name="id_cartilla_medica" />
+            <PropertyRef Name="alergia" />
           </Key>
-          <Property Name="idPrueba" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="nombre" Type="nvarchar" MaxLength="20" Nullable="false" />
-          <Property Name="edad" Type="nvarchar" MaxLength="5" Nullable="false" />
+          <Property Name="id_cartilla_medica" Type="int" Nullable="false" />
+          <Property Name="alergia" Type="varchar" MaxLength="30" Nullable="false" />
         </EntityType>
-        <EntityContainer Name="BDCAMModelStoreContainer">
-          <EntitySet Name="prueba" EntityType="Self.prueba" Schema="dbo" store:Type="Tables" />
+        <EntityType Name="alumno">
+          <Key>
+            <PropertyRef Name="id_alumno" />
+          </Key>
+          <Property Name="id_alumno" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="fecha_registro" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+          <Property Name="ciclo_escolar" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="nombre" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="apellido_paterno" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="fecha_nacimiento" Type="date" Nullable="false" />
+          <Property Name="años_alumno" Type="varchar" MaxLength="2" Nullable="false" />
+          <Property Name="CURP_alumno" Type="varchar" MaxLength="18" Nullable="false" />
+          <Property Name="estado_nacimiento_alumno" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="ciudad_nacimiento_alumno" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="colonia_alumno" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="calle_alumno" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="numero_alumno" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="telefono_personal_alumno" Type="varchar" MaxLength="30" />
+          <Property Name="escuela_procedencia_alumno" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="documentacion_alumno" Type="nvarchar(max)" />
+          <Property Name="atendido_por" Type="varchar" MaxLength="30" Nullable="false" />
+        </EntityType>
+        <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'BDDCAM.dbo.discapacidades' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <EntityType Name="discapacidades">
+          <Key>
+            <PropertyRef Name="id_cartilla_medica" />
+            <PropertyRef Name="discapacidades" />
+          </Key>
+          <Property Name="id_cartilla_medica" Type="int" Nullable="false" />
+          <Property Name="discapacidades" Type="varchar" MaxLength="30" Nullable="false" />
+        </EntityType>
+        <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'BDDCAM.dbo.enfermedades' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <EntityType Name="enfermedades">
+          <Key>
+            <PropertyRef Name="id_cartilla_medica" />
+            <PropertyRef Name="enfermedad" />
+          </Key>
+          <Property Name="id_cartilla_medica" Type="int" Nullable="false" />
+          <Property Name="enfermedad" Type="varchar" MaxLength="30" Nullable="false" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="tabla_indicadores_telefono">
+          <Key>
+            <PropertyRef Name="id_telefono" />
+          </Key>
+          <Property Name="id_telefono" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="telefono" Type="varchar" MaxLength="30" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tabla_medica">
+          <Key>
+            <PropertyRef Name="id_cartilla_medica" />
+          </Key>
+          <Property Name="id_alumno" Type="int" Nullable="false" />
+          <Property Name="id_cartilla_medica" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="servicio_medico" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="grupo_sanguineo" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="telefono_contacto" Type="varchar" MaxLength="30" Nullable="false" />
+        </EntityType>
+        <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'BDDCAM.dbo.telefono-tutores' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <EntityType Name="telefono-tutores">
+          <Key>
+            <PropertyRef Name="id_tutor" />
+            <PropertyRef Name="id_telefono" />
+            <PropertyRef Name="telefono" />
+          </Key>
+          <Property Name="id_tutor" Type="int" Nullable="false" />
+          <Property Name="id_telefono" Type="int" Nullable="false" />
+          <Property Name="telefono" Type="varchar" MaxLength="30" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tutor">
+          <Key>
+            <PropertyRef Name="id_tutor" />
+          </Key>
+          <Property Name="id_tutor" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nombre" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="apellido_paterno" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="apellido_materno" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="colonia_tutor" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="calle_tutor" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="numero_tutor" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="ocupacion_tutor" Type="varchar" MaxLength="30" />
+          <Property Name="colonia_trabajo_tutor" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="calle_trabajo_tutor" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="numero_trabajo_tutor" Type="varchar" MaxLength="30" Nullable="false" />
+        </EntityType>
+        <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'BDDCAM.dbo.tutor-alumno' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <EntityType Name="tutor-alumno">
+          <Key>
+            <PropertyRef Name="id_alumno" />
+            <PropertyRef Name="id_tutor" />
+          </Key>
+          <Property Name="id_alumno" Type="int" Nullable="false" />
+          <Property Name="id_tutor" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_alumno">
+          <End Role="alumno" Type="Self.alumno" Multiplicity="1" />
+          <End Role="tutor-alumno" Type="Self.tutor-alumno" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="alumno">
+              <PropertyRef Name="id_alumno" />
+            </Principal>
+            <Dependent Role="tutor-alumno">
+              <PropertyRef Name="id_alumno" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_id">
+          <End Role="tabla_medica" Type="Self.tabla_medica" Multiplicity="1" />
+          <End Role="discapacidades" Type="Self.discapacidades" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tabla_medica">
+              <PropertyRef Name="id_cartilla_medica" />
+            </Principal>
+            <Dependent Role="discapacidades">
+              <PropertyRef Name="id_cartilla_medica" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_idalumno">
+          <End Role="alumno" Type="Self.alumno" Multiplicity="1" />
+          <End Role="tabla_medica" Type="Self.tabla_medica" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="alumno">
+              <PropertyRef Name="id_alumno" />
+            </Principal>
+            <Dependent Role="tabla_medica">
+              <PropertyRef Name="id_alumno" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_idcartilla">
+          <End Role="tabla_medica" Type="Self.tabla_medica" Multiplicity="1" />
+          <End Role="enfermedades" Type="Self.enfermedades" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tabla_medica">
+              <PropertyRef Name="id_cartilla_medica" />
+            </Principal>
+            <Dependent Role="enfermedades">
+              <PropertyRef Name="id_cartilla_medica" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_idcartillamedica">
+          <End Role="tabla_medica" Type="Self.tabla_medica" Multiplicity="1" />
+          <End Role="alergias" Type="Self.alergias" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tabla_medica">
+              <PropertyRef Name="id_cartilla_medica" />
+            </Principal>
+            <Dependent Role="alergias">
+              <PropertyRef Name="id_cartilla_medica" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Tele">
+          <End Role="tabla_indicadores_telefono" Type="Self.tabla_indicadores_telefono" Multiplicity="1" />
+          <End Role="telefono-tutores" Type="Self.telefono-tutores" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tabla_indicadores_telefono">
+              <PropertyRef Name="id_telefono" />
+            </Principal>
+            <Dependent Role="telefono-tutores">
+              <PropertyRef Name="id_telefono" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Tuto">
+          <End Role="tutor" Type="Self.tutor" Multiplicity="1" />
+          <End Role="telefono-tutores" Type="Self.telefono-tutores" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tutor">
+              <PropertyRef Name="id_tutor" />
+            </Principal>
+            <Dependent Role="telefono-tutores">
+              <PropertyRef Name="id_tutor" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tutor">
+          <End Role="tutor" Type="Self.tutor" Multiplicity="1" />
+          <End Role="tutor-alumno" Type="Self.tutor-alumno" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tutor">
+              <PropertyRef Name="id_tutor" />
+            </Principal>
+            <Dependent Role="tutor-alumno">
+              <PropertyRef Name="id_tutor" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="BDDCAMModelStoreContainer">
+          <EntitySet Name="alumno" EntityType="Self.alumno" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tabla_indicadores_telefono" EntityType="Self.tabla_indicadores_telefono" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tabla_medica" EntityType="Self.tabla_medica" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tutor" EntityType="Self.tutor" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="alergias" EntityType="Self.alergias" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [alergias].[id_cartilla_medica] AS [id_cartilla_medica], 
+    [alergias].[alergia] AS [alergia]
+    FROM [dbo].[alergias] AS [alergias]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="discapacidades" EntityType="Self.discapacidades" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [discapacidades].[id_cartilla_medica] AS [id_cartilla_medica], 
+    [discapacidades].[discapacidades] AS [discapacidades]
+    FROM [dbo].[discapacidades] AS [discapacidades]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="enfermedades" EntityType="Self.enfermedades" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [enfermedades].[id_cartilla_medica] AS [id_cartilla_medica], 
+    [enfermedades].[enfermedad] AS [enfermedad]
+    FROM [dbo].[enfermedades] AS [enfermedades]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="telefono-tutores" EntityType="Self.telefono-tutores" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [telefono-tutores].[id_tutor] AS [id_tutor], 
+    [telefono-tutores].[id_telefono] AS [id_telefono], 
+    [telefono-tutores].[telefono] AS [telefono]
+    FROM [dbo].[telefono-tutores] AS [telefono-tutores]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="tutor-alumno" EntityType="Self.tutor-alumno" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [tutor-alumno].[id_alumno] AS [id_alumno], 
+    [tutor-alumno].[id_tutor] AS [id_tutor]
+    FROM [dbo].[tutor-alumno] AS [tutor-alumno]</DefiningQuery>
+          </EntitySet>
+          <AssociationSet Name="FK_alumno" Association="Self.FK_alumno">
+            <End Role="alumno" EntitySet="alumno" />
+            <End Role="tutor-alumno" EntitySet="tutor-alumno" />
+          </AssociationSet>
+          <AssociationSet Name="FK_id" Association="Self.FK_id">
+            <End Role="tabla_medica" EntitySet="tabla_medica" />
+            <End Role="discapacidades" EntitySet="discapacidades" />
+          </AssociationSet>
+          <AssociationSet Name="FK_idalumno" Association="Self.FK_idalumno">
+            <End Role="alumno" EntitySet="alumno" />
+            <End Role="tabla_medica" EntitySet="tabla_medica" />
+          </AssociationSet>
+          <AssociationSet Name="FK_idcartilla" Association="Self.FK_idcartilla">
+            <End Role="tabla_medica" EntitySet="tabla_medica" />
+            <End Role="enfermedades" EntitySet="enfermedades" />
+          </AssociationSet>
+          <AssociationSet Name="FK_idcartillamedica" Association="Self.FK_idcartillamedica">
+            <End Role="tabla_medica" EntitySet="tabla_medica" />
+            <End Role="alergias" EntitySet="alergias" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Tele" Association="Self.FK_Tele">
+            <End Role="tabla_indicadores_telefono" EntitySet="tabla_indicadores_telefono" />
+            <End Role="telefono-tutores" EntitySet="telefono-tutores" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Tuto" Association="Self.FK_Tuto">
+            <End Role="tutor" EntitySet="tutor" />
+            <End Role="telefono-tutores" EntitySet="telefono-tutores" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tutor" Association="Self.FK_tutor">
+            <End Role="tutor" EntitySet="tutor" />
+            <End Role="tutor-alumno" EntitySet="tutor-alumno" />
+          </AssociationSet>
         </EntityContainer>
       </Schema>
     </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="BDCAMModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-        <EntityType Name="prueba">
+      <Schema Namespace="BDDCAMModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="alumno">
           <Key>
-            <PropertyRef Name="idPrueba" />
+            <PropertyRef Name="id_alumno" />
           </Key>
-          <Property Name="idPrueba" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="nombre" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="edad" Type="String" MaxLength="5" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="id_alumno" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="fecha_registro" Type="Binary" MaxLength="8" FixedLength="true" Nullable="false" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="ciclo_escolar" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="nombre" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="apellido_paterno" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="fecha_nacimiento" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="años_alumno" Type="String" MaxLength="2" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CURP_alumno" Type="String" MaxLength="18" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="estado_nacimiento_alumno" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ciudad_nacimiento_alumno" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="colonia_alumno" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="calle_alumno" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="numero_alumno" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="telefono_personal_alumno" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="escuela_procedencia_alumno" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="documentacion_alumno" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="atendido_por" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="tabla_medica" Relationship="Self.FK_idalumno" FromRole="alumno" ToRole="tabla_medica" />
+          <NavigationProperty Name="tutor" Relationship="Self.tutor_alumno" FromRole="alumno" ToRole="tutor" />
         </EntityType>
-        <EntityContainer Name="BDCAMEntities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="pruebas" EntityType="Self.prueba" />
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="tabla_indicadores_telefono">
+          <Key>
+            <PropertyRef Name="id_telefono" />
+          </Key>
+          <Property Name="id_telefono" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="telefono" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="telefono_tutores" Relationship="Self.FK_Tele" FromRole="tabla_indicadores_telefono" ToRole="telefono_tutores" />
+        </EntityType>
+        <EntityType Name="tabla_medica">
+          <Key>
+            <PropertyRef Name="id_cartilla_medica" />
+          </Key>
+          <Property Name="id_alumno" Type="Int32" Nullable="false" />
+          <Property Name="id_cartilla_medica" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="servicio_medico" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="grupo_sanguineo" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="telefono_contacto" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="alumno" Relationship="Self.FK_idalumno" FromRole="tabla_medica" ToRole="alumno" />
+          <NavigationProperty Name="discapacidades" Relationship="Self.FK_id" FromRole="tabla_medica" ToRole="discapacidades" />
+          <NavigationProperty Name="enfermedades" Relationship="Self.FK_idcartilla" FromRole="tabla_medica" ToRole="enfermedades" />
+          <NavigationProperty Name="alergias" Relationship="Self.FK_idcartillamedica" FromRole="tabla_medica" ToRole="alergias" />
+        </EntityType>
+        <EntityType Name="tutor">
+          <Key>
+            <PropertyRef Name="id_tutor" />
+          </Key>
+          <Property Name="id_tutor" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nombre" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="apellido_paterno" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="apellido_materno" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="colonia_tutor" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="calle_tutor" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="numero_tutor" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ocupacion_tutor" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="colonia_trabajo_tutor" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="calle_trabajo_tutor" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="numero_trabajo_tutor" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="telefono_tutores" Relationship="Self.FK_Tuto" FromRole="tutor" ToRole="telefono_tutores" />
+          <NavigationProperty Name="alumno" Relationship="Self.tutor_alumno" FromRole="tutor" ToRole="alumno" />
+        </EntityType>
+        <EntityType Name="alergias">
+          <Key>
+            <PropertyRef Name="id_cartilla_medica" />
+            <PropertyRef Name="alergia" />
+          </Key>
+          <Property Name="id_cartilla_medica" Type="Int32" Nullable="false" />
+          <Property Name="alergia" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="tabla_medica" Relationship="Self.FK_idcartillamedica" FromRole="alergias" ToRole="tabla_medica" />
+        </EntityType>
+        <EntityType Name="discapacidades">
+          <Key>
+            <PropertyRef Name="id_cartilla_medica" />
+            <PropertyRef Name="discapacidades1" />
+          </Key>
+          <Property Name="id_cartilla_medica" Type="Int32" Nullable="false" />
+          <Property Name="discapacidades1" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="tabla_medica" Relationship="Self.FK_id" FromRole="discapacidades" ToRole="tabla_medica" />
+        </EntityType>
+        <EntityType Name="enfermedades">
+          <Key>
+            <PropertyRef Name="id_cartilla_medica" />
+            <PropertyRef Name="enfermedad" />
+          </Key>
+          <Property Name="id_cartilla_medica" Type="Int32" Nullable="false" />
+          <Property Name="enfermedad" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="tabla_medica" Relationship="Self.FK_idcartilla" FromRole="enfermedades" ToRole="tabla_medica" />
+        </EntityType>
+        <EntityType Name="telefono_tutores">
+          <Key>
+            <PropertyRef Name="id_tutor" />
+            <PropertyRef Name="id_telefono" />
+            <PropertyRef Name="telefono" />
+          </Key>
+          <Property Name="id_tutor" Type="Int32" Nullable="false" />
+          <Property Name="id_telefono" Type="Int32" Nullable="false" />
+          <Property Name="telefono" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="tabla_indicadores_telefono" Relationship="Self.FK_Tele" FromRole="telefono_tutores" ToRole="tabla_indicadores_telefono" />
+          <NavigationProperty Name="tutor" Relationship="Self.FK_Tuto" FromRole="telefono_tutores" ToRole="tutor" />
+        </EntityType>
+        <Association Name="FK_idalumno">
+          <End Role="alumno" Type="Self.alumno" Multiplicity="1" />
+          <End Role="tabla_medica" Type="Self.tabla_medica" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="alumno">
+              <PropertyRef Name="id_alumno" />
+            </Principal>
+            <Dependent Role="tabla_medica">
+              <PropertyRef Name="id_alumno" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Tele">
+          <End Role="tabla_indicadores_telefono" Type="Self.tabla_indicadores_telefono" Multiplicity="1" />
+          <End Role="telefono_tutores" Type="Self.telefono_tutores" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tabla_indicadores_telefono">
+              <PropertyRef Name="id_telefono" />
+            </Principal>
+            <Dependent Role="telefono_tutores">
+              <PropertyRef Name="id_telefono" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_id">
+          <End Role="tabla_medica" Type="Self.tabla_medica" Multiplicity="1" />
+          <End Role="discapacidades" Type="Self.discapacidades" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tabla_medica">
+              <PropertyRef Name="id_cartilla_medica" />
+            </Principal>
+            <Dependent Role="discapacidades">
+              <PropertyRef Name="id_cartilla_medica" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_idcartilla">
+          <End Role="tabla_medica" Type="Self.tabla_medica" Multiplicity="1" />
+          <End Role="enfermedades" Type="Self.enfermedades" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tabla_medica">
+              <PropertyRef Name="id_cartilla_medica" />
+            </Principal>
+            <Dependent Role="enfermedades">
+              <PropertyRef Name="id_cartilla_medica" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_idcartillamedica">
+          <End Role="tabla_medica" Type="Self.tabla_medica" Multiplicity="1" />
+          <End Role="alergias" Type="Self.alergias" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tabla_medica">
+              <PropertyRef Name="id_cartilla_medica" />
+            </Principal>
+            <Dependent Role="alergias">
+              <PropertyRef Name="id_cartilla_medica" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Tuto">
+          <End Role="tutor" Type="Self.tutor" Multiplicity="1" />
+          <End Role="telefono_tutores" Type="Self.telefono_tutores" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tutor">
+              <PropertyRef Name="id_tutor" />
+            </Principal>
+            <Dependent Role="telefono_tutores">
+              <PropertyRef Name="id_tutor" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="tutor_alumno">
+          <End Role="alumno" Type="Self.alumno" Multiplicity="*" />
+          <End Role="tutor" Type="Self.tutor" Multiplicity="*" />
+        </Association>
+        <EntityContainer Name="BDDCAMEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="alumno" EntityType="Self.alumno" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+          <EntitySet Name="tabla_indicadores_telefono" EntityType="Self.tabla_indicadores_telefono" />
+          <EntitySet Name="tabla_medica" EntityType="Self.tabla_medica" />
+          <EntitySet Name="tutor" EntityType="Self.tutor" />
+          <EntitySet Name="alergias" EntityType="Self.alergias" />
+          <EntitySet Name="discapacidades" EntityType="Self.discapacidades" />
+          <EntitySet Name="enfermedades" EntityType="Self.enfermedades" />
+          <EntitySet Name="telefono_tutores" EntityType="Self.telefono_tutores" />
+          <AssociationSet Name="FK_idalumno" Association="Self.FK_idalumno">
+            <End Role="alumno" EntitySet="alumno" />
+            <End Role="tabla_medica" EntitySet="tabla_medica" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Tele" Association="Self.FK_Tele">
+            <End Role="tabla_indicadores_telefono" EntitySet="tabla_indicadores_telefono" />
+            <End Role="telefono_tutores" EntitySet="telefono_tutores" />
+          </AssociationSet>
+          <AssociationSet Name="FK_id" Association="Self.FK_id">
+            <End Role="tabla_medica" EntitySet="tabla_medica" />
+            <End Role="discapacidades" EntitySet="discapacidades" />
+          </AssociationSet>
+          <AssociationSet Name="FK_idcartilla" Association="Self.FK_idcartilla">
+            <End Role="tabla_medica" EntitySet="tabla_medica" />
+            <End Role="enfermedades" EntitySet="enfermedades" />
+          </AssociationSet>
+          <AssociationSet Name="FK_idcartillamedica" Association="Self.FK_idcartillamedica">
+            <End Role="tabla_medica" EntitySet="tabla_medica" />
+            <End Role="alergias" EntitySet="alergias" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Tuto" Association="Self.FK_Tuto">
+            <End Role="tutor" EntitySet="tutor" />
+            <End Role="telefono_tutores" EntitySet="telefono_tutores" />
+          </AssociationSet>
+          <AssociationSet Name="tutor_alumno" Association="Self.tutor_alumno">
+            <End Role="alumno" EntitySet="alumno" />
+            <End Role="tutor" EntitySet="tutor" />
+          </AssociationSet>
         </EntityContainer>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="BDCAMModelStoreContainer" CdmEntityContainer="BDCAMEntities">
-          <EntitySetMapping Name="pruebas">
-            <EntityTypeMapping TypeName="BDCAMModel.prueba">
-              <MappingFragment StoreEntitySet="prueba">
-                <ScalarProperty Name="idPrueba" ColumnName="idPrueba" />
+        <EntityContainerMapping StorageEntityContainer="BDDCAMModelStoreContainer" CdmEntityContainer="BDDCAMEntities">
+          <EntitySetMapping Name="alumno">
+            <EntityTypeMapping TypeName="BDDCAMModel.alumno">
+              <MappingFragment StoreEntitySet="alumno">
+                <ScalarProperty Name="id_alumno" ColumnName="id_alumno" />
+                <ScalarProperty Name="fecha_registro" ColumnName="fecha_registro" />
+                <ScalarProperty Name="ciclo_escolar" ColumnName="ciclo_escolar" />
                 <ScalarProperty Name="nombre" ColumnName="nombre" />
-                <ScalarProperty Name="edad" ColumnName="edad" />
+                <ScalarProperty Name="apellido_paterno" ColumnName="apellido_paterno" />
+                <ScalarProperty Name="fecha_nacimiento" ColumnName="fecha_nacimiento" />
+                <ScalarProperty Name="años_alumno" ColumnName="años_alumno" />
+                <ScalarProperty Name="CURP_alumno" ColumnName="CURP_alumno" />
+                <ScalarProperty Name="estado_nacimiento_alumno" ColumnName="estado_nacimiento_alumno" />
+                <ScalarProperty Name="ciudad_nacimiento_alumno" ColumnName="ciudad_nacimiento_alumno" />
+                <ScalarProperty Name="colonia_alumno" ColumnName="colonia_alumno" />
+                <ScalarProperty Name="calle_alumno" ColumnName="calle_alumno" />
+                <ScalarProperty Name="numero_alumno" ColumnName="numero_alumno" />
+                <ScalarProperty Name="telefono_personal_alumno" ColumnName="telefono_personal_alumno" />
+                <ScalarProperty Name="escuela_procedencia_alumno" ColumnName="escuela_procedencia_alumno" />
+                <ScalarProperty Name="documentacion_alumno" ColumnName="documentacion_alumno" />
+                <ScalarProperty Name="atendido_por" ColumnName="atendido_por" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="BDDCAMModel.sysdiagrams">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tabla_indicadores_telefono">
+            <EntityTypeMapping TypeName="BDDCAMModel.tabla_indicadores_telefono">
+              <MappingFragment StoreEntitySet="tabla_indicadores_telefono">
+                <ScalarProperty Name="id_telefono" ColumnName="id_telefono" />
+                <ScalarProperty Name="telefono" ColumnName="telefono" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tabla_medica">
+            <EntityTypeMapping TypeName="BDDCAMModel.tabla_medica">
+              <MappingFragment StoreEntitySet="tabla_medica">
+                <ScalarProperty Name="id_alumno" ColumnName="id_alumno" />
+                <ScalarProperty Name="id_cartilla_medica" ColumnName="id_cartilla_medica" />
+                <ScalarProperty Name="servicio_medico" ColumnName="servicio_medico" />
+                <ScalarProperty Name="grupo_sanguineo" ColumnName="grupo_sanguineo" />
+                <ScalarProperty Name="telefono_contacto" ColumnName="telefono_contacto" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tutor">
+            <EntityTypeMapping TypeName="BDDCAMModel.tutor">
+              <MappingFragment StoreEntitySet="tutor">
+                <ScalarProperty Name="id_tutor" ColumnName="id_tutor" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="apellido_paterno" ColumnName="apellido_paterno" />
+                <ScalarProperty Name="apellido_materno" ColumnName="apellido_materno" />
+                <ScalarProperty Name="colonia_tutor" ColumnName="colonia_tutor" />
+                <ScalarProperty Name="calle_tutor" ColumnName="calle_tutor" />
+                <ScalarProperty Name="numero_tutor" ColumnName="numero_tutor" />
+                <ScalarProperty Name="ocupacion_tutor" ColumnName="ocupacion_tutor" />
+                <ScalarProperty Name="colonia_trabajo_tutor" ColumnName="colonia_trabajo_tutor" />
+                <ScalarProperty Name="calle_trabajo_tutor" ColumnName="calle_trabajo_tutor" />
+                <ScalarProperty Name="numero_trabajo_tutor" ColumnName="numero_trabajo_tutor" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="alergias">
+            <EntityTypeMapping TypeName="BDDCAMModel.alergias">
+              <MappingFragment StoreEntitySet="alergias">
+                <ScalarProperty Name="id_cartilla_medica" ColumnName="id_cartilla_medica" />
+                <ScalarProperty Name="alergia" ColumnName="alergia" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="discapacidades">
+            <EntityTypeMapping TypeName="BDDCAMModel.discapacidades">
+              <MappingFragment StoreEntitySet="discapacidades">
+                <ScalarProperty Name="id_cartilla_medica" ColumnName="id_cartilla_medica" />
+                <ScalarProperty Name="discapacidades1" ColumnName="discapacidades" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="enfermedades">
+            <EntityTypeMapping TypeName="BDDCAMModel.enfermedades">
+              <MappingFragment StoreEntitySet="enfermedades">
+                <ScalarProperty Name="id_cartilla_medica" ColumnName="id_cartilla_medica" />
+                <ScalarProperty Name="enfermedad" ColumnName="enfermedad" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="telefono_tutores">
+            <EntityTypeMapping TypeName="BDDCAMModel.telefono_tutores">
+              <MappingFragment StoreEntitySet="telefono-tutores">
+                <ScalarProperty Name="id_tutor" ColumnName="id_tutor" />
+                <ScalarProperty Name="id_telefono" ColumnName="id_telefono" />
+                <ScalarProperty Name="telefono" ColumnName="telefono" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <AssociationSetMapping Name="tutor_alumno" TypeName="BDDCAMModel.tutor_alumno" StoreEntitySet="tutor-alumno">
+            <EndProperty Name="alumno">
+              <ScalarProperty Name="id_alumno" ColumnName="id_alumno" />
+            </EndProperty>
+            <EndProperty Name="tutor">
+              <ScalarProperty Name="id_tutor" ColumnName="id_tutor" />
+            </EndProperty>
+          </AssociationSetMapping>
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>
@@ -61,10 +652,10 @@
     <Options>
       <DesignerInfoPropertySet>
         <DesignerProperty Name="ValidateOnBuild" Value="true" />
-        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
         <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
         <DesignerProperty Name="UseLegacyProvider" Value="false" />
-        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
       </DesignerInfoPropertySet>
     </Options>
     <!-- Diagram content (shape and connector positions) -->
