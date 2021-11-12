@@ -127,6 +127,7 @@ namespace presentationLayer
             this.altaAlumnoPanel = new System.Windows.Forms.Panel();
             this.docentesButton = new System.Windows.Forms.Button();
             this.alumnosButton = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.tipoIngresoGroupBox.SuspendLayout();
             this.otroAlumnoTutorGroupBox.SuspendLayout();
             this.informacionGeneralAlumnoGroupBox.SuspendLayout();
@@ -595,8 +596,6 @@ namespace presentationLayer
             this.informacionGeneralAlumnoGroupBox.Controls.Add(this.coloniaDireccionAlumnoTextBox);
             this.informacionGeneralAlumnoGroupBox.Controls.Add(this.telefonoAlumnoLabel);
             this.informacionGeneralAlumnoGroupBox.Controls.Add(this.telefonoAlumnoTextBox);
-            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.discapacidadLabel);
-            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.discapacidadTextBox);
             this.informacionGeneralAlumnoGroupBox.Controls.Add(this.escuelaProcedenciaLabel);
             this.informacionGeneralAlumnoGroupBox.Controls.Add(this.escuelaProcedenciaTextBox);
             this.informacionGeneralAlumnoGroupBox.Controls.Add(this.canalizadoPorLabel);
@@ -640,6 +639,8 @@ namespace presentationLayer
             this.informacionMedicaAlumnoGroupBox.Controls.Add(this.telefonoContactoMedicoAlumnoTextBox);
             this.informacionMedicaAlumnoGroupBox.Controls.Add(this.servicioMedicoTextBox);
             this.informacionMedicaAlumnoGroupBox.Controls.Add(this.enfermedadesAlumnoTextBox);
+            this.informacionMedicaAlumnoGroupBox.Controls.Add(this.discapacidadTextBox);
+            this.informacionMedicaAlumnoGroupBox.Controls.Add(this.discapacidadLabel);
             resources.ApplyResources(this.informacionMedicaAlumnoGroupBox, "informacionMedicaAlumnoGroupBox");
             this.informacionMedicaAlumnoGroupBox.Name = "informacionMedicaAlumnoGroupBox";
             this.informacionMedicaAlumnoGroupBox.TabStop = false;
@@ -745,11 +746,17 @@ namespace presentationLayer
             this.alumnosButton.Name = "alumnosButton";
             this.alumnosButton.UseVisualStyleBackColor = true;
             // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.Name = "label3";
+            // 
             // altaAlumno
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.altaAlumnoPanel);
             this.Controls.Add(this.informacionTutorGroupBox);
             this.Controls.Add(this.regresarButton);
@@ -880,6 +887,7 @@ namespace presentationLayer
         private System.Windows.Forms.Panel altaAlumnoPanel;
         private System.Windows.Forms.Button alumnosButton;
         private System.Windows.Forms.Button docentesButton;
+        private System.Windows.Forms.Label label3;
     }
 }
 
