@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\presentationLayer"
   ],
-  "SelectedNode": "\\CAM.sln",
+  "SelectedNode": "\\presentationLayer\\Consultas.cs",
   "PreviewInSolutionExplorer": false
 }

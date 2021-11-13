@@ -130,30 +130,35 @@ namespace presentationLayer
             // 
             // NavBarPanel
             // 
-            this.NavBarPanel.BackColor = System.Drawing.Color.BlueViolet;
+            this.NavBarPanel.BackColor = System.Drawing.Color.MediumOrchid;
             this.NavBarPanel.Controls.Add(this.DocentesButton);
             this.NavBarPanel.Controls.Add(this.AlumnosButton);
-            this.NavBarPanel.Location = new System.Drawing.Point(-19, 0);
+            this.NavBarPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.NavBarPanel.Location = new System.Drawing.Point(0, 0);
             this.NavBarPanel.Name = "NavBarPanel";
-            this.NavBarPanel.Size = new System.Drawing.Size(1392, 32);
+            this.NavBarPanel.Size = new System.Drawing.Size(1370, 32);
             this.NavBarPanel.TabIndex = 20;
             // 
             // DocentesButton
             // 
+            this.DocentesButton.AutoSize = true;
+            this.DocentesButton.Dock = System.Windows.Forms.DockStyle.Right;
             this.DocentesButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DocentesButton.Location = new System.Drawing.Point(1302, 3);
+            this.DocentesButton.Location = new System.Drawing.Point(1219, 0);
             this.DocentesButton.Name = "DocentesButton";
-            this.DocentesButton.Size = new System.Drawing.Size(75, 23);
+            this.DocentesButton.Size = new System.Drawing.Size(76, 32);
             this.DocentesButton.TabIndex = 22;
             this.DocentesButton.Text = "DOCENTES";
             this.DocentesButton.UseVisualStyleBackColor = true;
             // 
             // AlumnosButton
             // 
+            this.AlumnosButton.AutoSize = true;
+            this.AlumnosButton.Dock = System.Windows.Forms.DockStyle.Right;
             this.AlumnosButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AlumnosButton.Location = new System.Drawing.Point(1220, 3);
+            this.AlumnosButton.Location = new System.Drawing.Point(1295, 0);
             this.AlumnosButton.Name = "AlumnosButton";
-            this.AlumnosButton.Size = new System.Drawing.Size(75, 23);
+            this.AlumnosButton.Size = new System.Drawing.Size(75, 32);
             this.AlumnosButton.TabIndex = 21;
             this.AlumnosButton.Text = "ALUMNOS";
             this.AlumnosButton.UseVisualStyleBackColor = true;
@@ -280,6 +285,7 @@ namespace presentationLayer
             this.Load += new System.EventHandler(this.Consultas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.panelConsulta_dataGridView)).EndInit();
             this.NavBarPanel.ResumeLayout(false);
+            this.NavBarPanel.PerformLayout();
             this.BusquedaGroupBox.ResumeLayout(false);
             this.BusquedaGroupBox.PerformLayout();
             this.ResumeLayout(false);
