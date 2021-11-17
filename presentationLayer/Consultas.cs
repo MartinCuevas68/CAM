@@ -15,47 +15,32 @@ namespace presentationLayer
         public Consultas()
         {
             InitializeComponent();
-            Edder.botonBuscar(buscarButton1);
+            Edder.botonBuscar(buscarButton);
             Edder.botonEliminar(eliminarButton);
-            Edder.botonModificar(ModificarButton);
+            Edder.botonModificar(modificarButton);
             Edder.consultaDataView(consultaDataGridView);
             Edder.etiquetaConsulta(consultaLabel);
             Edder.filtro(filtroLabel);
-            Edder.filtroCombo(FiltradocomboBox1);
-            Edder.Nombretxt(NombreTextBox);
-            Edder.panelNavBar(NavBarPanel);
-            Edder.agregarBttn(AgregarButton);
-            Edder.alumnosbttn(AlumnosButton);
-            Edder.docentesbttn(DocentesButton);
-            Edder.Nombrelbl(NombreLabel);
-            Edder.ApellidopaternoTxt(ApellidoPaternoTextBox1);
-            Edder.ApellidomaternoTxt(ApellidoMaternoTextBox2);
-            Edder.Apellidopaterno(ApellidoPaternoLabel);
-            Edder.Apellidomaterno(ApellidoMaternoLabel);
-            Edder.Vaciarbttn(VaciarButton);
-            Edder.botonImprimir(ImprimirButton);
-            Edder.groupboxinferior(BusquedaGroupBox);
+            Edder.filtroCombo(filtradocomboBox);
+            Edder.Nombretxt(nombreTextBox);
+            Edder.panelNavBar(navBarPanel);
+            Edder.agregarBttn(agregarButton);
+            Edder.alumnosbttn(alumnosButton);
+            Edder.docentesbttn(docentesButton);
+            Edder.Nombrelbl(nombreLabel);
+            Edder.ApellidopaternoTxt(apellidoPaternoTextBox);
+            Edder.ApellidomaternoTxt(apellidoMaternoTextBox);
+            Edder.Apellidopaterno(apellidoPaternoLabel);
+            Edder.Apellidomaterno(apellidoMaternoLabel);
+            Edder.Vaciarbttn(vaciarButton);
+            Edder.botonImprimir(imprimirButton);
+            Edder.groupboxinferior(busquedaGroupBox);
 
         }
 
         private void Consultas_Load(object sender, EventArgs e)
         {
             consultaDataGridView.DataSource = businessLayer.Gabriel.alumnosGet();
-        }
-
-        private void alumnosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void FiltradocomboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void BusquedaGroupBox_Enter(object sender, EventArgs e)
-        {
-
         }
 
         private void eliminarButton_Click(object sender, EventArgs e)
