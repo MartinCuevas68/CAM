@@ -62,18 +62,19 @@ namespace presentationLayer
             "General",
             "Nombre",
             "Taller"});
-            this.FiltradocomboBox1.Location = new System.Drawing.Point(161, 371);
+            this.FiltradocomboBox1.Location = new System.Drawing.Point(215, 457);
+            this.FiltradocomboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.FiltradocomboBox1.Name = "FiltradocomboBox1";
-            this.FiltradocomboBox1.Size = new System.Drawing.Size(121, 21);
+            this.FiltradocomboBox1.Size = new System.Drawing.Size(160, 24);
             this.FiltradocomboBox1.TabIndex = 18;
-            this.FiltradocomboBox1.SelectedIndexChanged += new System.EventHandler(this.FiltradocomboBox1_SelectedIndexChanged);
             // 
             // eliminarButton
             // 
             this.eliminarButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.eliminarButton.Location = new System.Drawing.Point(1160, 115);
+            this.eliminarButton.Location = new System.Drawing.Point(1547, 142);
+            this.eliminarButton.Margin = new System.Windows.Forms.Padding(4);
             this.eliminarButton.Name = "eliminarButton";
-            this.eliminarButton.Size = new System.Drawing.Size(137, 33);
+            this.eliminarButton.Size = new System.Drawing.Size(183, 41);
             this.eliminarButton.TabIndex = 17;
             this.eliminarButton.Text = "ELIMINAR ALUMNO";
             this.eliminarButton.UseVisualStyleBackColor = true;
@@ -82,9 +83,10 @@ namespace presentationLayer
             // 
             this.consultaLabel.AutoSize = true;
             this.consultaLabel.Font = new System.Drawing.Font("Leelawadee UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.consultaLabel.Location = new System.Drawing.Point(24, 35);
+            this.consultaLabel.Location = new System.Drawing.Point(32, 43);
+            this.consultaLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.consultaLabel.Name = "consultaLabel";
-            this.consultaLabel.Size = new System.Drawing.Size(90, 21);
+            this.consultaLabel.Size = new System.Drawing.Size(111, 28);
             this.consultaLabel.TabIndex = 15;
             this.consultaLabel.Text = "ALUMNOS";
             // 
@@ -93,28 +95,32 @@ namespace presentationLayer
             this.filtroLabel.AutoSize = true;
             this.filtroLabel.Font = new System.Drawing.Font("Leelawadee UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.filtroLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.filtroLabel.Location = new System.Drawing.Point(25, 371);
+            this.filtroLabel.Location = new System.Drawing.Point(33, 457);
+            this.filtroLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.filtroLabel.Name = "filtroLabel";
-            this.filtroLabel.Size = new System.Drawing.Size(127, 21);
+            this.filtroLabel.Size = new System.Drawing.Size(159, 28);
             this.filtroLabel.TabIndex = 13;
             this.filtroLabel.Text = "ORDENAR POR:";
             // 
             // ModificarButton
             // 
             this.ModificarButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ModificarButton.Location = new System.Drawing.Point(1021, 115);
+            this.ModificarButton.Location = new System.Drawing.Point(1361, 142);
+            this.ModificarButton.Margin = new System.Windows.Forms.Padding(4);
             this.ModificarButton.Name = "ModificarButton";
-            this.ModificarButton.Size = new System.Drawing.Size(120, 33);
+            this.ModificarButton.Size = new System.Drawing.Size(160, 41);
             this.ModificarButton.TabIndex = 12;
             this.ModificarButton.Text = "MODIFICAR";
             this.ModificarButton.UseVisualStyleBackColor = true;
+            this.ModificarButton.Click += new System.EventHandler(this.ModificarButton_Click);
             // 
             // buscarButton1
             // 
             this.buscarButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.buscarButton1.Location = new System.Drawing.Point(778, 117);
+            this.buscarButton1.Location = new System.Drawing.Point(1037, 144);
+            this.buscarButton1.Margin = new System.Windows.Forms.Padding(4);
             this.buscarButton1.Name = "buscarButton1";
-            this.buscarButton1.Size = new System.Drawing.Size(83, 33);
+            this.buscarButton1.Size = new System.Drawing.Size(111, 41);
             this.buscarButton1.TabIndex = 11;
             this.buscarButton1.Text = "BUSCAR";
             this.buscarButton1.UseVisualStyleBackColor = true;
@@ -123,9 +129,11 @@ namespace presentationLayer
             // 
             this.panelConsulta_dataGridView.BackgroundColor = System.Drawing.Color.MediumPurple;
             this.panelConsulta_dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.panelConsulta_dataGridView.Location = new System.Drawing.Point(28, 74);
+            this.panelConsulta_dataGridView.Location = new System.Drawing.Point(37, 91);
+            this.panelConsulta_dataGridView.Margin = new System.Windows.Forms.Padding(4);
             this.panelConsulta_dataGridView.Name = "panelConsulta_dataGridView";
-            this.panelConsulta_dataGridView.Size = new System.Drawing.Size(1312, 285);
+            this.panelConsulta_dataGridView.RowHeadersWidth = 51;
+            this.panelConsulta_dataGridView.Size = new System.Drawing.Size(1749, 351);
             this.panelConsulta_dataGridView.TabIndex = 10;
             // 
             // NavBarPanel
@@ -133,17 +141,19 @@ namespace presentationLayer
             this.NavBarPanel.BackColor = System.Drawing.Color.BlueViolet;
             this.NavBarPanel.Controls.Add(this.DocentesButton);
             this.NavBarPanel.Controls.Add(this.AlumnosButton);
-            this.NavBarPanel.Location = new System.Drawing.Point(-19, 0);
+            this.NavBarPanel.Location = new System.Drawing.Point(-25, 0);
+            this.NavBarPanel.Margin = new System.Windows.Forms.Padding(4);
             this.NavBarPanel.Name = "NavBarPanel";
-            this.NavBarPanel.Size = new System.Drawing.Size(1392, 32);
+            this.NavBarPanel.Size = new System.Drawing.Size(1856, 39);
             this.NavBarPanel.TabIndex = 20;
             // 
             // DocentesButton
             // 
             this.DocentesButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DocentesButton.Location = new System.Drawing.Point(1302, 3);
+            this.DocentesButton.Location = new System.Drawing.Point(1736, 4);
+            this.DocentesButton.Margin = new System.Windows.Forms.Padding(4);
             this.DocentesButton.Name = "DocentesButton";
-            this.DocentesButton.Size = new System.Drawing.Size(75, 23);
+            this.DocentesButton.Size = new System.Drawing.Size(100, 28);
             this.DocentesButton.TabIndex = 22;
             this.DocentesButton.Text = "DOCENTES";
             this.DocentesButton.UseVisualStyleBackColor = true;
@@ -151,9 +161,10 @@ namespace presentationLayer
             // AlumnosButton
             // 
             this.AlumnosButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AlumnosButton.Location = new System.Drawing.Point(1220, 3);
+            this.AlumnosButton.Location = new System.Drawing.Point(1627, 4);
+            this.AlumnosButton.Margin = new System.Windows.Forms.Padding(4);
             this.AlumnosButton.Name = "AlumnosButton";
-            this.AlumnosButton.Size = new System.Drawing.Size(75, 23);
+            this.AlumnosButton.Size = new System.Drawing.Size(100, 28);
             this.AlumnosButton.TabIndex = 21;
             this.AlumnosButton.Text = "ALUMNOS";
             this.AlumnosButton.UseVisualStyleBackColor = true;
@@ -161,79 +172,89 @@ namespace presentationLayer
             // AgregarButton
             // 
             this.AgregarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AgregarButton.Location = new System.Drawing.Point(1131, 45);
+            this.AgregarButton.Location = new System.Drawing.Point(1508, 55);
+            this.AgregarButton.Margin = new System.Windows.Forms.Padding(4);
             this.AgregarButton.Name = "AgregarButton";
-            this.AgregarButton.Size = new System.Drawing.Size(75, 23);
+            this.AgregarButton.Size = new System.Drawing.Size(100, 28);
             this.AgregarButton.TabIndex = 21;
             this.AgregarButton.Text = "AGREGAR";
             this.AgregarButton.UseVisualStyleBackColor = true;
+            this.AgregarButton.Click += new System.EventHandler(this.AgregarButton_Click);
             // 
             // VaciarButton
             // 
-            this.VaciarButton.Location = new System.Drawing.Point(878, 117);
+            this.VaciarButton.Location = new System.Drawing.Point(1171, 144);
+            this.VaciarButton.Margin = new System.Windows.Forms.Padding(4);
             this.VaciarButton.Name = "VaciarButton";
-            this.VaciarButton.Size = new System.Drawing.Size(80, 33);
+            this.VaciarButton.Size = new System.Drawing.Size(107, 41);
             this.VaciarButton.TabIndex = 24;
             this.VaciarButton.Text = "VACIAR";
             this.VaciarButton.UseVisualStyleBackColor = true;
             // 
             // ApellidoMaternoTextBox2
             // 
-            this.ApellidoMaternoTextBox2.Location = new System.Drawing.Point(921, 74);
+            this.ApellidoMaternoTextBox2.Location = new System.Drawing.Point(1228, 91);
+            this.ApellidoMaternoTextBox2.Margin = new System.Windows.Forms.Padding(4);
             this.ApellidoMaternoTextBox2.Multiline = true;
             this.ApellidoMaternoTextBox2.Name = "ApellidoMaternoTextBox2";
-            this.ApellidoMaternoTextBox2.Size = new System.Drawing.Size(165, 20);
+            this.ApellidoMaternoTextBox2.Size = new System.Drawing.Size(219, 24);
             this.ApellidoMaternoTextBox2.TabIndex = 23;
             // 
             // ApellidoMaternoLabel
             // 
             this.ApellidoMaternoLabel.AutoSize = true;
-            this.ApellidoMaternoLabel.Location = new System.Drawing.Point(743, 76);
+            this.ApellidoMaternoLabel.Location = new System.Drawing.Point(991, 94);
+            this.ApellidoMaternoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ApellidoMaternoLabel.Name = "ApellidoMaternoLabel";
-            this.ApellidoMaternoLabel.Size = new System.Drawing.Size(172, 21);
+            this.ApellidoMaternoLabel.Size = new System.Drawing.Size(215, 28);
             this.ApellidoMaternoLabel.TabIndex = 22;
             this.ApellidoMaternoLabel.Text = "APELLIDO MATERNO:";
             // 
             // ApellidoPaternoTextBox1
             // 
-            this.ApellidoPaternoTextBox1.Location = new System.Drawing.Point(511, 77);
+            this.ApellidoPaternoTextBox1.Location = new System.Drawing.Point(681, 95);
+            this.ApellidoPaternoTextBox1.Margin = new System.Windows.Forms.Padding(4);
             this.ApellidoPaternoTextBox1.Multiline = true;
             this.ApellidoPaternoTextBox1.Name = "ApellidoPaternoTextBox1";
-            this.ApellidoPaternoTextBox1.Size = new System.Drawing.Size(165, 20);
+            this.ApellidoPaternoTextBox1.Size = new System.Drawing.Size(219, 24);
             this.ApellidoPaternoTextBox1.TabIndex = 21;
             // 
             // ApellidoPaternoLabel
             // 
             this.ApellidoPaternoLabel.AutoSize = true;
-            this.ApellidoPaternoLabel.Location = new System.Drawing.Point(338, 76);
+            this.ApellidoPaternoLabel.Location = new System.Drawing.Point(451, 94);
+            this.ApellidoPaternoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ApellidoPaternoLabel.Name = "ApellidoPaternoLabel";
-            this.ApellidoPaternoLabel.Size = new System.Drawing.Size(167, 21);
+            this.ApellidoPaternoLabel.Size = new System.Drawing.Size(208, 28);
             this.ApellidoPaternoLabel.TabIndex = 20;
             this.ApellidoPaternoLabel.Text = "APELLIDO PATERNO:";
             // 
             // NombreLabel
             // 
             this.NombreLabel.AutoSize = true;
-            this.NombreLabel.Location = new System.Drawing.Point(6, 77);
+            this.NombreLabel.Location = new System.Drawing.Point(8, 95);
+            this.NombreLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.NombreLabel.Name = "NombreLabel";
-            this.NombreLabel.Size = new System.Drawing.Size(99, 21);
+            this.NombreLabel.Size = new System.Drawing.Size(124, 28);
             this.NombreLabel.TabIndex = 19;
             this.NombreLabel.Text = "NOMBRE/S:";
             // 
             // NombreTextBox
             // 
-            this.NombreTextBox.Location = new System.Drawing.Point(111, 77);
+            this.NombreTextBox.Location = new System.Drawing.Point(148, 95);
+            this.NombreTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.NombreTextBox.Multiline = true;
             this.NombreTextBox.Name = "NombreTextBox";
-            this.NombreTextBox.Size = new System.Drawing.Size(165, 20);
+            this.NombreTextBox.Size = new System.Drawing.Size(219, 24);
             this.NombreTextBox.TabIndex = 18;
             // 
             // ImprimirButton
             // 
             this.ImprimirButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ImprimirButton.Location = new System.Drawing.Point(1212, 45);
+            this.ImprimirButton.Location = new System.Drawing.Point(1616, 55);
+            this.ImprimirButton.Margin = new System.Windows.Forms.Padding(4);
             this.ImprimirButton.Name = "ImprimirButton";
-            this.ImprimirButton.Size = new System.Drawing.Size(75, 23);
+            this.ImprimirButton.Size = new System.Drawing.Size(100, 28);
             this.ImprimirButton.TabIndex = 25;
             this.ImprimirButton.Text = "IMPRIMIR";
             this.ImprimirButton.UseVisualStyleBackColor = true;
@@ -251,20 +272,21 @@ namespace presentationLayer
             this.BusquedaGroupBox.Controls.Add(this.ApellidoPaternoTextBox1);
             this.BusquedaGroupBox.Controls.Add(this.ApellidoMaternoLabel);
             this.BusquedaGroupBox.Font = new System.Drawing.Font("Leelawadee UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BusquedaGroupBox.Location = new System.Drawing.Point(37, 459);
+            this.BusquedaGroupBox.Location = new System.Drawing.Point(49, 565);
+            this.BusquedaGroupBox.Margin = new System.Windows.Forms.Padding(4);
             this.BusquedaGroupBox.Name = "BusquedaGroupBox";
-            this.BusquedaGroupBox.Size = new System.Drawing.Size(1303, 154);
+            this.BusquedaGroupBox.Padding = new System.Windows.Forms.Padding(4);
+            this.BusquedaGroupBox.Size = new System.Drawing.Size(1737, 190);
             this.BusquedaGroupBox.TabIndex = 26;
             this.BusquedaGroupBox.TabStop = false;
             this.BusquedaGroupBox.Text = "BUSQUEDA";
-            this.BusquedaGroupBox.Enter += new System.EventHandler(this.BusquedaGroupBox_Enter);
             // 
             // Consultas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.ClientSize = new System.Drawing.Size(1827, 922);
             this.Controls.Add(this.BusquedaGroupBox);
             this.Controls.Add(this.ImprimirButton);
             this.Controls.Add(this.AgregarButton);
@@ -274,10 +296,10 @@ namespace presentationLayer
             this.Controls.Add(this.filtroLabel);
             this.Controls.Add(this.panelConsulta_dataGridView);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Consultas";
             this.Text = "Consultas";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.Consultas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.panelConsulta_dataGridView)).EndInit();
             this.NavBarPanel.ResumeLayout(false);
             this.BusquedaGroupBox.ResumeLayout(false);

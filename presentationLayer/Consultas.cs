@@ -38,24 +38,18 @@ namespace presentationLayer
 
         }
 
-        private void Consultas_Load(object sender, EventArgs e)
+        private void ModificarButton_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            modificacionesAlumno formModificacion = new modificacionesAlumno();
+            formModificacion.Show();
         }
 
-        private void alumnosToolStripMenuItem_Click(object sender, EventArgs e)
+        private void AgregarButton_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void FiltradocomboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void BusquedaGroupBox_Enter(object sender, EventArgs e)
-        {
-
+            this.Hide();
+            altaAlumno formAlta = new altaAlumno();
+            formAlta.Show();
         }
     }
 }
