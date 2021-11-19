@@ -41,7 +41,7 @@ namespace presentationLayer
         private void Consultas_Load(object sender, EventArgs e)
         {
            // DataGridView.DataSource = businessLayer.Gabriel.alumnosGet();
-           //
+           
         }
 
         private void eliminarButton_Click(object sender, EventArgs e)
