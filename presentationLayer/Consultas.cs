@@ -21,28 +21,26 @@ namespace presentationLayer
             Edder.consultaDataView(panelConsulta_dataGridView);
             Edder.etiquetaConsulta(consultaLabel);
             Edder.filtro(filtroLabel);
-            Edder.filtroCombo(FiltradocomboBox1);
-            Edder.Nombretxt(NombreTextBox);
-            Edder.panelNavBar(NavBarPanel);
-            Edder.agregarBttn(AgregarButton);
-            Edder.alumnosbttn(AlumnosButton);
-            Edder.docentesbttn(DocentesButton);
-            Edder.Nombrelbl(NombreLabel);
-            Edder.ApellidopaternoTxt(ApellidoPaternoTextBox1);
-            Edder.ApellidomaternoTxt(ApellidoMaternoTextBox2);
-            Edder.Apellidopaterno(ApellidoPaternoLabel);
-            Edder.Apellidomaterno(ApellidoMaternoLabel);
-            Edder.Vaciarbttn(VaciarButton);
-            Edder.botonImprimir(ImprimirButton);
-            Edder.groupboxinferior(BusquedaGroupBox);
-
+            Edder.filtroCombo(filtradoComboBox);
+            Edder.Nombretxt(nombreTextBox);
+            Edder.panelNavBar(navBarPanel);
+            Edder.agregarBttn(agregarButton);
+            Edder.alumnosbttn(alumnosButton);
+            Edder.docentesbttn(docentesButton);
+            Edder.Nombrelbl(nombreLabel);
+            Edder.ApellidopaternoTxt(apellidoPaternoTextBox);
+            Edder.ApellidomaternoTxt(apellidoMaternoTextBox);
+            Edder.Apellidopaterno(apellidoPaternoLabel);
+            Edder.Apellidomaterno(apellidoMaternoLabel);
+            Edder.Vaciarbttn(vaciarButton);
+            Edder.groupboxinferior(busquedaGroupBox);
+            Edder.botonImprimir(imprimirButton);
         }
 
         private void ModificarButton_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            modificacionesAlumno formModificacion = new modificacionesAlumno();
-            formModificacion.Show();
+           // DataGridView.DataSource = businessLayer.Gabriel.alumnosGet();
+           
         }
 
         private void AgregarButton_Click(object sender, EventArgs e)
