@@ -125,8 +125,8 @@ namespace presentationLayer
             this.seleccionarNombreLabel = new System.Windows.Forms.Label();
             this.seleccionarNombreComboBox = new System.Windows.Forms.ComboBox();
             this.altaAlumnoPanel = new System.Windows.Forms.Panel();
-            this.docentesButton = new System.Windows.Forms.Button();
             this.alumnosButton = new System.Windows.Forms.Button();
+            this.docentesButton = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.tipoIngresoGroupBox.SuspendLayout();
             this.otroAlumnoTutorGroupBox.SuspendLayout();
@@ -734,17 +734,17 @@ namespace presentationLayer
             resources.ApplyResources(this.altaAlumnoPanel, "altaAlumnoPanel");
             this.altaAlumnoPanel.Name = "altaAlumnoPanel";
             // 
-            // docentesButton
-            // 
-            resources.ApplyResources(this.docentesButton, "docentesButton");
-            this.docentesButton.Name = "docentesButton";
-            this.docentesButton.UseVisualStyleBackColor = true;
-            // 
             // alumnosButton
             // 
             resources.ApplyResources(this.alumnosButton, "alumnosButton");
             this.alumnosButton.Name = "alumnosButton";
             this.alumnosButton.UseVisualStyleBackColor = true;
+            // 
+            // docentesButton
+            // 
+            resources.ApplyResources(this.docentesButton, "docentesButton");
+            this.docentesButton.Name = "docentesButton";
+            this.docentesButton.UseVisualStyleBackColor = true;
             // 
             // label3
             // 

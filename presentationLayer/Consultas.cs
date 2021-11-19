@@ -18,10 +18,10 @@ namespace presentationLayer
             Edder.botonBuscar(buscarButton);
             Edder.botonEliminar(eliminarButton);
             Edder.botonModificar(modificarButton);
-            Edder.consultaDataView(consultaDataGridView);
+            Edder.consultaDataView(DataGridView);
             Edder.etiquetaConsulta(consultaLabel);
             Edder.filtro(filtroLabel);
-            Edder.filtroCombo(filtradocomboBox);
+            Edder.filtroCombo(filtradoComboBox);
             Edder.Nombretxt(nombreTextBox);
             Edder.panelNavBar(navBarPanel);
             Edder.agregarBttn(agregarButton);
@@ -40,7 +40,7 @@ namespace presentationLayer
 
         private void Consultas_Load(object sender, EventArgs e)
         {
-            consultaDataGridView.DataSource = businessLayer.Gabriel.alumnosGet();
+           // DataGridView.DataSource = businessLayer.Gabriel.alumnosGet();
         }
 
         private void eliminarButton_Click(object sender, EventArgs e)
