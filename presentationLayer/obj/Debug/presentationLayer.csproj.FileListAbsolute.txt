@@ -93,3 +93,4 @@ C:\Users\arias\source\repos\CAMDefinitivo\presentationLayer\obj\Debug\presentati
 C:\Users\arias\source\repos\CAMDefinitivo\presentationLayer\obj\Debug\presentationLayer.csproj.CopyComplete
 C:\Users\arias\source\repos\CAMDefinitivo\presentationLayer\obj\Debug\presentationLayer.exe
 C:\Users\arias\source\repos\CAMDefinitivo\presentationLayer\obj\Debug\presentationLayer.pdb
+C:\Users\arias\source\repos\CAMDefinitivo\presentationLayer\obj\Debug\presentationLayer.modificacionesAlumno.resources

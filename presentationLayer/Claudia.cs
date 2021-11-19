@@ -131,7 +131,7 @@ namespace presentationLayer
         public static void altasInformacionTutorGroupBox(GroupBox informacionTutor)
         {
             informacionTutor.Location = new Point(130, 100);
-            informacionTutor.Size = new Size(1050, 450);
+            informacionTutor.Size = new Size(1150, 450);
             informacionTutor.Font = new Font("Leelawadee UI", 12);
         }
 

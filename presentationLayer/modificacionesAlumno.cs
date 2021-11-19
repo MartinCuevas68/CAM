@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace presentationLayer
 {
-    public partial class altaAlumno : Form
+    public partial class modificacionesAlumno : Form
     {
         int progreso = 1;
-
-        public altaAlumno()
+        public modificacionesAlumno()
         {
             int distanciaLabel = 40;
             int distanciaTextBox = 36;
+
 
             InitializeComponent();
 
@@ -26,12 +26,12 @@ namespace presentationLayer
             Claudia.altasGroupBox2(informacionEscolarGroupBox);
             Claudia.altasInformacionTutorGroupBox(informacionTutorGroupBox);
 
+
             informacionMedicaAlumnoGroupBox.Visible = false;
             regresarButton.Visible = false;
-            atendidoPorLabel.Visible = false;
-            atendidoPorComboBox.Visible = false;
             informacionTutorGroupBox.Visible = false;
-            realizarAltaButton.Visible = false;
+            finalizarModificacionButton.Visible = false;
+
 
             distanciaLabel = Claudia.altasLabel(fechaElaboracionLabel, distanciaLabel);
             distanciaTextBox = Claudia.altasDateTimePicker(fechaElaboracionDateTimePicker, distanciaTextBox);
@@ -59,16 +59,15 @@ namespace presentationLayer
             distanciaLabel = Claudia.altasLabel(canalizadoPorLabel, distanciaLabel);
             distanciaTextBox = Claudia.altasTextBox(canalizadoPorTextBox, distanciaTextBox);
 
-            Evelyn.altasInformacionMedicaAlumno(servicioMedicoAlumnoLabel, discapacidadLabel, enfermedaresAlumnoLabel, alergiasAlumnoLabel,
-                    telefonoContactoMedicoAlumnoLabel, grupoSanguineoAlumnoLabel, documentacionAlumnoLabel, mostrarDiscapacidadLabel,
-                    mostrarEnfermedadesLabel, mostrarAlergiasLabel, servicioMedicoTextBox, discapacidadTextBox, enfermedadesAlumnoTextBox,
-                    alergiasAlumnoTextBox, telefonoContactoMedicoAlumnoTextBox, grupoSanguineoTextBox, documentacionListBox, mostrarDiscapacidadRichTextBox,
+            Evelyn.altasInformacionMedicaAlumno(servicioMedicoAlumnoLabel, discapacidadLabel, enfermedaresAlumnoLabel, alergiasAlumnoLabel, 
+                    telefonoContactoMedicoAlumnoLabel, grupoSanguineoAlumnoLabel, documentacionAlumnoLabel, mostrarDiscapacidadLabel, 
+                    mostrarEnfermedadesLabel, mostrarAlergiasLabel, servicioMedicoTextBox, discapacidadTextBox, enfermedadesAlumnoTextBox, 
+                    alergiasAlumnoTextBox, telefonoContactoMedicoAlumnoTextBox, grupoSanguineoTextBox, documentacionListBox, mostrarDiscapacidadRichTextBox, 
                     mostrarEnfermedadesRichTextBox, mostrarAlergiasRichTextBox, agregarAlergiasButton, agregarEnfermedadesButton, agregarDiscapacidadButton);
-
             Claudia.altasInformacionEscolar(cicloEscolarLabel, curpLabel, añosCumplidosLabel, cicloEscolarTextBox, curpTextBox, añosCumplidosTextBox, tipoIngresoGroupBox, nuevoIngresoRadioButton, reingresoRadioButton);
-            
-            Evelyn.altasBotonesParaNavegar(siguienteButton, regresarButton, realizarAltaButton);
-            Evelyn.altasBotonesPanel(alumnosButton,docentesButton);
+
+            Evelyn.altasBotonesParaNavegar(siguienteButton, regresarButton, finalizarModificacionButton);
+            Evelyn.altasBotonesPanel(alumnosButton, docentesButton);
 
             int distanciaInfTutor = 60;
             Claudia.altasInformacionTutorGroupBox(informacionTutorGroupBox);
@@ -80,8 +79,14 @@ namespace presentationLayer
 
         }
 
+        private void alumnosButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Consultas formConsulta = new Consultas();
+            formConsulta.Show();
+        }
 
-        private void siguienteButton_Click_1(object sender, EventArgs e)
+        private void siguienteButton_Click(object sender, EventArgs e)
         {
             if (progreso == 0)
             {
@@ -91,7 +96,7 @@ namespace presentationLayer
                 informacionTutorGroupBox.Visible = false;
                 regresarButton.Visible = true;
                 siguienteButton.Visible = true;
-                realizarAltaButton.Visible = false;
+                finalizarModificacionButton.Visible = false;
                 progreso = 1;
             }
             if (progreso == 1)
@@ -102,7 +107,7 @@ namespace presentationLayer
                 informacionTutorGroupBox.Visible = true;
                 regresarButton.Visible = true;
                 siguienteButton.Visible = true;
-                realizarAltaButton.Visible = false;
+                finalizarModificacionButton.Visible = false;
                 progreso = 2;
             }
             if (progreso == 2)
@@ -113,19 +118,20 @@ namespace presentationLayer
                 informacionTutorGroupBox.Visible = true;
                 regresarButton.Visible = true;
                 siguienteButton.Visible = true;
-                realizarAltaButton.Visible = false;
+                finalizarModificacionButton.Visible = false;
                 progreso = 3;
-            }else{
+            }
+            else
+            {
                 informacionMedicaAlumnoGroupBox.Visible = true;
                 informacionGeneralAlumnoGroupBox.Visible = false;
                 informacionEscolarGroupBox.Visible = false;
                 informacionTutorGroupBox.Visible = false;
                 regresarButton.Visible = true;
                 siguienteButton.Visible = false;
-                realizarAltaButton.Visible = true;
+                finalizarModificacionButton.Visible = true;
                 progreso = 4;
             }
-
         }
 
         private void regresarButton_Click(object sender, EventArgs e)
@@ -137,7 +143,7 @@ namespace presentationLayer
                 informacionEscolarGroupBox.Visible = true;
                 informacionTutorGroupBox.Visible = false;
                 regresarButton.Visible = false;
-                realizarAltaButton.Visible = false;
+                finalizarModificacionButton.Visible = false;
                 siguienteButton.Visible = true;
                 progreso = 2;
             }
@@ -148,22 +154,15 @@ namespace presentationLayer
                 informacionGeneralAlumnoGroupBox.Visible = false;
                 informacionEscolarGroupBox.Visible = false;
                 informacionTutorGroupBox.Visible = true;
-                realizarAltaButton.Visible = false;
+                finalizarModificacionButton.Visible = false;
                 siguienteButton.Visible = true;
                 progreso = 3;
             }
         }
 
-        private void guardarButton_Click(object sender, EventArgs e)
+        private void finalizarModificacionButton_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("¿DESEA CONTINUAR CON LA ALTA?", "ALTA DE ALUMNO", MessageBoxButtons.OKCancel);
-        }
-
-        private void alumnosButton_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Consultas formConsulta = new Consultas();
-            formConsulta.Show();
+            MessageBox.Show("¿DESEA GUARDAR LOS CAMBIOS REALIZADOS?", "MODIFICACIÓN DE DATOS", MessageBoxButtons.OKCancel);
         }
     }
 }

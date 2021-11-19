@@ -15,37 +15,41 @@ namespace presentationLayer
         public Consultas()
         {
             InitializeComponent();
-            Edder.botonBuscar(buscarButton);
+            Edder.botonBuscar(buscarButton1);
             Edder.botonEliminar(eliminarButton);
-            Edder.botonModificar(modificarButton);
-            Edder.consultaDataView(consultaDataGridView);
+            Edder.botonModificar(ModificarButton);
+            Edder.consultaDataView(panelConsulta_dataGridView);
             Edder.etiquetaConsulta(consultaLabel);
             Edder.filtro(filtroLabel);
-            Edder.filtroCombo(filtradocomboBox);
-            Edder.Nombretxt(nombreTextBox);
-            Edder.panelNavBar(navBarPanel);
-            Edder.agregarBttn(agregarButton);
-            Edder.alumnosbttn(alumnosButton);
-            Edder.docentesbttn(docentesButton);
-            Edder.Nombrelbl(nombreLabel);
-            Edder.ApellidopaternoTxt(apellidoPaternoTextBox);
-            Edder.ApellidomaternoTxt(apellidoMaternoTextBox);
-            Edder.Apellidopaterno(apellidoPaternoLabel);
-            Edder.Apellidomaterno(apellidoMaternoLabel);
-            Edder.Vaciarbttn(vaciarButton);
-            Edder.botonImprimir(imprimirButton);
-            Edder.groupboxinferior(busquedaGroupBox);
+            Edder.filtroCombo(FiltradocomboBox1);
+            Edder.Nombretxt(NombreTextBox);
+            Edder.panelNavBar(NavBarPanel);
+            Edder.agregarBttn(AgregarButton);
+            Edder.alumnosbttn(AlumnosButton);
+            Edder.docentesbttn(DocentesButton);
+            Edder.Nombrelbl(NombreLabel);
+            Edder.ApellidopaternoTxt(ApellidoPaternoTextBox1);
+            Edder.ApellidomaternoTxt(ApellidoMaternoTextBox2);
+            Edder.Apellidopaterno(ApellidoPaternoLabel);
+            Edder.Apellidomaterno(ApellidoMaternoLabel);
+            Edder.Vaciarbttn(VaciarButton);
+            Edder.botonImprimir(ImprimirButton);
+            Edder.groupboxinferior(BusquedaGroupBox);
 
         }
 
-        private void Consultas_Load(object sender, EventArgs e)
+        private void ModificarButton_Click(object sender, EventArgs e)
         {
-            consultaDataGridView.DataSource = businessLayer.Gabriel.alumnosGet();
+            this.Hide();
+            modificacionesAlumno formModificacion = new modificacionesAlumno();
+            formModificacion.Show();
         }
 
-        private void eliminarButton_Click(object sender, EventArgs e)
+        private void AgregarButton_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Hola mundo");
+            this.Hide();
+            altaAlumno formAlta = new altaAlumno();
+            formAlta.Show();
         }
     }
 }
