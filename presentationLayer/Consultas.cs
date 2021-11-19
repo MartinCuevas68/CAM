@@ -33,8 +33,9 @@ namespace presentationLayer
             Edder.Apellidopaterno(apellidoPaternoLabel);
             Edder.Apellidomaterno(apellidoMaternoLabel);
             Edder.Vaciarbttn(vaciarButton);
-            Edder.groupboxinferior(busquedaGroupBox);
             Edder.botonImprimir(imprimirButton);
+            Edder.groupboxinferior(busquedaGroupBox);
+
         }
 
         private void Consultas_Load(object sender, EventArgs e)
