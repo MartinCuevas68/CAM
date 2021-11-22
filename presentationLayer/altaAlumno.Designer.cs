@@ -754,12 +754,6 @@ namespace presentationLayer
             this.docentesButton.Name = "docentesButton";
             this.docentesButton.UseVisualStyleBackColor = true;
             // 
-            // docentesButton
-            // 
-            resources.ApplyResources(this.docentesButton, "docentesButton");
-            this.docentesButton.Name = "docentesButton";
-            this.docentesButton.UseVisualStyleBackColor = true;
-            // 
             // label3
             // 
             resources.ApplyResources(this.label3, "label3");
