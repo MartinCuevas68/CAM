@@ -8,38 +8,38 @@ namespace _1dataLayer
 {
     class fernandoDTO
     {
-        public class padre
+        public class tutor
         {
-            int id_padre { get; }
-            string nombre { get; set; }
-            string apellido_mat { get; set; }
-            string apellido_pat { get; set; }
-            string colonia_padre { get; set; }
-            string calle_padre { get; set; }
-            string numero_padre { get; set; }
-            string ocupacion_padre { get; set; }
-            string colonia_trabajo_padre { get; set; }
-            string calle_trabajo_padre { get; set; }
-            string numero_trabajo_padre { get; set; }
+            public int id_tutor { get; }
+            public string Nombre { get; set; }
+            public string Apellido_paterno { get; set; }
+            public string Apellido_materno { get; set; }
+            public string colonia_tutor { get; set; }
+            public string calle_tutor { get; set; }
+            public string numero_tutor { get; set; }
+            public string ocupacion_tutor { get; set; }
+            public string colonia_trabajo_tutor { get; set; }
+            public string calle_trabajo_tutor { get; set; }
+            public string numero_trabajo_tutor { get; set; }
         }
 
-        public class padrehijo
+        public class tutor_alumno
         {
-            int idalumno { get; }
-            int idpadre { get; }
+            public int id_alumno { get; }
+            public int id_tutor { get; }
         }
 
-        public class padretelefono
+        public class telefono_tutor
         {
-            int idpadre { get; }
-            int idtelefono { get; }
-            int telefono { get; set; }
+            public int id_tutor { get; }
+            public int id_telefono { get; }
+            public int telefono { get; set; }
         }
 
-        public class identidicadorestelefonos
+        public class identidicadores_telefonos
         {
-            int idtelefono { get; }
-            string tipotelefono { get; set; }
+            public int id_telefono { get; }
+            public string tipo_telefono { get; set; }
         }
     }
 }

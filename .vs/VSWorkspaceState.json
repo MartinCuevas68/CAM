@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\businessLayer",
+    "\\presentationLayer"
   ],
-  "SelectedNode": "\\CAM.sln",
+  "SelectedNode": "\\businessLayer\\Gabriel.cs",
   "PreviewInSolutionExplorer": false
 }
