@@ -284,7 +284,6 @@ namespace presentationLayer
             this.Name = "Consultas";
             this.Text = "Consultas";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.Consultas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView)).EndInit();
             this.navBarPanel.ResumeLayout(false);
             this.navBarPanel.PerformLayout();
