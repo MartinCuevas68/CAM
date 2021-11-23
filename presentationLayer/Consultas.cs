@@ -37,15 +37,18 @@ namespace presentationLayer
             Edder.botonImprimir(imprimirButton);
         }
 
-        private void Consultas_Load(object sender, EventArgs e)
+        private void ModificarButton_Click(object sender, EventArgs e)
         {
-           // DataGridView.DataSource = businessLayer.Gabriel.alumnosGet();
-           
+            this.Hide();
+            modificacionesAlumno formModificacion = new modificacionesAlumno();
+            formModificacion.Show();
         }
 
-        private void eliminarButton_Click(object sender, EventArgs e)
+        private void AgregarButton_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Hola mundo");
+            this.Hide();
+            altaAlumno formAlta = new altaAlumno();
+            formAlta.Show();
         }
     }
 }

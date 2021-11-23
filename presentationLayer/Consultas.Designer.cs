@@ -70,9 +70,10 @@ namespace presentationLayer
             // eliminarButton
             // 
             this.eliminarButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.eliminarButton.Location = new System.Drawing.Point(1160, 115);
+            this.eliminarButton.Location = new System.Drawing.Point(1547, 142);
+            this.eliminarButton.Margin = new System.Windows.Forms.Padding(4);
             this.eliminarButton.Name = "eliminarButton";
-            this.eliminarButton.Size = new System.Drawing.Size(137, 33);
+            this.eliminarButton.Size = new System.Drawing.Size(183, 41);
             this.eliminarButton.TabIndex = 17;
             this.eliminarButton.Text = "ELIMINAR ALUMNO";
             this.eliminarButton.UseVisualStyleBackColor = true;
@@ -81,9 +82,10 @@ namespace presentationLayer
             // 
             this.consultaLabel.AutoSize = true;
             this.consultaLabel.Font = new System.Drawing.Font("Leelawadee UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.consultaLabel.Location = new System.Drawing.Point(24, 35);
+            this.consultaLabel.Location = new System.Drawing.Point(32, 43);
+            this.consultaLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.consultaLabel.Name = "consultaLabel";
-            this.consultaLabel.Size = new System.Drawing.Size(90, 21);
+            this.consultaLabel.Size = new System.Drawing.Size(111, 28);
             this.consultaLabel.TabIndex = 15;
             this.consultaLabel.Text = "ALUMNOS";
             // 
@@ -92,9 +94,10 @@ namespace presentationLayer
             this.filtroLabel.AutoSize = true;
             this.filtroLabel.Font = new System.Drawing.Font("Leelawadee UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.filtroLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.filtroLabel.Location = new System.Drawing.Point(25, 371);
+            this.filtroLabel.Location = new System.Drawing.Point(33, 457);
+            this.filtroLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.filtroLabel.Name = "filtroLabel";
-            this.filtroLabel.Size = new System.Drawing.Size(127, 21);
+            this.filtroLabel.Size = new System.Drawing.Size(159, 28);
             this.filtroLabel.TabIndex = 13;
             this.filtroLabel.Text = "ORDENAR POR:";
             // 
@@ -264,7 +267,7 @@ namespace presentationLayer
             // 
             // Consultas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1370, 749);
@@ -277,6 +280,7 @@ namespace presentationLayer
             this.Controls.Add(this.filtroLabel);
             this.Controls.Add(this.DataGridView);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Consultas";
             this.Text = "Consultas";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
