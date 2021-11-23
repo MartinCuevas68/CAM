@@ -114,6 +114,9 @@ namespace presentationLayer
             this.informacionGeneralAlumnoGroupBox = new System.Windows.Forms.GroupBox();
             this.informacionEscolarGroupBox = new System.Windows.Forms.GroupBox();
             this.informacionMedicaAlumnoGroupBox = new System.Windows.Forms.GroupBox();
+            this.agregarAlergiasButton = new System.Windows.Forms.Button();
+            this.agregarDiscapacidadButton = new System.Windows.Forms.Button();
+            this.agregarEnfermedadesButton = new System.Windows.Forms.Button();
             this.mostrarAlergiasLabel = new System.Windows.Forms.Label();
             this.mostrarEnfermedadesLabel = new System.Windows.Forms.Label();
             this.mostrarDiscapacidadLabel = new System.Windows.Forms.Label();
@@ -129,9 +132,6 @@ namespace presentationLayer
             this.docentesButton = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.realizarAltaButton = new System.Windows.Forms.Button();
-            this.agregarEnfermedadesButton = new System.Windows.Forms.Button();
-            this.agregarDiscapacidadButton = new System.Windows.Forms.Button();
-            this.agregarAlergiasButton = new System.Windows.Forms.Button();
             this.tipoIngresoGroupBox.SuspendLayout();
             this.otroAlumnoTutorGroupBox.SuspendLayout();
             this.informacionGeneralAlumnoGroupBox.SuspendLayout();
@@ -652,6 +652,30 @@ namespace presentationLayer
             this.informacionMedicaAlumnoGroupBox.Name = "informacionMedicaAlumnoGroupBox";
             this.informacionMedicaAlumnoGroupBox.TabStop = false;
             // 
+            // agregarAlergiasButton
+            // 
+            resources.ApplyResources(this.agregarAlergiasButton, "agregarAlergiasButton");
+            this.agregarAlergiasButton.BackColor = System.Drawing.Color.Transparent;
+            this.agregarAlergiasButton.Image = global::presentationLayer.Properties.Resources.mas1;
+            this.agregarAlergiasButton.Name = "agregarAlergiasButton";
+            this.agregarAlergiasButton.UseVisualStyleBackColor = false;
+            // 
+            // agregarDiscapacidadButton
+            // 
+            resources.ApplyResources(this.agregarDiscapacidadButton, "agregarDiscapacidadButton");
+            this.agregarDiscapacidadButton.BackColor = System.Drawing.Color.Transparent;
+            this.agregarDiscapacidadButton.Image = global::presentationLayer.Properties.Resources.mas1;
+            this.agregarDiscapacidadButton.Name = "agregarDiscapacidadButton";
+            this.agregarDiscapacidadButton.UseVisualStyleBackColor = false;
+            // 
+            // agregarEnfermedadesButton
+            // 
+            resources.ApplyResources(this.agregarEnfermedadesButton, "agregarEnfermedadesButton");
+            this.agregarEnfermedadesButton.BackColor = System.Drawing.Color.Transparent;
+            this.agregarEnfermedadesButton.Image = global::presentationLayer.Properties.Resources.mas1;
+            this.agregarEnfermedadesButton.Name = "agregarEnfermedadesButton";
+            this.agregarEnfermedadesButton.UseVisualStyleBackColor = false;
+            // 
             // mostrarAlergiasLabel
             // 
             resources.ApplyResources(this.mostrarAlergiasLabel, "mostrarAlergiasLabel");
@@ -754,12 +778,6 @@ namespace presentationLayer
             this.docentesButton.Name = "docentesButton";
             this.docentesButton.UseVisualStyleBackColor = true;
             // 
-            // docentesButton
-            // 
-            resources.ApplyResources(this.docentesButton, "docentesButton");
-            this.docentesButton.Name = "docentesButton";
-            this.docentesButton.UseVisualStyleBackColor = true;
-            // 
             // label3
             // 
             resources.ApplyResources(this.label3, "label3");
@@ -771,30 +789,6 @@ namespace presentationLayer
             this.realizarAltaButton.Name = "realizarAltaButton";
             this.realizarAltaButton.UseVisualStyleBackColor = true;
             this.realizarAltaButton.Click += new System.EventHandler(this.guardarButton_Click);
-            // 
-            // agregarEnfermedadesButton
-            // 
-            resources.ApplyResources(this.agregarEnfermedadesButton, "agregarEnfermedadesButton");
-            this.agregarEnfermedadesButton.BackColor = System.Drawing.Color.Transparent;
-            this.agregarEnfermedadesButton.Image = global::presentationLayer.Properties.Resources.mas1;
-            this.agregarEnfermedadesButton.Name = "agregarEnfermedadesButton";
-            this.agregarEnfermedadesButton.UseVisualStyleBackColor = false;
-            // 
-            // agregarDiscapacidadButton
-            // 
-            resources.ApplyResources(this.agregarDiscapacidadButton, "agregarDiscapacidadButton");
-            this.agregarDiscapacidadButton.BackColor = System.Drawing.Color.Transparent;
-            this.agregarDiscapacidadButton.Image = global::presentationLayer.Properties.Resources.mas1;
-            this.agregarDiscapacidadButton.Name = "agregarDiscapacidadButton";
-            this.agregarDiscapacidadButton.UseVisualStyleBackColor = false;
-            // 
-            // agregarAlergiasButton
-            // 
-            resources.ApplyResources(this.agregarAlergiasButton, "agregarAlergiasButton");
-            this.agregarAlergiasButton.BackColor = System.Drawing.Color.Transparent;
-            this.agregarAlergiasButton.Image = global::presentationLayer.Properties.Resources.mas1;
-            this.agregarAlergiasButton.Name = "agregarAlergiasButton";
-            this.agregarAlergiasButton.UseVisualStyleBackColor = false;
             // 
             // altaAlumno
             // 
