@@ -64,7 +64,7 @@ namespace presentationLayer
             "Taller"});
             this.filtradoComboBox.Location = new System.Drawing.Point(161, 371);
             this.filtradoComboBox.Name = "filtradoComboBox";
-            this.filtradoComboBox.Size = new System.Drawing.Size(121, 21);
+            this.filtradoComboBox.Size = new System.Drawing.Size(121, 24);
             this.filtradoComboBox.TabIndex = 18;
             // 
             // eliminarButton
@@ -127,6 +127,7 @@ namespace presentationLayer
             this.DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DataGridView.Location = new System.Drawing.Point(28, 74);
             this.DataGridView.Name = "DataGridView";
+            this.DataGridView.RowHeadersWidth = 51;
             this.DataGridView.Size = new System.Drawing.Size(1312, 285);
             this.DataGridView.TabIndex = 10;
             // 
@@ -146,9 +147,9 @@ namespace presentationLayer
             this.docentesButton.AutoSize = true;
             this.docentesButton.Dock = System.Windows.Forms.DockStyle.Right;
             this.docentesButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.docentesButton.Location = new System.Drawing.Point(1219, 0);
+            this.docentesButton.Location = new System.Drawing.Point(1190, 0);
             this.docentesButton.Name = "docentesButton";
-            this.docentesButton.Size = new System.Drawing.Size(76, 32);
+            this.docentesButton.Size = new System.Drawing.Size(94, 32);
             this.docentesButton.TabIndex = 22;
             this.docentesButton.Text = "DOCENTES";
             this.docentesButton.UseVisualStyleBackColor = true;
@@ -158,9 +159,9 @@ namespace presentationLayer
             this.alumnosButton.AutoSize = true;
             this.alumnosButton.Dock = System.Windows.Forms.DockStyle.Right;
             this.alumnosButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.alumnosButton.Location = new System.Drawing.Point(1295, 0);
+            this.alumnosButton.Location = new System.Drawing.Point(1284, 0);
             this.alumnosButton.Name = "alumnosButton";
-            this.alumnosButton.Size = new System.Drawing.Size(75, 32);
+            this.alumnosButton.Size = new System.Drawing.Size(86, 32);
             this.alumnosButton.TabIndex = 21;
             this.alumnosButton.Text = "ALUMNOS";
             this.alumnosButton.UseVisualStyleBackColor = true;
@@ -174,6 +175,7 @@ namespace presentationLayer
             this.agregarButton.TabIndex = 21;
             this.agregarButton.Text = "AGREGAR";
             this.agregarButton.UseVisualStyleBackColor = true;
+            this.agregarButton.Click += new System.EventHandler(this.agregarButton_Click_1);
             // 
             // vaciarButton
             // 
@@ -197,7 +199,7 @@ namespace presentationLayer
             this.apellidoMaternoLabel.AutoSize = true;
             this.apellidoMaternoLabel.Location = new System.Drawing.Point(743, 76);
             this.apellidoMaternoLabel.Name = "apellidoMaternoLabel";
-            this.apellidoMaternoLabel.Size = new System.Drawing.Size(172, 21);
+            this.apellidoMaternoLabel.Size = new System.Drawing.Size(215, 28);
             this.apellidoMaternoLabel.TabIndex = 22;
             this.apellidoMaternoLabel.Text = "APELLIDO MATERNO:";
             // 
@@ -214,7 +216,7 @@ namespace presentationLayer
             this.apellidoPaternoLabel.AutoSize = true;
             this.apellidoPaternoLabel.Location = new System.Drawing.Point(338, 76);
             this.apellidoPaternoLabel.Name = "apellidoPaternoLabel";
-            this.apellidoPaternoLabel.Size = new System.Drawing.Size(167, 21);
+            this.apellidoPaternoLabel.Size = new System.Drawing.Size(208, 28);
             this.apellidoPaternoLabel.TabIndex = 20;
             this.apellidoPaternoLabel.Text = "APELLIDO PATERNO:";
             // 
@@ -223,7 +225,7 @@ namespace presentationLayer
             this.nombreLabel.AutoSize = true;
             this.nombreLabel.Location = new System.Drawing.Point(6, 77);
             this.nombreLabel.Name = "nombreLabel";
-            this.nombreLabel.Size = new System.Drawing.Size(99, 21);
+            this.nombreLabel.Size = new System.Drawing.Size(124, 28);
             this.nombreLabel.TabIndex = 19;
             this.nombreLabel.Text = "NOMBRE/S:";
             // 
@@ -284,6 +286,7 @@ namespace presentationLayer
             this.Name = "Consultas";
             this.Text = "Consultas";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Consultas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView)).EndInit();
             this.navBarPanel.ResumeLayout(false);
             this.navBarPanel.PerformLayout();

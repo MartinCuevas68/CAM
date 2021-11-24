@@ -156,7 +156,9 @@ namespace presentationLayer
 
         private void guardarButton_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("¿DESEA CONTINUAR CON LA ALTA?", "ALTA DE ALUMNO", MessageBoxButtons.OKCancel);
+            
+            MessageBox.Show("REGISTRO EXITOSO!");
+            businessLayer.Hueso.SetAlumno(nombreAlumnoTextBox.Text);
         }
 
         private void alumnosButton_Click(object sender, EventArgs e)
@@ -164,6 +166,11 @@ namespace presentationLayer
             this.Hide();
             Consultas formConsulta = new Consultas();
             formConsulta.Show();
+        }
+
+        private void altaAlumno_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
