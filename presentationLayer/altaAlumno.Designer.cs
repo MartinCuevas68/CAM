@@ -809,6 +809,7 @@ namespace presentationLayer
             this.Controls.Add(this.siguienteButton);
             this.Name = "altaAlumno";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.altaAlumno_Load);
             this.tipoIngresoGroupBox.ResumeLayout(false);
             this.tipoIngresoGroupBox.PerformLayout();
             this.otroAlumnoTutorGroupBox.ResumeLayout(false);
