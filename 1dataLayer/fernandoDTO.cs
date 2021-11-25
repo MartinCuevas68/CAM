@@ -41,5 +41,29 @@ namespace _1dataLayer
             public int id_telefono { get; }
             public string tipo_telefono { get; set; }
         }
+
+        public class programa
+        {
+            public int id_programa { get; }
+            public string nombre_programa { get; set; }
+            public string tiempo { get; set; }
+            public string secuencia { get; set; }
+            public string criterios { get; set; }
+            public string objetivo { get; set; }
+            public string modulos { get; set; }
+            public string proyecto { get; set; }
+        }
+
+        public class recursos
+        {
+            public int id_recurso { get; }
+            public string recurso { get; set; }
+        }
+
+        public class turnos
+        {
+            public int id_turno { get; }
+            public string turno { get; set; }
+        }
     }
 }
