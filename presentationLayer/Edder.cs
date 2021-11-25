@@ -8,8 +8,8 @@ namespace presentationLayer
     {
         public static void botonBuscar(Button buscarButton)
         {
-            buscarButton.Location = new Point(800, 110);
-            buscarButton.Size = new Size(85, 30);
+            buscarButton.Location = new Point(1000, 110);
+            buscarButton.Size = new Size(47, 28);
             buscarButton.Font = new Font("Leelawadee UI", 12, FontStyle.Bold);
 
         }
@@ -17,19 +17,19 @@ namespace presentationLayer
         public static void botonImprimir(Button imprimirButton)
         {
             imprimirButton.Location = new Point(1192, 58);
-            imprimirButton.Size = new Size(75, 23);
+            imprimirButton.Size = new Size(47, 28);
 
         }
         public static void botonEliminar(Button eliminarButton)
         {
-            eliminarButton.Location = new Point(1168, 110);
-            eliminarButton.Size = new Size(120, 30);
+            eliminarButton.Location = new Point(1195, 110);
+            eliminarButton.Size = new Size(47, 28);
          eliminarButton.Font = new Font("Leelawadee UI", 12, FontStyle.Bold);
         }
         public static void botonModificar(Button modificarButton)
         {
-            modificarButton.Location = new Point(1030, 110);
-            modificarButton.Size = new Size(120, 30);
+            modificarButton.Location = new Point(1130, 110);
+            modificarButton.Size = new Size(47, 28);
             modificarButton.Font = new Font("Leelawadee UI", 12, FontStyle.Bold);
 
         }
@@ -60,7 +60,9 @@ namespace presentationLayer
         public static void Nombretxt(TextBox nombreTextBox)
         {
             nombreTextBox.Location = new Point(125, 50);
-
+            nombreTextBox.Font = new Font("Leelawadee UI", 10);
+          
+        
         }
 
         public static void panelNavBar(Panel navBarPanel)
@@ -71,8 +73,8 @@ namespace presentationLayer
 
         public static void agregarBttn(Button agregarButton)
         {
-            agregarButton.Location = new Point(1094, 58);
-            agregarButton.Size = new Size(75, 23);
+            agregarButton.Location = new Point(1120, 58);
+            agregarButton.Size = new Size(47, 28);
         }
 
         public static void alumnosbttn(Button alumnosButton)
@@ -98,11 +100,15 @@ namespace presentationLayer
         public static void ApellidopaternoTxt(TextBox apellidoPaternoTextBox)
         {
             apellidoPaternoTextBox.Location = new Point(475, 50);
+            apellidoPaternoTextBox.Font = new Font("Leelawadee UI", 10);
+      
         }
 
         public static void ApellidomaternoTxt(TextBox apellidoMaternoTextBox)
         {
             apellidoMaternoTextBox.Location = new Point(830, 50);
+            apellidoMaternoTextBox.Font = new Font("Leelawadee UI", 10);
+   
         }
 
         public static void Apellidopaterno(Label apellidoPaternoLabel)
@@ -120,8 +126,8 @@ namespace presentationLayer
         public static void Vaciarbttn(Button vaciarButton)
         {
 
-            vaciarButton.Location = new Point(900, 110);
-            vaciarButton.Size = new Size(85, 30);
+            vaciarButton.Location = new Point(1065, 110);
+            vaciarButton.Size = new Size(47, 28);
             vaciarButton.Font = new Font("Leelawadee UI", 12, FontStyle.Bold);
         }
 
