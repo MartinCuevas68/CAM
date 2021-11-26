@@ -13,7 +13,7 @@ namespace _1dataLayer
 
     public class alumnoDTO
     {
-        public int id_alumno { get; set;  }
+        public int id_alumno { get;}
 
         public DateTime fecha_registo { get; set; }
         public string ciclo_escolar { get; set; }
@@ -47,8 +47,12 @@ namespace _1dataLayer
         public string servicio_medico { get; set; }
         public string grupo_sanguineo { get; set; }
         public string telefono_contacto { get; set; }
-
+        public string genero { get; set; }
+        public int peso { get; set; }
+        public string color_textura_piel { get; set; }
+        public double estatura { get; set; }
     }
+
     public class enfermedadesDTO
     {
         public int id_cartilla_medica { get; }
