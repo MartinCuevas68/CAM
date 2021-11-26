@@ -680,6 +680,7 @@ namespace presentationLayer
             this.agregarEnfermedadesButton.Image = global::presentationLayer.Properties.Resources.mas1;
             this.agregarEnfermedadesButton.Name = "agregarEnfermedadesButton";
             this.agregarEnfermedadesButton.UseVisualStyleBackColor = false;
+            this.agregarEnfermedadesButton.Click += new System.EventHandler(this.agregarEnfermedadesButton_Click);
             // 
             // mostrarAlergiasLabel
             // 

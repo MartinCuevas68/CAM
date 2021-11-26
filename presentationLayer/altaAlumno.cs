@@ -165,5 +165,11 @@ namespace presentationLayer
             Consultas formConsulta = new Consultas();
             formConsulta.Show();
         }
+
+        private void agregarEnfermedadesButton_Click(object sender, EventArgs e)
+        {
+            string enfermedad = "";
+            enfermedad = enfermedadesAlumnoTextBox.Text;
+        }
     }
 }
