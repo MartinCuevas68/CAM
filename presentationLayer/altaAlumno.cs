@@ -16,8 +16,8 @@ namespace presentationLayer
 
         public altaAlumno()
         {
-            int distanciaLabel = 40;
-            int distanciaTextBox = 36;
+            int distanciaLabel = 70;
+            int distanciaTextBox = 66;
 
             InitializeComponent();
 
@@ -28,13 +28,8 @@ namespace presentationLayer
 
             informacionMedicaAlumnoGroupBox.Visible = false;
             regresarButton.Visible = false;
-            atendidoPorLabel.Visible = false;
-            atendidoPorComboBox.Visible = false;
             informacionTutorGroupBox.Visible = false;
             realizarAltaButton.Visible = false;
-
-            distanciaLabel = Claudia.altasLabel(fechaElaboracionLabel, distanciaLabel);
-            distanciaTextBox = Claudia.altasDateTimePicker(fechaElaboracionDateTimePicker, distanciaTextBox);
 
             distanciaLabel = Claudia.altasNombre(nombreAlumnoLabel, apellidoPaternoAlumnoLabel, apellidoMaternoAlumnoLabel, nombreAlumnoTextBox, apellidoPaternoAlumnoTextBox, apellidoMaternoAlumnoTextBox, distanciaLabel);
             distanciaTextBox = distanciaTextBox + 40;
@@ -78,6 +73,9 @@ namespace presentationLayer
             distanciaInfTutor = Claudia.altasOcupacionTutor(ocupacionTutorLabel, ocupacionTutorTextBox, distanciaInfTutor);
             distanciaInfTutor = Claudia.altasTelefonosTutor(telefonosTutorLabel, telefonoCasaTutorLabel, telefonoCasaTutorTextBox, telefonoCelularTutorLabel, telefonoCelularTutorTextBox, telefonoTrabajoTutorLabel, telefonoTrabajoTutorTextBox, distanciaInfTutor);
 
+
+            Evelyn.eliminarBotones(eliminarEnfermedadButton, eliminarDiscapacidadesButton, eliminarAlergiasButton);
+            Claudia.limpiarFormatosBotones(limpiarFormato1Button,limpiarFormato2Button,limpiarFormato3Button);
         }
 
 
@@ -166,11 +164,6 @@ namespace presentationLayer
             this.Hide();
             Consultas formConsulta = new Consultas();
             formConsulta.Show();
-        }
-
-        private void altaAlumno_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
