@@ -34,6 +34,9 @@ namespace presentationLayer
             this.altaAlumnoPanel = new System.Windows.Forms.Panel();
             this.tituloLabel = new System.Windows.Forms.Label();
             this.informacionMedicaAlumnoGroupBox = new System.Windows.Forms.GroupBox();
+            this.agregarAlergiasButton = new System.Windows.Forms.Button();
+            this.agregarDiscapacidadButton = new System.Windows.Forms.Button();
+            this.agregarEnfermedadesButton = new System.Windows.Forms.Button();
             this.mostrarAlergiasLabel = new System.Windows.Forms.Label();
             this.mostrarEnfermedadesLabel = new System.Windows.Forms.Label();
             this.mostrarDiscapacidadLabel = new System.Windows.Forms.Label();
@@ -126,9 +129,9 @@ namespace presentationLayer
             this.finalizarModificacionButton = new System.Windows.Forms.Button();
             this.regresarButton = new System.Windows.Forms.Button();
             this.siguienteButton = new System.Windows.Forms.Button();
-            this.agregarAlergiasButton = new System.Windows.Forms.Button();
-            this.agregarDiscapacidadButton = new System.Windows.Forms.Button();
-            this.agregarEnfermedadesButton = new System.Windows.Forms.Button();
+            this.eliminarAlergiasButton = new System.Windows.Forms.Button();
+            this.eliminarDiscapacidadesButton = new System.Windows.Forms.Button();
+            this.eliminarEnfermedadButton = new System.Windows.Forms.Button();
             this.altaAlumnoPanel.SuspendLayout();
             this.informacionMedicaAlumnoGroupBox.SuspendLayout();
             this.informacionEscolarGroupBox.SuspendLayout();
@@ -190,6 +193,9 @@ namespace presentationLayer
             // informacionMedicaAlumnoGroupBox
             // 
             this.informacionMedicaAlumnoGroupBox.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.informacionMedicaAlumnoGroupBox.Controls.Add(this.eliminarAlergiasButton);
+            this.informacionMedicaAlumnoGroupBox.Controls.Add(this.eliminarDiscapacidadesButton);
+            this.informacionMedicaAlumnoGroupBox.Controls.Add(this.eliminarEnfermedadButton);
             this.informacionMedicaAlumnoGroupBox.Controls.Add(this.agregarAlergiasButton);
             this.informacionMedicaAlumnoGroupBox.Controls.Add(this.agregarDiscapacidadButton);
             this.informacionMedicaAlumnoGroupBox.Controls.Add(this.agregarEnfermedadesButton);
@@ -219,6 +225,42 @@ namespace presentationLayer
             this.informacionMedicaAlumnoGroupBox.TabIndex = 141;
             this.informacionMedicaAlumnoGroupBox.TabStop = false;
             this.informacionMedicaAlumnoGroupBox.Text = "INFORMACIÓN MEDICA ALUMNO";
+            // 
+            // agregarAlergiasButton
+            // 
+            this.agregarAlergiasButton.AutoSize = true;
+            this.agregarAlergiasButton.BackColor = System.Drawing.Color.Transparent;
+            this.agregarAlergiasButton.Image = global::presentationLayer.Properties.Resources.mas1;
+            this.agregarAlergiasButton.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.agregarAlergiasButton.Location = new System.Drawing.Point(373, 98);
+            this.agregarAlergiasButton.Name = "agregarAlergiasButton";
+            this.agregarAlergiasButton.Size = new System.Drawing.Size(26, 26);
+            this.agregarAlergiasButton.TabIndex = 139;
+            this.agregarAlergiasButton.UseVisualStyleBackColor = false;
+            // 
+            // agregarDiscapacidadButton
+            // 
+            this.agregarDiscapacidadButton.AutoSize = true;
+            this.agregarDiscapacidadButton.BackColor = System.Drawing.Color.Transparent;
+            this.agregarDiscapacidadButton.Image = global::presentationLayer.Properties.Resources.mas1;
+            this.agregarDiscapacidadButton.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.agregarDiscapacidadButton.Location = new System.Drawing.Point(373, 73);
+            this.agregarDiscapacidadButton.Name = "agregarDiscapacidadButton";
+            this.agregarDiscapacidadButton.Size = new System.Drawing.Size(26, 26);
+            this.agregarDiscapacidadButton.TabIndex = 138;
+            this.agregarDiscapacidadButton.UseVisualStyleBackColor = false;
+            // 
+            // agregarEnfermedadesButton
+            // 
+            this.agregarEnfermedadesButton.AutoSize = true;
+            this.agregarEnfermedadesButton.BackColor = System.Drawing.Color.Transparent;
+            this.agregarEnfermedadesButton.Image = global::presentationLayer.Properties.Resources.mas1;
+            this.agregarEnfermedadesButton.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.agregarEnfermedadesButton.Location = new System.Drawing.Point(373, 51);
+            this.agregarEnfermedadesButton.Name = "agregarEnfermedadesButton";
+            this.agregarEnfermedadesButton.Size = new System.Drawing.Size(26, 26);
+            this.agregarEnfermedadesButton.TabIndex = 137;
+            this.agregarEnfermedadesButton.UseVisualStyleBackColor = false;
             // 
             // mostrarAlergiasLabel
             // 
@@ -1161,41 +1203,38 @@ namespace presentationLayer
             this.siguienteButton.UseVisualStyleBackColor = true;
             this.siguienteButton.Click += new System.EventHandler(this.siguienteButton_Click);
             // 
-            // agregarAlergiasButton
+            // eliminarAlergiasButton
             // 
-            this.agregarAlergiasButton.AutoSize = true;
-            this.agregarAlergiasButton.BackColor = System.Drawing.Color.Transparent;
-            this.agregarAlergiasButton.Image = global::presentationLayer.Properties.Resources.mas1;
-            this.agregarAlergiasButton.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.agregarAlergiasButton.Location = new System.Drawing.Point(373, 98);
-            this.agregarAlergiasButton.Name = "agregarAlergiasButton";
-            this.agregarAlergiasButton.Size = new System.Drawing.Size(26, 26);
-            this.agregarAlergiasButton.TabIndex = 139;
-            this.agregarAlergiasButton.UseVisualStyleBackColor = false;
+            this.eliminarAlergiasButton.AutoSize = true;
+            this.eliminarAlergiasButton.Image = global::presentationLayer.Properties.Resources.boteBasura;
+            this.eliminarAlergiasButton.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.eliminarAlergiasButton.Location = new System.Drawing.Point(583, 154);
+            this.eliminarAlergiasButton.Name = "eliminarAlergiasButton";
+            this.eliminarAlergiasButton.Size = new System.Drawing.Size(36, 36);
+            this.eliminarAlergiasButton.TabIndex = 142;
+            this.eliminarAlergiasButton.UseVisualStyleBackColor = true;
             // 
-            // agregarDiscapacidadButton
+            // eliminarDiscapacidadesButton
             // 
-            this.agregarDiscapacidadButton.AutoSize = true;
-            this.agregarDiscapacidadButton.BackColor = System.Drawing.Color.Transparent;
-            this.agregarDiscapacidadButton.Image = global::presentationLayer.Properties.Resources.mas1;
-            this.agregarDiscapacidadButton.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.agregarDiscapacidadButton.Location = new System.Drawing.Point(373, 73);
-            this.agregarDiscapacidadButton.Name = "agregarDiscapacidadButton";
-            this.agregarDiscapacidadButton.Size = new System.Drawing.Size(26, 26);
-            this.agregarDiscapacidadButton.TabIndex = 138;
-            this.agregarDiscapacidadButton.UseVisualStyleBackColor = false;
+            this.eliminarDiscapacidadesButton.AutoSize = true;
+            this.eliminarDiscapacidadesButton.Image = global::presentationLayer.Properties.Resources.boteBasura;
+            this.eliminarDiscapacidadesButton.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.eliminarDiscapacidadesButton.Location = new System.Drawing.Point(170, 153);
+            this.eliminarDiscapacidadesButton.Name = "eliminarDiscapacidadesButton";
+            this.eliminarDiscapacidadesButton.Size = new System.Drawing.Size(36, 36);
+            this.eliminarDiscapacidadesButton.TabIndex = 141;
+            this.eliminarDiscapacidadesButton.UseVisualStyleBackColor = true;
             // 
-            // agregarEnfermedadesButton
+            // eliminarEnfermedadButton
             // 
-            this.agregarEnfermedadesButton.AutoSize = true;
-            this.agregarEnfermedadesButton.BackColor = System.Drawing.Color.Transparent;
-            this.agregarEnfermedadesButton.Image = global::presentationLayer.Properties.Resources.mas1;
-            this.agregarEnfermedadesButton.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.agregarEnfermedadesButton.Location = new System.Drawing.Point(373, 51);
-            this.agregarEnfermedadesButton.Name = "agregarEnfermedadesButton";
-            this.agregarEnfermedadesButton.Size = new System.Drawing.Size(26, 26);
-            this.agregarEnfermedadesButton.TabIndex = 137;
-            this.agregarEnfermedadesButton.UseVisualStyleBackColor = false;
+            this.eliminarEnfermedadButton.AutoSize = true;
+            this.eliminarEnfermedadButton.Image = global::presentationLayer.Properties.Resources.boteBasura;
+            this.eliminarEnfermedadButton.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.eliminarEnfermedadButton.Location = new System.Drawing.Point(418, 149);
+            this.eliminarEnfermedadButton.Name = "eliminarEnfermedadButton";
+            this.eliminarEnfermedadButton.Size = new System.Drawing.Size(36, 36);
+            this.eliminarEnfermedadButton.TabIndex = 140;
+            this.eliminarEnfermedadButton.UseVisualStyleBackColor = true;
             // 
             // modificacionesAlumno
             // 
@@ -1337,5 +1376,8 @@ namespace presentationLayer
         private System.Windows.Forms.Button agregarAlergiasButton;
         private System.Windows.Forms.Button agregarDiscapacidadButton;
         private System.Windows.Forms.Button agregarEnfermedadesButton;
+        private System.Windows.Forms.Button eliminarAlergiasButton;
+        private System.Windows.Forms.Button eliminarDiscapacidadesButton;
+        private System.Windows.Forms.Button eliminarEnfermedadButton;
     }
 }

@@ -6,15 +6,16 @@ namespace presentationLayer
 {
     class Claudia
     {
-        public static void altasGroupBox(GroupBox groupBox) {
-            groupBox.Location = new Point(130,100);
-            groupBox.Size = new Size(1150, 410);
+        public static void altasGroupBox(GroupBox groupBox)
+        {
+            groupBox.Location = new Point(130, 100);
+            groupBox.Size = new Size(1150, 360);
             groupBox.Font = new Font("Leelawadee UI", 12);
         }
 
         public static void altasGroupBox2(GroupBox groupBox2)
         {
-            groupBox2.Location = new Point(130, 520);
+            groupBox2.Location = new Point(130, 465);
             groupBox2.Size = new Size(400, 250);
             groupBox2.Font = new Font("Leelawadee UI", 12);
         }
@@ -43,7 +44,8 @@ namespace presentationLayer
             return distancia;
         }
 
-        public static int altasNombre(Label nombre,Label apellidoP, Label apellidoM, TextBox nombreTB, TextBox apellidoPTB, TextBox apellidoMTB, int distancia) {
+        public static int altasNombre(Label nombre, Label apellidoP, Label apellidoM, TextBox nombreTB, TextBox apellidoPTB, TextBox apellidoMTB, int distancia)
+        {
             nombre.Location = new Point(20, distancia);
             nombreTB.Location = new Point(240, distancia);
 
@@ -64,15 +66,16 @@ namespace presentationLayer
             return distancia;
         }
 
-        public static int altasLugarNacimiento(Label titulo, Label ciudad, Label estado, TextBox ciudadTB, TextBox estadoTB, int distancia){
+        public static int altasLugarNacimiento(Label titulo, Label ciudad, Label estado, TextBox ciudadTB, TextBox estadoTB, int distancia)
+        {
             titulo.Location = new Point(20, distancia);
-            ciudad.Location = new Point(240,distancia);
+            ciudad.Location = new Point(240, distancia);
             ciudadTB.Location = new Point(340, distancia);
             estado.Location = new Point(460, distancia);
             estadoTB.Location = new Point(550, distancia);
 
             titulo.Size = new Size(100, 30);
-            ciudad.Size = new Size(100,30);
+            ciudad.Size = new Size(100, 30);
             ciudadTB.Size = new Size(100, 30);
             estado.Size = new Size(100, 30);
             estadoTB.Size = new Size(100, 30);
@@ -81,7 +84,8 @@ namespace presentationLayer
             return distancia;
         }
 
-        public static int altasDireccion(Label titulo, Label calle, Label numero, Label colonia, TextBox calleTB, TextBox numeroTB, TextBox coloniaTB, int distancia) {
+        public static int altasDireccion(Label titulo, Label calle, Label numero, Label colonia, TextBox calleTB, TextBox numeroTB, TextBox coloniaTB, int distancia)
+        {
             titulo.Location = new Point(20, distancia);
             calle.Location = new Point(240, distancia);
             calleTB.Location = new Point(340, distancia);
@@ -102,7 +106,8 @@ namespace presentationLayer
             return distancia;
         }
 
-        public static void altasInformacionEscolar(Label ciclo, Label curp, Label edad, TextBox cicloTB, TextBox curpTB, TextBox edadTB, GroupBox ingreso, RadioButton radioButton1, RadioButton radioButton2) {
+        public static void altasInformacionEscolar(Label ciclo, Label curp, Label edad, TextBox cicloTB, TextBox curpTB, TextBox edadTB, GroupBox ingreso, RadioButton radioButton1, RadioButton radioButton2)
+        {
             int aux = 40;
             ciclo.Location = new Point(20, aux);
             cicloTB.Location = new Point(180, aux - 4);
@@ -237,5 +242,15 @@ namespace presentationLayer
             return distancia;
         }
 
+        public static void limpiarFormatosBotones(Button formato1, Button formato2, Button formato3)
+        {
+            formato1.Location = new Point(1115,325);
+            formato2.Location = new Point(1115, 415);
+            formato3.Location = new Point(1115, 515);
+
+            formato1.Size = new Size(35, 35);
+            formato2.Size = new Size(35, 35);
+            formato3.Size = new Size(35, 35);
+        }
     }
 }

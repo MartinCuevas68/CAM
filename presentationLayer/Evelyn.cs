@@ -12,6 +12,14 @@ namespace presentationLayer
             groupBox.Size = new Size(1150, 550);
             groupBox.Font = new Font("Leelawadee UI", 12);
         }
+
+        public static void eliminarBotones(Button eliminarEnfermedades, Button eliminarDiscapacidad, Button eliminarAlergias)
+        {
+            eliminarDiscapacidad.Location = new Point(282, 315);
+            eliminarEnfermedades.Location = new Point(622, 315);
+            eliminarAlergias.Location = new Point(941, 315);
+        }
+
         public static void altasInformacionMedicaAlumno(Label servicioMedico, Label discapacidad, Label enfermedades, Label alergias,
             Label telefonoContacto, Label grupoSanguineo, Label documentacion, Label mostrarDiscapacidad, Label mostrarEnfermedades,
             Label mostrarAlergias, TextBox servicioMedicoTB, TextBox discapacidadTB, TextBox enfermedadesTB, TextBox alergiasTB,
@@ -57,8 +65,11 @@ namespace presentationLayer
             aux = aux + 40;
 
             mostrarDiscapacidadTB.Location = new Point(20, aux);
+            mostrarDiscapacidadTB.Enabled = false;
             mostrarEnfermedadTB.Location = new Point(360, aux);
+            mostrarEnfermedadTB.Enabled = false;
             mostrarAlergiasTB.Location = new Point(680, aux);
+            mostrarAlergiasTB.Enabled = false;
 
 
             servicioMedico.Size = new Size(100, 30);
@@ -86,9 +97,9 @@ namespace presentationLayer
 
         public static void altasBotonesParaNavegar(Button siguiente, Button regresar, Button guardar)
         {
-            siguiente.Location = new Point(1180, 740);
-            guardar.Location = new Point(1180, 740);
-            regresar.Location = new Point(1070, 740);
+            siguiente.Location = new Point(1175, 655);
+            guardar.Location = new Point(1145, 655);
+            regresar.Location = new Point(1040, 655);
 
             siguiente.Size = new Size(100, 30);
             regresar.Size = new Size(100, 30);
@@ -104,7 +115,5 @@ namespace presentationLayer
             docentes.Font = new Font("Leelawadee UI", 12);
             alumnos.Font = new Font("Leelawadee UI", 12);
         }
-
-            
     }
 }
