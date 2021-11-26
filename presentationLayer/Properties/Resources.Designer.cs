@@ -73,6 +73,16 @@ namespace presentationLayer.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap agregar_usuario {
+            get {
+                object obj = ResourceManager.GetObject("agregar-usuario", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Buscar {
             get {
                 object obj = ResourceManager.GetObject("Buscar", resourceCulture);
@@ -136,6 +146,16 @@ namespace presentationLayer.Properties {
         internal static System.Drawing.Bitmap mas1 {
             get {
                 object obj = ResourceManager.GetObject("mas1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap quitar_usuario {
+            get {
+                object obj = ResourceManager.GetObject("quitar-usuario", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

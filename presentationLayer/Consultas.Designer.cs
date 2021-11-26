@@ -33,7 +33,7 @@ namespace presentationLayer
             this.filtradoComboBox = new System.Windows.Forms.ComboBox();
             this.consultaLabel = new System.Windows.Forms.Label();
             this.filtroLabel = new System.Windows.Forms.Label();
-            this.DataGridView = new System.Windows.Forms.DataGridView();
+            this.altaDataGridView = new System.Windows.Forms.DataGridView();
             this.navBarPanel = new System.Windows.Forms.Panel();
             this.docentesButton = new System.Windows.Forms.Button();
             this.alumnosButton = new System.Windows.Forms.Button();
@@ -50,7 +50,7 @@ namespace presentationLayer
             this.modificarButton = new System.Windows.Forms.Button();
             this.imprimirButton = new System.Windows.Forms.Button();
             this.agregarButton = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.DataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.altaDataGridView)).BeginInit();
             this.navBarPanel.SuspendLayout();
             this.busquedaGroupBox.SuspendLayout();
             this.SuspendLayout();
@@ -59,11 +59,11 @@ namespace presentationLayer
             // 
             this.filtradoComboBox.FormattingEnabled = true;
             this.filtradoComboBox.Items.AddRange(new object[] {
-            "General",
-            "Nombre",
-            "Taller"});
+            "GENERAL",
+            "NOMBRE",
+            "TALLER"});
             this.filtradoComboBox.Location = new System.Drawing.Point(121, 301);
-            this.filtradoComboBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.filtradoComboBox.Margin = new System.Windows.Forms.Padding(2);
             this.filtradoComboBox.Name = "filtradoComboBox";
             this.filtradoComboBox.Size = new System.Drawing.Size(92, 21);
             this.filtradoComboBox.TabIndex = 18;
@@ -89,16 +89,16 @@ namespace presentationLayer
             this.filtroLabel.TabIndex = 13;
             this.filtroLabel.Text = "ORDENAR POR:";
             // 
-            // DataGridView
+            // altaDataGridView
             // 
-            this.DataGridView.BackgroundColor = System.Drawing.Color.LightGray;
-            this.DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DataGridView.Location = new System.Drawing.Point(21, 60);
-            this.DataGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.DataGridView.Name = "DataGridView";
-            this.DataGridView.RowHeadersWidth = 51;
-            this.DataGridView.Size = new System.Drawing.Size(984, 232);
-            this.DataGridView.TabIndex = 10;
+            this.altaDataGridView.BackgroundColor = System.Drawing.Color.LightGray;
+            this.altaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.altaDataGridView.Location = new System.Drawing.Point(21, 60);
+            this.altaDataGridView.Margin = new System.Windows.Forms.Padding(2);
+            this.altaDataGridView.Name = "altaDataGridView";
+            this.altaDataGridView.RowHeadersWidth = 51;
+            this.altaDataGridView.Size = new System.Drawing.Size(984, 232);
+            this.altaDataGridView.TabIndex = 10;
             // 
             // navBarPanel
             // 
@@ -107,7 +107,7 @@ namespace presentationLayer
             this.navBarPanel.Controls.Add(this.alumnosButton);
             this.navBarPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.navBarPanel.Location = new System.Drawing.Point(0, 0);
-            this.navBarPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.navBarPanel.Margin = new System.Windows.Forms.Padding(2);
             this.navBarPanel.Name = "navBarPanel";
             this.navBarPanel.Size = new System.Drawing.Size(1033, 26);
             this.navBarPanel.TabIndex = 20;
@@ -118,7 +118,7 @@ namespace presentationLayer
             this.docentesButton.Dock = System.Windows.Forms.DockStyle.Right;
             this.docentesButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.docentesButton.Location = new System.Drawing.Point(887, 0);
-            this.docentesButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.docentesButton.Margin = new System.Windows.Forms.Padding(2);
             this.docentesButton.Name = "docentesButton";
             this.docentesButton.Size = new System.Drawing.Size(76, 26);
             this.docentesButton.TabIndex = 22;
@@ -131,7 +131,7 @@ namespace presentationLayer
             this.alumnosButton.Dock = System.Windows.Forms.DockStyle.Right;
             this.alumnosButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.alumnosButton.Location = new System.Drawing.Point(963, 0);
-            this.alumnosButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.alumnosButton.Margin = new System.Windows.Forms.Padding(2);
             this.alumnosButton.Name = "alumnosButton";
             this.alumnosButton.Size = new System.Drawing.Size(70, 26);
             this.alumnosButton.TabIndex = 21;
@@ -141,7 +141,7 @@ namespace presentationLayer
             // apellidoMaternoTextBox
             // 
             this.apellidoMaternoTextBox.Location = new System.Drawing.Point(691, 60);
-            this.apellidoMaternoTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.apellidoMaternoTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.apellidoMaternoTextBox.Multiline = true;
             this.apellidoMaternoTextBox.Name = "apellidoMaternoTextBox";
             this.apellidoMaternoTextBox.Size = new System.Drawing.Size(125, 21);
@@ -160,7 +160,7 @@ namespace presentationLayer
             // apellidoPaternoTextBox
             // 
             this.apellidoPaternoTextBox.Location = new System.Drawing.Point(425, 60);
-            this.apellidoPaternoTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.apellidoPaternoTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.apellidoPaternoTextBox.Multiline = true;
             this.apellidoPaternoTextBox.Name = "apellidoPaternoTextBox";
             this.apellidoPaternoTextBox.Size = new System.Drawing.Size(125, 21);
@@ -189,7 +189,7 @@ namespace presentationLayer
             // nombreTextBox
             // 
             this.nombreTextBox.Location = new System.Drawing.Point(112, 112);
-            this.nombreTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.nombreTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.nombreTextBox.Multiline = true;
             this.nombreTextBox.Name = "nombreTextBox";
             this.nombreTextBox.Size = new System.Drawing.Size(125, 21);
@@ -209,9 +209,9 @@ namespace presentationLayer
             this.busquedaGroupBox.Controls.Add(this.apellidoMaternoLabel);
             this.busquedaGroupBox.Font = new System.Drawing.Font("Leelawadee UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.busquedaGroupBox.Location = new System.Drawing.Point(28, 373);
-            this.busquedaGroupBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.busquedaGroupBox.Margin = new System.Windows.Forms.Padding(2);
             this.busquedaGroupBox.Name = "busquedaGroupBox";
-            this.busquedaGroupBox.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.busquedaGroupBox.Padding = new System.Windows.Forms.Padding(2);
             this.busquedaGroupBox.Size = new System.Drawing.Size(977, 205);
             this.busquedaGroupBox.TabIndex = 26;
             this.busquedaGroupBox.TabStop = false;
@@ -219,8 +219,8 @@ namespace presentationLayer
             // 
             // eliminarButton
             // 
-            this.eliminarButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("eliminarButton.BackgroundImage")));
-            this.eliminarButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.eliminarButton.BackgroundImage = global::presentationLayer.Properties.Resources.quitar_usuario;
+            this.eliminarButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.eliminarButton.Location = new System.Drawing.Point(658, 126);
             this.eliminarButton.Name = "eliminarButton";
             this.eliminarButton.Size = new System.Drawing.Size(137, 33);
@@ -230,18 +230,18 @@ namespace presentationLayer
             // buscarButton
             // 
             this.buscarButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buscarButton.BackgroundImage")));
-            this.buscarButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buscarButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buscarButton.Location = new System.Drawing.Point(584, 95);
             this.buscarButton.Margin = new System.Windows.Forms.Padding(2);
             this.buscarButton.Name = "buscarButton";
-            this.buscarButton.Size = new System.Drawing.Size(47, 28);
+            this.buscarButton.Size = new System.Drawing.Size(35, 28);
             this.buscarButton.TabIndex = 11;
             this.buscarButton.UseVisualStyleBackColor = true;
             // 
             // vaciarButton
             // 
             this.vaciarButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("vaciarButton.BackgroundImage")));
-            this.vaciarButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.vaciarButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.vaciarButton.Location = new System.Drawing.Point(658, 95);
             this.vaciarButton.Margin = new System.Windows.Forms.Padding(2);
             this.vaciarButton.Name = "vaciarButton";
@@ -252,18 +252,19 @@ namespace presentationLayer
             // modificarButton
             // 
             this.modificarButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("modificarButton.BackgroundImage")));
-            this.modificarButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.modificarButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.modificarButton.Location = new System.Drawing.Point(726, 94);
             this.modificarButton.Margin = new System.Windows.Forms.Padding(2);
             this.modificarButton.Name = "modificarButton";
             this.modificarButton.Size = new System.Drawing.Size(90, 27);
             this.modificarButton.TabIndex = 12;
             this.modificarButton.UseVisualStyleBackColor = true;
+            this.modificarButton.Click += new System.EventHandler(this.modificarButton_Click_1);
             // 
             // imprimirButton
             // 
             this.imprimirButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("imprimirButton.BackgroundImage")));
-            this.imprimirButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.imprimirButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.imprimirButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.imprimirButton.Location = new System.Drawing.Point(909, 37);
             this.imprimirButton.Margin = new System.Windows.Forms.Padding(2);
@@ -274,8 +275,8 @@ namespace presentationLayer
             // 
             // agregarButton
             // 
-            this.agregarButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("agregarButton.BackgroundImage")));
-            this.agregarButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.agregarButton.BackgroundImage = global::presentationLayer.Properties.Resources.agregar_usuario;
+            this.agregarButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.agregarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.agregarButton.Location = new System.Drawing.Point(848, 37);
             this.agregarButton.Margin = new System.Windows.Forms.Padding(2);
@@ -298,13 +299,13 @@ namespace presentationLayer
             this.Controls.Add(this.filtradoComboBox);
             this.Controls.Add(this.consultaLabel);
             this.Controls.Add(this.filtroLabel);
-            this.Controls.Add(this.DataGridView);
+            this.Controls.Add(this.altaDataGridView);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Consultas";
-            this.Text = "Consultas";
+            this.Text = "CONSULTAS";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Consultas_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.DataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.altaDataGridView)).EndInit();
             this.navBarPanel.ResumeLayout(false);
             this.navBarPanel.PerformLayout();
             this.busquedaGroupBox.ResumeLayout(false);
@@ -321,7 +322,7 @@ namespace presentationLayer
         private System.Windows.Forms.Label filtroLabel;
         private System.Windows.Forms.Button modificarButton;
         private System.Windows.Forms.Button buscarButton;
-        private System.Windows.Forms.DataGridView DataGridView;
+        private System.Windows.Forms.DataGridView altaDataGridView;
         private System.Windows.Forms.Panel navBarPanel;
         private System.Windows.Forms.Button docentesButton;
         private System.Windows.Forms.Button alumnosButton;
