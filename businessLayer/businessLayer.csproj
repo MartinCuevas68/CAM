@@ -51,6 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Gabriel.cs" />
     <Compile Include="Hueso.cs" />
     <Compile Include="Emanuel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

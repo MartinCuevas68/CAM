@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\businessLayer",
+    "\\presentationLayer",
+    "\\presentationLayer\\Properties"
   ],
-  "SelectedNode": "\\CAM.sln",
+  "SelectedNode": "\\presentationLayer\\Consultas.resx",
   "PreviewInSolutionExplorer": false
 }

@@ -15,22 +15,45 @@ namespace presentationLayer
         public Consultas()
         {
             InitializeComponent();
-            Edder.botonBuscar(buscarButton1);
-            Edder.botonImprimir(imprimirButton);
+            Edder.botonBuscar(buscarButton);
             Edder.botonEliminar(eliminarButton);
-            Edder.botonRegresar(regresarButton);
-            Edder.consultaDataView(panelConsulta_dataGridView);
+            Edder.botonModificar(modificarButton);
+            Edder.consultaDataView(altaDataGridView);
             Edder.etiquetaConsulta(consultaLabel);
             Edder.filtro(filtroLabel);
-            Edder.buscar(buscarLabel);
-            Edder.filtroCombo(FiltradocomboBox1);
-            Edder.buscartxt(buscartextBox);
-
+            Edder.filtroCombo(filtradoComboBox);
+            Edder.Nombretxt(nombreTextBox);
+            Edder.panelNavBar(navBarPanel);
+            Edder.agregarBttn(agregarButton);
+            Edder.alumnosbttn(alumnosButton);
+            Edder.docentesbttn(docentesButton);
+            Edder.Nombrelbl(nombreLabel);
+            Edder.ApellidopaternoTxt(apellidoPaternoTextBox);
+            Edder.ApellidomaternoTxt(apellidoMaternoTextBox);
+            Edder.Apellidopaterno(apellidoPaternoLabel);
+            Edder.Apellidomaterno(apellidoMaternoLabel);
+            Edder.Vaciarbttn(vaciarButton);
+            Edder.groupboxinferior(busquedaGroupBox);
+            Edder.botonImprimir(imprimirButton);
         }
+
 
         private void Consultas_Load(object sender, EventArgs e)
         {
+         //   altaDataGridView.DataSource = businessLayer.Gabriel.alumnosGet();
+        }
 
+        private void agregarButton_Click_1(object sender, EventArgs e)
+        {
+            altaAlumno altas = new altaAlumno();
+            altas.Show();
+        }
+
+        private void modificarButton_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            modificacionesAlumno formModificacion = new modificacionesAlumno();
+            formModificacion.Show();
         }
     }
 }
