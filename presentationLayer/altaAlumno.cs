@@ -158,7 +158,7 @@ namespace presentationLayer
         {
             
             MessageBox.Show("REGISTRO EXITOSO!");
-            businessLayer.Hueso.SetAlumno(nombreAlumnoTextBox.Text);
+            businessLayer.Hueso.SetAlumno(nombreAlumnoTextBox.Text, cicloEscolarTextBox.Text);
         }
 
         private void alumnosButton_Click(object sender, EventArgs e)

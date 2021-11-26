@@ -18,6 +18,21 @@ namespace businessLayer
                                  select new _1dataLayer.alumnoDTO
                                  {
                                      id_alumno = a.id_alumno,
+                                     ciclo_escolar = a.ciclo_escolar,
+                                     nombre = a.nombre,
+                                     //apellido_paterno = a.apellido_paterno,
+                                     fecha_nacimiento = a.fecha_nacimiento,
+                                     //años_alumno = a.años_alumno,
+                                     //CURP_alumno = a.CURP_alumno,
+                                     estado_nacimiento_alumno = a.estado_nacimiento_alumno,
+                                     ciudad_nacimiento_alumno = a.ciudad_nacimiento_alumno,
+                                     colonia_alumno = a.colonia_alumno,
+                                     calle_alumno = a.calle_alumno,
+                                     numero_alumno = a.numero_alumno,
+                                     telefono_personal_alumno = a.telefono_personal_alumno,
+                                     escuela_procedencia_alumno = a.escuela_procedencia_alumno,
+                                     documentacion_alumno = a.documentacion_alumno,
+                                     atendido_por = a.atendido_por,
 
                                  }).ToList();
                     return query;
