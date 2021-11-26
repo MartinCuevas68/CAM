@@ -9,14 +9,22 @@ namespace presentationLayer
         public static void informacionMedicaGroupBox(GroupBox groupBox)
         {
             groupBox.Location = new Point(130, 100);
-            groupBox.Size = new Size(1000, 550);
+            groupBox.Size = new Size(1150, 550);
             groupBox.Font = new Font("Leelawadee UI", 12);
         }
+
+        public static void eliminarBotones(Button eliminarEnfermedades, Button eliminarDiscapacidad, Button eliminarAlergias)
+        {
+            eliminarDiscapacidad.Location = new Point(282, 315);
+            eliminarEnfermedades.Location = new Point(622, 315);
+            eliminarAlergias.Location = new Point(941, 315);
+        }
+
         public static void altasInformacionMedicaAlumno(Label servicioMedico, Label discapacidad, Label enfermedades, Label alergias,
             Label telefonoContacto, Label grupoSanguineo, Label documentacion, Label mostrarDiscapacidad, Label mostrarEnfermedades,
             Label mostrarAlergias, TextBox servicioMedicoTB, TextBox discapacidadTB, TextBox enfermedadesTB, TextBox alergiasTB,
             TextBox telefonoContactoTB, TextBox grupoSanguineoTB, ListBox documentacionLB, RichTextBox mostrarDiscapacidadTB,
-            RichTextBox mostrarEnfermedadTB, RichTextBox mostrarAlergiasTB)
+            RichTextBox mostrarEnfermedadTB, RichTextBox mostrarAlergiasTB, Button agregarAlergias, Button agregarEnfermedad, Button agregarDiscapacidad)
         {
             int aux = 40;
             servicioMedico.Location = new Point(20, aux);
@@ -37,14 +45,17 @@ namespace presentationLayer
             aux = aux + 80;
             discapacidad.Location = new Point(20, aux);
             discapacidadTB.Location = new Point(240, aux);
+            agregarDiscapacidad.Location = new Point(360, aux - 4);
 
             aux = aux + 40;
             enfermedades.Location = new Point(20, aux);
             enfermedadesTB.Location = new Point(240, aux - 4);
+            agregarEnfermedad.Location = new Point(360, aux - 4);
 
             aux = aux + 40;
             alergias.Location = new Point(20, aux);
             alergiasTB.Location = new Point(240, aux - 4);
+            agregarAlergias.Location = new Point(360, aux - 4);
 
             aux = aux + 80;
             mostrarDiscapacidad.Location = new Point(20, aux);
@@ -54,8 +65,11 @@ namespace presentationLayer
             aux = aux + 40;
 
             mostrarDiscapacidadTB.Location = new Point(20, aux);
+            mostrarDiscapacidadTB.Enabled = false;
             mostrarEnfermedadTB.Location = new Point(360, aux);
+            mostrarEnfermedadTB.Enabled = false;
             mostrarAlergiasTB.Location = new Point(680, aux);
+            mostrarAlergiasTB.Enabled = false;
 
 
             servicioMedico.Size = new Size(100, 30);
@@ -81,24 +95,25 @@ namespace presentationLayer
             mostrarAlergiasTB.Size = new Size(300, 150);
         }
 
-        public static void altasBotonesParaNavegar(Button siguiente, Button regresar)
+        public static void altasBotonesParaNavegar(Button siguiente, Button regresar, Button guardar)
         {
-            siguiente.Location = new Point(1200, 600);
-            regresar.Location = new Point(1200, 640);
-
+            siguiente.Location = new Point(1175, 655);
+            guardar.Location = new Point(1145, 655);
+            regresar.Location = new Point(1040, 655);
 
             siguiente.Size = new Size(100, 30);
             regresar.Size = new Size(100, 30);
+            guardar.Size = new Size(135, 30);
 
             siguiente.Font = new Font("Leelawadee UI", 12);
             regresar.Font = new Font("Leelawadee UI", 12);
+            guardar.Font = new Font("Leelawadee UI", 12);
         }
+
         public static void altasBotonesPanel(Button alumnos, Button docentes)
         {
             docentes.Font = new Font("Leelawadee UI", 12);
             alumnos.Font = new Font("Leelawadee UI", 12);
         }
-
-            
     }
 }

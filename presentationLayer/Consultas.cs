@@ -18,7 +18,7 @@ namespace presentationLayer
             Edder.botonBuscar(buscarButton);
             Edder.botonEliminar(eliminarButton);
             Edder.botonModificar(modificarButton);
-            Edder.consultaDataView(DataGridView);
+            Edder.consultaDataView(altaDataGridView);
             Edder.etiquetaConsulta(consultaLabel);
             Edder.filtro(filtroLabel);
             Edder.filtroCombo(filtradoComboBox);
@@ -37,15 +37,23 @@ namespace presentationLayer
             Edder.botonImprimir(imprimirButton);
         }
 
+
         private void Consultas_Load(object sender, EventArgs e)
         {
-           // DataGridView.DataSource = businessLayer.Gabriel.alumnosGet();
-           
+         //   altaDataGridView.DataSource = businessLayer.Gabriel.alumnosGet();
         }
 
-        private void eliminarButton_Click(object sender, EventArgs e)
+        private void agregarButton_Click_1(object sender, EventArgs e)
         {
-            MessageBox.Show("Hola mundo");
+            altaAlumno altas = new altaAlumno();
+            altas.Show();
+        }
+
+        private void modificarButton_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            modificacionesAlumno formModificacion = new modificacionesAlumno();
+            formModificacion.Show();
         }
     }
 }

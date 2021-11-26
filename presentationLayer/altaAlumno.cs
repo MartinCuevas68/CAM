@@ -16,9 +16,8 @@ namespace presentationLayer
 
         public altaAlumno()
         {
-            int distanciaLabel = 40;
-            int distanciaTextBox = 36;
-            
+            int distanciaLabel = 70;
+            int distanciaTextBox = 66;
 
             InitializeComponent();
 
@@ -27,16 +26,10 @@ namespace presentationLayer
             Claudia.altasGroupBox2(informacionEscolarGroupBox);
             Claudia.altasInformacionTutorGroupBox(informacionTutorGroupBox);
 
-
             informacionMedicaAlumnoGroupBox.Visible = false;
             regresarButton.Visible = false;
-            atendidoPorLabel.Visible = false;
-            atendidoPorComboBox.Visible = false;
             informacionTutorGroupBox.Visible = false;
-
-
-            distanciaLabel = Claudia.altasLabel(fechaElaboracionLabel, distanciaLabel);
-            distanciaTextBox = Claudia.altasDateTimePicker(fechaElaboracionDateTimePicker, distanciaTextBox);
+            realizarAltaButton.Visible = false;
 
             distanciaLabel = Claudia.altasNombre(nombreAlumnoLabel, apellidoPaternoAlumnoLabel, apellidoMaternoAlumnoLabel, nombreAlumnoTextBox, apellidoPaternoAlumnoTextBox, apellidoMaternoAlumnoTextBox, distanciaLabel);
             distanciaTextBox = distanciaTextBox + 40;
@@ -61,12 +54,16 @@ namespace presentationLayer
             distanciaLabel = Claudia.altasLabel(canalizadoPorLabel, distanciaLabel);
             distanciaTextBox = Claudia.altasTextBox(canalizadoPorTextBox, distanciaTextBox);
 
-            Evelyn.altasInformacionMedicaAlumno(servicioMedicoAlumnoLabel, discapacidadLabel, enfermedaresAlumnoLabel, alergiasAlumnoLabel, telefonoContactoMedicoAlumnoLabel, grupoSanguineoAlumnoLabel, documentacionAlumnoLabel, mostrarDiscapacidadLabel, mostrarEnfermedadesLabel, mostrarAlergiasLabel, servicioMedicoTextBox, discapacidadTextBox, enfermedadesAlumnoTextBox, alergiasAlumnoTextBox, telefonoContactoMedicoAlumnoTextBox, grupoSanguineoTextBox, documentacionListBox, mostrarDiscapacidadRichTextBox, mostrarEnfermedadesRichTextBox, mostrarAlergiasRichTextBox);
+            Evelyn.altasInformacionMedicaAlumno(servicioMedicoAlumnoLabel, discapacidadLabel, enfermedaresAlumnoLabel, alergiasAlumnoLabel,
+                    telefonoContactoMedicoAlumnoLabel, grupoSanguineoAlumnoLabel, documentacionAlumnoLabel, mostrarDiscapacidadLabel,
+                    mostrarEnfermedadesLabel, mostrarAlergiasLabel, servicioMedicoTextBox, discapacidadTextBox, enfermedadesAlumnoTextBox,
+                    alergiasAlumnoTextBox, telefonoContactoMedicoAlumnoTextBox, grupoSanguineoTextBox, documentacionListBox, mostrarDiscapacidadRichTextBox,
+                    mostrarEnfermedadesRichTextBox, mostrarAlergiasRichTextBox, agregarAlergiasButton, agregarEnfermedadesButton, agregarDiscapacidadButton);
 
             Claudia.altasInformacionEscolar(cicloEscolarLabel, curpLabel, añosCumplidosLabel, cicloEscolarTextBox, curpTextBox, añosCumplidosTextBox, tipoIngresoGroupBox, nuevoIngresoRadioButton, reingresoRadioButton);
-
-
-            Evelyn.altasBotonesParaNavegar(siguienteButton, regresarButton);
+            
+            Evelyn.altasBotonesParaNavegar(siguienteButton, regresarButton, realizarAltaButton);
+            Evelyn.altasBotonesPanel(alumnosButton,docentesButton);
 
             int distanciaInfTutor = 60;
             Claudia.altasInformacionTutorGroupBox(informacionTutorGroupBox);
@@ -76,6 +73,9 @@ namespace presentationLayer
             distanciaInfTutor = Claudia.altasOcupacionTutor(ocupacionTutorLabel, ocupacionTutorTextBox, distanciaInfTutor);
             distanciaInfTutor = Claudia.altasTelefonosTutor(telefonosTutorLabel, telefonoCasaTutorLabel, telefonoCasaTutorTextBox, telefonoCelularTutorLabel, telefonoCelularTutorTextBox, telefonoTrabajoTutorLabel, telefonoTrabajoTutorTextBox, distanciaInfTutor);
 
+
+            Evelyn.eliminarBotones(eliminarEnfermedadButton, eliminarDiscapacidadesButton, eliminarAlergiasButton);
+            Claudia.limpiarFormatosBotones(limpiarFormato1Button,limpiarFormato2Button,limpiarFormato3Button);
         }
 
 
@@ -88,6 +88,8 @@ namespace presentationLayer
                 informacionEscolarGroupBox.Visible = true;
                 informacionTutorGroupBox.Visible = false;
                 regresarButton.Visible = true;
+                siguienteButton.Visible = true;
+                realizarAltaButton.Visible = false;
                 progreso = 1;
             }
             if (progreso == 1)
@@ -97,6 +99,8 @@ namespace presentationLayer
                 informacionEscolarGroupBox.Visible = false;
                 informacionTutorGroupBox.Visible = true;
                 regresarButton.Visible = true;
+                siguienteButton.Visible = true;
+                realizarAltaButton.Visible = false;
                 progreso = 2;
             }
             if (progreso == 2)
@@ -106,6 +110,8 @@ namespace presentationLayer
                 informacionEscolarGroupBox.Visible = false;
                 informacionTutorGroupBox.Visible = true;
                 regresarButton.Visible = true;
+                siguienteButton.Visible = true;
+                realizarAltaButton.Visible = false;
                 progreso = 3;
             }else{
                 informacionMedicaAlumnoGroupBox.Visible = true;
@@ -113,6 +119,8 @@ namespace presentationLayer
                 informacionEscolarGroupBox.Visible = false;
                 informacionTutorGroupBox.Visible = false;
                 regresarButton.Visible = true;
+                siguienteButton.Visible = false;
+                realizarAltaButton.Visible = true;
                 progreso = 4;
             }
 
@@ -127,6 +135,8 @@ namespace presentationLayer
                 informacionEscolarGroupBox.Visible = true;
                 informacionTutorGroupBox.Visible = false;
                 regresarButton.Visible = false;
+                realizarAltaButton.Visible = false;
+                siguienteButton.Visible = true;
                 progreso = 2;
             }
 
@@ -136,8 +146,30 @@ namespace presentationLayer
                 informacionGeneralAlumnoGroupBox.Visible = false;
                 informacionEscolarGroupBox.Visible = false;
                 informacionTutorGroupBox.Visible = true;
+                realizarAltaButton.Visible = false;
+                siguienteButton.Visible = true;
                 progreso = 3;
             }
+        }
+
+        private void guardarButton_Click(object sender, EventArgs e)
+        {
+            
+            MessageBox.Show("REGISTRO EXITOSO!");
+         //   businessLayer.Hueso.SetAlumno(nombreAlumnoTextBox.Text, cicloEscolarTextBox.Text);
+        }
+
+        private void alumnosButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Consultas formConsulta = new Consultas();
+            formConsulta.Show();
+        }
+
+        private void agregarEnfermedadesButton_Click(object sender, EventArgs e)
+        {
+            string enfermedad = "";
+            enfermedad = enfermedadesAlumnoTextBox.Text;
         }
     }
 }
