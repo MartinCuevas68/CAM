@@ -27,7 +27,7 @@ namespace businessLayer
                     query.Add(new _1dataLayer.alumno
                     {
                         id_alumno = id_alumno,
-                        fecha_registro = x,
+                        fecha_registro = DateTime.Now,
                         ciclo_escolar = ciclo_escolar,
                         nombre = nombre,
                         apellido_paterno = apellido_paterno,
