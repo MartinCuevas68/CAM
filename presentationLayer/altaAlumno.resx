@@ -513,27 +513,6 @@
   <data name="&gt;&gt;reingresoRadioButton.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="nuevoIngresoRadioButton.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="nuevoIngresoRadioButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="nuevoIngresoRadioButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 28</value>
-  </data>
-  <data name="nuevoIngresoRadioButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="nuevoIngresoRadioButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>145, 21</value>
-  </data>
-  <data name="nuevoIngresoRadioButton.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="nuevoIngresoRadioButton.Text" xml:space="preserve">
-    <value>NUEVO INGRESO</value>
-  </data>
   <data name="&gt;&gt;nuevoIngresoRadioButton.Name" xml:space="preserve">
     <value>nuevoIngresoRadioButton</value>
   </data>
@@ -575,6 +554,39 @@
   </data>
   <data name="&gt;&gt;tipoIngresoGroupBox.ZOrder" xml:space="preserve">
     <value>6</value>
+  </data>
+  <data name="nuevoIngresoRadioButton.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="nuevoIngresoRadioButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="nuevoIngresoRadioButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 28</value>
+  </data>
+  <data name="nuevoIngresoRadioButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="nuevoIngresoRadioButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 21</value>
+  </data>
+  <data name="nuevoIngresoRadioButton.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="nuevoIngresoRadioButton.Text" xml:space="preserve">
+    <value>NUEVO INGRESO</value>
+  </data>
+  <data name="&gt;&gt;nuevoIngresoRadioButton.Name" xml:space="preserve">
+    <value>nuevoIngresoRadioButton</value>
+  </data>
+  <data name="&gt;&gt;nuevoIngresoRadioButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nuevoIngresoRadioButton.Parent" xml:space="preserve">
+    <value>tipoIngresoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;nuevoIngresoRadioButton.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="nombreAlumnoTextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>205, 57</value>
@@ -1797,6 +1809,60 @@
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
+  <data name="&gt;&gt;noOtroAlumnoMadreRadioButton.Name" xml:space="preserve">
+    <value>noOtroAlumnoMadreRadioButton</value>
+  </data>
+  <data name="&gt;&gt;noOtroAlumnoMadreRadioButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;noOtroAlumnoMadreRadioButton.Parent" xml:space="preserve">
+    <value>otroAlumnoTutorGroupBox</value>
+  </data>
+  <data name="&gt;&gt;noOtroAlumnoMadreRadioButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;siOtroAlumnoMadreRadioButton.Name" xml:space="preserve">
+    <value>siOtroAlumnoMadreRadioButton</value>
+  </data>
+  <data name="&gt;&gt;siOtroAlumnoMadreRadioButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;siOtroAlumnoMadreRadioButton.Parent" xml:space="preserve">
+    <value>otroAlumnoTutorGroupBox</value>
+  </data>
+  <data name="&gt;&gt;siOtroAlumnoMadreRadioButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="otroAlumnoTutorGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>28, 43</value>
+  </data>
+  <data name="otroAlumnoTutorGroupBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="otroAlumnoTutorGroupBox.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="otroAlumnoTutorGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>385, 50</value>
+  </data>
+  <data name="otroAlumnoTutorGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>109</value>
+  </data>
+  <data name="otroAlumnoTutorGroupBox.Text" xml:space="preserve">
+    <value>¿CUENTA CON ALGÚN OTRO ALUMNO INSCRITO?</value>
+  </data>
+  <data name="&gt;&gt;otroAlumnoTutorGroupBox.Name" xml:space="preserve">
+    <value>otroAlumnoTutorGroupBox</value>
+  </data>
+  <data name="&gt;&gt;otroAlumnoTutorGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;otroAlumnoTutorGroupBox.Parent" xml:space="preserve">
+    <value>informacionTutorGroupBox</value>
+  </data>
+  <data name="&gt;&gt;otroAlumnoTutorGroupBox.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
   <data name="noOtroAlumnoMadreRadioButton.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -1862,36 +1928,6 @@
   </data>
   <data name="&gt;&gt;siOtroAlumnoMadreRadioButton.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="otroAlumnoTutorGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>28, 43</value>
-  </data>
-  <data name="otroAlumnoTutorGroupBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="otroAlumnoTutorGroupBox.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="otroAlumnoTutorGroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>385, 50</value>
-  </data>
-  <data name="otroAlumnoTutorGroupBox.TabIndex" type="System.Int32, mscorlib">
-    <value>109</value>
-  </data>
-  <data name="otroAlumnoTutorGroupBox.Text" xml:space="preserve">
-    <value>¿CUENTA CON ALGÚN OTRO ALUMNO INSCRITO?</value>
-  </data>
-  <data name="&gt;&gt;otroAlumnoTutorGroupBox.Name" xml:space="preserve">
-    <value>otroAlumnoTutorGroupBox</value>
-  </data>
-  <data name="&gt;&gt;otroAlumnoTutorGroupBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;otroAlumnoTutorGroupBox.Parent" xml:space="preserve">
-    <value>informacionTutorGroupBox</value>
-  </data>
-  <data name="&gt;&gt;otroAlumnoTutorGroupBox.ZOrder" xml:space="preserve">
-    <value>10</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2262,24 +2298,6 @@
   <data name="&gt;&gt;documentacionListBox.ZOrder" xml:space="preserve">
     <value>13</value>
   </data>
-  <data name="limpiarFormato1Button.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="limpiarFormato1Button.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="limpiarFormato1Button.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="limpiarFormato1Button.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1041, 13</value>
-  </data>
-  <data name="limpiarFormato1Button.Size" type="System.Drawing.Size, System.Drawing">
-    <value>36, 23</value>
-  </data>
-  <data name="limpiarFormato1Button.TabIndex" type="System.Int32, mscorlib">
-    <value>139</value>
-  </data>
   <data name="&gt;&gt;limpiarFormato1Button.Name" xml:space="preserve">
     <value>limpiarFormato1Button</value>
   </data>
@@ -2349,18 +2367,6 @@
   <data name="&gt;&gt;informacionEscolarGroupBox.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="limpiarFormato3Button.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="limpiarFormato3Button.Location" type="System.Drawing.Point, System.Drawing">
-    <value>977, 20</value>
-  </data>
-  <data name="limpiarFormato3Button.Size" type="System.Drawing.Size, System.Drawing">
-    <value>36, 23</value>
-  </data>
-  <data name="limpiarFormato3Button.TabIndex" type="System.Int32, mscorlib">
-    <value>141</value>
-  </data>
   <data name="&gt;&gt;limpiarFormato3Button.Name" xml:space="preserve">
     <value>limpiarFormato3Button</value>
   </data>
@@ -2372,21 +2378,6 @@
   </data>
   <data name="&gt;&gt;limpiarFormato3Button.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="eliminarAlergiasButton.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="eliminarAlergiasButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="eliminarAlergiasButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>580, 149</value>
-  </data>
-  <data name="eliminarAlergiasButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>36, 36</value>
-  </data>
-  <data name="eliminarAlergiasButton.TabIndex" type="System.Int32, mscorlib">
-    <value>139</value>
   </data>
   <data name="&gt;&gt;eliminarAlergiasButton.Name" xml:space="preserve">
     <value>eliminarAlergiasButton</value>
@@ -2400,8 +2391,173 @@
   <data name="&gt;&gt;eliminarAlergiasButton.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="&gt;&gt;eliminarDiscapacidadesButton.Name" xml:space="preserve">
+    <value>eliminarDiscapacidadesButton</value>
+  </data>
+  <data name="&gt;&gt;eliminarDiscapacidadesButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;eliminarDiscapacidadesButton.Parent" xml:space="preserve">
+    <value>informacionMedicaAlumnoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;eliminarDiscapacidadesButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;eliminarEnfermedadButton.Name" xml:space="preserve">
+    <value>eliminarEnfermedadButton</value>
+  </data>
+  <data name="&gt;&gt;eliminarEnfermedadButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;eliminarEnfermedadButton.Parent" xml:space="preserve">
+    <value>informacionMedicaAlumnoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;eliminarEnfermedadButton.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;agregarAlergiasButton.Name" xml:space="preserve">
+    <value>agregarAlergiasButton</value>
+  </data>
+  <data name="&gt;&gt;agregarAlergiasButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;agregarAlergiasButton.Parent" xml:space="preserve">
+    <value>informacionMedicaAlumnoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;agregarAlergiasButton.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;agregarDiscapacidadButton.Name" xml:space="preserve">
+    <value>agregarDiscapacidadButton</value>
+  </data>
+  <data name="&gt;&gt;agregarDiscapacidadButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;agregarDiscapacidadButton.Parent" xml:space="preserve">
+    <value>informacionMedicaAlumnoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;agregarDiscapacidadButton.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;agregarEnfermedadesButton.Name" xml:space="preserve">
+    <value>agregarEnfermedadesButton</value>
+  </data>
+  <data name="&gt;&gt;agregarEnfermedadesButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;agregarEnfermedadesButton.Parent" xml:space="preserve">
+    <value>informacionMedicaAlumnoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;agregarEnfermedadesButton.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;mostrarAlergiasLabel.Name" xml:space="preserve">
+    <value>mostrarAlergiasLabel</value>
+  </data>
+  <data name="&gt;&gt;mostrarAlergiasLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mostrarAlergiasLabel.Parent" xml:space="preserve">
+    <value>informacionMedicaAlumnoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;mostrarAlergiasLabel.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;mostrarEnfermedadesLabel.Name" xml:space="preserve">
+    <value>mostrarEnfermedadesLabel</value>
+  </data>
+  <data name="&gt;&gt;mostrarEnfermedadesLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mostrarEnfermedadesLabel.Parent" xml:space="preserve">
+    <value>informacionMedicaAlumnoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;mostrarEnfermedadesLabel.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;mostrarDiscapacidadLabel.Name" xml:space="preserve">
+    <value>mostrarDiscapacidadLabel</value>
+  </data>
+  <data name="&gt;&gt;mostrarDiscapacidadLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mostrarDiscapacidadLabel.Parent" xml:space="preserve">
+    <value>informacionMedicaAlumnoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;mostrarDiscapacidadLabel.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;mostrarAlergiasRichTextBox.Name" xml:space="preserve">
+    <value>mostrarAlergiasRichTextBox</value>
+  </data>
+  <data name="&gt;&gt;mostrarAlergiasRichTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mostrarAlergiasRichTextBox.Parent" xml:space="preserve">
+    <value>informacionMedicaAlumnoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;mostrarAlergiasRichTextBox.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;mostrarEnfermedadesRichTextBox.Name" xml:space="preserve">
+    <value>mostrarEnfermedadesRichTextBox</value>
+  </data>
+  <data name="&gt;&gt;mostrarEnfermedadesRichTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mostrarEnfermedadesRichTextBox.Parent" xml:space="preserve">
+    <value>informacionMedicaAlumnoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;mostrarEnfermedadesRichTextBox.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;mostrarDiscapacidadRichTextBox.Name" xml:space="preserve">
+    <value>mostrarDiscapacidadRichTextBox</value>
+  </data>
+  <data name="&gt;&gt;mostrarDiscapacidadRichTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mostrarDiscapacidadRichTextBox.Parent" xml:space="preserve">
+    <value>informacionMedicaAlumnoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;mostrarDiscapacidadRichTextBox.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="informacionMedicaAlumnoGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>69, 470</value>
+  </data>
+  <data name="informacionMedicaAlumnoGroupBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="informacionMedicaAlumnoGroupBox.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="informacionMedicaAlumnoGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1023, 239</value>
+  </data>
+  <data name="informacionMedicaAlumnoGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>133</value>
+  </data>
+  <data name="informacionMedicaAlumnoGroupBox.Text" xml:space="preserve">
+    <value>INFORMACIÓN MEDICA ALUMNO</value>
+  </data>
+  <data name="&gt;&gt;informacionMedicaAlumnoGroupBox.Name" xml:space="preserve">
+    <value>informacionMedicaAlumnoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;informacionMedicaAlumnoGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;informacionMedicaAlumnoGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;informacionMedicaAlumnoGroupBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
   <data name="eliminarDiscapacidadesButton.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="eliminarDiscapacidadesButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
   </data>
   <data name="eliminarDiscapacidadesButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2430,6 +2586,9 @@
   <data name="eliminarEnfermedadButton.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="eliminarEnfermedadButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
   <data name="eliminarEnfermedadButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -2453,96 +2612,6 @@
   </data>
   <data name="&gt;&gt;eliminarEnfermedadButton.ZOrder" xml:space="preserve">
     <value>3</value>
-  </data>
-  <data name="agregarAlergiasButton.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="agregarAlergiasButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="agregarAlergiasButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>371, 95</value>
-  </data>
-  <data name="agregarAlergiasButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="agregarAlergiasButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 32</value>
-  </data>
-  <data name="agregarAlergiasButton.TabIndex" type="System.Int32, mscorlib">
-    <value>136</value>
-  </data>
-  <data name="&gt;&gt;agregarAlergiasButton.Name" xml:space="preserve">
-    <value>agregarAlergiasButton</value>
-  </data>
-  <data name="&gt;&gt;agregarAlergiasButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;agregarAlergiasButton.Parent" xml:space="preserve">
-    <value>informacionMedicaAlumnoGroupBox</value>
-  </data>
-  <data name="&gt;&gt;agregarAlergiasButton.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="agregarDiscapacidadButton.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="agregarDiscapacidadButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="agregarDiscapacidadButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>371, 70</value>
-  </data>
-  <data name="agregarDiscapacidadButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="agregarDiscapacidadButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 32</value>
-  </data>
-  <data name="agregarDiscapacidadButton.TabIndex" type="System.Int32, mscorlib">
-    <value>135</value>
-  </data>
-  <data name="&gt;&gt;agregarDiscapacidadButton.Name" xml:space="preserve">
-    <value>agregarDiscapacidadButton</value>
-  </data>
-  <data name="&gt;&gt;agregarDiscapacidadButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;agregarDiscapacidadButton.Parent" xml:space="preserve">
-    <value>informacionMedicaAlumnoGroupBox</value>
-  </data>
-  <data name="&gt;&gt;agregarDiscapacidadButton.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="agregarEnfermedadesButton.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="agregarEnfermedadesButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="agregarEnfermedadesButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>371, 48</value>
-  </data>
-  <data name="agregarEnfermedadesButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="agregarEnfermedadesButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 32</value>
-  </data>
-  <data name="agregarEnfermedadesButton.TabIndex" type="System.Int32, mscorlib">
-    <value>134</value>
-  </data>
-  <data name="&gt;&gt;agregarEnfermedadesButton.Name" xml:space="preserve">
-    <value>agregarEnfermedadesButton</value>
-  </data>
-  <data name="&gt;&gt;agregarEnfermedadesButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;agregarEnfermedadesButton.Parent" xml:space="preserve">
-    <value>informacionMedicaAlumnoGroupBox</value>
-  </data>
-  <data name="&gt;&gt;agregarEnfermedadesButton.ZOrder" xml:space="preserve">
-    <value>6</value>
   </data>
   <data name="mostrarAlergiasLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2715,36 +2784,6 @@
   <data name="&gt;&gt;mostrarDiscapacidadRichTextBox.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
-  <data name="informacionMedicaAlumnoGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>69, 470</value>
-  </data>
-  <data name="informacionMedicaAlumnoGroupBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="informacionMedicaAlumnoGroupBox.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="informacionMedicaAlumnoGroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1023, 239</value>
-  </data>
-  <data name="informacionMedicaAlumnoGroupBox.TabIndex" type="System.Int32, mscorlib">
-    <value>133</value>
-  </data>
-  <data name="informacionMedicaAlumnoGroupBox.Text" xml:space="preserve">
-    <value>INFORMACIÓN MEDICA ALUMNO</value>
-  </data>
-  <data name="&gt;&gt;informacionMedicaAlumnoGroupBox.Name" xml:space="preserve">
-    <value>informacionMedicaAlumnoGroupBox</value>
-  </data>
-  <data name="&gt;&gt;informacionMedicaAlumnoGroupBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;informacionMedicaAlumnoGroupBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;informacionMedicaAlumnoGroupBox.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
   <data name="regresarButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -2774,6 +2813,72 @@
   </data>
   <data name="&gt;&gt;regresarButton.ZOrder" xml:space="preserve">
     <value>4</value>
+  </data>
+  <data name="&gt;&gt;seleccionarNombreLabel.Name" xml:space="preserve">
+    <value>seleccionarNombreLabel</value>
+  </data>
+  <data name="&gt;&gt;seleccionarNombreLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;seleccionarNombreLabel.Parent" xml:space="preserve">
+    <value>informacionTutorGroupBox</value>
+  </data>
+  <data name="&gt;&gt;seleccionarNombreLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;seleccionarNombreComboBox.Name" xml:space="preserve">
+    <value>seleccionarNombreComboBox</value>
+  </data>
+  <data name="&gt;&gt;seleccionarNombreComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;seleccionarNombreComboBox.Parent" xml:space="preserve">
+    <value>informacionTutorGroupBox</value>
+  </data>
+  <data name="&gt;&gt;seleccionarNombreComboBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;limpiarFormato2Button.Name" xml:space="preserve">
+    <value>limpiarFormato2Button</value>
+  </data>
+  <data name="&gt;&gt;limpiarFormato2Button.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;limpiarFormato2Button.Parent" xml:space="preserve">
+    <value>informacionTutorGroupBox</value>
+  </data>
+  <data name="&gt;&gt;limpiarFormato2Button.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="informacionTutorGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>60, 715</value>
+  </data>
+  <data name="informacionTutorGroupBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="informacionTutorGroupBox.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="informacionTutorGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1087, 236</value>
+  </data>
+  <data name="informacionTutorGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>135</value>
+  </data>
+  <data name="informacionTutorGroupBox.Text" xml:space="preserve">
+    <value>INFORMACIÓN TUTOR/RA</value>
+  </data>
+  <data name="&gt;&gt;informacionTutorGroupBox.Name" xml:space="preserve">
+    <value>informacionTutorGroupBox</value>
+  </data>
+  <data name="&gt;&gt;informacionTutorGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;informacionTutorGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;informacionTutorGroupBox.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="seleccionarNombreLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2828,60 +2933,6 @@
   </data>
   <data name="&gt;&gt;seleccionarNombreComboBox.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="limpiarFormato2Button.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="limpiarFormato2Button.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1045, 0</value>
-  </data>
-  <data name="limpiarFormato2Button.Size" type="System.Drawing.Size, System.Drawing">
-    <value>36, 23</value>
-  </data>
-  <data name="limpiarFormato2Button.TabIndex" type="System.Int32, mscorlib">
-    <value>140</value>
-  </data>
-  <data name="&gt;&gt;limpiarFormato2Button.Name" xml:space="preserve">
-    <value>limpiarFormato2Button</value>
-  </data>
-  <data name="&gt;&gt;limpiarFormato2Button.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;limpiarFormato2Button.Parent" xml:space="preserve">
-    <value>informacionTutorGroupBox</value>
-  </data>
-  <data name="&gt;&gt;limpiarFormato2Button.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="informacionTutorGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>60, 715</value>
-  </data>
-  <data name="informacionTutorGroupBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="informacionTutorGroupBox.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="informacionTutorGroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1087, 236</value>
-  </data>
-  <data name="informacionTutorGroupBox.TabIndex" type="System.Int32, mscorlib">
-    <value>135</value>
-  </data>
-  <data name="informacionTutorGroupBox.Text" xml:space="preserve">
-    <value>INFORMACIÓN TUTOR/RA</value>
-  </data>
-  <data name="&gt;&gt;informacionTutorGroupBox.Name" xml:space="preserve">
-    <value>informacionTutorGroupBox</value>
-  </data>
-  <data name="&gt;&gt;informacionTutorGroupBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;informacionTutorGroupBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;informacionTutorGroupBox.ZOrder" xml:space="preserve">
-    <value>3</value>
   </data>
   <data name="alumnosButton.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3054,6 +3105,210 @@
   <data name="&gt;&gt;realizarAltaButton.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="limpiarFormato2Button.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="limpiarFormato2Button.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="limpiarFormato2Button.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1045, 0</value>
+  </data>
+  <data name="limpiarFormato2Button.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 23</value>
+  </data>
+  <data name="limpiarFormato2Button.TabIndex" type="System.Int32, mscorlib">
+    <value>140</value>
+  </data>
+  <data name="&gt;&gt;limpiarFormato2Button.Name" xml:space="preserve">
+    <value>limpiarFormato2Button</value>
+  </data>
+  <data name="&gt;&gt;limpiarFormato2Button.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;limpiarFormato2Button.Parent" xml:space="preserve">
+    <value>informacionTutorGroupBox</value>
+  </data>
+  <data name="&gt;&gt;limpiarFormato2Button.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="limpiarFormato3Button.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="limpiarFormato3Button.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="limpiarFormato3Button.Location" type="System.Drawing.Point, System.Drawing">
+    <value>977, 20</value>
+  </data>
+  <data name="limpiarFormato3Button.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 23</value>
+  </data>
+  <data name="limpiarFormato3Button.TabIndex" type="System.Int32, mscorlib">
+    <value>141</value>
+  </data>
+  <data name="&gt;&gt;limpiarFormato3Button.Name" xml:space="preserve">
+    <value>limpiarFormato3Button</value>
+  </data>
+  <data name="&gt;&gt;limpiarFormato3Button.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;limpiarFormato3Button.Parent" xml:space="preserve">
+    <value>informacionMedicaAlumnoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;limpiarFormato3Button.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="eliminarAlergiasButton.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="eliminarAlergiasButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="eliminarAlergiasButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="eliminarAlergiasButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>580, 149</value>
+  </data>
+  <data name="eliminarAlergiasButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 36</value>
+  </data>
+  <data name="eliminarAlergiasButton.TabIndex" type="System.Int32, mscorlib">
+    <value>139</value>
+  </data>
+  <data name="&gt;&gt;eliminarAlergiasButton.Name" xml:space="preserve">
+    <value>eliminarAlergiasButton</value>
+  </data>
+  <data name="&gt;&gt;eliminarAlergiasButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;eliminarAlergiasButton.Parent" xml:space="preserve">
+    <value>informacionMedicaAlumnoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;eliminarAlergiasButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="agregarAlergiasButton.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="agregarAlergiasButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="agregarAlergiasButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>371, 95</value>
+  </data>
+  <data name="agregarAlergiasButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="agregarAlergiasButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 32</value>
+  </data>
+  <data name="agregarAlergiasButton.TabIndex" type="System.Int32, mscorlib">
+    <value>136</value>
+  </data>
+  <data name="&gt;&gt;agregarAlergiasButton.Name" xml:space="preserve">
+    <value>agregarAlergiasButton</value>
+  </data>
+  <data name="&gt;&gt;agregarAlergiasButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;agregarAlergiasButton.Parent" xml:space="preserve">
+    <value>informacionMedicaAlumnoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;agregarAlergiasButton.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="agregarDiscapacidadButton.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="agregarDiscapacidadButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="agregarDiscapacidadButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>371, 70</value>
+  </data>
+  <data name="agregarDiscapacidadButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="agregarDiscapacidadButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 32</value>
+  </data>
+  <data name="agregarDiscapacidadButton.TabIndex" type="System.Int32, mscorlib">
+    <value>135</value>
+  </data>
+  <data name="&gt;&gt;agregarDiscapacidadButton.Name" xml:space="preserve">
+    <value>agregarDiscapacidadButton</value>
+  </data>
+  <data name="&gt;&gt;agregarDiscapacidadButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;agregarDiscapacidadButton.Parent" xml:space="preserve">
+    <value>informacionMedicaAlumnoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;agregarDiscapacidadButton.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="agregarEnfermedadesButton.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="agregarEnfermedadesButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="agregarEnfermedadesButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>371, 48</value>
+  </data>
+  <data name="agregarEnfermedadesButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="agregarEnfermedadesButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 32</value>
+  </data>
+  <data name="agregarEnfermedadesButton.TabIndex" type="System.Int32, mscorlib">
+    <value>134</value>
+  </data>
+  <data name="&gt;&gt;agregarEnfermedadesButton.Name" xml:space="preserve">
+    <value>agregarEnfermedadesButton</value>
+  </data>
+  <data name="&gt;&gt;agregarEnfermedadesButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;agregarEnfermedadesButton.Parent" xml:space="preserve">
+    <value>informacionMedicaAlumnoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;agregarEnfermedadesButton.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="limpiarFormato1Button.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="limpiarFormato1Button.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="limpiarFormato1Button.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="limpiarFormato1Button.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1041, 13</value>
+  </data>
+  <data name="limpiarFormato1Button.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 23</value>
+  </data>
+  <data name="limpiarFormato1Button.TabIndex" type="System.Int32, mscorlib">
+    <value>139</value>
+  </data>
+  <data name="&gt;&gt;limpiarFormato1Button.Name" xml:space="preserve">
+    <value>limpiarFormato1Button</value>
+  </data>
+  <data name="&gt;&gt;limpiarFormato1Button.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;limpiarFormato1Button.Parent" xml:space="preserve">
+    <value>informacionGeneralAlumnoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;limpiarFormato1Button.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -3071,6 +3326,9 @@
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1494, 750</value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
