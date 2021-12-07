@@ -53,7 +53,6 @@
     <Compile Include="alergias.cs">
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>
-    <Compile Include="BDDTO.cs" />
     <Compile Include="alumno.cs">
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>
@@ -72,13 +71,20 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BDCAM.edmx</DependentUpon>
     </Compile>
+    <Compile Include="BDDTO.cs" />
     <Compile Include="discapacidades.cs">
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>
     <Compile Include="enfermedades.cs">
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>
+    <Compile Include="programa.cs">
+      <DependentUpon>BDCAM.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="recursos.cs">
+      <DependentUpon>BDCAM.tt</DependentUpon>
+    </Compile>
     <Compile Include="sysdiagrams.cs">
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>
@@ -89,6 +95,9 @@
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>
     <Compile Include="telefono_tutores.cs">
+      <DependentUpon>BDCAM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="turnos.cs">
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>
     <Compile Include="tutor.cs">

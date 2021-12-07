@@ -11,7 +11,10 @@ namespace businessLayer
     {
         //Altas
         
-        public static void SetAlumno(string nombre, string ciclo_escolar)
+        public static void SetAlumno(int id_alumno, string ciclo_escolar, string nombre, string apellido_paterno, string apellido_materno,
+            DateTime fecha_nacimiento, string edad_alumno, string CURP_alumno, string estado_nacimiento_alumno, string ciudad_nacimiento_alumno,
+            string colonia_alumno, string calle_alumno, string numero_alumno, string telefono_personal_alumno, string escuela_procedencia_alumno,
+            string documentacion_alumno, string atendido_por)
         {
             byte[] x = { (byte)204, 29, (byte)207, (byte)217 };
 
@@ -23,24 +26,23 @@ namespace businessLayer
                     var query = db.Set<_1dataLayer.alumno>();
                     query.Add(new _1dataLayer.alumno
                     {
+                        id_alumno = id_alumno,
                         fecha_registro = x,
                         ciclo_escolar = ciclo_escolar,
                         nombre = nombre,
-                        apellido_paterno = "hueso",
+                        apellido_paterno = apellido_paterno,
                         fecha_nacimiento = DateTime.Now,
-                        años_alumno = "40",
-                        CURP_alumno = "asd",
-                        estado_nacimiento_alumno = "Tamaulipas",
-                        ciudad_nacimiento_alumno = "Necaxa",
-                        colonia_alumno = "Atizapan",
-                        calle_alumno = "Elote #120",
-                        numero_alumno = "777",
-                        telefono_personal_alumno = "68662524",
-                        escuela_procedencia_alumno = "Harvard",
-                        documentacion_alumno = "FORZAR",
-                        atendido_por = "Abad",
-                        
-
+                        edad_alumno = edad_alumno,
+                        CURP_alumno = CURP_alumno,
+                        estado_nacimiento_alumno = estado_nacimiento_alumno,
+                        ciudad_nacimiento_alumno = ciudad_nacimiento_alumno,
+                        colonia_alumno = colonia_alumno,
+                        calle_alumno = calle_alumno,
+                        numero_alumno = numero_alumno,
+                        telefono_personal_alumno = telefono_personal_alumno,
+                        escuela_procedencia_alumno = escuela_procedencia_alumno,
+                        documentacion_alumno = documentacion_alumno,
+                        atendido_por = atendido_por
                     });
 
                     db.SaveChanges();
