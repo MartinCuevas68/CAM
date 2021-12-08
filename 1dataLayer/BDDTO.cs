@@ -14,7 +14,7 @@ namespace _1dataLayer
     public class alumnoDTO
     {
         public int id_alumno { get;}
-        public DateTime fecha_registro { get; set; }
+        public DateTime fecha_registro { get; }
         public string ciclo_escolar { get; set; }
         public string nombre { get; set; }
         public string apellido_paterno { get; set; }
