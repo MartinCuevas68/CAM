@@ -22,7 +22,7 @@ namespace businessLayer
                                      nombre = a.nombre,
                                      //apellido_paterno = a.apellido_paterno,
                                      fecha_nacimiento = a.fecha_nacimiento,
-                                     //años_alumno = a.años_alumno,
+                                     edad_alumno = a.edad_alumno,
                                      //CURP_alumno = a.CURP_alumno,
                                      estado_nacimiento_alumno = a.estado_nacimiento_alumno,
                                      ciudad_nacimiento_alumno = a.ciudad_nacimiento_alumno,
