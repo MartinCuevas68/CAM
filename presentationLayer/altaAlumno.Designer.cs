@@ -108,10 +108,16 @@ namespace presentationLayer
             this.grupoSanguineoTextBox = new System.Windows.Forms.TextBox();
             this.documentacionListBox = new System.Windows.Forms.CheckedListBox();
             this.informacionGeneralAlumnoGroupBox = new System.Windows.Forms.GroupBox();
+            this.limpiarFormato1Button = new System.Windows.Forms.Button();
             this.informacionEscolarGroupBox = new System.Windows.Forms.GroupBox();
             this.informacionMedicaAlumnoGroupBox = new System.Windows.Forms.GroupBox();
+            this.limpiarFormato3Button = new System.Windows.Forms.Button();
+            this.eliminarAlergiasButton = new System.Windows.Forms.Button();
             this.eliminarDiscapacidadesButton = new System.Windows.Forms.Button();
             this.eliminarEnfermedadButton = new System.Windows.Forms.Button();
+            this.agregarAlergiasButton = new System.Windows.Forms.Button();
+            this.agregarDiscapacidadButton = new System.Windows.Forms.Button();
+            this.agregarEnfermedadesButton = new System.Windows.Forms.Button();
             this.mostrarAlergiasLabel = new System.Windows.Forms.Label();
             this.mostrarEnfermedadesLabel = new System.Windows.Forms.Label();
             this.mostrarDiscapacidadLabel = new System.Windows.Forms.Label();
@@ -122,18 +128,12 @@ namespace presentationLayer
             this.informacionTutorGroupBox = new System.Windows.Forms.GroupBox();
             this.seleccionarNombreLabel = new System.Windows.Forms.Label();
             this.seleccionarNombreComboBox = new System.Windows.Forms.ComboBox();
+            this.limpiarFormato2Button = new System.Windows.Forms.Button();
             this.altaAlumnoPanel = new System.Windows.Forms.Panel();
             this.alumnosButton = new System.Windows.Forms.Button();
             this.docentesButton = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.realizarAltaButton = new System.Windows.Forms.Button();
-            this.limpiarFormato2Button = new System.Windows.Forms.Button();
-            this.limpiarFormato3Button = new System.Windows.Forms.Button();
-            this.eliminarAlergiasButton = new System.Windows.Forms.Button();
-            this.agregarAlergiasButton = new System.Windows.Forms.Button();
-            this.agregarDiscapacidadButton = new System.Windows.Forms.Button();
-            this.agregarEnfermedadesButton = new System.Windows.Forms.Button();
-            this.limpiarFormato1Button = new System.Windows.Forms.Button();
             this.tipoIngresoGroupBox.SuspendLayout();
             this.otroAlumnoTutorGroupBox.SuspendLayout();
             this.informacionGeneralAlumnoGroupBox.SuspendLayout();
@@ -588,6 +588,14 @@ namespace presentationLayer
             this.informacionGeneralAlumnoGroupBox.Name = "informacionGeneralAlumnoGroupBox";
             this.informacionGeneralAlumnoGroupBox.TabStop = false;
             // 
+            // limpiarFormato1Button
+            // 
+            resources.ApplyResources(this.limpiarFormato1Button, "limpiarFormato1Button");
+            this.limpiarFormato1Button.BackgroundImage = global::presentationLayer.Properties.Resources.limpiar;
+            this.limpiarFormato1Button.Name = "limpiarFormato1Button";
+            this.limpiarFormato1Button.UseVisualStyleBackColor = true;
+            this.limpiarFormato1Button.Click += new System.EventHandler(this.limpiarFormato1Button_Click);
+            // 
             // informacionEscolarGroupBox
             // 
             this.informacionEscolarGroupBox.BackColor = System.Drawing.SystemColors.ControlLight;
@@ -636,12 +644,29 @@ namespace presentationLayer
             this.informacionMedicaAlumnoGroupBox.Name = "informacionMedicaAlumnoGroupBox";
             this.informacionMedicaAlumnoGroupBox.TabStop = false;
             // 
+            // limpiarFormato3Button
+            // 
+            this.limpiarFormato3Button.BackgroundImage = global::presentationLayer.Properties.Resources.limpiar;
+            resources.ApplyResources(this.limpiarFormato3Button, "limpiarFormato3Button");
+            this.limpiarFormato3Button.Name = "limpiarFormato3Button";
+            this.limpiarFormato3Button.UseVisualStyleBackColor = true;
+            this.limpiarFormato3Button.Click += new System.EventHandler(this.limpiarFormato3Button_Click);
+            // 
+            // eliminarAlergiasButton
+            // 
+            resources.ApplyResources(this.eliminarAlergiasButton, "eliminarAlergiasButton");
+            this.eliminarAlergiasButton.BackgroundImage = global::presentationLayer.Properties.Resources.boteBasura;
+            this.eliminarAlergiasButton.Name = "eliminarAlergiasButton";
+            this.eliminarAlergiasButton.UseVisualStyleBackColor = true;
+            this.eliminarAlergiasButton.Click += new System.EventHandler(this.eliminarAlergiasButton_Click);
+            // 
             // eliminarDiscapacidadesButton
             // 
             resources.ApplyResources(this.eliminarDiscapacidadesButton, "eliminarDiscapacidadesButton");
             this.eliminarDiscapacidadesButton.BackgroundImage = global::presentationLayer.Properties.Resources.boteBasura;
             this.eliminarDiscapacidadesButton.Name = "eliminarDiscapacidadesButton";
             this.eliminarDiscapacidadesButton.UseVisualStyleBackColor = true;
+            this.eliminarDiscapacidadesButton.Click += new System.EventHandler(this.eliminarDiscapacidadesButton_Click);
             // 
             // eliminarEnfermedadButton
             // 
@@ -649,6 +674,34 @@ namespace presentationLayer
             this.eliminarEnfermedadButton.BackgroundImage = global::presentationLayer.Properties.Resources.boteBasura;
             this.eliminarEnfermedadButton.Name = "eliminarEnfermedadButton";
             this.eliminarEnfermedadButton.UseVisualStyleBackColor = true;
+            this.eliminarEnfermedadButton.Click += new System.EventHandler(this.eliminarEnfermedadButton_Click);
+            // 
+            // agregarAlergiasButton
+            // 
+            resources.ApplyResources(this.agregarAlergiasButton, "agregarAlergiasButton");
+            this.agregarAlergiasButton.BackColor = System.Drawing.Color.Transparent;
+            this.agregarAlergiasButton.Image = global::presentationLayer.Properties.Resources.mas1;
+            this.agregarAlergiasButton.Name = "agregarAlergiasButton";
+            this.agregarAlergiasButton.UseVisualStyleBackColor = false;
+            this.agregarAlergiasButton.Click += new System.EventHandler(this.agregarAlergiasButton_Click);
+            // 
+            // agregarDiscapacidadButton
+            // 
+            resources.ApplyResources(this.agregarDiscapacidadButton, "agregarDiscapacidadButton");
+            this.agregarDiscapacidadButton.BackColor = System.Drawing.Color.Transparent;
+            this.agregarDiscapacidadButton.Image = global::presentationLayer.Properties.Resources.mas1;
+            this.agregarDiscapacidadButton.Name = "agregarDiscapacidadButton";
+            this.agregarDiscapacidadButton.UseVisualStyleBackColor = false;
+            this.agregarDiscapacidadButton.Click += new System.EventHandler(this.agregarDiscapacidadButton_Click);
+            // 
+            // agregarEnfermedadesButton
+            // 
+            resources.ApplyResources(this.agregarEnfermedadesButton, "agregarEnfermedadesButton");
+            this.agregarEnfermedadesButton.BackColor = System.Drawing.Color.Transparent;
+            this.agregarEnfermedadesButton.Image = global::presentationLayer.Properties.Resources.mas1;
+            this.agregarEnfermedadesButton.Name = "agregarEnfermedadesButton";
+            this.agregarEnfermedadesButton.UseVisualStyleBackColor = false;
+            this.agregarEnfermedadesButton.Click += new System.EventHandler(this.agregarEnfermedadesButton_Click);
             // 
             // mostrarAlergiasLabel
             // 
@@ -732,6 +785,14 @@ namespace presentationLayer
             resources.ApplyResources(this.seleccionarNombreComboBox, "seleccionarNombreComboBox");
             this.seleccionarNombreComboBox.Name = "seleccionarNombreComboBox";
             // 
+            // limpiarFormato2Button
+            // 
+            this.limpiarFormato2Button.BackgroundImage = global::presentationLayer.Properties.Resources.limpiar;
+            resources.ApplyResources(this.limpiarFormato2Button, "limpiarFormato2Button");
+            this.limpiarFormato2Button.Name = "limpiarFormato2Button";
+            this.limpiarFormato2Button.UseVisualStyleBackColor = true;
+            this.limpiarFormato2Button.Click += new System.EventHandler(this.limpiarFormato2Button_Click);
+            // 
             // altaAlumnoPanel
             // 
             this.altaAlumnoPanel.BackColor = System.Drawing.Color.Thistle;
@@ -765,59 +826,6 @@ namespace presentationLayer
             this.realizarAltaButton.UseVisualStyleBackColor = true;
             this.realizarAltaButton.Click += new System.EventHandler(this.guardarButton_Click);
             // 
-            // limpiarFormato2Button
-            // 
-            this.limpiarFormato2Button.BackgroundImage = global::presentationLayer.Properties.Resources.limpiar;
-            resources.ApplyResources(this.limpiarFormato2Button, "limpiarFormato2Button");
-            this.limpiarFormato2Button.Name = "limpiarFormato2Button";
-            this.limpiarFormato2Button.UseVisualStyleBackColor = true;
-            // 
-            // limpiarFormato3Button
-            // 
-            this.limpiarFormato3Button.BackgroundImage = global::presentationLayer.Properties.Resources.limpiar;
-            resources.ApplyResources(this.limpiarFormato3Button, "limpiarFormato3Button");
-            this.limpiarFormato3Button.Name = "limpiarFormato3Button";
-            this.limpiarFormato3Button.UseVisualStyleBackColor = true;
-            // 
-            // eliminarAlergiasButton
-            // 
-            resources.ApplyResources(this.eliminarAlergiasButton, "eliminarAlergiasButton");
-            this.eliminarAlergiasButton.BackgroundImage = global::presentationLayer.Properties.Resources.boteBasura;
-            this.eliminarAlergiasButton.Name = "eliminarAlergiasButton";
-            this.eliminarAlergiasButton.UseVisualStyleBackColor = true;
-            // 
-            // agregarAlergiasButton
-            // 
-            resources.ApplyResources(this.agregarAlergiasButton, "agregarAlergiasButton");
-            this.agregarAlergiasButton.BackColor = System.Drawing.Color.Transparent;
-            this.agregarAlergiasButton.Image = global::presentationLayer.Properties.Resources.mas1;
-            this.agregarAlergiasButton.Name = "agregarAlergiasButton";
-            this.agregarAlergiasButton.UseVisualStyleBackColor = false;
-            // 
-            // agregarDiscapacidadButton
-            // 
-            resources.ApplyResources(this.agregarDiscapacidadButton, "agregarDiscapacidadButton");
-            this.agregarDiscapacidadButton.BackColor = System.Drawing.Color.Transparent;
-            this.agregarDiscapacidadButton.Image = global::presentationLayer.Properties.Resources.mas1;
-            this.agregarDiscapacidadButton.Name = "agregarDiscapacidadButton";
-            this.agregarDiscapacidadButton.UseVisualStyleBackColor = false;
-            // 
-            // agregarEnfermedadesButton
-            // 
-            resources.ApplyResources(this.agregarEnfermedadesButton, "agregarEnfermedadesButton");
-            this.agregarEnfermedadesButton.BackColor = System.Drawing.Color.Transparent;
-            this.agregarEnfermedadesButton.Image = global::presentationLayer.Properties.Resources.mas1;
-            this.agregarEnfermedadesButton.Name = "agregarEnfermedadesButton";
-            this.agregarEnfermedadesButton.UseVisualStyleBackColor = false;
-            this.agregarEnfermedadesButton.Click += new System.EventHandler(this.agregarEnfermedadesButton_Click);
-            // 
-            // limpiarFormato1Button
-            // 
-            resources.ApplyResources(this.limpiarFormato1Button, "limpiarFormato1Button");
-            this.limpiarFormato1Button.BackgroundImage = global::presentationLayer.Properties.Resources.limpiar;
-            this.limpiarFormato1Button.Name = "limpiarFormato1Button";
-            this.limpiarFormato1Button.UseVisualStyleBackColor = true;
-            // 
             // altaAlumno
             // 
             resources.ApplyResources(this, "$this");
@@ -835,6 +843,7 @@ namespace presentationLayer
             this.Controls.Add(this.siguienteButton);
             this.Name = "altaAlumno";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.altaAlumno_Load);
             this.tipoIngresoGroupBox.ResumeLayout(false);
             this.tipoIngresoGroupBox.PerformLayout();
             this.otroAlumnoTutorGroupBox.ResumeLayout(false);
