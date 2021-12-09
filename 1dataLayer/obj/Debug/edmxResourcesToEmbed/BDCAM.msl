@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="BDCAMModelStoreContainer" CdmEntityContainer="BDCAMEntities">
+  <EntityContainerMapping StorageEntityContainer="BDDCAMModelStoreContainer" CdmEntityContainer="BDCAMEntities">
     <EntitySetMapping Name="alumno">
-      <EntityTypeMapping TypeName="BDCAMModel.alumno">
+      <EntityTypeMapping TypeName="BDDCAMModel.alumno">
         <MappingFragment StoreEntitySet="alumno">
           <ScalarProperty Name="id_alumno" ColumnName="id_alumno" />
           <ScalarProperty Name="fecha_registro" ColumnName="fecha_registro" />
@@ -26,7 +26,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="programa">
-      <EntityTypeMapping TypeName="BDCAMModel.programa">
+      <EntityTypeMapping TypeName="BDDCAMModel.programa">
         <MappingFragment StoreEntitySet="programa">
           <ScalarProperty Name="id_programa" ColumnName="id_programa" />
           <ScalarProperty Name="nombre_programa" ColumnName="nombre_programa" />
@@ -40,7 +40,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="recursos">
-      <EntityTypeMapping TypeName="BDCAMModel.recursos">
+      <EntityTypeMapping TypeName="BDDCAMModel.recursos">
         <MappingFragment StoreEntitySet="recursos">
           <ScalarProperty Name="id_recurso" ColumnName="id_recurso" />
           <ScalarProperty Name="recurso" ColumnName="recurso" />
@@ -48,7 +48,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="sysdiagrams">
-      <EntityTypeMapping TypeName="BDCAMModel.sysdiagrams">
+      <EntityTypeMapping TypeName="BDDCAMModel.sysdiagrams">
         <MappingFragment StoreEntitySet="sysdiagrams">
           <ScalarProperty Name="name" ColumnName="name" />
           <ScalarProperty Name="principal_id" ColumnName="principal_id" />
@@ -59,7 +59,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="tabla_indicadores_telefono">
-      <EntityTypeMapping TypeName="BDCAMModel.tabla_indicadores_telefono">
+      <EntityTypeMapping TypeName="BDDCAMModel.tabla_indicadores_telefono">
         <MappingFragment StoreEntitySet="tabla_indicadores_telefono">
           <ScalarProperty Name="id_telefono" ColumnName="id_telefono" />
           <ScalarProperty Name="telefono" ColumnName="telefono" />
@@ -67,9 +67,8 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="tabla_medica">
-      <EntityTypeMapping TypeName="BDCAMModel.tabla_medica">
+      <EntityTypeMapping TypeName="BDDCAMModel.tabla_medica">
         <MappingFragment StoreEntitySet="tabla_medica">
-          <ScalarProperty Name="id_alumno" ColumnName="id_alumno" />
           <ScalarProperty Name="id_cartilla_medica" ColumnName="id_cartilla_medica" />
           <ScalarProperty Name="servicio_medico" ColumnName="servicio_medico" />
           <ScalarProperty Name="grupo_sanguineo" ColumnName="grupo_sanguineo" />
@@ -82,7 +81,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="turnos">
-      <EntityTypeMapping TypeName="BDCAMModel.turnos">
+      <EntityTypeMapping TypeName="BDDCAMModel.turnos">
         <MappingFragment StoreEntitySet="turnos">
           <ScalarProperty Name="id_turno" ColumnName="id_turno" />
           <ScalarProperty Name="turno" ColumnName="turno" />
@@ -90,7 +89,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="tutor">
-      <EntityTypeMapping TypeName="BDCAMModel.tutor">
+      <EntityTypeMapping TypeName="BDDCAMModel.tutor">
         <MappingFragment StoreEntitySet="tutor">
           <ScalarProperty Name="id_tutor" ColumnName="id_tutor" />
           <ScalarProperty Name="nombre" ColumnName="nombre" />
@@ -107,7 +106,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="alergias">
-      <EntityTypeMapping TypeName="BDCAMModel.alergias">
+      <EntityTypeMapping TypeName="BDDCAMModel.alergias">
         <MappingFragment StoreEntitySet="alergias">
           <ScalarProperty Name="id_cartilla_medica" ColumnName="id_cartilla_medica" />
           <ScalarProperty Name="alergia" ColumnName="alergia" />
@@ -115,7 +114,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="discapacidades">
-      <EntityTypeMapping TypeName="BDCAMModel.discapacidades">
+      <EntityTypeMapping TypeName="BDDCAMModel.discapacidades">
         <MappingFragment StoreEntitySet="discapacidades">
           <ScalarProperty Name="id_cartilla_medica" ColumnName="id_cartilla_medica" />
           <ScalarProperty Name="discapacidades1" ColumnName="discapacidades" />
@@ -123,7 +122,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="enfermedades">
-      <EntityTypeMapping TypeName="BDCAMModel.enfermedades">
+      <EntityTypeMapping TypeName="BDDCAMModel.enfermedades">
         <MappingFragment StoreEntitySet="enfermedades">
           <ScalarProperty Name="id_cartilla_medica" ColumnName="id_cartilla_medica" />
           <ScalarProperty Name="enfermedad" ColumnName="enfermedad" />
@@ -131,7 +130,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="telefono_tutores">
-      <EntityTypeMapping TypeName="BDCAMModel.telefono_tutores">
+      <EntityTypeMapping TypeName="BDDCAMModel.telefono_tutores">
         <MappingFragment StoreEntitySet="telefono-tutores">
           <ScalarProperty Name="id_tutor" ColumnName="id_tutor" />
           <ScalarProperty Name="id_telefono" ColumnName="id_telefono" />
@@ -139,7 +138,23 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <AssociationSetMapping Name="programa_turno" TypeName="BDCAMModel.programa_turno" StoreEntitySet="programa-turno">
+    <AssociationSetMapping Name="alumno_cartilla" TypeName="BDDCAMModel.alumno_cartilla" StoreEntitySet="alumno-cartilla">
+      <EndProperty Name="alumno">
+        <ScalarProperty Name="id_alumno" ColumnName="id_alumno" />
+      </EndProperty>
+      <EndProperty Name="tabla_medica">
+        <ScalarProperty Name="id_cartilla_medica" ColumnName="id_cartilla" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="alumno_programa" TypeName="BDDCAMModel.alumno_programa" StoreEntitySet="alumno-programa">
+      <EndProperty Name="alumno">
+        <ScalarProperty Name="id_alumno" ColumnName="id_alumno" />
+      </EndProperty>
+      <EndProperty Name="programa">
+        <ScalarProperty Name="id_programa" ColumnName="id_programa" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="programa_turno" TypeName="BDDCAMModel.programa_turno" StoreEntitySet="programa-turno">
       <EndProperty Name="programa">
         <ScalarProperty Name="id_programa" ColumnName="id_programa" />
       </EndProperty>
@@ -147,7 +162,7 @@
         <ScalarProperty Name="id_turno" ColumnName="id_turno" />
       </EndProperty>
     </AssociationSetMapping>
-    <AssociationSetMapping Name="recurso_programa" TypeName="BDCAMModel.recurso_programa" StoreEntitySet="recurso-programa">
+    <AssociationSetMapping Name="recurso_programa" TypeName="BDDCAMModel.recurso_programa" StoreEntitySet="recurso-programa">
       <EndProperty Name="programa">
         <ScalarProperty Name="id_programa" ColumnName="id_programa" />
       </EndProperty>
@@ -155,12 +170,12 @@
         <ScalarProperty Name="id_recurso" ColumnName="id_recurso" />
       </EndProperty>
     </AssociationSetMapping>
-    <AssociationSetMapping Name="tutor_alumno" TypeName="BDCAMModel.tutor_alumno" StoreEntitySet="tutor-alumno">
-      <EndProperty Name="alumno">
-        <ScalarProperty Name="id_alumno" ColumnName="id_alumno" />
-      </EndProperty>
+    <AssociationSetMapping Name="tutor_alumno" TypeName="BDDCAMModel.tutor_alumno" StoreEntitySet="tutor-alumno">
       <EndProperty Name="tutor">
         <ScalarProperty Name="id_tutor" ColumnName="id_tutor" />
+      </EndProperty>
+      <EndProperty Name="alumno">
+        <ScalarProperty Name="id_alumno" ColumnName="id_alumno" />
       </EndProperty>
     </AssociationSetMapping>
   </EntityContainerMapping>
