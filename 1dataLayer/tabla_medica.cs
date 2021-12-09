@@ -27,6 +27,10 @@ namespace _1dataLayer
         public string servicio_medico { get; set; }
         public string grupo_sanguineo { get; set; }
         public string telefono_contacto { get; set; }
+        public string peso { get; set; }
+        public string genero { get; set; }
+        public string color_textura_piel { get; set; }
+        public string estatura { get; set; }
     
         public virtual alumno alumno { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

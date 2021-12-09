@@ -26,9 +26,12 @@ namespace _1dataLayer
         }
     
         public virtual DbSet<alumno> alumno { get; set; }
+        public virtual DbSet<programa> programa { get; set; }
+        public virtual DbSet<recursos> recursos { get; set; }
         public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<tabla_indicadores_telefono> tabla_indicadores_telefono { get; set; }
         public virtual DbSet<tabla_medica> tabla_medica { get; set; }
+        public virtual DbSet<turnos> turnos { get; set; }
         public virtual DbSet<tutor> tutor { get; set; }
         public virtual DbSet<alergias> alergias { get; set; }
         public virtual DbSet<discapacidades> discapacidades { get; set; }

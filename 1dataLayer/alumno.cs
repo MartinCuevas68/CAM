@@ -22,12 +22,13 @@ namespace _1dataLayer
         }
     
         public int id_alumno { get; set; }
-        public byte[] fecha_registro { get; set; }
+        public System.DateTime fecha_registro { get; set; }
         public string ciclo_escolar { get; set; }
         public string nombre { get; set; }
         public string apellido_paterno { get; set; }
+        public string apellido_materno { get; set; }
         public System.DateTime fecha_nacimiento { get; set; }
-        public string años_alumno { get; set; }
+        public string edad_alumno { get; set; }
         public string CURP_alumno { get; set; }
         public string estado_nacimiento_alumno { get; set; }
         public string ciudad_nacimiento_alumno { get; set; }
