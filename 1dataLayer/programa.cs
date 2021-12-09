@@ -12,33 +12,30 @@ namespace _1dataLayer
     using System;
     using System.Collections.Generic;
     
-    public partial class tabla_medica
+    public partial class programa
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public tabla_medica()
+        public programa()
         {
-            this.alergias = new HashSet<alergias>();
-            this.discapacidades = new HashSet<discapacidades>();
-            this.enfermedades = new HashSet<enfermedades>();
             this.alumno = new HashSet<alumno>();
+            this.turnos = new HashSet<turnos>();
+            this.recursos = new HashSet<recursos>();
         }
     
-        public int id_cartilla_medica { get; set; }
-        public string servicio_medico { get; set; }
-        public string grupo_sanguineo { get; set; }
-        public string telefono_contacto { get; set; }
-        public string peso { get; set; }
-        public string genero { get; set; }
-        public string color_textura_piel { get; set; }
-        public string estatura { get; set; }
+        public int id_programa { get; set; }
+        public string nombre_programa { get; set; }
+        public string tiempo { get; set; }
+        public string secuencia { get; set; }
+        public string criterios { get; set; }
+        public string objetivo { get; set; }
+        public string modulos { get; set; }
+        public string proyecto { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<alergias> alergias { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<discapacidades> discapacidades { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<enfermedades> enfermedades { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<alumno> alumno { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<turnos> turnos { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<recursos> recursos { get; set; }
     }
 }

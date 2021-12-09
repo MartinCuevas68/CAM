@@ -4,22 +4,28 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="8cffc9a5beeb402881311509cb591a0a" Name="Diagram1" ZoomLevel="91">
-        <EntityTypeShape EntityType="BDDCAMModel.alumno" Width="1.5" PointX="0.75" PointY="4.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="BDDCAMModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="BDDCAMModel.tabla_indicadores_telefono" Width="1.5" PointX="3" PointY="13.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="BDDCAMModel.tabla_medica" Width="1.5" PointX="3" PointY="3.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="BDDCAMModel.tutor" Width="1.5" PointX="3" PointY="8.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="BDDCAMModel.alergias" Width="1.5" PointX="5.25" PointY="1.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="BDDCAMModel.discapacidades" Width="1.5" PointX="5.25" PointY="3.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="BDDCAMModel.enfermedades" Width="1.5" PointX="5.25" PointY="6" IsExpanded="true" />
-        <EntityTypeShape EntityType="BDDCAMModel.telefono_tutores" Width="1.5" PointX="5.25" PointY="9.125" IsExpanded="true" />
-        <AssociationConnector Association="BDDCAMModel.FK_idalumno" ManuallyRouted="false" />
+      <Diagram DiagramId="5af640c6b34a4189aa33e0815d092323" Name="Diagram1">
+        <EntityTypeShape EntityType="BDDCAMModel.alumno" Width="1.5" PointX="3" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDDCAMModel.programa" Width="1.5" PointX="5.25" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDDCAMModel.recursos" Width="1.5" PointX="7.5" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDDCAMModel.sysdiagrams" Width="1.5" PointX="9.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDDCAMModel.tabla_indicadores_telefono" Width="1.5" PointX="0.75" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDDCAMModel.tabla_medica" Width="1.5" PointX="5.25" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDDCAMModel.turnos" Width="1.5" PointX="7.5" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDDCAMModel.tutor" Width="1.5" PointX="0.75" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDDCAMModel.alergias" Width="1.5" PointX="7.5" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDDCAMModel.discapacidades" Width="1.5" PointX="7.5" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDDCAMModel.enfermedades" Width="1.5" PointX="7.5" PointY="12.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDDCAMModel.telefono_tutores" Width="1.5" PointX="3" PointY="2.375" IsExpanded="true" />
         <AssociationConnector Association="BDDCAMModel.FK_Tele" ManuallyRouted="false" />
-        <AssociationConnector Association="BDDCAMModel.FK_id" ManuallyRouted="false" />
-        <AssociationConnector Association="BDDCAMModel.FK_idcartilla" ManuallyRouted="false" />
-        <AssociationConnector Association="BDDCAMModel.FK_idcartillamedica" ManuallyRouted="false" />
+        <AssociationConnector Association="BDDCAMModel.FK_alergias_tabla_medica" ManuallyRouted="false" />
+        <AssociationConnector Association="BDDCAMModel.FK_discapacidades_tabla_medica" ManuallyRouted="false" />
+        <AssociationConnector Association="BDDCAMModel.FK_enfermedades_tabla_medica" ManuallyRouted="false" />
         <AssociationConnector Association="BDDCAMModel.FK_Tuto" ManuallyRouted="false" />
+        <AssociationConnector Association="BDDCAMModel.alumno_cartilla" ManuallyRouted="false" />
+        <AssociationConnector Association="BDDCAMModel.alumno_programa" ManuallyRouted="false" />
+        <AssociationConnector Association="BDDCAMModel.programa_turno" ManuallyRouted="false" />
+        <AssociationConnector Association="BDDCAMModel.recurso_programa" ManuallyRouted="false" />
         <AssociationConnector Association="BDDCAMModel.tutor_alumno" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
