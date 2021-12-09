@@ -2352,6 +2352,9 @@
   <data name="limpiarFormato3Button.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Zoom</value>
   </data>
+  <data name="limpiarFormato3Button.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="limpiarFormato3Button.Location" type="System.Drawing.Point, System.Drawing">
     <value>977, 20</value>
   </data>
@@ -2375,6 +2378,9 @@
   </data>
   <data name="eliminarAlergiasButton.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="eliminarAlergiasButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
   </data>
   <data name="eliminarAlergiasButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2403,6 +2409,9 @@
   <data name="eliminarDiscapacidadesButton.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="eliminarDiscapacidadesButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
   <data name="eliminarDiscapacidadesButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -2429,6 +2438,9 @@
   </data>
   <data name="eliminarEnfermedadButton.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="eliminarEnfermedadButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
   </data>
   <data name="eliminarEnfermedadButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2832,6 +2844,9 @@
   <data name="limpiarFormato2Button.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Zoom</value>
   </data>
+  <data name="limpiarFormato2Button.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="limpiarFormato2Button.Location" type="System.Drawing.Point, System.Drawing">
     <value>1045, 0</value>
   </data>
@@ -2893,7 +2908,7 @@
     <value>NoControl</value>
   </data>
   <data name="alumnosButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1233, 0</value>
+    <value>1254, 0</value>
   </data>
   <data name="alumnosButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
@@ -2929,7 +2944,7 @@
     <value>NoControl</value>
   </data>
   <data name="docentesButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1348, 0</value>
+    <value>1369, 0</value>
   </data>
   <data name="docentesButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
@@ -2965,7 +2980,7 @@
     <value>3, 2, 3, 2</value>
   </data>
   <data name="altaAlumnoPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1473, 39</value>
+    <value>1494, 39</value>
   </data>
   <data name="altaAlumnoPanel.TabIndex" type="System.Int32, mscorlib">
     <value>136</value>
@@ -3070,7 +3085,7 @@
     <value>True</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1494, 750</value>
+    <value>1494, 1055</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>

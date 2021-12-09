@@ -154,9 +154,30 @@ namespace presentationLayer
 
         private void guardarButton_Click(object sender, EventArgs e)
         {
-            
-            MessageBox.Show("REGISTRO EXITOSO!");
-         //   businessLayer.Hueso.SetAlumno(nombreAlumnoTextBox.Text, cicloEscolarTextBox.Text);
+            if (!nombreAlumnoTextBox.Text.Equals("") && !apellidoPaternoAlumnoTextBox.Text.Equals("") && !apellidoMaternoAlumnoTextBox.Text.Equals(""))
+            {
+                MessageBox.Show("REGISTRO EXITOSO!");
+                businessLayer.Hueso.SetAlumno(cicloEscolarTextBox.Text,
+                                              nombreAlumnoTextBox.Text,
+                                              apellidoPaternoAlumnoTextBox.Text,
+                                              apellidoMaternoAlumnoTextBox.Text,
+                                              fechaNacimientoDateTimePicker.Value,
+                                              añosCumplidosTextBox.Text,
+                                              curpTextBox.Text,
+                                              estadoNacimientoAlumnoTextBox.Text,
+                                              ciudadNacimientoAlumnoTextBox.Text,
+                                              coloniaDireccionAlumnoTextBox.Text,
+                                              calleDireccionAlumnoTextBox.Text,
+                                              numeroDireccionAlumnoTextBox.Text,
+                                              telefonoAlumnoTextBox.Text,
+                                              escuelaProcedenciaTextBox.Text,
+                                              canalizadoPorTextBox.Text
+                                              );
+            }
+            else
+            {
+                MessageBox.Show("NO PUEDES CREAR UN REGISTRO SIN NOMBRE COMPLETO DEL ALUMNO!");
+            }
         }
 
         private void alumnosButton_Click(object sender, EventArgs e)
@@ -166,10 +187,101 @@ namespace presentationLayer
             formConsulta.Show();
         }
 
+        //AGREGAR ENFERMEDADES AL RICHTXTBOX
         private void agregarEnfermedadesButton_Click(object sender, EventArgs e)
         {
-            string enfermedad = "";
-            enfermedad = enfermedadesAlumnoTextBox.Text;
+            string enfermedad = enfermedadesAlumnoTextBox.Text;
+            mostrarEnfermedadesRichTextBox.AppendText(enfermedad + ",    ");
+        }
+
+        //AGREGAR DISCAPACIDADES AL RICHTXTBOX
+        private void agregarDiscapacidadButton_Click(object sender, EventArgs e)
+        {
+            string discapacidad = discapacidadTextBox.Text;
+            mostrarDiscapacidadRichTextBox.AppendText(discapacidad + ",    ");
+        }
+
+        //AGREGAR ALERGIAS AL RICHTXTBOX
+        private void agregarAlergiasButton_Click(object sender, EventArgs e)
+        {
+            string alergia = alergiasAlumnoTextBox.Text;
+            mostrarAlergiasRichTextBox.AppendText(alergia + ",    ");
+        }
+
+        //LIMPIAR INFORMACIÓN GENERAL ALUMNO
+        private void limpiarFormato1Button_Click(object sender, EventArgs e)
+        {
+            nombreAlumnoTextBox.Clear();
+            apellidoPaternoAlumnoTextBox.Clear();
+            apellidoMaternoAlumnoTextBox.Clear();
+            fechaNacimientoDateTimePicker.ResetText();
+            ciudadNacimientoAlumnoTextBox.Clear();
+            estadoNacimientoAlumnoTextBox.Clear();
+            calleDireccionAlumnoTextBox.Clear();
+            numeroDireccionAlumnoTextBox.Clear();
+            coloniaDireccionAlumnoTextBox.Clear();
+            telefonoAlumnoTextBox.Clear();
+            escuelaProcedenciaTextBox.Clear();
+            canalizadoPorTextBox.Clear();
+            cicloEscolarTextBox.Clear();
+            curpTextBox.Clear();
+            añosCumplidosTextBox.Clear();
+            nuevoIngresoRadioButton.Checked = false;
+            reingresoRadioButton.Checked = false;
+
+        }
+
+        //LIMPIAR INFORMACIÓN TUTORA/RA
+        private void limpiarFormato2Button_Click(object sender, EventArgs e)
+        {
+            siOtroAlumnoMadreRadioButton.Checked = false;
+            noOtroAlumnoMadreRadioButton.Checked = false;
+            seleccionarNombreComboBox.ResetText();
+            nombreTutorTextBox.Clear();
+            apellidoPaternoTutorTextBox.Clear();
+            apellidoMaternoTutorTextBox.Clear();
+            calleDireccionTutorTextBox.Clear();
+            numeroDireccionTutorTextBox.Clear();
+            coloniaDireccionTutorTextBox.Clear();
+            ocupacionTutorTextBox.Clear();
+            telefonoCasaTutorTextBox.Clear();
+            telefonoCelularTutorTextBox.Clear();
+            telefonoTrabajoTutorTextBox.Clear();
+        }
+
+        //LIMPIAR INFORMACIÓN MEDICA ALUMNO
+        private void limpiarFormato3Button_Click(object sender, EventArgs e)
+        {
+            servicioMedicoTextBox.Clear();
+            enfermedadesAlumnoTextBox.Clear();
+            discapacidadTextBox.Clear();
+            alergiasAlumnoTextBox.Clear();
+            telefonoContactoMedicoAlumnoTextBox.Clear();
+            grupoSanguineoTextBox.Clear();
+            //documentacionListBox.SetItemChecked = false; *CLAUDIA CAMBIARÁ ESTO POR UN CONJUNTO DE CHECKBUTTONS*
+        }
+
+        //LIMPIAR DISCAPACIDADES
+        private void eliminarDiscapacidadesButton_Click(object sender, EventArgs e)
+        {
+            mostrarDiscapacidadRichTextBox.Clear();
+        }
+
+        //LIMPIAR ENFERMEDADES
+        private void eliminarEnfermedadButton_Click(object sender, EventArgs e)
+        {
+            mostrarEnfermedadesRichTextBox.Clear();
+        }
+
+        //LIMPIAR ALERGIAS
+        private void eliminarAlergiasButton_Click(object sender, EventArgs e)
+        {
+            mostrarAlergiasRichTextBox.Clear();
+        }
+
+        private void altaAlumno_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

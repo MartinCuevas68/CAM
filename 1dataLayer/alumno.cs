@@ -18,6 +18,7 @@ namespace _1dataLayer
         public alumno()
         {
             this.tabla_medica = new HashSet<tabla_medica>();
+            this.programa = new HashSet<programa>();
             this.tutor = new HashSet<tutor>();
         }
     
@@ -42,6 +43,8 @@ namespace _1dataLayer
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<tabla_medica> tabla_medica { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<programa> programa { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<tutor> tutor { get; set; }
     }

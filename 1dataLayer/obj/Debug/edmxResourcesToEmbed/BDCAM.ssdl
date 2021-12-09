@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="BDCAMModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+<Schema Namespace="BDDCAMModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
   <!--Errores durante la generación:
 advertencia 6002: La tabla o vista 'BDDCAM.dbo.alergias' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
   <EntityType Name="alergias">
@@ -15,14 +15,14 @@ advertencia 6002: La tabla o vista 'BDDCAM.dbo.alergias' no tiene definida ningu
       <PropertyRef Name="id_alumno" />
     </Key>
     <Property Name="id_alumno" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="fecha_registro" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+    <Property Name="fecha_registro" Type="date" Nullable="false" />
     <Property Name="ciclo_escolar" Type="varchar" MaxLength="30" Nullable="false" />
     <Property Name="nombre" Type="varchar" MaxLength="30" Nullable="false" />
     <Property Name="apellido_paterno" Type="varchar" MaxLength="30" Nullable="false" />
     <Property Name="apellido_materno" Type="varchar" MaxLength="30" Nullable="false" />
     <Property Name="fecha_nacimiento" Type="date" Nullable="false" />
-    <Property Name="edad_alumno" Type="varchar" MaxLength="2" Nullable="false" />
-    <Property Name="CURP_alumno" Type="varchar" MaxLength="18" Nullable="false" />
+    <Property Name="edad_alumno" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="CURP_alumno" Type="varchar" MaxLength="20" Nullable="false" />
     <Property Name="estado_nacimiento_alumno" Type="varchar" MaxLength="30" Nullable="false" />
     <Property Name="ciudad_nacimiento_alumno" Type="varchar" MaxLength="30" Nullable="false" />
     <Property Name="colonia_alumno" Type="varchar" MaxLength="30" Nullable="false" />
@@ -32,6 +32,26 @@ advertencia 6002: La tabla o vista 'BDDCAM.dbo.alergias' no tiene definida ningu
     <Property Name="escuela_procedencia_alumno" Type="varchar" MaxLength="30" Nullable="false" />
     <Property Name="documentacion_alumno" Type="nvarchar(max)" />
     <Property Name="atendido_por" Type="varchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'BDDCAM.dbo.alumno-cartilla' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="alumno-cartilla">
+    <Key>
+      <PropertyRef Name="id_alumno" />
+      <PropertyRef Name="id_cartilla" />
+    </Key>
+    <Property Name="id_alumno" Type="int" Nullable="false" />
+    <Property Name="id_cartilla" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'BDDCAM.dbo.alumno-programa' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="alumno-programa">
+    <Key>
+      <PropertyRef Name="id_alumno" />
+      <PropertyRef Name="id_programa" />
+    </Key>
+    <Property Name="id_alumno" Type="int" Nullable="false" />
+    <Property Name="id_programa" Type="int" Nullable="false" />
   </EntityType>
   <!--Errores durante la generación:
 advertencia 6002: La tabla o vista 'BDDCAM.dbo.discapacidades' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
@@ -114,7 +134,6 @@ advertencia 6002: La tabla o vista 'BDDCAM.dbo.recurso-programa' no tiene defini
     <Key>
       <PropertyRef Name="id_cartilla_medica" />
     </Key>
-    <Property Name="id_alumno" Type="int" Nullable="false" />
     <Property Name="id_cartilla_medica" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="servicio_medico" Type="varchar" MaxLength="30" Nullable="false" />
     <Property Name="grupo_sanguineo" Type="varchar" MaxLength="30" Nullable="false" />
@@ -169,31 +188,55 @@ advertencia 6002: La tabla o vista 'BDDCAM.dbo.tutor-alumno' no tiene definida n
     <Property Name="id_tutor" Type="int" Nullable="false" />
     <Property Name="id_alumno" Type="int" Nullable="false" />
   </EntityType>
-  <Association Name="FK_alumno">
+  <Association Name="FK_alergias_tabla_medica">
+    <End Role="tabla_medica" Type="Self.tabla_medica" Multiplicity="1" />
+    <End Role="alergias" Type="Self.alergias" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tabla_medica">
+        <PropertyRef Name="id_cartilla_medica" />
+      </Principal>
+      <Dependent Role="alergias">
+        <PropertyRef Name="id_cartilla_medica" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_alumno-cartilla_alumno">
     <End Role="alumno" Type="Self.alumno" Multiplicity="1" />
-    <End Role="tabla_medica" Type="Self.tabla_medica" Multiplicity="*" />
+    <End Role="alumno-cartilla" Type="Self.alumno-cartilla" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="alumno">
         <PropertyRef Name="id_alumno" />
       </Principal>
-      <Dependent Role="tabla_medica">
+      <Dependent Role="alumno-cartilla">
         <PropertyRef Name="id_alumno" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_alumno_id">
+  <Association Name="FK_alumno-programa_alumno">
     <End Role="alumno" Type="Self.alumno" Multiplicity="1" />
-    <End Role="tutor-alumno" Type="Self.tutor-alumno" Multiplicity="*" />
+    <End Role="alumno-programa" Type="Self.alumno-programa" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="alumno">
         <PropertyRef Name="id_alumno" />
       </Principal>
-      <Dependent Role="tutor-alumno">
+      <Dependent Role="alumno-programa">
         <PropertyRef Name="id_alumno" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_discapacidades_cartilla">
+  <Association Name="FK_cartilla-alumno">
+    <End Role="tabla_medica" Type="Self.tabla_medica" Multiplicity="1" />
+    <End Role="alumno-cartilla" Type="Self.alumno-cartilla" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tabla_medica">
+        <PropertyRef Name="id_cartilla_medica" />
+      </Principal>
+      <Dependent Role="alumno-cartilla">
+        <PropertyRef Name="id_cartilla" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_discapacidades_tabla_medica">
     <End Role="tabla_medica" Type="Self.tabla_medica" Multiplicity="1" />
     <End Role="discapacidades" Type="Self.discapacidades" Multiplicity="*" />
     <ReferentialConstraint>
@@ -205,7 +248,7 @@ advertencia 6002: La tabla o vista 'BDDCAM.dbo.tutor-alumno' no tiene definida n
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_idcartilla">
+  <Association Name="FK_enfermedades_tabla_medica">
     <End Role="tabla_medica" Type="Self.tabla_medica" Multiplicity="1" />
     <End Role="enfermedades" Type="Self.enfermedades" Multiplicity="*" />
     <ReferentialConstraint>
@@ -213,18 +256,6 @@ advertencia 6002: La tabla o vista 'BDDCAM.dbo.tutor-alumno' no tiene definida n
         <PropertyRef Name="id_cartilla_medica" />
       </Principal>
       <Dependent Role="enfermedades">
-        <PropertyRef Name="id_cartilla_medica" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_idcartillamedica">
-    <End Role="tabla_medica" Type="Self.tabla_medica" Multiplicity="1" />
-    <End Role="alergias" Type="Self.alergias" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="tabla_medica">
-        <PropertyRef Name="id_cartilla_medica" />
-      </Principal>
-      <Dependent Role="alergias">
         <PropertyRef Name="id_cartilla_medica" />
       </Dependent>
     </ReferentialConstraint>
@@ -262,6 +293,18 @@ advertencia 6002: La tabla o vista 'BDDCAM.dbo.tutor-alumno' no tiene definida n
       </Principal>
       <Dependent Role="programa-turno">
         <PropertyRef Name="id_turno" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_programa-alumno">
+    <End Role="programa" Type="Self.programa" Multiplicity="1" />
+    <End Role="alumno-programa" Type="Self.alumno-programa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="programa">
+        <PropertyRef Name="id_programa" />
+      </Principal>
+      <Dependent Role="alumno-programa">
+        <PropertyRef Name="id_programa" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -313,7 +356,19 @@ advertencia 6002: La tabla o vista 'BDDCAM.dbo.tutor-alumno' no tiene definida n
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityContainer Name="BDCAMModelStoreContainer">
+  <Association Name="FK_tutor-alumno_alumno">
+    <End Role="alumno" Type="Self.alumno" Multiplicity="1" />
+    <End Role="tutor-alumno" Type="Self.tutor-alumno" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="alumno">
+        <PropertyRef Name="id_alumno" />
+      </Principal>
+      <Dependent Role="tutor-alumno">
+        <PropertyRef Name="id_alumno" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="BDDCAMModelStoreContainer">
     <EntitySet Name="alumno" EntityType="Self.alumno" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="programa" EntityType="Self.programa" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="recursos" EntityType="Self.recursos" Schema="dbo" store:Type="Tables" />
@@ -327,6 +382,18 @@ advertencia 6002: La tabla o vista 'BDDCAM.dbo.tutor-alumno' no tiene definida n
     [alergias].[id_cartilla_medica] AS [id_cartilla_medica], 
     [alergias].[alergia] AS [alergia]
     FROM [dbo].[alergias] AS [alergias]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="alumno-cartilla" EntityType="Self.alumno-cartilla" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [alumno-cartilla].[id_alumno] AS [id_alumno], 
+    [alumno-cartilla].[id_cartilla] AS [id_cartilla]
+    FROM [dbo].[alumno-cartilla] AS [alumno-cartilla]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="alumno-programa" EntityType="Self.alumno-programa" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [alumno-programa].[id_alumno] AS [id_alumno], 
+    [alumno-programa].[id_programa] AS [id_programa]
+    FROM [dbo].[alumno-programa] AS [alumno-programa]</DefiningQuery>
     </EntitySet>
     <EntitySet Name="discapacidades" EntityType="Self.discapacidades" store:Type="Tables" store:Schema="dbo">
       <DefiningQuery>SELECT 
@@ -365,25 +432,29 @@ advertencia 6002: La tabla o vista 'BDDCAM.dbo.tutor-alumno' no tiene definida n
     [tutor-alumno].[id_alumno] AS [id_alumno]
     FROM [dbo].[tutor-alumno] AS [tutor-alumno]</DefiningQuery>
     </EntitySet>
-    <AssociationSet Name="FK_alumno" Association="Self.FK_alumno">
-      <End Role="alumno" EntitySet="alumno" />
+    <AssociationSet Name="FK_alergias_tabla_medica" Association="Self.FK_alergias_tabla_medica">
       <End Role="tabla_medica" EntitySet="tabla_medica" />
+      <End Role="alergias" EntitySet="alergias" />
     </AssociationSet>
-    <AssociationSet Name="FK_alumno_id" Association="Self.FK_alumno_id">
+    <AssociationSet Name="FK_alumno-cartilla_alumno" Association="Self.FK_alumno-cartilla_alumno">
       <End Role="alumno" EntitySet="alumno" />
-      <End Role="tutor-alumno" EntitySet="tutor-alumno" />
+      <End Role="alumno-cartilla" EntitySet="alumno-cartilla" />
     </AssociationSet>
-    <AssociationSet Name="FK_discapacidades_cartilla" Association="Self.FK_discapacidades_cartilla">
+    <AssociationSet Name="FK_alumno-programa_alumno" Association="Self.FK_alumno-programa_alumno">
+      <End Role="alumno" EntitySet="alumno" />
+      <End Role="alumno-programa" EntitySet="alumno-programa" />
+    </AssociationSet>
+    <AssociationSet Name="FK_cartilla-alumno" Association="Self.FK_cartilla-alumno">
+      <End Role="tabla_medica" EntitySet="tabla_medica" />
+      <End Role="alumno-cartilla" EntitySet="alumno-cartilla" />
+    </AssociationSet>
+    <AssociationSet Name="FK_discapacidades_tabla_medica" Association="Self.FK_discapacidades_tabla_medica">
       <End Role="tabla_medica" EntitySet="tabla_medica" />
       <End Role="discapacidades" EntitySet="discapacidades" />
     </AssociationSet>
-    <AssociationSet Name="FK_idcartilla" Association="Self.FK_idcartilla">
+    <AssociationSet Name="FK_enfermedades_tabla_medica" Association="Self.FK_enfermedades_tabla_medica">
       <End Role="tabla_medica" EntitySet="tabla_medica" />
       <End Role="enfermedades" EntitySet="enfermedades" />
-    </AssociationSet>
-    <AssociationSet Name="FK_idcartillamedica" Association="Self.FK_idcartillamedica">
-      <End Role="tabla_medica" EntitySet="tabla_medica" />
-      <End Role="alergias" EntitySet="alergias" />
     </AssociationSet>
     <AssociationSet Name="FK_pro" Association="Self.FK_pro">
       <End Role="programa" EntitySet="programa" />
@@ -396,6 +467,10 @@ advertencia 6002: La tabla o vista 'BDDCAM.dbo.tutor-alumno' no tiene definida n
     <AssociationSet Name="FK_programa_turno" Association="Self.FK_programa_turno">
       <End Role="turnos" EntitySet="turnos" />
       <End Role="programa-turno" EntitySet="programa-turno" />
+    </AssociationSet>
+    <AssociationSet Name="FK_programa-alumno" Association="Self.FK_programa-alumno">
+      <End Role="programa" EntitySet="programa" />
+      <End Role="alumno-programa" EntitySet="alumno-programa" />
     </AssociationSet>
     <AssociationSet Name="FK_recurso" Association="Self.FK_recurso">
       <End Role="recursos" EntitySet="recursos" />
@@ -411,6 +486,10 @@ advertencia 6002: La tabla o vista 'BDDCAM.dbo.tutor-alumno' no tiene definida n
     </AssociationSet>
     <AssociationSet Name="FK_tutor_id" Association="Self.FK_tutor_id">
       <End Role="tutor" EntitySet="tutor" />
+      <End Role="tutor-alumno" EntitySet="tutor-alumno" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tutor-alumno_alumno" Association="Self.FK_tutor-alumno_alumno">
+      <End Role="alumno" EntitySet="alumno" />
       <End Role="tutor-alumno" EntitySet="tutor-alumno" />
     </AssociationSet>
   </EntityContainer>

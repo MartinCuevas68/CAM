@@ -17,6 +17,7 @@ namespace _1dataLayer
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public programa()
         {
+            this.alumno = new HashSet<alumno>();
             this.turnos = new HashSet<turnos>();
             this.recursos = new HashSet<recursos>();
         }
@@ -30,6 +31,8 @@ namespace _1dataLayer
         public string modulos { get; set; }
         public string proyecto { get; set; }
     
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<alumno> alumno { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<turnos> turnos { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
