@@ -40,7 +40,7 @@ namespace presentationLayer
 
         private void Consultas_Load(object sender, EventArgs e)
         {
-            //   altaDataGridView.DataSource = businessLayer.Gabriel.alumnosGet();
+            //altaDataGridView.DataSource = businessLayer.Gabriel.alumnosGet();
             
         }
 
@@ -58,6 +58,11 @@ namespace presentationLayer
             this.Hide();
             modificacionesAlumno formModificacion = new modificacionesAlumno();
             formModificacion.Show();
+        }
+
+        private void altaDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

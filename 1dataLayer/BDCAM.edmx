@@ -429,7 +429,7 @@ advertencia 6002: La tabla o vista 'BDDCAM.dbo.tutor-alumno' no tiene definida n
             <PropertyRef Name="id_alumno" />
           </Key>
           <Property Name="id_alumno" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="fecha_registro" Type="Binary" MaxLength="8" FixedLength="true" Nullable="false" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="fecha_registro" Type="Binary" Nullable="false" annotation:StoreGeneratedPattern="Computed" />
           <Property Name="ciclo_escolar" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="nombre" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="apellido_paterno" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />

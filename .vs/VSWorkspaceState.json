@@ -2,9 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\businessLayer",
-    "\\presentationLayer",
-    "\\presentationLayer\\Properties"
+    "\\presentationLayer"
   ],
-  "SelectedNode": "\\presentationLayer\\Consultas.resx",
+  "SelectedNode": "\\presentationLayer\\Consultas.cs",
   "PreviewInSolutionExplorer": false
 }

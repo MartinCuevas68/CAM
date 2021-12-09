@@ -99,6 +99,7 @@ namespace presentationLayer
             this.altaDataGridView.RowHeadersWidth = 51;
             this.altaDataGridView.Size = new System.Drawing.Size(984, 232);
             this.altaDataGridView.TabIndex = 10;
+            this.altaDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.altaDataGridView_CellContentClick);
             // 
             // navBarPanel
             // 
