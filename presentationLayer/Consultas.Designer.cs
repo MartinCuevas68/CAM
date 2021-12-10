@@ -34,9 +34,6 @@ namespace presentationLayer
             this.consultaLabel = new System.Windows.Forms.Label();
             this.filtroLabel = new System.Windows.Forms.Label();
             this.DataGridView = new System.Windows.Forms.DataGridView();
-            this.navBarPanel = new System.Windows.Forms.Panel();
-            this.docentesButton = new System.Windows.Forms.Button();
-            this.alumnosButton = new System.Windows.Forms.Button();
             this.apellidoMaternoTextBox = new System.Windows.Forms.TextBox();
             this.apellidoMaternoLabel = new System.Windows.Forms.Label();
             this.apellidoPaternoTextBox = new System.Windows.Forms.TextBox();
@@ -50,9 +47,12 @@ namespace presentationLayer
             this.modificarButton = new System.Windows.Forms.Button();
             this.imprimirButton = new System.Windows.Forms.Button();
             this.agregarButton = new System.Windows.Forms.Button();
+            this.navBarPanel = new System.Windows.Forms.Panel();
+            this.alumnosButton = new System.Windows.Forms.Button();
+            this.docentesButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView)).BeginInit();
-            this.navBarPanel.SuspendLayout();
             this.busquedaGroupBox.SuspendLayout();
+            this.navBarPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // filtradoComboBox
@@ -63,7 +63,7 @@ namespace presentationLayer
             "Nombre",
             "Taller"});
             this.filtradoComboBox.Location = new System.Drawing.Point(121, 301);
-            this.filtradoComboBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.filtradoComboBox.Margin = new System.Windows.Forms.Padding(2);
             this.filtradoComboBox.Name = "filtradoComboBox";
             this.filtradoComboBox.Size = new System.Drawing.Size(92, 21);
             this.filtradoComboBox.TabIndex = 18;
@@ -94,54 +94,16 @@ namespace presentationLayer
             this.DataGridView.BackgroundColor = System.Drawing.Color.LightGray;
             this.DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DataGridView.Location = new System.Drawing.Point(21, 60);
-            this.DataGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DataGridView.Margin = new System.Windows.Forms.Padding(2);
             this.DataGridView.Name = "DataGridView";
             this.DataGridView.RowHeadersWidth = 51;
             this.DataGridView.Size = new System.Drawing.Size(984, 232);
             this.DataGridView.TabIndex = 10;
             // 
-            // navBarPanel
-            // 
-            this.navBarPanel.BackColor = System.Drawing.Color.Thistle;
-            this.navBarPanel.Controls.Add(this.docentesButton);
-            this.navBarPanel.Controls.Add(this.alumnosButton);
-            this.navBarPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.navBarPanel.Location = new System.Drawing.Point(0, 0);
-            this.navBarPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.navBarPanel.Name = "navBarPanel";
-            this.navBarPanel.Size = new System.Drawing.Size(1033, 26);
-            this.navBarPanel.TabIndex = 20;
-            // 
-            // docentesButton
-            // 
-            this.docentesButton.AutoSize = true;
-            this.docentesButton.Dock = System.Windows.Forms.DockStyle.Right;
-            this.docentesButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.docentesButton.Location = new System.Drawing.Point(887, 0);
-            this.docentesButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.docentesButton.Name = "docentesButton";
-            this.docentesButton.Size = new System.Drawing.Size(76, 26);
-            this.docentesButton.TabIndex = 22;
-            this.docentesButton.Text = "DOCENTES";
-            this.docentesButton.UseVisualStyleBackColor = true;
-            // 
-            // alumnosButton
-            // 
-            this.alumnosButton.AutoSize = true;
-            this.alumnosButton.Dock = System.Windows.Forms.DockStyle.Right;
-            this.alumnosButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.alumnosButton.Location = new System.Drawing.Point(963, 0);
-            this.alumnosButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.alumnosButton.Name = "alumnosButton";
-            this.alumnosButton.Size = new System.Drawing.Size(70, 26);
-            this.alumnosButton.TabIndex = 21;
-            this.alumnosButton.Text = "ALUMNOS";
-            this.alumnosButton.UseVisualStyleBackColor = true;
-            // 
             // apellidoMaternoTextBox
             // 
             this.apellidoMaternoTextBox.Location = new System.Drawing.Point(691, 60);
-            this.apellidoMaternoTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.apellidoMaternoTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.apellidoMaternoTextBox.Multiline = true;
             this.apellidoMaternoTextBox.Name = "apellidoMaternoTextBox";
             this.apellidoMaternoTextBox.Size = new System.Drawing.Size(125, 21);
@@ -160,7 +122,7 @@ namespace presentationLayer
             // apellidoPaternoTextBox
             // 
             this.apellidoPaternoTextBox.Location = new System.Drawing.Point(425, 60);
-            this.apellidoPaternoTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.apellidoPaternoTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.apellidoPaternoTextBox.Multiline = true;
             this.apellidoPaternoTextBox.Name = "apellidoPaternoTextBox";
             this.apellidoPaternoTextBox.Size = new System.Drawing.Size(125, 21);
@@ -189,7 +151,7 @@ namespace presentationLayer
             // nombreTextBox
             // 
             this.nombreTextBox.Location = new System.Drawing.Point(112, 112);
-            this.nombreTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.nombreTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.nombreTextBox.Multiline = true;
             this.nombreTextBox.Name = "nombreTextBox";
             this.nombreTextBox.Size = new System.Drawing.Size(125, 21);
@@ -209,9 +171,9 @@ namespace presentationLayer
             this.busquedaGroupBox.Controls.Add(this.apellidoMaternoLabel);
             this.busquedaGroupBox.Font = new System.Drawing.Font("Leelawadee UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.busquedaGroupBox.Location = new System.Drawing.Point(28, 373);
-            this.busquedaGroupBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.busquedaGroupBox.Margin = new System.Windows.Forms.Padding(2);
             this.busquedaGroupBox.Name = "busquedaGroupBox";
-            this.busquedaGroupBox.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.busquedaGroupBox.Padding = new System.Windows.Forms.Padding(2);
             this.busquedaGroupBox.Size = new System.Drawing.Size(977, 205);
             this.busquedaGroupBox.TabIndex = 26;
             this.busquedaGroupBox.TabStop = false;
@@ -285,16 +247,54 @@ namespace presentationLayer
             this.agregarButton.UseVisualStyleBackColor = true;
             this.agregarButton.Click += new System.EventHandler(this.agregarButton_Click_1);
             // 
+            // navBarPanel
+            // 
+            this.navBarPanel.BackColor = System.Drawing.Color.Thistle;
+            this.navBarPanel.Controls.Add(this.alumnosButton);
+            this.navBarPanel.Controls.Add(this.docentesButton);
+            this.navBarPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.navBarPanel.Location = new System.Drawing.Point(0, 0);
+            this.navBarPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.navBarPanel.Name = "navBarPanel";
+            this.navBarPanel.Size = new System.Drawing.Size(1033, 32);
+            this.navBarPanel.TabIndex = 137;
+            // 
+            // alumnosButton
+            // 
+            this.alumnosButton.AutoSize = true;
+            this.alumnosButton.Dock = System.Windows.Forms.DockStyle.Right;
+            this.alumnosButton.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.alumnosButton.Location = new System.Drawing.Point(853, 0);
+            this.alumnosButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.alumnosButton.Name = "alumnosButton";
+            this.alumnosButton.Size = new System.Drawing.Size(86, 32);
+            this.alumnosButton.TabIndex = 1;
+            this.alumnosButton.Text = "ALUMNOS";
+            this.alumnosButton.UseVisualStyleBackColor = true;
+            // 
+            // docentesButton
+            // 
+            this.docentesButton.AutoSize = true;
+            this.docentesButton.Dock = System.Windows.Forms.DockStyle.Right;
+            this.docentesButton.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.docentesButton.Location = new System.Drawing.Point(939, 0);
+            this.docentesButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.docentesButton.Name = "docentesButton";
+            this.docentesButton.Size = new System.Drawing.Size(94, 32);
+            this.docentesButton.TabIndex = 0;
+            this.docentesButton.Text = "DOCENTES";
+            this.docentesButton.UseVisualStyleBackColor = true;
+            // 
             // Consultas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1033, 609);
+            this.Controls.Add(this.navBarPanel);
             this.Controls.Add(this.busquedaGroupBox);
             this.Controls.Add(this.imprimirButton);
             this.Controls.Add(this.agregarButton);
-            this.Controls.Add(this.navBarPanel);
             this.Controls.Add(this.filtradoComboBox);
             this.Controls.Add(this.consultaLabel);
             this.Controls.Add(this.filtroLabel);
@@ -305,10 +305,10 @@ namespace presentationLayer
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Consultas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView)).EndInit();
-            this.navBarPanel.ResumeLayout(false);
-            this.navBarPanel.PerformLayout();
             this.busquedaGroupBox.ResumeLayout(false);
             this.busquedaGroupBox.PerformLayout();
+            this.navBarPanel.ResumeLayout(false);
+            this.navBarPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -322,9 +322,6 @@ namespace presentationLayer
         private System.Windows.Forms.Button modificarButton;
         private System.Windows.Forms.Button buscarButton;
         private System.Windows.Forms.DataGridView DataGridView;
-        private System.Windows.Forms.Panel navBarPanel;
-        private System.Windows.Forms.Button docentesButton;
-        private System.Windows.Forms.Button alumnosButton;
         private System.Windows.Forms.Button agregarButton;
         private System.Windows.Forms.Button vaciarButton;
         private System.Windows.Forms.TextBox apellidoMaternoTextBox;
@@ -335,5 +332,8 @@ namespace presentationLayer
         private System.Windows.Forms.TextBox nombreTextBox;
         private System.Windows.Forms.Button imprimirButton;
         private System.Windows.Forms.GroupBox busquedaGroupBox;
+        private System.Windows.Forms.Panel navBarPanel;
+        private System.Windows.Forms.Button alumnosButton;
+        private System.Windows.Forms.Button docentesButton;
     }
 }

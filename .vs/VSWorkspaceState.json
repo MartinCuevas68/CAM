@@ -2,7 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\businessLayer",
-    "\\presentationLayer"
+    "\\presentationLayer",
+    "\\presentationLayer\\Properties"
   ],
   "SelectedNode": "\\businessLayer\\Gabriel.cs",
   "PreviewInSolutionExplorer": false

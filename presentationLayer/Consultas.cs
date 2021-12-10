@@ -53,7 +53,7 @@ namespace presentationLayer
 
         private void Consultas_Load(object sender, EventArgs e)
         {
-            DataGridView.DataSource = businessLayer.Gabriel.alumnosGet();
+         //   DataGridView.DataSource = businessLayer.Gabriel.alumnosGet();
         }
 
         private void agregarButton_Click_1(object sender, EventArgs e)

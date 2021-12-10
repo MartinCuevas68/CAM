@@ -6,18 +6,23 @@ namespace presentationLayer
 {
     class Edder
     {
+      
         public static void botonBuscar(Button buscarButton)
         {
             buscarButton.Location = new Point(1000, 110);
             buscarButton.Size = new Size(47, 28);
             buscarButton.Font = new Font("Leelawadee UI", 12, FontStyle.Bold);
-
+            var tt = new ToolTip();
+            tt.SetToolTip( buscarButton, "REALIZAR CONSULTA");
+     
         }
 
         public static void botonImprimir(Button imprimirButton)
         {
-            imprimirButton.Location = new Point(1192, 58);
+            imprimirButton.Location = new Point(1305, 60);
             imprimirButton.Size = new Size(47, 28);
+            var tt = new ToolTip();
+            tt.SetToolTip(imprimirButton, "REALIZAR IMPRESIÓN DEL DOCUMENTO");
 
         }
         public static void botonEliminar(Button eliminarButton)
@@ -25,12 +30,16 @@ namespace presentationLayer
             eliminarButton.Location = new Point(1195, 110);
             eliminarButton.Size = new Size(47, 28);
          eliminarButton.Font = new Font("Leelawadee UI", 12, FontStyle.Bold);
+            var tt = new ToolTip();
+            tt.SetToolTip(eliminarButton, "REALIZAR ELIMINACIÓN DEL ALUMNO");
         }
         public static void botonModificar(Button modificarButton)
         {
             modificarButton.Location = new Point(1130, 110);
             modificarButton.Size = new Size(47, 28);
             modificarButton.Font = new Font("Leelawadee UI", 12, FontStyle.Bold);
+            var tt = new ToolTip();
+            tt.SetToolTip(modificarButton, "REALIZAR MODIFICACÍÓN DEL ALUMNO");
 
         }
         public static void consultaDataView(DataGridView consultaDataGridView)
@@ -73,21 +82,26 @@ namespace presentationLayer
 
         public static void agregarBttn(Button agregarButton)
         {
-            agregarButton.Location = new Point(1120, 58);
+            agregarButton.Location = new Point(1240, 60);
             agregarButton.Size = new Size(47, 28);
+            var tt = new ToolTip();
+            tt.SetToolTip(agregarButton, "REALIZAR UNA ALTA DE ALUMNO");
         }
 
         public static void alumnosbttn(Button alumnosButton)
         {
-            alumnosButton.Location = new Point(1184, 12);
-            alumnosButton.Size = new Size(75, 23);
-
+           // alumnosButton.Location = new Point(1184, 12);
+           // alumnosButton.Size = new Size(86, 32);
+            var tt = new ToolTip();
+            tt.SetToolTip(alumnosButton, "MENÚ DE ALUMNOS");
         }
 
         public static void docentesbttn(Button docentesButton)
         {
-            docentesButton.Location = new Point(1266, 12);
-            docentesButton.Size = new Size(75, 23);
+        //    docentesButton.Location = new Point(1266, 12);
+          //  docentesButton.Size = new Size(86, 32);
+            var tt = new ToolTip();
+            tt.SetToolTip(docentesButton, "MENÚ DE DOCENTES");
         }
 
 
@@ -129,6 +143,8 @@ namespace presentationLayer
             vaciarButton.Location = new Point(1065, 110);
             vaciarButton.Size = new Size(47, 28);
             vaciarButton.Font = new Font("Leelawadee UI", 12, FontStyle.Bold);
+            var tt = new ToolTip();
+            tt.SetToolTip(vaciarButton, "VACIAR CAMPOS DE TEXTO");
         }
 
         public static void groupboxinferior(GroupBox busquedaGroupBox)

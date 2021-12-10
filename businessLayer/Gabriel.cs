@@ -17,7 +17,7 @@ namespace businessLayer
                     var query = (from a in db.alumno
                                  select new _1dataLayer.alumnoDTO
                                  {
-                                     id_alumno = a.id_alumno,
+                                     //id_alumno = a.id_alumno,
                                      ciclo_escolar = a.ciclo_escolar,
                                      nombre = a.nombre,
                                      //apellido_paterno = a.apellido_paterno,
