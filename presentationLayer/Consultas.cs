@@ -48,6 +48,7 @@ namespace presentationLayer
         {
             Consultas consultas = new Consultas();
             consultas.Close();
+            this.Hide();
             altaAlumno altas = new altaAlumno();
             altas.Show();
             
@@ -60,9 +61,5 @@ namespace presentationLayer
             formModificacion.Show();
         }
 
-        private void altaDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
     }
 }
