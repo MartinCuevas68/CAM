@@ -106,7 +106,6 @@ namespace presentationLayer
             this.telefonoContactoMedicoAlumnoTextBox = new System.Windows.Forms.TextBox();
             this.alergiasAlumnoTextBox = new System.Windows.Forms.TextBox();
             this.grupoSanguineoTextBox = new System.Windows.Forms.TextBox();
-            this.documentacionListBox = new System.Windows.Forms.CheckedListBox();
             this.informacionGeneralAlumnoGroupBox = new System.Windows.Forms.GroupBox();
             this.limpiarFormato1Button = new System.Windows.Forms.Button();
             this.informacionEscolarGroupBox = new System.Windows.Forms.GroupBox();
@@ -134,6 +133,12 @@ namespace presentationLayer
             this.docentesButton = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.realizarAltaButton = new System.Windows.Forms.Button();
+            this.documentacionGB = new System.Windows.Forms.GroupBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.checkBox5 = new System.Windows.Forms.CheckBox();
             this.tipoIngresoGroupBox.SuspendLayout();
             this.otroAlumnoTutorGroupBox.SuspendLayout();
             this.informacionGeneralAlumnoGroupBox.SuspendLayout();
@@ -141,6 +146,7 @@ namespace presentationLayer
             this.informacionMedicaAlumnoGroupBox.SuspendLayout();
             this.informacionTutorGroupBox.SuspendLayout();
             this.altaAlumnoPanel.SuspendLayout();
+            this.documentacionGB.SuspendLayout();
             this.SuspendLayout();
             // 
             // siguienteButton
@@ -541,19 +547,6 @@ namespace presentationLayer
             resources.ApplyResources(this.grupoSanguineoTextBox, "grupoSanguineoTextBox");
             this.grupoSanguineoTextBox.Name = "grupoSanguineoTextBox";
             // 
-            // documentacionListBox
-            // 
-            this.documentacionListBox.FormattingEnabled = true;
-            this.documentacionListBox.Items.AddRange(new object[] {
-            resources.GetString("documentacionListBox.Items"),
-            resources.GetString("documentacionListBox.Items1"),
-            resources.GetString("documentacionListBox.Items2"),
-            resources.GetString("documentacionListBox.Items3"),
-            resources.GetString("documentacionListBox.Items4"),
-            resources.GetString("documentacionListBox.Items5")});
-            resources.ApplyResources(this.documentacionListBox, "documentacionListBox");
-            this.documentacionListBox.Name = "documentacionListBox";
-            // 
             // informacionGeneralAlumnoGroupBox
             // 
             this.informacionGeneralAlumnoGroupBox.BackColor = System.Drawing.SystemColors.ControlLight;
@@ -613,6 +606,7 @@ namespace presentationLayer
             // informacionMedicaAlumnoGroupBox
             // 
             this.informacionMedicaAlumnoGroupBox.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.informacionMedicaAlumnoGroupBox.Controls.Add(this.documentacionGB);
             this.informacionMedicaAlumnoGroupBox.Controls.Add(this.limpiarFormato3Button);
             this.informacionMedicaAlumnoGroupBox.Controls.Add(this.eliminarAlergiasButton);
             this.informacionMedicaAlumnoGroupBox.Controls.Add(this.eliminarDiscapacidadesButton);
@@ -626,7 +620,6 @@ namespace presentationLayer
             this.informacionMedicaAlumnoGroupBox.Controls.Add(this.mostrarAlergiasRichTextBox);
             this.informacionMedicaAlumnoGroupBox.Controls.Add(this.mostrarEnfermedadesRichTextBox);
             this.informacionMedicaAlumnoGroupBox.Controls.Add(this.mostrarDiscapacidadRichTextBox);
-            this.informacionMedicaAlumnoGroupBox.Controls.Add(this.documentacionListBox);
             this.informacionMedicaAlumnoGroupBox.Controls.Add(this.servicioMedicoAlumnoLabel);
             this.informacionMedicaAlumnoGroupBox.Controls.Add(this.grupoSanguineoAlumnoLabel);
             this.informacionMedicaAlumnoGroupBox.Controls.Add(this.enfermedaresAlumnoLabel);
@@ -826,6 +819,47 @@ namespace presentationLayer
             this.realizarAltaButton.UseVisualStyleBackColor = true;
             this.realizarAltaButton.Click += new System.EventHandler(this.guardarButton_Click);
             // 
+            // documentacionGB
+            // 
+            this.documentacionGB.Controls.Add(this.checkBox5);
+            this.documentacionGB.Controls.Add(this.checkBox4);
+            this.documentacionGB.Controls.Add(this.checkBox3);
+            this.documentacionGB.Controls.Add(this.checkBox2);
+            this.documentacionGB.Controls.Add(this.checkBox1);
+            resources.ApplyResources(this.documentacionGB, "documentacionGB");
+            this.documentacionGB.Name = "documentacionGB";
+            this.documentacionGB.TabStop = false;
+            // 
+            // checkBox1
+            // 
+            resources.ApplyResources(this.checkBox1, "checkBox1");
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            resources.ApplyResources(this.checkBox2, "checkBox2");
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // checkBox3
+            // 
+            resources.ApplyResources(this.checkBox3, "checkBox3");
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.UseVisualStyleBackColor = true;
+            // 
+            // checkBox4
+            // 
+            resources.ApplyResources(this.checkBox4, "checkBox4");
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.UseVisualStyleBackColor = true;
+            // 
+            // checkBox5
+            // 
+            resources.ApplyResources(this.checkBox5, "checkBox5");
+            this.checkBox5.Name = "checkBox5";
+            this.checkBox5.UseVisualStyleBackColor = true;
+            // 
             // altaAlumno
             // 
             resources.ApplyResources(this, "$this");
@@ -858,6 +892,8 @@ namespace presentationLayer
             this.informacionTutorGroupBox.PerformLayout();
             this.altaAlumnoPanel.ResumeLayout(false);
             this.altaAlumnoPanel.PerformLayout();
+            this.documentacionGB.ResumeLayout(false);
+            this.documentacionGB.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -941,7 +977,6 @@ namespace presentationLayer
         private System.Windows.Forms.TextBox telefonoContactoMedicoAlumnoTextBox;
         private System.Windows.Forms.TextBox alergiasAlumnoTextBox;
         private System.Windows.Forms.TextBox grupoSanguineoTextBox;
-        private System.Windows.Forms.CheckedListBox documentacionListBox;
         private System.Windows.Forms.GroupBox informacionGeneralAlumnoGroupBox;
         private System.Windows.Forms.GroupBox informacionEscolarGroupBox;
         private System.Windows.Forms.GroupBox informacionMedicaAlumnoGroupBox;
@@ -969,6 +1004,12 @@ namespace presentationLayer
         private System.Windows.Forms.Button limpiarFormato2Button;
         private System.Windows.Forms.Button limpiarFormato3Button;
         private System.Windows.Forms.Button limpiarFormato1Button;
+        private System.Windows.Forms.GroupBox documentacionGB;
+        private System.Windows.Forms.CheckBox checkBox5;
+        private System.Windows.Forms.CheckBox checkBox4;
+        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
 
