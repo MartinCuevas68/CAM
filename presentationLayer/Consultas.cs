@@ -40,7 +40,7 @@ namespace presentationLayer
 
         private void Consultas_Load(object sender, EventArgs e)
         {
-            //altaDataGridView.DataSource = businessLayer.Gabriel.alumnosGet();
+            altaDataGridView.DataSource = businessLayer.Gabriel.alumnosGet();
             
         }
 
