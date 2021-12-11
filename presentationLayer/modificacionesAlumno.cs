@@ -62,7 +62,7 @@ namespace presentationLayer
             Evelyn.altasInformacionMedicaAlumno(servicioMedicoAlumnoLabel, discapacidadLabel, enfermedaresAlumnoLabel, alergiasAlumnoLabel, 
                     telefonoContactoMedicoAlumnoLabel, grupoSanguineoAlumnoLabel, documentacionAlumnoLabel, mostrarDiscapacidadLabel, 
                     mostrarEnfermedadesLabel, mostrarAlergiasLabel, servicioMedicoTextBox, discapacidadTextBox, enfermedadesAlumnoTextBox, 
-                    alergiasAlumnoTextBox, telefonoContactoMedicoAlumnoTextBox, grupoSanguineoTextBox, documentacionListBox, mostrarDiscapacidadRichTextBox, 
+                    alergiasAlumnoTextBox, telefonoContactoMedicoAlumnoTextBox, grupoSanguineoTextBox, documentacionGB, mostrarDiscapacidadRichTextBox, 
                     mostrarEnfermedadesRichTextBox, mostrarAlergiasRichTextBox, agregarAlergiasButton, agregarEnfermedadesButton, agregarDiscapacidadButton);
             Claudia.altasInformacionEscolar(cicloEscolarLabel, curpLabel, añosCumplidosLabel, cicloEscolarTextBox, curpTextBox, añosCumplidosTextBox, tipoIngresoGroupBox, nuevoIngresoRadioButton, reingresoRadioButton);
 

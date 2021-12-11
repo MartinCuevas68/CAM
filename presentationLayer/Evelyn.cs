@@ -15,6 +15,12 @@ namespace presentationLayer
 
         public static void eliminarBotones(Button eliminarEnfermedades, Button eliminarDiscapacidad, Button eliminarAlergias)
         {
+            //Texto a botones
+            var tt = new ToolTip();
+            tt.SetToolTip(eliminarAlergias, "ELIMINAR ALERGIAS");
+            tt.SetToolTip(eliminarDiscapacidad, "ELIMINAR DISCAPACIDADES");
+            tt.SetToolTip(eliminarEnfermedades, "ELIMINAR  ENFERMEDADES");
+
             eliminarDiscapacidad.Location = new Point(282, 315);
             eliminarEnfermedades.Location = new Point(622, 315);
             eliminarAlergias.Location = new Point(941, 315);
@@ -23,7 +29,7 @@ namespace presentationLayer
         public static void altasInformacionMedicaAlumno(Label servicioMedico, Label discapacidad, Label enfermedades, Label alergias,
             Label telefonoContacto, Label grupoSanguineo, Label documentacion, Label mostrarDiscapacidad, Label mostrarEnfermedades,
             Label mostrarAlergias, TextBox servicioMedicoTB, TextBox discapacidadTB, TextBox enfermedadesTB, TextBox alergiasTB,
-            TextBox telefonoContactoTB, TextBox grupoSanguineoTB, ListBox documentacionLB, RichTextBox mostrarDiscapacidadTB,
+            TextBox telefonoContactoTB, TextBox grupoSanguineoTB, GroupBox documentacionGB, RichTextBox mostrarDiscapacidadTB,
             RichTextBox mostrarEnfermedadTB, RichTextBox mostrarAlergiasTB, Button agregarAlergias, Button agregarEnfermedad, Button agregarDiscapacidad)
         {
             int aux = 40;
@@ -39,7 +45,8 @@ namespace presentationLayer
             telefonoContacto.Location = new Point(20, aux);
             telefonoContactoTB.Location = new Point(240, aux);
 
-            documentacionLB.Location = new Point(680, aux);
+            documentacionGB.Location = new Point(680, aux);
+            documentacionGB.Font = new Font("Leelawadee UI", 12);
 
             //Info
             aux = aux + 80;
@@ -48,6 +55,13 @@ namespace presentationLayer
             agregarDiscapacidad.Location = new Point(360, aux - 4);
 
             aux = aux + 40;
+
+            //Texto a botones
+            var tt = new ToolTip();
+            tt.SetToolTip(agregarAlergias, "AGREGAR ALERGIA");
+            tt.SetToolTip(agregarDiscapacidad, "AGREGAR DISCAPACIDAD");
+            tt.SetToolTip(agregarEnfermedad, "AGREGAR ENFERMEDAD");
+
             enfermedades.Location = new Point(20, aux);
             enfermedadesTB.Location = new Point(240, aux - 4);
             agregarEnfermedad.Location = new Point(360, aux - 4);
@@ -87,7 +101,7 @@ namespace presentationLayer
             discapacidadTB.Size = new Size(100, 30);
             enfermedadesTB.Size = new Size(100, 30);
             alergiasTB.Size = new Size(100, 30);
-            documentacionLB.Size = new Size(300, 180);
+            documentacionGB.Size = new Size(320, 200);
             telefonoContactoTB.Size = new Size(100, 150);
             grupoSanguineoTB.Size = new Size(100, 30);
             mostrarDiscapacidadTB.Size = new Size(300, 150);
@@ -112,6 +126,10 @@ namespace presentationLayer
 
         public static void altasBotonesPanel(Button alumnos, Button docentes)
         {
+            var tt = new ToolTip();
+            tt.SetToolTip(docentes, "MENÚ DOCENTES");
+            tt.SetToolTip(alumnos, "MENÚ ALUMNOS");
+
             docentes.Font = new Font("Leelawadee UI", 12);
             alumnos.Font = new Font("Leelawadee UI", 12);
         }

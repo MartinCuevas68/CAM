@@ -185,3 +185,5 @@ C:\Users\galle\source\repos\CAM3\presentationLayer\obj\Debug\presentationLayer.c
 C:\Users\galle\source\repos\CAM3\presentationLayer\obj\Debug\presentationLayer.csproj.CopyComplete
 C:\Users\galle\source\repos\CAM3\presentationLayer\obj\Debug\presentationLayer.exe
 C:\Users\galle\source\repos\CAM3\presentationLayer\obj\Debug\presentationLayer.pdb
+C:\Users\vanes\Source\Repos\CAM\presentationLayer\obj\Debug\presentationLayer.modificacionesAlumno.resources
+C:\Users\vanes\Source\Repos\CAM\presentationLayer\obj\Debug\presentationLayer.csproj.CopyComplete

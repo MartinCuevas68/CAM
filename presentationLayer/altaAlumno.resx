@@ -2200,7 +2200,7 @@
     <value>120</value>
   </data>
   <data name="documentacionAlumnoLabel.Text" xml:space="preserve">
-    <value>DOCUMENTACIÓN QUE PRESENTO:</value>
+    <value>DOCUMENTACIÓN QUE PRESENTÓ:</value>
   </data>
   <data name="&gt;&gt;documentacionAlumnoLabel.Name" xml:space="preserve">
     <value>documentacionAlumnoLabel</value>
@@ -2334,48 +2334,6 @@
   <data name="&gt;&gt;grupoSanguineoTextBox.ZOrder" xml:space="preserve">
     <value>20</value>
   </data>
-  <data name="documentacionListBox.Items" xml:space="preserve">
-    <value>ACTA DE NACIMIENTO</value>
-  </data>
-  <data name="documentacionListBox.Items1" xml:space="preserve">
-    <value>FOTOGRAFÍAS</value>
-  </data>
-  <data name="documentacionListBox.Items2" xml:space="preserve">
-    <value>C.U.R.P.</value>
-  </data>
-  <data name="documentacionListBox.Items3" xml:space="preserve">
-    <value>INE ALUMNO                    </value>
-  </data>
-  <data name="documentacionListBox.Items4" xml:space="preserve">
-    <value>INE PADRE O TUTOR</value>
-  </data>
-  <data name="documentacionListBox.Items5" xml:space="preserve">
-    <value>COMPROBANTE DE DOMICILIO</value>
-  </data>
-  <data name="documentacionListBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>553, 45</value>
-  </data>
-  <data name="documentacionListBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="documentacionListBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>189, 79</value>
-  </data>
-  <data name="documentacionListBox.TabIndex" type="System.Int32, mscorlib">
-    <value>127</value>
-  </data>
-  <data name="&gt;&gt;documentacionListBox.Name" xml:space="preserve">
-    <value>documentacionListBox</value>
-  </data>
-  <data name="&gt;&gt;documentacionListBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckedListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;documentacionListBox.Parent" xml:space="preserve">
-    <value>informacionMedicaAlumnoGroupBox</value>
-  </data>
-  <data name="&gt;&gt;documentacionListBox.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
   <data name="limpiarFormato1Button.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -2454,6 +2412,162 @@
   <data name="&gt;&gt;informacionEscolarGroupBox.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
+  <data name="checkBox5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBox5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 106</value>
+  </data>
+  <data name="checkBox5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 17</value>
+  </data>
+  <data name="checkBox5.TabIndex" type="System.Int32, mscorlib">
+    <value>143</value>
+  </data>
+  <data name="checkBox5.Text" xml:space="preserve">
+    <value>INE PADRE O TUTOR</value>
+  </data>
+  <data name="&gt;&gt;checkBox5.Name" xml:space="preserve">
+    <value>checkBox5</value>
+  </data>
+  <data name="&gt;&gt;checkBox5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox5.Parent" xml:space="preserve">
+    <value>documentacionGB</value>
+  </data>
+  <data name="&gt;&gt;checkBox5.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="checkBox4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 84</value>
+  </data>
+  <data name="checkBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 17</value>
+  </data>
+  <data name="checkBox4.TabIndex" type="System.Int32, mscorlib">
+    <value>146</value>
+  </data>
+  <data name="checkBox4.Text" xml:space="preserve">
+    <value>INE ALUMNO</value>
+  </data>
+  <data name="&gt;&gt;checkBox4.Name" xml:space="preserve">
+    <value>checkBox4</value>
+  </data>
+  <data name="&gt;&gt;checkBox4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox4.Parent" xml:space="preserve">
+    <value>documentacionGB</value>
+  </data>
+  <data name="&gt;&gt;checkBox4.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="checkBox3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 62</value>
+  </data>
+  <data name="checkBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 17</value>
+  </data>
+  <data name="checkBox3.TabIndex" type="System.Int32, mscorlib">
+    <value>145</value>
+  </data>
+  <data name="checkBox3.Text" xml:space="preserve">
+    <value>C.U.R.P</value>
+  </data>
+  <data name="&gt;&gt;checkBox3.Name" xml:space="preserve">
+    <value>checkBox3</value>
+  </data>
+  <data name="&gt;&gt;checkBox3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox3.Parent" xml:space="preserve">
+    <value>documentacionGB</value>
+  </data>
+  <data name="&gt;&gt;checkBox3.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="checkBox2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 40</value>
+  </data>
+  <data name="checkBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 17</value>
+  </data>
+  <data name="checkBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>144</value>
+  </data>
+  <data name="checkBox2.Text" xml:space="preserve">
+    <value>FOTOGRAFÍAS</value>
+  </data>
+  <data name="&gt;&gt;checkBox2.Name" xml:space="preserve">
+    <value>checkBox2</value>
+  </data>
+  <data name="&gt;&gt;checkBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox2.Parent" xml:space="preserve">
+    <value>documentacionGB</value>
+  </data>
+  <data name="&gt;&gt;checkBox2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="checkBox1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 18</value>
+  </data>
+  <data name="checkBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 17</value>
+  </data>
+  <data name="checkBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>143</value>
+  </data>
+  <data name="checkBox1.Text" xml:space="preserve">
+    <value>ACTA DE NACIMIENTO</value>
+  </data>
+  <data name="&gt;&gt;checkBox1.Name" xml:space="preserve">
+    <value>checkBox1</value>
+  </data>
+  <data name="&gt;&gt;checkBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox1.Parent" xml:space="preserve">
+    <value>documentacionGB</value>
+  </data>
+  <data name="&gt;&gt;checkBox1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="documentacionGB.Location" type="System.Drawing.Point, System.Drawing">
+    <value>526, 42</value>
+  </data>
+  <data name="documentacionGB.Size" type="System.Drawing.Size, System.Drawing">
+    <value>227, 139</value>
+  </data>
+  <data name="documentacionGB.TabIndex" type="System.Int32, mscorlib">
+    <value>142</value>
+  </data>
+  <data name="&gt;&gt;documentacionGB.Name" xml:space="preserve">
+    <value>documentacionGB</value>
+  </data>
+  <data name="&gt;&gt;documentacionGB.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;documentacionGB.Parent" xml:space="preserve">
+    <value>informacionMedicaAlumnoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;documentacionGB.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="limpiarFormato3Button.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Zoom</value>
   </data>
@@ -2482,7 +2596,7 @@
     <value>informacionMedicaAlumnoGroupBox</value>
   </data>
   <data name="&gt;&gt;limpiarFormato3Button.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="eliminarAlergiasButton.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2515,7 +2629,7 @@
     <value>informacionMedicaAlumnoGroupBox</value>
   </data>
   <data name="&gt;&gt;eliminarAlergiasButton.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="eliminarDiscapacidadesButton.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2548,7 +2662,7 @@
     <value>informacionMedicaAlumnoGroupBox</value>
   </data>
   <data name="&gt;&gt;eliminarDiscapacidadesButton.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="eliminarEnfermedadButton.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2581,7 +2695,7 @@
     <value>informacionMedicaAlumnoGroupBox</value>
   </data>
   <data name="&gt;&gt;eliminarEnfermedadButton.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="agregarAlergiasButton.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2611,7 +2725,7 @@
     <value>informacionMedicaAlumnoGroupBox</value>
   </data>
   <data name="&gt;&gt;agregarAlergiasButton.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="agregarDiscapacidadButton.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2641,7 +2755,7 @@
     <value>informacionMedicaAlumnoGroupBox</value>
   </data>
   <data name="&gt;&gt;agregarDiscapacidadButton.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="agregarEnfermedadesButton.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2671,7 +2785,7 @@
     <value>informacionMedicaAlumnoGroupBox</value>
   </data>
   <data name="&gt;&gt;agregarEnfermedadesButton.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="mostrarAlergiasLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2704,7 +2818,7 @@
     <value>informacionMedicaAlumnoGroupBox</value>
   </data>
   <data name="&gt;&gt;mostrarAlergiasLabel.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="mostrarEnfermedadesLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2737,7 +2851,7 @@
     <value>informacionMedicaAlumnoGroupBox</value>
   </data>
   <data name="&gt;&gt;mostrarEnfermedadesLabel.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="mostrarDiscapacidadLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2770,7 +2884,7 @@
     <value>informacionMedicaAlumnoGroupBox</value>
   </data>
   <data name="&gt;&gt;mostrarDiscapacidadLabel.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="mostrarAlergiasRichTextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>344, 150</value>
@@ -2797,7 +2911,7 @@
     <value>informacionMedicaAlumnoGroupBox</value>
   </data>
   <data name="&gt;&gt;mostrarAlergiasRichTextBox.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="mostrarEnfermedadesRichTextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>200, 150</value>
@@ -2824,7 +2938,7 @@
     <value>informacionMedicaAlumnoGroupBox</value>
   </data>
   <data name="&gt;&gt;mostrarEnfermedadesRichTextBox.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="mostrarDiscapacidadRichTextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>11, 150</value>
@@ -2851,7 +2965,7 @@
     <value>informacionMedicaAlumnoGroupBox</value>
   </data>
   <data name="&gt;&gt;mostrarDiscapacidadRichTextBox.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="informacionMedicaAlumnoGroupBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>52, 382</value>
