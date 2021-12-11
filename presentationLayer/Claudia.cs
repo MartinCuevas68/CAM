@@ -251,6 +251,11 @@ namespace presentationLayer
             formato1.Size = new Size(35, 35);
             formato2.Size = new Size(35, 35);
             formato3.Size = new Size(35, 35);
+
+            var tt = new ToolTip();
+            tt.SetToolTip(formato1, "LIMPIAR ESPACIOS");
+            tt.SetToolTip(formato2, "LIMPIAR ESPACIOS");
+            tt.SetToolTip(formato3, "LIMPIAR ESPACIOS");
         }
     }
 }
