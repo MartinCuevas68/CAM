@@ -12,6 +12,10 @@ namespace presentationLayer
 {
     public partial class Consultas : Form
     {
+
+        public DataGridViewCheckBoxColumn checkboxDgv = new DataGridViewCheckBoxColumn();
+
+
         public Consultas()
         {
             InitializeComponent();
@@ -41,7 +45,19 @@ namespace presentationLayer
         private void Consultas_Load(object sender, EventArgs e)
         {
             altaDataGridView.DataSource = businessLayer.Gabriel.alumnosGet();
-            
+
+            altaDataGridView.AllowUserToOrderColumns = true;
+            altaDataGridView.AllowUserToResizeColumns = true;
+
+            altaDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            altaDataGridView.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None;
+
+
+            checkboxDgv.HeaderText = "Seleccion";
+            checkboxDgv.Name = "chbSeleccion";
+            checkboxDgv.FlatStyle = FlatStyle.Standard;
+            altaDataGridView.Columns.Add(checkboxDgv);
+
         }
 
         private void agregarButton_Click_1(object sender, EventArgs e)
@@ -52,6 +68,9 @@ namespace presentationLayer
             altaAlumno altas = new altaAlumno();
             altas.Show();
             
+
+
+
         }
 
         private void modificarButton_Click_1(object sender, EventArgs e)
@@ -61,5 +80,53 @@ namespace presentationLayer
             formModificacion.Show();
         }
 
+        private void eliminarButton_Click(object sender, EventArgs e)
+        {
+            int id = 0;
+            int flag = 0;
+
+            foreach (DataGridViewRow row in this.altaDataGridView.Rows)
+            {
+
+                if (Convert.ToBoolean(row.Cells[18].Value) == true)
+                {
+                    flag = 1;
+
+                    id = Convert.ToInt32(row.Cells[0].Value);
+                }
+
+            }
+
+            if (flag == 1)
+            {
+
+                var confirm = MessageBox.Show("¿Estas Seguro de borrar esta fila ?", "¡Confirmar Borrado!", MessageBoxButtons.YesNo);
+
+                if (confirm == DialogResult.Yes)
+                {
+
+                    businessLayer.Martin.EliminarColaborador(id);
+
+                    altaDataGridView.DataSource = businessLayer.Gabriel.alumnosGet();
+
+                    MessageBox.Show("Eliminado correctamente");
+
+                }
+                else
+                {
+
+                    MessageBox.Show("Operacion Cancelada");
+
+
+                }
+
+            }
+            else
+            {
+
+                MessageBox.Show("No se ha seleccionado una fila");
+            }
+
+        }
     }
 }
