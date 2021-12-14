@@ -188,6 +188,7 @@ namespace presentationLayer
             this.eliminarButton.Size = new System.Drawing.Size(137, 33);
             this.eliminarButton.TabIndex = 17;
             this.eliminarButton.UseVisualStyleBackColor = true;
+            this.eliminarButton.Click += new System.EventHandler(this.eliminarButton_Click);
             // 
             // buscarButton
             // 
@@ -255,7 +256,7 @@ namespace presentationLayer
             this.navBarPanel.Controls.Add(this.docentesButton);
             this.navBarPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.navBarPanel.Location = new System.Drawing.Point(0, 0);
-            this.navBarPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.navBarPanel.Margin = new System.Windows.Forms.Padding(2);
             this.navBarPanel.Name = "navBarPanel";
             this.navBarPanel.Size = new System.Drawing.Size(1033, 32);
             this.navBarPanel.TabIndex = 137;
@@ -266,7 +267,7 @@ namespace presentationLayer
             this.alumnosButton.Dock = System.Windows.Forms.DockStyle.Right;
             this.alumnosButton.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.alumnosButton.Location = new System.Drawing.Point(853, 0);
-            this.alumnosButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.alumnosButton.Margin = new System.Windows.Forms.Padding(2);
             this.alumnosButton.Name = "alumnosButton";
             this.alumnosButton.Size = new System.Drawing.Size(86, 32);
             this.alumnosButton.TabIndex = 1;
@@ -279,7 +280,7 @@ namespace presentationLayer
             this.docentesButton.Dock = System.Windows.Forms.DockStyle.Right;
             this.docentesButton.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.docentesButton.Location = new System.Drawing.Point(939, 0);
-            this.docentesButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.docentesButton.Margin = new System.Windows.Forms.Padding(2);
             this.docentesButton.Name = "docentesButton";
             this.docentesButton.Size = new System.Drawing.Size(94, 32);
             this.docentesButton.TabIndex = 0;

@@ -186,4 +186,3 @@ C:\Users\galle\source\repos\CAM3\presentationLayer\obj\Debug\presentationLayer.e
 C:\Users\galle\source\repos\CAM3\presentationLayer\obj\Debug\presentationLayer.pdb
 C:\Users\vanes\Source\Repos\CAM\presentationLayer\obj\Debug\presentationLayer.modificacionesAlumno.resources
 C:\Users\vanes\Source\Repos\CAM\presentationLayer\obj\Debug\presentationLayer.csproj.CopyComplete
-B:\GitKraken\Github\CAM\Development\CAM\presentationLayer\obj\Debug\presentationLayer.csproj.CopyComplete
