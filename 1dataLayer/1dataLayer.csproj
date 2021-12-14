@@ -85,6 +85,12 @@
     <Compile Include="recursos.cs">
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>
+    <Compile Include="sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>BDCAM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagrams_Result.cs">
+      <DependentUpon>BDCAM.tt</DependentUpon>
+    </Compile>
     <Compile Include="sysdiagrams.cs">
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>

@@ -35,7 +35,7 @@ namespace businessLayer
                                      escuela_procedencia_alumno = a.escuela_procedencia_alumno,
                                      //documentacion_alumno = a.documentacion_alumno,
                                      atendido_por = a.atendido_por,
-
+                                    
                                  }).ToList();
                     return query;
                 }

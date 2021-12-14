@@ -79,3 +79,14 @@ C:\Users\galle\source\repos\CAM3\1dataLayer\obj\Debug\1dataLayer.csproj.CoreComp
 C:\Users\galle\source\repos\CAM3\1dataLayer\obj\Debug\1dataLayer.csproj.CopyComplete
 C:\Users\galle\source\repos\CAM3\1dataLayer\obj\Debug\1dataLayer.dll
 C:\Users\galle\source\repos\CAM3\1dataLayer\obj\Debug\1dataLayer.pdb
+B:\GitKraken\Github\CAM\Development\CAM\1dataLayer\bin\Debug\1dataLayer.dll.config
+B:\GitKraken\Github\CAM\Development\CAM\1dataLayer\bin\Debug\1dataLayer.dll
+B:\GitKraken\Github\CAM\Development\CAM\1dataLayer\bin\Debug\1dataLayer.pdb
+B:\GitKraken\Github\CAM\Development\CAM\1dataLayer\bin\Debug\EntityFramework.dll
+B:\GitKraken\Github\CAM\Development\CAM\1dataLayer\bin\Debug\EntityFramework.SqlServer.dll
+B:\GitKraken\Github\CAM\Development\CAM\1dataLayer\bin\Debug\EntityFramework.xml
+B:\GitKraken\Github\CAM\Development\CAM\1dataLayer\bin\Debug\EntityFramework.SqlServer.xml
+B:\GitKraken\Github\CAM\Development\CAM\1dataLayer\obj\Debug\1dataLayer.csproj.AssemblyReference.cache
+B:\GitKraken\Github\CAM\Development\CAM\1dataLayer\obj\Debug\1dataLayer.csproj.CoreCompileInputs.cache
+B:\GitKraken\Github\CAM\Development\CAM\1dataLayer\obj\Debug\1dataLayer.dll
+B:\GitKraken\Github\CAM\Development\CAM\1dataLayer\obj\Debug\1dataLayer.pdb
