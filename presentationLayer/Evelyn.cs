@@ -28,7 +28,7 @@ namespace presentationLayer
 
         public static void altasInformacionMedicaAlumno(Label servicioMedico, Label discapacidad, Label enfermedades, Label alergias,
             Label telefonoContacto, Label grupoSanguineo, Label documentacion, Label mostrarDiscapacidad, Label mostrarEnfermedades,
-            Label mostrarAlergias, TextBox servicioMedicoTB, TextBox discapacidadTB, TextBox enfermedadesTB, TextBox alergiasTB,
+            Label mostrarAlergias, TextBox servicioMedicoTB, ComboBox discapacidadCB, ComboBox enfermedadesCB, ComboBox alergiasCB,
             TextBox telefonoContactoTB, TextBox grupoSanguineoTB, GroupBox documentacionGB, RichTextBox mostrarDiscapacidadTB,
             RichTextBox mostrarEnfermedadTB, RichTextBox mostrarAlergiasTB, Button agregarAlergias, Button agregarEnfermedad, Button agregarDiscapacidad)
         {
@@ -51,7 +51,7 @@ namespace presentationLayer
             //Info
             aux = aux + 80;
             discapacidad.Location = new Point(20, aux);
-            discapacidadTB.Location = new Point(240, aux);
+            discapacidadCB.Location = new Point(240, aux);
             agregarDiscapacidad.Location = new Point(360, aux - 4);
 
             aux = aux + 40;
@@ -63,12 +63,12 @@ namespace presentationLayer
             tt.SetToolTip(agregarEnfermedad, "AGREGAR ENFERMEDAD");
 
             enfermedades.Location = new Point(20, aux);
-            enfermedadesTB.Location = new Point(240, aux - 4);
+            enfermedadesCB.Location = new Point(240, aux - 4);
             agregarEnfermedad.Location = new Point(360, aux - 4);
 
             aux = aux + 40;
             alergias.Location = new Point(20, aux);
-            alergiasTB.Location = new Point(240, aux - 4);
+            alergiasCB.Location = new Point(240, aux - 4);
             agregarAlergias.Location = new Point(360, aux - 4);
 
             aux = aux + 80;
@@ -98,9 +98,9 @@ namespace presentationLayer
             mostrarAlergias.Size = new Size(100, 30);
 
             servicioMedicoTB.Size = new Size(100, 30);
-            discapacidadTB.Size = new Size(100, 30);
-            enfermedadesTB.Size = new Size(100, 30);
-            alergiasTB.Size = new Size(100, 30);
+            discapacidadCB.Size = new Size(100, 30);
+            enfermedadesCB.Size = new Size(100, 30);
+            alergiasCB.Size = new Size(100, 30);
             documentacionGB.Size = new Size(320, 200);
             telefonoContactoTB.Size = new Size(100, 150);
             grupoSanguineoTB.Size = new Size(100, 30);

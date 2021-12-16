@@ -47,7 +47,6 @@ namespace presentationLayer
             this.nuevoIngresoRadioButton = new System.Windows.Forms.RadioButton();
             this.nombreAlumnoTextBox = new System.Windows.Forms.TextBox();
             this.telefonoAlumnoTextBox = new System.Windows.Forms.TextBox();
-            this.discapacidadTextBox = new System.Windows.Forms.TextBox();
             this.escuelaProcedenciaTextBox = new System.Windows.Forms.TextBox();
             this.canalizadoPorTextBox = new System.Windows.Forms.TextBox();
             this.cicloEscolarTextBox = new System.Windows.Forms.TextBox();
@@ -102,14 +101,18 @@ namespace presentationLayer
             this.telefonoContactoMedicoAlumnoLabel = new System.Windows.Forms.Label();
             this.documentacionAlumnoLabel = new System.Windows.Forms.Label();
             this.servicioMedicoTextBox = new System.Windows.Forms.TextBox();
-            this.enfermedadesAlumnoTextBox = new System.Windows.Forms.TextBox();
             this.telefonoContactoMedicoAlumnoTextBox = new System.Windows.Forms.TextBox();
-            this.alergiasAlumnoTextBox = new System.Windows.Forms.TextBox();
             this.grupoSanguineoTextBox = new System.Windows.Forms.TextBox();
             this.informacionGeneralAlumnoGroupBox = new System.Windows.Forms.GroupBox();
             this.limpiarFormato1Button = new System.Windows.Forms.Button();
             this.informacionEscolarGroupBox = new System.Windows.Forms.GroupBox();
             this.informacionMedicaAlumnoGroupBox = new System.Windows.Forms.GroupBox();
+            this.documentacionGB = new System.Windows.Forms.GroupBox();
+            this.checkBox5 = new System.Windows.Forms.CheckBox();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.limpiarFormato3Button = new System.Windows.Forms.Button();
             this.eliminarAlergiasButton = new System.Windows.Forms.Button();
             this.eliminarDiscapacidadesButton = new System.Windows.Forms.Button();
@@ -133,20 +136,17 @@ namespace presentationLayer
             this.docentesButton = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.realizarAltaButton = new System.Windows.Forms.Button();
-            this.documentacionGB = new System.Windows.Forms.GroupBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
+            this.enfermedadesCombobox = new System.Windows.Forms.ComboBox();
+            this.discapacidadesCombobox = new System.Windows.Forms.ComboBox();
+            this.alergiasCombobox = new System.Windows.Forms.ComboBox();
             this.tipoIngresoGroupBox.SuspendLayout();
             this.otroAlumnoTutorGroupBox.SuspendLayout();
             this.informacionGeneralAlumnoGroupBox.SuspendLayout();
             this.informacionEscolarGroupBox.SuspendLayout();
             this.informacionMedicaAlumnoGroupBox.SuspendLayout();
+            this.documentacionGB.SuspendLayout();
             this.informacionTutorGroupBox.SuspendLayout();
             this.altaAlumnoPanel.SuspendLayout();
-            this.documentacionGB.SuspendLayout();
             this.SuspendLayout();
             // 
             // siguienteButton
@@ -242,11 +242,6 @@ namespace presentationLayer
             // 
             resources.ApplyResources(this.telefonoAlumnoTextBox, "telefonoAlumnoTextBox");
             this.telefonoAlumnoTextBox.Name = "telefonoAlumnoTextBox";
-            // 
-            // discapacidadTextBox
-            // 
-            resources.ApplyResources(this.discapacidadTextBox, "discapacidadTextBox");
-            this.discapacidadTextBox.Name = "discapacidadTextBox";
             // 
             // escuelaProcedenciaTextBox
             // 
@@ -527,20 +522,10 @@ namespace presentationLayer
             resources.ApplyResources(this.servicioMedicoTextBox, "servicioMedicoTextBox");
             this.servicioMedicoTextBox.Name = "servicioMedicoTextBox";
             // 
-            // enfermedadesAlumnoTextBox
-            // 
-            resources.ApplyResources(this.enfermedadesAlumnoTextBox, "enfermedadesAlumnoTextBox");
-            this.enfermedadesAlumnoTextBox.Name = "enfermedadesAlumnoTextBox";
-            // 
             // telefonoContactoMedicoAlumnoTextBox
             // 
             resources.ApplyResources(this.telefonoContactoMedicoAlumnoTextBox, "telefonoContactoMedicoAlumnoTextBox");
             this.telefonoContactoMedicoAlumnoTextBox.Name = "telefonoContactoMedicoAlumnoTextBox";
-            // 
-            // alergiasAlumnoTextBox
-            // 
-            resources.ApplyResources(this.alergiasAlumnoTextBox, "alergiasAlumnoTextBox");
-            this.alergiasAlumnoTextBox.Name = "alergiasAlumnoTextBox";
             // 
             // grupoSanguineoTextBox
             // 
@@ -606,6 +591,9 @@ namespace presentationLayer
             // informacionMedicaAlumnoGroupBox
             // 
             this.informacionMedicaAlumnoGroupBox.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.informacionMedicaAlumnoGroupBox.Controls.Add(this.alergiasCombobox);
+            this.informacionMedicaAlumnoGroupBox.Controls.Add(this.discapacidadesCombobox);
+            this.informacionMedicaAlumnoGroupBox.Controls.Add(this.enfermedadesCombobox);
             this.informacionMedicaAlumnoGroupBox.Controls.Add(this.documentacionGB);
             this.informacionMedicaAlumnoGroupBox.Controls.Add(this.limpiarFormato3Button);
             this.informacionMedicaAlumnoGroupBox.Controls.Add(this.eliminarAlergiasButton);
@@ -624,18 +612,56 @@ namespace presentationLayer
             this.informacionMedicaAlumnoGroupBox.Controls.Add(this.grupoSanguineoAlumnoLabel);
             this.informacionMedicaAlumnoGroupBox.Controls.Add(this.enfermedaresAlumnoLabel);
             this.informacionMedicaAlumnoGroupBox.Controls.Add(this.alergiasAlumnoLabel);
-            this.informacionMedicaAlumnoGroupBox.Controls.Add(this.alergiasAlumnoTextBox);
             this.informacionMedicaAlumnoGroupBox.Controls.Add(this.telefonoContactoMedicoAlumnoLabel);
             this.informacionMedicaAlumnoGroupBox.Controls.Add(this.grupoSanguineoTextBox);
             this.informacionMedicaAlumnoGroupBox.Controls.Add(this.documentacionAlumnoLabel);
             this.informacionMedicaAlumnoGroupBox.Controls.Add(this.telefonoContactoMedicoAlumnoTextBox);
             this.informacionMedicaAlumnoGroupBox.Controls.Add(this.servicioMedicoTextBox);
-            this.informacionMedicaAlumnoGroupBox.Controls.Add(this.enfermedadesAlumnoTextBox);
-            this.informacionMedicaAlumnoGroupBox.Controls.Add(this.discapacidadTextBox);
             this.informacionMedicaAlumnoGroupBox.Controls.Add(this.discapacidadLabel);
             resources.ApplyResources(this.informacionMedicaAlumnoGroupBox, "informacionMedicaAlumnoGroupBox");
             this.informacionMedicaAlumnoGroupBox.Name = "informacionMedicaAlumnoGroupBox";
             this.informacionMedicaAlumnoGroupBox.TabStop = false;
+            // 
+            // documentacionGB
+            // 
+            this.documentacionGB.Controls.Add(this.checkBox5);
+            this.documentacionGB.Controls.Add(this.checkBox4);
+            this.documentacionGB.Controls.Add(this.checkBox3);
+            this.documentacionGB.Controls.Add(this.checkBox2);
+            this.documentacionGB.Controls.Add(this.checkBox1);
+            resources.ApplyResources(this.documentacionGB, "documentacionGB");
+            this.documentacionGB.Name = "documentacionGB";
+            this.documentacionGB.TabStop = false;
+            // 
+            // checkBox5
+            // 
+            resources.ApplyResources(this.checkBox5, "checkBox5");
+            this.checkBox5.Name = "checkBox5";
+            this.checkBox5.UseVisualStyleBackColor = true;
+            // 
+            // checkBox4
+            // 
+            resources.ApplyResources(this.checkBox4, "checkBox4");
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.UseVisualStyleBackColor = true;
+            // 
+            // checkBox3
+            // 
+            resources.ApplyResources(this.checkBox3, "checkBox3");
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            resources.ApplyResources(this.checkBox2, "checkBox2");
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // checkBox1
+            // 
+            resources.ApplyResources(this.checkBox1, "checkBox1");
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // limpiarFormato3Button
             // 
@@ -819,46 +845,23 @@ namespace presentationLayer
             this.realizarAltaButton.UseVisualStyleBackColor = true;
             this.realizarAltaButton.Click += new System.EventHandler(this.guardarButton_Click);
             // 
-            // documentacionGB
+            // enfermedadesCombobox
             // 
-            this.documentacionGB.Controls.Add(this.checkBox5);
-            this.documentacionGB.Controls.Add(this.checkBox4);
-            this.documentacionGB.Controls.Add(this.checkBox3);
-            this.documentacionGB.Controls.Add(this.checkBox2);
-            this.documentacionGB.Controls.Add(this.checkBox1);
-            resources.ApplyResources(this.documentacionGB, "documentacionGB");
-            this.documentacionGB.Name = "documentacionGB";
-            this.documentacionGB.TabStop = false;
+            this.enfermedadesCombobox.FormattingEnabled = true;
+            resources.ApplyResources(this.enfermedadesCombobox, "enfermedadesCombobox");
+            this.enfermedadesCombobox.Name = "enfermedadesCombobox";
             // 
-            // checkBox1
+            // discapacidadesCombobox
             // 
-            resources.ApplyResources(this.checkBox1, "checkBox1");
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.discapacidadesCombobox.FormattingEnabled = true;
+            resources.ApplyResources(this.discapacidadesCombobox, "discapacidadesCombobox");
+            this.discapacidadesCombobox.Name = "discapacidadesCombobox";
             // 
-            // checkBox2
+            // alergiasCombobox
             // 
-            resources.ApplyResources(this.checkBox2, "checkBox2");
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            // 
-            // checkBox3
-            // 
-            resources.ApplyResources(this.checkBox3, "checkBox3");
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // checkBox4
-            // 
-            resources.ApplyResources(this.checkBox4, "checkBox4");
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.UseVisualStyleBackColor = true;
-            // 
-            // checkBox5
-            // 
-            resources.ApplyResources(this.checkBox5, "checkBox5");
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.alergiasCombobox.FormattingEnabled = true;
+            resources.ApplyResources(this.alergiasCombobox, "alergiasCombobox");
+            this.alergiasCombobox.Name = "alergiasCombobox";
             // 
             // altaAlumno
             // 
@@ -888,12 +891,12 @@ namespace presentationLayer
             this.informacionEscolarGroupBox.PerformLayout();
             this.informacionMedicaAlumnoGroupBox.ResumeLayout(false);
             this.informacionMedicaAlumnoGroupBox.PerformLayout();
+            this.documentacionGB.ResumeLayout(false);
+            this.documentacionGB.PerformLayout();
             this.informacionTutorGroupBox.ResumeLayout(false);
             this.informacionTutorGroupBox.PerformLayout();
             this.altaAlumnoPanel.ResumeLayout(false);
             this.altaAlumnoPanel.PerformLayout();
-            this.documentacionGB.ResumeLayout(false);
-            this.documentacionGB.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -918,7 +921,6 @@ namespace presentationLayer
         private System.Windows.Forms.RadioButton nuevoIngresoRadioButton;
         private System.Windows.Forms.TextBox nombreAlumnoTextBox;
         private System.Windows.Forms.TextBox telefonoAlumnoTextBox;
-        private System.Windows.Forms.TextBox discapacidadTextBox;
         private System.Windows.Forms.TextBox escuelaProcedenciaTextBox;
         private System.Windows.Forms.TextBox canalizadoPorTextBox;
         private System.Windows.Forms.TextBox cicloEscolarTextBox;
@@ -973,9 +975,7 @@ namespace presentationLayer
         private System.Windows.Forms.Label telefonoContactoMedicoAlumnoLabel;
         private System.Windows.Forms.Label documentacionAlumnoLabel;
         private System.Windows.Forms.TextBox servicioMedicoTextBox;
-        private System.Windows.Forms.TextBox enfermedadesAlumnoTextBox;
         private System.Windows.Forms.TextBox telefonoContactoMedicoAlumnoTextBox;
-        private System.Windows.Forms.TextBox alergiasAlumnoTextBox;
         private System.Windows.Forms.TextBox grupoSanguineoTextBox;
         private System.Windows.Forms.GroupBox informacionGeneralAlumnoGroupBox;
         private System.Windows.Forms.GroupBox informacionEscolarGroupBox;
@@ -1010,6 +1010,9 @@ namespace presentationLayer
         private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.ComboBox alergiasCombobox;
+        private System.Windows.Forms.ComboBox discapacidadesCombobox;
+        private System.Windows.Forms.ComboBox enfermedadesCombobox;
     }
 }
 
