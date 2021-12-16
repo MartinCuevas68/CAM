@@ -354,7 +354,7 @@
   <data name="vaciarButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAN
-        1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAFRASURBVHhe7d0J
+        1AAADdQB75G6FQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAFRASURBVHhe7d0J
         /C/l3P/x3+mc6rTvJUlJi4SQu1TWsqWFcItuIZK1yJJUlhLJUpZEaLFzkyVLuMkSpZCthNsSQok2lKj/
         /X99OjPOnOt8fr/f9ztzXTPXzLzfj8eTujpnrvle3/nN9fl9vzPXzPzf//2fyKCR9XAMzsEVuAbn4RTc
         w/s7IiJD5zaKDAFZAUfgOliD51aciQ28bYiIDJXbKDIE5O2oTvZz+T7W9LYjIjJEbqNI35Eji4l9Gudi
@@ -926,7 +926,7 @@
   <data name="imprimirButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        xAAADsQBlSsOGwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAB5DSURBVHhe7d19
+        wQAADsEBuJFr7QAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAB5DSURBVHhe7d19
         sHx3Qd/xPBESnsKTPCoRCGFEq0aGgjJWEUQRW1shhjIOwlTRKCMUJAhqZToWQbAVLCCIaWuUIAwPIdoq
         CINkpFQIMJRSEowgJBAElEASAnloP19/YrKHb/I79+ye3fPd7+s18/6DjO7uvfM753zu3r27R8AeuWv6
         lfSe9IX0//a4a9In0hvTv05HpW0p9/XYdG4qj6E8ltpj1LL6XPp4emt6SSr/bu6cAJp2eroi1U58PXR+

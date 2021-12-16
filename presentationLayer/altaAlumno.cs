@@ -22,6 +22,11 @@ namespace presentationLayer
             InitializeComponent();
             loaddata();
 
+            Martin.panelNavBar(altaAlumnoPanel);
+
+
+            Martin.etiquetafuncionLabel(altaalumnoLabel);
+
             Evelyn.informacionMedicaGroupBox(informacionMedicaAlumnoGroupBox);
             Claudia.altasGroupBox(informacionGeneralAlumnoGroupBox);
             Claudia.altasGroupBox2(informacionEscolarGroupBox);
@@ -76,7 +81,16 @@ namespace presentationLayer
 
 
             Evelyn.eliminarBotones(eliminarEnfermedadButton, eliminarDiscapacidadesButton, eliminarAlergiasButton);
-            Claudia.limpiarFormatosBotones(limpiarFormato1Button,limpiarFormato2Button,limpiarFormato3Button);
+            Claudia.limpiarFormatosBotones(limpiarFormato1Button, limpiarFormato2Button, limpiarFormato3Button);
+          
+      
+        }
+
+        private void altaAlumno_Load(object sender, EventArgs e)
+        {
+            limpiarFormato1Button.Hide();
+            limpiarFormato2Button.Hide();
+            limpiarFormato3Button.Hide();
         }
 
         private void siguienteButton_Click_1(object sender, EventArgs e)
@@ -173,8 +187,8 @@ namespace presentationLayer
                                               escuelaProcedenciaTextBox.Text,
                                               canalizadoPorTextBox.Text
                                               );
-                altaAlumno altas = new altaAlumno();
-                altas.Close();
+
+                this.Hide();
                 Consultas consultas = new Consultas();
                 consultas.Show();
                 
@@ -314,6 +328,11 @@ namespace presentationLayer
             {
                 throw;
             }
+        }
+
+        private void informacionGeneralAlumnoGroupBox_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

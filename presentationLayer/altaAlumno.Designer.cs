@@ -135,9 +135,10 @@ namespace presentationLayer
             this.seleccionarNombreComboBox = new System.Windows.Forms.ComboBox();
             this.limpiarFormato2Button = new System.Windows.Forms.Button();
             this.altaAlumnoPanel = new System.Windows.Forms.Panel();
+            this.camLabel = new System.Windows.Forms.Label();
             this.alumnosButton = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
             this.realizarAltaButton = new System.Windows.Forms.Button();
+            this.altaalumnoLabel = new System.Windows.Forms.Label();
             this.tipoIngresoGroupBox.SuspendLayout();
             this.otroAlumnoTutorGroupBox.SuspendLayout();
             this.informacionGeneralAlumnoGroupBox.SuspendLayout();
@@ -592,6 +593,7 @@ namespace presentationLayer
             resources.ApplyResources(this.informacionGeneralAlumnoGroupBox, "informacionGeneralAlumnoGroupBox");
             this.informacionGeneralAlumnoGroupBox.Name = "informacionGeneralAlumnoGroupBox";
             this.informacionGeneralAlumnoGroupBox.TabStop = false;
+            this.informacionGeneralAlumnoGroupBox.Enter += new System.EventHandler(this.informacionGeneralAlumnoGroupBox_Enter);
             // 
             // limpiarFormato1Button
             // 
@@ -867,10 +869,16 @@ namespace presentationLayer
             // 
             // altaAlumnoPanel
             // 
-            this.altaAlumnoPanel.BackColor = System.Drawing.Color.Thistle;
+            this.altaAlumnoPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.altaAlumnoPanel.Controls.Add(this.camLabel);
             this.altaAlumnoPanel.Controls.Add(this.alumnosButton);
             resources.ApplyResources(this.altaAlumnoPanel, "altaAlumnoPanel");
             this.altaAlumnoPanel.Name = "altaAlumnoPanel";
+            // 
+            // camLabel
+            // 
+            resources.ApplyResources(this.camLabel, "camLabel");
+            this.camLabel.Name = "camLabel";
             // 
             // alumnosButton
             // 
@@ -879,11 +887,6 @@ namespace presentationLayer
             this.alumnosButton.UseVisualStyleBackColor = true;
             this.alumnosButton.Click += new System.EventHandler(this.alumnosButton_Click);
             // 
-            // label3
-            // 
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.Name = "label3";
-            // 
             // realizarAltaButton
             // 
             resources.ApplyResources(this.realizarAltaButton, "realizarAltaButton");
@@ -891,13 +894,18 @@ namespace presentationLayer
             this.realizarAltaButton.UseVisualStyleBackColor = true;
             this.realizarAltaButton.Click += new System.EventHandler(this.guardarButton_Click);
             // 
+            // altaalumnoLabel
+            // 
+            resources.ApplyResources(this.altaalumnoLabel, "altaalumnoLabel");
+            this.altaalumnoLabel.Name = "altaalumnoLabel";
+            // 
             // altaAlumno
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Controls.Add(this.altaalumnoLabel);
             this.Controls.Add(this.realizarAltaButton);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.altaAlumnoPanel);
             this.Controls.Add(this.informacionTutorGroupBox);
             this.Controls.Add(this.regresarButton);
@@ -908,6 +916,7 @@ namespace presentationLayer
             this.Controls.Add(this.siguienteButton);
             this.Name = "altaAlumno";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.altaAlumno_Load);
             this.tipoIngresoGroupBox.ResumeLayout(false);
             this.tipoIngresoGroupBox.PerformLayout();
             this.otroAlumnoTutorGroupBox.ResumeLayout(false);
@@ -1019,7 +1028,6 @@ namespace presentationLayer
         private System.Windows.Forms.ComboBox seleccionarNombreComboBox;
         private System.Windows.Forms.Panel altaAlumnoPanel;
         private System.Windows.Forms.Button alumnosButton;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button realizarAltaButton;
         private System.Windows.Forms.Button agregarAlergiasButton;
         private System.Windows.Forms.Button agregarDiscapacidadButton;
@@ -1039,6 +1047,8 @@ namespace presentationLayer
         private System.Windows.Forms.ComboBox alergiasCombobox;
         private System.Windows.Forms.ComboBox discapacidadesCombobox;
         private System.Windows.Forms.ComboBox enfermedadesCombobox;
+        private System.Windows.Forms.Label camLabel;
+        private System.Windows.Forms.Label altaalumnoLabel;
     }
 }
 

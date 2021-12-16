@@ -111,9 +111,9 @@ namespace presentationLayer
 
         public static void altasBotonesParaNavegar(Button siguiente, Button regresar, Button guardar)
         {
-            siguiente.Location = new Point(1175, 655);
-            guardar.Location = new Point(1145, 655);
-            regresar.Location = new Point(1040, 655);
+            siguiente.Location = new Point(1400, 900);
+            guardar.Location = new Point(1400, 900);
+            regresar.Location = new Point(300, 900);
 
             siguiente.Size = new Size(100, 30);
             regresar.Size = new Size(100, 30);
@@ -126,6 +126,7 @@ namespace presentationLayer
 
         public static void altasBotonesPanel(Button alumnos)
         {
+            alumnos.Size = new Size(100, 75);
             var tt = new ToolTip();
             //tt.SetToolTip(docentes, "MENÚ DOCENTES");
             tt.SetToolTip(alumnos, "MENÚ ALUMNOS");
