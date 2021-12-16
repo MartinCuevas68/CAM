@@ -71,7 +71,7 @@ namespace presentationLayer
             Evelyn.altasBotonesParaNavegar(siguienteButton, regresarButton, realizarAltaButton);
             Evelyn.altasBotonesPanel(alumnosButton);
 
-            int distanciaInfTutor = 60;
+            int distanciaInfTutor = 10;
             Claudia.altasInformacionTutorGroupBox(informacionTutorGroupBox);
             distanciaInfTutor = Claudia.altasTutorOtroAlumno(otroAlumnoTutorGroupBox, seleccionarNombreLabel, seleccionarNombreComboBox, distanciaInfTutor);
             distanciaInfTutor = Claudia.altasNombreTutor(nombreTutorLabel, nombreTutorTextBox, apellidoPaternoTutorLabel, apellidoPaternoTutorTextBox, apellidoMaternoTutorLabel, apellidoMaternoTutorTextBox, distanciaInfTutor);
@@ -91,6 +91,13 @@ namespace presentationLayer
             limpiarFormato1Button.Hide();
             limpiarFormato2Button.Hide();
             limpiarFormato3Button.Hide();
+        
+            otroAlumnoTutorGroupBox.Hide();
+
+            seleccionarNombreLabel.Hide();
+            seleccionarNombreComboBox.Hide();
+            documentacionGB.Hide();
+            documentacionAlumnoLabel.Hide();
         }
 
         private void siguienteButton_Click_1(object sender, EventArgs e)
@@ -209,22 +216,26 @@ namespace presentationLayer
         //AGREGAR ENFERMEDADES AL RICHTXTBOX
         private void agregarEnfermedadesButton_Click(object sender, EventArgs e)
         {
-      
-         
+            string informacion = this.enfermedadesCombobox.GetItemText(this.enfermedadesCombobox.SelectedItem);
+            mostrarEnfermedadesRichTextBox.Text = mostrarEnfermedadesRichTextBox.Text+ informacion + "\n";
+
         }
 
         //AGREGAR DISCAPACIDADES AL RICHTXTBOX
         private void agregarDiscapacidadButton_Click(object sender, EventArgs e)
         {
+            string informacion = this.discapacidadesCombobox.GetItemText(this.discapacidadesCombobox.SelectedItem);
+            mostrarDiscapacidadRichTextBox.Text = mostrarDiscapacidadRichTextBox.Text + informacion + "\n";
 
-         
         }
 
         //AGREGAR ALERGIAS AL RICHTXTBOX
         private void agregarAlergiasButton_Click(object sender, EventArgs e)
         {
-         
-         
+
+            string informacion = this.alergiasCombobox.GetItemText(this.alergiasCombobox.SelectedItem);
+            mostrarAlergiasRichTextBox.Text = mostrarAlergiasRichTextBox.Text + informacion + "\n";
+
         }
 
         //LIMPIAR INFORMACIÓN GENERAL ALUMNO
@@ -303,13 +314,15 @@ namespace presentationLayer
             {
                 using (_1dataLayer.BDCAMEntities db = new _1dataLayer.BDCAMEntities())
                 {
+                    alergiasCombobox.Items.Add("Elegir Alergia:");
+                    enfermedadesCombobox.Items.Add("Elegir Enfermedad:");
+                    discapacidadesCombobox.Items.Add("Elegir Discapacidad:");
+
                     var listaAlergias = db.alergias.ToList();
                     var listaEnfermedades = db.enfermedades.ToList();
                     var listaDiscapacidades = db.discapacidades.ToList();
 
-                    alergiasCombobox.Items.Add("Elegir alergia:");
-                    enfermedadesCombobox.Items.Add("Elegir enfermedad:");
-                    discapacidadesCombobox.Items.Add("Elegir discapacidad:");
+                   
 
                     foreach (var item in listaAlergias)
                     {
@@ -331,6 +344,11 @@ namespace presentationLayer
         }
 
         private void informacionGeneralAlumnoGroupBox_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void alergiasCombobox_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

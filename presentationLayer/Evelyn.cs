@@ -8,7 +8,7 @@ namespace presentationLayer
     {
         public static void informacionMedicaGroupBox(GroupBox groupBox)
         {
-            groupBox.Location = new Point(130, 100);
+            groupBox.Location = new Point(300, 250);
             groupBox.Size = new Size(1150, 550);
             groupBox.Font = new Font("Leelawadee UI", 12);
         }
