@@ -656,6 +656,7 @@ namespace presentationLayer
             this.alergiasCombobox.FormattingEnabled = true;
             resources.ApplyResources(this.alergiasCombobox, "alergiasCombobox");
             this.alergiasCombobox.Name = "alergiasCombobox";
+            this.alergiasCombobox.SelectedIndexChanged += new System.EventHandler(this.alergiasCombobox_SelectedIndexChanged);
             // 
             // discapacidadesCombobox
             // 
