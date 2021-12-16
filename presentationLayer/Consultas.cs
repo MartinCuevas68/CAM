@@ -30,7 +30,7 @@ namespace presentationLayer
             Edder.panelNavBar(navBarPanel);
             Edder.agregarBttn(agregarButton);
             Edder.alumnosbttn(alumnosButton);
-            Edder.docentesbttn(docentesButton);
+            //Edder.docentesbttn(docentesButton);
             Edder.Nombrelbl(nombreLabel);
             Edder.ApellidopaternoTxt(apellidoPaternoTextBox);
             Edder.ApellidomaternoTxt(apellidoMaternoTextBox);

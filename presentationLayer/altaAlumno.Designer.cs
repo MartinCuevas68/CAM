@@ -107,6 +107,9 @@ namespace presentationLayer
             this.limpiarFormato1Button = new System.Windows.Forms.Button();
             this.informacionEscolarGroupBox = new System.Windows.Forms.GroupBox();
             this.informacionMedicaAlumnoGroupBox = new System.Windows.Forms.GroupBox();
+            this.alergiasCombobox = new System.Windows.Forms.ComboBox();
+            this.discapacidadesCombobox = new System.Windows.Forms.ComboBox();
+            this.enfermedadesCombobox = new System.Windows.Forms.ComboBox();
             this.documentacionGB = new System.Windows.Forms.GroupBox();
             this.checkBox5 = new System.Windows.Forms.CheckBox();
             this.checkBox4 = new System.Windows.Forms.CheckBox();
@@ -133,12 +136,8 @@ namespace presentationLayer
             this.limpiarFormato2Button = new System.Windows.Forms.Button();
             this.altaAlumnoPanel = new System.Windows.Forms.Panel();
             this.alumnosButton = new System.Windows.Forms.Button();
-            this.docentesButton = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.realizarAltaButton = new System.Windows.Forms.Button();
-            this.enfermedadesCombobox = new System.Windows.Forms.ComboBox();
-            this.discapacidadesCombobox = new System.Windows.Forms.ComboBox();
-            this.alergiasCombobox = new System.Windows.Forms.ComboBox();
             this.tipoIngresoGroupBox.SuspendLayout();
             this.otroAlumnoTutorGroupBox.SuspendLayout();
             this.informacionGeneralAlumnoGroupBox.SuspendLayout();
@@ -235,42 +234,50 @@ namespace presentationLayer
             // 
             // nombreAlumnoTextBox
             // 
+            this.nombreAlumnoTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.nombreAlumnoTextBox, "nombreAlumnoTextBox");
             this.nombreAlumnoTextBox.Name = "nombreAlumnoTextBox";
             // 
             // telefonoAlumnoTextBox
             // 
+            this.telefonoAlumnoTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.telefonoAlumnoTextBox, "telefonoAlumnoTextBox");
             this.telefonoAlumnoTextBox.Name = "telefonoAlumnoTextBox";
             // 
             // escuelaProcedenciaTextBox
             // 
+            this.escuelaProcedenciaTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.escuelaProcedenciaTextBox, "escuelaProcedenciaTextBox");
             this.escuelaProcedenciaTextBox.Name = "escuelaProcedenciaTextBox";
             // 
             // canalizadoPorTextBox
             // 
+            this.canalizadoPorTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.canalizadoPorTextBox, "canalizadoPorTextBox");
             this.canalizadoPorTextBox.Name = "canalizadoPorTextBox";
             // 
             // cicloEscolarTextBox
             // 
+            this.cicloEscolarTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.cicloEscolarTextBox, "cicloEscolarTextBox");
             this.cicloEscolarTextBox.Name = "cicloEscolarTextBox";
             // 
             // curpTextBox
             // 
+            this.curpTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.curpTextBox, "curpTextBox");
             this.curpTextBox.Name = "curpTextBox";
             // 
             // añosCumplidosTextBox
             // 
+            this.añosCumplidosTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.añosCumplidosTextBox, "añosCumplidosTextBox");
             this.añosCumplidosTextBox.Name = "añosCumplidosTextBox";
             // 
             // fechaNacimientoDateTimePicker
             // 
             resources.ApplyResources(this.fechaNacimientoDateTimePicker, "fechaNacimientoDateTimePicker");
+            this.fechaNacimientoDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.fechaNacimientoDateTimePicker.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
             this.fechaNacimientoDateTimePicker.Name = "fechaNacimientoDateTimePicker";
             this.fechaNacimientoDateTimePicker.Value = new System.DateTime(2000, 1, 1, 1, 48, 0, 0);
@@ -297,11 +304,13 @@ namespace presentationLayer
             // 
             // nombreTutorTextBox
             // 
+            this.nombreTutorTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.nombreTutorTextBox, "nombreTutorTextBox");
             this.nombreTutorTextBox.Name = "nombreTutorTextBox";
             // 
             // ocupacionTutorTextBox
             // 
+            this.ocupacionTutorTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.ocupacionTutorTextBox, "ocupacionTutorTextBox");
             this.ocupacionTutorTextBox.Name = "ocupacionTutorTextBox";
             // 
@@ -322,16 +331,19 @@ namespace presentationLayer
             // 
             // telefonoCasaTutorTextBox
             // 
+            this.telefonoCasaTutorTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.telefonoCasaTutorTextBox, "telefonoCasaTutorTextBox");
             this.telefonoCasaTutorTextBox.Name = "telefonoCasaTutorTextBox";
             // 
             // telefonoCelularTutorTextBox
             // 
+            this.telefonoCelularTutorTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.telefonoCelularTutorTextBox, "telefonoCelularTutorTextBox");
             this.telefonoCelularTutorTextBox.Name = "telefonoCelularTutorTextBox";
             // 
             // telefonoTrabajoTutorTextBox
             // 
+            this.telefonoTrabajoTutorTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.telefonoTrabajoTutorTextBox, "telefonoTrabajoTutorTextBox");
             this.telefonoTrabajoTutorTextBox.Name = "telefonoTrabajoTutorTextBox";
             // 
@@ -372,36 +384,43 @@ namespace presentationLayer
             // 
             // apellidoPaternoAlumnoTextBox
             // 
+            this.apellidoPaternoAlumnoTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.apellidoPaternoAlumnoTextBox, "apellidoPaternoAlumnoTextBox");
             this.apellidoPaternoAlumnoTextBox.Name = "apellidoPaternoAlumnoTextBox";
             // 
             // apellidoMaternoAlumnoTextBox
             // 
+            this.apellidoMaternoAlumnoTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.apellidoMaternoAlumnoTextBox, "apellidoMaternoAlumnoTextBox");
             this.apellidoMaternoAlumnoTextBox.Name = "apellidoMaternoAlumnoTextBox";
             // 
             // ciudadNacimientoAlumnoTextBox
             // 
+            this.ciudadNacimientoAlumnoTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.ciudadNacimientoAlumnoTextBox, "ciudadNacimientoAlumnoTextBox");
             this.ciudadNacimientoAlumnoTextBox.Name = "ciudadNacimientoAlumnoTextBox";
             // 
             // estadoNacimientoAlumnoTextBox
             // 
+            this.estadoNacimientoAlumnoTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.estadoNacimientoAlumnoTextBox, "estadoNacimientoAlumnoTextBox");
             this.estadoNacimientoAlumnoTextBox.Name = "estadoNacimientoAlumnoTextBox";
             // 
             // calleDireccionAlumnoTextBox
             // 
+            this.calleDireccionAlumnoTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.calleDireccionAlumnoTextBox, "calleDireccionAlumnoTextBox");
             this.calleDireccionAlumnoTextBox.Name = "calleDireccionAlumnoTextBox";
             // 
             // numeroDireccionAlumnoTextBox
             // 
+            this.numeroDireccionAlumnoTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.numeroDireccionAlumnoTextBox, "numeroDireccionAlumnoTextBox");
             this.numeroDireccionAlumnoTextBox.Name = "numeroDireccionAlumnoTextBox";
             // 
             // coloniaDireccionAlumnoTextBox
             // 
+            this.coloniaDireccionAlumnoTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.coloniaDireccionAlumnoTextBox, "coloniaDireccionAlumnoTextBox");
             this.coloniaDireccionAlumnoTextBox.Name = "coloniaDireccionAlumnoTextBox";
             // 
@@ -417,11 +436,13 @@ namespace presentationLayer
             // 
             // apellidoPaternoTutorTextBox
             // 
+            this.apellidoPaternoTutorTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.apellidoPaternoTutorTextBox, "apellidoPaternoTutorTextBox");
             this.apellidoPaternoTutorTextBox.Name = "apellidoPaternoTutorTextBox";
             // 
             // apellidoMaternoTutorTextBox
             // 
+            this.apellidoMaternoTutorTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.apellidoMaternoTutorTextBox, "apellidoMaternoTutorTextBox");
             this.apellidoMaternoTutorTextBox.Name = "apellidoMaternoTutorTextBox";
             // 
@@ -442,16 +463,19 @@ namespace presentationLayer
             // 
             // calleDireccionTutorTextBox
             // 
+            this.calleDireccionTutorTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.calleDireccionTutorTextBox, "calleDireccionTutorTextBox");
             this.calleDireccionTutorTextBox.Name = "calleDireccionTutorTextBox";
             // 
             // numeroDireccionTutorTextBox
             // 
+            this.numeroDireccionTutorTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.numeroDireccionTutorTextBox, "numeroDireccionTutorTextBox");
             this.numeroDireccionTutorTextBox.Name = "numeroDireccionTutorTextBox";
             // 
             // coloniaDireccionTutorTextBox
             // 
+            this.coloniaDireccionTutorTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.coloniaDireccionTutorTextBox, "coloniaDireccionTutorTextBox");
             this.coloniaDireccionTutorTextBox.Name = "coloniaDireccionTutorTextBox";
             // 
@@ -519,16 +543,19 @@ namespace presentationLayer
             // 
             // servicioMedicoTextBox
             // 
+            this.servicioMedicoTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.servicioMedicoTextBox, "servicioMedicoTextBox");
             this.servicioMedicoTextBox.Name = "servicioMedicoTextBox";
             // 
             // telefonoContactoMedicoAlumnoTextBox
             // 
+            this.telefonoContactoMedicoAlumnoTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.telefonoContactoMedicoAlumnoTextBox, "telefonoContactoMedicoAlumnoTextBox");
             this.telefonoContactoMedicoAlumnoTextBox.Name = "telefonoContactoMedicoAlumnoTextBox";
             // 
             // grupoSanguineoTextBox
             // 
+            this.grupoSanguineoTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.grupoSanguineoTextBox, "grupoSanguineoTextBox");
             this.grupoSanguineoTextBox.Name = "grupoSanguineoTextBox";
             // 
@@ -621,6 +648,32 @@ namespace presentationLayer
             resources.ApplyResources(this.informacionMedicaAlumnoGroupBox, "informacionMedicaAlumnoGroupBox");
             this.informacionMedicaAlumnoGroupBox.Name = "informacionMedicaAlumnoGroupBox";
             this.informacionMedicaAlumnoGroupBox.TabStop = false;
+            // 
+            // alergiasCombobox
+            // 
+            this.alergiasCombobox.FormattingEnabled = true;
+            resources.ApplyResources(this.alergiasCombobox, "alergiasCombobox");
+            this.alergiasCombobox.Name = "alergiasCombobox";
+            // 
+            // discapacidadesCombobox
+            // 
+            this.discapacidadesCombobox.FormattingEnabled = true;
+            this.discapacidadesCombobox.Items.AddRange(new object[] {
+            resources.GetString("discapacidadesCombobox.Items"),
+            resources.GetString("discapacidadesCombobox.Items1"),
+            resources.GetString("discapacidadesCombobox.Items2")});
+            resources.ApplyResources(this.discapacidadesCombobox, "discapacidadesCombobox");
+            this.discapacidadesCombobox.Name = "discapacidadesCombobox";
+            // 
+            // enfermedadesCombobox
+            // 
+            this.enfermedadesCombobox.FormattingEnabled = true;
+            this.enfermedadesCombobox.Items.AddRange(new object[] {
+            resources.GetString("enfermedadesCombobox.Items"),
+            resources.GetString("enfermedadesCombobox.Items1"),
+            resources.GetString("enfermedadesCombobox.Items2")});
+            resources.ApplyResources(this.enfermedadesCombobox, "enfermedadesCombobox");
+            this.enfermedadesCombobox.Name = "enfermedadesCombobox";
             // 
             // documentacionGB
             // 
@@ -816,7 +869,6 @@ namespace presentationLayer
             // 
             this.altaAlumnoPanel.BackColor = System.Drawing.Color.Thistle;
             this.altaAlumnoPanel.Controls.Add(this.alumnosButton);
-            this.altaAlumnoPanel.Controls.Add(this.docentesButton);
             resources.ApplyResources(this.altaAlumnoPanel, "altaAlumnoPanel");
             this.altaAlumnoPanel.Name = "altaAlumnoPanel";
             // 
@@ -826,12 +878,6 @@ namespace presentationLayer
             this.alumnosButton.Name = "alumnosButton";
             this.alumnosButton.UseVisualStyleBackColor = true;
             this.alumnosButton.Click += new System.EventHandler(this.alumnosButton_Click);
-            // 
-            // docentesButton
-            // 
-            resources.ApplyResources(this.docentesButton, "docentesButton");
-            this.docentesButton.Name = "docentesButton";
-            this.docentesButton.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
@@ -844,24 +890,6 @@ namespace presentationLayer
             this.realizarAltaButton.Name = "realizarAltaButton";
             this.realizarAltaButton.UseVisualStyleBackColor = true;
             this.realizarAltaButton.Click += new System.EventHandler(this.guardarButton_Click);
-            // 
-            // enfermedadesCombobox
-            // 
-            this.enfermedadesCombobox.FormattingEnabled = true;
-            resources.ApplyResources(this.enfermedadesCombobox, "enfermedadesCombobox");
-            this.enfermedadesCombobox.Name = "enfermedadesCombobox";
-            // 
-            // discapacidadesCombobox
-            // 
-            this.discapacidadesCombobox.FormattingEnabled = true;
-            resources.ApplyResources(this.discapacidadesCombobox, "discapacidadesCombobox");
-            this.discapacidadesCombobox.Name = "discapacidadesCombobox";
-            // 
-            // alergiasCombobox
-            // 
-            this.alergiasCombobox.FormattingEnabled = true;
-            resources.ApplyResources(this.alergiasCombobox, "alergiasCombobox");
-            this.alergiasCombobox.Name = "alergiasCombobox";
             // 
             // altaAlumno
             // 
@@ -880,7 +908,6 @@ namespace presentationLayer
             this.Controls.Add(this.siguienteButton);
             this.Name = "altaAlumno";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.altaAlumno_Load);
             this.tipoIngresoGroupBox.ResumeLayout(false);
             this.tipoIngresoGroupBox.PerformLayout();
             this.otroAlumnoTutorGroupBox.ResumeLayout(false);
@@ -992,7 +1019,6 @@ namespace presentationLayer
         private System.Windows.Forms.ComboBox seleccionarNombreComboBox;
         private System.Windows.Forms.Panel altaAlumnoPanel;
         private System.Windows.Forms.Button alumnosButton;
-        private System.Windows.Forms.Button docentesButton;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button realizarAltaButton;
         private System.Windows.Forms.Button agregarAlergiasButton;

@@ -124,13 +124,13 @@ namespace presentationLayer
             guardar.Font = new Font("Leelawadee UI", 12);
         }
 
-        public static void altasBotonesPanel(Button alumnos, Button docentes)
+        public static void altasBotonesPanel(Button alumnos)
         {
             var tt = new ToolTip();
-            tt.SetToolTip(docentes, "MENÚ DOCENTES");
+            //tt.SetToolTip(docentes, "MENÚ DOCENTES");
             tt.SetToolTip(alumnos, "MENÚ ALUMNOS");
 
-            docentes.Font = new Font("Leelawadee UI", 12);
+            //docentes.Font = new Font("Leelawadee UI", 12);
             alumnos.Font = new Font("Leelawadee UI", 12);
         }
     }

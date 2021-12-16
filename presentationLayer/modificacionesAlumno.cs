@@ -63,7 +63,7 @@ namespace presentationLayer
             Claudia.altasInformacionEscolar(cicloEscolarLabel, curpLabel, añosCumplidosLabel, cicloEscolarTextBox, curpTextBox, añosCumplidosTextBox, tipoIngresoGroupBox, nuevoIngresoRadioButton, reingresoRadioButton);
 
             Evelyn.altasBotonesParaNavegar(siguienteButton, regresarButton, finalizarModificacionButton);
-            Evelyn.altasBotonesPanel(alumnosButton, docentesButton);
+            Evelyn.altasBotonesPanel(alumnosButton);
 
             int distanciaInfTutor = 60;
             Claudia.altasInformacionTutorGroupBox(informacionTutorGroupBox);
