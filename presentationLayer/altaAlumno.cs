@@ -54,10 +54,10 @@ namespace presentationLayer
             distanciaLabel = Claudia.altasLabel(canalizadoPorLabel, distanciaLabel);
             distanciaTextBox = Claudia.altasTextBox(canalizadoPorTextBox, distanciaTextBox);
 
+
             Evelyn.altasInformacionMedicaAlumno(servicioMedicoAlumnoLabel, discapacidadLabel, enfermedaresAlumnoLabel, alergiasAlumnoLabel,
                     telefonoContactoMedicoAlumnoLabel, grupoSanguineoAlumnoLabel, documentacionAlumnoLabel, mostrarDiscapacidadLabel,
-                    mostrarEnfermedadesLabel, mostrarAlergiasLabel, servicioMedicoTextBox, discapacidadTextBox, enfermedadesAlumnoTextBox,
-                    alergiasAlumnoTextBox, telefonoContactoMedicoAlumnoTextBox, grupoSanguineoTextBox, documentacionGB, mostrarDiscapacidadRichTextBox,
+                    mostrarEnfermedadesLabel, mostrarAlergiasLabel, servicioMedicoTextBox, discapacidadesCombobox, enfermedadesCombobox, alergiasCombobox, telefonoContactoMedicoAlumnoTextBox, grupoSanguineoTextBox, documentacionGB, mostrarDiscapacidadRichTextBox,
                     mostrarEnfermedadesRichTextBox, mostrarAlergiasRichTextBox, agregarAlergiasButton, agregarEnfermedadesButton, agregarDiscapacidadButton);
 
             Claudia.altasInformacionEscolar(cicloEscolarLabel, curpLabel, añosCumplidosLabel, cicloEscolarTextBox, curpTextBox, añosCumplidosTextBox, tipoIngresoGroupBox, nuevoIngresoRadioButton, reingresoRadioButton);
@@ -190,22 +190,22 @@ namespace presentationLayer
         //AGREGAR ENFERMEDADES AL RICHTXTBOX
         private void agregarEnfermedadesButton_Click(object sender, EventArgs e)
         {
-            string enfermedad = enfermedadesAlumnoTextBox.Text;
-            mostrarEnfermedadesRichTextBox.AppendText(enfermedad + ",    ");
+      
+         
         }
 
         //AGREGAR DISCAPACIDADES AL RICHTXTBOX
         private void agregarDiscapacidadButton_Click(object sender, EventArgs e)
         {
-            string discapacidad = discapacidadTextBox.Text;
-            mostrarDiscapacidadRichTextBox.AppendText(discapacidad + ",    ");
+
+         
         }
 
         //AGREGAR ALERGIAS AL RICHTXTBOX
         private void agregarAlergiasButton_Click(object sender, EventArgs e)
         {
-            string alergia = alergiasAlumnoTextBox.Text;
-            mostrarAlergiasRichTextBox.AppendText(alergia + ",    ");
+         
+         
         }
 
         //LIMPIAR INFORMACIÓN GENERAL ALUMNO
@@ -253,9 +253,7 @@ namespace presentationLayer
         private void limpiarFormato3Button_Click(object sender, EventArgs e)
         {
             servicioMedicoTextBox.Clear();
-            enfermedadesAlumnoTextBox.Clear();
-            discapacidadTextBox.Clear();
-            alergiasAlumnoTextBox.Clear();
+        
             telefonoContactoMedicoAlumnoTextBox.Clear();
             grupoSanguineoTextBox.Clear();
             //documentacionListBox.SetItemChecked = false; *CLAUDIA CAMBIARÁ ESTO POR UN CONJUNTO DE CHECKBUTTONS*

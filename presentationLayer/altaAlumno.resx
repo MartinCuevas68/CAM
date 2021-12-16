@@ -657,30 +657,6 @@
   <data name="&gt;&gt;telefonoAlumnoTextBox.ZOrder" xml:space="preserve">
     <value>22</value>
   </data>
-  <data name="discapacidadTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>200, 58</value>
-  </data>
-  <data name="discapacidadTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="discapacidadTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
-  </data>
-  <data name="discapacidadTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="&gt;&gt;discapacidadTextBox.Name" xml:space="preserve">
-    <value>discapacidadTextBox</value>
-  </data>
-  <data name="&gt;&gt;discapacidadTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;discapacidadTextBox.Parent" xml:space="preserve">
-    <value>informacionMedicaAlumnoGroupBox</value>
-  </data>
-  <data name="&gt;&gt;discapacidadTextBox.ZOrder" xml:space="preserve">
-    <value>25</value>
-  </data>
   <data name="escuelaProcedenciaTextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>174, 222</value>
   </data>
@@ -2047,7 +2023,7 @@
     <value>informacionMedicaAlumnoGroupBox</value>
   </data>
   <data name="&gt;&gt;servicioMedicoAlumnoLabel.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>17</value>
   </data>
   <data name="grupoSanguineoAlumnoLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2080,7 +2056,7 @@
     <value>informacionMedicaAlumnoGroupBox</value>
   </data>
   <data name="&gt;&gt;grupoSanguineoAlumnoLabel.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>18</value>
   </data>
   <data name="enfermedaresAlumnoLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2113,7 +2089,7 @@
     <value>informacionMedicaAlumnoGroupBox</value>
   </data>
   <data name="&gt;&gt;enfermedaresAlumnoLabel.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>19</value>
   </data>
   <data name="alergiasAlumnoLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2146,7 +2122,7 @@
     <value>informacionMedicaAlumnoGroupBox</value>
   </data>
   <data name="&gt;&gt;alergiasAlumnoLabel.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>20</value>
   </data>
   <data name="telefonoContactoMedicoAlumnoLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2179,7 +2155,7 @@
     <value>informacionMedicaAlumnoGroupBox</value>
   </data>
   <data name="&gt;&gt;telefonoContactoMedicoAlumnoLabel.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>21</value>
   </data>
   <data name="documentacionAlumnoLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2212,7 +2188,7 @@
     <value>informacionMedicaAlumnoGroupBox</value>
   </data>
   <data name="&gt;&gt;documentacionAlumnoLabel.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>23</value>
   </data>
   <data name="servicioMedicoTextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>200, 21</value>
@@ -2236,34 +2212,10 @@
     <value>informacionMedicaAlumnoGroupBox</value>
   </data>
   <data name="&gt;&gt;servicioMedicoTextBox.ZOrder" xml:space="preserve">
-    <value>23</value>
-  </data>
-  <data name="enfermedadesAlumnoTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>200, 39</value>
-  </data>
-  <data name="enfermedadesAlumnoTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="enfermedadesAlumnoTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
-  </data>
-  <data name="enfermedadesAlumnoTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>123</value>
-  </data>
-  <data name="&gt;&gt;enfermedadesAlumnoTextBox.Name" xml:space="preserve">
-    <value>enfermedadesAlumnoTextBox</value>
-  </data>
-  <data name="&gt;&gt;enfermedadesAlumnoTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;enfermedadesAlumnoTextBox.Parent" xml:space="preserve">
-    <value>informacionMedicaAlumnoGroupBox</value>
-  </data>
-  <data name="&gt;&gt;enfermedadesAlumnoTextBox.ZOrder" xml:space="preserve">
-    <value>24</value>
+    <value>25</value>
   </data>
   <data name="telefonoContactoMedicoAlumnoTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>200, 97</value>
+    <value>200, 106</value>
   </data>
   <data name="telefonoContactoMedicoAlumnoTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -2284,31 +2236,7 @@
     <value>informacionMedicaAlumnoGroupBox</value>
   </data>
   <data name="&gt;&gt;telefonoContactoMedicoAlumnoTextBox.ZOrder" xml:space="preserve">
-    <value>22</value>
-  </data>
-  <data name="alergiasAlumnoTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>200, 77</value>
-  </data>
-  <data name="alergiasAlumnoTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="alergiasAlumnoTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
-  </data>
-  <data name="alergiasAlumnoTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>126</value>
-  </data>
-  <data name="&gt;&gt;alergiasAlumnoTextBox.Name" xml:space="preserve">
-    <value>alergiasAlumnoTextBox</value>
-  </data>
-  <data name="&gt;&gt;alergiasAlumnoTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;alergiasAlumnoTextBox.Parent" xml:space="preserve">
-    <value>informacionMedicaAlumnoGroupBox</value>
-  </data>
-  <data name="&gt;&gt;alergiasAlumnoTextBox.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>24</value>
   </data>
   <data name="grupoSanguineoTextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>426, 27</value>
@@ -2332,7 +2260,7 @@
     <value>informacionMedicaAlumnoGroupBox</value>
   </data>
   <data name="&gt;&gt;grupoSanguineoTextBox.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>22</value>
   </data>
   <data name="limpiarFormato1Button.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2411,6 +2339,69 @@
   </data>
   <data name="&gt;&gt;informacionEscolarGroupBox.ZOrder" xml:space="preserve">
     <value>6</value>
+  </data>
+  <data name="alergiasCombobox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>159, 80</value>
+  </data>
+  <data name="alergiasCombobox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="alergiasCombobox.TabIndex" type="System.Int32, mscorlib">
+    <value>145</value>
+  </data>
+  <data name="&gt;&gt;alergiasCombobox.Name" xml:space="preserve">
+    <value>alergiasCombobox</value>
+  </data>
+  <data name="&gt;&gt;alergiasCombobox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;alergiasCombobox.Parent" xml:space="preserve">
+    <value>informacionMedicaAlumnoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;alergiasCombobox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="discapacidadesCombobox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>159, 59</value>
+  </data>
+  <data name="discapacidadesCombobox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="discapacidadesCombobox.TabIndex" type="System.Int32, mscorlib">
+    <value>144</value>
+  </data>
+  <data name="&gt;&gt;discapacidadesCombobox.Name" xml:space="preserve">
+    <value>discapacidadesCombobox</value>
+  </data>
+  <data name="&gt;&gt;discapacidadesCombobox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;discapacidadesCombobox.Parent" xml:space="preserve">
+    <value>informacionMedicaAlumnoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;discapacidadesCombobox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="enfermedadesCombobox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>159, 39</value>
+  </data>
+  <data name="enfermedadesCombobox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="enfermedadesCombobox.TabIndex" type="System.Int32, mscorlib">
+    <value>143</value>
+  </data>
+  <data name="&gt;&gt;enfermedadesCombobox.Name" xml:space="preserve">
+    <value>enfermedadesCombobox</value>
+  </data>
+  <data name="&gt;&gt;enfermedadesCombobox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;enfermedadesCombobox.Parent" xml:space="preserve">
+    <value>informacionMedicaAlumnoGroupBox</value>
+  </data>
+  <data name="&gt;&gt;enfermedadesCombobox.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="checkBox5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2566,7 +2557,7 @@
     <value>informacionMedicaAlumnoGroupBox</value>
   </data>
   <data name="&gt;&gt;documentacionGB.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>3</value>
   </data>
   <data name="limpiarFormato3Button.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Zoom</value>
@@ -2596,7 +2587,7 @@
     <value>informacionMedicaAlumnoGroupBox</value>
   </data>
   <data name="&gt;&gt;limpiarFormato3Button.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>4</value>
   </data>
   <data name="eliminarAlergiasButton.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2629,7 +2620,7 @@
     <value>informacionMedicaAlumnoGroupBox</value>
   </data>
   <data name="&gt;&gt;eliminarAlergiasButton.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>5</value>
   </data>
   <data name="eliminarDiscapacidadesButton.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2662,7 +2653,7 @@
     <value>informacionMedicaAlumnoGroupBox</value>
   </data>
   <data name="&gt;&gt;eliminarDiscapacidadesButton.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>6</value>
   </data>
   <data name="eliminarEnfermedadButton.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2695,7 +2686,7 @@
     <value>informacionMedicaAlumnoGroupBox</value>
   </data>
   <data name="&gt;&gt;eliminarEnfermedadButton.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>7</value>
   </data>
   <data name="agregarAlergiasButton.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2725,7 +2716,7 @@
     <value>informacionMedicaAlumnoGroupBox</value>
   </data>
   <data name="&gt;&gt;agregarAlergiasButton.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>8</value>
   </data>
   <data name="agregarDiscapacidadButton.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2755,7 +2746,7 @@
     <value>informacionMedicaAlumnoGroupBox</value>
   </data>
   <data name="&gt;&gt;agregarDiscapacidadButton.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>9</value>
   </data>
   <data name="agregarEnfermedadesButton.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2785,7 +2776,7 @@
     <value>informacionMedicaAlumnoGroupBox</value>
   </data>
   <data name="&gt;&gt;agregarEnfermedadesButton.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>10</value>
   </data>
   <data name="mostrarAlergiasLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2818,7 +2809,7 @@
     <value>informacionMedicaAlumnoGroupBox</value>
   </data>
   <data name="&gt;&gt;mostrarAlergiasLabel.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>11</value>
   </data>
   <data name="mostrarEnfermedadesLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2851,7 +2842,7 @@
     <value>informacionMedicaAlumnoGroupBox</value>
   </data>
   <data name="&gt;&gt;mostrarEnfermedadesLabel.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>12</value>
   </data>
   <data name="mostrarDiscapacidadLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2884,7 +2875,7 @@
     <value>informacionMedicaAlumnoGroupBox</value>
   </data>
   <data name="&gt;&gt;mostrarDiscapacidadLabel.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>13</value>
   </data>
   <data name="mostrarAlergiasRichTextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>344, 150</value>
@@ -2911,7 +2902,7 @@
     <value>informacionMedicaAlumnoGroupBox</value>
   </data>
   <data name="&gt;&gt;mostrarAlergiasRichTextBox.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>14</value>
   </data>
   <data name="mostrarEnfermedadesRichTextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>200, 150</value>
@@ -2938,7 +2929,7 @@
     <value>informacionMedicaAlumnoGroupBox</value>
   </data>
   <data name="&gt;&gt;mostrarEnfermedadesRichTextBox.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>15</value>
   </data>
   <data name="mostrarDiscapacidadRichTextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>11, 150</value>
@@ -2965,7 +2956,7 @@
     <value>informacionMedicaAlumnoGroupBox</value>
   </data>
   <data name="&gt;&gt;mostrarDiscapacidadRichTextBox.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>16</value>
   </data>
   <data name="informacionMedicaAlumnoGroupBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>52, 382</value>
@@ -3268,7 +3259,7 @@
     <value>124, 12, 0, 0</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>350, 44</value>
+    <value>349, 44</value>
   </data>
   <data name="label3.TabIndex" type="System.Int32, mscorlib">
     <value>137</value>

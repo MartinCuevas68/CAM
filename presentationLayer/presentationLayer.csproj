@@ -74,6 +74,7 @@
     <Compile Include="altaAlumno.Designer.cs">
       <DependentUpon>altaAlumno.cs</DependentUpon>
     </Compile>
+    <Compile Include="Martin.cs" />
     <Compile Include="modificacionesAlumno.cs">
       <SubType>Form</SubType>
     </Compile>
