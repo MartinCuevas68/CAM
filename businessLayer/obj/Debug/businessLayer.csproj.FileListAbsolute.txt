@@ -148,3 +148,18 @@ B:\GitKraken\Github\CAM\Development\CAM\businessLayer\obj\Debug\businessLayer.cs
 B:\GitKraken\Github\CAM\Development\CAM\businessLayer\obj\Debug\businessLayer.csproj.CoreCompileInputs.cache
 B:\GitKraken\Github\CAM\Development\CAM\businessLayer\obj\Debug\businessLayer.dll
 B:\GitKraken\Github\CAM\Development\CAM\businessLayer\obj\Debug\businessLayer.pdb
+G:\Visual studio programs\GIT\CAM\businessLayer\bin\Debug\businessLayer.dll.config
+G:\Visual studio programs\GIT\CAM\businessLayer\bin\Debug\businessLayer.dll
+G:\Visual studio programs\GIT\CAM\businessLayer\bin\Debug\businessLayer.pdb
+G:\Visual studio programs\GIT\CAM\businessLayer\bin\Debug\1dataLayer.dll
+G:\Visual studio programs\GIT\CAM\businessLayer\bin\Debug\EntityFramework.dll
+G:\Visual studio programs\GIT\CAM\businessLayer\bin\Debug\EntityFramework.SqlServer.dll
+G:\Visual studio programs\GIT\CAM\businessLayer\bin\Debug\1dataLayer.pdb
+G:\Visual studio programs\GIT\CAM\businessLayer\bin\Debug\1dataLayer.dll.config
+G:\Visual studio programs\GIT\CAM\businessLayer\bin\Debug\EntityFramework.xml
+G:\Visual studio programs\GIT\CAM\businessLayer\bin\Debug\EntityFramework.SqlServer.xml
+G:\Visual studio programs\GIT\CAM\businessLayer\obj\Debug\businessLayer.csproj.AssemblyReference.cache
+G:\Visual studio programs\GIT\CAM\businessLayer\obj\Debug\businessLayer.csproj.CoreCompileInputs.cache
+G:\Visual studio programs\GIT\CAM\businessLayer\obj\Debug\businessLayer.csproj.CopyComplete
+G:\Visual studio programs\GIT\CAM\businessLayer\obj\Debug\businessLayer.dll
+G:\Visual studio programs\GIT\CAM\businessLayer\obj\Debug\businessLayer.pdb

@@ -12,18 +12,18 @@ namespace _1dataLayer
     using System;
     using System.Collections.Generic;
     
-    public partial class turnos
+    public partial class recurso
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public turnos()
+        public recurso()
         {
-            this.programa = new HashSet<programa>();
+            this.programas = new HashSet<programa>();
         }
     
-        public int id_turno { get; set; }
-        public string turno { get; set; }
+        public int id_recurso { get; set; }
+        public string recurso1 { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<programa> programa { get; set; }
+        public virtual ICollection<programa> programas { get; set; }
     }
 }

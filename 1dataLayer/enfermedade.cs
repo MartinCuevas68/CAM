@@ -10,10 +10,13 @@
 namespace _1dataLayer
 {
     using System;
+    using System.Collections.Generic;
     
-    public partial class sp_helpdiagramdefinition_Result
+    public partial class enfermedade
     {
-        public Nullable<int> version { get; set; }
-        public byte[] definition { get; set; }
+        public int id_cartilla_medica { get; set; }
+        public string enfermedad { get; set; }
+    
+        public virtual tabla_medica tabla_medica { get; set; }
     }
 }

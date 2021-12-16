@@ -12,10 +12,10 @@ namespace _1dataLayer
     using System;
     using System.Collections.Generic;
     
-    public partial class discapacidades
+    public partial class alergia
     {
         public int id_cartilla_medica { get; set; }
-        public string discapacidades1 { get; set; }
+        public string alergia1 { get; set; }
     
         public virtual tabla_medica tabla_medica { get; set; }
     }

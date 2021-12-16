@@ -186,3 +186,27 @@ C:\Users\galle\source\repos\CAM3\presentationLayer\obj\Debug\presentationLayer.e
 C:\Users\galle\source\repos\CAM3\presentationLayer\obj\Debug\presentationLayer.pdb
 C:\Users\vanes\Source\Repos\CAM\presentationLayer\obj\Debug\presentationLayer.modificacionesAlumno.resources
 C:\Users\vanes\Source\Repos\CAM\presentationLayer\obj\Debug\presentationLayer.csproj.CopyComplete
+G:\Visual studio programs\GIT\CAM\presentationLayer\bin\Debug\presentationLayer.exe.config
+G:\Visual studio programs\GIT\CAM\presentationLayer\bin\Debug\presentationLayer.exe
+G:\Visual studio programs\GIT\CAM\presentationLayer\bin\Debug\presentationLayer.pdb
+G:\Visual studio programs\GIT\CAM\presentationLayer\bin\Debug\1dataLayer.dll
+G:\Visual studio programs\GIT\CAM\presentationLayer\bin\Debug\businessLayer.dll
+G:\Visual studio programs\GIT\CAM\presentationLayer\bin\Debug\EntityFramework.dll
+G:\Visual studio programs\GIT\CAM\presentationLayer\bin\Debug\EntityFramework.SqlServer.dll
+G:\Visual studio programs\GIT\CAM\presentationLayer\bin\Debug\1dataLayer.pdb
+G:\Visual studio programs\GIT\CAM\presentationLayer\bin\Debug\1dataLayer.dll.config
+G:\Visual studio programs\GIT\CAM\presentationLayer\bin\Debug\businessLayer.pdb
+G:\Visual studio programs\GIT\CAM\presentationLayer\bin\Debug\businessLayer.dll.config
+G:\Visual studio programs\GIT\CAM\presentationLayer\bin\Debug\EntityFramework.xml
+G:\Visual studio programs\GIT\CAM\presentationLayer\bin\Debug\EntityFramework.SqlServer.xml
+G:\Visual studio programs\GIT\CAM\presentationLayer\obj\Debug\presentationLayer.csproj.AssemblyReference.cache
+G:\Visual studio programs\GIT\CAM\presentationLayer\obj\Debug\presentationLayer.csproj.SuggestedBindingRedirects.cache
+G:\Visual studio programs\GIT\CAM\presentationLayer\obj\Debug\presentationLayer.altaAlumno.resources
+G:\Visual studio programs\GIT\CAM\presentationLayer\obj\Debug\presentationLayer.Consultas.resources
+G:\Visual studio programs\GIT\CAM\presentationLayer\obj\Debug\presentationLayer.modificacionesAlumno.resources
+G:\Visual studio programs\GIT\CAM\presentationLayer\obj\Debug\presentationLayer.Properties.Resources.resources
+G:\Visual studio programs\GIT\CAM\presentationLayer\obj\Debug\presentationLayer.csproj.GenerateResource.cache
+G:\Visual studio programs\GIT\CAM\presentationLayer\obj\Debug\presentationLayer.csproj.CoreCompileInputs.cache
+G:\Visual studio programs\GIT\CAM\presentationLayer\obj\Debug\presentationLayer.csproj.CopyComplete
+G:\Visual studio programs\GIT\CAM\presentationLayer\obj\Debug\presentationLayer.exe
+G:\Visual studio programs\GIT\CAM\presentationLayer\obj\Debug\presentationLayer.pdb

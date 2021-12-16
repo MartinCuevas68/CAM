@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="BDDCAMModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+<Schema Namespace="BDCAMModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
   <EntityType Name="alumno">
     <Key>
       <PropertyRef Name="id_alumno" />
@@ -23,8 +23,8 @@
     <Property Name="documentacion_alumno" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
     <Property Name="atendido_por" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
     <NavigationProperty Name="tabla_medica" Relationship="Self.alumno_cartilla" FromRole="alumno" ToRole="tabla_medica" />
-    <NavigationProperty Name="programa" Relationship="Self.alumno_programa" FromRole="alumno" ToRole="programa" />
-    <NavigationProperty Name="tutor" Relationship="Self.tutor_alumno" FromRole="alumno" ToRole="tutor" />
+    <NavigationProperty Name="programas" Relationship="Self.alumno_programa" FromRole="alumno" ToRole="programa" />
+    <NavigationProperty Name="tutors" Relationship="Self.tutor_alumno" FromRole="alumno" ToRole="tutor" />
   </EntityType>
   <EntityType Name="programa">
     <Key>
@@ -38,19 +38,19 @@
     <Property Name="objetivo" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="modulos" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="proyecto" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
-    <NavigationProperty Name="alumno" Relationship="Self.alumno_programa" FromRole="programa" ToRole="alumno" />
+    <NavigationProperty Name="alumnoes" Relationship="Self.alumno_programa" FromRole="programa" ToRole="alumno" />
     <NavigationProperty Name="turnos" Relationship="Self.programa_turno" FromRole="programa" ToRole="turnos" />
     <NavigationProperty Name="recursos" Relationship="Self.recurso_programa" FromRole="programa" ToRole="recursos" />
   </EntityType>
-  <EntityType Name="recursos">
+  <EntityType Name="recurso">
     <Key>
       <PropertyRef Name="id_recurso" />
     </Key>
     <Property Name="id_recurso" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="recurso" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <NavigationProperty Name="programa" Relationship="Self.recurso_programa" FromRole="recursos" ToRole="programa" />
+    <Property Name="recurso1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="programas" Relationship="Self.recurso_programa" FromRole="recursos" ToRole="programa" />
   </EntityType>
-  <EntityType Name="sysdiagrams">
+  <EntityType Name="sysdiagram">
     <Key>
       <PropertyRef Name="diagram_id" />
     </Key>
@@ -83,15 +83,15 @@
     <NavigationProperty Name="alergias" Relationship="Self.FK_alergias_tabla_medica" FromRole="tabla_medica" ToRole="alergias" />
     <NavigationProperty Name="discapacidades" Relationship="Self.FK_discapacidades_tabla_medica" FromRole="tabla_medica" ToRole="discapacidades" />
     <NavigationProperty Name="enfermedades" Relationship="Self.FK_enfermedades_tabla_medica" FromRole="tabla_medica" ToRole="enfermedades" />
-    <NavigationProperty Name="alumno" Relationship="Self.alumno_cartilla" FromRole="tabla_medica" ToRole="alumno" />
+    <NavigationProperty Name="alumnoes" Relationship="Self.alumno_cartilla" FromRole="tabla_medica" ToRole="alumno" />
   </EntityType>
-  <EntityType Name="turnos">
+  <EntityType Name="turno">
     <Key>
       <PropertyRef Name="id_turno" />
     </Key>
     <Property Name="id_turno" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="turno" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <NavigationProperty Name="programa" Relationship="Self.programa_turno" FromRole="turnos" ToRole="programa" />
+    <Property Name="turno1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="programas" Relationship="Self.programa_turno" FromRole="turnos" ToRole="programa" />
   </EntityType>
   <EntityType Name="tutor">
     <Key>
@@ -109,27 +109,27 @@
     <Property Name="calle_trabajo_tutor" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="numero_trabajo_tutor" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
     <NavigationProperty Name="telefono_tutores" Relationship="Self.FK_Tuto" FromRole="tutor" ToRole="telefono_tutores" />
-    <NavigationProperty Name="alumno" Relationship="Self.tutor_alumno" FromRole="tutor" ToRole="alumno" />
+    <NavigationProperty Name="alumnoes" Relationship="Self.tutor_alumno" FromRole="tutor" ToRole="alumno" />
   </EntityType>
-  <EntityType Name="alergias">
+  <EntityType Name="alergia">
     <Key>
       <PropertyRef Name="id_cartilla_medica" />
-      <PropertyRef Name="alergia" />
+      <PropertyRef Name="alergia1" />
     </Key>
     <Property Name="id_cartilla_medica" Type="Int32" Nullable="false" />
-    <Property Name="alergia" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="alergia1" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
     <NavigationProperty Name="tabla_medica" Relationship="Self.FK_alergias_tabla_medica" FromRole="alergias" ToRole="tabla_medica" />
   </EntityType>
-  <EntityType Name="discapacidades">
+  <EntityType Name="discapacidade">
     <Key>
       <PropertyRef Name="id_cartilla_medica" />
-      <PropertyRef Name="discapacidades1" />
+      <PropertyRef Name="discapacidades" />
     </Key>
     <Property Name="id_cartilla_medica" Type="Int32" Nullable="false" />
-    <Property Name="discapacidades1" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="discapacidades" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
     <NavigationProperty Name="tabla_medica" Relationship="Self.FK_discapacidades_tabla_medica" FromRole="discapacidades" ToRole="tabla_medica" />
   </EntityType>
-  <EntityType Name="enfermedades">
+  <EntityType Name="enfermedade">
     <Key>
       <PropertyRef Name="id_cartilla_medica" />
       <PropertyRef Name="enfermedad" />
@@ -164,7 +164,7 @@
   </Association>
   <Association Name="FK_alergias_tabla_medica">
     <End Role="tabla_medica" Type="Self.tabla_medica" Multiplicity="1" />
-    <End Role="alergias" Type="Self.alergias" Multiplicity="*" />
+    <End Role="alergias" Type="Self.alergia" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="tabla_medica">
         <PropertyRef Name="id_cartilla_medica" />
@@ -176,7 +176,7 @@
   </Association>
   <Association Name="FK_discapacidades_tabla_medica">
     <End Role="tabla_medica" Type="Self.tabla_medica" Multiplicity="1" />
-    <End Role="discapacidades" Type="Self.discapacidades" Multiplicity="*" />
+    <End Role="discapacidades" Type="Self.discapacidade" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="tabla_medica">
         <PropertyRef Name="id_cartilla_medica" />
@@ -188,7 +188,7 @@
   </Association>
   <Association Name="FK_enfermedades_tabla_medica">
     <End Role="tabla_medica" Type="Self.tabla_medica" Multiplicity="1" />
-    <End Role="enfermedades" Type="Self.enfermedades" Multiplicity="*" />
+    <End Role="enfermedades" Type="Self.enfermedade" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="tabla_medica">
         <PropertyRef Name="id_cartilla_medica" />
@@ -220,28 +220,28 @@
   </Association>
   <Association Name="programa_turno">
     <End Role="programa" Type="Self.programa" Multiplicity="*" />
-    <End Role="turnos" Type="Self.turnos" Multiplicity="*" />
+    <End Role="turnos" Type="Self.turno" Multiplicity="*" />
   </Association>
   <Association Name="recurso_programa">
     <End Role="programa" Type="Self.programa" Multiplicity="*" />
-    <End Role="recursos" Type="Self.recursos" Multiplicity="*" />
+    <End Role="recursos" Type="Self.recurso" Multiplicity="*" />
   </Association>
   <Association Name="tutor_alumno">
     <End Role="tutor" Type="Self.tutor" Multiplicity="*" />
     <End Role="alumno" Type="Self.alumno" Multiplicity="*" />
   </Association>
-  <EntityContainer Name="BDDCAMEntities" annotation:LazyLoadingEnabled="true">
-    <EntitySet Name="alumno" EntityType="Self.alumno" />
-    <EntitySet Name="programa" EntityType="Self.programa" />
-    <EntitySet Name="recursos" EntityType="Self.recursos" />
-    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+  <EntityContainer Name="BDCAMEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="alumnoes" EntityType="Self.alumno" />
+    <EntitySet Name="programas" EntityType="Self.programa" />
+    <EntitySet Name="recursos" EntityType="Self.recurso" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
     <EntitySet Name="tabla_indicadores_telefono" EntityType="Self.tabla_indicadores_telefono" />
     <EntitySet Name="tabla_medica" EntityType="Self.tabla_medica" />
-    <EntitySet Name="turnos" EntityType="Self.turnos" />
-    <EntitySet Name="tutor" EntityType="Self.tutor" />
-    <EntitySet Name="alergias" EntityType="Self.alergias" />
-    <EntitySet Name="discapacidades" EntityType="Self.discapacidades" />
-    <EntitySet Name="enfermedades" EntityType="Self.enfermedades" />
+    <EntitySet Name="turnos" EntityType="Self.turno" />
+    <EntitySet Name="tutors" EntityType="Self.tutor" />
+    <EntitySet Name="alergias" EntityType="Self.alergia" />
+    <EntitySet Name="discapacidades" EntityType="Self.discapacidade" />
+    <EntitySet Name="enfermedades" EntityType="Self.enfermedade" />
     <EntitySet Name="telefono_tutores" EntityType="Self.telefono_tutores" />
     <AssociationSet Name="FK_Tele" Association="Self.FK_Tele">
       <End Role="tabla_indicadores_telefono" EntitySet="tabla_indicadores_telefono" />
@@ -260,69 +260,28 @@
       <End Role="enfermedades" EntitySet="enfermedades" />
     </AssociationSet>
     <AssociationSet Name="FK_Tuto" Association="Self.FK_Tuto">
-      <End Role="tutor" EntitySet="tutor" />
+      <End Role="tutor" EntitySet="tutors" />
       <End Role="telefono_tutores" EntitySet="telefono_tutores" />
     </AssociationSet>
     <AssociationSet Name="alumno_cartilla" Association="Self.alumno_cartilla">
-      <End Role="alumno" EntitySet="alumno" />
+      <End Role="alumno" EntitySet="alumnoes" />
       <End Role="tabla_medica" EntitySet="tabla_medica" />
     </AssociationSet>
     <AssociationSet Name="alumno_programa" Association="Self.alumno_programa">
-      <End Role="alumno" EntitySet="alumno" />
-      <End Role="programa" EntitySet="programa" />
+      <End Role="alumno" EntitySet="alumnoes" />
+      <End Role="programa" EntitySet="programas" />
     </AssociationSet>
     <AssociationSet Name="programa_turno" Association="Self.programa_turno">
-      <End Role="programa" EntitySet="programa" />
+      <End Role="programa" EntitySet="programas" />
       <End Role="turnos" EntitySet="turnos" />
     </AssociationSet>
     <AssociationSet Name="recurso_programa" Association="Self.recurso_programa">
-      <End Role="programa" EntitySet="programa" />
+      <End Role="programa" EntitySet="programas" />
       <End Role="recursos" EntitySet="recursos" />
     </AssociationSet>
     <AssociationSet Name="tutor_alumno" Association="Self.tutor_alumno">
-      <End Role="tutor" EntitySet="tutor" />
-      <End Role="alumno" EntitySet="alumno" />
+      <End Role="tutor" EntitySet="tutors" />
+      <End Role="alumno" EntitySet="alumnoes" />
     </AssociationSet>
-    <FunctionImport Name="sp_alterdiagram">
-      <Parameter Name="diagramname" Mode="In" Type="String" />
-      <Parameter Name="owner_id" Mode="In" Type="Int32" />
-      <Parameter Name="version" Mode="In" Type="Int32" />
-      <Parameter Name="definition" Mode="In" Type="Binary" />
-    </FunctionImport>
-    <FunctionImport Name="sp_creatediagram">
-      <Parameter Name="diagramname" Mode="In" Type="String" />
-      <Parameter Name="owner_id" Mode="In" Type="Int32" />
-      <Parameter Name="version" Mode="In" Type="Int32" />
-      <Parameter Name="definition" Mode="In" Type="Binary" />
-    </FunctionImport>
-    <FunctionImport Name="sp_dropdiagram">
-      <Parameter Name="diagramname" Mode="In" Type="String" />
-      <Parameter Name="owner_id" Mode="In" Type="Int32" />
-    </FunctionImport>
-    <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(BDDCAMModel.sp_helpdiagramdefinition_Result)">
-      <Parameter Name="diagramname" Mode="In" Type="String" />
-      <Parameter Name="owner_id" Mode="In" Type="Int32" />
-    </FunctionImport>
-    <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(BDDCAMModel.sp_helpdiagrams_Result)">
-      <Parameter Name="diagramname" Mode="In" Type="String" />
-      <Parameter Name="owner_id" Mode="In" Type="Int32" />
-    </FunctionImport>
-    <FunctionImport Name="sp_renamediagram">
-      <Parameter Name="diagramname" Mode="In" Type="String" />
-      <Parameter Name="owner_id" Mode="In" Type="Int32" />
-      <Parameter Name="new_diagramname" Mode="In" Type="String" />
-    </FunctionImport>
-    <FunctionImport Name="sp_upgraddiagrams" />
   </EntityContainer>
-  <ComplexType Name="sp_helpdiagramdefinition_Result">
-    <Property Type="Int32" Name="version" Nullable="true" />
-    <Property Type="Binary" Name="definition" Nullable="true" />
-  </ComplexType>
-  <ComplexType Name="sp_helpdiagrams_Result">
-    <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
-    <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
-    <Property Type="Int32" Name="ID" Nullable="false" />
-    <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
-    <Property Type="Int32" Name="OwnerID" Nullable="false" />
-  </ComplexType>
 </Schema>
