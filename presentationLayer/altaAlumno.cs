@@ -20,6 +20,7 @@ namespace presentationLayer
             int distanciaTextBox = 66;
 
             InitializeComponent();
+            loaddata();
 
             Evelyn.informacionMedicaGroupBox(informacionMedicaAlumnoGroupBox);
             Claudia.altasGroupBox(informacionGeneralAlumnoGroupBox);
@@ -63,7 +64,7 @@ namespace presentationLayer
             Claudia.altasInformacionEscolar(cicloEscolarLabel, curpLabel, añosCumplidosLabel, cicloEscolarTextBox, curpTextBox, añosCumplidosTextBox, tipoIngresoGroupBox, nuevoIngresoRadioButton, reingresoRadioButton);
             
             Evelyn.altasBotonesParaNavegar(siguienteButton, regresarButton, realizarAltaButton);
-            Evelyn.altasBotonesPanel(alumnosButton,docentesButton);
+            Evelyn.altasBotonesPanel(alumnosButton);
 
             int distanciaInfTutor = 60;
             Claudia.altasInformacionTutorGroupBox(informacionTutorGroupBox);
@@ -77,7 +78,6 @@ namespace presentationLayer
             Evelyn.eliminarBotones(eliminarEnfermedadButton, eliminarDiscapacidadesButton, eliminarAlergiasButton);
             Claudia.limpiarFormatosBotones(limpiarFormato1Button,limpiarFormato2Button,limpiarFormato3Button);
         }
-
 
         private void siguienteButton_Click_1(object sender, EventArgs e)
         {
@@ -173,6 +173,11 @@ namespace presentationLayer
                                               escuelaProcedenciaTextBox.Text,
                                               canalizadoPorTextBox.Text
                                               );
+                altaAlumno altas = new altaAlumno();
+                altas.Close();
+                Consultas consultas = new Consultas();
+                consultas.Show();
+                
             }
             else
             {
@@ -277,9 +282,38 @@ namespace presentationLayer
             mostrarAlergiasRichTextBox.Clear();
         }
 
-        private void altaAlumno_Load(object sender, EventArgs e)
+        //FILLCOMBOBOX METODO PARA ALERGIAS, ENFERMEDADES Y DISCAPACIDADES
+        private void loaddata()
         {
+            try
+            {
+                using (_1dataLayer.BDCAMEntities db = new _1dataLayer.BDCAMEntities())
+                {
+                    var listaAlergias = db.alergias.ToList();
+                    var listaEnfermedades = db.enfermedades.ToList();
+                    var listaDiscapacidades = db.discapacidades.ToList();
 
+                    alergiasCombobox.Items.Add("Elegir alergia:");
+                    enfermedadesCombobox.Items.Add("Elegir enfermedad:");
+                    discapacidadesCombobox.Items.Add("Elegir discapacidad:");
+
+                    foreach (var item in listaAlergias)
+                    {
+                        alergiasCombobox.Items.Add(item.alergia1);
+                    }
+                    foreach (var item in listaEnfermedades)
+                    {
+                        enfermedadesCombobox.Items.Add(item.enfermedad);
+                    }
+                    foreach (var item in listaDiscapacidades)
+                    {
+                        discapacidadesCombobox.Items.Add(item.discapacidades);
+                    }
+                }
+            } catch (Exception)
+            {
+                throw;
+            }
         }
     }
 }

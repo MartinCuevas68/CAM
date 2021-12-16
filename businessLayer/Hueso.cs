@@ -17,7 +17,9 @@ namespace businessLayer
             string atendido_por)
         {
             byte[] x = { (byte)204, 29, (byte)207, (byte)217 };
-            int y=1;
+            int y= 1;
+            
+
 
             try
             {
@@ -33,7 +35,7 @@ namespace businessLayer
                         nombre = nombre,
                         apellido_paterno = apellido_paterno,
                         apellido_materno = apellido_materno,
-                        fecha_nacimiento = DateTime.Now,
+                        fecha_nacimiento = fecha_nacimiento.Date,
                         edad_alumno = edad_alumno,
                         CURP_alumno = CURP_alumno,
                         estado_nacimiento_alumno = estado_nacimiento_alumno,
