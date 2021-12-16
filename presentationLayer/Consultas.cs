@@ -28,7 +28,7 @@ namespace presentationLayer
             Edder.filtroCombo(filtradoComboBox);
             Edder.Nombretxt(nombreTextBox);
             Edder.panelNavBar(navBarPanel);
-            Edder.agregarBttn(agregarButton);
+            Edder.agregarButton(agregarButton);
             Edder.alumnosbttn(alumnosButton);
             //Edder.docentesbttn(docentesButton);
             Edder.Nombrelbl(nombreLabel);
@@ -37,8 +37,17 @@ namespace presentationLayer
             Edder.Apellidopaterno(apellidoPaternoLabel);
             Edder.Apellidomaterno(apellidoMaternoLabel);
             Edder.Vaciarbttn(vaciarButton);
+          
             Edder.groupboxinferior(busquedaGroupBox);
+            busquedaGroupBox.Hide();
             Edder.botonImprimir(imprimirButton);
+
+            vaciarButton.Hide();
+            buscarButton.Hide();
+            imprimirButton.Hide();
+            filtradoComboBox.Hide();
+            filtroLabel.Hide();
+            
         }
 
 
@@ -88,7 +97,7 @@ namespace presentationLayer
             foreach (DataGridViewRow row in this.altaDataGridView.Rows)
             {
 
-                if (Convert.ToBoolean(row.Cells[18].Value) == true)
+                if (Convert.ToBoolean(row.Cells[17].Value) == true)
                 {
                     flag = 1;
 
