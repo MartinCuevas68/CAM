@@ -35,7 +35,7 @@ namespace businessLayer
                                      escuela_procedencia_alumno = a.escuela_procedencia_alumno,
                                      //documentacion_alumno = a.documentacion_alumno,
                                      atendido_por = a.atendido_por,
-                                    
+
                                  }).ToList();
                     return query;
                 }
@@ -45,35 +45,6 @@ namespace businessLayer
             {
                 throw;
             }
-
-            /*//Consultas
-            public static List<Data_Tutuli.EspacioDTO> GetEspacios()
-            {
-                try
-                {
-
-                    using (Data_Tutuli.DB_tutuliEntities db = new Data_Tutuli.DB_tutuliEntities())
-                    {
-                        var query = (from p in db.espacios
-
-                                     select new Data_Tutuli.EspacioDTO
-                                     {
-                                         tamaño = p.tamaño,
-                                         numeroEspacio = p.numeroEspacio
-
-                                     }).ToList();
-
-                        return query;
-
-                    }
-
-                }
-                catch (Exception)
-                {
-                    throw;
-                }
-            }*/
-
 
 
         }

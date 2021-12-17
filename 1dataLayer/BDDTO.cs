@@ -32,9 +32,6 @@ namespace _1dataLayer
         public string atendido_por { get; set; }
     }
    
-
-
-
     public class tabla_medicaDTO
     {
         public int id_alumno { get; }
@@ -53,6 +50,7 @@ namespace _1dataLayer
         public int id_cartilla_medica { get; }
         public string enfermedad { get; set; }
     }
+
     public class alergiasDTO
     {
         public int id_cartilla_medica { get; }

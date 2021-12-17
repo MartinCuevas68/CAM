@@ -19,6 +19,13 @@ namespace presentationLayer
 
         }
 
+        public static void nodificacion(Label idLabel, Label nombreLabel)
+        {
+
+            idLabel.Location = new Point(400, 200);
+            nombreLabel.Location = new Point(500, 200);
+
+        }
 
     }
 }
