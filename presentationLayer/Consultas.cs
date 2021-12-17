@@ -84,9 +84,38 @@ namespace presentationLayer
 
         private void modificarButton_Click_1(object sender, EventArgs e)
         {
-            this.Hide();
-            modificacionesAlumno formModificacion = new modificacionesAlumno();
-            formModificacion.Show();
+            int id = 0;
+
+
+            foreach (DataGridViewRow row in this.altaDataGridView.Rows)
+            {
+
+                if (Convert.ToBoolean(row.Cells[17].Value) == true)
+                {
+
+                    id = Convert.ToInt32(row.Cells[0].Value);
+                }
+
+            }
+
+
+            if (id != 0)
+            {
+                Contenedor.id = id;
+
+                Consultas consultas = new Consultas();
+                consultas.Close();
+
+                modificacionesAlumno modificacionesAlumno = new modificacionesAlumno();
+                modificacionesAlumno.Show();             
+        
+            }
+            else
+            {
+
+                MessageBox.Show("No se ha seleccionado un campo");
+
+            }
         }
 
         private void eliminarButton_Click(object sender, EventArgs e)

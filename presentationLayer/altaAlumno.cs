@@ -310,37 +310,20 @@ namespace presentationLayer
         //FILLCOMBOBOX METODO PARA ALERGIAS, ENFERMEDADES Y DISCAPACIDADES
         private void loaddata()
         {
-            try
+
+            foreach (var item in businessLayer.Martin.alergiasGet())
             {
-                using (_1dataLayer.BDCAMEntities db = new _1dataLayer.BDCAMEntities())
-                {
-                    alergiasCombobox.Items.Add("Elegir Alergia:");
-                    enfermedadesCombobox.Items.Add("Elegir Enfermedad:");
-                    discapacidadesCombobox.Items.Add("Elegir Discapacidad:");
-
-                    var listaAlergias = db.alergias.ToList();
-                    var listaEnfermedades = db.enfermedades.ToList();
-                    var listaDiscapacidades = db.discapacidades.ToList();
-
-                   
-
-                    foreach (var item in listaAlergias)
-                    {
-                        alergiasCombobox.Items.Add(item.alergia1);
-                    }
-                    foreach (var item in listaEnfermedades)
-                    {
-                        enfermedadesCombobox.Items.Add(item.enfermedad);
-                    }
-                    foreach (var item in listaDiscapacidades)
-                    {
-                        discapacidadesCombobox.Items.Add(item.discapacidades);
-                    }
-                }
-            } catch (Exception)
-            {
-                throw;
+                alergiasCombobox.Items.Add(item.alergia);
             }
+            foreach (var item2 in businessLayer.Martin.enfermedadesGet())
+            {
+                enfermedadesCombobox.Items.Add(item2.enfermedad);
+            }
+            foreach (var item3 in businessLayer.Martin.discapacidadesGet())
+            {
+                discapacidadesCombobox.Items.Add(item3.discapacidades);
+            }
+
         }
 
         private void informacionGeneralAlumnoGroupBox_Enter(object sender, EventArgs e)
