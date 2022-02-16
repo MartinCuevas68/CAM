@@ -50,6 +50,8 @@ namespace presentationLayer
             this.navBarPanel = new System.Windows.Forms.Panel();
             this.camLabel = new System.Windows.Forms.Label();
             this.alumnosButton = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             ((System.ComponentModel.ISupportInitialize)(this.altaDataGridView)).BeginInit();
             this.busquedaGroupBox.SuspendLayout();
             this.navBarPanel.SuspendLayout();
@@ -174,12 +176,13 @@ namespace presentationLayer
             this.busquedaGroupBox.TabIndex = 26;
             this.busquedaGroupBox.TabStop = false;
             this.busquedaGroupBox.Text = "BUSQUEDA";
+            this.busquedaGroupBox.Enter += new System.EventHandler(this.busquedaGroupBox_Enter);
             // 
             // eliminarButton
             // 
             this.eliminarButton.BackgroundImage = global::presentationLayer.Properties.Resources.quitar_usuario;
             this.eliminarButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.eliminarButton.Location = new System.Drawing.Point(470, 301);
+            this.eliminarButton.Location = new System.Drawing.Point(475, 297);
             this.eliminarButton.Name = "eliminarButton";
             this.eliminarButton.Size = new System.Drawing.Size(137, 33);
             this.eliminarButton.TabIndex = 17;
@@ -254,7 +257,7 @@ namespace presentationLayer
             this.navBarPanel.Location = new System.Drawing.Point(0, 0);
             this.navBarPanel.Margin = new System.Windows.Forms.Padding(2);
             this.navBarPanel.Name = "navBarPanel";
-            this.navBarPanel.Size = new System.Drawing.Size(1033, 32);
+            this.navBarPanel.Size = new System.Drawing.Size(1924, 32);
             this.navBarPanel.TabIndex = 137;
             // 
             // camLabel
@@ -273,7 +276,7 @@ namespace presentationLayer
             this.alumnosButton.AutoSize = true;
             this.alumnosButton.Dock = System.Windows.Forms.DockStyle.Right;
             this.alumnosButton.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.alumnosButton.Location = new System.Drawing.Point(947, 0);
+            this.alumnosButton.Location = new System.Drawing.Point(1838, 0);
             this.alumnosButton.Margin = new System.Windows.Forms.Padding(2);
             this.alumnosButton.Name = "alumnosButton";
             this.alumnosButton.Size = new System.Drawing.Size(86, 32);
@@ -281,12 +284,30 @@ namespace presentationLayer
             this.alumnosButton.Text = "ALUMNOS";
             this.alumnosButton.UseVisualStyleBackColor = true;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(776, 781);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // vScrollBar1
+            // 
+            this.vScrollBar1.Location = new System.Drawing.Point(1897, 37);
+            this.vScrollBar1.Name = "vScrollBar1";
+            this.vScrollBar1.Size = new System.Drawing.Size(27, 995);
+            this.vScrollBar1.TabIndex = 138;
+            // 
             // Consultas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ClientSize = new System.Drawing.Size(1033, 609);
+            this.ClientSize = new System.Drawing.Size(1924, 1041);
+            this.Controls.Add(this.vScrollBar1);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.navBarPanel);
             this.Controls.Add(this.eliminarButton);
             this.Controls.Add(this.buscarButton);
@@ -335,5 +356,7 @@ namespace presentationLayer
         private System.Windows.Forms.Panel navBarPanel;
         private System.Windows.Forms.Button alumnosButton;
         private System.Windows.Forms.Label camLabel;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.VScrollBar vScrollBar1;
     }
 }

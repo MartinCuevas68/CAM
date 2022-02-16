@@ -19,34 +19,34 @@ namespace presentationLayer
         public Consultas()
         {
             InitializeComponent();
-            Edder.botonBuscar(buscarButton);
-            Edder.botonEliminar(eliminarButton);
-            Edder.botonModificar(modificarButton);
-            Edder.consultaDataView(altaDataGridView);
-            Edder.etiquetaConsulta(consultaLabel);
-            Edder.filtro(filtroLabel);
-            Edder.filtroCombo(filtradoComboBox);
-            Edder.Nombretxt(nombreTextBox);
-            Edder.panelNavBar(navBarPanel);
-            Edder.agregarButton(agregarButton);
-            Edder.alumnosbttn(alumnosButton);
-            //Edder.docentesbttn(docentesButton);
-            Edder.Nombrelbl(nombreLabel);
-            Edder.ApellidopaternoTxt(apellidoPaternoTextBox);
-            Edder.ApellidomaternoTxt(apellidoMaternoTextBox);
-            Edder.Apellidopaterno(apellidoPaternoLabel);
-            Edder.Apellidomaterno(apellidoMaternoLabel);
-            Edder.Vaciarbttn(vaciarButton);
+            //Edder.botonBuscar(buscarButton);
+            //Edder.botonEliminar(eliminarButton);
+            //Edder.botonModificar(modificarButton);
+            //Edder.consultaDataView(altaDataGridView);
+            //Edder.etiquetaConsulta(consultaLabel);
+            //Edder.filtro(filtroLabel);
+            //Edder.filtroCombo(filtradoComboBox);
+            //Edder.Nombretxt(nombreTextBox);
+            //Edder.panelNavBar(navBarPanel);
+            //Edder.agregarButton(agregarButton);
+            //Edder.alumnosbttn(alumnosButton);
+            ////Edder.docentesbttn(docentesButton);
+            //Edder.Nombrelbl(nombreLabel);
+            //Edder.ApellidopaternoTxt(apellidoPaternoTextBox);
+            //Edder.ApellidomaternoTxt(apellidoMaternoTextBox);
+            //Edder.Apellidopaterno(apellidoPaternoLabel);
+            //Edder.Apellidomaterno(apellidoMaternoLabel);
+            //Edder.Vaciarbttn(vaciarButton);
           
-            Edder.groupboxinferior(busquedaGroupBox);
-            busquedaGroupBox.Hide();
-            Edder.botonImprimir(imprimirButton);
+            //Edder.groupboxinferior(busquedaGroupBox);
+            //busquedaGroupBox.Hide();
+            //Edder.botonImprimir(imprimirButton);
 
-            vaciarButton.Hide();
-            buscarButton.Hide();
-            imprimirButton.Hide();
-            filtradoComboBox.Hide();
-            filtroLabel.Hide();
+            //vaciarButton.Hide();
+            //buscarButton.Hide();
+            //imprimirButton.Hide();
+            //filtradoComboBox.Hide();
+            //filtroLabel.Hide();
             
         }
 
@@ -164,6 +164,11 @@ namespace presentationLayer
 
                 MessageBox.Show("No se ha seleccionado una fila");
             }
+
+        }
+
+        private void busquedaGroupBox_Enter(object sender, EventArgs e)
+        {
 
         }
     }

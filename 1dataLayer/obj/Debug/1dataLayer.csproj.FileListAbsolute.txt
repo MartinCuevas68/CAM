@@ -102,3 +102,15 @@ G:\Visual studio programs\GIT\CAM\1dataLayer\obj\Debug\1dataLayer.csproj.CoreCom
 G:\Visual studio programs\GIT\CAM\1dataLayer\obj\Debug\1dataLayer.csproj.CopyComplete
 G:\Visual studio programs\GIT\CAM\1dataLayer\obj\Debug\1dataLayer.dll
 G:\Visual studio programs\GIT\CAM\1dataLayer\obj\Debug\1dataLayer.pdb
+F:\Github\UABC\CAM\1dataLayer\bin\Debug\1dataLayer.dll.config
+F:\Github\UABC\CAM\1dataLayer\bin\Debug\1dataLayer.dll
+F:\Github\UABC\CAM\1dataLayer\bin\Debug\1dataLayer.pdb
+F:\Github\UABC\CAM\1dataLayer\bin\Debug\EntityFramework.dll
+F:\Github\UABC\CAM\1dataLayer\bin\Debug\EntityFramework.SqlServer.dll
+F:\Github\UABC\CAM\1dataLayer\bin\Debug\EntityFramework.xml
+F:\Github\UABC\CAM\1dataLayer\bin\Debug\EntityFramework.SqlServer.xml
+F:\Github\UABC\CAM\1dataLayer\obj\Debug\1dataLayer.csproj.AssemblyReference.cache
+F:\Github\UABC\CAM\1dataLayer\obj\Debug\1dataLayer.csproj.CoreCompileInputs.cache
+F:\Github\UABC\CAM\1dataLayer\obj\Debug\1dataLayer.csproj.CopyComplete
+F:\Github\UABC\CAM\1dataLayer\obj\Debug\1dataLayer.dll
+F:\Github\UABC\CAM\1dataLayer\obj\Debug\1dataLayer.pdb
