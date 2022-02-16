@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="BDCAMModelStoreContainer" CdmEntityContainer="BDCAMEntities">
-    <EntitySetMapping Name="alumnoes">
+    <EntitySetMapping Name="alumno">
       <EntityTypeMapping TypeName="BDCAMModel.alumno">
         <MappingFragment StoreEntitySet="alumno">
           <ScalarProperty Name="id_alumno" ColumnName="id_alumno" />
@@ -25,7 +25,7 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="programas">
+    <EntitySetMapping Name="programa">
       <EntityTypeMapping TypeName="BDCAMModel.programa">
         <MappingFragment StoreEntitySet="programa">
           <ScalarProperty Name="id_programa" ColumnName="id_programa" />
@@ -40,15 +40,15 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="recursos">
-      <EntityTypeMapping TypeName="BDCAMModel.recurso">
+      <EntityTypeMapping TypeName="BDCAMModel.recursos">
         <MappingFragment StoreEntitySet="recursos">
           <ScalarProperty Name="id_recurso" ColumnName="id_recurso" />
-          <ScalarProperty Name="recurso1" ColumnName="recurso" />
+          <ScalarProperty Name="recurso" ColumnName="recurso" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="sysdiagrams">
-      <EntityTypeMapping TypeName="BDCAMModel.sysdiagram">
+      <EntityTypeMapping TypeName="BDCAMModel.sysdiagrams">
         <MappingFragment StoreEntitySet="sysdiagrams">
           <ScalarProperty Name="name" ColumnName="name" />
           <ScalarProperty Name="principal_id" ColumnName="principal_id" />
@@ -81,14 +81,14 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="turnos">
-      <EntityTypeMapping TypeName="BDCAMModel.turno">
+      <EntityTypeMapping TypeName="BDCAMModel.turnos">
         <MappingFragment StoreEntitySet="turnos">
           <ScalarProperty Name="id_turno" ColumnName="id_turno" />
-          <ScalarProperty Name="turno1" ColumnName="turno" />
+          <ScalarProperty Name="turno" ColumnName="turno" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="tutors">
+    <EntitySetMapping Name="tutor">
       <EntityTypeMapping TypeName="BDCAMModel.tutor">
         <MappingFragment StoreEntitySet="tutor">
           <ScalarProperty Name="id_tutor" ColumnName="id_tutor" />
@@ -106,23 +106,23 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="alergias">
-      <EntityTypeMapping TypeName="BDCAMModel.alergia">
+      <EntityTypeMapping TypeName="BDCAMModel.alergias">
         <MappingFragment StoreEntitySet="alergias">
           <ScalarProperty Name="id_cartilla_medica" ColumnName="id_cartilla_medica" />
-          <ScalarProperty Name="alergia1" ColumnName="alergia" />
+          <ScalarProperty Name="alergia" ColumnName="alergia" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="discapacidades">
-      <EntityTypeMapping TypeName="BDCAMModel.discapacidade">
+      <EntityTypeMapping TypeName="BDCAMModel.discapacidades">
         <MappingFragment StoreEntitySet="discapacidades">
           <ScalarProperty Name="id_cartilla_medica" ColumnName="id_cartilla_medica" />
-          <ScalarProperty Name="discapacidades" ColumnName="discapacidades" />
+          <ScalarProperty Name="discapacidades1" ColumnName="discapacidades" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="enfermedades">
-      <EntityTypeMapping TypeName="BDCAMModel.enfermedade">
+      <EntityTypeMapping TypeName="BDCAMModel.enfermedades">
         <MappingFragment StoreEntitySet="enfermedades">
           <ScalarProperty Name="id_cartilla_medica" ColumnName="id_cartilla_medica" />
           <ScalarProperty Name="enfermedad" ColumnName="enfermedad" />

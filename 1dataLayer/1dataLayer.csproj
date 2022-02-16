@@ -50,7 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="alergia.cs">
+    <Compile Include="alergias.cs">
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>
     <Compile Include="alumno.cs">
@@ -72,20 +72,20 @@
       <DependentUpon>BDCAM.edmx</DependentUpon>
     </Compile>
     <Compile Include="BDDTO.cs" />
-    <Compile Include="discapacidade.cs">
+    <Compile Include="discapacidades.cs">
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>
-    <Compile Include="enfermedade.cs">
+    <Compile Include="enfermedades.cs">
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>
     <Compile Include="programa.cs">
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="recurso.cs">
+    <Compile Include="recursos.cs">
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>
-    <Compile Include="sysdiagram.cs">
+    <Compile Include="sysdiagrams.cs">
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>
     <Compile Include="tabla_indicadores_telefono.cs">
@@ -97,7 +97,7 @@
     <Compile Include="telefono_tutores.cs">
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>
-    <Compile Include="turno.cs">
+    <Compile Include="turnos.cs">
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>
     <Compile Include="tutor.cs">

@@ -17,9 +17,9 @@ namespace _1dataLayer
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public programa()
         {
-            this.alumnoes = new HashSet<alumno>();
-            this.turnos = new HashSet<turno>();
-            this.recursos = new HashSet<recurso>();
+            this.alumno = new HashSet<alumno>();
+            this.turnos = new HashSet<turnos>();
+            this.recursos = new HashSet<recursos>();
         }
     
         public int id_programa { get; set; }
@@ -32,10 +32,10 @@ namespace _1dataLayer
         public string proyecto { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<alumno> alumnoes { get; set; }
+        public virtual ICollection<alumno> alumno { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<turno> turnos { get; set; }
+        public virtual ICollection<turnos> turnos { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<recurso> recursos { get; set; }
+        public virtual ICollection<recursos> recursos { get; set; }
     }
 }

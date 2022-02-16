@@ -41,7 +41,7 @@ namespace businessLayer
                                  select new _1dataLayer.alergiasDTO
                                  {
 
-                                     alergia = a.alergia1
+                                     alergia = a.alergia
 
                                  }).ToList();
                     return query;
@@ -66,7 +66,7 @@ namespace businessLayer
                                  select new _1dataLayer.discapacidadesDTO
                                  {
 
-                                     discapacidades = a.discapacidades
+                                     discapacidades = a.discapacidades1
 
                                  }).ToList();
                     return query;

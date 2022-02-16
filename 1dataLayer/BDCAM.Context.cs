@@ -26,16 +26,16 @@ namespace _1dataLayer
         }
     
         public virtual DbSet<alumno> alumno { get; set; }
-        public virtual DbSet<programa> programas { get; set; }
-        public virtual DbSet<recurso> recursos { get; set; }
-        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
+        public virtual DbSet<programa> programa { get; set; }
+        public virtual DbSet<recursos> recursos { get; set; }
+        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<tabla_indicadores_telefono> tabla_indicadores_telefono { get; set; }
         public virtual DbSet<tabla_medica> tabla_medica { get; set; }
-        public virtual DbSet<turno> turnos { get; set; }
-        public virtual DbSet<tutor> tutors { get; set; }
-        public virtual DbSet<alergia> alergias { get; set; }
-        public virtual DbSet<discapacidade> discapacidades { get; set; }
-        public virtual DbSet<enfermedade> enfermedades { get; set; }
+        public virtual DbSet<turnos> turnos { get; set; }
+        public virtual DbSet<tutor> tutor { get; set; }
+        public virtual DbSet<alergias> alergias { get; set; }
+        public virtual DbSet<discapacidades> discapacidades { get; set; }
+        public virtual DbSet<enfermedades> enfermedades { get; set; }
         public virtual DbSet<telefono_tutores> telefono_tutores { get; set; }
     }
 }
