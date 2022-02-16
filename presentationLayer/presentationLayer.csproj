@@ -75,6 +75,12 @@
     <Compile Include="altaAlumno.Designer.cs">
       <DependentUpon>altaAlumno.cs</DependentUpon>
     </Compile>
+    <Compile Include="imprimirFormatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="imprimirFormatos.Designer.cs">
+      <DependentUpon>imprimirFormatos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Martin.cs" />
     <Compile Include="modificacionesAlumno.cs">
       <SubType>Form</SubType>
@@ -89,6 +95,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Consultas.resx">
       <DependentUpon>Consultas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="imprimirFormatos.resx">
+      <DependentUpon>imprimirFormatos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="modificacionesAlumno.resx">
       <DependentUpon>modificacionesAlumno.cs</DependentUpon>
