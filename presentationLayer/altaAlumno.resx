@@ -123,13 +123,13 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="siguienteButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>910, 777</value>
+    <value>1213, 956</value>
   </data>
   <data name="siguienteButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="siguienteButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>87, 19</value>
+    <value>116, 23</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="siguienteButton.TabIndex" type="System.Int32, mscorlib">
@@ -157,13 +157,10 @@
     <value>NoControl</value>
   </data>
   <data name="nombreAlumnoLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 49</value>
-  </data>
-  <data name="nombreAlumnoLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>9, 60</value>
   </data>
   <data name="nombreAlumnoLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 13</value>
+    <value>185, 17</value>
   </data>
   <data name="nombreAlumnoLabel.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -190,13 +187,10 @@
     <value>NoControl</value>
   </data>
   <data name="fechaNacimientoLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 80</value>
-  </data>
-  <data name="fechaNacimientoLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>9, 98</value>
   </data>
   <data name="fechaNacimientoLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>133, 13</value>
+    <value>168, 17</value>
   </data>
   <data name="fechaNacimientoLabel.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -223,13 +217,10 @@
     <value>NoControl</value>
   </data>
   <data name="lugarNacimientoLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 108</value>
-  </data>
-  <data name="lugarNacimientoLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>7, 133</value>
   </data>
   <data name="lugarNacimientoLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>135, 13</value>
+    <value>171, 17</value>
   </data>
   <data name="lugarNacimientoLabel.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -256,13 +247,10 @@
     <value>NoControl</value>
   </data>
   <data name="direccionAlumnoLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 138</value>
-  </data>
-  <data name="direccionAlumnoLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>7, 170</value>
   </data>
   <data name="direccionAlumnoLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 13</value>
+    <value>86, 17</value>
   </data>
   <data name="direccionAlumnoLabel.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -289,13 +277,10 @@
     <value>NoControl</value>
   </data>
   <data name="telefonoAlumnoLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 169</value>
-  </data>
-  <data name="telefonoAlumnoLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>7, 208</value>
   </data>
   <data name="telefonoAlumnoLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>128, 13</value>
+    <value>166, 17</value>
   </data>
   <data name="telefonoAlumnoLabel.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -322,13 +307,10 @@
     <value>NoControl</value>
   </data>
   <data name="discapacidadLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 67</value>
-  </data>
-  <data name="discapacidadLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>12, 82</value>
   </data>
   <data name="discapacidadLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>89, 13</value>
+    <value>111, 17</value>
   </data>
   <data name="discapacidadLabel.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -355,13 +337,10 @@
     <value>NoControl</value>
   </data>
   <data name="curpLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 42</value>
-  </data>
-  <data name="curpLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>7, 52</value>
   </data>
   <data name="curpLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 13</value>
+    <value>50, 17</value>
   </data>
   <data name="curpLabel.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -388,13 +367,10 @@
     <value>NoControl</value>
   </data>
   <data name="añosCumplidosLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 70</value>
-  </data>
-  <data name="añosCumplidosLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>7, 86</value>
   </data>
   <data name="añosCumplidosLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>106, 13</value>
+    <value>135, 17</value>
   </data>
   <data name="añosCumplidosLabel.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -421,13 +397,10 @@
     <value>NoControl</value>
   </data>
   <data name="cicloEscolarLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 16</value>
-  </data>
-  <data name="cicloEscolarLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>7, 20</value>
   </data>
   <data name="cicloEscolarLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>94, 13</value>
+    <value>121, 17</value>
   </data>
   <data name="cicloEscolarLabel.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -454,13 +427,10 @@
     <value>NoControl</value>
   </data>
   <data name="escuelaProcedenciaLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 225</value>
-  </data>
-  <data name="escuelaProcedenciaLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>9, 277</value>
   </data>
   <data name="escuelaProcedenciaLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 13</value>
+    <value>200, 17</value>
   </data>
   <data name="escuelaProcedenciaLabel.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -487,13 +457,10 @@
     <value>NoControl</value>
   </data>
   <data name="canalizadoPorLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 253</value>
-  </data>
-  <data name="canalizadoPorLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>7, 311</value>
   </data>
   <data name="canalizadoPorLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 13</value>
+    <value>133, 17</value>
   </data>
   <data name="canalizadoPorLabel.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -520,13 +487,13 @@
     <value>NoControl</value>
   </data>
   <data name="reingresoRadioButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>116, 23</value>
+    <value>155, 28</value>
   </data>
   <data name="reingresoRadioButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="reingresoRadioButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>89, 17</value>
+    <value>111, 21</value>
   </data>
   <data name="reingresoRadioButton.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -553,13 +520,13 @@
     <value>NoControl</value>
   </data>
   <data name="nuevoIngresoRadioButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 23</value>
+    <value>0, 28</value>
   </data>
   <data name="nuevoIngresoRadioButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="nuevoIngresoRadioButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 17</value>
+    <value>145, 21</value>
   </data>
   <data name="nuevoIngresoRadioButton.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -580,16 +547,16 @@
     <value>0</value>
   </data>
   <data name="tipoIngresoGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 114</value>
+    <value>11, 140</value>
   </data>
   <data name="tipoIngresoGroupBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="tipoIngresoGroupBox.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="tipoIngresoGroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>202, 45</value>
+    <value>269, 55</value>
   </data>
   <data name="tipoIngresoGroupBox.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -610,13 +577,13 @@
     <value>6</value>
   </data>
   <data name="nombreAlumnoTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>154, 46</value>
+    <value>205, 57</value>
   </data>
   <data name="nombreAlumnoTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="nombreAlumnoTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 20</value>
+    <value>265, 22</value>
   </data>
   <data name="nombreAlumnoTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
@@ -634,13 +601,13 @@
     <value>1</value>
   </data>
   <data name="telefonoAlumnoTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>142, 162</value>
+    <value>189, 199</value>
   </data>
   <data name="telefonoAlumnoTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="telefonoAlumnoTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 20</value>
+    <value>265, 22</value>
   </data>
   <data name="telefonoAlumnoTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>23</value>
@@ -658,13 +625,13 @@
     <value>22</value>
   </data>
   <data name="escuelaProcedenciaTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>174, 222</value>
+    <value>232, 273</value>
   </data>
   <data name="escuelaProcedenciaTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="escuelaProcedenciaTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 20</value>
+    <value>265, 22</value>
   </data>
   <data name="escuelaProcedenciaTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>25</value>
@@ -682,13 +649,13 @@
     <value>24</value>
   </data>
   <data name="canalizadoPorTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>171, 251</value>
+    <value>228, 309</value>
   </data>
   <data name="canalizadoPorTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="canalizadoPorTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 20</value>
+    <value>265, 22</value>
   </data>
   <data name="canalizadoPorTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>26</value>
@@ -706,13 +673,13 @@
     <value>26</value>
   </data>
   <data name="cicloEscolarTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>103, 16</value>
+    <value>137, 20</value>
   </data>
   <data name="cicloEscolarTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="cicloEscolarTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
+    <value>100, 22</value>
   </data>
   <data name="cicloEscolarTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>27</value>
@@ -730,13 +697,13 @@
     <value>1</value>
   </data>
   <data name="curpTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>103, 40</value>
+    <value>137, 49</value>
   </data>
   <data name="curpTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="curpTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
+    <value>100, 22</value>
   </data>
   <data name="curpTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>28</value>
@@ -754,13 +721,13 @@
     <value>3</value>
   </data>
   <data name="añosCumplidosTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>119, 70</value>
+    <value>159, 86</value>
   </data>
   <data name="añosCumplidosTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="añosCumplidosTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
+    <value>100, 22</value>
   </data>
   <data name="añosCumplidosTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>29</value>
@@ -781,13 +748,13 @@
     <value>dd-MM-yyyy</value>
   </data>
   <data name="fechaNacimientoDateTimePicker.Location" type="System.Drawing.Point, System.Drawing">
-    <value>153, 74</value>
+    <value>204, 91</value>
   </data>
   <data name="fechaNacimientoDateTimePicker.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="fechaNacimientoDateTimePicker.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 20</value>
+    <value>265, 22</value>
   </data>
   <data name="fechaNacimientoDateTimePicker.TabIndex" type="System.Int32, mscorlib">
     <value>30</value>
@@ -811,13 +778,10 @@
     <value>NoControl</value>
   </data>
   <data name="nombreTutorLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 94</value>
-  </data>
-  <data name="nombreTutorLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>29, 116</value>
   </data>
   <data name="nombreTutorLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 13</value>
+    <value>72, 17</value>
   </data>
   <data name="nombreTutorLabel.TabIndex" type="System.Int32, mscorlib">
     <value>31</value>
@@ -844,13 +808,10 @@
     <value>NoControl</value>
   </data>
   <data name="domicilioTutorLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 116</value>
-  </data>
-  <data name="domicilioTutorLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>29, 143</value>
   </data>
   <data name="domicilioTutorLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 13</value>
+    <value>81, 17</value>
   </data>
   <data name="domicilioTutorLabel.TabIndex" type="System.Int32, mscorlib">
     <value>32</value>
@@ -877,13 +838,10 @@
     <value>NoControl</value>
   </data>
   <data name="ocupacionTutorLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>21, 139</value>
-  </data>
-  <data name="ocupacionTutorLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>28, 171</value>
   </data>
   <data name="ocupacionTutorLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 13</value>
+    <value>93, 17</value>
   </data>
   <data name="ocupacionTutorLabel.TabIndex" type="System.Int32, mscorlib">
     <value>33</value>
@@ -910,13 +868,10 @@
     <value>NoControl</value>
   </data>
   <data name="telefonosTutorLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>26, 167</value>
-  </data>
-  <data name="telefonosTutorLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>35, 206</value>
   </data>
   <data name="telefonosTutorLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>74, 13</value>
+    <value>96, 17</value>
   </data>
   <data name="telefonosTutorLabel.TabIndex" type="System.Int32, mscorlib">
     <value>34</value>
@@ -937,13 +892,13 @@
     <value>6</value>
   </data>
   <data name="nombreTutorTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>180, 89</value>
+    <value>240, 110</value>
   </data>
   <data name="nombreTutorTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="nombreTutorTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
+    <value>100, 22</value>
   </data>
   <data name="nombreTutorTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>39</value>
@@ -961,13 +916,13 @@
     <value>7</value>
   </data>
   <data name="ocupacionTutorTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>130, 134</value>
+    <value>173, 165</value>
   </data>
   <data name="ocupacionTutorTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="ocupacionTutorTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
+    <value>100, 22</value>
   </data>
   <data name="ocupacionTutorTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>41</value>
@@ -991,13 +946,10 @@
     <value>NoControl</value>
   </data>
   <data name="telefonoCasaTutorLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>108, 168</value>
-  </data>
-  <data name="telefonoCasaTutorLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>144, 207</value>
   </data>
   <data name="telefonoCasaTutorLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 13</value>
+    <value>44, 17</value>
   </data>
   <data name="telefonoCasaTutorLabel.TabIndex" type="System.Int32, mscorlib">
     <value>45</value>
@@ -1024,13 +976,10 @@
     <value>NoControl</value>
   </data>
   <data name="telefonoCelularTutorLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>246, 167</value>
-  </data>
-  <data name="telefonoCelularTutorLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>328, 206</value>
   </data>
   <data name="telefonoCelularTutorLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 13</value>
+    <value>71, 17</value>
   </data>
   <data name="telefonoCelularTutorLabel.TabIndex" type="System.Int32, mscorlib">
     <value>46</value>
@@ -1057,13 +1006,10 @@
     <value>NoControl</value>
   </data>
   <data name="telefonoTrabajoTutorLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>400, 166</value>
-  </data>
-  <data name="telefonoTrabajoTutorLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>533, 204</value>
   </data>
   <data name="telefonoTrabajoTutorLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 13</value>
+    <value>72, 17</value>
   </data>
   <data name="telefonoTrabajoTutorLabel.TabIndex" type="System.Int32, mscorlib">
     <value>47</value>
@@ -1084,13 +1030,13 @@
     <value>13</value>
   </data>
   <data name="telefonoCasaTutorTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>152, 164</value>
+    <value>203, 202</value>
   </data>
   <data name="telefonoCasaTutorTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="telefonoCasaTutorTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
+    <value>100, 22</value>
   </data>
   <data name="telefonoCasaTutorTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>54</value>
@@ -1108,13 +1054,13 @@
     <value>14</value>
   </data>
   <data name="telefonoCelularTutorTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>303, 164</value>
+    <value>404, 202</value>
   </data>
   <data name="telefonoCelularTutorTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="telefonoCelularTutorTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
+    <value>100, 22</value>
   </data>
   <data name="telefonoCelularTutorTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>55</value>
@@ -1132,13 +1078,13 @@
     <value>15</value>
   </data>
   <data name="telefonoTrabajoTutorTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>459, 164</value>
+    <value>612, 202</value>
   </data>
   <data name="telefonoTrabajoTutorTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="telefonoTrabajoTutorTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
+    <value>100, 22</value>
   </data>
   <data name="telefonoTrabajoTutorTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>56</value>
@@ -1162,13 +1108,10 @@
     <value>NoControl</value>
   </data>
   <data name="ciudadNacimientoAlumnoLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>156, 108</value>
-  </data>
-  <data name="ciudadNacimientoAlumnoLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>208, 133</value>
   </data>
   <data name="ciudadNacimientoAlumnoLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 13</value>
+    <value>63, 17</value>
   </data>
   <data name="ciudadNacimientoAlumnoLabel.TabIndex" type="System.Int32, mscorlib">
     <value>64</value>
@@ -1195,13 +1138,10 @@
     <value>NoControl</value>
   </data>
   <data name="estadoNacimientoAlumnoLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>310, 108</value>
-  </data>
-  <data name="estadoNacimientoAlumnoLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>413, 133</value>
   </data>
   <data name="estadoNacimientoAlumnoLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 13</value>
+    <value>69, 17</value>
   </data>
   <data name="estadoNacimientoAlumnoLabel.TabIndex" type="System.Int32, mscorlib">
     <value>65</value>
@@ -1228,13 +1168,10 @@
     <value>NoControl</value>
   </data>
   <data name="apellidoPaternoAlumnoLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>372, 49</value>
-  </data>
-  <data name="apellidoPaternoAlumnoLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>496, 60</value>
   </data>
   <data name="apellidoPaternoAlumnoLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>117, 13</value>
+    <value>150, 17</value>
   </data>
   <data name="apellidoPaternoAlumnoLabel.TabIndex" type="System.Int32, mscorlib">
     <value>66</value>
@@ -1261,13 +1198,10 @@
     <value>NoControl</value>
   </data>
   <data name="apellidoMaternoAlumnoLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>603, 48</value>
-  </data>
-  <data name="apellidoMaternoAlumnoLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>804, 59</value>
   </data>
   <data name="apellidoMaternoAlumnoLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>119, 13</value>
+    <value>152, 17</value>
   </data>
   <data name="apellidoMaternoAlumnoLabel.TabIndex" type="System.Int32, mscorlib">
     <value>67</value>
@@ -1294,13 +1228,10 @@
     <value>NoControl</value>
   </data>
   <data name="calleDireccionAlumnoLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>162, 138</value>
-  </data>
-  <data name="calleDireccionAlumnoLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>216, 170</value>
   </data>
   <data name="calleDireccionAlumnoLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 13</value>
+    <value>55, 17</value>
   </data>
   <data name="calleDireccionAlumnoLabel.TabIndex" type="System.Int32, mscorlib">
     <value>68</value>
@@ -1327,13 +1258,10 @@
     <value>NoControl</value>
   </data>
   <data name="numeroDireccionAlumnoLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>306, 141</value>
-  </data>
-  <data name="numeroDireccionAlumnoLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>408, 174</value>
   </data>
   <data name="numeroDireccionAlumnoLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 13</value>
+    <value>73, 17</value>
   </data>
   <data name="numeroDireccionAlumnoLabel.TabIndex" type="System.Int32, mscorlib">
     <value>69</value>
@@ -1360,13 +1288,10 @@
     <value>NoControl</value>
   </data>
   <data name="coloniaDireccionAlumnoLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>470, 137</value>
-  </data>
-  <data name="coloniaDireccionAlumnoLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>627, 169</value>
   </data>
   <data name="coloniaDireccionAlumnoLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 13</value>
+    <value>73, 17</value>
   </data>
   <data name="coloniaDireccionAlumnoLabel.TabIndex" type="System.Int32, mscorlib">
     <value>70</value>
@@ -1387,13 +1312,13 @@
     <value>19</value>
   </data>
   <data name="apellidoPaternoAlumnoTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>504, 49</value>
+    <value>672, 60</value>
   </data>
   <data name="apellidoPaternoAlumnoTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="apellidoPaternoAlumnoTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
+    <value>100, 22</value>
   </data>
   <data name="apellidoPaternoAlumnoTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>71</value>
@@ -1411,13 +1336,13 @@
     <value>4</value>
   </data>
   <data name="apellidoMaternoAlumnoTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>733, 45</value>
+    <value>977, 55</value>
   </data>
   <data name="apellidoMaternoAlumnoTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="apellidoMaternoAlumnoTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
+    <value>100, 22</value>
   </data>
   <data name="apellidoMaternoAlumnoTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>72</value>
@@ -1435,13 +1360,13 @@
     <value>6</value>
   </data>
   <data name="ciudadNacimientoAlumnoTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>216, 105</value>
+    <value>288, 129</value>
   </data>
   <data name="ciudadNacimientoAlumnoTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="ciudadNacimientoAlumnoTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
+    <value>100, 22</value>
   </data>
   <data name="ciudadNacimientoAlumnoTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>73</value>
@@ -1459,13 +1384,13 @@
     <value>11</value>
   </data>
   <data name="estadoNacimientoAlumnoTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>376, 105</value>
+    <value>501, 129</value>
   </data>
   <data name="estadoNacimientoAlumnoTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="estadoNacimientoAlumnoTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
+    <value>100, 22</value>
   </data>
   <data name="estadoNacimientoAlumnoTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>74</value>
@@ -1483,13 +1408,13 @@
     <value>13</value>
   </data>
   <data name="calleDireccionAlumnoTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>216, 134</value>
+    <value>288, 165</value>
   </data>
   <data name="calleDireccionAlumnoTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="calleDireccionAlumnoTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
+    <value>100, 22</value>
   </data>
   <data name="calleDireccionAlumnoTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>75</value>
@@ -1507,13 +1432,13 @@
     <value>16</value>
   </data>
   <data name="numeroDireccionAlumnoTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>375, 135</value>
+    <value>500, 166</value>
   </data>
   <data name="numeroDireccionAlumnoTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="numeroDireccionAlumnoTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
+    <value>100, 22</value>
   </data>
   <data name="numeroDireccionAlumnoTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>76</value>
@@ -1531,13 +1456,13 @@
     <value>18</value>
   </data>
   <data name="coloniaDireccionAlumnoTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>540, 135</value>
+    <value>720, 166</value>
   </data>
   <data name="coloniaDireccionAlumnoTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="coloniaDireccionAlumnoTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
+    <value>100, 22</value>
   </data>
   <data name="coloniaDireccionAlumnoTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>77</value>
@@ -1561,13 +1486,10 @@
     <value>NoControl</value>
   </data>
   <data name="apellidoPaternoTutorLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>283, 85</value>
-  </data>
-  <data name="apellidoPaternoTutorLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>377, 105</value>
   </data>
   <data name="apellidoPaternoTutorLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>117, 13</value>
+    <value>150, 17</value>
   </data>
   <data name="apellidoPaternoTutorLabel.TabIndex" type="System.Int32, mscorlib">
     <value>78</value>
@@ -1594,13 +1516,10 @@
     <value>NoControl</value>
   </data>
   <data name="apellidoMaternoTutorLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>530, 85</value>
-  </data>
-  <data name="apellidoMaternoTutorLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>707, 105</value>
   </data>
   <data name="apellidoMaternoTutorLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>119, 13</value>
+    <value>152, 17</value>
   </data>
   <data name="apellidoMaternoTutorLabel.TabIndex" type="System.Int32, mscorlib">
     <value>79</value>
@@ -1621,13 +1540,13 @@
     <value>22</value>
   </data>
   <data name="apellidoPaternoTutorTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>410, 83</value>
+    <value>547, 102</value>
   </data>
   <data name="apellidoPaternoTutorTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="apellidoPaternoTutorTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
+    <value>100, 22</value>
   </data>
   <data name="apellidoPaternoTutorTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>80</value>
@@ -1645,13 +1564,13 @@
     <value>24</value>
   </data>
   <data name="apellidoMaternoTutorTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>672, 83</value>
+    <value>896, 102</value>
   </data>
   <data name="apellidoMaternoTutorTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="apellidoMaternoTutorTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
+    <value>100, 22</value>
   </data>
   <data name="apellidoMaternoTutorTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>81</value>
@@ -1675,13 +1594,10 @@
     <value>NoControl</value>
   </data>
   <data name="calleDireccionTutorLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>271, 113</value>
-  </data>
-  <data name="calleDireccionTutorLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>361, 139</value>
   </data>
   <data name="calleDireccionTutorLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 13</value>
+    <value>55, 17</value>
   </data>
   <data name="calleDireccionTutorLabel.TabIndex" type="System.Int32, mscorlib">
     <value>86</value>
@@ -1708,13 +1624,10 @@
     <value>NoControl</value>
   </data>
   <data name="numeroDireccionTutorLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>450, 109</value>
-  </data>
-  <data name="numeroDireccionTutorLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>600, 134</value>
   </data>
   <data name="numeroDireccionTutorLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 13</value>
+    <value>73, 17</value>
   </data>
   <data name="numeroDireccionTutorLabel.TabIndex" type="System.Int32, mscorlib">
     <value>87</value>
@@ -1741,13 +1654,10 @@
     <value>NoControl</value>
   </data>
   <data name="coloniaDireccionTutorLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>597, 113</value>
-  </data>
-  <data name="coloniaDireccionTutorLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>796, 139</value>
   </data>
   <data name="coloniaDireccionTutorLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 13</value>
+    <value>73, 17</value>
   </data>
   <data name="coloniaDireccionTutorLabel.TabIndex" type="System.Int32, mscorlib">
     <value>88</value>
@@ -1768,13 +1678,13 @@
     <value>21</value>
   </data>
   <data name="calleDireccionTutorTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>316, 110</value>
+    <value>421, 135</value>
   </data>
   <data name="calleDireccionTutorTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="calleDireccionTutorTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
+    <value>100, 22</value>
   </data>
   <data name="calleDireccionTutorTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>92</value>
@@ -1792,13 +1702,13 @@
     <value>19</value>
   </data>
   <data name="numeroDireccionTutorTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>510, 110</value>
+    <value>680, 135</value>
   </data>
   <data name="numeroDireccionTutorTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="numeroDireccionTutorTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
+    <value>100, 22</value>
   </data>
   <data name="numeroDireccionTutorTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>93</value>
@@ -1816,13 +1726,13 @@
     <value>18</value>
   </data>
   <data name="coloniaDireccionTutorTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>672, 105</value>
+    <value>896, 129</value>
   </data>
   <data name="coloniaDireccionTutorTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="coloniaDireccionTutorTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
+    <value>100, 22</value>
   </data>
   <data name="coloniaDireccionTutorTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>94</value>
@@ -1846,13 +1756,10 @@
     <value>NoControl</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 85</value>
-  </data>
-  <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>27, 105</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 13</value>
+    <value>0, 17</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>108</value>
@@ -1876,13 +1783,13 @@
     <value>NoControl</value>
   </data>
   <data name="noOtroAlumnoMadreRadioButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>92, 23</value>
+    <value>123, 28</value>
   </data>
   <data name="noOtroAlumnoMadreRadioButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="noOtroAlumnoMadreRadioButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 17</value>
+    <value>50, 21</value>
   </data>
   <data name="noOtroAlumnoMadreRadioButton.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1909,13 +1816,13 @@
     <value>NoControl</value>
   </data>
   <data name="siOtroAlumnoMadreRadioButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 24</value>
+    <value>5, 30</value>
   </data>
   <data name="siOtroAlumnoMadreRadioButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="siOtroAlumnoMadreRadioButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 17</value>
+    <value>41, 21</value>
   </data>
   <data name="siOtroAlumnoMadreRadioButton.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1936,16 +1843,16 @@
     <value>1</value>
   </data>
   <data name="otroAlumnoTutorGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>21, 35</value>
+    <value>28, 43</value>
   </data>
   <data name="otroAlumnoTutorGroupBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="otroAlumnoTutorGroupBox.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="otroAlumnoTutorGroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>289, 41</value>
+    <value>385, 50</value>
   </data>
   <data name="otroAlumnoTutorGroupBox.TabIndex" type="System.Int32, mscorlib">
     <value>109</value>
@@ -1972,13 +1879,10 @@
     <value>NoControl</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>468, 405</value>
-  </data>
-  <data name="label2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>624, 498</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 13</value>
+    <value>0, 17</value>
   </data>
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>112</value>
@@ -2002,13 +1906,10 @@
     <value>NoControl</value>
   </data>
   <data name="servicioMedicoAlumnoLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 21</value>
-  </data>
-  <data name="servicioMedicoAlumnoLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>8, 26</value>
   </data>
   <data name="servicioMedicoAlumnoLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>105, 13</value>
+    <value>132, 17</value>
   </data>
   <data name="servicioMedicoAlumnoLabel.TabIndex" type="System.Int32, mscorlib">
     <value>115</value>
@@ -2035,13 +1936,10 @@
     <value>NoControl</value>
   </data>
   <data name="grupoSanguineoAlumnoLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>309, 27</value>
-  </data>
-  <data name="grupoSanguineoAlumnoLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>412, 33</value>
   </data>
   <data name="grupoSanguineoAlumnoLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 13</value>
+    <value>149, 17</value>
   </data>
   <data name="grupoSanguineoAlumnoLabel.TabIndex" type="System.Int32, mscorlib">
     <value>116</value>
@@ -2068,13 +1966,10 @@
     <value>NoControl</value>
   </data>
   <data name="enfermedaresAlumnoLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 47</value>
-  </data>
-  <data name="enfermedaresAlumnoLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>15, 58</value>
   </data>
   <data name="enfermedaresAlumnoLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>99, 13</value>
+    <value>125, 17</value>
   </data>
   <data name="enfermedaresAlumnoLabel.TabIndex" type="System.Int32, mscorlib">
     <value>117</value>
@@ -2101,13 +1996,10 @@
     <value>NoControl</value>
   </data>
   <data name="alergiasAlumnoLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 87</value>
-  </data>
-  <data name="alergiasAlumnoLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>12, 107</value>
   </data>
   <data name="alergiasAlumnoLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>63, 13</value>
+    <value>80, 17</value>
   </data>
   <data name="alergiasAlumnoLabel.TabIndex" type="System.Int32, mscorlib">
     <value>118</value>
@@ -2134,13 +2026,10 @@
     <value>NoControl</value>
   </data>
   <data name="telefonoContactoMedicoAlumnoLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 101</value>
-  </data>
-  <data name="telefonoContactoMedicoAlumnoLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>8, 124</value>
   </data>
   <data name="telefonoContactoMedicoAlumnoLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>147, 13</value>
+    <value>191, 17</value>
   </data>
   <data name="telefonoContactoMedicoAlumnoLabel.TabIndex" type="System.Int32, mscorlib">
     <value>119</value>
@@ -2167,13 +2056,10 @@
     <value>NoControl</value>
   </data>
   <data name="documentacionAlumnoLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>550, 25</value>
-  </data>
-  <data name="documentacionAlumnoLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>733, 31</value>
   </data>
   <data name="documentacionAlumnoLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>193, 13</value>
+    <value>247, 17</value>
   </data>
   <data name="documentacionAlumnoLabel.TabIndex" type="System.Int32, mscorlib">
     <value>120</value>
@@ -2194,13 +2080,13 @@
     <value>23</value>
   </data>
   <data name="servicioMedicoTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>200, 21</value>
+    <value>267, 26</value>
   </data>
   <data name="servicioMedicoTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="servicioMedicoTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
+    <value>100, 22</value>
   </data>
   <data name="servicioMedicoTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>122</value>
@@ -2218,13 +2104,13 @@
     <value>25</value>
   </data>
   <data name="telefonoContactoMedicoAlumnoTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>200, 106</value>
+    <value>267, 130</value>
   </data>
   <data name="telefonoContactoMedicoAlumnoTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="telefonoContactoMedicoAlumnoTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
+    <value>100, 22</value>
   </data>
   <data name="telefonoContactoMedicoAlumnoTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>124</value>
@@ -2242,13 +2128,13 @@
     <value>24</value>
   </data>
   <data name="grupoSanguineoTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>426, 27</value>
+    <value>568, 33</value>
   </data>
   <data name="grupoSanguineoTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="grupoSanguineoTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
+    <value>100, 22</value>
   </data>
   <data name="grupoSanguineoTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>125</value>
@@ -2275,13 +2161,13 @@
     <value>NoControl</value>
   </data>
   <data name="limpiarFormato1Button.Location" type="System.Drawing.Point, System.Drawing">
-    <value>781, 11</value>
+    <value>1041, 14</value>
   </data>
   <data name="limpiarFormato1Button.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="limpiarFormato1Button.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 19</value>
+    <value>36, 23</value>
   </data>
   <data name="limpiarFormato1Button.TabIndex" type="System.Int32, mscorlib">
     <value>139</value>
@@ -2299,10 +2185,16 @@
     <value>2</value>
   </data>
   <data name="informacionGeneralAlumnoGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>52, 95</value>
+    <value>69, 117</value>
+  </data>
+  <data name="informacionGeneralAlumnoGroupBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="informacionGeneralAlumnoGroupBox.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="informacionGeneralAlumnoGroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>818, 283</value>
+    <value>1091, 348</value>
   </data>
   <data name="informacionGeneralAlumnoGroupBox.TabIndex" type="System.Int32, mscorlib">
     <value>131</value>
@@ -2323,10 +2215,16 @@
     <value>7</value>
   </data>
   <data name="informacionEscolarGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>877, 106</value>
+    <value>1169, 130</value>
+  </data>
+  <data name="informacionEscolarGroupBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="informacionEscolarGroupBox.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="informacionEscolarGroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 179</value>
+    <value>267, 220</value>
   </data>
   <data name="informacionEscolarGroupBox.TabIndex" type="System.Int32, mscorlib">
     <value>132</value>
@@ -2344,10 +2242,13 @@
     <value>6</value>
   </data>
   <data name="alergiasCombobox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>159, 80</value>
+    <value>212, 98</value>
+  </data>
+  <data name="alergiasCombobox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="alergiasCombobox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 21</value>
+    <value>160, 24</value>
   </data>
   <data name="alergiasCombobox.TabIndex" type="System.Int32, mscorlib">
     <value>145</value>
@@ -2374,10 +2275,13 @@
     <value>MUDEZ</value>
   </data>
   <data name="discapacidadesCombobox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>159, 59</value>
+    <value>212, 73</value>
+  </data>
+  <data name="discapacidadesCombobox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="discapacidadesCombobox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 21</value>
+    <value>160, 24</value>
   </data>
   <data name="discapacidadesCombobox.TabIndex" type="System.Int32, mscorlib">
     <value>144</value>
@@ -2404,10 +2308,13 @@
     <value>NEUMONIA</value>
   </data>
   <data name="enfermedadesCombobox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>159, 39</value>
+    <value>212, 48</value>
+  </data>
+  <data name="enfermedadesCombobox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="enfermedadesCombobox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 21</value>
+    <value>160, 24</value>
   </data>
   <data name="enfermedadesCombobox.TabIndex" type="System.Int32, mscorlib">
     <value>143</value>
@@ -2428,10 +2335,13 @@
     <value>True</value>
   </data>
   <data name="checkBox5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 106</value>
+    <value>13, 130</value>
+  </data>
+  <data name="checkBox5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="checkBox5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 17</value>
+    <value>171, 21</value>
   </data>
   <data name="checkBox5.TabIndex" type="System.Int32, mscorlib">
     <value>143</value>
@@ -2455,10 +2365,13 @@
     <value>True</value>
   </data>
   <data name="checkBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 84</value>
+    <value>13, 103</value>
+  </data>
+  <data name="checkBox4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="checkBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>93, 17</value>
+    <value>115, 21</value>
   </data>
   <data name="checkBox4.TabIndex" type="System.Int32, mscorlib">
     <value>146</value>
@@ -2482,10 +2395,13 @@
     <value>True</value>
   </data>
   <data name="checkBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 62</value>
+    <value>13, 76</value>
+  </data>
+  <data name="checkBox3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="checkBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 17</value>
+    <value>80, 21</value>
   </data>
   <data name="checkBox3.TabIndex" type="System.Int32, mscorlib">
     <value>145</value>
@@ -2509,10 +2425,13 @@
     <value>True</value>
   </data>
   <data name="checkBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 40</value>
+    <value>13, 49</value>
+  </data>
+  <data name="checkBox2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="checkBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>101, 17</value>
+    <value>128, 21</value>
   </data>
   <data name="checkBox2.TabIndex" type="System.Int32, mscorlib">
     <value>144</value>
@@ -2536,10 +2455,13 @@
     <value>True</value>
   </data>
   <data name="checkBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 18</value>
+    <value>13, 22</value>
+  </data>
+  <data name="checkBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="checkBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>142, 17</value>
+    <value>177, 21</value>
   </data>
   <data name="checkBox1.TabIndex" type="System.Int32, mscorlib">
     <value>143</value>
@@ -2560,10 +2482,16 @@
     <value>4</value>
   </data>
   <data name="documentacionGB.Location" type="System.Drawing.Point, System.Drawing">
-    <value>526, 42</value>
+    <value>701, 52</value>
+  </data>
+  <data name="documentacionGB.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="documentacionGB.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="documentacionGB.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 139</value>
+    <value>303, 171</value>
   </data>
   <data name="documentacionGB.TabIndex" type="System.Int32, mscorlib">
     <value>142</value>
@@ -2587,13 +2515,13 @@
     <value>NoControl</value>
   </data>
   <data name="limpiarFormato3Button.Location" type="System.Drawing.Point, System.Drawing">
-    <value>733, 16</value>
+    <value>977, 20</value>
   </data>
   <data name="limpiarFormato3Button.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="limpiarFormato3Button.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 19</value>
+    <value>36, 23</value>
   </data>
   <data name="limpiarFormato3Button.TabIndex" type="System.Int32, mscorlib">
     <value>141</value>
@@ -2620,13 +2548,13 @@
     <value>NoControl</value>
   </data>
   <data name="eliminarAlergiasButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>435, 121</value>
+    <value>580, 149</value>
   </data>
   <data name="eliminarAlergiasButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="eliminarAlergiasButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 29</value>
+    <value>36, 36</value>
   </data>
   <data name="eliminarAlergiasButton.TabIndex" type="System.Int32, mscorlib">
     <value>139</value>
@@ -2653,13 +2581,13 @@
     <value>NoControl</value>
   </data>
   <data name="eliminarDiscapacidadesButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>125, 120</value>
+    <value>167, 148</value>
   </data>
   <data name="eliminarDiscapacidadesButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="eliminarDiscapacidadesButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 29</value>
+    <value>36, 36</value>
   </data>
   <data name="eliminarDiscapacidadesButton.TabIndex" type="System.Int32, mscorlib">
     <value>138</value>
@@ -2686,13 +2614,13 @@
     <value>NoControl</value>
   </data>
   <data name="eliminarEnfermedadButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>311, 117</value>
+    <value>415, 144</value>
   </data>
   <data name="eliminarEnfermedadButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="eliminarEnfermedadButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 29</value>
+    <value>36, 36</value>
   </data>
   <data name="eliminarEnfermedadButton.TabIndex" type="System.Int32, mscorlib">
     <value>137</value>
@@ -2716,13 +2644,13 @@
     <value>NoControl</value>
   </data>
   <data name="agregarAlergiasButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>278, 77</value>
+    <value>371, 95</value>
   </data>
   <data name="agregarAlergiasButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="agregarAlergiasButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>26, 26</value>
+    <value>35, 32</value>
   </data>
   <data name="agregarAlergiasButton.TabIndex" type="System.Int32, mscorlib">
     <value>136</value>
@@ -2746,13 +2674,13 @@
     <value>NoControl</value>
   </data>
   <data name="agregarDiscapacidadButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>278, 57</value>
+    <value>371, 70</value>
   </data>
   <data name="agregarDiscapacidadButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="agregarDiscapacidadButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>26, 26</value>
+    <value>35, 32</value>
   </data>
   <data name="agregarDiscapacidadButton.TabIndex" type="System.Int32, mscorlib">
     <value>135</value>
@@ -2776,13 +2704,13 @@
     <value>NoControl</value>
   </data>
   <data name="agregarEnfermedadesButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>278, 39</value>
+    <value>371, 48</value>
   </data>
   <data name="agregarEnfermedadesButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="agregarEnfermedadesButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>26, 26</value>
+    <value>35, 32</value>
   </data>
   <data name="agregarEnfermedadesButton.TabIndex" type="System.Int32, mscorlib">
     <value>134</value>
@@ -2806,13 +2734,10 @@
     <value>NoControl</value>
   </data>
   <data name="mostrarAlergiasLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>359, 129</value>
-  </data>
-  <data name="mostrarAlergiasLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>479, 159</value>
   </data>
   <data name="mostrarAlergiasLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 13</value>
+    <value>76, 17</value>
   </data>
   <data name="mostrarAlergiasLabel.TabIndex" type="System.Int32, mscorlib">
     <value>133</value>
@@ -2839,13 +2764,10 @@
     <value>NoControl</value>
   </data>
   <data name="mostrarEnfermedadesLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>213, 130</value>
-  </data>
-  <data name="mostrarEnfermedadesLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>284, 160</value>
   </data>
   <data name="mostrarEnfermedadesLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 13</value>
+    <value>121, 17</value>
   </data>
   <data name="mostrarEnfermedadesLabel.TabIndex" type="System.Int32, mscorlib">
     <value>132</value>
@@ -2872,13 +2794,10 @@
     <value>NoControl</value>
   </data>
   <data name="mostrarDiscapacidadLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>27, 131</value>
-  </data>
-  <data name="mostrarDiscapacidadLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>36, 161</value>
   </data>
   <data name="mostrarDiscapacidadLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 13</value>
+    <value>125, 17</value>
   </data>
   <data name="mostrarDiscapacidadLabel.TabIndex" type="System.Int32, mscorlib">
     <value>131</value>
@@ -2899,13 +2818,13 @@
     <value>13</value>
   </data>
   <data name="mostrarAlergiasRichTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>344, 150</value>
+    <value>459, 185</value>
   </data>
   <data name="mostrarAlergiasRichTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="mostrarAlergiasRichTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>119, 31</value>
+    <value>157, 37</value>
   </data>
   <data name="mostrarAlergiasRichTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>130</value>
@@ -2926,13 +2845,13 @@
     <value>14</value>
   </data>
   <data name="mostrarEnfermedadesRichTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>200, 150</value>
+    <value>267, 185</value>
   </data>
   <data name="mostrarEnfermedadesRichTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="mostrarEnfermedadesRichTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>119, 31</value>
+    <value>157, 37</value>
   </data>
   <data name="mostrarEnfermedadesRichTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>129</value>
@@ -2953,13 +2872,13 @@
     <value>15</value>
   </data>
   <data name="mostrarDiscapacidadRichTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 150</value>
+    <value>15, 185</value>
   </data>
   <data name="mostrarDiscapacidadRichTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="mostrarDiscapacidadRichTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>119, 31</value>
+    <value>157, 37</value>
   </data>
   <data name="mostrarDiscapacidadRichTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>128</value>
@@ -2980,16 +2899,16 @@
     <value>16</value>
   </data>
   <data name="informacionMedicaAlumnoGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>52, 382</value>
+    <value>69, 470</value>
   </data>
   <data name="informacionMedicaAlumnoGroupBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="informacionMedicaAlumnoGroupBox.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="informacionMedicaAlumnoGroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>767, 194</value>
+    <value>1023, 239</value>
   </data>
   <data name="informacionMedicaAlumnoGroupBox.TabIndex" type="System.Int32, mscorlib">
     <value>133</value>
@@ -3013,13 +2932,13 @@
     <value>NoControl</value>
   </data>
   <data name="regresarButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>910, 754</value>
+    <value>1213, 928</value>
   </data>
   <data name="regresarButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="regresarButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>87, 19</value>
+    <value>116, 23</value>
   </data>
   <data name="regresarButton.TabIndex" type="System.Int32, mscorlib">
     <value>134</value>
@@ -3046,13 +2965,10 @@
     <value>NoControl</value>
   </data>
   <data name="seleccionarNombreLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>369, 41</value>
-  </data>
-  <data name="seleccionarNombreLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>492, 50</value>
   </data>
   <data name="seleccionarNombreLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>140, 13</value>
+    <value>179, 17</value>
   </data>
   <data name="seleccionarNombreLabel.TabIndex" type="System.Int32, mscorlib">
     <value>111</value>
@@ -3073,13 +2989,13 @@
     <value>0</value>
   </data>
   <data name="seleccionarNombreComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>371, 56</value>
+    <value>495, 69</value>
   </data>
   <data name="seleccionarNombreComboBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="seleccionarNombreComboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>140, 21</value>
+    <value>185, 24</value>
   </data>
   <data name="seleccionarNombreComboBox.TabIndex" type="System.Int32, mscorlib">
     <value>110</value>
@@ -3103,13 +3019,13 @@
     <value>NoControl</value>
   </data>
   <data name="limpiarFormato2Button.Location" type="System.Drawing.Point, System.Drawing">
-    <value>784, 0</value>
+    <value>1045, 0</value>
   </data>
   <data name="limpiarFormato2Button.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="limpiarFormato2Button.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 19</value>
+    <value>36, 23</value>
   </data>
   <data name="limpiarFormato2Button.TabIndex" type="System.Int32, mscorlib">
     <value>140</value>
@@ -3127,16 +3043,16 @@
     <value>2</value>
   </data>
   <data name="informacionTutorGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>45, 581</value>
+    <value>60, 715</value>
   </data>
   <data name="informacionTutorGroupBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="informacionTutorGroupBox.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="informacionTutorGroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>815, 192</value>
+    <value>1087, 236</value>
   </data>
   <data name="informacionTutorGroupBox.TabIndex" type="System.Int32, mscorlib">
     <value>135</value>
@@ -3168,8 +3084,11 @@
   <data name="camLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
+  <data name="camLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
   <data name="camLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>138, 65</value>
+    <value>171, 81</value>
   </data>
   <data name="camLabel.TabIndex" type="System.Int32, mscorlib">
     <value>139</value>
@@ -3199,13 +3118,13 @@
     <value>NoControl</value>
   </data>
   <data name="alumnosButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>991, 0</value>
+    <value>1321, 0</value>
   </data>
   <data name="alumnosButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="alumnosButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 32</value>
+    <value>115, 39</value>
   </data>
   <data name="alumnosButton.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -3232,10 +3151,10 @@
     <value>0, 0</value>
   </data>
   <data name="altaAlumnoPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="altaAlumnoPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1077, 32</value>
+    <value>1436, 39</value>
   </data>
   <data name="altaAlumnoPanel.TabIndex" type="System.Int32, mscorlib">
     <value>136</value>
@@ -3256,13 +3175,13 @@
     <value>NoControl</value>
   </data>
   <data name="realizarAltaButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>910, 730</value>
+    <value>1213, 898</value>
   </data>
   <data name="realizarAltaButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="realizarAltaButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>122, 19</value>
+    <value>163, 23</value>
   </data>
   <data name="realizarAltaButton.TabIndex" type="System.Int32, mscorlib">
     <value>138</value>
@@ -3286,10 +3205,13 @@
     <value>True</value>
   </data>
   <data name="altaalumnoLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>224, 65</value>
+    <value>299, 80</value>
+  </data>
+  <data name="altaalumnoLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="altaalumnoLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 13</value>
+    <value>106, 17</value>
   </data>
   <data name="altaalumnoLabel.TabIndex" type="System.Int32, mscorlib">
     <value>139</value>
@@ -3316,7 +3238,7 @@
     <value>47</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+    <value>8, 16</value>
   </data>
   <data name="$this.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3325,10 +3247,10 @@
     <value>True</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1028, 609</value>
+    <value>1371, 750</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>

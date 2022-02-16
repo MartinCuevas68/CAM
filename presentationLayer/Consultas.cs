@@ -171,5 +171,11 @@ namespace presentationLayer
         {
 
         }
+
+        private void imprimirButton_Click(object sender, EventArgs e)
+        {
+            imprimirFormatos imprimirF = new imprimirFormatos();
+            imprimirF.Show();
+        }
     }
 }
