@@ -25,7 +25,7 @@ namespace presentationLayer
         //FCI1 Ficha de identificación
         private void imprimirFCI1Button_Click(object sender, EventArgs e)
         {
-            string pdfPath = Path.Combine(Application.StartupPath, "C:\\Formatos\\FCI1.pdf");
+            string pdfPath = Path.Combine(Application.StartupPath, "F:\\FC11.pdf");
             Process.Start(pdfPath);
         }
         //FCI2 Entrevista de Eq. de Apoyo

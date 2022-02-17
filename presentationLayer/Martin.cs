@@ -27,5 +27,20 @@ namespace presentationLayer
 
         }
 
+        public static void consultaButtons(Button agregarButton, Button modificarButton, Button eliminarButton)
+        { 
+        
+            agregarButton.Location = new Point(1400, 200);
+            agregarButton.Size = new Size(200,100);
+
+            modificarButton.Location = new Point(1400, 350);
+            modificarButton.Size = new Size(200, 100);
+
+            eliminarButton.Location = new Point(1400 , 500);
+            eliminarButton.Size = new Size(200, 100);
+
+        }
+
+
     }
 }

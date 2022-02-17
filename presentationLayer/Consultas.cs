@@ -19,6 +19,7 @@ namespace presentationLayer
         public Consultas()
         {
             InitializeComponent();
+            Martin.consultaButtons(agregarButton, modificarButton, eliminarButton);
             //Edder.botonBuscar(buscarButton);
             //Edder.botonEliminar(eliminarButton);
             //Edder.botonModificar(modificarButton);
@@ -177,5 +178,7 @@ namespace presentationLayer
             imprimirFormatos imprimirF = new imprimirFormatos();
             imprimirF.Show();
         }
+
+      
     }
 }
