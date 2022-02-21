@@ -263,5 +263,6 @@ namespace presentationLayer
             string informacion = this.alergiasCombobox.GetItemText(this.alergiasCombobox.SelectedItem);
             mostrarAlergiasRichTextBox.Text = mostrarAlergiasRichTextBox.Text + informacion + "\n";
         }
+
     }
 }
