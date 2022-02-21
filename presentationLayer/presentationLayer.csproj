@@ -75,6 +75,13 @@
     <Compile Include="altaAlumno.Designer.cs">
       <DependentUpon>altaAlumno.cs</DependentUpon>
     </Compile>
+    <Compile Include="FichaTec.cs" />
+    <Compile Include="fichaTecnica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fichaTecnica.Designer.cs">
+      <DependentUpon>fichaTecnica.cs</DependentUpon>
+    </Compile>
     <Compile Include="imprimirFormatos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +102,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Consultas.resx">
       <DependentUpon>Consultas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fichaTecnica.resx">
+      <DependentUpon>fichaTecnica.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="imprimirFormatos.resx">
       <DependentUpon>imprimirFormatos.cs</DependentUpon>
