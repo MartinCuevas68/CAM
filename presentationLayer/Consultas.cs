@@ -64,5 +64,11 @@ namespace presentationLayer
         {
 
         }
+
+        private void imprimirButton_Click(object sender, EventArgs e)
+        {
+            fichaTecnica fichaTec = new fichaTecnica();
+            fichaTec.Show();
+        }
     }
 }

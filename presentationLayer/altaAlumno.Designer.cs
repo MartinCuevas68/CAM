@@ -110,6 +110,12 @@ namespace presentationLayer
             this.limpiarFormato1Button = new System.Windows.Forms.Button();
             this.informacionEscolarGroupBox = new System.Windows.Forms.GroupBox();
             this.informacionMedicaAlumnoGroupBox = new System.Windows.Forms.GroupBox();
+            this.documentacionGB = new System.Windows.Forms.GroupBox();
+            this.checkBox5 = new System.Windows.Forms.CheckBox();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.limpiarFormato3Button = new System.Windows.Forms.Button();
             this.eliminarAlergiasButton = new System.Windows.Forms.Button();
             this.eliminarDiscapacidadesButton = new System.Windows.Forms.Button();
@@ -133,20 +139,14 @@ namespace presentationLayer
             this.docentesButton = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.realizarAltaButton = new System.Windows.Forms.Button();
-            this.documentacionGB = new System.Windows.Forms.GroupBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
             this.tipoIngresoGroupBox.SuspendLayout();
             this.otroAlumnoTutorGroupBox.SuspendLayout();
             this.informacionGeneralAlumnoGroupBox.SuspendLayout();
             this.informacionEscolarGroupBox.SuspendLayout();
             this.informacionMedicaAlumnoGroupBox.SuspendLayout();
+            this.documentacionGB.SuspendLayout();
             this.informacionTutorGroupBox.SuspendLayout();
             this.altaAlumnoPanel.SuspendLayout();
-            this.documentacionGB.SuspendLayout();
             this.SuspendLayout();
             // 
             // siguienteButton
@@ -359,6 +359,7 @@ namespace presentationLayer
             // 
             resources.ApplyResources(this.apellidoMaternoAlumnoLabel, "apellidoMaternoAlumnoLabel");
             this.apellidoMaternoAlumnoLabel.Name = "apellidoMaternoAlumnoLabel";
+            this.apellidoMaternoAlumnoLabel.Click += new System.EventHandler(this.apellidoMaternoAlumnoLabel_Click);
             // 
             // calleDireccionAlumnoLabel
             // 
@@ -637,6 +638,47 @@ namespace presentationLayer
             this.informacionMedicaAlumnoGroupBox.Name = "informacionMedicaAlumnoGroupBox";
             this.informacionMedicaAlumnoGroupBox.TabStop = false;
             // 
+            // documentacionGB
+            // 
+            this.documentacionGB.Controls.Add(this.checkBox5);
+            this.documentacionGB.Controls.Add(this.checkBox4);
+            this.documentacionGB.Controls.Add(this.checkBox3);
+            this.documentacionGB.Controls.Add(this.checkBox2);
+            this.documentacionGB.Controls.Add(this.checkBox1);
+            resources.ApplyResources(this.documentacionGB, "documentacionGB");
+            this.documentacionGB.Name = "documentacionGB";
+            this.documentacionGB.TabStop = false;
+            // 
+            // checkBox5
+            // 
+            resources.ApplyResources(this.checkBox5, "checkBox5");
+            this.checkBox5.Name = "checkBox5";
+            this.checkBox5.UseVisualStyleBackColor = true;
+            // 
+            // checkBox4
+            // 
+            resources.ApplyResources(this.checkBox4, "checkBox4");
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.UseVisualStyleBackColor = true;
+            // 
+            // checkBox3
+            // 
+            resources.ApplyResources(this.checkBox3, "checkBox3");
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            resources.ApplyResources(this.checkBox2, "checkBox2");
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // checkBox1
+            // 
+            resources.ApplyResources(this.checkBox1, "checkBox1");
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
             // limpiarFormato3Button
             // 
             this.limpiarFormato3Button.BackgroundImage = global::presentationLayer.Properties.Resources.limpiar;
@@ -819,47 +861,6 @@ namespace presentationLayer
             this.realizarAltaButton.UseVisualStyleBackColor = true;
             this.realizarAltaButton.Click += new System.EventHandler(this.guardarButton_Click);
             // 
-            // documentacionGB
-            // 
-            this.documentacionGB.Controls.Add(this.checkBox5);
-            this.documentacionGB.Controls.Add(this.checkBox4);
-            this.documentacionGB.Controls.Add(this.checkBox3);
-            this.documentacionGB.Controls.Add(this.checkBox2);
-            this.documentacionGB.Controls.Add(this.checkBox1);
-            resources.ApplyResources(this.documentacionGB, "documentacionGB");
-            this.documentacionGB.Name = "documentacionGB";
-            this.documentacionGB.TabStop = false;
-            // 
-            // checkBox1
-            // 
-            resources.ApplyResources(this.checkBox1, "checkBox1");
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // checkBox2
-            // 
-            resources.ApplyResources(this.checkBox2, "checkBox2");
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            // 
-            // checkBox3
-            // 
-            resources.ApplyResources(this.checkBox3, "checkBox3");
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // checkBox4
-            // 
-            resources.ApplyResources(this.checkBox4, "checkBox4");
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.UseVisualStyleBackColor = true;
-            // 
-            // checkBox5
-            // 
-            resources.ApplyResources(this.checkBox5, "checkBox5");
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.UseVisualStyleBackColor = true;
-            // 
             // altaAlumno
             // 
             resources.ApplyResources(this, "$this");
@@ -888,12 +889,12 @@ namespace presentationLayer
             this.informacionEscolarGroupBox.PerformLayout();
             this.informacionMedicaAlumnoGroupBox.ResumeLayout(false);
             this.informacionMedicaAlumnoGroupBox.PerformLayout();
+            this.documentacionGB.ResumeLayout(false);
+            this.documentacionGB.PerformLayout();
             this.informacionTutorGroupBox.ResumeLayout(false);
             this.informacionTutorGroupBox.PerformLayout();
             this.altaAlumnoPanel.ResumeLayout(false);
             this.altaAlumnoPanel.PerformLayout();
-            this.documentacionGB.ResumeLayout(false);
-            this.documentacionGB.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

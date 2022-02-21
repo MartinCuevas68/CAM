@@ -59,6 +59,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FichaTec.cs" />
     <Compile Include="Claudia.cs" />
     <Compile Include="Consultas.cs">
       <SubType>Form</SubType>
@@ -74,6 +75,12 @@
     <Compile Include="altaAlumno.Designer.cs">
       <DependentUpon>altaAlumno.cs</DependentUpon>
     </Compile>
+    <Compile Include="fichaTecnica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fichaTecnica.Designer.cs">
+      <DependentUpon>fichaTecnica.cs</DependentUpon>
+    </Compile>
     <Compile Include="modificacionesAlumno.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +94,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Consultas.resx">
       <DependentUpon>Consultas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fichaTecnica.resx">
+      <DependentUpon>fichaTecnica.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="modificacionesAlumno.resx">
       <DependentUpon>modificacionesAlumno.cs</DependentUpon>

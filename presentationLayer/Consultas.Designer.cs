@@ -273,6 +273,7 @@ namespace presentationLayer
             this.imprimirButton.Size = new System.Drawing.Size(56, 19);
             this.imprimirButton.TabIndex = 25;
             this.imprimirButton.UseVisualStyleBackColor = true;
+            this.imprimirButton.Click += new System.EventHandler(this.imprimirButton_Click);
             // 
             // agregarButton
             // 

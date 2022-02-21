@@ -283,5 +283,10 @@ namespace presentationLayer
         {
 
         }
+
+        private void apellidoMaternoAlumnoLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
