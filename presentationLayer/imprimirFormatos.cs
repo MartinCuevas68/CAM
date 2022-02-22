@@ -76,5 +76,10 @@ namespace presentationLayer
             string pdfPath = Path.Combine(Application.StartupPath, "C:\\Formatos\\FCI9.pdf");
             Process.Start(pdfPath);
         }
-}
+
+        private void regresarImprimirFormatosButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+    }
 }
