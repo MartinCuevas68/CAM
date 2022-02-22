@@ -236,3 +236,4 @@ F:\Github\UABC\CAM\presentationLayer\obj\Debug\presentationLayer.exe
 F:\Github\UABC\CAM\presentationLayer\obj\Debug\presentationLayer.pdb
 C:\Users\Juan2\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.imprimirFormatos.resources
 F:\Github\UABC\CAM\presentationLayer\obj\Debug\presentationLayer.imprimirFormatos.resources
+C:\Users\Juan2\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.fichaTecnica.resources
