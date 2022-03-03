@@ -185,7 +185,6 @@ C:\Users\galle\source\repos\CAM3\presentationLayer\obj\Debug\presentationLayer.c
 C:\Users\galle\source\repos\CAM3\presentationLayer\obj\Debug\presentationLayer.exe
 C:\Users\galle\source\repos\CAM3\presentationLayer\obj\Debug\presentationLayer.pdb
 C:\Users\vanes\Source\Repos\CAM\presentationLayer\obj\Debug\presentationLayer.modificacionesAlumno.resources
-C:\Users\vanes\Source\Repos\CAM\presentationLayer\obj\Debug\presentationLayer.csproj.CopyComplete
 G:\Visual studio programs\GIT\CAM\presentationLayer\bin\Debug\presentationLayer.exe.config
 G:\Visual studio programs\GIT\CAM\presentationLayer\bin\Debug\presentationLayer.exe
 G:\Visual studio programs\GIT\CAM\presentationLayer\bin\Debug\presentationLayer.pdb
@@ -237,3 +236,5 @@ F:\Github\UABC\CAM\presentationLayer\obj\Debug\presentationLayer.pdb
 C:\Users\Juan2\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.imprimirFormatos.resources
 F:\Github\UABC\CAM\presentationLayer\obj\Debug\presentationLayer.imprimirFormatos.resources
 C:\Users\Juan2\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.fichaTecnica.resources
+C:\Users\vanes\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.fichaTecnica.resources
+C:\Users\vanes\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.imprimirFormatos.resources

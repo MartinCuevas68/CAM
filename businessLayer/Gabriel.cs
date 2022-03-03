@@ -43,7 +43,7 @@ namespace businessLayer
             }
             catch (Exception)
             {
-                throw;
+               // throw;
             }
 
 
