@@ -27,10 +27,9 @@ namespace presentationLayer
         }
 
         public static void altasInformacionMedicaAlumno(Label servicioMedico, Label discapacidad, Label enfermedades, Label alergias,
-            Label telefonoContacto, Label grupoSanguineo, Label documentacion, Label mostrarDiscapacidad, Label mostrarEnfermedades,
-            Label mostrarAlergias, TextBox servicioMedicoTB, ComboBox discapacidadCB, ComboBox enfermedadesCB, ComboBox alergiasCB,
-            TextBox telefonoContactoTB, TextBox grupoSanguineoTB, GroupBox documentacionGB, RichTextBox mostrarDiscapacidadTB,
-            RichTextBox mostrarEnfermedadTB, RichTextBox mostrarAlergiasTB, Button agregarAlergias, Button agregarEnfermedad, Button agregarDiscapacidad)
+            Label telefonoContacto, Label grupoSanguineo, TextBox servicioMedicoTB, ComboBox discapacidadCB, ComboBox enfermedadesCB, ComboBox alergiasCB,
+            TextBox telefonoContactoTB, TextBox grupoSanguineoTB, RichTextBox mostrarDiscapacidadTB,
+            RichTextBox mostrarEnfermedadTB, RichTextBox mostrarAlergiasTB)
         {
             int aux = 40;
             servicioMedico.Location = new Point(20, aux);
@@ -39,37 +38,24 @@ namespace presentationLayer
             grupoSanguineo.Location = new Point(360, aux);
             grupoSanguineoTB.Location = new Point(540, aux);
 
-            documentacion.Location = new Point(680, aux);
 
             aux = aux + 40;
             telefonoContacto.Location = new Point(20, aux);
             telefonoContactoTB.Location = new Point(240, aux);
 
-            documentacionGB.Location = new Point(680, aux);
-            documentacionGB.Font = new Font("Leelawadee UI", 12);
-
             //Info
             aux = aux + 80;
             discapacidad.Location = new Point(20, aux);
             discapacidadCB.Location = new Point(240, aux);
-            agregarDiscapacidad.Location = new Point(360, aux - 4);
 
             aux = aux + 40;
 
-            //Texto a botones
-            var tt = new ToolTip();
-            tt.SetToolTip(agregarAlergias, "AGREGAR ALERGIA");
-            tt.SetToolTip(agregarDiscapacidad, "AGREGAR DISCAPACIDAD");
-            tt.SetToolTip(agregarEnfermedad, "AGREGAR ENFERMEDAD");
-
             enfermedades.Location = new Point(20, aux);
             enfermedadesCB.Location = new Point(240, aux - 4);
-            agregarEnfermedad.Location = new Point(360, aux - 4);
 
             aux = aux + 40;
             alergias.Location = new Point(20, aux);
             alergiasCB.Location = new Point(240, aux - 4);
-            agregarAlergias.Location = new Point(360, aux - 4);
 
             aux = aux + 80;
             mostrarDiscapacidad.Location = new Point(20, aux);
@@ -90,7 +76,6 @@ namespace presentationLayer
             discapacidad.Size = new Size(100, 30);
             enfermedades.Size = new Size(100, 30);
             alergias.Size = new Size(100, 30);
-            documentacion.Size = new Size(100, 30);
             telefonoContacto.Size = new Size(100, 30);
             grupoSanguineo.Size = new Size(100, 30);
             mostrarDiscapacidad.Size = new Size(100, 30);
@@ -101,7 +86,6 @@ namespace presentationLayer
             discapacidadCB.Size = new Size(100, 30);
             enfermedadesCB.Size = new Size(100, 30);
             alergiasCB.Size = new Size(100, 30);
-            documentacionGB.Size = new Size(320, 200);
             telefonoContactoTB.Size = new Size(100, 150);
             grupoSanguineoTB.Size = new Size(100, 30);
             mostrarDiscapacidadTB.Size = new Size(300, 150);
