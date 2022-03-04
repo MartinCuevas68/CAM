@@ -45,3 +45,14 @@ C:\Users\Juan2\source\repos\Desarrollo\1dataLayer\bin\Debug\EntityFramework.dll
 C:\Users\Juan2\source\repos\Desarrollo\1dataLayer\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Juan2\source\repos\Desarrollo\1dataLayer\bin\Debug\EntityFramework.xml
 C:\Users\Juan2\source\repos\Desarrollo\1dataLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ferna\source\repos\CAM\1dataLayer\bin\Debug\1dataLayer.pdb
+C:\Users\ferna\source\repos\CAM\1dataLayer\bin\Debug\EntityFramework.dll
+C:\Users\ferna\source\repos\CAM\1dataLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ferna\source\repos\CAM\1dataLayer\bin\Debug\EntityFramework.xml
+C:\Users\ferna\source\repos\CAM\1dataLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ferna\source\repos\CAM\1dataLayer\obj\Debug\1dataLayer.csproj.AssemblyReference.cache
+C:\Users\ferna\source\repos\CAM\1dataLayer\obj\Debug\1dataLayer.csproj.CoreCompileInputs.cache
+C:\Users\ferna\source\repos\CAM\1dataLayer\obj\Debug\1dataLayer.pdb
+C:\Users\ferna\source\repos\CAM\1dataLayer\bin\Debug\1dataLayer.exe.config
+C:\Users\ferna\source\repos\CAM\1dataLayer\bin\Debug\1dataLayer.exe
+C:\Users\ferna\source\repos\CAM\1dataLayer\obj\Debug\1dataLayer.exe
