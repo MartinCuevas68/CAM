@@ -60,19 +60,20 @@ namespace presentationLayer
             "GENERAL",
             "NOMBRE",
             "TALLER"});
-            this.filtradoComboBox.Location = new System.Drawing.Point(121, 301);
-            this.filtradoComboBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.filtradoComboBox.Location = new System.Drawing.Point(161, 370);
+            this.filtradoComboBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.filtradoComboBox.Name = "filtradoComboBox";
-            this.filtradoComboBox.Size = new System.Drawing.Size(92, 21);
+            this.filtradoComboBox.Size = new System.Drawing.Size(121, 24);
             this.filtradoComboBox.TabIndex = 18;
             // 
             // consultaLabel
             // 
             this.consultaLabel.AutoSize = true;
             this.consultaLabel.Font = new System.Drawing.Font("Leelawadee UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.consultaLabel.Location = new System.Drawing.Point(24, 35);
+            this.consultaLabel.Location = new System.Drawing.Point(32, 43);
+            this.consultaLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.consultaLabel.Name = "consultaLabel";
-            this.consultaLabel.Size = new System.Drawing.Size(149, 21);
+            this.consultaLabel.Size = new System.Drawing.Size(182, 28);
             this.consultaLabel.TabIndex = 15;
             this.consultaLabel.Text = "Consulta Alumnos";
             // 
@@ -81,9 +82,10 @@ namespace presentationLayer
             this.filtroLabel.AutoSize = true;
             this.filtroLabel.Font = new System.Drawing.Font("Leelawadee UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.filtroLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.filtroLabel.Location = new System.Drawing.Point(25, 371);
+            this.filtroLabel.Location = new System.Drawing.Point(33, 457);
+            this.filtroLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.filtroLabel.Name = "filtroLabel";
-            this.filtroLabel.Size = new System.Drawing.Size(127, 21);
+            this.filtroLabel.Size = new System.Drawing.Size(159, 28);
             this.filtroLabel.TabIndex = 13;
             this.filtroLabel.Text = "ORDENAR POR:";
             // 
@@ -91,68 +93,65 @@ namespace presentationLayer
             // 
             this.altaDataGridView.BackgroundColor = System.Drawing.Color.LightGray;
             this.altaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.altaDataGridView.Location = new System.Drawing.Point(21, 60);
-            this.altaDataGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.altaDataGridView.Location = new System.Drawing.Point(28, 74);
+            this.altaDataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.altaDataGridView.Name = "altaDataGridView";
             this.altaDataGridView.RowHeadersWidth = 51;
-            this.altaDataGridView.Size = new System.Drawing.Size(984, 232);
+            this.altaDataGridView.Size = new System.Drawing.Size(1312, 286);
             this.altaDataGridView.TabIndex = 10;
             // 
             // apellidoMaternoTextBox
             // 
-            this.apellidoMaternoTextBox.Location = new System.Drawing.Point(691, 60);
-            this.apellidoMaternoTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.apellidoMaternoTextBox.Location = new System.Drawing.Point(921, 74);
+            this.apellidoMaternoTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.apellidoMaternoTextBox.Multiline = true;
             this.apellidoMaternoTextBox.Name = "apellidoMaternoTextBox";
-            this.apellidoMaternoTextBox.Size = new System.Drawing.Size(125, 21);
+            this.apellidoMaternoTextBox.Size = new System.Drawing.Size(165, 25);
             this.apellidoMaternoTextBox.TabIndex = 23;
             // 
             // apellidoMaternoLabel
             // 
             this.apellidoMaternoLabel.AutoSize = true;
-            this.apellidoMaternoLabel.Location = new System.Drawing.Point(557, 62);
-            this.apellidoMaternoLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.apellidoMaternoLabel.Location = new System.Drawing.Point(743, 76);
             this.apellidoMaternoLabel.Name = "apellidoMaternoLabel";
-            this.apellidoMaternoLabel.Size = new System.Drawing.Size(172, 21);
+            this.apellidoMaternoLabel.Size = new System.Drawing.Size(215, 28);
             this.apellidoMaternoLabel.TabIndex = 22;
             this.apellidoMaternoLabel.Text = "APELLIDO MATERNO:";
             // 
             // apellidoPaternoTextBox
             // 
-            this.apellidoPaternoTextBox.Location = new System.Drawing.Point(425, 60);
-            this.apellidoPaternoTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.apellidoPaternoTextBox.Location = new System.Drawing.Point(567, 74);
+            this.apellidoPaternoTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.apellidoPaternoTextBox.Multiline = true;
             this.apellidoPaternoTextBox.Name = "apellidoPaternoTextBox";
-            this.apellidoPaternoTextBox.Size = new System.Drawing.Size(125, 21);
+            this.apellidoPaternoTextBox.Size = new System.Drawing.Size(165, 25);
             this.apellidoPaternoTextBox.TabIndex = 21;
             // 
             // apellidoPaternoLabel
             // 
             this.apellidoPaternoLabel.AutoSize = true;
-            this.apellidoPaternoLabel.Location = new System.Drawing.Point(254, 62);
-            this.apellidoPaternoLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.apellidoPaternoLabel.Location = new System.Drawing.Point(339, 76);
             this.apellidoPaternoLabel.Name = "apellidoPaternoLabel";
-            this.apellidoPaternoLabel.Size = new System.Drawing.Size(167, 21);
+            this.apellidoPaternoLabel.Size = new System.Drawing.Size(208, 28);
             this.apellidoPaternoLabel.TabIndex = 20;
             this.apellidoPaternoLabel.Text = "APELLIDO PATERNO:";
             // 
             // nombreLabel
             // 
             this.nombreLabel.AutoSize = true;
-            this.nombreLabel.Location = new System.Drawing.Point(4, 63);
-            this.nombreLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.nombreLabel.Location = new System.Drawing.Point(5, 78);
             this.nombreLabel.Name = "nombreLabel";
-            this.nombreLabel.Size = new System.Drawing.Size(99, 21);
+            this.nombreLabel.Size = new System.Drawing.Size(124, 28);
             this.nombreLabel.TabIndex = 19;
             this.nombreLabel.Text = "NOMBRE/S:";
             // 
             // nombreTextBox
             // 
-            this.nombreTextBox.Location = new System.Drawing.Point(112, 112);
-            this.nombreTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.nombreTextBox.Location = new System.Drawing.Point(149, 138);
+            this.nombreTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.nombreTextBox.Multiline = true;
             this.nombreTextBox.Name = "nombreTextBox";
-            this.nombreTextBox.Size = new System.Drawing.Size(125, 21);
+            this.nombreTextBox.Size = new System.Drawing.Size(165, 25);
             this.nombreTextBox.TabIndex = 18;
             // 
             // busquedaGroupBox
@@ -164,11 +163,11 @@ namespace presentationLayer
             this.busquedaGroupBox.Controls.Add(this.apellidoPaternoTextBox);
             this.busquedaGroupBox.Controls.Add(this.apellidoMaternoLabel);
             this.busquedaGroupBox.Font = new System.Drawing.Font("Leelawadee UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.busquedaGroupBox.Location = new System.Drawing.Point(28, 373);
-            this.busquedaGroupBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.busquedaGroupBox.Location = new System.Drawing.Point(37, 459);
+            this.busquedaGroupBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.busquedaGroupBox.Name = "busquedaGroupBox";
-            this.busquedaGroupBox.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.busquedaGroupBox.Size = new System.Drawing.Size(977, 205);
+            this.busquedaGroupBox.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.busquedaGroupBox.Size = new System.Drawing.Size(1303, 252);
             this.busquedaGroupBox.TabIndex = 26;
             this.busquedaGroupBox.TabStop = false;
             this.busquedaGroupBox.Text = "BUSQUEDA";
@@ -176,26 +175,28 @@ namespace presentationLayer
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(776, 781);
+            this.button1.Location = new System.Drawing.Point(1035, 961);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(100, 28);
             this.button1.TabIndex = 0;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // vScrollBar1
             // 
-            this.vScrollBar1.Location = new System.Drawing.Point(1897, 37);
+            this.vScrollBar1.Location = new System.Drawing.Point(2529, 46);
             this.vScrollBar1.Name = "vScrollBar1";
-            this.vScrollBar1.Size = new System.Drawing.Size(27, 995);
+            this.vScrollBar1.Size = new System.Drawing.Size(27, 1225);
             this.vScrollBar1.TabIndex = 138;
             // 
             // imprimirButton
             // 
             this.imprimirButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.imprimirButton.Location = new System.Drawing.Point(259, 324);
+            this.imprimirButton.Location = new System.Drawing.Point(345, 399);
+            this.imprimirButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.imprimirButton.Name = "imprimirButton";
-            this.imprimirButton.Size = new System.Drawing.Size(137, 33);
+            this.imprimirButton.Size = new System.Drawing.Size(183, 41);
             this.imprimirButton.TabIndex = 139;
             this.imprimirButton.Text = "Formatos";
             this.imprimirButton.UseVisualStyleBackColor = true;
@@ -205,9 +206,10 @@ namespace presentationLayer
             // 
             this.eliminarButton.BackgroundImage = global::presentationLayer.Properties.Resources.quitar_usuario;
             this.eliminarButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.eliminarButton.Location = new System.Drawing.Point(475, 297);
+            this.eliminarButton.Location = new System.Drawing.Point(633, 366);
+            this.eliminarButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.eliminarButton.Name = "eliminarButton";
-            this.eliminarButton.Size = new System.Drawing.Size(137, 33);
+            this.eliminarButton.Size = new System.Drawing.Size(183, 41);
             this.eliminarButton.TabIndex = 17;
             this.eliminarButton.UseVisualStyleBackColor = true;
             this.eliminarButton.Click += new System.EventHandler(this.eliminarButton_Click);
@@ -216,10 +218,10 @@ namespace presentationLayer
             // 
             this.buscarButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buscarButton.BackgroundImage")));
             this.buscarButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.buscarButton.Location = new System.Drawing.Point(589, 341);
-            this.buscarButton.Margin = new System.Windows.Forms.Padding(2);
+            this.buscarButton.Location = new System.Drawing.Point(785, 420);
+            this.buscarButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buscarButton.Name = "buscarButton";
-            this.buscarButton.Size = new System.Drawing.Size(35, 28);
+            this.buscarButton.Size = new System.Drawing.Size(47, 34);
             this.buscarButton.TabIndex = 11;
             this.buscarButton.UseVisualStyleBackColor = true;
             // 
@@ -228,10 +230,10 @@ namespace presentationLayer
             this.agregarButton.BackgroundImage = global::presentationLayer.Properties.Resources.agregar_usuario;
             this.agregarButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.agregarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.agregarButton.Location = new System.Drawing.Point(848, 37);
-            this.agregarButton.Margin = new System.Windows.Forms.Padding(2);
+            this.agregarButton.Location = new System.Drawing.Point(1131, 46);
+            this.agregarButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.agregarButton.Name = "agregarButton";
-            this.agregarButton.Size = new System.Drawing.Size(56, 19);
+            this.agregarButton.Size = new System.Drawing.Size(75, 23);
             this.agregarButton.TabIndex = 21;
             this.agregarButton.UseVisualStyleBackColor = true;
             this.agregarButton.Click += new System.EventHandler(this.agregarButton_Click_1);
@@ -240,10 +242,10 @@ namespace presentationLayer
             // 
             this.vaciarButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("vaciarButton.BackgroundImage")));
             this.vaciarButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.vaciarButton.Location = new System.Drawing.Point(655, 327);
-            this.vaciarButton.Margin = new System.Windows.Forms.Padding(2);
+            this.vaciarButton.Location = new System.Drawing.Point(873, 402);
+            this.vaciarButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.vaciarButton.Name = "vaciarButton";
-            this.vaciarButton.Size = new System.Drawing.Size(60, 27);
+            this.vaciarButton.Size = new System.Drawing.Size(80, 33);
             this.vaciarButton.TabIndex = 24;
             this.vaciarButton.UseVisualStyleBackColor = true;
             // 
@@ -251,20 +253,20 @@ namespace presentationLayer
             // 
             this.modificarButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("modificarButton.BackgroundImage")));
             this.modificarButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.modificarButton.Location = new System.Drawing.Point(776, 327);
-            this.modificarButton.Margin = new System.Windows.Forms.Padding(2);
+            this.modificarButton.Location = new System.Drawing.Point(1035, 402);
+            this.modificarButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.modificarButton.Name = "modificarButton";
-            this.modificarButton.Size = new System.Drawing.Size(90, 27);
+            this.modificarButton.Size = new System.Drawing.Size(120, 33);
             this.modificarButton.TabIndex = 12;
             this.modificarButton.UseVisualStyleBackColor = true;
             this.modificarButton.Click += new System.EventHandler(this.modificarButton_Click_1);
             // 
             // Consultas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ClientSize = new System.Drawing.Size(1443, 857);
+            this.ClientSize = new System.Drawing.Size(1924, 1055);
             this.Controls.Add(this.imprimirButton);
             this.Controls.Add(this.vScrollBar1);
             this.Controls.Add(this.button1);
@@ -279,6 +281,7 @@ namespace presentationLayer
             this.Controls.Add(this.filtroLabel);
             this.Controls.Add(this.altaDataGridView);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Consultas";
             this.Text = "CONSULTAS";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
