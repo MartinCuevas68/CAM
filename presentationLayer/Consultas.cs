@@ -19,7 +19,7 @@ namespace presentationLayer
         public Consultas()
         {
             InitializeComponent();
-            Martin.consultaButtons(agregarButton, modificarButton, eliminarButton);
+       //     Martin.consultaButtons(agregarButton, modificarButton, eliminarButton);
             //Edder.botonBuscar(buscarButton);
             //Edder.botonEliminar(eliminarButton);
             //Edder.botonModificar(modificarButton);
