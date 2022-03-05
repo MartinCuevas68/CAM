@@ -34,19 +34,19 @@ namespace presentationLayer
             this.altaDataGridView = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
             this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.panelBusqueda = new System.Windows.Forms.Panel();
+            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
+            this.buttonModificaciones = new System.Windows.Forms.Button();
+            this.buttonEliminar = new System.Windows.Forms.Button();
+            this.buttonAlta = new System.Windows.Forms.Button();
             this.buscarButton = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.buttonSystem1 = new presentationLayer.buttonSystem();
-            this.buttonSystem2 = new presentationLayer.buttonSystem();
-            this.buttonSystem3 = new presentationLayer.buttonSystem();
+            this.txtboxBuscar = new System.Windows.Forms.TextBox();
+            this.buttonCerrar = new presentationLayer.buttonSystem();
+            this.buttonImprimir = new presentationLayer.buttonSystem();
+            this.buttonFicha = new presentationLayer.buttonSystem();
             ((System.ComponentModel.ISupportInitialize)(this.altaDataGridView)).BeginInit();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panelBusqueda.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // consultaLabel
@@ -86,63 +86,63 @@ namespace presentationLayer
             this.vScrollBar1.Size = new System.Drawing.Size(27, 995);
             this.vScrollBar1.TabIndex = 138;
             // 
-            // panel1
+            // panelBusqueda
             // 
-            this.panel1.BackgroundImage = global::presentationLayer.Properties.Resources.searchBox;
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.buscarButton);
-            this.panel1.Location = new System.Drawing.Point(562, 89);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(233, 35);
-            this.panel1.TabIndex = 144;
+            this.panelBusqueda.BackgroundImage = global::presentationLayer.Properties.Resources.searchBox;
+            this.panelBusqueda.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelBusqueda.Controls.Add(this.txtboxBuscar);
+            this.panelBusqueda.Controls.Add(this.buscarButton);
+            this.panelBusqueda.Location = new System.Drawing.Point(562, 89);
+            this.panelBusqueda.Name = "panelBusqueda";
+            this.panelBusqueda.Size = new System.Drawing.Size(233, 35);
+            this.panelBusqueda.TabIndex = 144;
             // 
-            // pictureBox1
+            // pictureBoxLogo
             // 
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Image = global::presentationLayer.Properties.Resources.logocam;
-            this.pictureBox1.Location = new System.Drawing.Point(1, -18);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(214, 197);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 143;
-            this.pictureBox1.TabStop = false;
+            this.pictureBoxLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxLogo.Image = global::presentationLayer.Properties.Resources.logocam;
+            this.pictureBoxLogo.Location = new System.Drawing.Point(1, -18);
+            this.pictureBoxLogo.Name = "pictureBoxLogo";
+            this.pictureBoxLogo.Size = new System.Drawing.Size(214, 197);
+            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxLogo.TabIndex = 143;
+            this.pictureBoxLogo.TabStop = false;
             // 
-            // button4
+            // buttonModificaciones
             // 
-            this.button4.BackgroundImage = global::presentationLayer.Properties.Resources.editar1;
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(1281, 272);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(43, 32);
-            this.button4.TabIndex = 142;
-            this.button4.UseVisualStyleBackColor = true;
+            this.buttonModificaciones.BackgroundImage = global::presentationLayer.Properties.Resources.editar1;
+            this.buttonModificaciones.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonModificaciones.FlatAppearance.BorderSize = 0;
+            this.buttonModificaciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonModificaciones.Location = new System.Drawing.Point(1281, 272);
+            this.buttonModificaciones.Name = "buttonModificaciones";
+            this.buttonModificaciones.Size = new System.Drawing.Size(43, 32);
+            this.buttonModificaciones.TabIndex = 142;
+            this.buttonModificaciones.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // buttonEliminar
             // 
-            this.button3.BackgroundImage = global::presentationLayer.Properties.Resources.quitar_usuario__1_;
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(1281, 324);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(43, 32);
-            this.button3.TabIndex = 141;
-            this.button3.UseVisualStyleBackColor = true;
+            this.buttonEliminar.BackgroundImage = global::presentationLayer.Properties.Resources.quitar_usuario__1_;
+            this.buttonEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonEliminar.FlatAppearance.BorderSize = 0;
+            this.buttonEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonEliminar.Location = new System.Drawing.Point(1281, 324);
+            this.buttonEliminar.Name = "buttonEliminar";
+            this.buttonEliminar.Size = new System.Drawing.Size(43, 32);
+            this.buttonEliminar.TabIndex = 141;
+            this.buttonEliminar.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // buttonAlta
             // 
-            this.button2.BackgroundImage = global::presentationLayer.Properties.Resources.agregar_usuario__1_;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(1281, 209);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(43, 32);
-            this.button2.TabIndex = 140;
-            this.button2.UseVisualStyleBackColor = true;
+            this.buttonAlta.BackgroundImage = global::presentationLayer.Properties.Resources.agregar_usuario__1_;
+            this.buttonAlta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonAlta.FlatAppearance.BorderSize = 0;
+            this.buttonAlta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonAlta.Location = new System.Drawing.Point(1281, 209);
+            this.buttonAlta.Name = "buttonAlta";
+            this.buttonAlta.Size = new System.Drawing.Size(43, 32);
+            this.buttonAlta.TabIndex = 140;
+            this.buttonAlta.UseVisualStyleBackColor = true;
             // 
             // buscarButton
             // 
@@ -158,65 +158,65 @@ namespace presentationLayer
             this.buscarButton.TabIndex = 11;
             this.buscarButton.UseVisualStyleBackColor = false;
             // 
-            // textBox1
+            // txtboxBuscar
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(52, 11);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(169, 18);
-            this.textBox1.TabIndex = 12;
+            this.txtboxBuscar.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtboxBuscar.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtboxBuscar.Location = new System.Drawing.Point(52, 11);
+            this.txtboxBuscar.Name = "txtboxBuscar";
+            this.txtboxBuscar.Size = new System.Drawing.Size(169, 18);
+            this.txtboxBuscar.TabIndex = 12;
             // 
-            // buttonSystem1
+            // buttonCerrar
             // 
-            this.buttonSystem1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(98)))), ((int)(((byte)(242)))));
-            this.buttonSystem1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(98)))), ((int)(((byte)(242)))));
-            this.buttonSystem1.BorderRadius = 20;
-            this.buttonSystem1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(142)))), ((int)(((byte)(244)))));
-            this.buttonSystem1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSystem1.Font = new System.Drawing.Font("Gadugi", 14F, System.Drawing.FontStyle.Bold);
-            this.buttonSystem1.ForeColor = System.Drawing.Color.White;
-            this.buttonSystem1.Location = new System.Drawing.Point(1036, 690);
-            this.buttonSystem1.Name = "buttonSystem1";
-            this.buttonSystem1.Padding = new System.Windows.Forms.Padding(6);
-            this.buttonSystem1.Size = new System.Drawing.Size(164, 45);
-            this.buttonSystem1.TabIndex = 145;
-            this.buttonSystem1.Text = "Ficha técnica";
-            this.buttonSystem1.UseVisualStyleBackColor = false;
+            this.buttonCerrar.BackColor = System.Drawing.Color.White;
+            this.buttonCerrar.BackgroundColor = System.Drawing.Color.White;
+            this.buttonCerrar.BorderRadius = 20;
+            this.buttonCerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(142)))), ((int)(((byte)(244)))));
+            this.buttonCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCerrar.Font = new System.Drawing.Font("Gadugi", 14F, System.Drawing.FontStyle.Bold);
+            this.buttonCerrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(98)))), ((int)(((byte)(242)))));
+            this.buttonCerrar.Location = new System.Drawing.Point(38, 690);
+            this.buttonCerrar.Name = "buttonCerrar";
+            this.buttonCerrar.Padding = new System.Windows.Forms.Padding(6);
+            this.buttonCerrar.Size = new System.Drawing.Size(164, 45);
+            this.buttonCerrar.TabIndex = 147;
+            this.buttonCerrar.Text = "Cerrar sesión";
+            this.buttonCerrar.UseVisualStyleBackColor = false;
             // 
-            // buttonSystem2
+            // buttonImprimir
             // 
-            this.buttonSystem2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(98)))), ((int)(((byte)(242)))));
-            this.buttonSystem2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(98)))), ((int)(((byte)(242)))));
-            this.buttonSystem2.BorderRadius = 20;
-            this.buttonSystem2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(142)))), ((int)(((byte)(244)))));
-            this.buttonSystem2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSystem2.Font = new System.Drawing.Font("Gadugi", 14F, System.Drawing.FontStyle.Bold);
-            this.buttonSystem2.ForeColor = System.Drawing.Color.White;
-            this.buttonSystem2.Location = new System.Drawing.Point(727, 690);
-            this.buttonSystem2.Name = "buttonSystem2";
-            this.buttonSystem2.Padding = new System.Windows.Forms.Padding(6);
-            this.buttonSystem2.Size = new System.Drawing.Size(202, 45);
-            this.buttonSystem2.TabIndex = 146;
-            this.buttonSystem2.Text = "Imprimir formatos";
-            this.buttonSystem2.UseVisualStyleBackColor = false;
+            this.buttonImprimir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(98)))), ((int)(((byte)(242)))));
+            this.buttonImprimir.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(98)))), ((int)(((byte)(242)))));
+            this.buttonImprimir.BorderRadius = 20;
+            this.buttonImprimir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(142)))), ((int)(((byte)(244)))));
+            this.buttonImprimir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonImprimir.Font = new System.Drawing.Font("Gadugi", 14F, System.Drawing.FontStyle.Bold);
+            this.buttonImprimir.ForeColor = System.Drawing.Color.White;
+            this.buttonImprimir.Location = new System.Drawing.Point(727, 690);
+            this.buttonImprimir.Name = "buttonImprimir";
+            this.buttonImprimir.Padding = new System.Windows.Forms.Padding(6);
+            this.buttonImprimir.Size = new System.Drawing.Size(202, 45);
+            this.buttonImprimir.TabIndex = 146;
+            this.buttonImprimir.Text = "Imprimir formatos";
+            this.buttonImprimir.UseVisualStyleBackColor = false;
             // 
-            // buttonSystem3
+            // buttonFicha
             // 
-            this.buttonSystem3.BackColor = System.Drawing.Color.White;
-            this.buttonSystem3.BackgroundColor = System.Drawing.Color.White;
-            this.buttonSystem3.BorderRadius = 20;
-            this.buttonSystem3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(142)))), ((int)(((byte)(244)))));
-            this.buttonSystem3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSystem3.Font = new System.Drawing.Font("Gadugi", 14F, System.Drawing.FontStyle.Bold);
-            this.buttonSystem3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(98)))), ((int)(((byte)(242)))));
-            this.buttonSystem3.Location = new System.Drawing.Point(38, 690);
-            this.buttonSystem3.Name = "buttonSystem3";
-            this.buttonSystem3.Padding = new System.Windows.Forms.Padding(6);
-            this.buttonSystem3.Size = new System.Drawing.Size(164, 45);
-            this.buttonSystem3.TabIndex = 147;
-            this.buttonSystem3.Text = "Cerrar sesión";
-            this.buttonSystem3.UseVisualStyleBackColor = false;
+            this.buttonFicha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(98)))), ((int)(((byte)(242)))));
+            this.buttonFicha.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(98)))), ((int)(((byte)(242)))));
+            this.buttonFicha.BorderRadius = 20;
+            this.buttonFicha.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(142)))), ((int)(((byte)(244)))));
+            this.buttonFicha.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonFicha.Font = new System.Drawing.Font("Gadugi", 14F, System.Drawing.FontStyle.Bold);
+            this.buttonFicha.ForeColor = System.Drawing.Color.White;
+            this.buttonFicha.Location = new System.Drawing.Point(1036, 690);
+            this.buttonFicha.Name = "buttonFicha";
+            this.buttonFicha.Padding = new System.Windows.Forms.Padding(6);
+            this.buttonFicha.Size = new System.Drawing.Size(164, 45);
+            this.buttonFicha.TabIndex = 145;
+            this.buttonFicha.Text = "Ficha técnica";
+            this.buttonFicha.UseVisualStyleBackColor = false;
             // 
             // Consultas
             // 
@@ -224,14 +224,14 @@ namespace presentationLayer
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1370, 749);
-            this.Controls.Add(this.buttonSystem3);
-            this.Controls.Add(this.buttonSystem2);
-            this.Controls.Add(this.buttonSystem1);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.buttonCerrar);
+            this.Controls.Add(this.buttonImprimir);
+            this.Controls.Add(this.buttonFicha);
+            this.Controls.Add(this.panelBusqueda);
+            this.Controls.Add(this.pictureBoxLogo);
+            this.Controls.Add(this.buttonModificaciones);
+            this.Controls.Add(this.buttonEliminar);
+            this.Controls.Add(this.buttonAlta);
             this.Controls.Add(this.vScrollBar1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.consultaLabel);
@@ -242,9 +242,9 @@ namespace presentationLayer
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Consultas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.altaDataGridView)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panelBusqueda.ResumeLayout(false);
+            this.panelBusqueda.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -256,14 +256,14 @@ namespace presentationLayer
         private System.Windows.Forms.DataGridView altaDataGridView;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.VScrollBar vScrollBar1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox1;
-        private buttonSystem buttonSystem1;
-        private buttonSystem buttonSystem2;
-        private buttonSystem buttonSystem3;
+        private System.Windows.Forms.Button buttonAlta;
+        private System.Windows.Forms.Button buttonEliminar;
+        private System.Windows.Forms.Button buttonModificaciones;
+        private System.Windows.Forms.PictureBox pictureBoxLogo;
+        private System.Windows.Forms.Panel panelBusqueda;
+        private System.Windows.Forms.TextBox txtboxBuscar;
+        private buttonSystem buttonFicha;
+        private buttonSystem buttonImprimir;
+        private buttonSystem buttonCerrar;
     }
 }
