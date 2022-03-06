@@ -47,18 +47,18 @@ namespace _1dataLayer
 
     public class enfermedadesDTO
     {
-        public int id_cartilla_medica { get; }
+        public int id_cartilla_medica { get; set; }
         public string enfermedad { get; set; }
     }
 
     public class alergiasDTO
     {
-        public int id_cartilla_medica { get; }
+        public int id_cartilla_medica { get;  }
         public  string alergia { get; set; }
     }
     public class discapacidadesDTO
     {
-        public int id_cartilla_medica { get; }
+        public int id_cartilla_medica { get; set; }
         public string discapacidades { get; set; }
     }
 
