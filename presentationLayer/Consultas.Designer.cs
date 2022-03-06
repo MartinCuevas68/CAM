@@ -41,12 +41,12 @@ namespace presentationLayer
             this.nombreLabel = new System.Windows.Forms.Label();
             this.nombreTextBox = new System.Windows.Forms.TextBox();
             this.busquedaGroupBox = new System.Windows.Forms.GroupBox();
+            this.agregarButton = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             this.imprimirButton = new System.Windows.Forms.Button();
             this.eliminarButton = new System.Windows.Forms.Button();
             this.buscarButton = new System.Windows.Forms.Button();
-            this.agregarButton = new System.Windows.Forms.Button();
             this.vaciarButton = new System.Windows.Forms.Button();
             this.modificarButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.altaDataGridView)).BeginInit();
@@ -61,7 +61,7 @@ namespace presentationLayer
             "NOMBRE",
             "TALLER"});
             this.filtradoComboBox.Location = new System.Drawing.Point(121, 301);
-            this.filtradoComboBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.filtradoComboBox.Margin = new System.Windows.Forms.Padding(2);
             this.filtradoComboBox.Name = "filtradoComboBox";
             this.filtradoComboBox.Size = new System.Drawing.Size(92, 21);
             this.filtradoComboBox.TabIndex = 18;
@@ -92,7 +92,7 @@ namespace presentationLayer
             this.altaDataGridView.BackgroundColor = System.Drawing.Color.LightGray;
             this.altaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.altaDataGridView.Location = new System.Drawing.Point(21, 60);
-            this.altaDataGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.altaDataGridView.Margin = new System.Windows.Forms.Padding(2);
             this.altaDataGridView.Name = "altaDataGridView";
             this.altaDataGridView.RowHeadersWidth = 51;
             this.altaDataGridView.Size = new System.Drawing.Size(984, 232);
@@ -101,7 +101,7 @@ namespace presentationLayer
             // apellidoMaternoTextBox
             // 
             this.apellidoMaternoTextBox.Location = new System.Drawing.Point(691, 60);
-            this.apellidoMaternoTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.apellidoMaternoTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.apellidoMaternoTextBox.Multiline = true;
             this.apellidoMaternoTextBox.Name = "apellidoMaternoTextBox";
             this.apellidoMaternoTextBox.Size = new System.Drawing.Size(125, 21);
@@ -120,7 +120,7 @@ namespace presentationLayer
             // apellidoPaternoTextBox
             // 
             this.apellidoPaternoTextBox.Location = new System.Drawing.Point(425, 60);
-            this.apellidoPaternoTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.apellidoPaternoTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.apellidoPaternoTextBox.Multiline = true;
             this.apellidoPaternoTextBox.Name = "apellidoPaternoTextBox";
             this.apellidoPaternoTextBox.Size = new System.Drawing.Size(125, 21);
@@ -149,7 +149,7 @@ namespace presentationLayer
             // nombreTextBox
             // 
             this.nombreTextBox.Location = new System.Drawing.Point(112, 112);
-            this.nombreTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.nombreTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.nombreTextBox.Multiline = true;
             this.nombreTextBox.Name = "nombreTextBox";
             this.nombreTextBox.Size = new System.Drawing.Size(125, 21);
@@ -165,14 +165,26 @@ namespace presentationLayer
             this.busquedaGroupBox.Controls.Add(this.apellidoMaternoLabel);
             this.busquedaGroupBox.Font = new System.Drawing.Font("Leelawadee UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.busquedaGroupBox.Location = new System.Drawing.Point(28, 373);
-            this.busquedaGroupBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.busquedaGroupBox.Margin = new System.Windows.Forms.Padding(2);
             this.busquedaGroupBox.Name = "busquedaGroupBox";
-            this.busquedaGroupBox.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.busquedaGroupBox.Padding = new System.Windows.Forms.Padding(2);
             this.busquedaGroupBox.Size = new System.Drawing.Size(977, 205);
             this.busquedaGroupBox.TabIndex = 26;
             this.busquedaGroupBox.TabStop = false;
             this.busquedaGroupBox.Text = "BUSQUEDA";
             this.busquedaGroupBox.Enter += new System.EventHandler(this.busquedaGroupBox_Enter);
+            // 
+            // agregarButton
+            // 
+            this.agregarButton.BackgroundImage = global::presentationLayer.Properties.Resources.agregar_usuario;
+            this.agregarButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.agregarButton.Location = new System.Drawing.Point(475, 341);
+            this.agregarButton.Margin = new System.Windows.Forms.Padding(2);
+            this.agregarButton.Name = "agregarButton";
+            this.agregarButton.Size = new System.Drawing.Size(56, 36);
+            this.agregarButton.TabIndex = 21;
+            this.agregarButton.UseVisualStyleBackColor = true;
+            this.agregarButton.Click += new System.EventHandler(this.agregarButton_Click_1);
             // 
             // button1
             // 
@@ -217,24 +229,11 @@ namespace presentationLayer
             this.buscarButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buscarButton.BackgroundImage")));
             this.buscarButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buscarButton.Location = new System.Drawing.Point(589, 341);
-            this.buscarButton.Margin = new System.Windows.Forms.Padding(2);
             this.buscarButton.Name = "buscarButton";
             this.buscarButton.Size = new System.Drawing.Size(35, 28);
             this.buscarButton.TabIndex = 11;
             this.buscarButton.UseVisualStyleBackColor = true;
-            // 
-            // agregarButton
-            // 
-            this.agregarButton.BackgroundImage = global::presentationLayer.Properties.Resources.agregar_usuario;
-            this.agregarButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.agregarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.agregarButton.Location = new System.Drawing.Point(848, 37);
-            this.agregarButton.Margin = new System.Windows.Forms.Padding(2);
-            this.agregarButton.Name = "agregarButton";
-            this.agregarButton.Size = new System.Drawing.Size(56, 19);
-            this.agregarButton.TabIndex = 21;
-            this.agregarButton.UseVisualStyleBackColor = true;
-            this.agregarButton.Click += new System.EventHandler(this.agregarButton_Click_1);
+            this.buscarButton.Click += new System.EventHandler(this.buscarButton_Click);
             // 
             // vaciarButton
             // 
@@ -264,14 +263,14 @@ namespace presentationLayer
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ClientSize = new System.Drawing.Size(1443, 857);
+            this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.agregarButton);
             this.Controls.Add(this.imprimirButton);
             this.Controls.Add(this.vScrollBar1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.eliminarButton);
             this.Controls.Add(this.buscarButton);
             this.Controls.Add(this.busquedaGroupBox);
-            this.Controls.Add(this.agregarButton);
             this.Controls.Add(this.vaciarButton);
             this.Controls.Add(this.filtradoComboBox);
             this.Controls.Add(this.modificarButton);

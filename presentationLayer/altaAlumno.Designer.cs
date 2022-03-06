@@ -31,114 +31,115 @@ namespace presentationLayer
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(altaAlumno));
             this.siguienteButton = new System.Windows.Forms.Button();
-            this.nombreAlumnoLabel = new System.Windows.Forms.Label();
-            this.fechaNacimientoLabel = new System.Windows.Forms.Label();
-            this.lugarNacimientoLabel = new System.Windows.Forms.Label();
+            this.nombreAlLabel = new System.Windows.Forms.Label();
+            this.fechaNaLabel = new System.Windows.Forms.Label();
+            this.lugarNaLabel = new System.Windows.Forms.Label();
             this.direccionAlumnoLabel = new System.Windows.Forms.Label();
-            this.telefonoAlumnoLabel = new System.Windows.Forms.Label();
+            this.telPersonalLabel = new System.Windows.Forms.Label();
             this.discapacidadLabel = new System.Windows.Forms.Label();
             this.curpLabel = new System.Windows.Forms.Label();
-            this.añosCumplidosLabel = new System.Windows.Forms.Label();
-            this.cicloEscolarLabel = new System.Windows.Forms.Label();
-            this.escuelaProcedenciaLabel = new System.Windows.Forms.Label();
-            this.canalizadoPorLabel = new System.Windows.Forms.Label();
-            this.reingresoRadioButton = new System.Windows.Forms.RadioButton();
+            this.añosCumLabel = new System.Windows.Forms.Label();
+            this.cicloEscLabel = new System.Windows.Forms.Label();
+            this.escuelaPLabel = new System.Windows.Forms.Label();
+            this.canalizadoLabel = new System.Windows.Forms.Label();
+            this.reingreso = new System.Windows.Forms.RadioButton();
             this.tipoIngresoGroupBox = new System.Windows.Forms.GroupBox();
-            this.nuevoIngresoRadioButton = new System.Windows.Forms.RadioButton();
-            this.nombreAlumnoTextBox = new System.Windows.Forms.TextBox();
-            this.telefonoAlumnoTextBox = new System.Windows.Forms.TextBox();
-            this.escuelaProcedenciaTextBox = new System.Windows.Forms.TextBox();
-            this.canalizadoPorTextBox = new System.Windows.Forms.TextBox();
-            this.cicloEscolarTextBox = new System.Windows.Forms.TextBox();
+            this.nuevoIngreso = new System.Windows.Forms.RadioButton();
+            this.nombreAl = new System.Windows.Forms.TextBox();
+            this.telPersonal = new System.Windows.Forms.TextBox();
+            this.escuelaP = new System.Windows.Forms.TextBox();
+            this.canalizado = new System.Windows.Forms.TextBox();
+            this.cicloEsc = new System.Windows.Forms.TextBox();
             this.curpTextBox = new System.Windows.Forms.TextBox();
-            this.añosCumplidosTextBox = new System.Windows.Forms.TextBox();
-            this.fechaNacimientoDateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.nombreTutorLabel = new System.Windows.Forms.Label();
-            this.domicilioTutorLabel = new System.Windows.Forms.Label();
-            this.ocupacionTutorLabel = new System.Windows.Forms.Label();
-            this.telefonosTutorLabel = new System.Windows.Forms.Label();
-            this.nombreTutorTextBox = new System.Windows.Forms.TextBox();
-            this.ocupacionTutorTextBox = new System.Windows.Forms.TextBox();
-            this.telefonoCasaTutorLabel = new System.Windows.Forms.Label();
-            this.telefonoCelularTutorLabel = new System.Windows.Forms.Label();
-            this.telefonoTrabajoTutorLabel = new System.Windows.Forms.Label();
-            this.telefonoCasaTutorTextBox = new System.Windows.Forms.TextBox();
-            this.telefonoCelularTutorTextBox = new System.Windows.Forms.TextBox();
-            this.telefonoTrabajoTutorTextBox = new System.Windows.Forms.TextBox();
-            this.ciudadNacimientoAlumnoLabel = new System.Windows.Forms.Label();
-            this.estadoNacimientoAlumnoLabel = new System.Windows.Forms.Label();
-            this.apellidoPaternoAlumnoLabel = new System.Windows.Forms.Label();
-            this.apellidoMaternoAlumnoLabel = new System.Windows.Forms.Label();
-            this.calleDireccionAlumnoLabel = new System.Windows.Forms.Label();
-            this.numeroDireccionAlumnoLabel = new System.Windows.Forms.Label();
-            this.coloniaDireccionAlumnoLabel = new System.Windows.Forms.Label();
-            this.apellidoPaternoAlumnoTextBox = new System.Windows.Forms.TextBox();
-            this.apellidoMaternoAlumnoTextBox = new System.Windows.Forms.TextBox();
-            this.ciudadNacimientoAlumnoTextBox = new System.Windows.Forms.TextBox();
-            this.estadoNacimientoAlumnoTextBox = new System.Windows.Forms.TextBox();
-            this.calleDireccionAlumnoTextBox = new System.Windows.Forms.TextBox();
-            this.numeroDireccionAlumnoTextBox = new System.Windows.Forms.TextBox();
-            this.coloniaDireccionAlumnoTextBox = new System.Windows.Forms.TextBox();
-            this.apellidoPaternoTutorLabel = new System.Windows.Forms.Label();
-            this.apellidoMaternoTutorLabel = new System.Windows.Forms.Label();
-            this.apellidoPaternoTutorTextBox = new System.Windows.Forms.TextBox();
-            this.apellidoMaternoTutorTextBox = new System.Windows.Forms.TextBox();
-            this.calleDireccionTutorLabel = new System.Windows.Forms.Label();
-            this.numeroDireccionTutorLabel = new System.Windows.Forms.Label();
-            this.coloniaDireccionTutorLabel = new System.Windows.Forms.Label();
-            this.calleDireccionTutorTextBox = new System.Windows.Forms.TextBox();
-            this.numeroDireccionTutorTextBox = new System.Windows.Forms.TextBox();
-            this.coloniaDireccionTutorTextBox = new System.Windows.Forms.TextBox();
+            this.añosCum = new System.Windows.Forms.TextBox();
+            this.fechaNa = new System.Windows.Forms.DateTimePicker();
+            this.nombreTLabel = new System.Windows.Forms.Label();
+            this.domicilioTLabel = new System.Windows.Forms.Label();
+            this.ocupacionLabel = new System.Windows.Forms.Label();
+            this.nombreT = new System.Windows.Forms.TextBox();
+            this.ocupacion = new System.Windows.Forms.TextBox();
+            this.telCasaTLabel = new System.Windows.Forms.Label();
+            this.telMovilTLabel = new System.Windows.Forms.Label();
+            this.telTrabajoTLabel = new System.Windows.Forms.Label();
+            this.telCasaT = new System.Windows.Forms.TextBox();
+            this.telMovilT = new System.Windows.Forms.TextBox();
+            this.telTrabajoT = new System.Windows.Forms.TextBox();
+            this.ciudadLabel = new System.Windows.Forms.Label();
+            this.estadoLabel = new System.Windows.Forms.Label();
+            this.apellidoPLabel = new System.Windows.Forms.Label();
+            this.apellidoMLabel = new System.Windows.Forms.Label();
+            this.calleLabel = new System.Windows.Forms.Label();
+            this.numeroCasaLabel = new System.Windows.Forms.Label();
+            this.coloniaLabel = new System.Windows.Forms.Label();
+            this.apellidoP = new System.Windows.Forms.TextBox();
+            this.apellidoM = new System.Windows.Forms.TextBox();
+            this.ciudad = new System.Windows.Forms.TextBox();
+            this.estado = new System.Windows.Forms.TextBox();
+            this.calle = new System.Windows.Forms.TextBox();
+            this.numeroCasa = new System.Windows.Forms.TextBox();
+            this.colonia = new System.Windows.Forms.TextBox();
+            this.apellidoPTLabel = new System.Windows.Forms.Label();
+            this.apellidoMTLabel = new System.Windows.Forms.Label();
+            this.apellidoPT = new System.Windows.Forms.TextBox();
+            this.apellidoMT = new System.Windows.Forms.TextBox();
+            this.calleTLabel = new System.Windows.Forms.Label();
+            this.numeroCasaTLabel = new System.Windows.Forms.Label();
+            this.coloniaTLabel = new System.Windows.Forms.Label();
+            this.calleT = new System.Windows.Forms.TextBox();
+            this.numeroCasaT = new System.Windows.Forms.TextBox();
+            this.coloniaT = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.otroAlumnoTutorGroupBox = new System.Windows.Forms.GroupBox();
             this.noOtroAlumnoMadreRadioButton = new System.Windows.Forms.RadioButton();
             this.siOtroAlumnoMadreRadioButton = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
-            this.servicioMedicoAlumnoLabel = new System.Windows.Forms.Label();
-            this.grupoSanguineoAlumnoLabel = new System.Windows.Forms.Label();
-            this.enfermedaresAlumnoLabel = new System.Windows.Forms.Label();
-            this.alergiasAlumnoLabel = new System.Windows.Forms.Label();
-            this.telefonoContactoMedicoAlumnoLabel = new System.Windows.Forms.Label();
+            this.servMedicoLabel = new System.Windows.Forms.Label();
+            this.grupoSanguineoLabel = new System.Windows.Forms.Label();
+            this.enfermedadesLabel = new System.Windows.Forms.Label();
+            this.alergiasLabel = new System.Windows.Forms.Label();
+            this.telefonoLabel = new System.Windows.Forms.Label();
             this.documentacionAlumnoLabel = new System.Windows.Forms.Label();
-            this.servicioMedicoTextBox = new System.Windows.Forms.TextBox();
-            this.telefonoContactoMedicoAlumnoTextBox = new System.Windows.Forms.TextBox();
-            this.grupoSanguineoTextBox = new System.Windows.Forms.TextBox();
+            this.servMedico = new System.Windows.Forms.TextBox();
+            this.telefono = new System.Windows.Forms.TextBox();
+            this.grupoSanguineo = new System.Windows.Forms.TextBox();
             this.informacionGeneralAlumnoGroupBox = new System.Windows.Forms.GroupBox();
-            this.limpiarFormato1Button = new System.Windows.Forms.Button();
             this.informacionEscolarGroupBox = new System.Windows.Forms.GroupBox();
             this.informacionMedicaAlumnoGroupBox = new System.Windows.Forms.GroupBox();
             this.alergiasCombobox = new System.Windows.Forms.ComboBox();
             this.discapacidadesCombobox = new System.Windows.Forms.ComboBox();
             this.enfermedadesCombobox = new System.Windows.Forms.ComboBox();
+            this.mostrarAlergiasLabel = new System.Windows.Forms.Label();
+            this.alergias = new System.Windows.Forms.RichTextBox();
+            this.enfermedades = new System.Windows.Forms.RichTextBox();
+            this.discapacidad = new System.Windows.Forms.RichTextBox();
             this.documentacionGB = new System.Windows.Forms.GroupBox();
             this.checkBox5 = new System.Windows.Forms.CheckBox();
             this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.limpiarFormato3Button = new System.Windows.Forms.Button();
-            this.eliminarAlergiasButton = new System.Windows.Forms.Button();
-            this.eliminarDiscapacidadesButton = new System.Windows.Forms.Button();
-            this.eliminarEnfermedadButton = new System.Windows.Forms.Button();
-            this.agregarAlergiasButton = new System.Windows.Forms.Button();
-            this.agregarDiscapacidadButton = new System.Windows.Forms.Button();
-            this.agregarEnfermedadesButton = new System.Windows.Forms.Button();
-            this.mostrarAlergiasLabel = new System.Windows.Forms.Label();
-            this.mostrarEnfermedadesLabel = new System.Windows.Forms.Label();
-            this.mostrarDiscapacidadLabel = new System.Windows.Forms.Label();
-            this.mostrarAlergiasRichTextBox = new System.Windows.Forms.RichTextBox();
-            this.mostrarEnfermedadesRichTextBox = new System.Windows.Forms.RichTextBox();
-            this.mostrarDiscapacidadRichTextBox = new System.Windows.Forms.RichTextBox();
             this.regresarButton = new System.Windows.Forms.Button();
             this.informacionTutorGroupBox = new System.Windows.Forms.GroupBox();
             this.seleccionarNombreLabel = new System.Windows.Forms.Label();
             this.seleccionarNombreComboBox = new System.Windows.Forms.ComboBox();
-            this.limpiarFormato2Button = new System.Windows.Forms.Button();
-            this.altaAlumnoPanel = new System.Windows.Forms.Panel();
-            this.camLabel = new System.Windows.Forms.Label();
-            this.alumnosButton = new System.Windows.Forms.Button();
             this.realizarAltaButton = new System.Windows.Forms.Button();
             this.altaalumnoLabel = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.tipoIngLabel = new System.Windows.Forms.Label();
+            this.informacionMedLabel = new System.Windows.Forms.Label();
+            this.mostrarDiscapacidadLabel = new System.Windows.Forms.Label();
+            this.mostrarEnfermedadesLabel = new System.Windows.Forms.Label();
+            this.infoTutorLabel = new System.Windows.Forms.Label();
+            this.limpiarFormato2Button = new System.Windows.Forms.Button();
+            this.agregarAlergiasButton = new System.Windows.Forms.Button();
+            this.agregarDiscapacidadButton = new System.Windows.Forms.Button();
+            this.limpiarFormato1Button = new System.Windows.Forms.Button();
+            this.limpiarFormato3Button = new System.Windows.Forms.Button();
+            this.eliminarAlergiasButton = new System.Windows.Forms.Button();
+            this.eliminarDiscapacidadesButton = new System.Windows.Forms.Button();
+            this.eliminarEnfermedadButton = new System.Windows.Forms.Button();
+            this.agregarEnfermedadesButton = new System.Windows.Forms.Button();
+            this.logo = new System.Windows.Forms.PictureBox();
             this.tipoIngresoGroupBox.SuspendLayout();
             this.otroAlumnoTutorGroupBox.SuspendLayout();
             this.informacionGeneralAlumnoGroupBox.SuspendLayout();
@@ -146,7 +147,7 @@ namespace presentationLayer
             this.informacionMedicaAlumnoGroupBox.SuspendLayout();
             this.documentacionGB.SuspendLayout();
             this.informacionTutorGroupBox.SuspendLayout();
-            this.altaAlumnoPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             this.SuspendLayout();
             // 
             // siguienteButton
@@ -156,30 +157,30 @@ namespace presentationLayer
             this.siguienteButton.UseVisualStyleBackColor = true;
             this.siguienteButton.Click += new System.EventHandler(this.siguienteButton_Click_1);
             // 
-            // nombreAlumnoLabel
+            // nombreAlLabel
             // 
-            resources.ApplyResources(this.nombreAlumnoLabel, "nombreAlumnoLabel");
-            this.nombreAlumnoLabel.Name = "nombreAlumnoLabel";
+            resources.ApplyResources(this.nombreAlLabel, "nombreAlLabel");
+            this.nombreAlLabel.Name = "nombreAlLabel";
             // 
-            // fechaNacimientoLabel
+            // fechaNaLabel
             // 
-            resources.ApplyResources(this.fechaNacimientoLabel, "fechaNacimientoLabel");
-            this.fechaNacimientoLabel.Name = "fechaNacimientoLabel";
+            resources.ApplyResources(this.fechaNaLabel, "fechaNaLabel");
+            this.fechaNaLabel.Name = "fechaNaLabel";
             // 
-            // lugarNacimientoLabel
+            // lugarNaLabel
             // 
-            resources.ApplyResources(this.lugarNacimientoLabel, "lugarNacimientoLabel");
-            this.lugarNacimientoLabel.Name = "lugarNacimientoLabel";
+            resources.ApplyResources(this.lugarNaLabel, "lugarNaLabel");
+            this.lugarNaLabel.Name = "lugarNaLabel";
             // 
             // direccionAlumnoLabel
             // 
             resources.ApplyResources(this.direccionAlumnoLabel, "direccionAlumnoLabel");
             this.direccionAlumnoLabel.Name = "direccionAlumnoLabel";
             // 
-            // telefonoAlumnoLabel
+            // telPersonalLabel
             // 
-            resources.ApplyResources(this.telefonoAlumnoLabel, "telefonoAlumnoLabel");
-            this.telefonoAlumnoLabel.Name = "telefonoAlumnoLabel";
+            resources.ApplyResources(this.telPersonalLabel, "telPersonalLabel");
+            this.telPersonalLabel.Name = "telPersonalLabel";
             // 
             // discapacidadLabel
             // 
@@ -191,77 +192,78 @@ namespace presentationLayer
             resources.ApplyResources(this.curpLabel, "curpLabel");
             this.curpLabel.Name = "curpLabel";
             // 
-            // añosCumplidosLabel
+            // añosCumLabel
             // 
-            resources.ApplyResources(this.añosCumplidosLabel, "añosCumplidosLabel");
-            this.añosCumplidosLabel.Name = "añosCumplidosLabel";
+            resources.ApplyResources(this.añosCumLabel, "añosCumLabel");
+            this.añosCumLabel.Name = "añosCumLabel";
             // 
-            // cicloEscolarLabel
+            // cicloEscLabel
             // 
-            resources.ApplyResources(this.cicloEscolarLabel, "cicloEscolarLabel");
-            this.cicloEscolarLabel.Name = "cicloEscolarLabel";
+            resources.ApplyResources(this.cicloEscLabel, "cicloEscLabel");
+            this.cicloEscLabel.Name = "cicloEscLabel";
             // 
-            // escuelaProcedenciaLabel
+            // escuelaPLabel
             // 
-            resources.ApplyResources(this.escuelaProcedenciaLabel, "escuelaProcedenciaLabel");
-            this.escuelaProcedenciaLabel.Name = "escuelaProcedenciaLabel";
+            resources.ApplyResources(this.escuelaPLabel, "escuelaPLabel");
+            this.escuelaPLabel.Name = "escuelaPLabel";
             // 
-            // canalizadoPorLabel
+            // canalizadoLabel
             // 
-            resources.ApplyResources(this.canalizadoPorLabel, "canalizadoPorLabel");
-            this.canalizadoPorLabel.Name = "canalizadoPorLabel";
+            resources.ApplyResources(this.canalizadoLabel, "canalizadoLabel");
+            this.canalizadoLabel.Name = "canalizadoLabel";
             // 
-            // reingresoRadioButton
+            // reingreso
             // 
-            resources.ApplyResources(this.reingresoRadioButton, "reingresoRadioButton");
-            this.reingresoRadioButton.Name = "reingresoRadioButton";
-            this.reingresoRadioButton.TabStop = true;
-            this.reingresoRadioButton.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.reingreso, "reingreso");
+            this.reingreso.Name = "reingreso";
+            this.reingreso.TabStop = true;
+            this.reingreso.UseVisualStyleBackColor = true;
             // 
             // tipoIngresoGroupBox
             // 
-            this.tipoIngresoGroupBox.Controls.Add(this.nuevoIngresoRadioButton);
-            this.tipoIngresoGroupBox.Controls.Add(this.reingresoRadioButton);
+            this.tipoIngresoGroupBox.Controls.Add(this.tipoIngLabel);
+            this.tipoIngresoGroupBox.Controls.Add(this.nuevoIngreso);
+            this.tipoIngresoGroupBox.Controls.Add(this.reingreso);
             resources.ApplyResources(this.tipoIngresoGroupBox, "tipoIngresoGroupBox");
             this.tipoIngresoGroupBox.Name = "tipoIngresoGroupBox";
             this.tipoIngresoGroupBox.TabStop = false;
             // 
-            // nuevoIngresoRadioButton
+            // nuevoIngreso
             // 
-            resources.ApplyResources(this.nuevoIngresoRadioButton, "nuevoIngresoRadioButton");
-            this.nuevoIngresoRadioButton.Name = "nuevoIngresoRadioButton";
-            this.nuevoIngresoRadioButton.TabStop = true;
-            this.nuevoIngresoRadioButton.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.nuevoIngreso, "nuevoIngreso");
+            this.nuevoIngreso.Name = "nuevoIngreso";
+            this.nuevoIngreso.TabStop = true;
+            this.nuevoIngreso.UseVisualStyleBackColor = true;
             // 
-            // nombreAlumnoTextBox
+            // nombreAl
             // 
-            this.nombreAlumnoTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.nombreAlumnoTextBox, "nombreAlumnoTextBox");
-            this.nombreAlumnoTextBox.Name = "nombreAlumnoTextBox";
+            this.nombreAl.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            resources.ApplyResources(this.nombreAl, "nombreAl");
+            this.nombreAl.Name = "nombreAl";
             // 
-            // telefonoAlumnoTextBox
+            // telPersonal
             // 
-            this.telefonoAlumnoTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.telefonoAlumnoTextBox, "telefonoAlumnoTextBox");
-            this.telefonoAlumnoTextBox.Name = "telefonoAlumnoTextBox";
+            this.telPersonal.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            resources.ApplyResources(this.telPersonal, "telPersonal");
+            this.telPersonal.Name = "telPersonal";
             // 
-            // escuelaProcedenciaTextBox
+            // escuelaP
             // 
-            this.escuelaProcedenciaTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.escuelaProcedenciaTextBox, "escuelaProcedenciaTextBox");
-            this.escuelaProcedenciaTextBox.Name = "escuelaProcedenciaTextBox";
+            this.escuelaP.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            resources.ApplyResources(this.escuelaP, "escuelaP");
+            this.escuelaP.Name = "escuelaP";
             // 
-            // canalizadoPorTextBox
+            // canalizado
             // 
-            this.canalizadoPorTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.canalizadoPorTextBox, "canalizadoPorTextBox");
-            this.canalizadoPorTextBox.Name = "canalizadoPorTextBox";
+            this.canalizado.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            resources.ApplyResources(this.canalizado, "canalizado");
+            this.canalizado.Name = "canalizado";
             // 
-            // cicloEscolarTextBox
+            // cicloEsc
             // 
-            this.cicloEscolarTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.cicloEscolarTextBox, "cicloEscolarTextBox");
-            this.cicloEscolarTextBox.Name = "cicloEscolarTextBox";
+            this.cicloEsc.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            resources.ApplyResources(this.cicloEsc, "cicloEsc");
+            this.cicloEsc.Name = "cicloEsc";
             // 
             // curpTextBox
             // 
@@ -269,216 +271,211 @@ namespace presentationLayer
             resources.ApplyResources(this.curpTextBox, "curpTextBox");
             this.curpTextBox.Name = "curpTextBox";
             // 
-            // añosCumplidosTextBox
+            // añosCum
             // 
-            this.añosCumplidosTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.añosCumplidosTextBox, "añosCumplidosTextBox");
-            this.añosCumplidosTextBox.Name = "añosCumplidosTextBox";
+            this.añosCum.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            resources.ApplyResources(this.añosCum, "añosCum");
+            this.añosCum.Name = "añosCum";
             // 
-            // fechaNacimientoDateTimePicker
+            // fechaNa
             // 
-            resources.ApplyResources(this.fechaNacimientoDateTimePicker, "fechaNacimientoDateTimePicker");
-            this.fechaNacimientoDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.fechaNacimientoDateTimePicker.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
-            this.fechaNacimientoDateTimePicker.Name = "fechaNacimientoDateTimePicker";
-            this.fechaNacimientoDateTimePicker.Value = new System.DateTime(2000, 1, 1, 1, 48, 0, 0);
+            resources.ApplyResources(this.fechaNa, "fechaNa");
+            this.fechaNa.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.fechaNa.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
+            this.fechaNa.Name = "fechaNa";
+            this.fechaNa.Value = new System.DateTime(2000, 1, 1, 1, 48, 0, 0);
             // 
-            // nombreTutorLabel
+            // nombreTLabel
             // 
-            resources.ApplyResources(this.nombreTutorLabel, "nombreTutorLabel");
-            this.nombreTutorLabel.Name = "nombreTutorLabel";
+            resources.ApplyResources(this.nombreTLabel, "nombreTLabel");
+            this.nombreTLabel.Name = "nombreTLabel";
             // 
-            // domicilioTutorLabel
+            // domicilioTLabel
             // 
-            resources.ApplyResources(this.domicilioTutorLabel, "domicilioTutorLabel");
-            this.domicilioTutorLabel.Name = "domicilioTutorLabel";
+            resources.ApplyResources(this.domicilioTLabel, "domicilioTLabel");
+            this.domicilioTLabel.Name = "domicilioTLabel";
             // 
-            // ocupacionTutorLabel
+            // ocupacionLabel
             // 
-            resources.ApplyResources(this.ocupacionTutorLabel, "ocupacionTutorLabel");
-            this.ocupacionTutorLabel.Name = "ocupacionTutorLabel";
+            resources.ApplyResources(this.ocupacionLabel, "ocupacionLabel");
+            this.ocupacionLabel.Name = "ocupacionLabel";
             // 
-            // telefonosTutorLabel
+            // nombreT
             // 
-            resources.ApplyResources(this.telefonosTutorLabel, "telefonosTutorLabel");
-            this.telefonosTutorLabel.Name = "telefonosTutorLabel";
+            this.nombreT.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            resources.ApplyResources(this.nombreT, "nombreT");
+            this.nombreT.Name = "nombreT";
             // 
-            // nombreTutorTextBox
+            // ocupacion
             // 
-            this.nombreTutorTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.nombreTutorTextBox, "nombreTutorTextBox");
-            this.nombreTutorTextBox.Name = "nombreTutorTextBox";
+            this.ocupacion.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            resources.ApplyResources(this.ocupacion, "ocupacion");
+            this.ocupacion.Name = "ocupacion";
             // 
-            // ocupacionTutorTextBox
+            // telCasaTLabel
             // 
-            this.ocupacionTutorTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.ocupacionTutorTextBox, "ocupacionTutorTextBox");
-            this.ocupacionTutorTextBox.Name = "ocupacionTutorTextBox";
+            resources.ApplyResources(this.telCasaTLabel, "telCasaTLabel");
+            this.telCasaTLabel.Name = "telCasaTLabel";
             // 
-            // telefonoCasaTutorLabel
+            // telMovilTLabel
             // 
-            resources.ApplyResources(this.telefonoCasaTutorLabel, "telefonoCasaTutorLabel");
-            this.telefonoCasaTutorLabel.Name = "telefonoCasaTutorLabel";
+            resources.ApplyResources(this.telMovilTLabel, "telMovilTLabel");
+            this.telMovilTLabel.Name = "telMovilTLabel";
             // 
-            // telefonoCelularTutorLabel
+            // telTrabajoTLabel
             // 
-            resources.ApplyResources(this.telefonoCelularTutorLabel, "telefonoCelularTutorLabel");
-            this.telefonoCelularTutorLabel.Name = "telefonoCelularTutorLabel";
+            resources.ApplyResources(this.telTrabajoTLabel, "telTrabajoTLabel");
+            this.telTrabajoTLabel.Name = "telTrabajoTLabel";
             // 
-            // telefonoTrabajoTutorLabel
+            // telCasaT
             // 
-            resources.ApplyResources(this.telefonoTrabajoTutorLabel, "telefonoTrabajoTutorLabel");
-            this.telefonoTrabajoTutorLabel.Name = "telefonoTrabajoTutorLabel";
+            this.telCasaT.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            resources.ApplyResources(this.telCasaT, "telCasaT");
+            this.telCasaT.Name = "telCasaT";
             // 
-            // telefonoCasaTutorTextBox
+            // telMovilT
             // 
-            this.telefonoCasaTutorTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.telefonoCasaTutorTextBox, "telefonoCasaTutorTextBox");
-            this.telefonoCasaTutorTextBox.Name = "telefonoCasaTutorTextBox";
+            this.telMovilT.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            resources.ApplyResources(this.telMovilT, "telMovilT");
+            this.telMovilT.Name = "telMovilT";
             // 
-            // telefonoCelularTutorTextBox
+            // telTrabajoT
             // 
-            this.telefonoCelularTutorTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.telefonoCelularTutorTextBox, "telefonoCelularTutorTextBox");
-            this.telefonoCelularTutorTextBox.Name = "telefonoCelularTutorTextBox";
+            this.telTrabajoT.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            resources.ApplyResources(this.telTrabajoT, "telTrabajoT");
+            this.telTrabajoT.Name = "telTrabajoT";
             // 
-            // telefonoTrabajoTutorTextBox
+            // ciudadLabel
             // 
-            this.telefonoTrabajoTutorTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.telefonoTrabajoTutorTextBox, "telefonoTrabajoTutorTextBox");
-            this.telefonoTrabajoTutorTextBox.Name = "telefonoTrabajoTutorTextBox";
+            resources.ApplyResources(this.ciudadLabel, "ciudadLabel");
+            this.ciudadLabel.Name = "ciudadLabel";
             // 
-            // ciudadNacimientoAlumnoLabel
+            // estadoLabel
             // 
-            resources.ApplyResources(this.ciudadNacimientoAlumnoLabel, "ciudadNacimientoAlumnoLabel");
-            this.ciudadNacimientoAlumnoLabel.Name = "ciudadNacimientoAlumnoLabel";
+            resources.ApplyResources(this.estadoLabel, "estadoLabel");
+            this.estadoLabel.Name = "estadoLabel";
             // 
-            // estadoNacimientoAlumnoLabel
+            // apellidoPLabel
             // 
-            resources.ApplyResources(this.estadoNacimientoAlumnoLabel, "estadoNacimientoAlumnoLabel");
-            this.estadoNacimientoAlumnoLabel.Name = "estadoNacimientoAlumnoLabel";
+            resources.ApplyResources(this.apellidoPLabel, "apellidoPLabel");
+            this.apellidoPLabel.Name = "apellidoPLabel";
             // 
-            // apellidoPaternoAlumnoLabel
+            // apellidoMLabel
             // 
-            resources.ApplyResources(this.apellidoPaternoAlumnoLabel, "apellidoPaternoAlumnoLabel");
-            this.apellidoPaternoAlumnoLabel.Name = "apellidoPaternoAlumnoLabel";
+            resources.ApplyResources(this.apellidoMLabel, "apellidoMLabel");
+            this.apellidoMLabel.Name = "apellidoMLabel";
             // 
-            // apellidoMaternoAlumnoLabel
+            // calleLabel
             // 
-            resources.ApplyResources(this.apellidoMaternoAlumnoLabel, "apellidoMaternoAlumnoLabel");
-            this.apellidoMaternoAlumnoLabel.Name = "apellidoMaternoAlumnoLabel";
+            resources.ApplyResources(this.calleLabel, "calleLabel");
+            this.calleLabel.Name = "calleLabel";
             // 
-            // calleDireccionAlumnoLabel
+            // numeroCasaLabel
             // 
-            resources.ApplyResources(this.calleDireccionAlumnoLabel, "calleDireccionAlumnoLabel");
-            this.calleDireccionAlumnoLabel.Name = "calleDireccionAlumnoLabel";
+            resources.ApplyResources(this.numeroCasaLabel, "numeroCasaLabel");
+            this.numeroCasaLabel.Name = "numeroCasaLabel";
             // 
-            // numeroDireccionAlumnoLabel
+            // coloniaLabel
             // 
-            resources.ApplyResources(this.numeroDireccionAlumnoLabel, "numeroDireccionAlumnoLabel");
-            this.numeroDireccionAlumnoLabel.Name = "numeroDireccionAlumnoLabel";
+            resources.ApplyResources(this.coloniaLabel, "coloniaLabel");
+            this.coloniaLabel.Name = "coloniaLabel";
             // 
-            // coloniaDireccionAlumnoLabel
+            // apellidoP
             // 
-            resources.ApplyResources(this.coloniaDireccionAlumnoLabel, "coloniaDireccionAlumnoLabel");
-            this.coloniaDireccionAlumnoLabel.Name = "coloniaDireccionAlumnoLabel";
+            this.apellidoP.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            resources.ApplyResources(this.apellidoP, "apellidoP");
+            this.apellidoP.Name = "apellidoP";
             // 
-            // apellidoPaternoAlumnoTextBox
+            // apellidoM
             // 
-            this.apellidoPaternoAlumnoTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.apellidoPaternoAlumnoTextBox, "apellidoPaternoAlumnoTextBox");
-            this.apellidoPaternoAlumnoTextBox.Name = "apellidoPaternoAlumnoTextBox";
+            this.apellidoM.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            resources.ApplyResources(this.apellidoM, "apellidoM");
+            this.apellidoM.Name = "apellidoM";
             // 
-            // apellidoMaternoAlumnoTextBox
+            // ciudad
             // 
-            this.apellidoMaternoAlumnoTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.apellidoMaternoAlumnoTextBox, "apellidoMaternoAlumnoTextBox");
-            this.apellidoMaternoAlumnoTextBox.Name = "apellidoMaternoAlumnoTextBox";
+            this.ciudad.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            resources.ApplyResources(this.ciudad, "ciudad");
+            this.ciudad.Name = "ciudad";
             // 
-            // ciudadNacimientoAlumnoTextBox
+            // estado
             // 
-            this.ciudadNacimientoAlumnoTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.ciudadNacimientoAlumnoTextBox, "ciudadNacimientoAlumnoTextBox");
-            this.ciudadNacimientoAlumnoTextBox.Name = "ciudadNacimientoAlumnoTextBox";
+            this.estado.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            resources.ApplyResources(this.estado, "estado");
+            this.estado.Name = "estado";
             // 
-            // estadoNacimientoAlumnoTextBox
+            // calle
             // 
-            this.estadoNacimientoAlumnoTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.estadoNacimientoAlumnoTextBox, "estadoNacimientoAlumnoTextBox");
-            this.estadoNacimientoAlumnoTextBox.Name = "estadoNacimientoAlumnoTextBox";
+            this.calle.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            resources.ApplyResources(this.calle, "calle");
+            this.calle.Name = "calle";
             // 
-            // calleDireccionAlumnoTextBox
+            // numeroCasa
             // 
-            this.calleDireccionAlumnoTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.calleDireccionAlumnoTextBox, "calleDireccionAlumnoTextBox");
-            this.calleDireccionAlumnoTextBox.Name = "calleDireccionAlumnoTextBox";
+            this.numeroCasa.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            resources.ApplyResources(this.numeroCasa, "numeroCasa");
+            this.numeroCasa.Name = "numeroCasa";
             // 
-            // numeroDireccionAlumnoTextBox
+            // colonia
             // 
-            this.numeroDireccionAlumnoTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.numeroDireccionAlumnoTextBox, "numeroDireccionAlumnoTextBox");
-            this.numeroDireccionAlumnoTextBox.Name = "numeroDireccionAlumnoTextBox";
+            this.colonia.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            resources.ApplyResources(this.colonia, "colonia");
+            this.colonia.Name = "colonia";
             // 
-            // coloniaDireccionAlumnoTextBox
+            // apellidoPTLabel
             // 
-            this.coloniaDireccionAlumnoTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.coloniaDireccionAlumnoTextBox, "coloniaDireccionAlumnoTextBox");
-            this.coloniaDireccionAlumnoTextBox.Name = "coloniaDireccionAlumnoTextBox";
+            resources.ApplyResources(this.apellidoPTLabel, "apellidoPTLabel");
+            this.apellidoPTLabel.Name = "apellidoPTLabel";
             // 
-            // apellidoPaternoTutorLabel
+            // apellidoMTLabel
             // 
-            resources.ApplyResources(this.apellidoPaternoTutorLabel, "apellidoPaternoTutorLabel");
-            this.apellidoPaternoTutorLabel.Name = "apellidoPaternoTutorLabel";
+            resources.ApplyResources(this.apellidoMTLabel, "apellidoMTLabel");
+            this.apellidoMTLabel.Name = "apellidoMTLabel";
             // 
-            // apellidoMaternoTutorLabel
+            // apellidoPT
             // 
-            resources.ApplyResources(this.apellidoMaternoTutorLabel, "apellidoMaternoTutorLabel");
-            this.apellidoMaternoTutorLabel.Name = "apellidoMaternoTutorLabel";
+            this.apellidoPT.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            resources.ApplyResources(this.apellidoPT, "apellidoPT");
+            this.apellidoPT.Name = "apellidoPT";
             // 
-            // apellidoPaternoTutorTextBox
+            // apellidoMT
             // 
-            this.apellidoPaternoTutorTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.apellidoPaternoTutorTextBox, "apellidoPaternoTutorTextBox");
-            this.apellidoPaternoTutorTextBox.Name = "apellidoPaternoTutorTextBox";
+            this.apellidoMT.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            resources.ApplyResources(this.apellidoMT, "apellidoMT");
+            this.apellidoMT.Name = "apellidoMT";
             // 
-            // apellidoMaternoTutorTextBox
+            // calleTLabel
             // 
-            this.apellidoMaternoTutorTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.apellidoMaternoTutorTextBox, "apellidoMaternoTutorTextBox");
-            this.apellidoMaternoTutorTextBox.Name = "apellidoMaternoTutorTextBox";
+            resources.ApplyResources(this.calleTLabel, "calleTLabel");
+            this.calleTLabel.Name = "calleTLabel";
             // 
-            // calleDireccionTutorLabel
+            // numeroCasaTLabel
             // 
-            resources.ApplyResources(this.calleDireccionTutorLabel, "calleDireccionTutorLabel");
-            this.calleDireccionTutorLabel.Name = "calleDireccionTutorLabel";
+            resources.ApplyResources(this.numeroCasaTLabel, "numeroCasaTLabel");
+            this.numeroCasaTLabel.Name = "numeroCasaTLabel";
             // 
-            // numeroDireccionTutorLabel
+            // coloniaTLabel
             // 
-            resources.ApplyResources(this.numeroDireccionTutorLabel, "numeroDireccionTutorLabel");
-            this.numeroDireccionTutorLabel.Name = "numeroDireccionTutorLabel";
+            resources.ApplyResources(this.coloniaTLabel, "coloniaTLabel");
+            this.coloniaTLabel.Name = "coloniaTLabel";
             // 
-            // coloniaDireccionTutorLabel
+            // calleT
             // 
-            resources.ApplyResources(this.coloniaDireccionTutorLabel, "coloniaDireccionTutorLabel");
-            this.coloniaDireccionTutorLabel.Name = "coloniaDireccionTutorLabel";
+            this.calleT.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            resources.ApplyResources(this.calleT, "calleT");
+            this.calleT.Name = "calleT";
             // 
-            // calleDireccionTutorTextBox
+            // numeroCasaT
             // 
-            this.calleDireccionTutorTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.calleDireccionTutorTextBox, "calleDireccionTutorTextBox");
-            this.calleDireccionTutorTextBox.Name = "calleDireccionTutorTextBox";
+            this.numeroCasaT.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            resources.ApplyResources(this.numeroCasaT, "numeroCasaT");
+            this.numeroCasaT.Name = "numeroCasaT";
             // 
-            // numeroDireccionTutorTextBox
+            // coloniaT
             // 
-            this.numeroDireccionTutorTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.numeroDireccionTutorTextBox, "numeroDireccionTutorTextBox");
-            this.numeroDireccionTutorTextBox.Name = "numeroDireccionTutorTextBox";
-            // 
-            // coloniaDireccionTutorTextBox
-            // 
-            this.coloniaDireccionTutorTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.coloniaDireccionTutorTextBox, "coloniaDireccionTutorTextBox");
-            this.coloniaDireccionTutorTextBox.Name = "coloniaDireccionTutorTextBox";
+            this.coloniaT.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            resources.ApplyResources(this.coloniaT, "coloniaT");
+            this.coloniaT.Name = "coloniaT";
             // 
             // label1
             // 
@@ -512,106 +509,98 @@ namespace presentationLayer
             resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
             // 
-            // servicioMedicoAlumnoLabel
+            // servMedicoLabel
             // 
-            resources.ApplyResources(this.servicioMedicoAlumnoLabel, "servicioMedicoAlumnoLabel");
-            this.servicioMedicoAlumnoLabel.Name = "servicioMedicoAlumnoLabel";
+            resources.ApplyResources(this.servMedicoLabel, "servMedicoLabel");
+            this.servMedicoLabel.Name = "servMedicoLabel";
             // 
-            // grupoSanguineoAlumnoLabel
+            // grupoSanguineoLabel
             // 
-            resources.ApplyResources(this.grupoSanguineoAlumnoLabel, "grupoSanguineoAlumnoLabel");
-            this.grupoSanguineoAlumnoLabel.Name = "grupoSanguineoAlumnoLabel";
+            resources.ApplyResources(this.grupoSanguineoLabel, "grupoSanguineoLabel");
+            this.grupoSanguineoLabel.Name = "grupoSanguineoLabel";
             // 
-            // enfermedaresAlumnoLabel
+            // enfermedadesLabel
             // 
-            resources.ApplyResources(this.enfermedaresAlumnoLabel, "enfermedaresAlumnoLabel");
-            this.enfermedaresAlumnoLabel.Name = "enfermedaresAlumnoLabel";
+            resources.ApplyResources(this.enfermedadesLabel, "enfermedadesLabel");
+            this.enfermedadesLabel.Name = "enfermedadesLabel";
             // 
-            // alergiasAlumnoLabel
+            // alergiasLabel
             // 
-            resources.ApplyResources(this.alergiasAlumnoLabel, "alergiasAlumnoLabel");
-            this.alergiasAlumnoLabel.Name = "alergiasAlumnoLabel";
+            resources.ApplyResources(this.alergiasLabel, "alergiasLabel");
+            this.alergiasLabel.Name = "alergiasLabel";
             // 
-            // telefonoContactoMedicoAlumnoLabel
+            // telefonoLabel
             // 
-            resources.ApplyResources(this.telefonoContactoMedicoAlumnoLabel, "telefonoContactoMedicoAlumnoLabel");
-            this.telefonoContactoMedicoAlumnoLabel.Name = "telefonoContactoMedicoAlumnoLabel";
+            resources.ApplyResources(this.telefonoLabel, "telefonoLabel");
+            this.telefonoLabel.Name = "telefonoLabel";
             // 
             // documentacionAlumnoLabel
             // 
             resources.ApplyResources(this.documentacionAlumnoLabel, "documentacionAlumnoLabel");
             this.documentacionAlumnoLabel.Name = "documentacionAlumnoLabel";
             // 
-            // servicioMedicoTextBox
+            // servMedico
             // 
-            this.servicioMedicoTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.servicioMedicoTextBox, "servicioMedicoTextBox");
-            this.servicioMedicoTextBox.Name = "servicioMedicoTextBox";
+            this.servMedico.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            resources.ApplyResources(this.servMedico, "servMedico");
+            this.servMedico.Name = "servMedico";
             // 
-            // telefonoContactoMedicoAlumnoTextBox
+            // telefono
             // 
-            this.telefonoContactoMedicoAlumnoTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.telefonoContactoMedicoAlumnoTextBox, "telefonoContactoMedicoAlumnoTextBox");
-            this.telefonoContactoMedicoAlumnoTextBox.Name = "telefonoContactoMedicoAlumnoTextBox";
+            this.telefono.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            resources.ApplyResources(this.telefono, "telefono");
+            this.telefono.Name = "telefono";
             // 
-            // grupoSanguineoTextBox
+            // grupoSanguineo
             // 
-            this.grupoSanguineoTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.grupoSanguineoTextBox, "grupoSanguineoTextBox");
-            this.grupoSanguineoTextBox.Name = "grupoSanguineoTextBox";
+            this.grupoSanguineo.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            resources.ApplyResources(this.grupoSanguineo, "grupoSanguineo");
+            this.grupoSanguineo.Name = "grupoSanguineo";
             // 
             // informacionGeneralAlumnoGroupBox
             // 
-            this.informacionGeneralAlumnoGroupBox.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.nombreAlumnoLabel);
-            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.nombreAlumnoTextBox);
+            this.informacionGeneralAlumnoGroupBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.logo);
+            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.nombreAlLabel);
+            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.nombreAl);
             this.informacionGeneralAlumnoGroupBox.Controls.Add(this.limpiarFormato1Button);
-            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.apellidoPaternoAlumnoLabel);
-            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.apellidoPaternoAlumnoTextBox);
-            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.apellidoMaternoAlumnoLabel);
-            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.apellidoMaternoAlumnoTextBox);
-            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.fechaNacimientoLabel);
-            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.fechaNacimientoDateTimePicker);
-            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.lugarNacimientoLabel);
-            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.ciudadNacimientoAlumnoLabel);
-            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.ciudadNacimientoAlumnoTextBox);
-            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.estadoNacimientoAlumnoLabel);
-            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.estadoNacimientoAlumnoTextBox);
+            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.apellidoPLabel);
+            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.apellidoP);
+            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.apellidoMLabel);
+            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.apellidoM);
+            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.fechaNaLabel);
+            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.fechaNa);
+            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.lugarNaLabel);
+            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.ciudadLabel);
+            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.ciudad);
+            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.estadoLabel);
+            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.estado);
             this.informacionGeneralAlumnoGroupBox.Controls.Add(this.direccionAlumnoLabel);
-            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.calleDireccionAlumnoLabel);
-            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.calleDireccionAlumnoTextBox);
-            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.numeroDireccionAlumnoLabel);
-            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.numeroDireccionAlumnoTextBox);
-            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.coloniaDireccionAlumnoLabel);
-            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.coloniaDireccionAlumnoTextBox);
-            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.telefonoAlumnoLabel);
-            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.telefonoAlumnoTextBox);
-            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.escuelaProcedenciaLabel);
-            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.escuelaProcedenciaTextBox);
-            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.canalizadoPorLabel);
-            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.canalizadoPorTextBox);
+            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.calleLabel);
+            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.calle);
+            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.numeroCasaLabel);
+            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.numeroCasa);
+            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.coloniaLabel);
+            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.colonia);
+            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.telPersonalLabel);
+            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.telPersonal);
+            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.escuelaPLabel);
+            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.escuelaP);
+            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.canalizadoLabel);
+            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.canalizado);
             resources.ApplyResources(this.informacionGeneralAlumnoGroupBox, "informacionGeneralAlumnoGroupBox");
             this.informacionGeneralAlumnoGroupBox.Name = "informacionGeneralAlumnoGroupBox";
             this.informacionGeneralAlumnoGroupBox.TabStop = false;
-            this.informacionGeneralAlumnoGroupBox.Enter += new System.EventHandler(this.informacionGeneralAlumnoGroupBox_Enter);
-            // 
-            // limpiarFormato1Button
-            // 
-            resources.ApplyResources(this.limpiarFormato1Button, "limpiarFormato1Button");
-            this.limpiarFormato1Button.BackgroundImage = global::presentationLayer.Properties.Resources.limpiar;
-            this.limpiarFormato1Button.Name = "limpiarFormato1Button";
-            this.limpiarFormato1Button.UseVisualStyleBackColor = true;
-            this.limpiarFormato1Button.Click += new System.EventHandler(this.limpiarFormato1Button_Click);
             // 
             // informacionEscolarGroupBox
             // 
-            this.informacionEscolarGroupBox.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.informacionEscolarGroupBox.Controls.Add(this.cicloEscolarLabel);
-            this.informacionEscolarGroupBox.Controls.Add(this.cicloEscolarTextBox);
+            this.informacionEscolarGroupBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.informacionEscolarGroupBox.Controls.Add(this.cicloEscLabel);
+            this.informacionEscolarGroupBox.Controls.Add(this.cicloEsc);
             this.informacionEscolarGroupBox.Controls.Add(this.curpLabel);
             this.informacionEscolarGroupBox.Controls.Add(this.curpTextBox);
-            this.informacionEscolarGroupBox.Controls.Add(this.añosCumplidosLabel);
-            this.informacionEscolarGroupBox.Controls.Add(this.añosCumplidosTextBox);
+            this.informacionEscolarGroupBox.Controls.Add(this.añosCumLabel);
+            this.informacionEscolarGroupBox.Controls.Add(this.añosCum);
             this.informacionEscolarGroupBox.Controls.Add(this.tipoIngresoGroupBox);
             resources.ApplyResources(this.informacionEscolarGroupBox, "informacionEscolarGroupBox");
             this.informacionEscolarGroupBox.Name = "informacionEscolarGroupBox";
@@ -619,33 +608,26 @@ namespace presentationLayer
             // 
             // informacionMedicaAlumnoGroupBox
             // 
-            this.informacionMedicaAlumnoGroupBox.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.informacionMedicaAlumnoGroupBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.informacionMedicaAlumnoGroupBox.Controls.Add(this.informacionMedLabel);
             this.informacionMedicaAlumnoGroupBox.Controls.Add(this.alergiasCombobox);
             this.informacionMedicaAlumnoGroupBox.Controls.Add(this.discapacidadesCombobox);
             this.informacionMedicaAlumnoGroupBox.Controls.Add(this.enfermedadesCombobox);
-            this.informacionMedicaAlumnoGroupBox.Controls.Add(this.documentacionGB);
             this.informacionMedicaAlumnoGroupBox.Controls.Add(this.limpiarFormato3Button);
             this.informacionMedicaAlumnoGroupBox.Controls.Add(this.eliminarAlergiasButton);
             this.informacionMedicaAlumnoGroupBox.Controls.Add(this.eliminarDiscapacidadesButton);
             this.informacionMedicaAlumnoGroupBox.Controls.Add(this.eliminarEnfermedadButton);
-            this.informacionMedicaAlumnoGroupBox.Controls.Add(this.agregarAlergiasButton);
-            this.informacionMedicaAlumnoGroupBox.Controls.Add(this.agregarDiscapacidadButton);
-            this.informacionMedicaAlumnoGroupBox.Controls.Add(this.agregarEnfermedadesButton);
-            this.informacionMedicaAlumnoGroupBox.Controls.Add(this.mostrarAlergiasLabel);
-            this.informacionMedicaAlumnoGroupBox.Controls.Add(this.mostrarEnfermedadesLabel);
-            this.informacionMedicaAlumnoGroupBox.Controls.Add(this.mostrarDiscapacidadLabel);
-            this.informacionMedicaAlumnoGroupBox.Controls.Add(this.mostrarAlergiasRichTextBox);
-            this.informacionMedicaAlumnoGroupBox.Controls.Add(this.mostrarEnfermedadesRichTextBox);
-            this.informacionMedicaAlumnoGroupBox.Controls.Add(this.mostrarDiscapacidadRichTextBox);
-            this.informacionMedicaAlumnoGroupBox.Controls.Add(this.servicioMedicoAlumnoLabel);
-            this.informacionMedicaAlumnoGroupBox.Controls.Add(this.grupoSanguineoAlumnoLabel);
-            this.informacionMedicaAlumnoGroupBox.Controls.Add(this.enfermedaresAlumnoLabel);
-            this.informacionMedicaAlumnoGroupBox.Controls.Add(this.alergiasAlumnoLabel);
-            this.informacionMedicaAlumnoGroupBox.Controls.Add(this.telefonoContactoMedicoAlumnoLabel);
-            this.informacionMedicaAlumnoGroupBox.Controls.Add(this.grupoSanguineoTextBox);
-            this.informacionMedicaAlumnoGroupBox.Controls.Add(this.documentacionAlumnoLabel);
-            this.informacionMedicaAlumnoGroupBox.Controls.Add(this.telefonoContactoMedicoAlumnoTextBox);
-            this.informacionMedicaAlumnoGroupBox.Controls.Add(this.servicioMedicoTextBox);
+            this.informacionMedicaAlumnoGroupBox.Controls.Add(this.alergias);
+            this.informacionMedicaAlumnoGroupBox.Controls.Add(this.enfermedades);
+            this.informacionMedicaAlumnoGroupBox.Controls.Add(this.discapacidad);
+            this.informacionMedicaAlumnoGroupBox.Controls.Add(this.servMedicoLabel);
+            this.informacionMedicaAlumnoGroupBox.Controls.Add(this.grupoSanguineoLabel);
+            this.informacionMedicaAlumnoGroupBox.Controls.Add(this.enfermedadesLabel);
+            this.informacionMedicaAlumnoGroupBox.Controls.Add(this.alergiasLabel);
+            this.informacionMedicaAlumnoGroupBox.Controls.Add(this.telefonoLabel);
+            this.informacionMedicaAlumnoGroupBox.Controls.Add(this.grupoSanguineo);
+            this.informacionMedicaAlumnoGroupBox.Controls.Add(this.telefono);
+            this.informacionMedicaAlumnoGroupBox.Controls.Add(this.servMedico);
             this.informacionMedicaAlumnoGroupBox.Controls.Add(this.discapacidadLabel);
             resources.ApplyResources(this.informacionMedicaAlumnoGroupBox, "informacionMedicaAlumnoGroupBox");
             this.informacionMedicaAlumnoGroupBox.Name = "informacionMedicaAlumnoGroupBox";
@@ -653,30 +635,49 @@ namespace presentationLayer
             // 
             // alergiasCombobox
             // 
-            this.alergiasCombobox.FormattingEnabled = true;
             resources.ApplyResources(this.alergiasCombobox, "alergiasCombobox");
+            this.alergiasCombobox.FormattingEnabled = true;
             this.alergiasCombobox.Name = "alergiasCombobox";
-            this.alergiasCombobox.SelectedIndexChanged += new System.EventHandler(this.alergiasCombobox_SelectedIndexChanged);
             // 
             // discapacidadesCombobox
             // 
+            resources.ApplyResources(this.discapacidadesCombobox, "discapacidadesCombobox");
             this.discapacidadesCombobox.FormattingEnabled = true;
             this.discapacidadesCombobox.Items.AddRange(new object[] {
             resources.GetString("discapacidadesCombobox.Items"),
             resources.GetString("discapacidadesCombobox.Items1"),
             resources.GetString("discapacidadesCombobox.Items2")});
-            resources.ApplyResources(this.discapacidadesCombobox, "discapacidadesCombobox");
             this.discapacidadesCombobox.Name = "discapacidadesCombobox";
             // 
             // enfermedadesCombobox
             // 
+            resources.ApplyResources(this.enfermedadesCombobox, "enfermedadesCombobox");
             this.enfermedadesCombobox.FormattingEnabled = true;
             this.enfermedadesCombobox.Items.AddRange(new object[] {
             resources.GetString("enfermedadesCombobox.Items"),
             resources.GetString("enfermedadesCombobox.Items1"),
             resources.GetString("enfermedadesCombobox.Items2")});
-            resources.ApplyResources(this.enfermedadesCombobox, "enfermedadesCombobox");
             this.enfermedadesCombobox.Name = "enfermedadesCombobox";
+            // 
+            // mostrarAlergiasLabel
+            // 
+            resources.ApplyResources(this.mostrarAlergiasLabel, "mostrarAlergiasLabel");
+            this.mostrarAlergiasLabel.Name = "mostrarAlergiasLabel";
+            // 
+            // alergias
+            // 
+            resources.ApplyResources(this.alergias, "alergias");
+            this.alergias.Name = "alergias";
+            // 
+            // enfermedades
+            // 
+            resources.ApplyResources(this.enfermedades, "enfermedades");
+            this.enfermedades.Name = "enfermedades";
+            // 
+            // discapacidad
+            // 
+            resources.ApplyResources(this.discapacidad, "discapacidad");
+            this.discapacidad.Name = "discapacidad";
             // 
             // documentacionGB
             // 
@@ -719,6 +720,131 @@ namespace presentationLayer
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
+            // regresarButton
+            // 
+            resources.ApplyResources(this.regresarButton, "regresarButton");
+            this.regresarButton.Name = "regresarButton";
+            this.regresarButton.UseVisualStyleBackColor = true;
+            this.regresarButton.Click += new System.EventHandler(this.regresarButton_Click);
+            // 
+            // informacionTutorGroupBox
+            // 
+            this.informacionTutorGroupBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.informacionTutorGroupBox.Controls.Add(this.infoTutorLabel);
+            this.informacionTutorGroupBox.Controls.Add(this.limpiarFormato2Button);
+            this.informacionTutorGroupBox.Controls.Add(this.nombreTLabel);
+            this.informacionTutorGroupBox.Controls.Add(this.domicilioTLabel);
+            this.informacionTutorGroupBox.Controls.Add(this.ocupacionLabel);
+            this.informacionTutorGroupBox.Controls.Add(this.nombreT);
+            this.informacionTutorGroupBox.Controls.Add(this.ocupacion);
+            this.informacionTutorGroupBox.Controls.Add(this.telCasaTLabel);
+            this.informacionTutorGroupBox.Controls.Add(this.telMovilTLabel);
+            this.informacionTutorGroupBox.Controls.Add(this.label1);
+            this.informacionTutorGroupBox.Controls.Add(this.telTrabajoTLabel);
+            this.informacionTutorGroupBox.Controls.Add(this.telCasaT);
+            this.informacionTutorGroupBox.Controls.Add(this.telMovilT);
+            this.informacionTutorGroupBox.Controls.Add(this.telTrabajoT);
+            this.informacionTutorGroupBox.Controls.Add(this.coloniaT);
+            this.informacionTutorGroupBox.Controls.Add(this.numeroCasaT);
+            this.informacionTutorGroupBox.Controls.Add(this.calleT);
+            this.informacionTutorGroupBox.Controls.Add(this.apellidoPTLabel);
+            this.informacionTutorGroupBox.Controls.Add(this.coloniaTLabel);
+            this.informacionTutorGroupBox.Controls.Add(this.apellidoMTLabel);
+            this.informacionTutorGroupBox.Controls.Add(this.numeroCasaTLabel);
+            this.informacionTutorGroupBox.Controls.Add(this.apellidoPT);
+            this.informacionTutorGroupBox.Controls.Add(this.calleTLabel);
+            this.informacionTutorGroupBox.Controls.Add(this.apellidoMT);
+            resources.ApplyResources(this.informacionTutorGroupBox, "informacionTutorGroupBox");
+            this.informacionTutorGroupBox.Name = "informacionTutorGroupBox";
+            this.informacionTutorGroupBox.TabStop = false;
+            // 
+            // seleccionarNombreLabel
+            // 
+            resources.ApplyResources(this.seleccionarNombreLabel, "seleccionarNombreLabel");
+            this.seleccionarNombreLabel.Name = "seleccionarNombreLabel";
+            // 
+            // seleccionarNombreComboBox
+            // 
+            this.seleccionarNombreComboBox.FormattingEnabled = true;
+            resources.ApplyResources(this.seleccionarNombreComboBox, "seleccionarNombreComboBox");
+            this.seleccionarNombreComboBox.Name = "seleccionarNombreComboBox";
+            // 
+            // realizarAltaButton
+            // 
+            resources.ApplyResources(this.realizarAltaButton, "realizarAltaButton");
+            this.realizarAltaButton.Name = "realizarAltaButton";
+            this.realizarAltaButton.UseVisualStyleBackColor = true;
+            this.realizarAltaButton.Click += new System.EventHandler(this.guardarButton_Click);
+            // 
+            // altaalumnoLabel
+            // 
+            resources.ApplyResources(this.altaalumnoLabel, "altaalumnoLabel");
+            this.altaalumnoLabel.Name = "altaalumnoLabel";
+            // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.Name = "label3";
+            // 
+            // tipoIngLabel
+            // 
+            resources.ApplyResources(this.tipoIngLabel, "tipoIngLabel");
+            this.tipoIngLabel.Name = "tipoIngLabel";
+            // 
+            // informacionMedLabel
+            // 
+            resources.ApplyResources(this.informacionMedLabel, "informacionMedLabel");
+            this.informacionMedLabel.Name = "informacionMedLabel";
+            // 
+            // mostrarDiscapacidadLabel
+            // 
+            resources.ApplyResources(this.mostrarDiscapacidadLabel, "mostrarDiscapacidadLabel");
+            this.mostrarDiscapacidadLabel.Name = "mostrarDiscapacidadLabel";
+            // 
+            // mostrarEnfermedadesLabel
+            // 
+            resources.ApplyResources(this.mostrarEnfermedadesLabel, "mostrarEnfermedadesLabel");
+            this.mostrarEnfermedadesLabel.Name = "mostrarEnfermedadesLabel";
+            // 
+            // infoTutorLabel
+            // 
+            resources.ApplyResources(this.infoTutorLabel, "infoTutorLabel");
+            this.infoTutorLabel.Name = "infoTutorLabel";
+            // 
+            // limpiarFormato2Button
+            // 
+            this.limpiarFormato2Button.BackgroundImage = global::presentationLayer.Properties.Resources.limpiar;
+            resources.ApplyResources(this.limpiarFormato2Button, "limpiarFormato2Button");
+            this.limpiarFormato2Button.Name = "limpiarFormato2Button";
+            this.limpiarFormato2Button.UseVisualStyleBackColor = true;
+            this.limpiarFormato2Button.Click += new System.EventHandler(this.limpiarFormato2Button_Click);
+            // 
+            // agregarAlergiasButton
+            // 
+            resources.ApplyResources(this.agregarAlergiasButton, "agregarAlergiasButton");
+            this.agregarAlergiasButton.BackColor = System.Drawing.Color.Transparent;
+            this.agregarAlergiasButton.Image = global::presentationLayer.Properties.Resources.mas1;
+            this.agregarAlergiasButton.Name = "agregarAlergiasButton";
+            this.agregarAlergiasButton.UseVisualStyleBackColor = false;
+            this.agregarAlergiasButton.Click += new System.EventHandler(this.agregarAlergiasButton_Click);
+            // 
+            // agregarDiscapacidadButton
+            // 
+            resources.ApplyResources(this.agregarDiscapacidadButton, "agregarDiscapacidadButton");
+            this.agregarDiscapacidadButton.BackColor = System.Drawing.Color.Transparent;
+            this.agregarDiscapacidadButton.Image = global::presentationLayer.Properties.Resources.mas1;
+            this.agregarDiscapacidadButton.Name = "agregarDiscapacidadButton";
+            this.agregarDiscapacidadButton.UseVisualStyleBackColor = false;
+            this.agregarDiscapacidadButton.Click += new System.EventHandler(this.agregarDiscapacidadButton_Click);
+            // 
+            // limpiarFormato1Button
+            // 
+            resources.ApplyResources(this.limpiarFormato1Button, "limpiarFormato1Button");
+            this.limpiarFormato1Button.BackgroundImage = global::presentationLayer.Properties.Resources.limpiar;
+            this.limpiarFormato1Button.Name = "limpiarFormato1Button";
+            this.limpiarFormato1Button.UseVisualStyleBackColor = true;
+            this.limpiarFormato1Button.Click += new System.EventHandler(this.limpiarFormato1Button_Click);
+            // 
             // limpiarFormato3Button
             // 
             this.limpiarFormato3Button.BackgroundImage = global::presentationLayer.Properties.Resources.limpiar;
@@ -751,24 +877,6 @@ namespace presentationLayer
             this.eliminarEnfermedadButton.UseVisualStyleBackColor = true;
             this.eliminarEnfermedadButton.Click += new System.EventHandler(this.eliminarEnfermedadButton_Click);
             // 
-            // agregarAlergiasButton
-            // 
-            resources.ApplyResources(this.agregarAlergiasButton, "agregarAlergiasButton");
-            this.agregarAlergiasButton.BackColor = System.Drawing.Color.Transparent;
-            this.agregarAlergiasButton.Image = global::presentationLayer.Properties.Resources.mas1;
-            this.agregarAlergiasButton.Name = "agregarAlergiasButton";
-            this.agregarAlergiasButton.UseVisualStyleBackColor = false;
-            this.agregarAlergiasButton.Click += new System.EventHandler(this.agregarAlergiasButton_Click);
-            // 
-            // agregarDiscapacidadButton
-            // 
-            resources.ApplyResources(this.agregarDiscapacidadButton, "agregarDiscapacidadButton");
-            this.agregarDiscapacidadButton.BackColor = System.Drawing.Color.Transparent;
-            this.agregarDiscapacidadButton.Image = global::presentationLayer.Properties.Resources.mas1;
-            this.agregarDiscapacidadButton.Name = "agregarDiscapacidadButton";
-            this.agregarDiscapacidadButton.UseVisualStyleBackColor = false;
-            this.agregarDiscapacidadButton.Click += new System.EventHandler(this.agregarDiscapacidadButton_Click);
-            // 
             // agregarEnfermedadesButton
             // 
             resources.ApplyResources(this.agregarEnfermedadesButton, "agregarEnfermedadesButton");
@@ -778,143 +886,39 @@ namespace presentationLayer
             this.agregarEnfermedadesButton.UseVisualStyleBackColor = false;
             this.agregarEnfermedadesButton.Click += new System.EventHandler(this.agregarEnfermedadesButton_Click);
             // 
-            // mostrarAlergiasLabel
+            // logo
             // 
-            resources.ApplyResources(this.mostrarAlergiasLabel, "mostrarAlergiasLabel");
-            this.mostrarAlergiasLabel.Name = "mostrarAlergiasLabel";
-            // 
-            // mostrarEnfermedadesLabel
-            // 
-            resources.ApplyResources(this.mostrarEnfermedadesLabel, "mostrarEnfermedadesLabel");
-            this.mostrarEnfermedadesLabel.Name = "mostrarEnfermedadesLabel";
-            // 
-            // mostrarDiscapacidadLabel
-            // 
-            resources.ApplyResources(this.mostrarDiscapacidadLabel, "mostrarDiscapacidadLabel");
-            this.mostrarDiscapacidadLabel.Name = "mostrarDiscapacidadLabel";
-            // 
-            // mostrarAlergiasRichTextBox
-            // 
-            resources.ApplyResources(this.mostrarAlergiasRichTextBox, "mostrarAlergiasRichTextBox");
-            this.mostrarAlergiasRichTextBox.Name = "mostrarAlergiasRichTextBox";
-            // 
-            // mostrarEnfermedadesRichTextBox
-            // 
-            resources.ApplyResources(this.mostrarEnfermedadesRichTextBox, "mostrarEnfermedadesRichTextBox");
-            this.mostrarEnfermedadesRichTextBox.Name = "mostrarEnfermedadesRichTextBox";
-            // 
-            // mostrarDiscapacidadRichTextBox
-            // 
-            resources.ApplyResources(this.mostrarDiscapacidadRichTextBox, "mostrarDiscapacidadRichTextBox");
-            this.mostrarDiscapacidadRichTextBox.Name = "mostrarDiscapacidadRichTextBox";
-            // 
-            // regresarButton
-            // 
-            resources.ApplyResources(this.regresarButton, "regresarButton");
-            this.regresarButton.Name = "regresarButton";
-            this.regresarButton.UseVisualStyleBackColor = true;
-            this.regresarButton.Click += new System.EventHandler(this.regresarButton_Click);
-            // 
-            // informacionTutorGroupBox
-            // 
-            this.informacionTutorGroupBox.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.informacionTutorGroupBox.Controls.Add(this.seleccionarNombreLabel);
-            this.informacionTutorGroupBox.Controls.Add(this.seleccionarNombreComboBox);
-            this.informacionTutorGroupBox.Controls.Add(this.limpiarFormato2Button);
-            this.informacionTutorGroupBox.Controls.Add(this.nombreTutorLabel);
-            this.informacionTutorGroupBox.Controls.Add(this.domicilioTutorLabel);
-            this.informacionTutorGroupBox.Controls.Add(this.ocupacionTutorLabel);
-            this.informacionTutorGroupBox.Controls.Add(this.telefonosTutorLabel);
-            this.informacionTutorGroupBox.Controls.Add(this.nombreTutorTextBox);
-            this.informacionTutorGroupBox.Controls.Add(this.ocupacionTutorTextBox);
-            this.informacionTutorGroupBox.Controls.Add(this.telefonoCasaTutorLabel);
-            this.informacionTutorGroupBox.Controls.Add(this.otroAlumnoTutorGroupBox);
-            this.informacionTutorGroupBox.Controls.Add(this.telefonoCelularTutorLabel);
-            this.informacionTutorGroupBox.Controls.Add(this.label1);
-            this.informacionTutorGroupBox.Controls.Add(this.telefonoTrabajoTutorLabel);
-            this.informacionTutorGroupBox.Controls.Add(this.telefonoCasaTutorTextBox);
-            this.informacionTutorGroupBox.Controls.Add(this.telefonoCelularTutorTextBox);
-            this.informacionTutorGroupBox.Controls.Add(this.telefonoTrabajoTutorTextBox);
-            this.informacionTutorGroupBox.Controls.Add(this.coloniaDireccionTutorTextBox);
-            this.informacionTutorGroupBox.Controls.Add(this.numeroDireccionTutorTextBox);
-            this.informacionTutorGroupBox.Controls.Add(this.calleDireccionTutorTextBox);
-            this.informacionTutorGroupBox.Controls.Add(this.apellidoPaternoTutorLabel);
-            this.informacionTutorGroupBox.Controls.Add(this.coloniaDireccionTutorLabel);
-            this.informacionTutorGroupBox.Controls.Add(this.apellidoMaternoTutorLabel);
-            this.informacionTutorGroupBox.Controls.Add(this.numeroDireccionTutorLabel);
-            this.informacionTutorGroupBox.Controls.Add(this.apellidoPaternoTutorTextBox);
-            this.informacionTutorGroupBox.Controls.Add(this.calleDireccionTutorLabel);
-            this.informacionTutorGroupBox.Controls.Add(this.apellidoMaternoTutorTextBox);
-            resources.ApplyResources(this.informacionTutorGroupBox, "informacionTutorGroupBox");
-            this.informacionTutorGroupBox.Name = "informacionTutorGroupBox";
-            this.informacionTutorGroupBox.TabStop = false;
-            // 
-            // seleccionarNombreLabel
-            // 
-            resources.ApplyResources(this.seleccionarNombreLabel, "seleccionarNombreLabel");
-            this.seleccionarNombreLabel.Name = "seleccionarNombreLabel";
-            // 
-            // seleccionarNombreComboBox
-            // 
-            this.seleccionarNombreComboBox.FormattingEnabled = true;
-            resources.ApplyResources(this.seleccionarNombreComboBox, "seleccionarNombreComboBox");
-            this.seleccionarNombreComboBox.Name = "seleccionarNombreComboBox";
-            // 
-            // limpiarFormato2Button
-            // 
-            this.limpiarFormato2Button.BackgroundImage = global::presentationLayer.Properties.Resources.limpiar;
-            resources.ApplyResources(this.limpiarFormato2Button, "limpiarFormato2Button");
-            this.limpiarFormato2Button.Name = "limpiarFormato2Button";
-            this.limpiarFormato2Button.UseVisualStyleBackColor = true;
-            this.limpiarFormato2Button.Click += new System.EventHandler(this.limpiarFormato2Button_Click);
-            // 
-            // altaAlumnoPanel
-            // 
-            this.altaAlumnoPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.altaAlumnoPanel.Controls.Add(this.camLabel);
-            this.altaAlumnoPanel.Controls.Add(this.alumnosButton);
-            resources.ApplyResources(this.altaAlumnoPanel, "altaAlumnoPanel");
-            this.altaAlumnoPanel.Name = "altaAlumnoPanel";
-            // 
-            // camLabel
-            // 
-            resources.ApplyResources(this.camLabel, "camLabel");
-            this.camLabel.Name = "camLabel";
-            // 
-            // alumnosButton
-            // 
-            resources.ApplyResources(this.alumnosButton, "alumnosButton");
-            this.alumnosButton.Name = "alumnosButton";
-            this.alumnosButton.UseVisualStyleBackColor = true;
-            this.alumnosButton.Click += new System.EventHandler(this.alumnosButton_Click);
-            // 
-            // realizarAltaButton
-            // 
-            resources.ApplyResources(this.realizarAltaButton, "realizarAltaButton");
-            this.realizarAltaButton.Name = "realizarAltaButton";
-            this.realizarAltaButton.UseVisualStyleBackColor = true;
-            this.realizarAltaButton.Click += new System.EventHandler(this.guardarButton_Click);
-            // 
-            // altaalumnoLabel
-            // 
-            resources.ApplyResources(this.altaalumnoLabel, "altaalumnoLabel");
-            this.altaalumnoLabel.Name = "altaalumnoLabel";
+            this.logo.Image = global::presentationLayer.Properties.Resources.log_fondo_blanco;
+            resources.ApplyResources(this.logo, "logo");
+            this.logo.Name = "logo";
+            this.logo.TabStop = false;
             // 
             // altaAlumno
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.seleccionarNombreLabel);
+            this.Controls.Add(this.seleccionarNombreComboBox);
             this.Controls.Add(this.altaalumnoLabel);
             this.Controls.Add(this.realizarAltaButton);
-            this.Controls.Add(this.altaAlumnoPanel);
             this.Controls.Add(this.informacionTutorGroupBox);
+            this.Controls.Add(this.documentacionGB);
             this.Controls.Add(this.regresarButton);
+            this.Controls.Add(this.agregarAlergiasButton);
+            this.Controls.Add(this.agregarDiscapacidadButton);
             this.Controls.Add(this.informacionMedicaAlumnoGroupBox);
+            this.Controls.Add(this.agregarEnfermedadesButton);
             this.Controls.Add(this.informacionEscolarGroupBox);
             this.Controls.Add(this.informacionGeneralAlumnoGroupBox);
+            this.Controls.Add(this.mostrarDiscapacidadLabel);
+            this.Controls.Add(this.mostrarAlergiasLabel);
             this.Controls.Add(this.label2);
+            this.Controls.Add(this.mostrarEnfermedadesLabel);
             this.Controls.Add(this.siguienteButton);
+            this.Controls.Add(this.otroAlumnoTutorGroupBox);
+            this.Controls.Add(this.documentacionAlumnoLabel);
             this.Name = "altaAlumno";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.altaAlumno_Load);
@@ -932,8 +936,7 @@ namespace presentationLayer
             this.documentacionGB.PerformLayout();
             this.informacionTutorGroupBox.ResumeLayout(false);
             this.informacionTutorGroupBox.PerformLayout();
-            this.altaAlumnoPanel.ResumeLayout(false);
-            this.altaAlumnoPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -942,93 +945,88 @@ namespace presentationLayer
         #endregion
 
         private System.Windows.Forms.Button siguienteButton;
-        private System.Windows.Forms.Label nombreAlumnoLabel;
-        private System.Windows.Forms.Label fechaNacimientoLabel;
-        private System.Windows.Forms.Label lugarNacimientoLabel;
+        private System.Windows.Forms.Label nombreAlLabel;
+        private System.Windows.Forms.Label fechaNaLabel;
+        private System.Windows.Forms.Label lugarNaLabel;
         private System.Windows.Forms.Label direccionAlumnoLabel;
-        private System.Windows.Forms.Label telefonoAlumnoLabel;
+        private System.Windows.Forms.Label telPersonalLabel;
         private System.Windows.Forms.Label discapacidadLabel;
         private System.Windows.Forms.Label curpLabel;
-        private System.Windows.Forms.Label añosCumplidosLabel;
-        private System.Windows.Forms.Label cicloEscolarLabel;
-        private System.Windows.Forms.Label escuelaProcedenciaLabel;
-        private System.Windows.Forms.Label canalizadoPorLabel;
-        private System.Windows.Forms.RadioButton reingresoRadioButton;
+        private System.Windows.Forms.Label añosCumLabel;
+        private System.Windows.Forms.Label cicloEscLabel;
+        private System.Windows.Forms.Label escuelaPLabel;
+        private System.Windows.Forms.Label canalizadoLabel;
+        private System.Windows.Forms.RadioButton reingreso;
         private System.Windows.Forms.GroupBox tipoIngresoGroupBox;
-        private System.Windows.Forms.RadioButton nuevoIngresoRadioButton;
-        private System.Windows.Forms.TextBox nombreAlumnoTextBox;
-        private System.Windows.Forms.TextBox telefonoAlumnoTextBox;
-        private System.Windows.Forms.TextBox escuelaProcedenciaTextBox;
-        private System.Windows.Forms.TextBox canalizadoPorTextBox;
-        private System.Windows.Forms.TextBox cicloEscolarTextBox;
+        private System.Windows.Forms.RadioButton nuevoIngreso;
+        private System.Windows.Forms.TextBox nombreAl;
+        private System.Windows.Forms.TextBox telPersonal;
+        private System.Windows.Forms.TextBox escuelaP;
+        private System.Windows.Forms.TextBox canalizado;
+        private System.Windows.Forms.TextBox cicloEsc;
         private System.Windows.Forms.TextBox curpTextBox;
-        private System.Windows.Forms.TextBox añosCumplidosTextBox;
-        private System.Windows.Forms.DateTimePicker fechaNacimientoDateTimePicker;
-        private System.Windows.Forms.Label nombreTutorLabel;
-        private System.Windows.Forms.Label domicilioTutorLabel;
-        private System.Windows.Forms.Label ocupacionTutorLabel;
-        private System.Windows.Forms.Label telefonosTutorLabel;
-        private System.Windows.Forms.TextBox nombreTutorTextBox;
-        private System.Windows.Forms.TextBox ocupacionTutorTextBox;
-        private System.Windows.Forms.Label telefonoCasaTutorLabel;
-        private System.Windows.Forms.Label telefonoCelularTutorLabel;
-        private System.Windows.Forms.Label telefonoTrabajoTutorLabel;
-        private System.Windows.Forms.TextBox telefonoCasaTutorTextBox;
-        private System.Windows.Forms.TextBox telefonoCelularTutorTextBox;
-        private System.Windows.Forms.TextBox telefonoTrabajoTutorTextBox;
-        private System.Windows.Forms.Label ciudadNacimientoAlumnoLabel;
-        private System.Windows.Forms.Label estadoNacimientoAlumnoLabel;
-        private System.Windows.Forms.Label apellidoPaternoAlumnoLabel;
-        private System.Windows.Forms.Label apellidoMaternoAlumnoLabel;
-        private System.Windows.Forms.Label calleDireccionAlumnoLabel;
-        private System.Windows.Forms.Label numeroDireccionAlumnoLabel;
-        private System.Windows.Forms.Label coloniaDireccionAlumnoLabel;
-        private System.Windows.Forms.TextBox apellidoPaternoAlumnoTextBox;
-        private System.Windows.Forms.TextBox apellidoMaternoAlumnoTextBox;
-        private System.Windows.Forms.TextBox ciudadNacimientoAlumnoTextBox;
-        private System.Windows.Forms.TextBox estadoNacimientoAlumnoTextBox;
-        private System.Windows.Forms.TextBox calleDireccionAlumnoTextBox;
-        private System.Windows.Forms.TextBox numeroDireccionAlumnoTextBox;
-        private System.Windows.Forms.TextBox coloniaDireccionAlumnoTextBox;
-        private System.Windows.Forms.Label apellidoPaternoTutorLabel;
-        private System.Windows.Forms.Label apellidoMaternoTutorLabel;
-        private System.Windows.Forms.TextBox apellidoPaternoTutorTextBox;
-        private System.Windows.Forms.TextBox apellidoMaternoTutorTextBox;
-        private System.Windows.Forms.Label calleDireccionTutorLabel;
-        private System.Windows.Forms.Label numeroDireccionTutorLabel;
-        private System.Windows.Forms.Label coloniaDireccionTutorLabel;
-        private System.Windows.Forms.TextBox calleDireccionTutorTextBox;
-        private System.Windows.Forms.TextBox numeroDireccionTutorTextBox;
-        private System.Windows.Forms.TextBox coloniaDireccionTutorTextBox;
+        private System.Windows.Forms.TextBox añosCum;
+        private System.Windows.Forms.DateTimePicker fechaNa;
+        private System.Windows.Forms.Label nombreTLabel;
+        private System.Windows.Forms.Label domicilioTLabel;
+        private System.Windows.Forms.Label ocupacionLabel;
+        private System.Windows.Forms.TextBox nombreT;
+        private System.Windows.Forms.TextBox ocupacion;
+        private System.Windows.Forms.Label telCasaTLabel;
+        private System.Windows.Forms.Label telMovilTLabel;
+        private System.Windows.Forms.Label telTrabajoTLabel;
+        private System.Windows.Forms.TextBox telCasaT;
+        private System.Windows.Forms.TextBox telMovilT;
+        private System.Windows.Forms.TextBox telTrabajoT;
+        private System.Windows.Forms.Label ciudadLabel;
+        private System.Windows.Forms.Label estadoLabel;
+        private System.Windows.Forms.Label apellidoPLabel;
+        private System.Windows.Forms.Label apellidoMLabel;
+        private System.Windows.Forms.Label calleLabel;
+        private System.Windows.Forms.Label numeroCasaLabel;
+        private System.Windows.Forms.Label coloniaLabel;
+        private System.Windows.Forms.TextBox apellidoP;
+        private System.Windows.Forms.TextBox apellidoM;
+        private System.Windows.Forms.TextBox ciudad;
+        private System.Windows.Forms.TextBox estado;
+        private System.Windows.Forms.TextBox calle;
+        private System.Windows.Forms.TextBox numeroCasa;
+        private System.Windows.Forms.TextBox colonia;
+        private System.Windows.Forms.Label apellidoPTLabel;
+        private System.Windows.Forms.Label apellidoMTLabel;
+        private System.Windows.Forms.TextBox apellidoPT;
+        private System.Windows.Forms.TextBox apellidoMT;
+        private System.Windows.Forms.Label calleTLabel;
+        private System.Windows.Forms.Label numeroCasaTLabel;
+        private System.Windows.Forms.Label coloniaTLabel;
+        private System.Windows.Forms.TextBox calleT;
+        private System.Windows.Forms.TextBox numeroCasaT;
+        private System.Windows.Forms.TextBox coloniaT;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox otroAlumnoTutorGroupBox;
         private System.Windows.Forms.RadioButton noOtroAlumnoMadreRadioButton;
         private System.Windows.Forms.RadioButton siOtroAlumnoMadreRadioButton;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label servicioMedicoAlumnoLabel;
-        private System.Windows.Forms.Label grupoSanguineoAlumnoLabel;
-        private System.Windows.Forms.Label enfermedaresAlumnoLabel;
-        private System.Windows.Forms.Label alergiasAlumnoLabel;
-        private System.Windows.Forms.Label telefonoContactoMedicoAlumnoLabel;
+        private System.Windows.Forms.Label servMedicoLabel;
+        private System.Windows.Forms.Label grupoSanguineoLabel;
+        private System.Windows.Forms.Label enfermedadesLabel;
+        private System.Windows.Forms.Label alergiasLabel;
+        private System.Windows.Forms.Label telefonoLabel;
         private System.Windows.Forms.Label documentacionAlumnoLabel;
-        private System.Windows.Forms.TextBox servicioMedicoTextBox;
-        private System.Windows.Forms.TextBox telefonoContactoMedicoAlumnoTextBox;
-        private System.Windows.Forms.TextBox grupoSanguineoTextBox;
+        private System.Windows.Forms.TextBox servMedico;
+        private System.Windows.Forms.TextBox telefono;
+        private System.Windows.Forms.TextBox grupoSanguineo;
         private System.Windows.Forms.GroupBox informacionGeneralAlumnoGroupBox;
         private System.Windows.Forms.GroupBox informacionEscolarGroupBox;
         private System.Windows.Forms.GroupBox informacionMedicaAlumnoGroupBox;
         private System.Windows.Forms.Button regresarButton;
-        private System.Windows.Forms.RichTextBox mostrarAlergiasRichTextBox;
-        private System.Windows.Forms.RichTextBox mostrarEnfermedadesRichTextBox;
-        private System.Windows.Forms.RichTextBox mostrarDiscapacidadRichTextBox;
+        private System.Windows.Forms.RichTextBox alergias;
+        private System.Windows.Forms.RichTextBox enfermedades;
+        private System.Windows.Forms.RichTextBox discapacidad;
         private System.Windows.Forms.Label mostrarAlergiasLabel;
-        private System.Windows.Forms.Label mostrarEnfermedadesLabel;
-        private System.Windows.Forms.Label mostrarDiscapacidadLabel;
         private System.Windows.Forms.GroupBox informacionTutorGroupBox;
         private System.Windows.Forms.Label seleccionarNombreLabel;
         private System.Windows.Forms.ComboBox seleccionarNombreComboBox;
-        private System.Windows.Forms.Panel altaAlumnoPanel;
-        private System.Windows.Forms.Button alumnosButton;
         private System.Windows.Forms.Button realizarAltaButton;
         private System.Windows.Forms.Button agregarAlergiasButton;
         private System.Windows.Forms.Button agregarDiscapacidadButton;
@@ -1048,8 +1046,14 @@ namespace presentationLayer
         private System.Windows.Forms.ComboBox alergiasCombobox;
         private System.Windows.Forms.ComboBox discapacidadesCombobox;
         private System.Windows.Forms.ComboBox enfermedadesCombobox;
-        private System.Windows.Forms.Label camLabel;
         private System.Windows.Forms.Label altaalumnoLabel;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label tipoIngLabel;
+        private System.Windows.Forms.Label informacionMedLabel;
+        private System.Windows.Forms.Label mostrarDiscapacidadLabel;
+        private System.Windows.Forms.Label mostrarEnfermedadesLabel;
+        private System.Windows.Forms.Label infoTutorLabel;
+        private System.Windows.Forms.PictureBox logo;
     }
 }
 
