@@ -12,78 +12,221 @@ namespace presentationLayer
 {
     public partial class altaAlumno : Form
     {
-        int progreso = 1;
+        int progreso = 0;
 
         public altaAlumno()
         {
-            int distanciaLabel = 70;
-            int distanciaTextBox = 66;
-
+ 
             InitializeComponent();
             loaddata();
-
-           // Martin.panelNavBar(altaAlumnoPanel);
-
-
-            Martin.etiquetafuncionLabel(altaalumnoLabel);
-
-            Evelyn.informacionMedicaGroupBox(informacionMedicaAlumnoGroupBox);
-            Claudia.altasGroupBox(informacionGeneralAlumnoGroupBox);
-            Claudia.altasGroupBox2(informacionEscolarGroupBox);
-            Claudia.altasInformacionTutorGroupBox(informacionTutorGroupBox);
-
-            informacionMedicaAlumnoGroupBox.Visible = false;
-            regresarButton.Visible = false;
-            informacionTutorGroupBox.Visible = false;
-            realizarAltaButton.Visible = false;
-
-            distanciaLabel = Claudia.altasNombre(nombreAlLabel, apellidoPLabel, apellidoMLabel, nombreAl, apellidoP, apellidoM, distanciaLabel);
-            distanciaTextBox = distanciaTextBox + 40;
-
-            distanciaLabel = Claudia.altasLabel(fechaNaLabel, distanciaLabel);
-            distanciaTextBox = Claudia.altasDateTimePicker(fechaNa, distanciaTextBox);
-
-            //Lugar nacimiento Alumno
-            distanciaLabel = Claudia.altasLugarNacimiento(lugarNaLabel, ciudadLabel, estadoLabel, ciudad, estado, distanciaLabel);
-            distanciaTextBox = distanciaTextBox + 40;
-
-            //Direccion Alumno
-            distanciaLabel = Claudia.altasDireccion(direccionAlumnoLabel, calleLabel, numeroCasaLabel, coloniaLabel, calle, numeroCasa, colonia, distanciaLabel);
-            distanciaTextBox = distanciaTextBox + 40;
-
-            distanciaLabel = Claudia.altasLabel(telPersonalLabel, distanciaLabel);
-            distanciaTextBox = Claudia.altasTextBox(telPersonal, distanciaTextBox);
-
-            distanciaLabel = Claudia.altasLabel(escuelaPLabel, distanciaLabel);
-            distanciaTextBox = Claudia.altasTextBox(escuelaP, distanciaTextBox);
-
-            distanciaLabel = Claudia.altasLabel(canalizadoLabel, distanciaLabel);
-            distanciaTextBox = Claudia.altasTextBox(canalizado, distanciaTextBox);
-
-
-            Evelyn.altasInformacionMedicaAlumno(servMedicoLabel, discapacidadLabel, enfermedadesLabel, alergiasLabel,
-                    telefonoLabel, grupoSanguineoLabel, documentacionAlumnoLabel, mostrarDiscapacidadLabel,
-                    mostrarEnfermedadesLabel, mostrarAlergiasLabel, servMedico, discapacidadesCombobox, enfermedadesCombobox, alergiasCombobox, telefono, grupoSanguineo, documentacionGB, discapacidad,
-                    enfermedades, alergias, agregarAlergiasButton, agregarEnfermedadesButton, agregarDiscapacidadButton);
-
-            Claudia.altasInformacionEscolar(cicloEscLabel, curpLabel, añosCumLabel, cicloEsc, curpTextBox, añosCum, tipoIngresoGroupBox, nuevoIngreso, reingreso);
             
+           
+            //CODIGO NUEVO
+            centrarLabel(altaalumnoLabel,infoTutorLabel, informacionMedLabel,logo, infGeneralAlLabel,informacionGeneralAlumno,
+                informacionGeneralAlumno2,informacionTutor,informacionMedicaAlumnoGroupBox);
+
+            infoGen(nombreAlLabel, nombreAl, apellidoPLabel, apellidoP, apellidoMLabel, apellidoM, fechaNaLabel, fechaNa, añosCumLabel, 
+                añosCum, curpLabel,curp, direccionAlumnoLabel,calleLabel, calle, numeroCasaLabel, numeroCasa, coloniaLabel,colonia,lugarNaLabel,
+                ciudadLabel,ciudad,estadoLabel,estado);
+
+            infoGen2(telPersonalLabel, telPersonal, escuelaPLabel, escuelaP, canalizadoLabel, canalizado, cicloEscLabel, cicloEsc,tipoIngLabel,
+                tipoIngresoGroupBox);
+
+            infoTutor(nombreTLabel, nombreT, apellidoPTLabel, apellidoPT, apellidoMTLabel, apellidoMT, direccionTLabel, calleTLabel, calleT, numeroCasaTLabel,
+                numeroCasaT, coloniaTLabel, coloniaT, infContactoLabel,telCasaTLabel,telCasaT,telMovilTLabel,telMovilT,telTrabajoTLabel,telTrabajoT,ocupacionLabel,ocupacion);
+
+            infoMedica(servMedicoLabel, servMedico, grupoSanguineoLabel, grupoSanguineo, telefonoLabel, telefono,discapacidadLabel,discapacidad,enfermedadesLabel, enfermedades,
+                alergiasLabel, alergias,tratamientoLabel,tratamiento,discapacidadesCombobox,enfermedadesCombobox,alergiasCombobox,eliminarDiscapacidadesButton,
+                eliminarEnfermedadButton,eliminarAlergiasButton);
+
+            informacionGeneralAlumno.Visible = false;
+            informacionGeneralAlumno2.Visible = true;
+            informacionTutor.Visible = false;
+            informacionMedicaAlumnoGroupBox.Visible = false;
+
+            altaalumnoLabel.Visible = true;
+            infGeneralAlLabel.Visible = true;
+            infoTutorLabel.Visible = false;
+            informacionMedLabel.Visible = false;
+
+
             Evelyn.altasBotonesParaNavegar(siguienteButton, regresarButton, realizarAltaButton);
-            //Evelyn.altasBotonesPanel(alumnosButton);
+            
+        }
 
-            int distanciaInfTutor = 10;
-            Claudia.altasInformacionTutorGroupBox(informacionTutorGroupBox);
-            distanciaInfTutor = Claudia.altasTutorOtroAlumno(otroAlumnoTutorGroupBox, seleccionarNombreLabel, seleccionarNombreComboBox, distanciaInfTutor);
-            distanciaInfTutor = Claudia.altasNombreTutor(nombreTLabel, nombreT, apellidoPTLabel, apellidoPT, apellidoMTLabel, apellidoMT, distanciaInfTutor);
-            distanciaInfTutor = Claudia.altasDireccionTutor(domicilioTLabel, calleTLabel, calleT, numeroCasaTLabel, numeroCasaT, coloniaTLabel, coloniaT, distanciaInfTutor);
-            distanciaInfTutor = Claudia.altasOcupacionTutor(ocupacionLabel, ocupacion, distanciaInfTutor);
-           // distanciaInfTutor = Claudia.altasTelefonosTutor(telCasaTLabel, telCasaT, telMovilTLabel, telMovilT, telTrabajoTLabel, telTrabajoT, distanciaInfTutor);
+        //CENTRAR TITULO
+        private void centrarLabel(Label nomLabel, Label infoTutorL, Label infoMedLabel, PictureBox logo, Label infGenLabel, GroupBox infoGeneral, 
+            GroupBox infoGeneral2, GroupBox infoTutor, GroupBox infoMedica)
+        {
+            //tamaño pantalla
+            int x = this.ClientSize.Width,y = this.ClientSize.Height;
+            logo.Location = new Point(50, 20);
+
+            //TITULO PRINCIPAL
+            nomLabel.Location = new Point(x/2-nomLabel.Width/2, logo.Height/2 - 20);
+           
+            //SUBTITULOS
+            infGenLabel.Location = new Point(x / 2 - infGenLabel.Width / 2, logo.Height / 2 + 50);
+            infoTutorLabel.Location = new Point(x / 2 - infoTutorLabel.Width / 2, logo.Height / 2 + 50);
+            infoMedLabel.Location = new Point(x / 2 - infGenLabel.Width / 2, logo.Height / 2 + 50);
+
+            //GROUPBOXS
+            infoGeneral.Size = new Size(x - 100, y - 100);
+            infoGeneral.Location = new Point(x/2- infoGeneral.Width/2, y / 2 - infoGeneral.Height / 2 + 120);
+
+            infoGeneral2.Size = new Size(x - 100, y - 100);
+            infoGeneral2.Location = new Point(x / 2 - infoGeneral2.Width / 2, y / 2 - infoGeneral2.Height / 2 + 120);
+
+            infoTutor.Size = new Size(x - 100, y - 100);
+            infoTutor.Location = new Point(x / 2 - infoTutor.Width / 2, y / 2 - infoTutor.Height / 2 + 120);
+
+            infoMedica.Size = new Size(x - 100, y - 100);
+            infoMedica.Location = new Point(x / 2 - infoMedica.Width / 2, y / 2 - infoMedica.Height / 2 + 120);
+        }
+
+        //INFORMACION GENERAL ALUMNO
+        private void infoGen(Label nombreL, TextBox nombre, Label apellidoPL, TextBox apellidoP, Label apellidoML, TextBox apellidoM, 
+            Label fechaNaL, DateTimePicker fechaNa, Label añosCumL, TextBox añosCum, Label curpL, TextBox curp, Label direccion, Label calleL,
+            TextBox calle, Label numL, TextBox num, Label coloniaL, TextBox colonia, Label lugarNa, Label ciudadL, TextBox ciudad, Label estadoL, TextBox estado)
+        {
+            progreso = 1;
+
+            nombreL.Location = new Point(50, 50);
+            nombre.Location = new Point(200, 50);
+
+            apellidoPL.Location = new Point(50,100);
+            apellidoP.Location = new Point(200,100);
+
+            apellidoML.Location = new Point(50,150);
+            apellidoM.Location = new Point(200,150);
+
+            fechaNaL.Location = new Point(50,200);
+            fechaNa.Location = new Point(200,200);
+
+            añosCumL.Location = new Point(50,250);
+            añosCum.Location = new Point(200,250);
+
+            curpL.Location = new Point(50,300);
+            curp.Location = new Point(200,300);
+
+            //DIRECCION
+            direccion.Location = new Point(500, 50);
+
+            calleL.Location = new Point(500,100);
+            calle.Location = new Point(750,100);
+
+            numL.Location = new Point(500,150);
+            num.Location = new Point(750,150);
+
+            coloniaL.Location = new Point(500,200);
+            colonia.Location = new Point(750,200);
+
+            //LUGAR NACIMIENTO
+            lugarNa.Location = new Point(500, 250);
+
+            ciudadL.Location = new Point(500, 300);
+            ciudad.Location = new Point(750, 300);
+
+            estadoL.Location = new Point(500, 350);
+            estado.Location = new Point(750, 350);
+        }
 
 
-            Evelyn.eliminarBotones(eliminarEnfermedadButton, eliminarDiscapacidadesButton, eliminarAlergiasButton);
-            Claudia.limpiarFormatosBotones(limpiarFormato1Button, limpiarFormato2Button, limpiarFormato3Button);
-          
-      
+        //INFORMACION GENERAL ALUMNO 2
+        private void infoGen2(Label telL, TextBox tel, Label escuelaPL, TextBox escuelaP, Label canalizadoL, TextBox canalizado, Label cicloL,
+            TextBox ciclo, Label tipoIng,GroupBox ingresos)
+        {
+            progreso = 2;
+            telL.Location = new Point(50, 50);
+            tel.Location = new Point(200, 50);
+
+            escuelaPL.Location = new Point(50,100);
+            escuelaP.Location = new Point(200,100);
+
+            canalizadoL.Location = new Point(50,150);
+            canalizado.Location = new Point(200,150);
+
+            cicloL.Location = new Point(50,200);
+            ciclo.Location = new Point(200,200);
+
+            tipoIng.Location = new Point(50,250);
+
+            ingresos.Location = new Point(50, 300);
+        }
+
+        //INFORMACION TUTOR
+        private void infoTutor(Label nombreL, TextBox nombre, Label apellidoPL, TextBox apellidoP, Label apellidoML, TextBox apellidoM,
+            Label direccion, Label calleL, TextBox calle, Label numL, TextBox num, Label coloniaL, TextBox colonia, Label infoCon, Label telCasaL,
+            TextBox telCasa, Label telMovilL, TextBox telMovil, Label telTrabajoL, TextBox telTrabajo, Label ocupacionL, TextBox ocupacion)
+        {
+            progreso = 3;
+
+            nombreL.Location = new Point(50,50);
+            nombre.Location = new Point(200,50);
+
+            apellidoPL.Location = new Point(50,100);
+            apellidoP.Location = new Point(200,100);
+
+            apellidoML.Location = new Point(50,150);
+            apellidoM.Location = new Point(200,150);
+
+            direccion.Location = new Point(50,200);
+
+            calleL.Location = new Point(50,250);
+            calle.Location = new Point(200,250);
+
+            numL.Location = new Point(50,300);
+            num.Location = new Point(200,300);
+
+            coloniaL.Location = new Point(50,350);
+            colonia.Location = new Point(200,350);
+
+            infoCon.Location = new Point(50,400);
+
+            telCasaL.Location = new Point(50,450 );
+            telCasa.Location = new Point(200, 450);
+
+            telMovilL.Location = new Point(50, 500);
+            telMovil.Location = new Point(200, 500);
+
+            telTrabajoL.Location = new Point(50, 550);
+            telTrabajo.Location = new Point(200, 550);
+
+            ocupacionL.Location = new Point(50, 600);
+            ocupacion.Location = new Point(200, 600);
+        }
+
+        //INFORMACION MEDICA
+        private void infoMedica(Label servMedicoL, TextBox servMed, Label grupoSanL, TextBox grupoSan, Label telL, TextBox tel,Label discapacidadL, RichTextBox discapacidad,
+            Label enfermedadL, RichTextBox enfermedad, Label alergiaL, RichTextBox alergia, Label tratamientoL, RichTextBox tratamiento,
+            ComboBox discapacidadCB, ComboBox enfermedadCB, ComboBox alergiaCB,Button eliDisc, Button eliEnf, Button eliAle)
+        {
+            servMedicoL.Location = new Point(50, 50);
+            servMedico.Location = new Point(200,50);
+
+            grupoSanL.Location = new Point(400, 50);
+            grupoSan.Location = new Point(600, 50);
+
+            telL.Location = new Point(750, 50);
+            tel.Location = new Point(950, 50);
+
+            discapacidadL.Location = new Point(50, 150);
+            eliDisc.Location = new Point(200, 150);
+            discapacidad.Location = new Point(50, 180);
+            discapacidadCB.Location = new Point(50, 230);
+
+            enfermedadL.Location = new Point(300, 150);
+            eliEnf.Location = new Point(450, 150);
+            enfermedad.Location = new Point(300, 180);
+            enfermedadCB.Location = new Point(300, 230);
+
+            alergiaL.Location = new Point(550, 150);
+            eliAle.Location = new Point(650, 150);
+            alergia.Location = new Point(550, 180);
+            alergiaCB.Location = new Point(550, 230);
+
+            tratamientoL.Location = new Point(800, 150);
+            tratamiento.Location = new Point(800, 180);
         }
 
         private void altaAlumno_Load(object sender, EventArgs e)
@@ -91,70 +234,72 @@ namespace presentationLayer
             limpiarFormato1Button.Hide();
             limpiarFormato2Button.Hide();
             limpiarFormato3Button.Hide();
-        
-            otroAlumnoTutorGroupBox.Hide();
-
-            seleccionarNombreLabel.Hide();
-            seleccionarNombreComboBox.Hide();
-            documentacionGB.Hide();
-            documentacionAlumnoLabel.Hide();
         }
 
         private void siguienteButton_Click_1(object sender, EventArgs e)
         {
             if (progreso == 0)
             {
+                informacionGeneralAlumno.Visible = true;
+                informacionGeneralAlumno2.Visible = false;
+                informacionTutor.Visible = false;
                 informacionMedicaAlumnoGroupBox.Visible = false;
-                informacionGeneralAlumnoGroupBox.Visible = true;
-                informacionEscolarGroupBox.Visible = true;
-                informacionTutorGroupBox.Visible = false;
-                regresarButton.Visible = true;
-                siguienteButton.Visible = true;
-                realizarAltaButton.Visible = false;
-                progreso = 1;
+
+                altaalumnoLabel.Visible = true;
+                infGeneralAlLabel.Visible = true;
+                infoTutorLabel.Visible = false;
+
+                //progreso = 1;
             }
             if (progreso == 1)
             {
+                informacionGeneralAlumno.Visible = false;
+                informacionGeneralAlumno2.Visible = true;
+                informacionTutor.Visible = false;
                 informacionMedicaAlumnoGroupBox.Visible = false;
-                informacionGeneralAlumnoGroupBox.Visible = false;
-                informacionEscolarGroupBox.Visible = false;
-                informacionTutorGroupBox.Visible = true;
-                regresarButton.Visible = true;
-                siguienteButton.Visible = true;
-                realizarAltaButton.Visible = false;
-                progreso = 2;
+
+                altaalumnoLabel.Visible = true;
+                infGeneralAlLabel.Visible = true;
+                infoTutorLabel.Visible = false;
+
+                //progreso = 2;
             }
             if (progreso == 2)
             {
+                informacionGeneralAlumno.Visible = false;
+                informacionGeneralAlumno2.Visible = false;
+                informacionTutor.Visible = true;
                 informacionMedicaAlumnoGroupBox.Visible = false;
-                informacionGeneralAlumnoGroupBox.Visible = false;
-                informacionEscolarGroupBox.Visible = false;
-                informacionTutorGroupBox.Visible = true;
-                regresarButton.Visible = true;
-                siguienteButton.Visible = true;
-                realizarAltaButton.Visible = false;
-                progreso = 3;
+
+                altaalumnoLabel.Visible = true;
+                infGeneralAlLabel.Visible = false;
+                infoTutorLabel.Visible = true;
+
+               // progreso = 3;
             }else{
+                informacionGeneralAlumno.Visible = false;
+                informacionGeneralAlumno2.Visible = false;
+                informacionTutor.Visible = false;
                 informacionMedicaAlumnoGroupBox.Visible = true;
-                informacionGeneralAlumnoGroupBox.Visible = false;
-                informacionEscolarGroupBox.Visible = false;
-                informacionTutorGroupBox.Visible = false;
-                regresarButton.Visible = true;
-                siguienteButton.Visible = false;
-                realizarAltaButton.Visible = true;
+
+                altaalumnoLabel.Visible = true;
+                infGeneralAlLabel.Visible = false;
+                infoTutorLabel.Visible = false;
+
                 progreso = 4;
             }
 
         }
 
-        private void regresarButton_Click(object sender, EventArgs e)
+
+            private void regresarButton_Click(object sender, EventArgs e)
         {
             if (progreso == 3)
             {
                 informacionMedicaAlumnoGroupBox.Visible = false;
-                informacionGeneralAlumnoGroupBox.Visible = true;
-                informacionEscolarGroupBox.Visible = true;
-                informacionTutorGroupBox.Visible = false;
+                informacionGeneralAlumno.Visible = true;
+                informacionGeneralAlumno2.Visible = true;
+                informacionTutor.Visible = false;
                 regresarButton.Visible = false;
                 realizarAltaButton.Visible = false;
                 siguienteButton.Visible = true;
@@ -164,9 +309,9 @@ namespace presentationLayer
             if (progreso == 4)
             {
                 informacionMedicaAlumnoGroupBox.Visible = false;
-                informacionGeneralAlumnoGroupBox.Visible = false;
-                informacionEscolarGroupBox.Visible = false;
-                informacionTutorGroupBox.Visible = true;
+                informacionGeneralAlumno.Visible = false;
+                informacionGeneralAlumno2.Visible = false;
+                informacionTutor.Visible = true;
                 realizarAltaButton.Visible = false;
                 siguienteButton.Visible = true;
                 progreso = 3;
@@ -184,7 +329,7 @@ namespace presentationLayer
                                               apellidoM.Text,
                                               fechaNa.Value,
                                               añosCum.Text,
-                                              curpTextBox.Text,
+                                              curp.Text,
                                               estado.Text,
                                               ciudad.Text,
                                               colonia.Text,
@@ -254,7 +399,7 @@ namespace presentationLayer
             escuelaP.Clear();
             canalizado.Clear();
             cicloEsc.Clear();
-            curpTextBox.Clear();
+            curp.Clear();
             añosCum.Clear();
             nuevoIngreso.Checked = false;
             reingreso.Checked = false;
@@ -264,9 +409,6 @@ namespace presentationLayer
         //LIMPIAR INFORMACIÓN TUTORA/RA
         private void limpiarFormato2Button_Click(object sender, EventArgs e)
         {
-            siOtroAlumnoMadreRadioButton.Checked = false;
-            noOtroAlumnoMadreRadioButton.Checked = false;
-            seleccionarNombreComboBox.ResetText();
             nombreT.Clear();
             apellidoPT.Clear();
             apellidoMT.Clear();

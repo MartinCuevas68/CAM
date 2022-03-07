@@ -44,17 +44,18 @@ namespace presentationLayer
             this.canalizadoLabel = new System.Windows.Forms.Label();
             this.reingreso = new System.Windows.Forms.RadioButton();
             this.tipoIngresoGroupBox = new System.Windows.Forms.GroupBox();
+            this.tipoIngLabel = new System.Windows.Forms.Label();
             this.nuevoIngreso = new System.Windows.Forms.RadioButton();
             this.nombreAl = new System.Windows.Forms.TextBox();
             this.telPersonal = new System.Windows.Forms.TextBox();
             this.escuelaP = new System.Windows.Forms.TextBox();
             this.canalizado = new System.Windows.Forms.TextBox();
             this.cicloEsc = new System.Windows.Forms.TextBox();
-            this.curpTextBox = new System.Windows.Forms.TextBox();
+            this.curp = new System.Windows.Forms.TextBox();
             this.añosCum = new System.Windows.Forms.TextBox();
             this.fechaNa = new System.Windows.Forms.DateTimePicker();
             this.nombreTLabel = new System.Windows.Forms.Label();
-            this.domicilioTLabel = new System.Windows.Forms.Label();
+            this.direccionTLabel = new System.Windows.Forms.Label();
             this.ocupacionLabel = new System.Windows.Forms.Label();
             this.nombreT = new System.Windows.Forms.TextBox();
             this.ocupacion = new System.Windows.Forms.TextBox();
@@ -89,65 +90,47 @@ namespace presentationLayer
             this.numeroCasaT = new System.Windows.Forms.TextBox();
             this.coloniaT = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.otroAlumnoTutorGroupBox = new System.Windows.Forms.GroupBox();
-            this.noOtroAlumnoMadreRadioButton = new System.Windows.Forms.RadioButton();
-            this.siOtroAlumnoMadreRadioButton = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
             this.servMedicoLabel = new System.Windows.Forms.Label();
             this.grupoSanguineoLabel = new System.Windows.Forms.Label();
             this.enfermedadesLabel = new System.Windows.Forms.Label();
             this.alergiasLabel = new System.Windows.Forms.Label();
             this.telefonoLabel = new System.Windows.Forms.Label();
-            this.documentacionAlumnoLabel = new System.Windows.Forms.Label();
             this.servMedico = new System.Windows.Forms.TextBox();
             this.telefono = new System.Windows.Forms.TextBox();
             this.grupoSanguineo = new System.Windows.Forms.TextBox();
-            this.informacionGeneralAlumnoGroupBox = new System.Windows.Forms.GroupBox();
-            this.informacionEscolarGroupBox = new System.Windows.Forms.GroupBox();
+            this.informacionGeneralAlumno = new System.Windows.Forms.GroupBox();
+            this.infGeneralAlLabel = new System.Windows.Forms.Label();
+            this.limpiarFormato1Button = new System.Windows.Forms.Button();
+            this.logo = new System.Windows.Forms.PictureBox();
+            this.informacionGeneralAlumno2 = new System.Windows.Forms.GroupBox();
             this.informacionMedicaAlumnoGroupBox = new System.Windows.Forms.GroupBox();
+            this.informacionMedLabel = new System.Windows.Forms.Label();
             this.alergiasCombobox = new System.Windows.Forms.ComboBox();
             this.discapacidadesCombobox = new System.Windows.Forms.ComboBox();
             this.enfermedadesCombobox = new System.Windows.Forms.ComboBox();
-            this.mostrarAlergiasLabel = new System.Windows.Forms.Label();
-            this.alergias = new System.Windows.Forms.RichTextBox();
-            this.enfermedades = new System.Windows.Forms.RichTextBox();
-            this.discapacidad = new System.Windows.Forms.RichTextBox();
-            this.documentacionGB = new System.Windows.Forms.GroupBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.regresarButton = new System.Windows.Forms.Button();
-            this.informacionTutorGroupBox = new System.Windows.Forms.GroupBox();
-            this.seleccionarNombreLabel = new System.Windows.Forms.Label();
-            this.seleccionarNombreComboBox = new System.Windows.Forms.ComboBox();
-            this.realizarAltaButton = new System.Windows.Forms.Button();
-            this.altaalumnoLabel = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.tipoIngLabel = new System.Windows.Forms.Label();
-            this.informacionMedLabel = new System.Windows.Forms.Label();
-            this.mostrarDiscapacidadLabel = new System.Windows.Forms.Label();
-            this.mostrarEnfermedadesLabel = new System.Windows.Forms.Label();
-            this.infoTutorLabel = new System.Windows.Forms.Label();
-            this.limpiarFormato2Button = new System.Windows.Forms.Button();
-            this.agregarAlergiasButton = new System.Windows.Forms.Button();
-            this.agregarDiscapacidadButton = new System.Windows.Forms.Button();
-            this.limpiarFormato1Button = new System.Windows.Forms.Button();
             this.limpiarFormato3Button = new System.Windows.Forms.Button();
             this.eliminarAlergiasButton = new System.Windows.Forms.Button();
             this.eliminarDiscapacidadesButton = new System.Windows.Forms.Button();
             this.eliminarEnfermedadButton = new System.Windows.Forms.Button();
-            this.agregarEnfermedadesButton = new System.Windows.Forms.Button();
-            this.logo = new System.Windows.Forms.PictureBox();
+            this.alergias = new System.Windows.Forms.RichTextBox();
+            this.enfermedades = new System.Windows.Forms.RichTextBox();
+            this.discapacidad = new System.Windows.Forms.RichTextBox();
+            this.regresarButton = new System.Windows.Forms.Button();
+            this.informacionTutor = new System.Windows.Forms.GroupBox();
+            this.infoTutorLabel = new System.Windows.Forms.Label();
+            this.limpiarFormato2Button = new System.Windows.Forms.Button();
+            this.realizarAltaButton = new System.Windows.Forms.Button();
+            this.altaalumnoLabel = new System.Windows.Forms.Label();
+            this.infContactoLabel = new System.Windows.Forms.Label();
+            this.tratamientoLabel = new System.Windows.Forms.Label();
+            this.tratamiento = new System.Windows.Forms.RichTextBox();
             this.tipoIngresoGroupBox.SuspendLayout();
-            this.otroAlumnoTutorGroupBox.SuspendLayout();
-            this.informacionGeneralAlumnoGroupBox.SuspendLayout();
-            this.informacionEscolarGroupBox.SuspendLayout();
-            this.informacionMedicaAlumnoGroupBox.SuspendLayout();
-            this.documentacionGB.SuspendLayout();
-            this.informacionTutorGroupBox.SuspendLayout();
+            this.informacionGeneralAlumno.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
+            this.informacionGeneralAlumno2.SuspendLayout();
+            this.informacionMedicaAlumnoGroupBox.SuspendLayout();
+            this.informacionTutor.SuspendLayout();
             this.SuspendLayout();
             // 
             // siguienteButton
@@ -221,12 +204,16 @@ namespace presentationLayer
             // 
             // tipoIngresoGroupBox
             // 
-            this.tipoIngresoGroupBox.Controls.Add(this.tipoIngLabel);
             this.tipoIngresoGroupBox.Controls.Add(this.nuevoIngreso);
             this.tipoIngresoGroupBox.Controls.Add(this.reingreso);
             resources.ApplyResources(this.tipoIngresoGroupBox, "tipoIngresoGroupBox");
             this.tipoIngresoGroupBox.Name = "tipoIngresoGroupBox";
             this.tipoIngresoGroupBox.TabStop = false;
+            // 
+            // tipoIngLabel
+            // 
+            resources.ApplyResources(this.tipoIngLabel, "tipoIngLabel");
+            this.tipoIngLabel.Name = "tipoIngLabel";
             // 
             // nuevoIngreso
             // 
@@ -265,11 +252,11 @@ namespace presentationLayer
             resources.ApplyResources(this.cicloEsc, "cicloEsc");
             this.cicloEsc.Name = "cicloEsc";
             // 
-            // curpTextBox
+            // curp
             // 
-            this.curpTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.curpTextBox, "curpTextBox");
-            this.curpTextBox.Name = "curpTextBox";
+            this.curp.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            resources.ApplyResources(this.curp, "curp");
+            this.curp.Name = "curp";
             // 
             // añosCum
             // 
@@ -290,10 +277,10 @@ namespace presentationLayer
             resources.ApplyResources(this.nombreTLabel, "nombreTLabel");
             this.nombreTLabel.Name = "nombreTLabel";
             // 
-            // domicilioTLabel
+            // direccionTLabel
             // 
-            resources.ApplyResources(this.domicilioTLabel, "domicilioTLabel");
-            this.domicilioTLabel.Name = "domicilioTLabel";
+            resources.ApplyResources(this.direccionTLabel, "direccionTLabel");
+            this.direccionTLabel.Name = "direccionTLabel";
             // 
             // ocupacionLabel
             // 
@@ -482,28 +469,6 @@ namespace presentationLayer
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
             // 
-            // otroAlumnoTutorGroupBox
-            // 
-            this.otroAlumnoTutorGroupBox.Controls.Add(this.noOtroAlumnoMadreRadioButton);
-            this.otroAlumnoTutorGroupBox.Controls.Add(this.siOtroAlumnoMadreRadioButton);
-            resources.ApplyResources(this.otroAlumnoTutorGroupBox, "otroAlumnoTutorGroupBox");
-            this.otroAlumnoTutorGroupBox.Name = "otroAlumnoTutorGroupBox";
-            this.otroAlumnoTutorGroupBox.TabStop = false;
-            // 
-            // noOtroAlumnoMadreRadioButton
-            // 
-            resources.ApplyResources(this.noOtroAlumnoMadreRadioButton, "noOtroAlumnoMadreRadioButton");
-            this.noOtroAlumnoMadreRadioButton.Name = "noOtroAlumnoMadreRadioButton";
-            this.noOtroAlumnoMadreRadioButton.TabStop = true;
-            this.noOtroAlumnoMadreRadioButton.UseVisualStyleBackColor = true;
-            // 
-            // siOtroAlumnoMadreRadioButton
-            // 
-            resources.ApplyResources(this.siOtroAlumnoMadreRadioButton, "siOtroAlumnoMadreRadioButton");
-            this.siOtroAlumnoMadreRadioButton.Name = "siOtroAlumnoMadreRadioButton";
-            this.siOtroAlumnoMadreRadioButton.TabStop = true;
-            this.siOtroAlumnoMadreRadioButton.UseVisualStyleBackColor = true;
-            // 
             // label2
             // 
             resources.ApplyResources(this.label2, "label2");
@@ -534,11 +499,6 @@ namespace presentationLayer
             resources.ApplyResources(this.telefonoLabel, "telefonoLabel");
             this.telefonoLabel.Name = "telefonoLabel";
             // 
-            // documentacionAlumnoLabel
-            // 
-            resources.ApplyResources(this.documentacionAlumnoLabel, "documentacionAlumnoLabel");
-            this.documentacionAlumnoLabel.Name = "documentacionAlumnoLabel";
-            // 
             // servMedico
             // 
             this.servMedico.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
@@ -557,59 +517,80 @@ namespace presentationLayer
             resources.ApplyResources(this.grupoSanguineo, "grupoSanguineo");
             this.grupoSanguineo.Name = "grupoSanguineo";
             // 
-            // informacionGeneralAlumnoGroupBox
+            // informacionGeneralAlumno
             // 
-            this.informacionGeneralAlumnoGroupBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.logo);
-            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.nombreAlLabel);
-            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.nombreAl);
-            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.limpiarFormato1Button);
-            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.apellidoPLabel);
-            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.apellidoP);
-            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.apellidoMLabel);
-            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.apellidoM);
-            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.fechaNaLabel);
-            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.fechaNa);
-            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.lugarNaLabel);
-            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.ciudadLabel);
-            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.ciudad);
-            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.estadoLabel);
-            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.estado);
-            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.direccionAlumnoLabel);
-            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.calleLabel);
-            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.calle);
-            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.numeroCasaLabel);
-            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.numeroCasa);
-            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.coloniaLabel);
-            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.colonia);
-            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.telPersonalLabel);
-            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.telPersonal);
-            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.escuelaPLabel);
-            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.escuelaP);
-            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.canalizadoLabel);
-            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.canalizado);
-            resources.ApplyResources(this.informacionGeneralAlumnoGroupBox, "informacionGeneralAlumnoGroupBox");
-            this.informacionGeneralAlumnoGroupBox.Name = "informacionGeneralAlumnoGroupBox";
-            this.informacionGeneralAlumnoGroupBox.TabStop = false;
+            this.informacionGeneralAlumno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.informacionGeneralAlumno.Controls.Add(this.nombreAlLabel);
+            this.informacionGeneralAlumno.Controls.Add(this.nombreAl);
+            this.informacionGeneralAlumno.Controls.Add(this.curp);
+            this.informacionGeneralAlumno.Controls.Add(this.curpLabel);
+            this.informacionGeneralAlumno.Controls.Add(this.limpiarFormato1Button);
+            this.informacionGeneralAlumno.Controls.Add(this.apellidoPLabel);
+            this.informacionGeneralAlumno.Controls.Add(this.añosCum);
+            this.informacionGeneralAlumno.Controls.Add(this.añosCumLabel);
+            this.informacionGeneralAlumno.Controls.Add(this.apellidoP);
+            this.informacionGeneralAlumno.Controls.Add(this.apellidoMLabel);
+            this.informacionGeneralAlumno.Controls.Add(this.apellidoM);
+            this.informacionGeneralAlumno.Controls.Add(this.fechaNaLabel);
+            this.informacionGeneralAlumno.Controls.Add(this.fechaNa);
+            this.informacionGeneralAlumno.Controls.Add(this.lugarNaLabel);
+            this.informacionGeneralAlumno.Controls.Add(this.ciudadLabel);
+            this.informacionGeneralAlumno.Controls.Add(this.ciudad);
+            this.informacionGeneralAlumno.Controls.Add(this.estadoLabel);
+            this.informacionGeneralAlumno.Controls.Add(this.estado);
+            this.informacionGeneralAlumno.Controls.Add(this.direccionAlumnoLabel);
+            this.informacionGeneralAlumno.Controls.Add(this.calleLabel);
+            this.informacionGeneralAlumno.Controls.Add(this.calle);
+            this.informacionGeneralAlumno.Controls.Add(this.numeroCasaLabel);
+            this.informacionGeneralAlumno.Controls.Add(this.numeroCasa);
+            this.informacionGeneralAlumno.Controls.Add(this.coloniaLabel);
+            this.informacionGeneralAlumno.Controls.Add(this.colonia);
+            resources.ApplyResources(this.informacionGeneralAlumno, "informacionGeneralAlumno");
+            this.informacionGeneralAlumno.Name = "informacionGeneralAlumno";
+            this.informacionGeneralAlumno.TabStop = false;
             // 
-            // informacionEscolarGroupBox
+            // infGeneralAlLabel
             // 
-            this.informacionEscolarGroupBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.informacionEscolarGroupBox.Controls.Add(this.cicloEscLabel);
-            this.informacionEscolarGroupBox.Controls.Add(this.cicloEsc);
-            this.informacionEscolarGroupBox.Controls.Add(this.curpLabel);
-            this.informacionEscolarGroupBox.Controls.Add(this.curpTextBox);
-            this.informacionEscolarGroupBox.Controls.Add(this.añosCumLabel);
-            this.informacionEscolarGroupBox.Controls.Add(this.añosCum);
-            this.informacionEscolarGroupBox.Controls.Add(this.tipoIngresoGroupBox);
-            resources.ApplyResources(this.informacionEscolarGroupBox, "informacionEscolarGroupBox");
-            this.informacionEscolarGroupBox.Name = "informacionEscolarGroupBox";
-            this.informacionEscolarGroupBox.TabStop = false;
+            resources.ApplyResources(this.infGeneralAlLabel, "infGeneralAlLabel");
+            this.infGeneralAlLabel.Name = "infGeneralAlLabel";
+            // 
+            // limpiarFormato1Button
+            // 
+            resources.ApplyResources(this.limpiarFormato1Button, "limpiarFormato1Button");
+            this.limpiarFormato1Button.BackgroundImage = global::presentationLayer.Properties.Resources.limpiar;
+            this.limpiarFormato1Button.Name = "limpiarFormato1Button";
+            this.limpiarFormato1Button.UseVisualStyleBackColor = true;
+            this.limpiarFormato1Button.Click += new System.EventHandler(this.limpiarFormato1Button_Click);
+            // 
+            // logo
+            // 
+            this.logo.Image = global::presentationLayer.Properties.Resources.log_fondo_blanco;
+            resources.ApplyResources(this.logo, "logo");
+            this.logo.Name = "logo";
+            this.logo.TabStop = false;
+            // 
+            // informacionGeneralAlumno2
+            // 
+            this.informacionGeneralAlumno2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.informacionGeneralAlumno2.Controls.Add(this.tipoIngLabel);
+            this.informacionGeneralAlumno2.Controls.Add(this.cicloEscLabel);
+            this.informacionGeneralAlumno2.Controls.Add(this.cicloEsc);
+            this.informacionGeneralAlumno2.Controls.Add(this.tipoIngresoGroupBox);
+            this.informacionGeneralAlumno2.Controls.Add(this.telPersonal);
+            this.informacionGeneralAlumno2.Controls.Add(this.telPersonalLabel);
+            this.informacionGeneralAlumno2.Controls.Add(this.escuelaPLabel);
+            this.informacionGeneralAlumno2.Controls.Add(this.escuelaP);
+            this.informacionGeneralAlumno2.Controls.Add(this.canalizadoLabel);
+            this.informacionGeneralAlumno2.Controls.Add(this.canalizado);
+            resources.ApplyResources(this.informacionGeneralAlumno2, "informacionGeneralAlumno2");
+            this.informacionGeneralAlumno2.Name = "informacionGeneralAlumno2";
+            this.informacionGeneralAlumno2.TabStop = false;
             // 
             // informacionMedicaAlumnoGroupBox
             // 
             this.informacionMedicaAlumnoGroupBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.informacionMedicaAlumnoGroupBox.Controls.Add(this.informacionMedLabel);
+            this.informacionMedicaAlumnoGroupBox.Controls.Add(this.tratamiento);
+            this.informacionMedicaAlumnoGroupBox.Controls.Add(this.tratamientoLabel);
             this.informacionMedicaAlumnoGroupBox.Controls.Add(this.alergiasCombobox);
             this.informacionMedicaAlumnoGroupBox.Controls.Add(this.discapacidadesCombobox);
             this.informacionMedicaAlumnoGroupBox.Controls.Add(this.enfermedadesCombobox);
@@ -632,6 +613,11 @@ namespace presentationLayer
             resources.ApplyResources(this.informacionMedicaAlumnoGroupBox, "informacionMedicaAlumnoGroupBox");
             this.informacionMedicaAlumnoGroupBox.Name = "informacionMedicaAlumnoGroupBox";
             this.informacionMedicaAlumnoGroupBox.TabStop = false;
+            // 
+            // informacionMedLabel
+            // 
+            resources.ApplyResources(this.informacionMedLabel, "informacionMedLabel");
+            this.informacionMedLabel.Name = "informacionMedLabel";
             // 
             // alergiasCombobox
             // 
@@ -658,192 +644,6 @@ namespace presentationLayer
             resources.GetString("enfermedadesCombobox.Items1"),
             resources.GetString("enfermedadesCombobox.Items2")});
             this.enfermedadesCombobox.Name = "enfermedadesCombobox";
-            // 
-            // mostrarAlergiasLabel
-            // 
-            resources.ApplyResources(this.mostrarAlergiasLabel, "mostrarAlergiasLabel");
-            this.mostrarAlergiasLabel.Name = "mostrarAlergiasLabel";
-            // 
-            // alergias
-            // 
-            resources.ApplyResources(this.alergias, "alergias");
-            this.alergias.Name = "alergias";
-            // 
-            // enfermedades
-            // 
-            resources.ApplyResources(this.enfermedades, "enfermedades");
-            this.enfermedades.Name = "enfermedades";
-            // 
-            // discapacidad
-            // 
-            resources.ApplyResources(this.discapacidad, "discapacidad");
-            this.discapacidad.Name = "discapacidad";
-            // 
-            // documentacionGB
-            // 
-            this.documentacionGB.Controls.Add(this.checkBox5);
-            this.documentacionGB.Controls.Add(this.checkBox4);
-            this.documentacionGB.Controls.Add(this.checkBox3);
-            this.documentacionGB.Controls.Add(this.checkBox2);
-            this.documentacionGB.Controls.Add(this.checkBox1);
-            resources.ApplyResources(this.documentacionGB, "documentacionGB");
-            this.documentacionGB.Name = "documentacionGB";
-            this.documentacionGB.TabStop = false;
-            // 
-            // checkBox5
-            // 
-            resources.ApplyResources(this.checkBox5, "checkBox5");
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.UseVisualStyleBackColor = true;
-            // 
-            // checkBox4
-            // 
-            resources.ApplyResources(this.checkBox4, "checkBox4");
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.UseVisualStyleBackColor = true;
-            // 
-            // checkBox3
-            // 
-            resources.ApplyResources(this.checkBox3, "checkBox3");
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // checkBox2
-            // 
-            resources.ApplyResources(this.checkBox2, "checkBox2");
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            // 
-            // checkBox1
-            // 
-            resources.ApplyResources(this.checkBox1, "checkBox1");
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // regresarButton
-            // 
-            resources.ApplyResources(this.regresarButton, "regresarButton");
-            this.regresarButton.Name = "regresarButton";
-            this.regresarButton.UseVisualStyleBackColor = true;
-            this.regresarButton.Click += new System.EventHandler(this.regresarButton_Click);
-            // 
-            // informacionTutorGroupBox
-            // 
-            this.informacionTutorGroupBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.informacionTutorGroupBox.Controls.Add(this.infoTutorLabel);
-            this.informacionTutorGroupBox.Controls.Add(this.limpiarFormato2Button);
-            this.informacionTutorGroupBox.Controls.Add(this.nombreTLabel);
-            this.informacionTutorGroupBox.Controls.Add(this.domicilioTLabel);
-            this.informacionTutorGroupBox.Controls.Add(this.ocupacionLabel);
-            this.informacionTutorGroupBox.Controls.Add(this.nombreT);
-            this.informacionTutorGroupBox.Controls.Add(this.ocupacion);
-            this.informacionTutorGroupBox.Controls.Add(this.telCasaTLabel);
-            this.informacionTutorGroupBox.Controls.Add(this.telMovilTLabel);
-            this.informacionTutorGroupBox.Controls.Add(this.label1);
-            this.informacionTutorGroupBox.Controls.Add(this.telTrabajoTLabel);
-            this.informacionTutorGroupBox.Controls.Add(this.telCasaT);
-            this.informacionTutorGroupBox.Controls.Add(this.telMovilT);
-            this.informacionTutorGroupBox.Controls.Add(this.telTrabajoT);
-            this.informacionTutorGroupBox.Controls.Add(this.coloniaT);
-            this.informacionTutorGroupBox.Controls.Add(this.numeroCasaT);
-            this.informacionTutorGroupBox.Controls.Add(this.calleT);
-            this.informacionTutorGroupBox.Controls.Add(this.apellidoPTLabel);
-            this.informacionTutorGroupBox.Controls.Add(this.coloniaTLabel);
-            this.informacionTutorGroupBox.Controls.Add(this.apellidoMTLabel);
-            this.informacionTutorGroupBox.Controls.Add(this.numeroCasaTLabel);
-            this.informacionTutorGroupBox.Controls.Add(this.apellidoPT);
-            this.informacionTutorGroupBox.Controls.Add(this.calleTLabel);
-            this.informacionTutorGroupBox.Controls.Add(this.apellidoMT);
-            resources.ApplyResources(this.informacionTutorGroupBox, "informacionTutorGroupBox");
-            this.informacionTutorGroupBox.Name = "informacionTutorGroupBox";
-            this.informacionTutorGroupBox.TabStop = false;
-            // 
-            // seleccionarNombreLabel
-            // 
-            resources.ApplyResources(this.seleccionarNombreLabel, "seleccionarNombreLabel");
-            this.seleccionarNombreLabel.Name = "seleccionarNombreLabel";
-            // 
-            // seleccionarNombreComboBox
-            // 
-            this.seleccionarNombreComboBox.FormattingEnabled = true;
-            resources.ApplyResources(this.seleccionarNombreComboBox, "seleccionarNombreComboBox");
-            this.seleccionarNombreComboBox.Name = "seleccionarNombreComboBox";
-            // 
-            // realizarAltaButton
-            // 
-            resources.ApplyResources(this.realizarAltaButton, "realizarAltaButton");
-            this.realizarAltaButton.Name = "realizarAltaButton";
-            this.realizarAltaButton.UseVisualStyleBackColor = true;
-            this.realizarAltaButton.Click += new System.EventHandler(this.guardarButton_Click);
-            // 
-            // altaalumnoLabel
-            // 
-            resources.ApplyResources(this.altaalumnoLabel, "altaalumnoLabel");
-            this.altaalumnoLabel.Name = "altaalumnoLabel";
-            // 
-            // label3
-            // 
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.Name = "label3";
-            // 
-            // tipoIngLabel
-            // 
-            resources.ApplyResources(this.tipoIngLabel, "tipoIngLabel");
-            this.tipoIngLabel.Name = "tipoIngLabel";
-            // 
-            // informacionMedLabel
-            // 
-            resources.ApplyResources(this.informacionMedLabel, "informacionMedLabel");
-            this.informacionMedLabel.Name = "informacionMedLabel";
-            // 
-            // mostrarDiscapacidadLabel
-            // 
-            resources.ApplyResources(this.mostrarDiscapacidadLabel, "mostrarDiscapacidadLabel");
-            this.mostrarDiscapacidadLabel.Name = "mostrarDiscapacidadLabel";
-            // 
-            // mostrarEnfermedadesLabel
-            // 
-            resources.ApplyResources(this.mostrarEnfermedadesLabel, "mostrarEnfermedadesLabel");
-            this.mostrarEnfermedadesLabel.Name = "mostrarEnfermedadesLabel";
-            // 
-            // infoTutorLabel
-            // 
-            resources.ApplyResources(this.infoTutorLabel, "infoTutorLabel");
-            this.infoTutorLabel.Name = "infoTutorLabel";
-            // 
-            // limpiarFormato2Button
-            // 
-            this.limpiarFormato2Button.BackgroundImage = global::presentationLayer.Properties.Resources.limpiar;
-            resources.ApplyResources(this.limpiarFormato2Button, "limpiarFormato2Button");
-            this.limpiarFormato2Button.Name = "limpiarFormato2Button";
-            this.limpiarFormato2Button.UseVisualStyleBackColor = true;
-            this.limpiarFormato2Button.Click += new System.EventHandler(this.limpiarFormato2Button_Click);
-            // 
-            // agregarAlergiasButton
-            // 
-            resources.ApplyResources(this.agregarAlergiasButton, "agregarAlergiasButton");
-            this.agregarAlergiasButton.BackColor = System.Drawing.Color.Transparent;
-            this.agregarAlergiasButton.Image = global::presentationLayer.Properties.Resources.mas1;
-            this.agregarAlergiasButton.Name = "agregarAlergiasButton";
-            this.agregarAlergiasButton.UseVisualStyleBackColor = false;
-            this.agregarAlergiasButton.Click += new System.EventHandler(this.agregarAlergiasButton_Click);
-            // 
-            // agregarDiscapacidadButton
-            // 
-            resources.ApplyResources(this.agregarDiscapacidadButton, "agregarDiscapacidadButton");
-            this.agregarDiscapacidadButton.BackColor = System.Drawing.Color.Transparent;
-            this.agregarDiscapacidadButton.Image = global::presentationLayer.Properties.Resources.mas1;
-            this.agregarDiscapacidadButton.Name = "agregarDiscapacidadButton";
-            this.agregarDiscapacidadButton.UseVisualStyleBackColor = false;
-            this.agregarDiscapacidadButton.Click += new System.EventHandler(this.agregarDiscapacidadButton_Click);
-            // 
-            // limpiarFormato1Button
-            // 
-            resources.ApplyResources(this.limpiarFormato1Button, "limpiarFormato1Button");
-            this.limpiarFormato1Button.BackgroundImage = global::presentationLayer.Properties.Resources.limpiar;
-            this.limpiarFormato1Button.Name = "limpiarFormato1Button";
-            this.limpiarFormato1Button.UseVisualStyleBackColor = true;
-            this.limpiarFormato1Button.Click += new System.EventHandler(this.limpiarFormato1Button_Click);
             // 
             // limpiarFormato3Button
             // 
@@ -877,66 +677,130 @@ namespace presentationLayer
             this.eliminarEnfermedadButton.UseVisualStyleBackColor = true;
             this.eliminarEnfermedadButton.Click += new System.EventHandler(this.eliminarEnfermedadButton_Click);
             // 
-            // agregarEnfermedadesButton
+            // alergias
             // 
-            resources.ApplyResources(this.agregarEnfermedadesButton, "agregarEnfermedadesButton");
-            this.agregarEnfermedadesButton.BackColor = System.Drawing.Color.Transparent;
-            this.agregarEnfermedadesButton.Image = global::presentationLayer.Properties.Resources.mas1;
-            this.agregarEnfermedadesButton.Name = "agregarEnfermedadesButton";
-            this.agregarEnfermedadesButton.UseVisualStyleBackColor = false;
-            this.agregarEnfermedadesButton.Click += new System.EventHandler(this.agregarEnfermedadesButton_Click);
+            resources.ApplyResources(this.alergias, "alergias");
+            this.alergias.Name = "alergias";
             // 
-            // logo
+            // enfermedades
             // 
-            this.logo.Image = global::presentationLayer.Properties.Resources.log_fondo_blanco;
-            resources.ApplyResources(this.logo, "logo");
-            this.logo.Name = "logo";
-            this.logo.TabStop = false;
+            resources.ApplyResources(this.enfermedades, "enfermedades");
+            this.enfermedades.Name = "enfermedades";
+            // 
+            // discapacidad
+            // 
+            resources.ApplyResources(this.discapacidad, "discapacidad");
+            this.discapacidad.Name = "discapacidad";
+            // 
+            // regresarButton
+            // 
+            resources.ApplyResources(this.regresarButton, "regresarButton");
+            this.regresarButton.Name = "regresarButton";
+            this.regresarButton.UseVisualStyleBackColor = true;
+            this.regresarButton.Click += new System.EventHandler(this.regresarButton_Click);
+            // 
+            // informacionTutor
+            // 
+            this.informacionTutor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.informacionTutor.Controls.Add(this.infContactoLabel);
+            this.informacionTutor.Controls.Add(this.limpiarFormato2Button);
+            this.informacionTutor.Controls.Add(this.nombreTLabel);
+            this.informacionTutor.Controls.Add(this.direccionTLabel);
+            this.informacionTutor.Controls.Add(this.ocupacionLabel);
+            this.informacionTutor.Controls.Add(this.nombreT);
+            this.informacionTutor.Controls.Add(this.ocupacion);
+            this.informacionTutor.Controls.Add(this.telCasaTLabel);
+            this.informacionTutor.Controls.Add(this.telMovilTLabel);
+            this.informacionTutor.Controls.Add(this.label1);
+            this.informacionTutor.Controls.Add(this.telTrabajoTLabel);
+            this.informacionTutor.Controls.Add(this.telCasaT);
+            this.informacionTutor.Controls.Add(this.telMovilT);
+            this.informacionTutor.Controls.Add(this.telTrabajoT);
+            this.informacionTutor.Controls.Add(this.coloniaT);
+            this.informacionTutor.Controls.Add(this.numeroCasaT);
+            this.informacionTutor.Controls.Add(this.calleT);
+            this.informacionTutor.Controls.Add(this.apellidoPTLabel);
+            this.informacionTutor.Controls.Add(this.coloniaTLabel);
+            this.informacionTutor.Controls.Add(this.apellidoMTLabel);
+            this.informacionTutor.Controls.Add(this.numeroCasaTLabel);
+            this.informacionTutor.Controls.Add(this.apellidoPT);
+            this.informacionTutor.Controls.Add(this.calleTLabel);
+            this.informacionTutor.Controls.Add(this.apellidoMT);
+            resources.ApplyResources(this.informacionTutor, "informacionTutor");
+            this.informacionTutor.Name = "informacionTutor";
+            this.informacionTutor.TabStop = false;
+            // 
+            // infoTutorLabel
+            // 
+            resources.ApplyResources(this.infoTutorLabel, "infoTutorLabel");
+            this.infoTutorLabel.Name = "infoTutorLabel";
+            // 
+            // limpiarFormato2Button
+            // 
+            this.limpiarFormato2Button.BackgroundImage = global::presentationLayer.Properties.Resources.limpiar;
+            resources.ApplyResources(this.limpiarFormato2Button, "limpiarFormato2Button");
+            this.limpiarFormato2Button.Name = "limpiarFormato2Button";
+            this.limpiarFormato2Button.UseVisualStyleBackColor = true;
+            this.limpiarFormato2Button.Click += new System.EventHandler(this.limpiarFormato2Button_Click);
+            // 
+            // realizarAltaButton
+            // 
+            resources.ApplyResources(this.realizarAltaButton, "realizarAltaButton");
+            this.realizarAltaButton.Name = "realizarAltaButton";
+            this.realizarAltaButton.UseVisualStyleBackColor = true;
+            this.realizarAltaButton.Click += new System.EventHandler(this.guardarButton_Click);
+            // 
+            // altaalumnoLabel
+            // 
+            resources.ApplyResources(this.altaalumnoLabel, "altaalumnoLabel");
+            this.altaalumnoLabel.Name = "altaalumnoLabel";
+            // 
+            // infContactoLabel
+            // 
+            resources.ApplyResources(this.infContactoLabel, "infContactoLabel");
+            this.infContactoLabel.Name = "infContactoLabel";
+            // 
+            // tratamientoLabel
+            // 
+            resources.ApplyResources(this.tratamientoLabel, "tratamientoLabel");
+            this.tratamientoLabel.Name = "tratamientoLabel";
+            // 
+            // tratamiento
+            // 
+            resources.ApplyResources(this.tratamiento, "tratamiento");
+            this.tratamiento.Name = "tratamiento";
             // 
             // altaAlumno
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.seleccionarNombreLabel);
-            this.Controls.Add(this.seleccionarNombreComboBox);
+            this.Controls.Add(this.informacionMedLabel);
+            this.Controls.Add(this.logo);
+            this.Controls.Add(this.infoTutorLabel);
+            this.Controls.Add(this.infGeneralAlLabel);
             this.Controls.Add(this.altaalumnoLabel);
             this.Controls.Add(this.realizarAltaButton);
-            this.Controls.Add(this.informacionTutorGroupBox);
-            this.Controls.Add(this.documentacionGB);
+            this.Controls.Add(this.informacionTutor);
             this.Controls.Add(this.regresarButton);
-            this.Controls.Add(this.agregarAlergiasButton);
-            this.Controls.Add(this.agregarDiscapacidadButton);
             this.Controls.Add(this.informacionMedicaAlumnoGroupBox);
-            this.Controls.Add(this.agregarEnfermedadesButton);
-            this.Controls.Add(this.informacionEscolarGroupBox);
-            this.Controls.Add(this.informacionGeneralAlumnoGroupBox);
-            this.Controls.Add(this.mostrarDiscapacidadLabel);
-            this.Controls.Add(this.mostrarAlergiasLabel);
+            this.Controls.Add(this.informacionGeneralAlumno2);
+            this.Controls.Add(this.informacionGeneralAlumno);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.mostrarEnfermedadesLabel);
             this.Controls.Add(this.siguienteButton);
-            this.Controls.Add(this.otroAlumnoTutorGroupBox);
-            this.Controls.Add(this.documentacionAlumnoLabel);
             this.Name = "altaAlumno";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.altaAlumno_Load);
             this.tipoIngresoGroupBox.ResumeLayout(false);
             this.tipoIngresoGroupBox.PerformLayout();
-            this.otroAlumnoTutorGroupBox.ResumeLayout(false);
-            this.otroAlumnoTutorGroupBox.PerformLayout();
-            this.informacionGeneralAlumnoGroupBox.ResumeLayout(false);
-            this.informacionGeneralAlumnoGroupBox.PerformLayout();
-            this.informacionEscolarGroupBox.ResumeLayout(false);
-            this.informacionEscolarGroupBox.PerformLayout();
+            this.informacionGeneralAlumno.ResumeLayout(false);
+            this.informacionGeneralAlumno.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
+            this.informacionGeneralAlumno2.ResumeLayout(false);
+            this.informacionGeneralAlumno2.PerformLayout();
             this.informacionMedicaAlumnoGroupBox.ResumeLayout(false);
             this.informacionMedicaAlumnoGroupBox.PerformLayout();
-            this.documentacionGB.ResumeLayout(false);
-            this.documentacionGB.PerformLayout();
-            this.informacionTutorGroupBox.ResumeLayout(false);
-            this.informacionTutorGroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
+            this.informacionTutor.ResumeLayout(false);
+            this.informacionTutor.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -964,11 +828,11 @@ namespace presentationLayer
         private System.Windows.Forms.TextBox escuelaP;
         private System.Windows.Forms.TextBox canalizado;
         private System.Windows.Forms.TextBox cicloEsc;
-        private System.Windows.Forms.TextBox curpTextBox;
+        private System.Windows.Forms.TextBox curp;
         private System.Windows.Forms.TextBox añosCum;
         private System.Windows.Forms.DateTimePicker fechaNa;
         private System.Windows.Forms.Label nombreTLabel;
-        private System.Windows.Forms.Label domicilioTLabel;
+        private System.Windows.Forms.Label direccionTLabel;
         private System.Windows.Forms.Label ocupacionLabel;
         private System.Windows.Forms.TextBox nombreT;
         private System.Windows.Forms.TextBox ocupacion;
@@ -1003,57 +867,42 @@ namespace presentationLayer
         private System.Windows.Forms.TextBox numeroCasaT;
         private System.Windows.Forms.TextBox coloniaT;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.GroupBox otroAlumnoTutorGroupBox;
-        private System.Windows.Forms.RadioButton noOtroAlumnoMadreRadioButton;
-        private System.Windows.Forms.RadioButton siOtroAlumnoMadreRadioButton;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label servMedicoLabel;
         private System.Windows.Forms.Label grupoSanguineoLabel;
         private System.Windows.Forms.Label enfermedadesLabel;
         private System.Windows.Forms.Label alergiasLabel;
         private System.Windows.Forms.Label telefonoLabel;
-        private System.Windows.Forms.Label documentacionAlumnoLabel;
         private System.Windows.Forms.TextBox servMedico;
         private System.Windows.Forms.TextBox telefono;
         private System.Windows.Forms.TextBox grupoSanguineo;
-        private System.Windows.Forms.GroupBox informacionGeneralAlumnoGroupBox;
-        private System.Windows.Forms.GroupBox informacionEscolarGroupBox;
+        private System.Windows.Forms.GroupBox informacionGeneralAlumno;
+        private System.Windows.Forms.GroupBox informacionGeneralAlumno2;
         private System.Windows.Forms.GroupBox informacionMedicaAlumnoGroupBox;
         private System.Windows.Forms.Button regresarButton;
         private System.Windows.Forms.RichTextBox alergias;
         private System.Windows.Forms.RichTextBox enfermedades;
         private System.Windows.Forms.RichTextBox discapacidad;
-        private System.Windows.Forms.Label mostrarAlergiasLabel;
-        private System.Windows.Forms.GroupBox informacionTutorGroupBox;
-        private System.Windows.Forms.Label seleccionarNombreLabel;
-        private System.Windows.Forms.ComboBox seleccionarNombreComboBox;
+        private System.Windows.Forms.GroupBox informacionTutor;
         private System.Windows.Forms.Button realizarAltaButton;
-        private System.Windows.Forms.Button agregarAlergiasButton;
-        private System.Windows.Forms.Button agregarDiscapacidadButton;
-        private System.Windows.Forms.Button agregarEnfermedadesButton;
         private System.Windows.Forms.Button eliminarAlergiasButton;
         private System.Windows.Forms.Button eliminarDiscapacidadesButton;
         private System.Windows.Forms.Button eliminarEnfermedadButton;
         private System.Windows.Forms.Button limpiarFormato2Button;
         private System.Windows.Forms.Button limpiarFormato3Button;
         private System.Windows.Forms.Button limpiarFormato1Button;
-        private System.Windows.Forms.GroupBox documentacionGB;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.ComboBox alergiasCombobox;
         private System.Windows.Forms.ComboBox discapacidadesCombobox;
         private System.Windows.Forms.ComboBox enfermedadesCombobox;
         private System.Windows.Forms.Label altaalumnoLabel;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label infGeneralAlLabel;
         private System.Windows.Forms.Label tipoIngLabel;
         private System.Windows.Forms.Label informacionMedLabel;
-        private System.Windows.Forms.Label mostrarDiscapacidadLabel;
-        private System.Windows.Forms.Label mostrarEnfermedadesLabel;
         private System.Windows.Forms.Label infoTutorLabel;
         private System.Windows.Forms.PictureBox logo;
+        private System.Windows.Forms.Label infContactoLabel;
+        private System.Windows.Forms.Label tratamientoLabel;
+        private System.Windows.Forms.RichTextBox tratamiento;
     }
 }
 
