@@ -112,7 +112,7 @@ namespace presentationLayer
 
         public static void altasBotonesParaNavegar(Button siguiente, Button regresar, Button guardar)
         {
-            siguiente.Location = new Point(1400, 900);
+            siguiente.Location = new Point(450, 900);
             guardar.Location = new Point(1400, 900);
             regresar.Location = new Point(300, 900);
 
