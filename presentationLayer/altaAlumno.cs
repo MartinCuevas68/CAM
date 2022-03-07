@@ -22,7 +22,7 @@ namespace presentationLayer
             InitializeComponent();
             loaddata();
 
-            Martin.panelNavBar(altaAlumnoPanel);
+           // Martin.panelNavBar(altaAlumnoPanel);
 
 
             Martin.etiquetafuncionLabel(altaalumnoLabel);
@@ -37,47 +37,47 @@ namespace presentationLayer
             informacionTutorGroupBox.Visible = false;
             realizarAltaButton.Visible = false;
 
-            distanciaLabel = Claudia.altasNombre(nombreAlumnoLabel, apellidoPaternoAlumnoLabel, apellidoMaternoAlumnoLabel, nombreAlumnoTextBox, apellidoPaternoAlumnoTextBox, apellidoMaternoAlumnoTextBox, distanciaLabel);
+            distanciaLabel = Claudia.altasNombre(nombreAlLabel, apellidoPLabel, apellidoMLabel, nombreAl, apellidoP, apellidoM, distanciaLabel);
             distanciaTextBox = distanciaTextBox + 40;
 
-            distanciaLabel = Claudia.altasLabel(fechaNacimientoLabel, distanciaLabel);
-            distanciaTextBox = Claudia.altasDateTimePicker(fechaNacimientoDateTimePicker, distanciaTextBox);
+            distanciaLabel = Claudia.altasLabel(fechaNaLabel, distanciaLabel);
+            distanciaTextBox = Claudia.altasDateTimePicker(fechaNa, distanciaTextBox);
 
             //Lugar nacimiento Alumno
-            distanciaLabel = Claudia.altasLugarNacimiento(lugarNacimientoLabel, ciudadNacimientoAlumnoLabel, estadoNacimientoAlumnoLabel, ciudadNacimientoAlumnoTextBox, estadoNacimientoAlumnoTextBox, distanciaLabel);
+            distanciaLabel = Claudia.altasLugarNacimiento(lugarNaLabel, ciudadLabel, estadoLabel, ciudad, estado, distanciaLabel);
             distanciaTextBox = distanciaTextBox + 40;
 
             //Direccion Alumno
-            distanciaLabel = Claudia.altasDireccion(direccionAlumnoLabel, calleDireccionAlumnoLabel, numeroDireccionAlumnoLabel, coloniaDireccionAlumnoLabel, calleDireccionAlumnoTextBox, numeroDireccionAlumnoTextBox, coloniaDireccionAlumnoTextBox, distanciaLabel);
+            distanciaLabel = Claudia.altasDireccion(direccionAlumnoLabel, calleLabel, numeroCasaLabel, coloniaLabel, calle, numeroCasa, colonia, distanciaLabel);
             distanciaTextBox = distanciaTextBox + 40;
 
-            distanciaLabel = Claudia.altasLabel(telefonoAlumnoLabel, distanciaLabel);
-            distanciaTextBox = Claudia.altasTextBox(telefonoAlumnoTextBox, distanciaTextBox);
+            distanciaLabel = Claudia.altasLabel(telPersonalLabel, distanciaLabel);
+            distanciaTextBox = Claudia.altasTextBox(telPersonal, distanciaTextBox);
 
-            distanciaLabel = Claudia.altasLabel(escuelaProcedenciaLabel, distanciaLabel);
-            distanciaTextBox = Claudia.altasTextBox(escuelaProcedenciaTextBox, distanciaTextBox);
+            distanciaLabel = Claudia.altasLabel(escuelaPLabel, distanciaLabel);
+            distanciaTextBox = Claudia.altasTextBox(escuelaP, distanciaTextBox);
 
-            distanciaLabel = Claudia.altasLabel(canalizadoPorLabel, distanciaLabel);
-            distanciaTextBox = Claudia.altasTextBox(canalizadoPorTextBox, distanciaTextBox);
+            distanciaLabel = Claudia.altasLabel(canalizadoLabel, distanciaLabel);
+            distanciaTextBox = Claudia.altasTextBox(canalizado, distanciaTextBox);
 
 
-            Evelyn.altasInformacionMedicaAlumno(servicioMedicoAlumnoLabel, discapacidadLabel, enfermedaresAlumnoLabel, alergiasAlumnoLabel,
-                    telefonoContactoMedicoAlumnoLabel, grupoSanguineoAlumnoLabel, documentacionAlumnoLabel, mostrarDiscapacidadLabel,
-                    mostrarEnfermedadesLabel, mostrarAlergiasLabel, servicioMedicoTextBox, discapacidadesCombobox, enfermedadesCombobox, alergiasCombobox, telefonoContactoMedicoAlumnoTextBox, grupoSanguineoTextBox, documentacionGB, mostrarDiscapacidadRichTextBox,
-                    mostrarEnfermedadesRichTextBox, mostrarAlergiasRichTextBox, agregarAlergiasButton, agregarEnfermedadesButton, agregarDiscapacidadButton);
+            Evelyn.altasInformacionMedicaAlumno(servMedicoLabel, discapacidadLabel, enfermedadesLabel, alergiasLabel,
+                    telefonoLabel, grupoSanguineoLabel, documentacionAlumnoLabel, mostrarDiscapacidadLabel,
+                    mostrarEnfermedadesLabel, mostrarAlergiasLabel, servMedico, discapacidadesCombobox, enfermedadesCombobox, alergiasCombobox, telefono, grupoSanguineo, documentacionGB, discapacidad,
+                    enfermedades, alergias, agregarAlergiasButton, agregarEnfermedadesButton, agregarDiscapacidadButton);
 
-            Claudia.altasInformacionEscolar(cicloEscolarLabel, curpLabel, añosCumplidosLabel, cicloEscolarTextBox, curpTextBox, añosCumplidosTextBox, tipoIngresoGroupBox, nuevoIngresoRadioButton, reingresoRadioButton);
+            Claudia.altasInformacionEscolar(cicloEscLabel, curpLabel, añosCumLabel, cicloEsc, curpTextBox, añosCum, tipoIngresoGroupBox, nuevoIngreso, reingreso);
             
             Evelyn.altasBotonesParaNavegar(siguienteButton, regresarButton, realizarAltaButton);
-            Evelyn.altasBotonesPanel(alumnosButton);
+            //Evelyn.altasBotonesPanel(alumnosButton);
 
             int distanciaInfTutor = 10;
             Claudia.altasInformacionTutorGroupBox(informacionTutorGroupBox);
             distanciaInfTutor = Claudia.altasTutorOtroAlumno(otroAlumnoTutorGroupBox, seleccionarNombreLabel, seleccionarNombreComboBox, distanciaInfTutor);
-            distanciaInfTutor = Claudia.altasNombreTutor(nombreTutorLabel, nombreTutorTextBox, apellidoPaternoTutorLabel, apellidoPaternoTutorTextBox, apellidoMaternoTutorLabel, apellidoMaternoTutorTextBox, distanciaInfTutor);
-            distanciaInfTutor = Claudia.altasDireccionTutor(domicilioTutorLabel, calleDireccionTutorLabel, calleDireccionTutorTextBox, numeroDireccionTutorLabel, numeroDireccionTutorTextBox, coloniaDireccionTutorLabel, coloniaDireccionTutorTextBox, distanciaInfTutor);
-            distanciaInfTutor = Claudia.altasOcupacionTutor(ocupacionTutorLabel, ocupacionTutorTextBox, distanciaInfTutor);
-            distanciaInfTutor = Claudia.altasTelefonosTutor(telefonosTutorLabel, telefonoCasaTutorLabel, telefonoCasaTutorTextBox, telefonoCelularTutorLabel, telefonoCelularTutorTextBox, telefonoTrabajoTutorLabel, telefonoTrabajoTutorTextBox, distanciaInfTutor);
+            distanciaInfTutor = Claudia.altasNombreTutor(nombreTLabel, nombreT, apellidoPTLabel, apellidoPT, apellidoMTLabel, apellidoMT, distanciaInfTutor);
+            distanciaInfTutor = Claudia.altasDireccionTutor(domicilioTLabel, calleTLabel, calleT, numeroCasaTLabel, numeroCasaT, coloniaTLabel, coloniaT, distanciaInfTutor);
+            distanciaInfTutor = Claudia.altasOcupacionTutor(ocupacionLabel, ocupacion, distanciaInfTutor);
+           // distanciaInfTutor = Claudia.altasTelefonosTutor(telCasaTLabel, telCasaT, telMovilTLabel, telMovilT, telTrabajoTLabel, telTrabajoT, distanciaInfTutor);
 
 
             Evelyn.eliminarBotones(eliminarEnfermedadButton, eliminarDiscapacidadesButton, eliminarAlergiasButton);
@@ -175,24 +175,24 @@ namespace presentationLayer
 
         private void guardarButton_Click(object sender, EventArgs e)
         {
-            if (!nombreAlumnoTextBox.Text.Equals("") && !apellidoPaternoAlumnoTextBox.Text.Equals("") && !apellidoMaternoAlumnoTextBox.Text.Equals(""))
+            if (!nombreAl.Text.Equals("") && !apellidoP.Text.Equals("") && !apellidoM.Text.Equals(""))
             {
                 MessageBox.Show("REGISTRO EXITOSO!");
-                businessLayer.Hueso.SetAlumno(cicloEscolarTextBox.Text,
-                                              nombreAlumnoTextBox.Text,
-                                              apellidoPaternoAlumnoTextBox.Text,
-                                              apellidoMaternoAlumnoTextBox.Text,
-                                              fechaNacimientoDateTimePicker.Value,
-                                              añosCumplidosTextBox.Text,
+                businessLayer.Hueso.SetAlumno(cicloEsc.Text,
+                                              nombreAl.Text,
+                                              apellidoP.Text,
+                                              apellidoM.Text,
+                                              fechaNa.Value,
+                                              añosCum.Text,
                                               curpTextBox.Text,
-                                              estadoNacimientoAlumnoTextBox.Text,
-                                              ciudadNacimientoAlumnoTextBox.Text,
-                                              coloniaDireccionAlumnoTextBox.Text,
-                                              calleDireccionAlumnoTextBox.Text,
-                                              numeroDireccionAlumnoTextBox.Text,
-                                              telefonoAlumnoTextBox.Text,
-                                              escuelaProcedenciaTextBox.Text,
-                                              canalizadoPorTextBox.Text
+                                              estado.Text,
+                                              ciudad.Text,
+                                              colonia.Text,
+                                              calle.Text,
+                                              numeroCasa.Text,
+                                              telPersonal.Text,
+                                              escuelaP.Text,
+                                              canalizado.Text
                                               );
 
                 this.Hide();
@@ -217,7 +217,7 @@ namespace presentationLayer
         private void agregarEnfermedadesButton_Click(object sender, EventArgs e)
         {
             string informacion = this.enfermedadesCombobox.GetItemText(this.enfermedadesCombobox.SelectedItem);
-            mostrarEnfermedadesRichTextBox.Text = mostrarEnfermedadesRichTextBox.Text+ informacion + "\n";
+            enfermedades.Text = enfermedades.Text+ informacion + "\n";
 
         }
 
@@ -225,7 +225,7 @@ namespace presentationLayer
         private void agregarDiscapacidadButton_Click(object sender, EventArgs e)
         {
             string informacion = this.discapacidadesCombobox.GetItemText(this.discapacidadesCombobox.SelectedItem);
-            mostrarDiscapacidadRichTextBox.Text = mostrarDiscapacidadRichTextBox.Text + informacion + "\n";
+            discapacidad.Text = discapacidad.Text + informacion + "\n";
 
         }
 
@@ -234,30 +234,30 @@ namespace presentationLayer
         {
 
             string informacion = this.alergiasCombobox.GetItemText(this.alergiasCombobox.SelectedItem);
-            mostrarAlergiasRichTextBox.Text = mostrarAlergiasRichTextBox.Text + informacion + "\n";
+            alergias.Text = alergias.Text + informacion + "\n";
 
         }
 
         //LIMPIAR INFORMACIÓN GENERAL ALUMNO
         private void limpiarFormato1Button_Click(object sender, EventArgs e)
         {
-            nombreAlumnoTextBox.Clear();
-            apellidoPaternoAlumnoTextBox.Clear();
-            apellidoMaternoAlumnoTextBox.Clear();
-            fechaNacimientoDateTimePicker.ResetText();
-            ciudadNacimientoAlumnoTextBox.Clear();
-            estadoNacimientoAlumnoTextBox.Clear();
-            calleDireccionAlumnoTextBox.Clear();
-            numeroDireccionAlumnoTextBox.Clear();
-            coloniaDireccionAlumnoTextBox.Clear();
-            telefonoAlumnoTextBox.Clear();
-            escuelaProcedenciaTextBox.Clear();
-            canalizadoPorTextBox.Clear();
-            cicloEscolarTextBox.Clear();
+            nombreAl.Clear();
+            apellidoP.Clear();
+            apellidoM.Clear();
+            fechaNa.ResetText();
+            ciudad.Clear();
+            estado.Clear();
+            calle.Clear();
+            numeroCasa.Clear();
+            colonia.Clear();
+            telPersonal.Clear();
+            escuelaP.Clear();
+            canalizado.Clear();
+            cicloEsc.Clear();
             curpTextBox.Clear();
-            añosCumplidosTextBox.Clear();
-            nuevoIngresoRadioButton.Checked = false;
-            reingresoRadioButton.Checked = false;
+            añosCum.Clear();
+            nuevoIngreso.Checked = false;
+            reingreso.Checked = false;
 
         }
 
@@ -267,44 +267,44 @@ namespace presentationLayer
             siOtroAlumnoMadreRadioButton.Checked = false;
             noOtroAlumnoMadreRadioButton.Checked = false;
             seleccionarNombreComboBox.ResetText();
-            nombreTutorTextBox.Clear();
-            apellidoPaternoTutorTextBox.Clear();
-            apellidoMaternoTutorTextBox.Clear();
-            calleDireccionTutorTextBox.Clear();
-            numeroDireccionTutorTextBox.Clear();
-            coloniaDireccionTutorTextBox.Clear();
-            ocupacionTutorTextBox.Clear();
-            telefonoCasaTutorTextBox.Clear();
-            telefonoCelularTutorTextBox.Clear();
-            telefonoTrabajoTutorTextBox.Clear();
+            nombreT.Clear();
+            apellidoPT.Clear();
+            apellidoMT.Clear();
+            calleT.Clear();
+            numeroCasaT.Clear();
+            coloniaT.Clear();
+            ocupacion.Clear();
+            telCasaT.Clear();
+            telMovilT.Clear();
+            telTrabajoT.Clear();
         }
 
         //LIMPIAR INFORMACIÓN MEDICA ALUMNO
         private void limpiarFormato3Button_Click(object sender, EventArgs e)
         {
-            servicioMedicoTextBox.Clear();
+            servMedico.Clear();
         
-            telefonoContactoMedicoAlumnoTextBox.Clear();
-            grupoSanguineoTextBox.Clear();
+            telefono.Clear();
+            grupoSanguineo.Clear();
             //documentacionListBox.SetItemChecked = false; *CLAUDIA CAMBIARÁ ESTO POR UN CONJUNTO DE CHECKBUTTONS*
         }
 
         //LIMPIAR DISCAPACIDADES
         private void eliminarDiscapacidadesButton_Click(object sender, EventArgs e)
         {
-            mostrarDiscapacidadRichTextBox.Clear();
+            discapacidad.Clear();
         }
 
         //LIMPIAR ENFERMEDADES
         private void eliminarEnfermedadButton_Click(object sender, EventArgs e)
         {
-            mostrarEnfermedadesRichTextBox.Clear();
+            enfermedades.Clear();
         }
 
         //LIMPIAR ALERGIAS
         private void eliminarAlergiasButton_Click(object sender, EventArgs e)
         {
-            mostrarAlergiasRichTextBox.Clear();
+            alergias.Clear();
         }
 
         //FILLCOMBOBOX METODO PARA ALERGIAS, ENFERMEDADES Y DISCAPACIDADES
@@ -326,19 +326,5 @@ namespace presentationLayer
 
         }
 
-        private void informacionGeneralAlumnoGroupBox_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void alergiasCombobox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void apellidoMaternoAlumnoLabel_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

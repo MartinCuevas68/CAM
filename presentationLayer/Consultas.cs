@@ -77,10 +77,7 @@ namespace presentationLayer
             this.Hide();
             altaAlumno altas = new altaAlumno();
             altas.Show();
-            
-
-
-
+           
         }
 
         private void modificarButton_Click_1(object sender, EventArgs e)
@@ -179,6 +176,13 @@ namespace presentationLayer
             imprimirF.Show();
         }
 
-      
+        private void buscarButton_Click(object sender, EventArgs e)
+        {
+            Consultas consultas = new Consultas();
+            consultas.Close();
+            this.Hide();
+            altaAlumno altas = new altaAlumno();
+            altas.Show();
+        }
     }
 }

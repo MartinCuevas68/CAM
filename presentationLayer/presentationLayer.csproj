@@ -165,19 +165,7 @@
     <None Include="Resources\boton.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\logocam.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\agregar-usuario %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\quitar-usuario %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\editar1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\searchBox.png" />
+    <None Include="Resources\log-fondo-blanco.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

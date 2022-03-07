@@ -6,6 +6,7 @@ namespace presentationLayer
 {
     class Evelyn
     {
+
         public static void informacionMedicaGroupBox(GroupBox groupBox)
         {
             groupBox.Location = new Point(300, 250);

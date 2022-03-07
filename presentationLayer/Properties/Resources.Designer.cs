@@ -73,16 +73,6 @@ namespace presentationLayer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap agregar_usuario__1_ {
-            get {
-                object obj = ResourceManager.GetObject("agregar-usuario (1)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap boteBasura {
             get {
                 object obj = ResourceManager.GetObject("boteBasura", resourceCulture);
@@ -116,16 +106,6 @@ namespace presentationLayer.Properties {
         internal static System.Drawing.Bitmap editar {
             get {
                 object obj = ResourceManager.GetObject("editar", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap editar1 {
-            get {
-                object obj = ResourceManager.GetObject("editar1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -173,9 +153,9 @@ namespace presentationLayer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap logocam {
+        internal static System.Drawing.Bitmap log_fondo_blanco {
             get {
-                object obj = ResourceManager.GetObject("logocam", resourceCulture);
+                object obj = ResourceManager.GetObject("log-fondo-blanco", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -196,26 +176,6 @@ namespace presentationLayer.Properties {
         internal static System.Drawing.Bitmap quitar_usuario {
             get {
                 object obj = ResourceManager.GetObject("quitar-usuario", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap quitar_usuario__1_ {
-            get {
-                object obj = ResourceManager.GetObject("quitar-usuario (1)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap searchBox {
-            get {
-                object obj = ResourceManager.GetObject("searchBox", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
