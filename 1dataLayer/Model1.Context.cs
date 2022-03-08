@@ -426,5 +426,33 @@ namespace _1dataLayer
         {
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<decimal>>("sp_regresarid");
         }
+    
+        public virtual ObjectResult<SP_ListaAlumnos_Result> SP_ListaAlumnos()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_ListaAlumnos_Result>("SP_ListaAlumnos");
+        }
+    
+        public virtual ObjectResult<Nullable<decimal>> sp_regresaridcartilla()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<decimal>>("sp_regresaridcartilla");
+        }
+    
+        public virtual ObjectResult<Nullable<decimal>> sp_regresaridtutor()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<decimal>>("sp_regresaridtutor");
+        }
+    
+        public virtual int sp_altaalergias(Nullable<int> id, string alergia)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("id", id) :
+                new ObjectParameter("id", typeof(int));
+    
+            var alergiaParameter = alergia != null ?
+                new ObjectParameter("alergia", alergia) :
+                new ObjectParameter("alergia", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("sp_altaalergias", idParameter, alergiaParameter);
+        }
     }
 }

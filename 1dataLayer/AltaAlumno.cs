@@ -9,37 +9,103 @@ namespace _1dataLayer
 {
     class AltaAlumno
     {
-        static ObjectResult<decimal?> e;
-        static ObjectResult<SP_FichaTecnicaAlumno_Result> i;
-        public static void Main(string[] args)
+        //Metodo para dar de alta alergias
+        public void Altaalergias(alergiasDTO alergia)
         {
-            DateTime thisdate;
-            int id = 0;
-            thisdate = DateTime.Today;
-            
             using(BDCAMEntities1 db = new BDCAMEntities1())
             {
-               //db.SP_AltaAlumno(thisdate, "2022", "Pedro", "Parker", "Parker", thisdate, "20", "abc", "sonora", "hermosillo", "scally", "juarez", "23", "234", "Andes", "de todo", "julio");
+                db.sp_altaalergias(alergia.id_cartilla_medica, alergia.alergia);
+            }
+        }
+
+        public void Altaenfermedades(enfermedadesDTO enfermedad)
+        {
+            using(BDCAMEntities1 db = new BDCAMEntities1())
+            {
+                db.sp_altaenfermedades(enfermedad.id_cartilla_medica, enfermedad.enfermedad);
+            }
+        }
+
+        public void Altadiscapacidades(discapacidadesDTO discapacidad)
+        {
+            using(BDCAMEntities1 db = new BDCAMEntities1())
+            {
+                db.sp_altadiscapacidades(discapacidad.id_cartilla_medica, discapacidad.discapacidades);
+            }
+        }
+        public int Altaalumno(alumnoDTO alumno)
+        {
+            ObjectResult<decimal?> e;
+            int id = 0;
+            using(BDCAMEntities1 db = new BDCAMEntities1())
+            {
+               db.SP_AltaAlumno(alumno.fecha_registro,alumno.ciclo_escolar, alumno.nombre, alumno.apellido_paterno,alumno.apellido_materno,alumno.fecha_nacimiento,alumno.edad_alumno,alumno.CURP_alumno,alumno.estado_nacimiento_alumno, alumno.ciudad_nacimiento_alumno,alumno.colonia_alumno,alumno.calle_alumno,alumno.numero_alumno,alumno.telefono_personal_alumno,alumno.escuela_procedencia_alumno,alumno.documentacion_alumno,alumno.atendido_por);
                e = db.sp_regresarid();
-               
             foreach(decimal? a in e)
                 {
-                    Console.WriteLine("entre");
-                    Console.WriteLine(a);
                     id = Convert.ToInt32(a);
                 }
-               Console.WriteLine(id);
-                i = db.SP_FichaTecnicaAlumno(id);
-                foreach (SP_FichaTecnicaAlumno_Result result in i)
-                {
-                    Console.WriteLine("{0}", result.nombre);
-
-                    Console.WriteLine("{0}", result.telefono_personal_alumno);
-
-                }
-                Console.ReadKey();
             }
-           
+            return id;
         }
+
+        public void Altaalumnocartilla(int idalumno, int idcartilla)
+        {
+            using(BDCAMEntities1 db = new BDCAMEntities1())
+            {
+                db.sp_altaalumnocartilla(idalumno, idcartilla);
+            }
+        }
+
+        public int Altatutor(tutorDTO tutor)
+        {
+            ObjectResult<decimal?> e;
+            int id = 0;
+            using(BDCAMEntities1 db = new BDCAMEntities1())
+            {
+                db.sp_altatutor(tutor.nombre, tutor.apellido_paterno, tutor.apellido_materno, tutor.colonia_tutor, tutor.calle_tutor, tutor.numero_tutor, tutor.ocupacion_tutor, tutor.colonia_trabajo_tutor, tutor.calle_trabajo_tutor, tutor.numero_trabajo_tutor);
+                e = db.sp_regresaridtutor();
+                foreach (decimal? a in e)
+                {
+                    id = Convert.ToInt32(a);
+                }
+            }
+            return id;
+        }
+
+        public int Altacartilla(tabla_medicaDTO tabla)
+        {
+            ObjectResult<decimal?> e;
+            int id = 0;
+
+            using (BDCAMEntities1 db = new BDCAMEntities1()) {
+                db.sp_altacartilla(tabla.servicio_medico, tabla.grupo_sanguineo, tabla.telefono_contacto, tabla.peso, tabla.genero, tabla.color_textura_piel, tabla.estatura);
+                e = db.sp_regresaridcartilla();
+            foreach (decimal? a in e)
+                {
+                    id = Convert.ToInt32(a);
+                }
+            }
+            return id;
+        }
+
+        public void Altatelefonotutor(telefono_tutorDTO telefono)
+        {
+           using(BDCAMEntities1 db = new BDCAMEntities1())
+            {
+                db.sp_telefonotutores(telefono.id_tutor, telefono.id_telefono, telefono.telefono);
+            }
+        }
+
+
+        public void Altaalumnotutor(int idalumno,int idtutor)
+        {
+            using(BDCAMEntities1 db = new BDCAMEntities1())
+            {
+                db.sp_tutoralumno(idalumno, idtutor);
+            }
+        }
+
+      
     }
 }

@@ -485,6 +485,10 @@ warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a prima
           </ReferentialConstraint>
         </Association>
         <Function Name="fn_diagramobjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int" />
+        <Function Name="sp_altaalergias" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="int" Mode="In" />
+          <Parameter Name="alergia" Type="varchar" Mode="In" />
+        </Function>
         <Function Name="SP_AltaAlumno" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="fecha_registro" Type="date" Mode="In" />
           <Parameter Name="cicloescolar" Type="varchar" Mode="In" />
@@ -573,6 +577,7 @@ warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a prima
         <Function Name="SP_ListaAlergia" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="id_alumno" Type="int" Mode="In" />
         </Function>
+        <Function Name="SP_ListaAlumnos" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <Function Name="SP_ListaDiscapacidad" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="id_alumno" Type="int" Mode="In" />
         </Function>
@@ -580,6 +585,8 @@ warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a prima
           <Parameter Name="id_alumno" Type="int" Mode="In" />
         </Function>
         <Function Name="sp_regresarid" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="sp_regresaridcartilla" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="sp_regresaridtutor" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
           <Parameter Name="owner_id" Type="int" Mode="In" />
@@ -1263,6 +1270,13 @@ warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a prima
           <FunctionImport Name="sp_upgraddiagrams" />
           <FunctionImport Name="sp_regresarid" ReturnType="Collection(Decimal)" >
           </FunctionImport>
+          <FunctionImport Name="SP_ListaAlumnos" ReturnType="Collection(BDCAMModel.SP_ListaAlumnos_Result)" />
+          <FunctionImport Name="sp_regresaridcartilla" ReturnType="Collection(Decimal)" />
+          <FunctionImport Name="sp_regresaridtutor" ReturnType="Collection(Decimal)" />
+          <FunctionImport Name="sp_altaalergias">
+            <Parameter Name="id" Mode="In" Type="Int32" />
+            <Parameter Name="alergia" Mode="In" Type="String" />
+          </FunctionImport>
         </EntityContainer>
         <ComplexType Name="SP_FichaTecnicaAlumno_Result">
           <Property Type="String" Name="nombre" Nullable="false" MaxLength="30" />
@@ -1308,6 +1322,11 @@ warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a prima
           <Property Type="Int32" Name="ID" Nullable="false" />
           <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
           <Property Type="Int32" Name="OwnerID" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SP_ListaAlumnos_Result">
+          <Property Type="Int32" Name="id_alumno" Nullable="false" />
+          <Property Type="String" Name="nombre" Nullable="false" MaxLength="30" />
+          <Property Type="String" Name="telefono_contacto" Nullable="false" MaxLength="30" />
         </ComplexType>
       </Schema>
     </edmx:ConceptualModels>
@@ -1624,6 +1643,18 @@ warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a prima
           <FunctionImportMapping FunctionImportName="sp_tutoralumno" FunctionName="BDCAMModel.Store.sp_tutoralumno" />
           <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="BDCAMModel.Store.sp_upgraddiagrams" />
           <FunctionImportMapping FunctionImportName="sp_regresarid" FunctionName="BDCAMModel.Store.sp_regresarid" />
+          <FunctionImportMapping FunctionImportName="SP_ListaAlumnos" FunctionName="BDCAMModel.Store.SP_ListaAlumnos">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="BDCAMModel.SP_ListaAlumnos_Result">
+                <ScalarProperty Name="id_alumno" ColumnName="id_alumno" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="telefono_contacto" ColumnName="telefono_contacto" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_regresaridcartilla" FunctionName="BDCAMModel.Store.sp_regresaridcartilla" />
+          <FunctionImportMapping FunctionImportName="sp_regresaridtutor" FunctionName="BDCAMModel.Store.sp_regresaridtutor" />
+          <FunctionImportMapping FunctionImportName="sp_altaalergias" FunctionName="BDCAMModel.Store.sp_altaalergias" />
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

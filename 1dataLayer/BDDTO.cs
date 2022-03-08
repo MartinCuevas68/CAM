@@ -44,9 +44,9 @@ namespace _1dataLayer
         public string grupo_sanguineo { get; set; }
         public string telefono_contacto { get; set; }
         public string genero { get; set; }
-        public int peso { get; set; }
+        public string peso { get; set; }
         public string color_textura_piel { get; set; }
-        public double estatura { get; set; }
+        public string estatura { get; set; }
     }
 
     public class enfermedadesDTO
@@ -89,7 +89,7 @@ namespace _1dataLayer
     {
         public int id_tutor { get; }
         public int id_telefono { get; }
-        public int telefono { get; set; }
+        public String telefono { get; set; }
     }
 
     public class identidicadores_telefonosDTO
