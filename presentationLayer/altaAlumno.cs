@@ -39,8 +39,8 @@ namespace presentationLayer
                 alergiasLabel, alergias,tratamientoLabel,tratamiento,discapacidadesCombobox,enfermedadesCombobox,alergiasCombobox,eliminarDiscapacidadesButton,
                 eliminarEnfermedadButton,eliminarAlergiasButton);
 
-            informacionGeneralAlumno.Visible = false;
-            informacionGeneralAlumno2.Visible = true;
+            informacionGeneralAlumno.Visible = true;
+            informacionGeneralAlumno2.Visible = false;
             informacionTutor.Visible = false;
             informacionMedicaAlumnoGroupBox.Visible = false;
 
@@ -49,8 +49,16 @@ namespace presentationLayer
             infoTutorLabel.Visible = false;
             informacionMedLabel.Visible = false;
 
+            regresarMenuButton.Visible = true;
+            regresarButton.Visible = false;
+            siguiente1Button.Visible = true;
+            siguiente2Button.Visible = false;
+            siguiente3Button.Visible = false;
+            realizarAltaButton.Visible = false;
 
-            Evelyn.altasBotonesParaNavegar(siguienteButton, regresarButton, realizarAltaButton);
+
+
+            altasBotonesParaNavegar(siguiente1Button, siguiente2Button, siguiente3Button, regresarButton, realizarAltaButton, regresarMenuButton);
             
         }
 
@@ -236,87 +244,6 @@ namespace presentationLayer
             limpiarFormato3Button.Hide();
         }
 
-        private void siguienteButton_Click_1(object sender, EventArgs e)
-        {
-            if (progreso == 0)
-            {
-                informacionGeneralAlumno.Visible = true;
-                informacionGeneralAlumno2.Visible = false;
-                informacionTutor.Visible = false;
-                informacionMedicaAlumnoGroupBox.Visible = false;
-
-                altaalumnoLabel.Visible = true;
-                infGeneralAlLabel.Visible = true;
-                infoTutorLabel.Visible = false;
-
-                //progreso = 1;
-            }
-            if (progreso == 1)
-            {
-                informacionGeneralAlumno.Visible = false;
-                informacionGeneralAlumno2.Visible = true;
-                informacionTutor.Visible = false;
-                informacionMedicaAlumnoGroupBox.Visible = false;
-
-                altaalumnoLabel.Visible = true;
-                infGeneralAlLabel.Visible = true;
-                infoTutorLabel.Visible = false;
-
-                //progreso = 2;
-            }
-            if (progreso == 2)
-            {
-                informacionGeneralAlumno.Visible = false;
-                informacionGeneralAlumno2.Visible = false;
-                informacionTutor.Visible = true;
-                informacionMedicaAlumnoGroupBox.Visible = false;
-
-                altaalumnoLabel.Visible = true;
-                infGeneralAlLabel.Visible = false;
-                infoTutorLabel.Visible = true;
-
-               // progreso = 3;
-            }else{
-                informacionGeneralAlumno.Visible = false;
-                informacionGeneralAlumno2.Visible = false;
-                informacionTutor.Visible = false;
-                informacionMedicaAlumnoGroupBox.Visible = true;
-
-                altaalumnoLabel.Visible = true;
-                infGeneralAlLabel.Visible = false;
-                infoTutorLabel.Visible = false;
-
-                progreso = 4;
-            }
-
-        }
-
-
-            private void regresarButton_Click(object sender, EventArgs e)
-        {
-            if (progreso == 3)
-            {
-                informacionMedicaAlumnoGroupBox.Visible = false;
-                informacionGeneralAlumno.Visible = true;
-                informacionGeneralAlumno2.Visible = true;
-                informacionTutor.Visible = false;
-                regresarButton.Visible = false;
-                realizarAltaButton.Visible = false;
-                siguienteButton.Visible = true;
-                progreso = 2;
-            }
-
-            if (progreso == 4)
-            {
-                informacionMedicaAlumnoGroupBox.Visible = false;
-                informacionGeneralAlumno.Visible = false;
-                informacionGeneralAlumno2.Visible = false;
-                informacionTutor.Visible = true;
-                realizarAltaButton.Visible = false;
-                siguienteButton.Visible = true;
-                progreso = 3;
-            }
-        }
 
         private void guardarButton_Click(object sender, EventArgs e)
         {
@@ -350,6 +277,33 @@ namespace presentationLayer
                 MessageBox.Show("NO PUEDES CREAR UN REGISTRO SIN NOMBRE COMPLETO DEL ALUMNO!");
             }
         }
+
+        public void altasBotonesParaNavegar(Button siguiente1, Button siguiente2, Button siguiente3, Button regresar, Button guardar, Button regresarMenu)
+        {
+            int x = this.ClientSize.Width, y = this.ClientSize.Height;
+
+            siguiente1.Location = new Point((int)(x * 0.9), (int)(y * 0.54));
+            siguiente2.Location = new Point((int)(x * 0.9), (int)(y * 0.54));
+            siguiente3.Location = new Point((int)(x * 0.9), (int)(y * 0.54));
+            regresar.Location = new Point((int)(x * 0.35), (int)(y * 0.54));
+            regresarMenu.Location = new Point((int)(x * 0.35), (int)(y * 0.54));
+            guardar.Location = new Point((int)(x * 0.9), (int)(y * 0.54));
+
+            siguiente1.Size = new Size(180, 75);
+            siguiente2.Size = new Size(180, 75);
+            siguiente3.Size = new Size(180, 75);
+            regresar.Size = new Size(180, 75);
+            regresarMenu.Size = new Size(180, 75);
+            guardar.Size = new Size(180, 75);
+
+            siguiente1.Font = new Font("Gadugi", 14);
+            siguiente2.Font = new Font("Gadugi", 14);
+            siguiente3.Font = new Font("Gadugi", 14);
+            regresarMenu.Font = new Font("Gadugi", 14);
+            regresar.Font = new Font("Gadugi", 14);
+            guardar.Font = new Font("Gadugi", 14);
+        }
+
 
         private void alumnosButton_Click(object sender, EventArgs e)
         {
@@ -468,5 +422,57 @@ namespace presentationLayer
 
         }
 
+        private void siguienteButton1_Click(object sender, EventArgs e)
+        {
+            informacionGeneralAlumno.Visible = false;
+            informacionGeneralAlumno2.Visible = true;
+
+            regresarMenuButton.Visible = false;
+            regresarButton.Visible = true;
+            siguiente1Button.Visible = false;
+            siguiente2Button.Visible = true;
+        }
+
+        private void regresarButton_Click_1(object sender, EventArgs e)
+        {
+            if (informacionGeneralAlumno2.Visible == true) {
+                informacionGeneralAlumno.Visible = true;
+                informacionGeneralAlumno2.Visible = false;
+
+                regresarMenuButton.Visible = true;
+                regresarButton.Visible = false;
+                siguiente1Button.Visible = true;
+                siguiente2Button.Visible = false;
+            }
+            if (informacionTutor.Visible == true){
+                informacionGeneralAlumno2.Visible = true;
+                informacionTutor.Visible = false;
+
+                infGeneralAlLabel.Visible = true;
+                infoTutorLabel.Visible = false;
+
+                siguiente2Button.Visible = true;
+                siguiente3Button.Visible = false;
+            }
+        }
+
+        private void regresarMenuButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Consultas formConsulta = new Consultas();
+            formConsulta.Show();
+        }
+
+        private void siguiente2Button_Click(object sender, EventArgs e)
+        {
+            informacionGeneralAlumno2.Visible = false;
+            informacionTutor.Visible = true;
+
+            infGeneralAlLabel.Visible = false;
+            infoTutorLabel.Visible = true;
+
+            siguiente2Button.Visible = false;
+            siguiente3Button.Visible = true;
+        }
     }
 }

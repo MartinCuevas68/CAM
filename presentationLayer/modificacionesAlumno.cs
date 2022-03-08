@@ -21,7 +21,7 @@ namespace presentationLayer
             InitializeComponent();
             loaddata();
 
-            Martin.panelNavBar(modificacionAlumnoPanel);
+            /*Martin.panelNavBar(modificacionAlumnoPanel);
 
 
             Martin.etiquetafuncionLabel(tituloLabel);
@@ -67,7 +67,7 @@ namespace presentationLayer
 
             Claudia.altasInformacionEscolar(cicloEscolarLabel, curpLabel, añosCumplidosLabel, cicloEscolarTextBox, curpTextBox, añosCumplidosTextBox, tipoIngresoGroupBox, nuevoIngresoRadioButton, reingresoRadioButton);
 
-            Evelyn.altasBotonesParaNavegar(siguienteButton, regresarButton, finalizarModificacionButton);
+            //Evelyn.altasBotonesParaNavegar(siguienteButton, regresarButton, finalizarModificacionButton);
             Evelyn.altasBotonesPanel(alumnosButton);
 
             int distanciaInfTutor = 10;
@@ -82,7 +82,7 @@ namespace presentationLayer
             Evelyn.eliminarBotones(eliminarEnfermedadButton, eliminarDiscapacidadesButton, eliminarAlergiasButton);
             Claudia.limpiarFormatosBotones(limpiarFormato1Button, limpiarFormato2Button, limpiarFormato3Button);
 
-            Martin.nodificacion(idLabel, nombreLabel);
+            Martin.nodificacion(idLabel, nombreLabel);*/
 
         }
 
