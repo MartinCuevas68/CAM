@@ -110,21 +110,6 @@ namespace presentationLayer
             mostrarAlergiasTB.Size = new Size(300, 150);
         }
 
-        public static void altasBotonesParaNavegar(Button siguiente, Button regresar, Button guardar)
-        {
-            siguiente.Location = new Point(450, 900);
-            guardar.Location = new Point(1400, 900);
-            regresar.Location = new Point(300, 900);
-
-            siguiente.Size = new Size(100, 30);
-            regresar.Size = new Size(100, 30);
-            guardar.Size = new Size(135, 30);
-
-            siguiente.Font = new Font("Leelawadee UI", 12);
-            regresar.Font = new Font("Leelawadee UI", 12);
-            guardar.Font = new Font("Leelawadee UI", 12);
-        }
-
         public static void altasBotonesPanel(Button alumnos)
         {
             alumnos.Size = new Size(100, 75);

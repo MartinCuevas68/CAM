@@ -30,7 +30,6 @@ namespace presentationLayer
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(altaAlumno));
-            this.siguienteButton = new System.Windows.Forms.Button();
             this.nombreAlLabel = new System.Windows.Forms.Label();
             this.fechaNaLabel = new System.Windows.Forms.Label();
             this.lugarNaLabel = new System.Windows.Forms.Label();
@@ -44,8 +43,8 @@ namespace presentationLayer
             this.canalizadoLabel = new System.Windows.Forms.Label();
             this.reingreso = new System.Windows.Forms.RadioButton();
             this.tipoIngresoGroupBox = new System.Windows.Forms.GroupBox();
-            this.tipoIngLabel = new System.Windows.Forms.Label();
             this.nuevoIngreso = new System.Windows.Forms.RadioButton();
+            this.tipoIngLabel = new System.Windows.Forms.Label();
             this.nombreAl = new System.Windows.Forms.TextBox();
             this.telPersonal = new System.Windows.Forms.TextBox();
             this.escuelaP = new System.Windows.Forms.TextBox();
@@ -100,12 +99,13 @@ namespace presentationLayer
             this.telefono = new System.Windows.Forms.TextBox();
             this.grupoSanguineo = new System.Windows.Forms.TextBox();
             this.informacionGeneralAlumno = new System.Windows.Forms.GroupBox();
-            this.infGeneralAlLabel = new System.Windows.Forms.Label();
             this.limpiarFormato1Button = new System.Windows.Forms.Button();
+            this.infGeneralAlLabel = new System.Windows.Forms.Label();
             this.logo = new System.Windows.Forms.PictureBox();
             this.informacionGeneralAlumno2 = new System.Windows.Forms.GroupBox();
             this.informacionMedicaAlumnoGroupBox = new System.Windows.Forms.GroupBox();
-            this.informacionMedLabel = new System.Windows.Forms.Label();
+            this.tratamiento = new System.Windows.Forms.RichTextBox();
+            this.tratamientoLabel = new System.Windows.Forms.Label();
             this.alergiasCombobox = new System.Windows.Forms.ComboBox();
             this.discapacidadesCombobox = new System.Windows.Forms.ComboBox();
             this.enfermedadesCombobox = new System.Windows.Forms.ComboBox();
@@ -116,15 +116,18 @@ namespace presentationLayer
             this.alergias = new System.Windows.Forms.RichTextBox();
             this.enfermedades = new System.Windows.Forms.RichTextBox();
             this.discapacidad = new System.Windows.Forms.RichTextBox();
-            this.regresarButton = new System.Windows.Forms.Button();
+            this.informacionMedLabel = new System.Windows.Forms.Label();
             this.informacionTutor = new System.Windows.Forms.GroupBox();
-            this.infoTutorLabel = new System.Windows.Forms.Label();
-            this.limpiarFormato2Button = new System.Windows.Forms.Button();
-            this.realizarAltaButton = new System.Windows.Forms.Button();
-            this.altaalumnoLabel = new System.Windows.Forms.Label();
             this.infContactoLabel = new System.Windows.Forms.Label();
-            this.tratamientoLabel = new System.Windows.Forms.Label();
-            this.tratamiento = new System.Windows.Forms.RichTextBox();
+            this.limpiarFormato2Button = new System.Windows.Forms.Button();
+            this.infoTutorLabel = new System.Windows.Forms.Label();
+            this.altaalumnoLabel = new System.Windows.Forms.Label();
+            this.siguiente3Button = new presentationLayer.buttonSystem();
+            this.siguiente2Button = new presentationLayer.buttonSystem();
+            this.regresarMenuButton = new presentationLayer.buttonSystem();
+            this.regresarButton = new presentationLayer.buttonSystem();
+            this.siguiente1Button = new presentationLayer.buttonSystem();
+            this.realizarAltaButton = new presentationLayer.buttonSystem();
             this.tipoIngresoGroupBox.SuspendLayout();
             this.informacionGeneralAlumno.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
@@ -132,13 +135,6 @@ namespace presentationLayer
             this.informacionMedicaAlumnoGroupBox.SuspendLayout();
             this.informacionTutor.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // siguienteButton
-            // 
-            resources.ApplyResources(this.siguienteButton, "siguienteButton");
-            this.siguienteButton.Name = "siguienteButton";
-            this.siguienteButton.UseVisualStyleBackColor = true;
-            this.siguienteButton.Click += new System.EventHandler(this.siguienteButton_Click_1);
             // 
             // nombreAlLabel
             // 
@@ -210,17 +206,17 @@ namespace presentationLayer
             this.tipoIngresoGroupBox.Name = "tipoIngresoGroupBox";
             this.tipoIngresoGroupBox.TabStop = false;
             // 
-            // tipoIngLabel
-            // 
-            resources.ApplyResources(this.tipoIngLabel, "tipoIngLabel");
-            this.tipoIngLabel.Name = "tipoIngLabel";
-            // 
             // nuevoIngreso
             // 
             resources.ApplyResources(this.nuevoIngreso, "nuevoIngreso");
             this.nuevoIngreso.Name = "nuevoIngreso";
             this.nuevoIngreso.TabStop = true;
             this.nuevoIngreso.UseVisualStyleBackColor = true;
+            // 
+            // tipoIngLabel
+            // 
+            resources.ApplyResources(this.tipoIngLabel, "tipoIngLabel");
+            this.tipoIngLabel.Name = "tipoIngLabel";
             // 
             // nombreAl
             // 
@@ -549,11 +545,6 @@ namespace presentationLayer
             this.informacionGeneralAlumno.Name = "informacionGeneralAlumno";
             this.informacionGeneralAlumno.TabStop = false;
             // 
-            // infGeneralAlLabel
-            // 
-            resources.ApplyResources(this.infGeneralAlLabel, "infGeneralAlLabel");
-            this.infGeneralAlLabel.Name = "infGeneralAlLabel";
-            // 
             // limpiarFormato1Button
             // 
             resources.ApplyResources(this.limpiarFormato1Button, "limpiarFormato1Button");
@@ -561,6 +552,11 @@ namespace presentationLayer
             this.limpiarFormato1Button.Name = "limpiarFormato1Button";
             this.limpiarFormato1Button.UseVisualStyleBackColor = true;
             this.limpiarFormato1Button.Click += new System.EventHandler(this.limpiarFormato1Button_Click);
+            // 
+            // infGeneralAlLabel
+            // 
+            resources.ApplyResources(this.infGeneralAlLabel, "infGeneralAlLabel");
+            this.infGeneralAlLabel.Name = "infGeneralAlLabel";
             // 
             // logo
             // 
@@ -614,10 +610,15 @@ namespace presentationLayer
             this.informacionMedicaAlumnoGroupBox.Name = "informacionMedicaAlumnoGroupBox";
             this.informacionMedicaAlumnoGroupBox.TabStop = false;
             // 
-            // informacionMedLabel
+            // tratamiento
             // 
-            resources.ApplyResources(this.informacionMedLabel, "informacionMedLabel");
-            this.informacionMedLabel.Name = "informacionMedLabel";
+            resources.ApplyResources(this.tratamiento, "tratamiento");
+            this.tratamiento.Name = "tratamiento";
+            // 
+            // tratamientoLabel
+            // 
+            resources.ApplyResources(this.tratamientoLabel, "tratamientoLabel");
+            this.tratamientoLabel.Name = "tratamientoLabel";
             // 
             // alergiasCombobox
             // 
@@ -692,12 +693,10 @@ namespace presentationLayer
             resources.ApplyResources(this.discapacidad, "discapacidad");
             this.discapacidad.Name = "discapacidad";
             // 
-            // regresarButton
+            // informacionMedLabel
             // 
-            resources.ApplyResources(this.regresarButton, "regresarButton");
-            this.regresarButton.Name = "regresarButton";
-            this.regresarButton.UseVisualStyleBackColor = true;
-            this.regresarButton.Click += new System.EventHandler(this.regresarButton_Click);
+            resources.ApplyResources(this.informacionMedLabel, "informacionMedLabel");
+            this.informacionMedLabel.Name = "informacionMedLabel";
             // 
             // informacionTutor
             // 
@@ -730,10 +729,10 @@ namespace presentationLayer
             this.informacionTutor.Name = "informacionTutor";
             this.informacionTutor.TabStop = false;
             // 
-            // infoTutorLabel
+            // infContactoLabel
             // 
-            resources.ApplyResources(this.infoTutorLabel, "infoTutorLabel");
-            this.infoTutorLabel.Name = "infoTutorLabel";
+            resources.ApplyResources(this.infContactoLabel, "infContactoLabel");
+            this.infContactoLabel.Name = "infContactoLabel";
             // 
             // limpiarFormato2Button
             // 
@@ -743,52 +742,109 @@ namespace presentationLayer
             this.limpiarFormato2Button.UseVisualStyleBackColor = true;
             this.limpiarFormato2Button.Click += new System.EventHandler(this.limpiarFormato2Button_Click);
             // 
-            // realizarAltaButton
+            // infoTutorLabel
             // 
-            resources.ApplyResources(this.realizarAltaButton, "realizarAltaButton");
-            this.realizarAltaButton.Name = "realizarAltaButton";
-            this.realizarAltaButton.UseVisualStyleBackColor = true;
-            this.realizarAltaButton.Click += new System.EventHandler(this.guardarButton_Click);
+            resources.ApplyResources(this.infoTutorLabel, "infoTutorLabel");
+            this.infoTutorLabel.Name = "infoTutorLabel";
             // 
             // altaalumnoLabel
             // 
             resources.ApplyResources(this.altaalumnoLabel, "altaalumnoLabel");
             this.altaalumnoLabel.Name = "altaalumnoLabel";
             // 
-            // infContactoLabel
+            // siguiente3Button
             // 
-            resources.ApplyResources(this.infContactoLabel, "infContactoLabel");
-            this.infContactoLabel.Name = "infContactoLabel";
+            resources.ApplyResources(this.siguiente3Button, "siguiente3Button");
+            this.siguiente3Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(98)))), ((int)(((byte)(242)))));
+            this.siguiente3Button.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(98)))), ((int)(((byte)(242)))));
+            this.siguiente3Button.BorderRadius = 20;
+            this.siguiente3Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(142)))), ((int)(((byte)(244)))));
+            this.siguiente3Button.ForeColor = System.Drawing.Color.White;
+            this.siguiente3Button.Name = "siguiente3Button";
+            this.siguiente3Button.UseVisualStyleBackColor = false;
             // 
-            // tratamientoLabel
+            // siguiente2Button
             // 
-            resources.ApplyResources(this.tratamientoLabel, "tratamientoLabel");
-            this.tratamientoLabel.Name = "tratamientoLabel";
+            resources.ApplyResources(this.siguiente2Button, "siguiente2Button");
+            this.siguiente2Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(98)))), ((int)(((byte)(242)))));
+            this.siguiente2Button.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(98)))), ((int)(((byte)(242)))));
+            this.siguiente2Button.BorderRadius = 20;
+            this.siguiente2Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(142)))), ((int)(((byte)(244)))));
+            this.siguiente2Button.ForeColor = System.Drawing.Color.White;
+            this.siguiente2Button.Name = "siguiente2Button";
+            this.siguiente2Button.UseVisualStyleBackColor = false;
+            this.siguiente2Button.Click += new System.EventHandler(this.siguiente2Button_Click);
             // 
-            // tratamiento
+            // regresarMenuButton
             // 
-            resources.ApplyResources(this.tratamiento, "tratamiento");
-            this.tratamiento.Name = "tratamiento";
+            resources.ApplyResources(this.regresarMenuButton, "regresarMenuButton");
+            this.regresarMenuButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(98)))), ((int)(((byte)(242)))));
+            this.regresarMenuButton.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(98)))), ((int)(((byte)(242)))));
+            this.regresarMenuButton.BorderRadius = 20;
+            this.regresarMenuButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(142)))), ((int)(((byte)(244)))));
+            this.regresarMenuButton.ForeColor = System.Drawing.Color.White;
+            this.regresarMenuButton.Name = "regresarMenuButton";
+            this.regresarMenuButton.UseVisualStyleBackColor = false;
+            this.regresarMenuButton.Click += new System.EventHandler(this.regresarMenuButton_Click);
+            // 
+            // regresarButton
+            // 
+            resources.ApplyResources(this.regresarButton, "regresarButton");
+            this.regresarButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(98)))), ((int)(((byte)(242)))));
+            this.regresarButton.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(98)))), ((int)(((byte)(242)))));
+            this.regresarButton.BorderRadius = 20;
+            this.regresarButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(142)))), ((int)(((byte)(244)))));
+            this.regresarButton.ForeColor = System.Drawing.Color.White;
+            this.regresarButton.Name = "regresarButton";
+            this.regresarButton.UseVisualStyleBackColor = false;
+            this.regresarButton.Click += new System.EventHandler(this.regresarButton_Click_1);
+            // 
+            // siguiente1Button
+            // 
+            resources.ApplyResources(this.siguiente1Button, "siguiente1Button");
+            this.siguiente1Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(98)))), ((int)(((byte)(242)))));
+            this.siguiente1Button.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(98)))), ((int)(((byte)(242)))));
+            this.siguiente1Button.BorderRadius = 20;
+            this.siguiente1Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(142)))), ((int)(((byte)(244)))));
+            this.siguiente1Button.ForeColor = System.Drawing.Color.White;
+            this.siguiente1Button.Name = "siguiente1Button";
+            this.siguiente1Button.UseVisualStyleBackColor = false;
+            this.siguiente1Button.Click += new System.EventHandler(this.siguienteButton1_Click);
+            // 
+            // realizarAltaButton
+            // 
+            resources.ApplyResources(this.realizarAltaButton, "realizarAltaButton");
+            this.realizarAltaButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(98)))), ((int)(((byte)(242)))));
+            this.realizarAltaButton.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(98)))), ((int)(((byte)(242)))));
+            this.realizarAltaButton.BorderRadius = 20;
+            this.realizarAltaButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(142)))), ((int)(((byte)(244)))));
+            this.realizarAltaButton.ForeColor = System.Drawing.Color.White;
+            this.realizarAltaButton.Name = "realizarAltaButton";
+            this.realizarAltaButton.UseVisualStyleBackColor = false;
             // 
             // altaAlumno
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.Controls.Add(this.siguiente3Button);
+            this.Controls.Add(this.siguiente2Button);
+            this.Controls.Add(this.regresarMenuButton);
+            this.Controls.Add(this.regresarButton);
+            this.Controls.Add(this.siguiente1Button);
+            this.Controls.Add(this.realizarAltaButton);
             this.Controls.Add(this.informacionMedLabel);
             this.Controls.Add(this.logo);
             this.Controls.Add(this.infoTutorLabel);
             this.Controls.Add(this.infGeneralAlLabel);
             this.Controls.Add(this.altaalumnoLabel);
-            this.Controls.Add(this.realizarAltaButton);
             this.Controls.Add(this.informacionTutor);
-            this.Controls.Add(this.regresarButton);
             this.Controls.Add(this.informacionMedicaAlumnoGroupBox);
             this.Controls.Add(this.informacionGeneralAlumno2);
             this.Controls.Add(this.informacionGeneralAlumno);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.siguienteButton);
             this.Name = "altaAlumno";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.altaAlumno_Load);
             this.tipoIngresoGroupBox.ResumeLayout(false);
             this.tipoIngresoGroupBox.PerformLayout();
@@ -807,8 +863,6 @@ namespace presentationLayer
         }
 
         #endregion
-
-        private System.Windows.Forms.Button siguienteButton;
         private System.Windows.Forms.Label nombreAlLabel;
         private System.Windows.Forms.Label fechaNaLabel;
         private System.Windows.Forms.Label lugarNaLabel;
@@ -879,12 +933,10 @@ namespace presentationLayer
         private System.Windows.Forms.GroupBox informacionGeneralAlumno;
         private System.Windows.Forms.GroupBox informacionGeneralAlumno2;
         private System.Windows.Forms.GroupBox informacionMedicaAlumnoGroupBox;
-        private System.Windows.Forms.Button regresarButton;
         private System.Windows.Forms.RichTextBox alergias;
         private System.Windows.Forms.RichTextBox enfermedades;
         private System.Windows.Forms.RichTextBox discapacidad;
         private System.Windows.Forms.GroupBox informacionTutor;
-        private System.Windows.Forms.Button realizarAltaButton;
         private System.Windows.Forms.Button eliminarAlergiasButton;
         private System.Windows.Forms.Button eliminarDiscapacidadesButton;
         private System.Windows.Forms.Button eliminarEnfermedadButton;
@@ -903,6 +955,12 @@ namespace presentationLayer
         private System.Windows.Forms.Label infContactoLabel;
         private System.Windows.Forms.Label tratamientoLabel;
         private System.Windows.Forms.RichTextBox tratamiento;
+        private buttonSystem realizarAltaButton;
+        private buttonSystem siguiente1Button;
+        private buttonSystem regresarButton;
+        private buttonSystem regresarMenuButton;
+        private buttonSystem siguiente2Button;
+        private buttonSystem siguiente3Button;
     }
 }
 
