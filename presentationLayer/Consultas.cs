@@ -19,36 +19,10 @@ namespace presentationLayer
         public Consultas()
         {
             InitializeComponent();
-       //     Martin.consultaButtons(agregarButton, modificarButton, eliminarButton);
-            //Edder.botonBuscar(buscarButton);
-            //Edder.botonEliminar(eliminarButton);
-            //Edder.botonModificar(modificarButton);
-            //Edder.consultaDataView(altaDataGridView);
-            //Edder.etiquetaConsulta(consultaLabel);
-            //Edder.filtro(filtroLabel);
-            //Edder.filtroCombo(filtradoComboBox);
-            //Edder.Nombretxt(nombreTextBox);
-            //Edder.panelNavBar(navBarPanel);
-            //Edder.agregarButton(agregarButton);
-            //Edder.alumnosbttn(alumnosButton);
-            ////Edder.docentesbttn(docentesButton);
-            //Edder.Nombrelbl(nombreLabel);
-            //Edder.ApellidopaternoTxt(apellidoPaternoTextBox);
-            //Edder.ApellidomaternoTxt(apellidoMaternoTextBox);
-            //Edder.Apellidopaterno(apellidoPaternoLabel);
-            //Edder.Apellidomaterno(apellidoMaternoLabel);
-            //Edder.Vaciarbttn(vaciarButton);
-          
-            //Edder.groupboxinferior(busquedaGroupBox);
-            //busquedaGroupBox.Hide();
-            //Edder.botonImprimir(imprimirButton);
-
-            //vaciarButton.Hide();
-            //buscarButton.Hide();
-            //imprimirButton.Hide();
-            //filtradoComboBox.Hide();
-            //filtroLabel.Hide();
-            
+            consultaBotonesAlumnos(agregarButton,modificarButton,eliminarButton);
+            consultaBotonesParaNavegar(cerrarSesionButton,imprimirFormatosButton,fichaTecnicaButton);
+            consultaBusquedaAlumnos(busquedaPanel,busquedaTextBox, buscarButton);
+            tituloAlumnos(consultaLabel);
         }
 
 
@@ -68,17 +42,11 @@ namespace presentationLayer
             checkboxDgv.FlatStyle = FlatStyle.Standard;
             altaDataGridView.Columns.Add(checkboxDgv);
 
-        }
+            int x = this.ClientSize.Width, y = this.ClientSize.Height;
 
-        private void agregarButton_Click_1(object sender, EventArgs e)
-        {
-            Consultas consultas = new Consultas();
-            consultas.Close();
-            this.Hide();
-            altaAlumno altas = new altaAlumno();
-            altas.Show();
-           
-        }
+            altaDataGridView.Location = new Point((int)(x * 0.15), (int)(y * 0.25));
+            altaDataGridView.Size = new Size((int)(x * 0.7), (int)(y * 0.55));
+    }
 
         private void modificarButton_Click_1(object sender, EventArgs e)
         {
@@ -165,24 +133,71 @@ namespace presentationLayer
 
         }
 
-        private void busquedaGroupBox_Enter(object sender, EventArgs e)
+        public void consultaBotonesAlumnos(Button agregar, Button modificar, Button eliminar)
+        {
+            int x = this.ClientSize.Width, y = this.ClientSize.Height;
+
+            agregar.Location = new Point((int)(x * 0.84), (int)(y * 0.17));
+            modificar.Location = new Point((int)(x * 0.88), (int)(y * 0.17));
+            eliminar.Location = new Point((int)(x * 0.92), (int)(y * 0.17));
+
+            agregar.Size = new Size(50, 50);
+            modificar.Size = new Size(50, 50);
+            eliminar.Size = new Size(50, 50);
+        }
+        public void tituloAlumnos(Label titulo)
+        {
+            //tamaño pantalla
+            int x = this.ClientSize.Width, y = this.ClientSize.Height;
+            logo.Location = new Point(50, 20);
+
+            //TITULO PRINCIPAL
+            titulo.Location = new Point(x / 2 - titulo.Width / 3, logo.Height / 2 - 20);
+        }
+
+        public void consultaBusquedaAlumnos(Panel panelB, TextBox txBusqueda, Button buscar)
+        {
+            int x = this.ClientSize.Width, y = this.ClientSize.Height;
+
+            panelB.Location = new Point((int)(x * 0.38), (int)(y * 0.17));
+            
+            panelB.Size = new Size(400, 50);
+            buscar.Size = new Size(30, 30);
+            txBusqueda.Size = new Size(335, 45);
+            txBusqueda.Font = new Font("Gadugi", 14);
+        }
+
+        public void consultaBotonesParaNavegar(Button cerrarSesion, Button imprimir, Button fichaTecnica)
+        {
+            int x = this.ClientSize.Width, y = this.ClientSize.Height;
+
+
+            cerrarSesion.Location = new Point((int)(x * 0.17), (int)(y * 0.9));
+            imprimir.Location = new Point((int)(x * 0.65), (int)(y * 0.9));
+            fichaTecnica.Location = new Point((int)(x * 0.82), (int)(y * 0.9));
+
+            cerrarSesion.Size = new Size(180, 75);
+            imprimir.Size = new Size(200, 75);
+            fichaTecnica.Size = new Size(180, 75);
+        }
+
+        private void modificarButton_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void imprimirButton_Click(object sender, EventArgs e)
-        {
-            imprimirFormatos imprimirF = new imprimirFormatos();
-            imprimirF.Show();
-        }
-
-        private void buscarButton_Click(object sender, EventArgs e)
+        private void agregarButton_Click(object sender, EventArgs e)
         {
             Consultas consultas = new Consultas();
             consultas.Close();
             this.Hide();
             altaAlumno altas = new altaAlumno();
             altas.Show();
+        }
+
+        private void eliminarButton_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
