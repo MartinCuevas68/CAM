@@ -36,7 +36,23 @@ namespace presentationLayer
             altaDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             altaDataGridView.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None;
 
-
+            altaDataGridView.Columns[0].HeaderCell.Value = "Matricula";
+            altaDataGridView.Columns[1].HeaderCell.Value = "Fecha de registro";
+            altaDataGridView.Columns[2].HeaderCell.Value = "Ciclo escolar";
+            altaDataGridView.Columns[3].HeaderCell.Value = "Nombre";
+            altaDataGridView.Columns[4].HeaderCell.Value = "Apellido paterno";
+            altaDataGridView.Columns[5].HeaderCell.Value = "Apellido materno";
+            altaDataGridView.Columns[6].HeaderCell.Value = "Fecha de nacimiento";
+            altaDataGridView.Columns[7].HeaderCell.Value = "Edad";
+            altaDataGridView.Columns[8].HeaderCell.Value = "Curp";
+            altaDataGridView.Columns[9].HeaderCell.Value = "Estado";
+            altaDataGridView.Columns[10].HeaderCell.Value = "Ciudad";
+            altaDataGridView.Columns[11].HeaderCell.Value = "Colonia";
+            altaDataGridView.Columns[12].HeaderCell.Value = "Calle";
+            altaDataGridView.Columns[13].HeaderCell.Value = "Numero";
+            altaDataGridView.Columns[14].HeaderCell.Value = "Telefono";
+            altaDataGridView.Columns[15].HeaderCell.Value = "Escuela";
+            altaDataGridView.Columns[16].HeaderCell.Value = "Atendido";
             checkboxDgv.HeaderText = "Seleccion";
             checkboxDgv.Name = "chbSeleccion";
             checkboxDgv.FlatStyle = FlatStyle.Standard;
