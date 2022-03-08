@@ -29,18 +29,19 @@ namespace presentationLayer
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Consultas));
             this.consultaLabel = new System.Windows.Forms.Label();
             this.altaDataGridView = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
             this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             this.panelBusqueda = new System.Windows.Forms.Panel();
+            this.txtboxBuscar = new System.Windows.Forms.TextBox();
+            this.buscarButton = new System.Windows.Forms.Button();
             this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.buttonModificaciones = new System.Windows.Forms.Button();
             this.buttonEliminar = new System.Windows.Forms.Button();
             this.buttonAlta = new System.Windows.Forms.Button();
-            this.buscarButton = new System.Windows.Forms.Button();
-            this.txtboxBuscar = new System.Windows.Forms.TextBox();
             this.buttonCerrar = new presentationLayer.buttonSystem();
             this.buttonImprimir = new presentationLayer.buttonSystem();
             this.buttonFicha = new presentationLayer.buttonSystem();
@@ -61,14 +62,26 @@ namespace presentationLayer
             // 
             // altaDataGridView
             // 
+            this.altaDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.altaDataGridView.BackgroundColor = System.Drawing.Color.LightGray;
+            this.altaDataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.altaDataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.altaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.altaDataGridView.Location = new System.Drawing.Point(38, 184);
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Gadugi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.MediumOrchid;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.altaDataGridView.DefaultCellStyle = dataGridViewCellStyle1;
+            this.altaDataGridView.Location = new System.Drawing.Point(11, 184);
             this.altaDataGridView.Margin = new System.Windows.Forms.Padding(2);
             this.altaDataGridView.Name = "altaDataGridView";
             this.altaDataGridView.RowHeadersWidth = 51;
-            this.altaDataGridView.Size = new System.Drawing.Size(1222, 486);
+            this.altaDataGridView.Size = new System.Drawing.Size(1249, 486);
             this.altaDataGridView.TabIndex = 10;
+            this.altaDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.altaDataGridView_CellContentClick);
             // 
             // button1
             // 
@@ -96,6 +109,29 @@ namespace presentationLayer
             this.panelBusqueda.Name = "panelBusqueda";
             this.panelBusqueda.Size = new System.Drawing.Size(233, 35);
             this.panelBusqueda.TabIndex = 144;
+            // 
+            // txtboxBuscar
+            // 
+            this.txtboxBuscar.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtboxBuscar.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtboxBuscar.Location = new System.Drawing.Point(52, 11);
+            this.txtboxBuscar.Name = "txtboxBuscar";
+            this.txtboxBuscar.Size = new System.Drawing.Size(169, 18);
+            this.txtboxBuscar.TabIndex = 12;
+            // 
+            // buscarButton
+            // 
+            this.buscarButton.BackColor = System.Drawing.Color.Transparent;
+            this.buscarButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buscarButton.BackgroundImage")));
+            this.buscarButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.buscarButton.FlatAppearance.BorderSize = 0;
+            this.buscarButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buscarButton.Location = new System.Drawing.Point(11, 5);
+            this.buscarButton.Margin = new System.Windows.Forms.Padding(2);
+            this.buscarButton.Name = "buscarButton";
+            this.buscarButton.Size = new System.Drawing.Size(27, 24);
+            this.buscarButton.TabIndex = 11;
+            this.buscarButton.UseVisualStyleBackColor = false;
             // 
             // pictureBoxLogo
             // 
@@ -143,29 +179,6 @@ namespace presentationLayer
             this.buttonAlta.Size = new System.Drawing.Size(43, 32);
             this.buttonAlta.TabIndex = 140;
             this.buttonAlta.UseVisualStyleBackColor = true;
-            // 
-            // buscarButton
-            // 
-            this.buscarButton.BackColor = System.Drawing.Color.Transparent;
-            this.buscarButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buscarButton.BackgroundImage")));
-            this.buscarButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.buscarButton.FlatAppearance.BorderSize = 0;
-            this.buscarButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buscarButton.Location = new System.Drawing.Point(11, 5);
-            this.buscarButton.Margin = new System.Windows.Forms.Padding(2);
-            this.buscarButton.Name = "buscarButton";
-            this.buscarButton.Size = new System.Drawing.Size(27, 24);
-            this.buscarButton.TabIndex = 11;
-            this.buscarButton.UseVisualStyleBackColor = false;
-            // 
-            // txtboxBuscar
-            // 
-            this.txtboxBuscar.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtboxBuscar.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtboxBuscar.Location = new System.Drawing.Point(52, 11);
-            this.txtboxBuscar.Name = "txtboxBuscar";
-            this.txtboxBuscar.Size = new System.Drawing.Size(169, 18);
-            this.txtboxBuscar.TabIndex = 12;
             // 
             // buttonCerrar
             // 

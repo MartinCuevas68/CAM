@@ -62,7 +62,11 @@ namespace presentationLayer
             altaDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             altaDataGridView.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None;
 
-
+            altaDataGridView.Columns[0].HeaderText = "Matricula";
+            altaDataGridView.Columns[3].HeaderText = "Nombre";
+            altaDataGridView.Columns[13].HeaderText = "Teléfono de contacto";
+         //   this.altaDataGridView.Columns["Matricula"].Visible = false;
+            
             checkboxDgv.HeaderText = "Seleccion";
             checkboxDgv.Name = "chbSeleccion";
             checkboxDgv.FlatStyle = FlatStyle.Standard;
@@ -179,6 +183,9 @@ namespace presentationLayer
             imprimirF.Show();
         }
 
-      
+        private void altaDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+           
+        }
     }
 }
