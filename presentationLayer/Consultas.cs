@@ -38,7 +38,7 @@ namespace presentationLayer
             altaDataGridView.Columns[1].Visible = false;
             altaDataGridView.Columns[2].Visible = false;
             altaDataGridView.Columns[7].Visible = false;
-
+            //altaDataGridView.Columns[3].Visible = false;
             altaDataGridView.Columns[0].HeaderCell.Value = "Matricula";
             altaDataGridView.Columns[1].HeaderCell.Value = "Fecha de registro";
             altaDataGridView.Columns[2].HeaderCell.Value = "Ciclo escolar";
