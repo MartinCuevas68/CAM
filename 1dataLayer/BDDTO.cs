@@ -29,6 +29,7 @@ namespace _1dataLayer
         public string numero_alumno { get; set; }
         public string telefono_personal_alumno { get; set; }
         public string escuela_procedencia_alumno { get; set; }
+        public string documentacion_alumno { get; set; }
         public string atendido_por { get; set; }
     }
    
