@@ -167,6 +167,21 @@
   <ItemGroup>
     <None Include="Resources\log-fondo-blanco.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo_CAM_fondo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\searchBox1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\textBox %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\textBox %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\textBoxSmall.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
