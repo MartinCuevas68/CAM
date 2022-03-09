@@ -193,3 +193,11 @@ C:\Users\DELL\Source\Repos\CAM\businessLayer\obj\Debug\businessLayer.csproj.Core
 C:\Users\DELL\Source\Repos\CAM\businessLayer\obj\Debug\businessLayer.csproj.CopyComplete
 C:\Users\DELL\Source\Repos\CAM\businessLayer\obj\Debug\businessLayer.dll
 C:\Users\DELL\Source\Repos\CAM\businessLayer\obj\Debug\businessLayer.pdb
+C:\Users\ferna\source\repos\CAM\businessLayer\bin\Debug\businessLayer.dll.config
+C:\Users\ferna\source\repos\CAM\businessLayer\bin\Debug\1dataLayer.dll
+C:\Users\ferna\source\repos\CAM\businessLayer\bin\Debug\EntityFramework.dll
+C:\Users\ferna\source\repos\CAM\businessLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ferna\source\repos\CAM\businessLayer\bin\Debug\1dataLayer.pdb
+C:\Users\ferna\source\repos\CAM\businessLayer\bin\Debug\1dataLayer.dll.config
+C:\Users\ferna\source\repos\CAM\businessLayer\bin\Debug\EntityFramework.xml
+C:\Users\ferna\source\repos\CAM\businessLayer\bin\Debug\EntityFramework.SqlServer.xml

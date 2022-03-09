@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace _1dataLayer
 {
-    class AltaAlumno
+    public class AltaAlumno
     {
         //Metodo para dar de alta alergias
-        public void Altaalergias(alergiasDTO alergia)
+        public static void Altaalergias(alergiasDTO alergia)
         {
             using (BDCAMEntities1 db = new BDCAMEntities1())
             {
@@ -18,7 +18,7 @@ namespace _1dataLayer
             }
         }
 
-        public void Altaenfermedades(enfermedadesDTO enfermedad)
+        public static void Altaenfermedades(enfermedadesDTO enfermedad)
         {
             using (BDCAMEntities1 db = new BDCAMEntities1())
             {
@@ -26,14 +26,14 @@ namespace _1dataLayer
             }
         }
 
-        public void Altadiscapacidades(discapacidadesDTO discapacidad)
+        public static void Altadiscapacidades(discapacidadesDTO discapacidad)
         {
             using (BDCAMEntities1 db = new BDCAMEntities1())
             {
                 db.sp_altadiscapacidades(discapacidad.id_cartilla_medica, discapacidad.discapacidades);
             }
         }
-        public int Altaalumno(alumnoDTO alumno)
+        public static int Altaalumno(alumnoDTO alumno)
         {
             ObjectResult<decimal?> e;
             int id = 0;
@@ -49,7 +49,7 @@ namespace _1dataLayer
             return id;
         }
 
-        public void Altaalumnocartilla(int idalumno, int idcartilla)
+        public static void Altaalumnocartilla(int idalumno, int idcartilla)
         {
             using (BDCAMEntities1 db = new BDCAMEntities1())
             {
@@ -57,7 +57,7 @@ namespace _1dataLayer
             }
         }
 
-        public int Altatutor(tutorDTO tutor)
+        public static int Altatutor(tutorDTO tutor)
         {
             ObjectResult<decimal?> e;
             int id = 0;
@@ -73,7 +73,7 @@ namespace _1dataLayer
             return id;
         }
 
-        public int Altacartilla(tabla_medicaDTO tabla)
+        public static int Altacartilla(tabla_medicaDTO tabla)
         {
             ObjectResult<decimal?> e;
             int id = 0;
@@ -91,7 +91,7 @@ namespace _1dataLayer
             return id;
         }
 
-        public void Altatelefonotutor(telefono_tutorDTO telefono)
+        public static void Altatelefonotutor(telefono_tutorDTO telefono)
         {
             String tel = telefono.telefono.ToString();
             using (BDCAMEntities1 db = new BDCAMEntities1())
@@ -101,7 +101,7 @@ namespace _1dataLayer
         }
 
 
-        public void Altaalumnotutor(int idalumno, int idtutor)
+        public static void Altaalumnotutor(int idalumno, int idtutor)
         {
             using (BDCAMEntities1 db = new BDCAMEntities1())
             {

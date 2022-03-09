@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace _1dataLayer
 {
-    class ConsultaAlumno
+    public class ConsultaAlumno
     {
 
         //Todo lo comentado son pruebas y demostracion de como revisar y obtener los datos
@@ -15,8 +15,6 @@ namespace _1dataLayer
         static void Main(string[] args)
         {
             /* 
-
-
              ConsultaAlumno awa= new ConsultaAlumno();
              List<SP_FichaTecnicaAlumno_Result> mostrar = new List<SP_FichaTecnicaAlumno_Result>();
 
@@ -57,7 +55,7 @@ namespace _1dataLayer
               */
         }
 
-        public List<SP_ListaAlumnos_Result> AlumnoLista()
+        public static List<SP_ListaAlumnos_Result> AlumnoLista()
         {
             List<SP_ListaAlumnos_Result> alumnos = new List<SP_ListaAlumnos_Result>();
 
@@ -67,14 +65,11 @@ namespace _1dataLayer
                 foreach (SP_ListaAlumnos_Result result in y)
                 {
                     alumnos.Add(result);
-
-
                 }
             }
-
             return alumnos;
         }
-        public List<SP_FichaTecnicaAlumno_Result> FichaTenicaAlumno(int id)
+        public static List<SP_FichaTecnicaAlumno_Result> FichaTenicaAlumno(int id)
         {
             List<SP_FichaTecnicaAlumno_Result> FichaTecnicaAlumno = new List<SP_FichaTecnicaAlumno_Result>();
             using (BDCAMEntities1 db = new BDCAMEntities1())
@@ -85,7 +80,7 @@ namespace _1dataLayer
             }
             return FichaTecnicaAlumno;
         }
-        public List<SP_ListaAlergia_Result> ListaAlergias(int id)
+        public static List<SP_ListaAlergia_Result> ListaAlergias(int id)
         {
             List<SP_ListaAlergia_Result> alergias = new List<SP_ListaAlergia_Result>();
             using (BDCAMEntities1 db = new BDCAMEntities1())
@@ -101,7 +96,7 @@ namespace _1dataLayer
 
             return alergias;
         }
-        public List<SP_ListaEnfermedad_Result> ListaEnfermedades(int id)
+        public static List<SP_ListaEnfermedad_Result> ListaEnfermedades(int id)
         {
             List<SP_ListaEnfermedad_Result> enfermedades = new List<SP_ListaEnfermedad_Result>();
 
@@ -118,7 +113,7 @@ namespace _1dataLayer
 
             return enfermedades;
         }
-        public List<SP_ListaDiscapacidad_Result> ListaDiscapacidad(int id)
+        public static List<SP_ListaDiscapacidad_Result> ListaDiscapacidad(int id)
         {
             List<SP_ListaDiscapacidad_Result> discapacidades = new List<SP_ListaDiscapacidad_Result>();
 

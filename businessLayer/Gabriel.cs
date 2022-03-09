@@ -33,7 +33,7 @@ namespace businessLayer
                                      numero_alumno = a.numero_alumno,
                                      telefono_personal_alumno = a.telefono_personal_alumno,
                                      escuela_procedencia_alumno = a.escuela_procedencia_alumno,
-                                     //documentacion_alumno = a.documentacion_alumno,
+                                     documentacion_alumno = a.documentacion_alumno,
                                      atendido_por = a.atendido_por,
 
                                  }).ToList();
