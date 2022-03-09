@@ -276,6 +276,7 @@ namespace presentationLayer
 
         private void altaAlumno_Load(object sender, EventArgs e)
         {
+            
             limpiarFormato1Button.Hide();
             limpiarFormato2Button.Hide();
             limpiarFormato3Button.Hide();
@@ -303,6 +304,9 @@ namespace presentationLayer
                                               escuelaP.Text,
                                               canalizado.Text
                                               );
+
+                //businessLayer.Hueso.SetTutor(nombreT.Text,apellidoPT.Text,apellidoMT.Text,coloniaT.Text,calleT.Text,numeroCasaT.Text,ocupacion.Text);
+                //businessLayer.Hueso.SetinfoMedAlumno(servMedico.Text,grupoSanguineo.Text,telefono.Text);
 
                 this.Hide();
                 Consultas consultas = new Consultas();
