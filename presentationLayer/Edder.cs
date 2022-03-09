@@ -6,45 +6,67 @@ namespace presentationLayer
 {
     class Edder
     {
+
+        public static void etiquetaConsulta(Label consultaLabel)
+        {
+
+            consultaLabel.Location = new Point(700, 150); 
+            consultaLabel.Font = new Font("Leelawadee UI", 36, FontStyle.Bold);
+   
+        }
+
+
         public static void botonBuscar(Button buscarButton)
         {
             buscarButton.Location = new Point(1110, 43);
             buscarButton.Size = new Size(35, 28);
             buscarButton.Font = new Font("Leelawadee UI", 12, FontStyle.Bold);
-
+            var tt = new ToolTip();
+            tt.SetToolTip(buscarButton, "REALIZAR CONSULTA");
         }
 
         public static void botonImprimir(Button imprimirButton)
         {
             imprimirButton.Location = new Point(1320, 58);
             imprimirButton.Size = new Size(35, 28);
+            var tt = new ToolTip();
+            tt.SetToolTip(imprimirButton, "REALIZAR IMPRESIÓN DEL DOCUMENTO");
 
         }
-        public static void botonEliminar(Button eliminarButton)
+
+        public static void agregarButton(Button agregarButton)
         {
-            eliminarButton.Location = new Point(1230, 43);
-            eliminarButton.Size = new Size(35, 28);
-         eliminarButton.Font = new Font("Leelawadee UI", 12, FontStyle.Bold);
+            agregarButton.Location = new Point(1600, 300);
+            agregarButton.Size = new Size(75, 75);
+            var tt = new ToolTip();
+            tt.SetToolTip(agregarButton, "REALIZAR UNA ALTA DE ALUMNO");
         }
+
         public static void botonModificar(Button modificarButton)
         {
-            modificarButton.Location = new Point(1190, 43);
-            modificarButton.Size = new Size(35, 28);
+            modificarButton.Location = new Point(1500, 300);
+            modificarButton.Size = new Size(75, 75);
             modificarButton.Font = new Font("Leelawadee UI", 12, FontStyle.Bold);
+            var tt = new ToolTip();
+            tt.SetToolTip(modificarButton, "REALIZAR MODIFICACÍÓN DEL ALUMNO");
 
         }
+
+        public static void botonEliminar(Button eliminarButton)
+        {
+            eliminarButton.Location = new Point(1400, 300);
+            eliminarButton.Size = new Size(75, 75);
+         eliminarButton.Font = new Font("Leelawadee UI", 12, FontStyle.Bold);
+            var tt = new ToolTip();
+            tt.SetToolTip(eliminarButton, "REALIZAR ELIMINACIÓN DEL ALUMNO");
+        }
+       
         public static void consultaDataView(DataGridView altaDataGridView)
         {
-            altaDataGridView.Location = new Point(40, 105);
-            altaDataGridView.Size = new Size(1315, 405);
+            altaDataGridView.Location = new Point(200, 400);
+            altaDataGridView.Size = new Size(1500, 400);
         }
-        public static void etiquetaConsulta(Label consultaLabel)
-        {
-
-            consultaLabel.Location = new Point(45, 60); //cambio
-            consultaLabel.Font = new Font("Leelawadee UI", 12, FontStyle.Bold);
-            consultaLabel.Size = new Size(50, 50);
-        }
+    
 
         public static void filtro(Label filtroLabel)
         {
@@ -69,19 +91,16 @@ namespace presentationLayer
         public static void panelNavBar(Panel navBarPanel)
         {
             navBarPanel.Location = new Point(-1, 0);
-            navBarPanel.Size = new Size(1371, 44);
+            navBarPanel.Size = new Size(1371, 100);
         }
 
-        public static void agregarBttn(Button agregarButton)
-        {
-            agregarButton.Location = new Point(1280, 58);
-            agregarButton.Size = new Size(35, 28);
-        }
-
+      
         public static void alumnosbttn(Button alumnosButton)
         {
-            alumnosButton.Location = new Point(1184, 12);
-            alumnosButton.Size = new Size(75, 23);
+            alumnosButton.Size = new Size(100, 75);
+            var tt = new ToolTip();
+            tt.SetToolTip(alumnosButton, "MENÚ DE ALUMNOS");
+            alumnosButton.Font = new Font("Leelawadee UI", 12);
 
         }
 
@@ -89,6 +108,8 @@ namespace presentationLayer
         {
             docentesButton.Location = new Point(1266, 12);
             docentesButton.Size = new Size(75, 23);
+            var tt = new ToolTip();
+            tt.SetToolTip(docentesButton, "MENÚ DE DOCENTES");
         }
 
 
@@ -130,6 +151,8 @@ namespace presentationLayer
             vaciarButton.Location = new Point(1150, 43);
             vaciarButton.Size = new Size(35, 28);
             vaciarButton.Font = new Font("Leelawadee UI", 12, FontStyle.Bold);
+            var tt = new ToolTip();
+            tt.SetToolTip(vaciarButton, "VACIAR CAMPOS DE TEXTO");
         }
 
         public static void groupboxinferior(GroupBox busquedaGroupBox)

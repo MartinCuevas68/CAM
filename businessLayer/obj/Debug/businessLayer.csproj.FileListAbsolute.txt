@@ -134,3 +134,62 @@ C:\Users\galle\source\repos\CAM3\businessLayer\obj\Debug\businessLayer.csproj.Co
 C:\Users\galle\source\repos\CAM3\businessLayer\obj\Debug\businessLayer.csproj.CopyComplete
 C:\Users\galle\source\repos\CAM3\businessLayer\obj\Debug\businessLayer.dll
 C:\Users\galle\source\repos\CAM3\businessLayer\obj\Debug\businessLayer.pdb
+B:\GitKraken\Github\CAM\Development\CAM\businessLayer\bin\Debug\businessLayer.dll.config
+B:\GitKraken\Github\CAM\Development\CAM\businessLayer\bin\Debug\businessLayer.dll
+B:\GitKraken\Github\CAM\Development\CAM\businessLayer\bin\Debug\businessLayer.pdb
+B:\GitKraken\Github\CAM\Development\CAM\businessLayer\bin\Debug\1dataLayer.dll
+B:\GitKraken\Github\CAM\Development\CAM\businessLayer\bin\Debug\EntityFramework.dll
+B:\GitKraken\Github\CAM\Development\CAM\businessLayer\bin\Debug\EntityFramework.SqlServer.dll
+B:\GitKraken\Github\CAM\Development\CAM\businessLayer\bin\Debug\1dataLayer.pdb
+B:\GitKraken\Github\CAM\Development\CAM\businessLayer\bin\Debug\1dataLayer.dll.config
+B:\GitKraken\Github\CAM\Development\CAM\businessLayer\bin\Debug\EntityFramework.xml
+B:\GitKraken\Github\CAM\Development\CAM\businessLayer\bin\Debug\EntityFramework.SqlServer.xml
+B:\GitKraken\Github\CAM\Development\CAM\businessLayer\obj\Debug\businessLayer.csproj.AssemblyReference.cache
+B:\GitKraken\Github\CAM\Development\CAM\businessLayer\obj\Debug\businessLayer.csproj.CoreCompileInputs.cache
+B:\GitKraken\Github\CAM\Development\CAM\businessLayer\obj\Debug\businessLayer.dll
+B:\GitKraken\Github\CAM\Development\CAM\businessLayer\obj\Debug\businessLayer.pdb
+G:\Visual studio programs\GIT\CAM\businessLayer\bin\Debug\businessLayer.dll.config
+G:\Visual studio programs\GIT\CAM\businessLayer\bin\Debug\businessLayer.dll
+G:\Visual studio programs\GIT\CAM\businessLayer\bin\Debug\businessLayer.pdb
+G:\Visual studio programs\GIT\CAM\businessLayer\bin\Debug\1dataLayer.dll
+G:\Visual studio programs\GIT\CAM\businessLayer\bin\Debug\EntityFramework.dll
+G:\Visual studio programs\GIT\CAM\businessLayer\bin\Debug\EntityFramework.SqlServer.dll
+G:\Visual studio programs\GIT\CAM\businessLayer\bin\Debug\1dataLayer.pdb
+G:\Visual studio programs\GIT\CAM\businessLayer\bin\Debug\1dataLayer.dll.config
+G:\Visual studio programs\GIT\CAM\businessLayer\bin\Debug\EntityFramework.xml
+G:\Visual studio programs\GIT\CAM\businessLayer\bin\Debug\EntityFramework.SqlServer.xml
+G:\Visual studio programs\GIT\CAM\businessLayer\obj\Debug\businessLayer.csproj.AssemblyReference.cache
+G:\Visual studio programs\GIT\CAM\businessLayer\obj\Debug\businessLayer.csproj.CoreCompileInputs.cache
+G:\Visual studio programs\GIT\CAM\businessLayer\obj\Debug\businessLayer.csproj.CopyComplete
+G:\Visual studio programs\GIT\CAM\businessLayer\obj\Debug\businessLayer.dll
+G:\Visual studio programs\GIT\CAM\businessLayer\obj\Debug\businessLayer.pdb
+F:\Github\UABC\CAM\businessLayer\bin\Debug\businessLayer.dll.config
+F:\Github\UABC\CAM\businessLayer\bin\Debug\businessLayer.dll
+F:\Github\UABC\CAM\businessLayer\bin\Debug\businessLayer.pdb
+F:\Github\UABC\CAM\businessLayer\bin\Debug\1dataLayer.dll
+F:\Github\UABC\CAM\businessLayer\bin\Debug\EntityFramework.dll
+F:\Github\UABC\CAM\businessLayer\bin\Debug\EntityFramework.SqlServer.dll
+F:\Github\UABC\CAM\businessLayer\bin\Debug\1dataLayer.pdb
+F:\Github\UABC\CAM\businessLayer\bin\Debug\1dataLayer.dll.config
+F:\Github\UABC\CAM\businessLayer\bin\Debug\EntityFramework.xml
+F:\Github\UABC\CAM\businessLayer\bin\Debug\EntityFramework.SqlServer.xml
+F:\Github\UABC\CAM\businessLayer\obj\Debug\businessLayer.csproj.AssemblyReference.cache
+F:\Github\UABC\CAM\businessLayer\obj\Debug\businessLayer.csproj.CoreCompileInputs.cache
+F:\Github\UABC\CAM\businessLayer\obj\Debug\businessLayer.csproj.CopyComplete
+F:\Github\UABC\CAM\businessLayer\obj\Debug\businessLayer.dll
+F:\Github\UABC\CAM\businessLayer\obj\Debug\businessLayer.pdb
+C:\Users\DELL\Source\Repos\CAM\businessLayer\bin\Debug\businessLayer.dll.config
+C:\Users\DELL\Source\Repos\CAM\businessLayer\bin\Debug\businessLayer.dll
+C:\Users\DELL\Source\Repos\CAM\businessLayer\bin\Debug\businessLayer.pdb
+C:\Users\DELL\Source\Repos\CAM\businessLayer\bin\Debug\1dataLayer.dll
+C:\Users\DELL\Source\Repos\CAM\businessLayer\bin\Debug\EntityFramework.dll
+C:\Users\DELL\Source\Repos\CAM\businessLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\DELL\Source\Repos\CAM\businessLayer\bin\Debug\1dataLayer.pdb
+C:\Users\DELL\Source\Repos\CAM\businessLayer\bin\Debug\1dataLayer.dll.config
+C:\Users\DELL\Source\Repos\CAM\businessLayer\bin\Debug\EntityFramework.xml
+C:\Users\DELL\Source\Repos\CAM\businessLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\DELL\Source\Repos\CAM\businessLayer\obj\Debug\businessLayer.csproj.AssemblyReference.cache
+C:\Users\DELL\Source\Repos\CAM\businessLayer\obj\Debug\businessLayer.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Source\Repos\CAM\businessLayer\obj\Debug\businessLayer.csproj.CopyComplete
+C:\Users\DELL\Source\Repos\CAM\businessLayer\obj\Debug\businessLayer.dll
+C:\Users\DELL\Source\Repos\CAM\businessLayer\obj\Debug\businessLayer.pdb

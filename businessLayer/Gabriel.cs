@@ -46,35 +46,6 @@ namespace businessLayer
                 throw;
             }
 
-            /*//Consultas
-            public static List<Data_Tutuli.EspacioDTO> GetEspacios()
-            {
-                try
-                {
-
-                    using (Data_Tutuli.DB_tutuliEntities db = new Data_Tutuli.DB_tutuliEntities())
-                    {
-                        var query = (from p in db.espacios
-
-                                     select new Data_Tutuli.EspacioDTO
-                                     {
-                                         tamaño = p.tamaño,
-                                         numeroEspacio = p.numeroEspacio
-
-                                     }).ToList();
-
-                        return query;
-
-                    }
-
-                }
-                catch (Exception)
-                {
-                    throw;
-                }
-            }*/
-
-
 
         }
     }

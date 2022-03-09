@@ -29,277 +29,237 @@ namespace presentationLayer
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Consultas));
-            this.filtradoComboBox = new System.Windows.Forms.ComboBox();
             this.consultaLabel = new System.Windows.Forms.Label();
-            this.filtroLabel = new System.Windows.Forms.Label();
             this.altaDataGridView = new System.Windows.Forms.DataGridView();
-            this.navBarPanel = new System.Windows.Forms.Panel();
-            this.docentesButton = new System.Windows.Forms.Button();
-            this.alumnosButton = new System.Windows.Forms.Button();
-            this.apellidoMaternoTextBox = new System.Windows.Forms.TextBox();
-            this.apellidoMaternoLabel = new System.Windows.Forms.Label();
-            this.apellidoPaternoTextBox = new System.Windows.Forms.TextBox();
-            this.apellidoPaternoLabel = new System.Windows.Forms.Label();
-            this.nombreLabel = new System.Windows.Forms.Label();
-            this.nombreTextBox = new System.Windows.Forms.TextBox();
-            this.busquedaGroupBox = new System.Windows.Forms.GroupBox();
-            this.eliminarButton = new System.Windows.Forms.Button();
+            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
+            this.logo = new System.Windows.Forms.PictureBox();
+            this.busquedaPanel = new System.Windows.Forms.Panel();
+            this.busquedaTextBox = new System.Windows.Forms.TextBox();
             this.buscarButton = new System.Windows.Forms.Button();
-            this.vaciarButton = new System.Windows.Forms.Button();
             this.modificarButton = new System.Windows.Forms.Button();
-            this.imprimirButton = new System.Windows.Forms.Button();
+            this.eliminarButton = new System.Windows.Forms.Button();
             this.agregarButton = new System.Windows.Forms.Button();
+            this.cerrarSesionButton = new presentationLayer.buttonSystem();
+            this.imprimirFormatosButton = new presentationLayer.buttonSystem();
+            this.fichaTecnicaButton = new presentationLayer.buttonSystem();
             ((System.ComponentModel.ISupportInitialize)(this.altaDataGridView)).BeginInit();
-            this.navBarPanel.SuspendLayout();
-            this.busquedaGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
+            this.busquedaPanel.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // filtradoComboBox
-            // 
-            this.filtradoComboBox.FormattingEnabled = true;
-            this.filtradoComboBox.Items.AddRange(new object[] {
-            "GENERAL",
-            "NOMBRE",
-            "TALLER"});
-            this.filtradoComboBox.Location = new System.Drawing.Point(121, 301);
-            this.filtradoComboBox.Margin = new System.Windows.Forms.Padding(2);
-            this.filtradoComboBox.Name = "filtradoComboBox";
-            this.filtradoComboBox.Size = new System.Drawing.Size(92, 21);
-            this.filtradoComboBox.TabIndex = 18;
             // 
             // consultaLabel
             // 
             this.consultaLabel.AutoSize = true;
-            this.consultaLabel.Font = new System.Drawing.Font("Leelawadee UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.consultaLabel.Location = new System.Drawing.Point(24, 35);
+            this.consultaLabel.Font = new System.Drawing.Font("Trebuchet MS", 30F, System.Drawing.FontStyle.Bold);
+            this.consultaLabel.Location = new System.Drawing.Point(565, 11);
             this.consultaLabel.Name = "consultaLabel";
-            this.consultaLabel.Size = new System.Drawing.Size(90, 21);
+            this.consultaLabel.Size = new System.Drawing.Size(251, 49);
             this.consultaLabel.TabIndex = 15;
-            this.consultaLabel.Text = "ALUMNOS";
-            // 
-            // filtroLabel
-            // 
-            this.filtroLabel.AutoSize = true;
-            this.filtroLabel.Font = new System.Drawing.Font("Leelawadee UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.filtroLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.filtroLabel.Location = new System.Drawing.Point(25, 371);
-            this.filtroLabel.Name = "filtroLabel";
-            this.filtroLabel.Size = new System.Drawing.Size(127, 21);
-            this.filtroLabel.TabIndex = 13;
-            this.filtroLabel.Text = "ORDENAR POR:";
+            this.consultaLabel.Text = "A l u m n o s";
             // 
             // altaDataGridView
             // 
-            this.altaDataGridView.BackgroundColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Gadugi", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(98)))), ((int)(((byte)(242)))));
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.altaDataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.altaDataGridView.BackgroundColor = System.Drawing.Color.White;
+            this.altaDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Gadugi", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(98)))), ((int)(((byte)(242)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.altaDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.altaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.altaDataGridView.Location = new System.Drawing.Point(21, 60);
-            this.altaDataGridView.Margin = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(98)))), ((int)(((byte)(242)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.altaDataGridView.DefaultCellStyle = dataGridViewCellStyle6;
+            this.altaDataGridView.Location = new System.Drawing.Point(38, 184);
+            this.altaDataGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.altaDataGridView.Name = "altaDataGridView";
             this.altaDataGridView.RowHeadersWidth = 51;
-            this.altaDataGridView.Size = new System.Drawing.Size(984, 232);
+            this.altaDataGridView.Size = new System.Drawing.Size(1222, 486);
             this.altaDataGridView.TabIndex = 10;
-            this.altaDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.altaDataGridView_CellContentClick);
             // 
-            // navBarPanel
+            // vScrollBar1
             // 
-            this.navBarPanel.BackColor = System.Drawing.Color.Thistle;
-            this.navBarPanel.Controls.Add(this.docentesButton);
-            this.navBarPanel.Controls.Add(this.alumnosButton);
-            this.navBarPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.navBarPanel.Location = new System.Drawing.Point(0, 0);
-            this.navBarPanel.Margin = new System.Windows.Forms.Padding(2);
-            this.navBarPanel.Name = "navBarPanel";
-            this.navBarPanel.Size = new System.Drawing.Size(1033, 26);
-            this.navBarPanel.TabIndex = 20;
+            this.vScrollBar1.Location = new System.Drawing.Point(1897, 37);
+            this.vScrollBar1.Name = "vScrollBar1";
+            this.vScrollBar1.Size = new System.Drawing.Size(27, 995);
+            this.vScrollBar1.TabIndex = 138;
             // 
-            // docentesButton
+            // logo
             // 
-            this.docentesButton.AutoSize = true;
-            this.docentesButton.Dock = System.Windows.Forms.DockStyle.Right;
-            this.docentesButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.docentesButton.Location = new System.Drawing.Point(887, 0);
-            this.docentesButton.Margin = new System.Windows.Forms.Padding(2);
-            this.docentesButton.Name = "docentesButton";
-            this.docentesButton.Size = new System.Drawing.Size(76, 26);
-            this.docentesButton.TabIndex = 22;
-            this.docentesButton.Text = "DOCENTES";
-            this.docentesButton.UseVisualStyleBackColor = true;
+            this.logo.Image = global::presentationLayer.Properties.Resources.log_fondo_blanco;
+            this.logo.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.logo.Location = new System.Drawing.Point(38, 11);
+            this.logo.Name = "logo";
+            this.logo.Size = new System.Drawing.Size(150, 150);
+            this.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.logo.TabIndex = 148;
+            this.logo.TabStop = false;
             // 
-            // alumnosButton
+            // busquedaPanel
             // 
-            this.alumnosButton.AutoSize = true;
-            this.alumnosButton.Dock = System.Windows.Forms.DockStyle.Right;
-            this.alumnosButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.alumnosButton.Location = new System.Drawing.Point(963, 0);
-            this.alumnosButton.Margin = new System.Windows.Forms.Padding(2);
-            this.alumnosButton.Name = "alumnosButton";
-            this.alumnosButton.Size = new System.Drawing.Size(70, 26);
-            this.alumnosButton.TabIndex = 21;
-            this.alumnosButton.Text = "ALUMNOS";
-            this.alumnosButton.UseVisualStyleBackColor = true;
+            this.busquedaPanel.BackgroundImage = global::presentationLayer.Properties.Resources.searchBox;
+            this.busquedaPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.busquedaPanel.Controls.Add(this.busquedaTextBox);
+            this.busquedaPanel.Controls.Add(this.buscarButton);
+            this.busquedaPanel.Location = new System.Drawing.Point(521, 119);
+            this.busquedaPanel.Name = "busquedaPanel";
+            this.busquedaPanel.Size = new System.Drawing.Size(310, 49);
+            this.busquedaPanel.TabIndex = 144;
             // 
-            // apellidoMaternoTextBox
+            // busquedaTextBox
             // 
-            this.apellidoMaternoTextBox.Location = new System.Drawing.Point(691, 60);
-            this.apellidoMaternoTextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.apellidoMaternoTextBox.Multiline = true;
-            this.apellidoMaternoTextBox.Name = "apellidoMaternoTextBox";
-            this.apellidoMaternoTextBox.Size = new System.Drawing.Size(125, 21);
-            this.apellidoMaternoTextBox.TabIndex = 23;
+            this.busquedaTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.busquedaTextBox.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.busquedaTextBox.Location = new System.Drawing.Point(52, 11);
+            this.busquedaTextBox.Name = "busquedaTextBox";
+            this.busquedaTextBox.Size = new System.Drawing.Size(169, 18);
+            this.busquedaTextBox.TabIndex = 12;
             // 
-            // apellidoMaternoLabel
+            // buscarButton
             // 
-            this.apellidoMaternoLabel.AutoSize = true;
-            this.apellidoMaternoLabel.Location = new System.Drawing.Point(557, 62);
-            this.apellidoMaternoLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.apellidoMaternoLabel.Name = "apellidoMaternoLabel";
-            this.apellidoMaternoLabel.Size = new System.Drawing.Size(172, 21);
-            this.apellidoMaternoLabel.TabIndex = 22;
-            this.apellidoMaternoLabel.Text = "APELLIDO MATERNO:";
+            this.buscarButton.BackColor = System.Drawing.Color.Transparent;
+            this.buscarButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buscarButton.BackgroundImage")));
+            this.buscarButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.buscarButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buscarButton.FlatAppearance.BorderSize = 0;
+            this.buscarButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buscarButton.Location = new System.Drawing.Point(11, 9);
+            this.buscarButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buscarButton.Name = "buscarButton";
+            this.buscarButton.Size = new System.Drawing.Size(27, 24);
+            this.buscarButton.TabIndex = 11;
+            this.buscarButton.UseVisualStyleBackColor = false;
             // 
-            // apellidoPaternoTextBox
+            // modificarButton
             // 
-            this.apellidoPaternoTextBox.Location = new System.Drawing.Point(425, 60);
-            this.apellidoPaternoTextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.apellidoPaternoTextBox.Multiline = true;
-            this.apellidoPaternoTextBox.Name = "apellidoPaternoTextBox";
-            this.apellidoPaternoTextBox.Size = new System.Drawing.Size(125, 21);
-            this.apellidoPaternoTextBox.TabIndex = 21;
-            // 
-            // apellidoPaternoLabel
-            // 
-            this.apellidoPaternoLabel.AutoSize = true;
-            this.apellidoPaternoLabel.Location = new System.Drawing.Point(254, 62);
-            this.apellidoPaternoLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.apellidoPaternoLabel.Name = "apellidoPaternoLabel";
-            this.apellidoPaternoLabel.Size = new System.Drawing.Size(167, 21);
-            this.apellidoPaternoLabel.TabIndex = 20;
-            this.apellidoPaternoLabel.Text = "APELLIDO PATERNO:";
-            // 
-            // nombreLabel
-            // 
-            this.nombreLabel.AutoSize = true;
-            this.nombreLabel.Location = new System.Drawing.Point(4, 63);
-            this.nombreLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.nombreLabel.Name = "nombreLabel";
-            this.nombreLabel.Size = new System.Drawing.Size(99, 21);
-            this.nombreLabel.TabIndex = 19;
-            this.nombreLabel.Text = "NOMBRE/S:";
-            // 
-            // nombreTextBox
-            // 
-            this.nombreTextBox.Location = new System.Drawing.Point(112, 112);
-            this.nombreTextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.nombreTextBox.Multiline = true;
-            this.nombreTextBox.Name = "nombreTextBox";
-            this.nombreTextBox.Size = new System.Drawing.Size(125, 21);
-            this.nombreTextBox.TabIndex = 18;
-            // 
-            // busquedaGroupBox
-            // 
-            this.busquedaGroupBox.Controls.Add(this.nombreLabel);
-            this.busquedaGroupBox.Controls.Add(this.eliminarButton);
-            this.busquedaGroupBox.Controls.Add(this.nombreTextBox);
-            this.busquedaGroupBox.Controls.Add(this.buscarButton);
-            this.busquedaGroupBox.Controls.Add(this.vaciarButton);
-            this.busquedaGroupBox.Controls.Add(this.modificarButton);
-            this.busquedaGroupBox.Controls.Add(this.apellidoMaternoTextBox);
-            this.busquedaGroupBox.Controls.Add(this.apellidoPaternoLabel);
-            this.busquedaGroupBox.Controls.Add(this.apellidoPaternoTextBox);
-            this.busquedaGroupBox.Controls.Add(this.apellidoMaternoLabel);
-            this.busquedaGroupBox.Font = new System.Drawing.Font("Leelawadee UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.busquedaGroupBox.Location = new System.Drawing.Point(28, 373);
-            this.busquedaGroupBox.Margin = new System.Windows.Forms.Padding(2);
-            this.busquedaGroupBox.Name = "busquedaGroupBox";
-            this.busquedaGroupBox.Padding = new System.Windows.Forms.Padding(2);
-            this.busquedaGroupBox.Size = new System.Drawing.Size(977, 205);
-            this.busquedaGroupBox.TabIndex = 26;
-            this.busquedaGroupBox.TabStop = false;
-            this.busquedaGroupBox.Text = "BUSQUEDA";
+            this.modificarButton.BackgroundImage = global::presentationLayer.Properties.Resources.editar;
+            this.modificarButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.modificarButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.modificarButton.FlatAppearance.BorderSize = 0;
+            this.modificarButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.modificarButton.Location = new System.Drawing.Point(1181, 136);
+            this.modificarButton.Name = "modificarButton";
+            this.modificarButton.Size = new System.Drawing.Size(43, 43);
+            this.modificarButton.TabIndex = 142;
+            this.modificarButton.UseVisualStyleBackColor = true;
+            this.modificarButton.Click += new System.EventHandler(this.modificarButton_Click);
             // 
             // eliminarButton
             // 
             this.eliminarButton.BackgroundImage = global::presentationLayer.Properties.Resources.quitar_usuario;
-            this.eliminarButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.eliminarButton.Location = new System.Drawing.Point(658, 126);
+            this.eliminarButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.eliminarButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.eliminarButton.FlatAppearance.BorderSize = 0;
+            this.eliminarButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.eliminarButton.Location = new System.Drawing.Point(1219, 136);
             this.eliminarButton.Name = "eliminarButton";
-            this.eliminarButton.Size = new System.Drawing.Size(137, 33);
-            this.eliminarButton.TabIndex = 17;
+            this.eliminarButton.Size = new System.Drawing.Size(43, 41);
+            this.eliminarButton.TabIndex = 141;
             this.eliminarButton.UseVisualStyleBackColor = true;
-            // 
-            // buscarButton
-            // 
-            this.buscarButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buscarButton.BackgroundImage")));
-            this.buscarButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.buscarButton.Location = new System.Drawing.Point(584, 95);
-            this.buscarButton.Margin = new System.Windows.Forms.Padding(2);
-            this.buscarButton.Name = "buscarButton";
-            this.buscarButton.Size = new System.Drawing.Size(35, 28);
-            this.buscarButton.TabIndex = 11;
-            this.buscarButton.UseVisualStyleBackColor = true;
-            // 
-            // vaciarButton
-            // 
-            this.vaciarButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("vaciarButton.BackgroundImage")));
-            this.vaciarButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.vaciarButton.Location = new System.Drawing.Point(658, 95);
-            this.vaciarButton.Margin = new System.Windows.Forms.Padding(2);
-            this.vaciarButton.Name = "vaciarButton";
-            this.vaciarButton.Size = new System.Drawing.Size(60, 27);
-            this.vaciarButton.TabIndex = 24;
-            this.vaciarButton.UseVisualStyleBackColor = true;
-            // 
-            // modificarButton
-            // 
-            this.modificarButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("modificarButton.BackgroundImage")));
-            this.modificarButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.modificarButton.Location = new System.Drawing.Point(726, 94);
-            this.modificarButton.Margin = new System.Windows.Forms.Padding(2);
-            this.modificarButton.Name = "modificarButton";
-            this.modificarButton.Size = new System.Drawing.Size(90, 27);
-            this.modificarButton.TabIndex = 12;
-            this.modificarButton.UseVisualStyleBackColor = true;
-            this.modificarButton.Click += new System.EventHandler(this.modificarButton_Click_1);
-            // 
-            // imprimirButton
-            // 
-            this.imprimirButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("imprimirButton.BackgroundImage")));
-            this.imprimirButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.imprimirButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.imprimirButton.Location = new System.Drawing.Point(909, 37);
-            this.imprimirButton.Margin = new System.Windows.Forms.Padding(2);
-            this.imprimirButton.Name = "imprimirButton";
-            this.imprimirButton.Size = new System.Drawing.Size(56, 19);
-            this.imprimirButton.TabIndex = 25;
-            this.imprimirButton.UseVisualStyleBackColor = true;
+            this.eliminarButton.Click += new System.EventHandler(this.eliminarButton_Click_1);
             // 
             // agregarButton
             // 
             this.agregarButton.BackgroundImage = global::presentationLayer.Properties.Resources.agregar_usuario;
-            this.agregarButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.agregarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.agregarButton.Location = new System.Drawing.Point(848, 37);
-            this.agregarButton.Margin = new System.Windows.Forms.Padding(2);
+            this.agregarButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.agregarButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.agregarButton.FlatAppearance.BorderSize = 0;
+            this.agregarButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.agregarButton.Location = new System.Drawing.Point(1144, 136);
             this.agregarButton.Name = "agregarButton";
-            this.agregarButton.Size = new System.Drawing.Size(56, 19);
-            this.agregarButton.TabIndex = 21;
+            this.agregarButton.Size = new System.Drawing.Size(43, 43);
+            this.agregarButton.TabIndex = 140;
             this.agregarButton.UseVisualStyleBackColor = true;
-            this.agregarButton.Click += new System.EventHandler(this.agregarButton_Click_1);
+            this.agregarButton.Click += new System.EventHandler(this.agregarButton_Click);
+            // 
+            // cerrarSesionButton
+            // 
+            this.cerrarSesionButton.BackColor = System.Drawing.Color.White;
+            this.cerrarSesionButton.BackgroundColor = System.Drawing.Color.White;
+            this.cerrarSesionButton.BorderRadius = 20;
+            this.cerrarSesionButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cerrarSesionButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(142)))), ((int)(((byte)(244)))));
+            this.cerrarSesionButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cerrarSesionButton.Font = new System.Drawing.Font("Gadugi", 14F, System.Drawing.FontStyle.Bold);
+            this.cerrarSesionButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(98)))), ((int)(((byte)(242)))));
+            this.cerrarSesionButton.Location = new System.Drawing.Point(38, 690);
+            this.cerrarSesionButton.Name = "cerrarSesionButton";
+            this.cerrarSesionButton.Padding = new System.Windows.Forms.Padding(6);
+            this.cerrarSesionButton.Size = new System.Drawing.Size(164, 45);
+            this.cerrarSesionButton.TabIndex = 147;
+            this.cerrarSesionButton.Text = "Cerrar sesión";
+            this.cerrarSesionButton.UseVisualStyleBackColor = false;
+            // 
+            // imprimirFormatosButton
+            // 
+            this.imprimirFormatosButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(98)))), ((int)(((byte)(242)))));
+            this.imprimirFormatosButton.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(98)))), ((int)(((byte)(242)))));
+            this.imprimirFormatosButton.BorderRadius = 20;
+            this.imprimirFormatosButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.imprimirFormatosButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(142)))), ((int)(((byte)(244)))));
+            this.imprimirFormatosButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.imprimirFormatosButton.Font = new System.Drawing.Font("Gadugi", 14F, System.Drawing.FontStyle.Bold);
+            this.imprimirFormatosButton.ForeColor = System.Drawing.Color.White;
+            this.imprimirFormatosButton.Location = new System.Drawing.Point(727, 690);
+            this.imprimirFormatosButton.Name = "imprimirFormatosButton";
+            this.imprimirFormatosButton.Padding = new System.Windows.Forms.Padding(6);
+            this.imprimirFormatosButton.Size = new System.Drawing.Size(202, 45);
+            this.imprimirFormatosButton.TabIndex = 146;
+            this.imprimirFormatosButton.Text = "Imprimir formatos";
+            this.imprimirFormatosButton.UseVisualStyleBackColor = false;
+            // 
+            // fichaTecnicaButton
+            // 
+            this.fichaTecnicaButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(98)))), ((int)(((byte)(242)))));
+            this.fichaTecnicaButton.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(98)))), ((int)(((byte)(242)))));
+            this.fichaTecnicaButton.BorderRadius = 20;
+            this.fichaTecnicaButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.fichaTecnicaButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(142)))), ((int)(((byte)(244)))));
+            this.fichaTecnicaButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.fichaTecnicaButton.Font = new System.Drawing.Font("Gadugi", 14F, System.Drawing.FontStyle.Bold);
+            this.fichaTecnicaButton.ForeColor = System.Drawing.Color.White;
+            this.fichaTecnicaButton.Location = new System.Drawing.Point(1036, 690);
+            this.fichaTecnicaButton.Name = "fichaTecnicaButton";
+            this.fichaTecnicaButton.Padding = new System.Windows.Forms.Padding(6);
+            this.fichaTecnicaButton.Size = new System.Drawing.Size(164, 45);
+            this.fichaTecnicaButton.TabIndex = 145;
+            this.fichaTecnicaButton.Text = "Ficha técnica";
+            this.fichaTecnicaButton.UseVisualStyleBackColor = false;
             // 
             // Consultas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1033, 609);
-            this.Controls.Add(this.busquedaGroupBox);
-            this.Controls.Add(this.imprimirButton);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.logo);
+            this.Controls.Add(this.cerrarSesionButton);
+            this.Controls.Add(this.imprimirFormatosButton);
+            this.Controls.Add(this.fichaTecnicaButton);
+            this.Controls.Add(this.busquedaPanel);
+            this.Controls.Add(this.modificarButton);
+            this.Controls.Add(this.eliminarButton);
             this.Controls.Add(this.agregarButton);
-            this.Controls.Add(this.navBarPanel);
-            this.Controls.Add(this.filtradoComboBox);
+            this.Controls.Add(this.vScrollBar1);
             this.Controls.Add(this.consultaLabel);
-            this.Controls.Add(this.filtroLabel);
             this.Controls.Add(this.altaDataGridView);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Consultas";
@@ -307,35 +267,27 @@ namespace presentationLayer
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Consultas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.altaDataGridView)).EndInit();
-            this.navBarPanel.ResumeLayout(false);
-            this.navBarPanel.PerformLayout();
-            this.busquedaGroupBox.ResumeLayout(false);
-            this.busquedaGroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
+            this.busquedaPanel.ResumeLayout(false);
+            this.busquedaPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.ComboBox filtradoComboBox;
-        private System.Windows.Forms.Button eliminarButton;
         private System.Windows.Forms.Label consultaLabel;
-        private System.Windows.Forms.Label filtroLabel;
-        private System.Windows.Forms.Button modificarButton;
         private System.Windows.Forms.Button buscarButton;
         private System.Windows.Forms.DataGridView altaDataGridView;
-        private System.Windows.Forms.Panel navBarPanel;
-        private System.Windows.Forms.Button docentesButton;
-        private System.Windows.Forms.Button alumnosButton;
+        private System.Windows.Forms.VScrollBar vScrollBar1;
         private System.Windows.Forms.Button agregarButton;
-        private System.Windows.Forms.Button vaciarButton;
-        private System.Windows.Forms.TextBox apellidoMaternoTextBox;
-        private System.Windows.Forms.Label apellidoMaternoLabel;
-        private System.Windows.Forms.TextBox apellidoPaternoTextBox;
-        private System.Windows.Forms.Label apellidoPaternoLabel;
-        private System.Windows.Forms.Label nombreLabel;
-        private System.Windows.Forms.TextBox nombreTextBox;
-        private System.Windows.Forms.Button imprimirButton;
-        private System.Windows.Forms.GroupBox busquedaGroupBox;
+        private System.Windows.Forms.Button eliminarButton;
+        private System.Windows.Forms.Button modificarButton;
+        private System.Windows.Forms.Panel busquedaPanel;
+        private System.Windows.Forms.TextBox busquedaTextBox;
+        private buttonSystem fichaTecnicaButton;
+        private buttonSystem imprimirFormatosButton;
+        private buttonSystem cerrarSesionButton;
+        private System.Windows.Forms.PictureBox logo;
     }
 }

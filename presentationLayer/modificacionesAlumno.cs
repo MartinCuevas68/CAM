@@ -15,26 +15,26 @@ namespace presentationLayer
         int progreso = 1;
         public modificacionesAlumno()
         {
-            int distanciaLabel = 40;
-            int distanciaTextBox = 36;
-
+            int distanciaLabel = 70;
+            int distanciaTextBox = 66;
 
             InitializeComponent();
+            loaddata();
+
+            /*Martin.panelNavBar(modificacionAlumnoPanel);
+
+
+            Martin.etiquetafuncionLabel(tituloLabel);
 
             Evelyn.informacionMedicaGroupBox(informacionMedicaAlumnoGroupBox);
             Claudia.altasGroupBox(informacionGeneralAlumnoGroupBox);
             Claudia.altasGroupBox2(informacionEscolarGroupBox);
             Claudia.altasInformacionTutorGroupBox(informacionTutorGroupBox);
 
-
             informacionMedicaAlumnoGroupBox.Visible = false;
             regresarButton.Visible = false;
             informacionTutorGroupBox.Visible = false;
             finalizarModificacionButton.Visible = false;
-
-
-            distanciaLabel = Claudia.altasLabel(fechaElaboracionLabel, distanciaLabel);
-            distanciaTextBox = Claudia.altasDateTimePicker(fechaElaboracionDateTimePicker, distanciaTextBox);
 
             distanciaLabel = Claudia.altasNombre(nombreAlumnoLabel, apellidoPaternoAlumnoLabel, apellidoMaternoAlumnoLabel, nombreAlumnoTextBox, apellidoPaternoAlumnoTextBox, apellidoMaternoAlumnoTextBox, distanciaLabel);
             distanciaTextBox = distanciaTextBox + 40;
@@ -59,33 +59,59 @@ namespace presentationLayer
             distanciaLabel = Claudia.altasLabel(canalizadoPorLabel, distanciaLabel);
             distanciaTextBox = Claudia.altasTextBox(canalizadoPorTextBox, distanciaTextBox);
 
-            Evelyn.altasInformacionMedicaAlumno(servicioMedicoAlumnoLabel, discapacidadLabel, enfermedaresAlumnoLabel, alergiasAlumnoLabel, 
-                    telefonoContactoMedicoAlumnoLabel, grupoSanguineoAlumnoLabel, documentacionAlumnoLabel, mostrarDiscapacidadLabel, 
-                    mostrarEnfermedadesLabel, mostrarAlergiasLabel, servicioMedicoTextBox, discapacidadTextBox, enfermedadesAlumnoTextBox, 
-                    alergiasAlumnoTextBox, telefonoContactoMedicoAlumnoTextBox, grupoSanguineoTextBox, documentacionListBox, mostrarDiscapacidadRichTextBox, 
+
+            Evelyn.altasInformacionMedicaAlumno(servicioMedicoAlumnoLabel, discapacidadLabel, enfermedaresAlumnoLabel, alergiasAlumnoLabel,
+                    telefonoContactoMedicoAlumnoLabel, grupoSanguineoAlumnoLabel, documentacionAlumnoLabel, mostrarDiscapacidadLabel,
+                    mostrarEnfermedadesLabel, mostrarAlergiasLabel, servicioMedicoTextBox, discapacidadesCombobox, enfermedadesCombobox, alergiasCombobox, telefonoContactoMedicoAlumnoTextBox, grupoSanguineoTextBox, documentacionGB, mostrarDiscapacidadRichTextBox,
                     mostrarEnfermedadesRichTextBox, mostrarAlergiasRichTextBox, agregarAlergiasButton, agregarEnfermedadesButton, agregarDiscapacidadButton);
+
             Claudia.altasInformacionEscolar(cicloEscolarLabel, curpLabel, añosCumplidosLabel, cicloEscolarTextBox, curpTextBox, añosCumplidosTextBox, tipoIngresoGroupBox, nuevoIngresoRadioButton, reingresoRadioButton);
 
-            Evelyn.altasBotonesParaNavegar(siguienteButton, regresarButton, finalizarModificacionButton);
-            Evelyn.altasBotonesPanel(alumnosButton, docentesButton);
+            //Evelyn.altasBotonesParaNavegar(siguienteButton, regresarButton, finalizarModificacionButton);
+            Evelyn.altasBotonesPanel(alumnosButton);
 
-            int distanciaInfTutor = 60;
+            int distanciaInfTutor = 10;
             Claudia.altasInformacionTutorGroupBox(informacionTutorGroupBox);
             distanciaInfTutor = Claudia.altasTutorOtroAlumno(otroAlumnoTutorGroupBox, seleccionarNombreLabel, seleccionarNombreComboBox, distanciaInfTutor);
             distanciaInfTutor = Claudia.altasNombreTutor(nombreTutorLabel, nombreTutorTextBox, apellidoPaternoTutorLabel, apellidoPaternoTutorTextBox, apellidoMaternoTutorLabel, apellidoMaternoTutorTextBox, distanciaInfTutor);
             distanciaInfTutor = Claudia.altasDireccionTutor(domicilioTutorLabel, calleDireccionTutorLabel, calleDireccionTutorTextBox, numeroDireccionTutorLabel, numeroDireccionTutorTextBox, coloniaDireccionTutorLabel, coloniaDireccionTutorTextBox, distanciaInfTutor);
             distanciaInfTutor = Claudia.altasOcupacionTutor(ocupacionTutorLabel, ocupacionTutorTextBox, distanciaInfTutor);
             distanciaInfTutor = Claudia.altasTelefonosTutor(telefonosTutorLabel, telefonoCasaTutorLabel, telefonoCasaTutorTextBox, telefonoCelularTutorLabel, telefonoCelularTutorTextBox, telefonoTrabajoTutorLabel, telefonoTrabajoTutorTextBox, distanciaInfTutor);
+
+
             Evelyn.eliminarBotones(eliminarEnfermedadButton, eliminarDiscapacidadesButton, eliminarAlergiasButton);
             Claudia.limpiarFormatosBotones(limpiarFormato1Button, limpiarFormato2Button, limpiarFormato3Button);
+
+            Martin.nodificacion(idLabel, nombreLabel);*/
+
         }
 
-        private void alumnosButton_Click(object sender, EventArgs e)
+
+        private void modificacionesAlumno_Load(object sender, EventArgs e)
         {
-            this.Hide();
-            Consultas formConsulta = new Consultas();
-            formConsulta.Show();
+            limpiarFormato1Button.Hide();
+            limpiarFormato2Button.Hide();
+            limpiarFormato3Button.Hide();
+
+            otroAlumnoTutorGroupBox.Hide();
+
+            seleccionarNombreLabel.Hide();
+            seleccionarNombreComboBox.Hide();
+            documentacionGB.Hide();
+            documentacionAlumnoLabel.Hide();
+
+            idLabel.Text = Contenedor.id.ToString();
+            
+
+
+            foreach (var item in businessLayer.Martin.nombreGetid(Contenedor.id))
+            {
+                nombreLabel.Text = item.nombre;
+            }
+
+          
         }
+        
 
         private void siguienteButton_Click(object sender, EventArgs e)
         {
@@ -163,7 +189,80 @@ namespace presentationLayer
 
         private void finalizarModificacionButton_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("¿DESEA GUARDAR LOS CAMBIOS REALIZADOS?", "MODIFICACIÓN DE DATOS", MessageBoxButtons.OKCancel);
+            if (!nombreAlumnoTextBox.Text.Equals("") && !apellidoPaternoAlumnoTextBox.Text.Equals("") && !apellidoMaternoAlumnoTextBox.Text.Equals(""))
+            {
+                MessageBox.Show("MODIFICACION EXITOSA!");
+                businessLayer.Martin.ModAlumno(cicloEscolarTextBox.Text,
+                                              nombreAlumnoTextBox.Text,
+                                              apellidoPaternoAlumnoTextBox.Text,
+                                              apellidoMaternoAlumnoTextBox.Text,
+                                              fechaNacimientoDateTimePicker.Value,
+                                              añosCumplidosTextBox.Text,
+                                              curpTextBox.Text,
+                                              estadoNacimientoAlumnoTextBox.Text,
+                                              ciudadNacimientoAlumnoTextBox.Text,
+                                              coloniaDireccionAlumnoTextBox.Text,
+                                              calleDireccionAlumnoTextBox.Text,
+                                              numeroDireccionAlumnoTextBox.Text,
+                                              telefonoAlumnoTextBox.Text,
+                                              escuelaProcedenciaTextBox.Text,
+                                              canalizadoPorTextBox.Text,
+                                              Contenedor.id);
+
+                this.Hide();
+                Consultas consultas = new Consultas();
+                consultas.Show();
+
+            }
+            else
+            {
+                MessageBox.Show("NO SE PUEDE MODIFICAR UN REGISTRO SIN NOMBRE COMPLETO DEL ALUMNO!");
+            }
         }
+
+
+
+        private void alumnosButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Consultas formConsulta = new Consultas();
+            formConsulta.Show();
+        }
+
+        private void loaddata()
+        {
+            foreach (var item in businessLayer.Martin.alergiasGet())
+            {
+                alergiasCombobox.Items.Add(item.alergia);
+            }
+            foreach (var item in businessLayer.Martin.alergiasGet())
+            {
+                enfermedadesCombobox.Items.Add(item.alergia);
+            }
+            foreach (var item in businessLayer.Martin.alergiasGet())
+            {
+                discapacidadesCombobox.Items.Add(item.alergia);
+            }
+        }
+
+        private void agregarEnfermedadesButton_Click(object sender, EventArgs e)
+        {
+            string informacion = this.enfermedadesCombobox.GetItemText(this.enfermedadesCombobox.SelectedItem);
+            mostrarEnfermedadesRichTextBox.Text = mostrarEnfermedadesRichTextBox.Text + informacion + "\n";
+        }
+
+        private void agregarDiscapacidadButton_Click(object sender, EventArgs e)
+        {
+            string informacion = this.discapacidadesCombobox.GetItemText(this.discapacidadesCombobox.SelectedItem);
+            mostrarDiscapacidadRichTextBox.Text = mostrarDiscapacidadRichTextBox.Text + informacion + "\n";
+        }
+   
+
+        private void agregarAlergiasButton_Click(object sender, EventArgs e)
+        {
+            string informacion = this.alergiasCombobox.GetItemText(this.alergiasCombobox.SelectedItem);
+            mostrarAlergiasRichTextBox.Text = mostrarAlergiasRichTextBox.Text + informacion + "\n";
+        }
+
     }
 }

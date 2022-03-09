@@ -4,9 +4,9 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="BDDCAMModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-        <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BDDCAM.dbo.alergias' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+      <Schema Namespace="BDCAMModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.alergias' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="alergias">
           <Key>
             <PropertyRef Name="id_cartilla_medica" />
@@ -38,8 +38,8 @@ advertencia 6002: La tabla o vista 'BDDCAM.dbo.alergias' no tiene definida ningu
           <Property Name="documentacion_alumno" Type="nvarchar(max)" />
           <Property Name="atendido_por" Type="varchar" MaxLength="30" Nullable="false" />
         </EntityType>
-        <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BDDCAM.dbo.alumno-cartilla' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.alumno-cartilla' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="alumno-cartilla">
           <Key>
             <PropertyRef Name="id_alumno" />
@@ -48,8 +48,8 @@ advertencia 6002: La tabla o vista 'BDDCAM.dbo.alumno-cartilla' no tiene definid
           <Property Name="id_alumno" Type="int" Nullable="false" />
           <Property Name="id_cartilla" Type="int" Nullable="false" />
         </EntityType>
-        <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BDDCAM.dbo.alumno-programa' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.alumno-programa' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="alumno-programa">
           <Key>
             <PropertyRef Name="id_alumno" />
@@ -58,8 +58,8 @@ advertencia 6002: La tabla o vista 'BDDCAM.dbo.alumno-programa' no tiene definid
           <Property Name="id_alumno" Type="int" Nullable="false" />
           <Property Name="id_programa" Type="int" Nullable="false" />
         </EntityType>
-        <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BDDCAM.dbo.discapacidades' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.discapacidades' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="discapacidades">
           <Key>
             <PropertyRef Name="id_cartilla_medica" />
@@ -68,8 +68,8 @@ advertencia 6002: La tabla o vista 'BDDCAM.dbo.discapacidades' no tiene definida
           <Property Name="id_cartilla_medica" Type="int" Nullable="false" />
           <Property Name="discapacidades" Type="varchar" MaxLength="30" Nullable="false" />
         </EntityType>
-        <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BDDCAM.dbo.enfermedades' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.enfermedades' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="enfermedades">
           <Key>
             <PropertyRef Name="id_cartilla_medica" />
@@ -91,8 +91,8 @@ advertencia 6002: La tabla o vista 'BDDCAM.dbo.enfermedades' no tiene definida n
           <Property Name="modulos" Type="varchar" MaxLength="30" Nullable="false" />
           <Property Name="proyecto" Type="varchar" MaxLength="30" Nullable="false" />
         </EntityType>
-        <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BDDCAM.dbo.programa-turno' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.programa-turno' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="programa-turno">
           <Key>
             <PropertyRef Name="id_turno" />
@@ -101,8 +101,8 @@ advertencia 6002: La tabla o vista 'BDDCAM.dbo.programa-turno' no tiene definida
           <Property Name="id_turno" Type="int" Nullable="false" />
           <Property Name="id_programa" Type="int" Nullable="false" />
         </EntityType>
-        <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BDDCAM.dbo.recurso-programa' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.recurso-programa' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="recurso-programa">
           <Key>
             <PropertyRef Name="id_recurso" />
@@ -148,8 +148,8 @@ advertencia 6002: La tabla o vista 'BDDCAM.dbo.recurso-programa' no tiene defini
           <Property Name="color_textura_piel" Type="varchar" MaxLength="50" />
           <Property Name="estatura" Type="varchar" MaxLength="50" />
         </EntityType>
-        <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BDDCAM.dbo.telefono-tutores' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.telefono-tutores' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="telefono-tutores">
           <Key>
             <PropertyRef Name="id_tutor" />
@@ -183,8 +183,8 @@ advertencia 6002: La tabla o vista 'BDDCAM.dbo.telefono-tutores' no tiene defini
           <Property Name="calle_trabajo_tutor" Type="varchar" MaxLength="30" Nullable="false" />
           <Property Name="numero_trabajo_tutor" Type="varchar" MaxLength="30" Nullable="false" />
         </EntityType>
-        <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BDDCAM.dbo.tutor-alumno' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.tutor-alumno' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="tutor-alumno">
           <Key>
             <PropertyRef Name="id_tutor" />
@@ -373,7 +373,7 @@ advertencia 6002: La tabla o vista 'BDDCAM.dbo.tutor-alumno' no tiene definida n
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="BDDCAMModelStoreContainer">
+        <EntityContainer Name="BDCAMModelStoreContainer">
           <EntitySet Name="alumno" EntityType="Self.alumno" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="programa" EntityType="Self.programa" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="recursos" EntityType="Self.recursos" Schema="dbo" store:Type="Tables" />
@@ -502,7 +502,7 @@ advertencia 6002: La tabla o vista 'BDDCAM.dbo.tutor-alumno' no tiene definida n
     </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="BDDCAMModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <Schema Namespace="BDCAMModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityType Name="alumno">
           <Key>
             <PropertyRef Name="id_alumno" />
@@ -792,9 +792,9 @@ advertencia 6002: La tabla o vista 'BDDCAM.dbo.tutor-alumno' no tiene definida n
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="BDDCAMModelStoreContainer" CdmEntityContainer="BDCAMEntities">
+        <EntityContainerMapping StorageEntityContainer="BDCAMModelStoreContainer" CdmEntityContainer="BDCAMEntities">
           <EntitySetMapping Name="alumno">
-            <EntityTypeMapping TypeName="BDDCAMModel.alumno">
+            <EntityTypeMapping TypeName="BDCAMModel.alumno">
               <MappingFragment StoreEntitySet="alumno">
                 <ScalarProperty Name="id_alumno" ColumnName="id_alumno" />
                 <ScalarProperty Name="fecha_registro" ColumnName="fecha_registro" />
@@ -818,7 +818,7 @@ advertencia 6002: La tabla o vista 'BDDCAM.dbo.tutor-alumno' no tiene definida n
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="programa">
-            <EntityTypeMapping TypeName="BDDCAMModel.programa">
+            <EntityTypeMapping TypeName="BDCAMModel.programa">
               <MappingFragment StoreEntitySet="programa">
                 <ScalarProperty Name="id_programa" ColumnName="id_programa" />
                 <ScalarProperty Name="nombre_programa" ColumnName="nombre_programa" />
@@ -832,7 +832,7 @@ advertencia 6002: La tabla o vista 'BDDCAM.dbo.tutor-alumno' no tiene definida n
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="recursos">
-            <EntityTypeMapping TypeName="BDDCAMModel.recursos">
+            <EntityTypeMapping TypeName="BDCAMModel.recursos">
               <MappingFragment StoreEntitySet="recursos">
                 <ScalarProperty Name="id_recurso" ColumnName="id_recurso" />
                 <ScalarProperty Name="recurso" ColumnName="recurso" />
@@ -840,7 +840,7 @@ advertencia 6002: La tabla o vista 'BDDCAM.dbo.tutor-alumno' no tiene definida n
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="sysdiagrams">
-            <EntityTypeMapping TypeName="BDDCAMModel.sysdiagrams">
+            <EntityTypeMapping TypeName="BDCAMModel.sysdiagrams">
               <MappingFragment StoreEntitySet="sysdiagrams">
                 <ScalarProperty Name="name" ColumnName="name" />
                 <ScalarProperty Name="principal_id" ColumnName="principal_id" />
@@ -851,7 +851,7 @@ advertencia 6002: La tabla o vista 'BDDCAM.dbo.tutor-alumno' no tiene definida n
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tabla_indicadores_telefono">
-            <EntityTypeMapping TypeName="BDDCAMModel.tabla_indicadores_telefono">
+            <EntityTypeMapping TypeName="BDCAMModel.tabla_indicadores_telefono">
               <MappingFragment StoreEntitySet="tabla_indicadores_telefono">
                 <ScalarProperty Name="id_telefono" ColumnName="id_telefono" />
                 <ScalarProperty Name="telefono" ColumnName="telefono" />
@@ -859,7 +859,7 @@ advertencia 6002: La tabla o vista 'BDDCAM.dbo.tutor-alumno' no tiene definida n
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tabla_medica">
-            <EntityTypeMapping TypeName="BDDCAMModel.tabla_medica">
+            <EntityTypeMapping TypeName="BDCAMModel.tabla_medica">
               <MappingFragment StoreEntitySet="tabla_medica">
                 <ScalarProperty Name="id_cartilla_medica" ColumnName="id_cartilla_medica" />
                 <ScalarProperty Name="servicio_medico" ColumnName="servicio_medico" />
@@ -873,7 +873,7 @@ advertencia 6002: La tabla o vista 'BDDCAM.dbo.tutor-alumno' no tiene definida n
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="turnos">
-            <EntityTypeMapping TypeName="BDDCAMModel.turnos">
+            <EntityTypeMapping TypeName="BDCAMModel.turnos">
               <MappingFragment StoreEntitySet="turnos">
                 <ScalarProperty Name="id_turno" ColumnName="id_turno" />
                 <ScalarProperty Name="turno" ColumnName="turno" />
@@ -881,7 +881,7 @@ advertencia 6002: La tabla o vista 'BDDCAM.dbo.tutor-alumno' no tiene definida n
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tutor">
-            <EntityTypeMapping TypeName="BDDCAMModel.tutor">
+            <EntityTypeMapping TypeName="BDCAMModel.tutor">
               <MappingFragment StoreEntitySet="tutor">
                 <ScalarProperty Name="id_tutor" ColumnName="id_tutor" />
                 <ScalarProperty Name="nombre" ColumnName="nombre" />
@@ -898,7 +898,7 @@ advertencia 6002: La tabla o vista 'BDDCAM.dbo.tutor-alumno' no tiene definida n
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="alergias">
-            <EntityTypeMapping TypeName="BDDCAMModel.alergias">
+            <EntityTypeMapping TypeName="BDCAMModel.alergias">
               <MappingFragment StoreEntitySet="alergias">
                 <ScalarProperty Name="id_cartilla_medica" ColumnName="id_cartilla_medica" />
                 <ScalarProperty Name="alergia" ColumnName="alergia" />
@@ -906,7 +906,7 @@ advertencia 6002: La tabla o vista 'BDDCAM.dbo.tutor-alumno' no tiene definida n
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="discapacidades">
-            <EntityTypeMapping TypeName="BDDCAMModel.discapacidades">
+            <EntityTypeMapping TypeName="BDCAMModel.discapacidades">
               <MappingFragment StoreEntitySet="discapacidades">
                 <ScalarProperty Name="id_cartilla_medica" ColumnName="id_cartilla_medica" />
                 <ScalarProperty Name="discapacidades1" ColumnName="discapacidades" />
@@ -914,7 +914,7 @@ advertencia 6002: La tabla o vista 'BDDCAM.dbo.tutor-alumno' no tiene definida n
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="enfermedades">
-            <EntityTypeMapping TypeName="BDDCAMModel.enfermedades">
+            <EntityTypeMapping TypeName="BDCAMModel.enfermedades">
               <MappingFragment StoreEntitySet="enfermedades">
                 <ScalarProperty Name="id_cartilla_medica" ColumnName="id_cartilla_medica" />
                 <ScalarProperty Name="enfermedad" ColumnName="enfermedad" />
@@ -922,7 +922,7 @@ advertencia 6002: La tabla o vista 'BDDCAM.dbo.tutor-alumno' no tiene definida n
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="telefono_tutores">
-            <EntityTypeMapping TypeName="BDDCAMModel.telefono_tutores">
+            <EntityTypeMapping TypeName="BDCAMModel.telefono_tutores">
               <MappingFragment StoreEntitySet="telefono-tutores">
                 <ScalarProperty Name="id_tutor" ColumnName="id_tutor" />
                 <ScalarProperty Name="id_telefono" ColumnName="id_telefono" />
@@ -930,7 +930,7 @@ advertencia 6002: La tabla o vista 'BDDCAM.dbo.tutor-alumno' no tiene definida n
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <AssociationSetMapping Name="alumno_cartilla" TypeName="BDDCAMModel.alumno_cartilla" StoreEntitySet="alumno-cartilla">
+          <AssociationSetMapping Name="alumno_cartilla" TypeName="BDCAMModel.alumno_cartilla" StoreEntitySet="alumno-cartilla">
             <EndProperty Name="alumno">
               <ScalarProperty Name="id_alumno" ColumnName="id_alumno" />
             </EndProperty>
@@ -938,7 +938,7 @@ advertencia 6002: La tabla o vista 'BDDCAM.dbo.tutor-alumno' no tiene definida n
               <ScalarProperty Name="id_cartilla_medica" ColumnName="id_cartilla" />
             </EndProperty>
           </AssociationSetMapping>
-          <AssociationSetMapping Name="alumno_programa" TypeName="BDDCAMModel.alumno_programa" StoreEntitySet="alumno-programa">
+          <AssociationSetMapping Name="alumno_programa" TypeName="BDCAMModel.alumno_programa" StoreEntitySet="alumno-programa">
             <EndProperty Name="alumno">
               <ScalarProperty Name="id_alumno" ColumnName="id_alumno" />
             </EndProperty>
@@ -946,7 +946,7 @@ advertencia 6002: La tabla o vista 'BDDCAM.dbo.tutor-alumno' no tiene definida n
               <ScalarProperty Name="id_programa" ColumnName="id_programa" />
             </EndProperty>
           </AssociationSetMapping>
-          <AssociationSetMapping Name="programa_turno" TypeName="BDDCAMModel.programa_turno" StoreEntitySet="programa-turno">
+          <AssociationSetMapping Name="programa_turno" TypeName="BDCAMModel.programa_turno" StoreEntitySet="programa-turno">
             <EndProperty Name="programa">
               <ScalarProperty Name="id_programa" ColumnName="id_programa" />
             </EndProperty>
@@ -954,7 +954,7 @@ advertencia 6002: La tabla o vista 'BDDCAM.dbo.tutor-alumno' no tiene definida n
               <ScalarProperty Name="id_turno" ColumnName="id_turno" />
             </EndProperty>
           </AssociationSetMapping>
-          <AssociationSetMapping Name="recurso_programa" TypeName="BDDCAMModel.recurso_programa" StoreEntitySet="recurso-programa">
+          <AssociationSetMapping Name="recurso_programa" TypeName="BDCAMModel.recurso_programa" StoreEntitySet="recurso-programa">
             <EndProperty Name="programa">
               <ScalarProperty Name="id_programa" ColumnName="id_programa" />
             </EndProperty>
@@ -962,7 +962,7 @@ advertencia 6002: La tabla o vista 'BDDCAM.dbo.tutor-alumno' no tiene definida n
               <ScalarProperty Name="id_recurso" ColumnName="id_recurso" />
             </EndProperty>
           </AssociationSetMapping>
-          <AssociationSetMapping Name="tutor_alumno" TypeName="BDDCAMModel.tutor_alumno" StoreEntitySet="tutor-alumno">
+          <AssociationSetMapping Name="tutor_alumno" TypeName="BDCAMModel.tutor_alumno" StoreEntitySet="tutor-alumno">
             <EndProperty Name="tutor">
               <ScalarProperty Name="id_tutor" ColumnName="id_tutor" />
             </EndProperty>
@@ -987,7 +987,7 @@ advertencia 6002: La tabla o vista 'BDDCAM.dbo.tutor-alumno' no tiene definida n
         <DesignerProperty Name="EnablePluralization" Value="false" />
         <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
         <DesignerProperty Name="UseLegacyProvider" Value="false" />
-        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
       </DesignerInfoPropertySet>
     </Options>
     <!-- Diagram content (shape and connector positions) -->

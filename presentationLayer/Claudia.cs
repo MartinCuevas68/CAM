@@ -6,16 +6,24 @@ namespace presentationLayer
 {
     class Claudia
     {
+
+        public static void altasInformacionTutorGroupBox(GroupBox informacionTutor)
+        {
+            informacionTutor.Location = new Point(300, 250);
+            informacionTutor.Size = new Size(1150, 360);
+            informacionTutor.Font = new Font("Leelawadee UI", 12);
+        }
+
         public static void altasGroupBox(GroupBox groupBox)
         {
-            groupBox.Location = new Point(130, 100);
+            groupBox.Location = new Point(300, 250);
             groupBox.Size = new Size(1150, 360);
             groupBox.Font = new Font("Leelawadee UI", 12);
         }
 
         public static void altasGroupBox2(GroupBox groupBox2)
         {
-            groupBox2.Location = new Point(130, 465);
+            groupBox2.Location = new Point(300, 620);
             groupBox2.Size = new Size(400, 250);
             groupBox2.Font = new Font("Leelawadee UI", 12);
         }
@@ -78,7 +86,7 @@ namespace presentationLayer
             ciudad.Size = new Size(100, 30);
             ciudadTB.Size = new Size(100, 30);
             estado.Size = new Size(100, 30);
-            estadoTB.Size = new Size(100, 30);
+            estadoTB.Size = new Size(200, 30);
 
             distancia = distancia + 40;
             return distancia;
@@ -87,8 +95,8 @@ namespace presentationLayer
         public static int altasDireccion(Label titulo, Label calle, Label numero, Label colonia, TextBox calleTB, TextBox numeroTB, TextBox coloniaTB, int distancia)
         {
             titulo.Location = new Point(20, distancia);
-            calle.Location = new Point(240, distancia);
-            calleTB.Location = new Point(340, distancia);
+            calle.Location = new Point(150, distancia);
+            calleTB.Location = new Point(220, distancia);
             numero.Location = new Point(460, distancia);
             numeroTB.Location = new Point(550, distancia);
             colonia.Location = new Point(660, distancia);
@@ -96,11 +104,11 @@ namespace presentationLayer
 
             titulo.Size = new Size(100, 30);
             calle.Size = new Size(100, 30);
-            calleTB.Size = new Size(100, 30);
+            calleTB.Size = new Size(200, 30);
             numero.Size = new Size(100, 30);
             numeroTB.Size = new Size(100, 30);
             colonia.Size = new Size(100, 30);
-            coloniaTB.Size = new Size(100, 30);
+            coloniaTB.Size = new Size(200, 30);
 
             distancia = distancia + 40;
             return distancia;
@@ -131,13 +139,6 @@ namespace presentationLayer
             ingreso.Size = new Size(350, 80);
             radioButton1.Size = new Size(100, 30);
             radioButton2.Size = new Size(100, 30);
-        }
-
-        public static void altasInformacionTutorGroupBox(GroupBox informacionTutor)
-        {
-            informacionTutor.Location = new Point(130, 100);
-            informacionTutor.Size = new Size(1150, 450);
-            informacionTutor.Font = new Font("Leelawadee UI", 12);
         }
 
         public static int altasTutorOtroAlumno(GroupBox otroAlumno, Label seleccion, ComboBox tutor, int distancia)
@@ -251,6 +252,11 @@ namespace presentationLayer
             formato1.Size = new Size(35, 35);
             formato2.Size = new Size(35, 35);
             formato3.Size = new Size(35, 35);
+
+            var tt = new ToolTip();
+            tt.SetToolTip(formato1, "LIMPIAR ESPACIOS");
+            tt.SetToolTip(formato2, "LIMPIAR ESPACIOS");
+            tt.SetToolTip(formato3, "LIMPIAR ESPACIOS");
         }
     }
 }

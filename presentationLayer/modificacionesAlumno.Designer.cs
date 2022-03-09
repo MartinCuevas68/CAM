@@ -30,11 +30,21 @@ namespace presentationLayer
         private void InitializeComponent()
         {
             this.alumnosButton = new System.Windows.Forms.Button();
-            this.docentesButton = new System.Windows.Forms.Button();
-            this.altaAlumnoPanel = new System.Windows.Forms.Panel();
-            this.tituloLabel = new System.Windows.Forms.Label();
+            this.modificacionAlumnoPanel = new System.Windows.Forms.Panel();
+            this.camLabel = new System.Windows.Forms.Label();
             this.informacionMedicaAlumnoGroupBox = new System.Windows.Forms.GroupBox();
+            this.discapacidadesCombobox = new System.Windows.Forms.ComboBox();
+            this.alergiasCombobox = new System.Windows.Forms.ComboBox();
+            this.enfermedadesCombobox = new System.Windows.Forms.ComboBox();
+            this.documentacionGB = new System.Windows.Forms.GroupBox();
+            this.checkBox6 = new System.Windows.Forms.CheckBox();
+            this.checkBox5 = new System.Windows.Forms.CheckBox();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.eliminarAlergiasButton = new System.Windows.Forms.Button();
+            this.limpiarFormato3Button = new System.Windows.Forms.Button();
             this.eliminarDiscapacidadesButton = new System.Windows.Forms.Button();
             this.eliminarEnfermedadButton = new System.Windows.Forms.Button();
             this.agregarAlergiasButton = new System.Windows.Forms.Button();
@@ -46,19 +56,15 @@ namespace presentationLayer
             this.mostrarAlergiasRichTextBox = new System.Windows.Forms.RichTextBox();
             this.mostrarEnfermedadesRichTextBox = new System.Windows.Forms.RichTextBox();
             this.mostrarDiscapacidadRichTextBox = new System.Windows.Forms.RichTextBox();
-            this.documentacionListBox = new System.Windows.Forms.CheckedListBox();
             this.servicioMedicoAlumnoLabel = new System.Windows.Forms.Label();
             this.grupoSanguineoAlumnoLabel = new System.Windows.Forms.Label();
             this.enfermedaresAlumnoLabel = new System.Windows.Forms.Label();
             this.alergiasAlumnoLabel = new System.Windows.Forms.Label();
-            this.alergiasAlumnoTextBox = new System.Windows.Forms.TextBox();
             this.telefonoContactoMedicoAlumnoLabel = new System.Windows.Forms.Label();
             this.grupoSanguineoTextBox = new System.Windows.Forms.TextBox();
             this.documentacionAlumnoLabel = new System.Windows.Forms.Label();
             this.telefonoContactoMedicoAlumnoTextBox = new System.Windows.Forms.TextBox();
             this.servicioMedicoTextBox = new System.Windows.Forms.TextBox();
-            this.enfermedadesAlumnoTextBox = new System.Windows.Forms.TextBox();
-            this.discapacidadTextBox = new System.Windows.Forms.TextBox();
             this.discapacidadLabel = new System.Windows.Forms.Label();
             this.informacionEscolarGroupBox = new System.Windows.Forms.GroupBox();
             this.cicloEscolarLabel = new System.Windows.Forms.Label();
@@ -71,8 +77,7 @@ namespace presentationLayer
             this.nuevoIngresoRadioButton = new System.Windows.Forms.RadioButton();
             this.reingresoRadioButton = new System.Windows.Forms.RadioButton();
             this.informacionGeneralAlumnoGroupBox = new System.Windows.Forms.GroupBox();
-            this.fechaElaboracionLabel = new System.Windows.Forms.Label();
-            this.fechaElaboracionDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.limpiarFormato1Button = new System.Windows.Forms.Button();
             this.nombreAlumnoLabel = new System.Windows.Forms.Label();
             this.nombreAlumnoTextBox = new System.Windows.Forms.TextBox();
             this.apellidoPaternoAlumnoLabel = new System.Windows.Forms.Label();
@@ -103,6 +108,7 @@ namespace presentationLayer
             this.informacionTutorGroupBox = new System.Windows.Forms.GroupBox();
             this.seleccionarNombreLabel = new System.Windows.Forms.Label();
             this.seleccionarNombreComboBox = new System.Windows.Forms.ComboBox();
+            this.limpiarFormato2Button = new System.Windows.Forms.Button();
             this.nombreTutorLabel = new System.Windows.Forms.Label();
             this.domicilioTutorLabel = new System.Windows.Forms.Label();
             this.ocupacionTutorLabel = new System.Windows.Forms.Label();
@@ -132,11 +138,12 @@ namespace presentationLayer
             this.finalizarModificacionButton = new System.Windows.Forms.Button();
             this.regresarButton = new System.Windows.Forms.Button();
             this.siguienteButton = new System.Windows.Forms.Button();
-            this.limpiarFormato1Button = new System.Windows.Forms.Button();
-            this.limpiarFormato3Button = new System.Windows.Forms.Button();
-            this.limpiarFormato2Button = new System.Windows.Forms.Button();
-            this.altaAlumnoPanel.SuspendLayout();
+            this.tituloLabel = new System.Windows.Forms.Label();
+            this.idLabel = new System.Windows.Forms.Label();
+            this.nombreLabel = new System.Windows.Forms.Label();
+            this.modificacionAlumnoPanel.SuspendLayout();
             this.informacionMedicaAlumnoGroupBox.SuspendLayout();
+            this.documentacionGB.SuspendLayout();
             this.informacionEscolarGroupBox.SuspendLayout();
             this.tipoIngresoGroupBox.SuspendLayout();
             this.informacionGeneralAlumnoGroupBox.SuspendLayout();
@@ -149,53 +156,46 @@ namespace presentationLayer
             this.alumnosButton.AutoSize = true;
             this.alumnosButton.Dock = System.Windows.Forms.DockStyle.Right;
             this.alumnosButton.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.alumnosButton.Location = new System.Drawing.Point(1225, 0);
+            this.alumnosButton.Location = new System.Drawing.Point(1256, 0);
+            this.alumnosButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.alumnosButton.Name = "alumnosButton";
-            this.alumnosButton.Size = new System.Drawing.Size(86, 40);
+            this.alumnosButton.Size = new System.Drawing.Size(115, 39);
             this.alumnosButton.TabIndex = 1;
             this.alumnosButton.Text = "ALUMNOS";
             this.alumnosButton.UseVisualStyleBackColor = true;
             this.alumnosButton.Click += new System.EventHandler(this.alumnosButton_Click);
             // 
-            // docentesButton
+            // modificacionAlumnoPanel
             // 
-            this.docentesButton.AutoSize = true;
-            this.docentesButton.Dock = System.Windows.Forms.DockStyle.Right;
-            this.docentesButton.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.docentesButton.Location = new System.Drawing.Point(1311, 0);
-            this.docentesButton.Name = "docentesButton";
-            this.docentesButton.Size = new System.Drawing.Size(94, 40);
-            this.docentesButton.TabIndex = 0;
-            this.docentesButton.Text = "DOCENTES";
-            this.docentesButton.UseVisualStyleBackColor = true;
+            this.modificacionAlumnoPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.modificacionAlumnoPanel.Controls.Add(this.camLabel);
+            this.modificacionAlumnoPanel.Controls.Add(this.alumnosButton);
+            this.modificacionAlumnoPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.modificacionAlumnoPanel.Location = new System.Drawing.Point(0, 0);
+            this.modificacionAlumnoPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.modificacionAlumnoPanel.Name = "modificacionAlumnoPanel";
+            this.modificacionAlumnoPanel.Size = new System.Drawing.Size(1371, 39);
+            this.modificacionAlumnoPanel.TabIndex = 137;
             // 
-            // altaAlumnoPanel
+            // camLabel
             // 
-            this.altaAlumnoPanel.BackColor = System.Drawing.Color.Thistle;
-            this.altaAlumnoPanel.Controls.Add(this.alumnosButton);
-            this.altaAlumnoPanel.Controls.Add(this.docentesButton);
-            this.altaAlumnoPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.altaAlumnoPanel.Location = new System.Drawing.Point(0, 0);
-            this.altaAlumnoPanel.Name = "altaAlumnoPanel";
-            this.altaAlumnoPanel.Size = new System.Drawing.Size(1405, 40);
-            this.altaAlumnoPanel.TabIndex = 137;
-            // 
-            // tituloLabel
-            // 
-            this.tituloLabel.AutoSize = true;
-            this.tituloLabel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.tituloLabel.Font = new System.Drawing.Font("Leelawadee UI", 18F, System.Drawing.FontStyle.Bold);
-            this.tituloLabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.tituloLabel.Location = new System.Drawing.Point(0, 40);
-            this.tituloLabel.Name = "tituloLabel";
-            this.tituloLabel.Padding = new System.Windows.Forms.Padding(165, 15, 0, 0);
-            this.tituloLabel.Size = new System.Drawing.Size(597, 56);
-            this.tituloLabel.TabIndex = 142;
-            this.tituloLabel.Text = "MODIFICACIÓN DE ALUMNO";
+            this.camLabel.AutoSize = true;
+            this.camLabel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.camLabel.Font = new System.Drawing.Font("Leelawadee UI", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.camLabel.Location = new System.Drawing.Point(0, 0);
+            this.camLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.camLabel.Name = "camLabel";
+            this.camLabel.Size = new System.Drawing.Size(171, 81);
+            this.camLabel.TabIndex = 147;
+            this.camLabel.Text = "CAM";
             // 
             // informacionMedicaAlumnoGroupBox
             // 
             this.informacionMedicaAlumnoGroupBox.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.informacionMedicaAlumnoGroupBox.Controls.Add(this.discapacidadesCombobox);
+            this.informacionMedicaAlumnoGroupBox.Controls.Add(this.alergiasCombobox);
+            this.informacionMedicaAlumnoGroupBox.Controls.Add(this.enfermedadesCombobox);
+            this.informacionMedicaAlumnoGroupBox.Controls.Add(this.documentacionGB);
             this.informacionMedicaAlumnoGroupBox.Controls.Add(this.eliminarAlergiasButton);
             this.informacionMedicaAlumnoGroupBox.Controls.Add(this.limpiarFormato3Button);
             this.informacionMedicaAlumnoGroupBox.Controls.Add(this.eliminarDiscapacidadesButton);
@@ -209,26 +209,133 @@ namespace presentationLayer
             this.informacionMedicaAlumnoGroupBox.Controls.Add(this.mostrarAlergiasRichTextBox);
             this.informacionMedicaAlumnoGroupBox.Controls.Add(this.mostrarEnfermedadesRichTextBox);
             this.informacionMedicaAlumnoGroupBox.Controls.Add(this.mostrarDiscapacidadRichTextBox);
-            this.informacionMedicaAlumnoGroupBox.Controls.Add(this.documentacionListBox);
             this.informacionMedicaAlumnoGroupBox.Controls.Add(this.servicioMedicoAlumnoLabel);
             this.informacionMedicaAlumnoGroupBox.Controls.Add(this.grupoSanguineoAlumnoLabel);
             this.informacionMedicaAlumnoGroupBox.Controls.Add(this.enfermedaresAlumnoLabel);
             this.informacionMedicaAlumnoGroupBox.Controls.Add(this.alergiasAlumnoLabel);
-            this.informacionMedicaAlumnoGroupBox.Controls.Add(this.alergiasAlumnoTextBox);
             this.informacionMedicaAlumnoGroupBox.Controls.Add(this.telefonoContactoMedicoAlumnoLabel);
             this.informacionMedicaAlumnoGroupBox.Controls.Add(this.grupoSanguineoTextBox);
             this.informacionMedicaAlumnoGroupBox.Controls.Add(this.documentacionAlumnoLabel);
             this.informacionMedicaAlumnoGroupBox.Controls.Add(this.telefonoContactoMedicoAlumnoTextBox);
             this.informacionMedicaAlumnoGroupBox.Controls.Add(this.servicioMedicoTextBox);
-            this.informacionMedicaAlumnoGroupBox.Controls.Add(this.enfermedadesAlumnoTextBox);
-            this.informacionMedicaAlumnoGroupBox.Controls.Add(this.discapacidadTextBox);
             this.informacionMedicaAlumnoGroupBox.Controls.Add(this.discapacidadLabel);
-            this.informacionMedicaAlumnoGroupBox.Location = new System.Drawing.Point(54, 469);
+            this.informacionMedicaAlumnoGroupBox.Location = new System.Drawing.Point(53, 469);
+            this.informacionMedicaAlumnoGroupBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.informacionMedicaAlumnoGroupBox.Name = "informacionMedicaAlumnoGroupBox";
+            this.informacionMedicaAlumnoGroupBox.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.informacionMedicaAlumnoGroupBox.Size = new System.Drawing.Size(1023, 239);
             this.informacionMedicaAlumnoGroupBox.TabIndex = 141;
             this.informacionMedicaAlumnoGroupBox.TabStop = false;
             this.informacionMedicaAlumnoGroupBox.Text = "INFORMACIÓN MEDICA ALUMNO";
+            // 
+            // discapacidadesCombobox
+            // 
+            this.discapacidadesCombobox.FormattingEnabled = true;
+            this.discapacidadesCombobox.Location = new System.Drawing.Point(483, 105);
+            this.discapacidadesCombobox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.discapacidadesCombobox.Name = "discapacidadesCombobox";
+            this.discapacidadesCombobox.Size = new System.Drawing.Size(160, 24);
+            this.discapacidadesCombobox.TabIndex = 153;
+            // 
+            // alergiasCombobox
+            // 
+            this.alergiasCombobox.FormattingEnabled = true;
+            this.alergiasCombobox.Location = new System.Drawing.Point(189, 73);
+            this.alergiasCombobox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.alergiasCombobox.Name = "alergiasCombobox";
+            this.alergiasCombobox.Size = new System.Drawing.Size(160, 24);
+            this.alergiasCombobox.TabIndex = 152;
+            // 
+            // enfermedadesCombobox
+            // 
+            this.enfermedadesCombobox.FormattingEnabled = true;
+            this.enfermedadesCombobox.Location = new System.Drawing.Point(516, 64);
+            this.enfermedadesCombobox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.enfermedadesCombobox.Name = "enfermedadesCombobox";
+            this.enfermedadesCombobox.Size = new System.Drawing.Size(160, 24);
+            this.enfermedadesCombobox.TabIndex = 151;
+            // 
+            // documentacionGB
+            // 
+            this.documentacionGB.Controls.Add(this.checkBox6);
+            this.documentacionGB.Controls.Add(this.checkBox5);
+            this.documentacionGB.Controls.Add(this.checkBox4);
+            this.documentacionGB.Controls.Add(this.checkBox3);
+            this.documentacionGB.Controls.Add(this.checkBox2);
+            this.documentacionGB.Controls.Add(this.checkBox1);
+            this.documentacionGB.Location = new System.Drawing.Point(737, 58);
+            this.documentacionGB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.documentacionGB.Name = "documentacionGB";
+            this.documentacionGB.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.documentacionGB.Size = new System.Drawing.Size(267, 165);
+            this.documentacionGB.TabIndex = 150;
+            this.documentacionGB.TabStop = false;
+            // 
+            // checkBox6
+            // 
+            this.checkBox6.AutoSize = true;
+            this.checkBox6.Location = new System.Drawing.Point(9, 135);
+            this.checkBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox6.Name = "checkBox6";
+            this.checkBox6.Size = new System.Drawing.Size(233, 21);
+            this.checkBox6.TabIndex = 5;
+            this.checkBox6.Text = "COMPROBANTE DE DOMICILIO";
+            this.checkBox6.UseVisualStyleBackColor = true;
+            // 
+            // checkBox5
+            // 
+            this.checkBox5.AutoSize = true;
+            this.checkBox5.Location = new System.Drawing.Point(9, 110);
+            this.checkBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox5.Name = "checkBox5";
+            this.checkBox5.Size = new System.Drawing.Size(171, 21);
+            this.checkBox5.TabIndex = 4;
+            this.checkBox5.Text = "INE PADRE O TUTOR";
+            this.checkBox5.UseVisualStyleBackColor = true;
+            // 
+            // checkBox4
+            // 
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Location = new System.Drawing.Point(9, 84);
+            this.checkBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(115, 21);
+            this.checkBox4.TabIndex = 3;
+            this.checkBox4.Text = "INE ALUMNO";
+            this.checkBox4.UseVisualStyleBackColor = true;
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Location = new System.Drawing.Point(9, 58);
+            this.checkBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(80, 21);
+            this.checkBox3.TabIndex = 2;
+            this.checkBox3.Text = "C.U.R.P";
+            this.checkBox3.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(9, 31);
+            this.checkBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(128, 21);
+            this.checkBox2.TabIndex = 1;
+            this.checkBox2.Text = "FOTOGRAFÍAS";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(9, 4);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(177, 21);
+            this.checkBox1.TabIndex = 0;
+            this.checkBox1.Text = "ACTA DE NACIMIENTO";
+            this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // eliminarAlergiasButton
             // 
@@ -236,19 +343,33 @@ namespace presentationLayer
             this.eliminarAlergiasButton.Image = global::presentationLayer.Properties.Resources.boteBasura;
             this.eliminarAlergiasButton.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.eliminarAlergiasButton.Location = new System.Drawing.Point(583, 154);
+            this.eliminarAlergiasButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.eliminarAlergiasButton.Name = "eliminarAlergiasButton";
-            this.eliminarAlergiasButton.Size = new System.Drawing.Size(36, 36);
+            this.eliminarAlergiasButton.Size = new System.Drawing.Size(48, 44);
             this.eliminarAlergiasButton.TabIndex = 142;
             this.eliminarAlergiasButton.UseVisualStyleBackColor = true;
+            // 
+            // limpiarFormato3Button
+            // 
+            this.limpiarFormato3Button.BackgroundImage = global::presentationLayer.Properties.Resources.limpiar;
+            this.limpiarFormato3Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.limpiarFormato3Button.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.limpiarFormato3Button.Location = new System.Drawing.Point(981, 210);
+            this.limpiarFormato3Button.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.limpiarFormato3Button.Name = "limpiarFormato3Button";
+            this.limpiarFormato3Button.Size = new System.Drawing.Size(36, 23);
+            this.limpiarFormato3Button.TabIndex = 149;
+            this.limpiarFormato3Button.UseVisualStyleBackColor = true;
             // 
             // eliminarDiscapacidadesButton
             // 
             this.eliminarDiscapacidadesButton.AutoSize = true;
             this.eliminarDiscapacidadesButton.Image = global::presentationLayer.Properties.Resources.boteBasura;
             this.eliminarDiscapacidadesButton.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.eliminarDiscapacidadesButton.Location = new System.Drawing.Point(170, 153);
+            this.eliminarDiscapacidadesButton.Location = new System.Drawing.Point(171, 153);
+            this.eliminarDiscapacidadesButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.eliminarDiscapacidadesButton.Name = "eliminarDiscapacidadesButton";
-            this.eliminarDiscapacidadesButton.Size = new System.Drawing.Size(36, 36);
+            this.eliminarDiscapacidadesButton.Size = new System.Drawing.Size(48, 44);
             this.eliminarDiscapacidadesButton.TabIndex = 141;
             this.eliminarDiscapacidadesButton.UseVisualStyleBackColor = true;
             // 
@@ -257,9 +378,10 @@ namespace presentationLayer
             this.eliminarEnfermedadButton.AutoSize = true;
             this.eliminarEnfermedadButton.Image = global::presentationLayer.Properties.Resources.boteBasura;
             this.eliminarEnfermedadButton.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.eliminarEnfermedadButton.Location = new System.Drawing.Point(418, 149);
+            this.eliminarEnfermedadButton.Location = new System.Drawing.Point(419, 149);
+            this.eliminarEnfermedadButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.eliminarEnfermedadButton.Name = "eliminarEnfermedadButton";
-            this.eliminarEnfermedadButton.Size = new System.Drawing.Size(36, 36);
+            this.eliminarEnfermedadButton.Size = new System.Drawing.Size(48, 44);
             this.eliminarEnfermedadButton.TabIndex = 140;
             this.eliminarEnfermedadButton.UseVisualStyleBackColor = true;
             // 
@@ -270,10 +392,12 @@ namespace presentationLayer
             this.agregarAlergiasButton.Image = global::presentationLayer.Properties.Resources.mas1;
             this.agregarAlergiasButton.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.agregarAlergiasButton.Location = new System.Drawing.Point(373, 98);
+            this.agregarAlergiasButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.agregarAlergiasButton.Name = "agregarAlergiasButton";
-            this.agregarAlergiasButton.Size = new System.Drawing.Size(26, 26);
+            this.agregarAlergiasButton.Size = new System.Drawing.Size(35, 32);
             this.agregarAlergiasButton.TabIndex = 139;
             this.agregarAlergiasButton.UseVisualStyleBackColor = false;
+            this.agregarAlergiasButton.Click += new System.EventHandler(this.agregarAlergiasButton_Click);
             // 
             // agregarDiscapacidadButton
             // 
@@ -282,10 +406,12 @@ namespace presentationLayer
             this.agregarDiscapacidadButton.Image = global::presentationLayer.Properties.Resources.mas1;
             this.agregarDiscapacidadButton.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.agregarDiscapacidadButton.Location = new System.Drawing.Point(373, 73);
+            this.agregarDiscapacidadButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.agregarDiscapacidadButton.Name = "agregarDiscapacidadButton";
-            this.agregarDiscapacidadButton.Size = new System.Drawing.Size(26, 26);
+            this.agregarDiscapacidadButton.Size = new System.Drawing.Size(35, 32);
             this.agregarDiscapacidadButton.TabIndex = 138;
             this.agregarDiscapacidadButton.UseVisualStyleBackColor = false;
+            this.agregarDiscapacidadButton.Click += new System.EventHandler(this.agregarDiscapacidadButton_Click);
             // 
             // agregarEnfermedadesButton
             // 
@@ -293,11 +419,13 @@ namespace presentationLayer
             this.agregarEnfermedadesButton.BackColor = System.Drawing.Color.Transparent;
             this.agregarEnfermedadesButton.Image = global::presentationLayer.Properties.Resources.mas1;
             this.agregarEnfermedadesButton.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.agregarEnfermedadesButton.Location = new System.Drawing.Point(373, 51);
+            this.agregarEnfermedadesButton.Location = new System.Drawing.Point(373, 50);
+            this.agregarEnfermedadesButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.agregarEnfermedadesButton.Name = "agregarEnfermedadesButton";
-            this.agregarEnfermedadesButton.Size = new System.Drawing.Size(26, 26);
+            this.agregarEnfermedadesButton.Size = new System.Drawing.Size(35, 32);
             this.agregarEnfermedadesButton.TabIndex = 137;
             this.agregarEnfermedadesButton.UseVisualStyleBackColor = false;
+            this.agregarEnfermedadesButton.Click += new System.EventHandler(this.agregarEnfermedadesButton_Click);
             // 
             // mostrarAlergiasLabel
             // 
@@ -331,7 +459,8 @@ namespace presentationLayer
             // 
             // mostrarAlergiasRichTextBox
             // 
-            this.mostrarAlergiasRichTextBox.Location = new System.Drawing.Point(458, 184);
+            this.mostrarAlergiasRichTextBox.Location = new System.Drawing.Point(459, 185);
+            this.mostrarAlergiasRichTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.mostrarAlergiasRichTextBox.Name = "mostrarAlergiasRichTextBox";
             this.mostrarAlergiasRichTextBox.Size = new System.Drawing.Size(157, 37);
             this.mostrarAlergiasRichTextBox.TabIndex = 130;
@@ -339,7 +468,8 @@ namespace presentationLayer
             // 
             // mostrarEnfermedadesRichTextBox
             // 
-            this.mostrarEnfermedadesRichTextBox.Location = new System.Drawing.Point(267, 184);
+            this.mostrarEnfermedadesRichTextBox.Location = new System.Drawing.Point(267, 185);
+            this.mostrarEnfermedadesRichTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.mostrarEnfermedadesRichTextBox.Name = "mostrarEnfermedadesRichTextBox";
             this.mostrarEnfermedadesRichTextBox.Size = new System.Drawing.Size(157, 37);
             this.mostrarEnfermedadesRichTextBox.TabIndex = 129;
@@ -347,27 +477,12 @@ namespace presentationLayer
             // 
             // mostrarDiscapacidadRichTextBox
             // 
-            this.mostrarDiscapacidadRichTextBox.Location = new System.Drawing.Point(15, 184);
+            this.mostrarDiscapacidadRichTextBox.Location = new System.Drawing.Point(15, 185);
+            this.mostrarDiscapacidadRichTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.mostrarDiscapacidadRichTextBox.Name = "mostrarDiscapacidadRichTextBox";
             this.mostrarDiscapacidadRichTextBox.Size = new System.Drawing.Size(157, 37);
             this.mostrarDiscapacidadRichTextBox.TabIndex = 128;
             this.mostrarDiscapacidadRichTextBox.Text = "";
-            // 
-            // documentacionListBox
-            // 
-            this.documentacionListBox.FormattingEnabled = true;
-            this.documentacionListBox.Items.AddRange(new object[] {
-            "ACTA DE NACIMIENTO",
-            "FOTOGRAFÍAS",
-            "C.U.R.P.",
-            "INE ALUMNO                    ",
-            "INE PADRE O TUTOR",
-            "COMPROBANTE DE DOMICILIO"});
-            this.documentacionListBox.Location = new System.Drawing.Point(737, 55);
-            this.documentacionListBox.Margin = new System.Windows.Forms.Padding(5);
-            this.documentacionListBox.Name = "documentacionListBox";
-            this.documentacionListBox.Size = new System.Drawing.Size(251, 123);
-            this.documentacionListBox.TabIndex = 127;
             // 
             // servicioMedicoAlumnoLabel
             // 
@@ -408,14 +523,6 @@ namespace presentationLayer
             this.alergiasAlumnoLabel.Size = new System.Drawing.Size(80, 17);
             this.alergiasAlumnoLabel.TabIndex = 118;
             this.alergiasAlumnoLabel.Text = "ALERGIAS:";
-            // 
-            // alergiasAlumnoTextBox
-            // 
-            this.alergiasAlumnoTextBox.Location = new System.Drawing.Point(267, 95);
-            this.alergiasAlumnoTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.alergiasAlumnoTextBox.Name = "alergiasAlumnoTextBox";
-            this.alergiasAlumnoTextBox.Size = new System.Drawing.Size(100, 22);
-            this.alergiasAlumnoTextBox.TabIndex = 126;
             // 
             // telefonoContactoMedicoAlumnoLabel
             // 
@@ -461,27 +568,11 @@ namespace presentationLayer
             this.servicioMedicoTextBox.Size = new System.Drawing.Size(100, 22);
             this.servicioMedicoTextBox.TabIndex = 122;
             // 
-            // enfermedadesAlumnoTextBox
-            // 
-            this.enfermedadesAlumnoTextBox.Location = new System.Drawing.Point(267, 48);
-            this.enfermedadesAlumnoTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.enfermedadesAlumnoTextBox.Name = "enfermedadesAlumnoTextBox";
-            this.enfermedadesAlumnoTextBox.Size = new System.Drawing.Size(100, 22);
-            this.enfermedadesAlumnoTextBox.TabIndex = 123;
-            // 
-            // discapacidadTextBox
-            // 
-            this.discapacidadTextBox.Location = new System.Drawing.Point(267, 71);
-            this.discapacidadTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.discapacidadTextBox.Name = "discapacidadTextBox";
-            this.discapacidadTextBox.Size = new System.Drawing.Size(100, 22);
-            this.discapacidadTextBox.TabIndex = 24;
-            // 
             // discapacidadLabel
             // 
             this.discapacidadLabel.AutoSize = true;
             this.discapacidadLabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.discapacidadLabel.Location = new System.Drawing.Point(12, 83);
+            this.discapacidadLabel.Location = new System.Drawing.Point(12, 82);
             this.discapacidadLabel.Name = "discapacidadLabel";
             this.discapacidadLabel.Size = new System.Drawing.Size(111, 17);
             this.discapacidadLabel.TabIndex = 7;
@@ -498,9 +589,9 @@ namespace presentationLayer
             this.informacionEscolarGroupBox.Controls.Add(this.añosCumplidosTextBox);
             this.informacionEscolarGroupBox.Controls.Add(this.tipoIngresoGroupBox);
             this.informacionEscolarGroupBox.Location = new System.Drawing.Point(1153, 130);
-            this.informacionEscolarGroupBox.Margin = new System.Windows.Forms.Padding(4);
+            this.informacionEscolarGroupBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.informacionEscolarGroupBox.Name = "informacionEscolarGroupBox";
-            this.informacionEscolarGroupBox.Padding = new System.Windows.Forms.Padding(4);
+            this.informacionEscolarGroupBox.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.informacionEscolarGroupBox.Size = new System.Drawing.Size(267, 220);
             this.informacionEscolarGroupBox.TabIndex = 140;
             this.informacionEscolarGroupBox.TabStop = false;
@@ -602,8 +693,6 @@ namespace presentationLayer
             // 
             this.informacionGeneralAlumnoGroupBox.BackColor = System.Drawing.SystemColors.ControlLight;
             this.informacionGeneralAlumnoGroupBox.Controls.Add(this.limpiarFormato1Button);
-            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.fechaElaboracionLabel);
-            this.informacionGeneralAlumnoGroupBox.Controls.Add(this.fechaElaboracionDateTimePicker);
             this.informacionGeneralAlumnoGroupBox.Controls.Add(this.nombreAlumnoLabel);
             this.informacionGeneralAlumnoGroupBox.Controls.Add(this.nombreAlumnoTextBox);
             this.informacionGeneralAlumnoGroupBox.Controls.Add(this.apellidoPaternoAlumnoLabel);
@@ -630,33 +719,27 @@ namespace presentationLayer
             this.informacionGeneralAlumnoGroupBox.Controls.Add(this.escuelaProcedenciaTextBox);
             this.informacionGeneralAlumnoGroupBox.Controls.Add(this.canalizadoPorLabel);
             this.informacionGeneralAlumnoGroupBox.Controls.Add(this.canalizadoPorTextBox);
-            this.informacionGeneralAlumnoGroupBox.Location = new System.Drawing.Point(54, 116);
-            this.informacionGeneralAlumnoGroupBox.Margin = new System.Windows.Forms.Padding(4);
+            this.informacionGeneralAlumnoGroupBox.Location = new System.Drawing.Point(53, 116);
+            this.informacionGeneralAlumnoGroupBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.informacionGeneralAlumnoGroupBox.Name = "informacionGeneralAlumnoGroupBox";
-            this.informacionGeneralAlumnoGroupBox.Padding = new System.Windows.Forms.Padding(4);
+            this.informacionGeneralAlumnoGroupBox.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.informacionGeneralAlumnoGroupBox.Size = new System.Drawing.Size(1091, 348);
             this.informacionGeneralAlumnoGroupBox.TabIndex = 139;
             this.informacionGeneralAlumnoGroupBox.TabStop = false;
             this.informacionGeneralAlumnoGroupBox.Text = "INFORMACION GENERAL ALUMNO";
             // 
-            // fechaElaboracionLabel
+            // limpiarFormato1Button
             // 
-            this.fechaElaboracionLabel.AutoSize = true;
-            this.fechaElaboracionLabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.fechaElaboracionLabel.Location = new System.Drawing.Point(7, 27);
-            this.fechaElaboracionLabel.Name = "fechaElaboracionLabel";
-            this.fechaElaboracionLabel.Size = new System.Drawing.Size(186, 17);
-            this.fechaElaboracionLabel.TabIndex = 1;
-            this.fechaElaboracionLabel.Text = "FECHA DE ELABORACIÓN: ";
-            // 
-            // fechaElaboracionDateTimePicker
-            // 
-            this.fechaElaboracionDateTimePicker.Enabled = false;
-            this.fechaElaboracionDateTimePicker.Location = new System.Drawing.Point(204, 23);
-            this.fechaElaboracionDateTimePicker.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.fechaElaboracionDateTimePicker.Name = "fechaElaboracionDateTimePicker";
-            this.fechaElaboracionDateTimePicker.Size = new System.Drawing.Size(265, 22);
-            this.fechaElaboracionDateTimePicker.TabIndex = 19;
+            this.limpiarFormato1Button.AutoSize = true;
+            this.limpiarFormato1Button.BackgroundImage = global::presentationLayer.Properties.Resources.limpiar;
+            this.limpiarFormato1Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.limpiarFormato1Button.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.limpiarFormato1Button.Location = new System.Drawing.Point(1041, 305);
+            this.limpiarFormato1Button.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.limpiarFormato1Button.Name = "limpiarFormato1Button";
+            this.limpiarFormato1Button.Size = new System.Drawing.Size(36, 23);
+            this.limpiarFormato1Button.TabIndex = 147;
+            this.limpiarFormato1Button.UseVisualStyleBackColor = true;
             // 
             // nombreAlumnoLabel
             // 
@@ -935,8 +1018,10 @@ namespace presentationLayer
             this.informacionTutorGroupBox.Controls.Add(this.apellidoPaternoTutorTextBox);
             this.informacionTutorGroupBox.Controls.Add(this.calleDireccionTutorLabel);
             this.informacionTutorGroupBox.Controls.Add(this.apellidoMaternoTutorTextBox);
-            this.informacionTutorGroupBox.Location = new System.Drawing.Point(54, 714);
+            this.informacionTutorGroupBox.Location = new System.Drawing.Point(53, 714);
+            this.informacionTutorGroupBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.informacionTutorGroupBox.Name = "informacionTutorGroupBox";
+            this.informacionTutorGroupBox.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.informacionTutorGroupBox.Size = new System.Drawing.Size(1087, 236);
             this.informacionTutorGroupBox.TabIndex = 143;
             this.informacionTutorGroupBox.TabStop = false;
@@ -956,15 +1041,28 @@ namespace presentationLayer
             // 
             this.seleccionarNombreComboBox.FormattingEnabled = true;
             this.seleccionarNombreComboBox.Location = new System.Drawing.Point(495, 69);
+            this.seleccionarNombreComboBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.seleccionarNombreComboBox.Name = "seleccionarNombreComboBox";
-            this.seleccionarNombreComboBox.Size = new System.Drawing.Size(186, 24);
+            this.seleccionarNombreComboBox.Size = new System.Drawing.Size(185, 24);
             this.seleccionarNombreComboBox.TabIndex = 110;
+            // 
+            // limpiarFormato2Button
+            // 
+            this.limpiarFormato2Button.BackgroundImage = global::presentationLayer.Properties.Resources.limpiar;
+            this.limpiarFormato2Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.limpiarFormato2Button.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.limpiarFormato2Button.Location = new System.Drawing.Point(1041, 206);
+            this.limpiarFormato2Button.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.limpiarFormato2Button.Name = "limpiarFormato2Button";
+            this.limpiarFormato2Button.Size = new System.Drawing.Size(36, 23);
+            this.limpiarFormato2Button.TabIndex = 148;
+            this.limpiarFormato2Button.UseVisualStyleBackColor = true;
             // 
             // nombreTutorLabel
             // 
             this.nombreTutorLabel.AutoSize = true;
             this.nombreTutorLabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.nombreTutorLabel.Location = new System.Drawing.Point(30, 116);
+            this.nombreTutorLabel.Location = new System.Drawing.Point(29, 116);
             this.nombreTutorLabel.Name = "nombreTutorLabel";
             this.nombreTutorLabel.Size = new System.Drawing.Size(72, 17);
             this.nombreTutorLabel.TabIndex = 31;
@@ -974,7 +1072,7 @@ namespace presentationLayer
             // 
             this.domicilioTutorLabel.AutoSize = true;
             this.domicilioTutorLabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.domicilioTutorLabel.Location = new System.Drawing.Point(30, 143);
+            this.domicilioTutorLabel.Location = new System.Drawing.Point(29, 143);
             this.domicilioTutorLabel.Name = "domicilioTutorLabel";
             this.domicilioTutorLabel.Size = new System.Drawing.Size(81, 17);
             this.domicilioTutorLabel.TabIndex = 32;
@@ -994,7 +1092,7 @@ namespace presentationLayer
             // 
             this.telefonosTutorLabel.AutoSize = true;
             this.telefonosTutorLabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.telefonosTutorLabel.Location = new System.Drawing.Point(34, 205);
+            this.telefonosTutorLabel.Location = new System.Drawing.Point(35, 206);
             this.telefonosTutorLabel.Name = "telefonosTutorLabel";
             this.telefonosTutorLabel.Size = new System.Drawing.Size(96, 17);
             this.telefonosTutorLabel.TabIndex = 34;
@@ -1069,7 +1167,7 @@ namespace presentationLayer
             // 
             this.telefonoCelularTutorLabel.AutoSize = true;
             this.telefonoCelularTutorLabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.telefonoCelularTutorLabel.Location = new System.Drawing.Point(328, 205);
+            this.telefonoCelularTutorLabel.Location = new System.Drawing.Point(328, 206);
             this.telefonoCelularTutorLabel.Name = "telefonoCelularTutorLabel";
             this.telefonoCelularTutorLabel.Size = new System.Drawing.Size(71, 17);
             this.telefonoCelularTutorLabel.TabIndex = 46;
@@ -1088,7 +1186,7 @@ namespace presentationLayer
             // 
             this.telefonoTrabajoTutorLabel.AutoSize = true;
             this.telefonoTrabajoTutorLabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.telefonoTrabajoTutorLabel.Location = new System.Drawing.Point(534, 204);
+            this.telefonoTrabajoTutorLabel.Location = new System.Drawing.Point(533, 204);
             this.telefonoTrabajoTutorLabel.Name = "telefonoTrabajoTutorLabel";
             this.telefonoTrabajoTutorLabel.Size = new System.Drawing.Size(72, 17);
             this.telefonoTrabajoTutorLabel.TabIndex = 47;
@@ -1096,7 +1194,7 @@ namespace presentationLayer
             // 
             // telefonoCasaTutorTextBox
             // 
-            this.telefonoCasaTutorTextBox.Location = new System.Drawing.Point(202, 202);
+            this.telefonoCasaTutorTextBox.Location = new System.Drawing.Point(203, 202);
             this.telefonoCasaTutorTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.telefonoCasaTutorTextBox.Name = "telefonoCasaTutorTextBox";
             this.telefonoCasaTutorTextBox.Size = new System.Drawing.Size(100, 22);
@@ -1136,7 +1234,7 @@ namespace presentationLayer
             // 
             // calleDireccionTutorTextBox
             // 
-            this.calleDireccionTutorTextBox.Location = new System.Drawing.Point(422, 136);
+            this.calleDireccionTutorTextBox.Location = new System.Drawing.Point(421, 135);
             this.calleDireccionTutorTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.calleDireccionTutorTextBox.Name = "calleDireccionTutorTextBox";
             this.calleDireccionTutorTextBox.Size = new System.Drawing.Size(100, 22);
@@ -1166,7 +1264,7 @@ namespace presentationLayer
             // 
             this.apellidoMaternoTutorLabel.AutoSize = true;
             this.apellidoMaternoTutorLabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.apellidoMaternoTutorLabel.Location = new System.Drawing.Point(706, 105);
+            this.apellidoMaternoTutorLabel.Location = new System.Drawing.Point(707, 105);
             this.apellidoMaternoTutorLabel.Name = "apellidoMaternoTutorLabel";
             this.apellidoMaternoTutorLabel.Size = new System.Drawing.Size(152, 17);
             this.apellidoMaternoTutorLabel.TabIndex = 79;
@@ -1184,7 +1282,7 @@ namespace presentationLayer
             // 
             // apellidoPaternoTutorTextBox
             // 
-            this.apellidoPaternoTutorTextBox.Location = new System.Drawing.Point(546, 102);
+            this.apellidoPaternoTutorTextBox.Location = new System.Drawing.Point(547, 102);
             this.apellidoPaternoTutorTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.apellidoPaternoTutorTextBox.Name = "apellidoPaternoTutorTextBox";
             this.apellidoPaternoTutorTextBox.Size = new System.Drawing.Size(100, 22);
@@ -1211,7 +1309,8 @@ namespace presentationLayer
             // finalizarModificacionButton
             // 
             this.finalizarModificacionButton.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.finalizarModificacionButton.Location = new System.Drawing.Point(1241, 867);
+            this.finalizarModificacionButton.Location = new System.Drawing.Point(1241, 866);
+            this.finalizarModificacionButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.finalizarModificacionButton.Name = "finalizarModificacionButton";
             this.finalizarModificacionButton.Size = new System.Drawing.Size(116, 23);
             this.finalizarModificacionButton.TabIndex = 146;
@@ -1223,6 +1322,7 @@ namespace presentationLayer
             // 
             this.regresarButton.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.regresarButton.Location = new System.Drawing.Point(1241, 896);
+            this.regresarButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.regresarButton.Name = "regresarButton";
             this.regresarButton.Size = new System.Drawing.Size(116, 23);
             this.regresarButton.TabIndex = 145;
@@ -1242,63 +1342,66 @@ namespace presentationLayer
             this.siguienteButton.UseVisualStyleBackColor = true;
             this.siguienteButton.Click += new System.EventHandler(this.siguienteButton_Click);
             // 
-            // limpiarFormato1Button
+            // tituloLabel
             // 
-            this.limpiarFormato1Button.AutoSize = true;
-            this.limpiarFormato1Button.BackgroundImage = global::presentationLayer.Properties.Resources.limpiar;
-            this.limpiarFormato1Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.limpiarFormato1Button.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.limpiarFormato1Button.Location = new System.Drawing.Point(1041, 305);
-            this.limpiarFormato1Button.Name = "limpiarFormato1Button";
-            this.limpiarFormato1Button.Size = new System.Drawing.Size(36, 23);
-            this.limpiarFormato1Button.TabIndex = 147;
-            this.limpiarFormato1Button.UseVisualStyleBackColor = true;
+            this.tituloLabel.AutoSize = true;
+            this.tituloLabel.Location = new System.Drawing.Point(657, 92);
+            this.tituloLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.tituloLabel.Name = "tituloLabel";
+            this.tituloLabel.Size = new System.Drawing.Size(137, 17);
+            this.tituloLabel.TabIndex = 147;
+            this.tituloLabel.Text = "Modificacion Alumno";
             // 
-            // limpiarFormato3Button
+            // idLabel
             // 
-            this.limpiarFormato3Button.BackgroundImage = global::presentationLayer.Properties.Resources.limpiar;
-            this.limpiarFormato3Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.limpiarFormato3Button.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.limpiarFormato3Button.Location = new System.Drawing.Point(981, 210);
-            this.limpiarFormato3Button.Name = "limpiarFormato3Button";
-            this.limpiarFormato3Button.Size = new System.Drawing.Size(36, 23);
-            this.limpiarFormato3Button.TabIndex = 149;
-            this.limpiarFormato3Button.UseVisualStyleBackColor = true;
+            this.idLabel.AutoSize = true;
+            this.idLabel.Location = new System.Drawing.Point(152, 64);
+            this.idLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.idLabel.Name = "idLabel";
+            this.idLabel.Size = new System.Drawing.Size(19, 17);
+            this.idLabel.TabIndex = 148;
+            this.idLabel.Text = "id";
             // 
-            // limpiarFormato2Button
+            // nombreLabel
             // 
-            this.limpiarFormato2Button.BackgroundImage = global::presentationLayer.Properties.Resources.limpiar;
-            this.limpiarFormato2Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.limpiarFormato2Button.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.limpiarFormato2Button.Location = new System.Drawing.Point(1041, 205);
-            this.limpiarFormato2Button.Name = "limpiarFormato2Button";
-            this.limpiarFormato2Button.Size = new System.Drawing.Size(36, 23);
-            this.limpiarFormato2Button.TabIndex = 148;
-            this.limpiarFormato2Button.UseVisualStyleBackColor = true;
+            this.nombreLabel.AutoSize = true;
+            this.nombreLabel.Location = new System.Drawing.Point(203, 64);
+            this.nombreLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.nombreLabel.Name = "nombreLabel";
+            this.nombreLabel.Size = new System.Drawing.Size(91, 17);
+            this.nombreLabel.TabIndex = 149;
+            this.nombreLabel.Text = "nombreLabel";
             // 
             // modificacionesAlumno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1405, 981);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.ClientSize = new System.Drawing.Size(1371, 750);
+            this.Controls.Add(this.nombreLabel);
+            this.Controls.Add(this.idLabel);
+            this.Controls.Add(this.tituloLabel);
             this.Controls.Add(this.finalizarModificacionButton);
             this.Controls.Add(this.regresarButton);
             this.Controls.Add(this.siguienteButton);
             this.Controls.Add(this.informacionTutorGroupBox);
-            this.Controls.Add(this.tituloLabel);
             this.Controls.Add(this.informacionMedicaAlumnoGroupBox);
             this.Controls.Add(this.informacionEscolarGroupBox);
             this.Controls.Add(this.informacionGeneralAlumnoGroupBox);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.altaAlumnoPanel);
+            this.Controls.Add(this.modificacionAlumnoPanel);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "modificacionesAlumno";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Modificaciones Alumno";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.altaAlumnoPanel.ResumeLayout(false);
-            this.altaAlumnoPanel.PerformLayout();
+            this.Load += new System.EventHandler(this.modificacionesAlumno_Load);
+            this.modificacionAlumnoPanel.ResumeLayout(false);
+            this.modificacionAlumnoPanel.PerformLayout();
             this.informacionMedicaAlumnoGroupBox.ResumeLayout(false);
             this.informacionMedicaAlumnoGroupBox.PerformLayout();
+            this.documentacionGB.ResumeLayout(false);
+            this.documentacionGB.PerformLayout();
             this.informacionEscolarGroupBox.ResumeLayout(false);
             this.informacionEscolarGroupBox.PerformLayout();
             this.tipoIngresoGroupBox.ResumeLayout(false);
@@ -1317,9 +1420,7 @@ namespace presentationLayer
         #endregion
 
         private System.Windows.Forms.Button alumnosButton;
-        private System.Windows.Forms.Button docentesButton;
-        private System.Windows.Forms.Panel altaAlumnoPanel;
-        private System.Windows.Forms.Label tituloLabel;
+        private System.Windows.Forms.Panel modificacionAlumnoPanel;
         private System.Windows.Forms.GroupBox informacionMedicaAlumnoGroupBox;
         private System.Windows.Forms.Label mostrarAlergiasLabel;
         private System.Windows.Forms.Label mostrarEnfermedadesLabel;
@@ -1327,19 +1428,15 @@ namespace presentationLayer
         private System.Windows.Forms.RichTextBox mostrarAlergiasRichTextBox;
         private System.Windows.Forms.RichTextBox mostrarEnfermedadesRichTextBox;
         private System.Windows.Forms.RichTextBox mostrarDiscapacidadRichTextBox;
-        private System.Windows.Forms.CheckedListBox documentacionListBox;
         private System.Windows.Forms.Label servicioMedicoAlumnoLabel;
         private System.Windows.Forms.Label grupoSanguineoAlumnoLabel;
         private System.Windows.Forms.Label enfermedaresAlumnoLabel;
         private System.Windows.Forms.Label alergiasAlumnoLabel;
-        private System.Windows.Forms.TextBox alergiasAlumnoTextBox;
         private System.Windows.Forms.Label telefonoContactoMedicoAlumnoLabel;
         private System.Windows.Forms.TextBox grupoSanguineoTextBox;
         private System.Windows.Forms.Label documentacionAlumnoLabel;
         private System.Windows.Forms.TextBox telefonoContactoMedicoAlumnoTextBox;
         private System.Windows.Forms.TextBox servicioMedicoTextBox;
-        private System.Windows.Forms.TextBox enfermedadesAlumnoTextBox;
-        private System.Windows.Forms.TextBox discapacidadTextBox;
         private System.Windows.Forms.Label discapacidadLabel;
         private System.Windows.Forms.GroupBox informacionEscolarGroupBox;
         private System.Windows.Forms.Label cicloEscolarLabel;
@@ -1352,8 +1449,6 @@ namespace presentationLayer
         private System.Windows.Forms.RadioButton nuevoIngresoRadioButton;
         private System.Windows.Forms.RadioButton reingresoRadioButton;
         private System.Windows.Forms.GroupBox informacionGeneralAlumnoGroupBox;
-        private System.Windows.Forms.Label fechaElaboracionLabel;
-        private System.Windows.Forms.DateTimePicker fechaElaboracionDateTimePicker;
         private System.Windows.Forms.Label nombreAlumnoLabel;
         private System.Windows.Forms.TextBox nombreAlumnoTextBox;
         private System.Windows.Forms.Label apellidoPaternoAlumnoLabel;
@@ -1422,5 +1517,19 @@ namespace presentationLayer
         private System.Windows.Forms.Button limpiarFormato3Button;
         private System.Windows.Forms.Button limpiarFormato1Button;
         private System.Windows.Forms.Button limpiarFormato2Button;
+        private System.Windows.Forms.GroupBox documentacionGB;
+        private System.Windows.Forms.CheckBox checkBox6;
+        private System.Windows.Forms.CheckBox checkBox5;
+        private System.Windows.Forms.CheckBox checkBox4;
+        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Label camLabel;
+        private System.Windows.Forms.Label tituloLabel;
+        private System.Windows.Forms.ComboBox discapacidadesCombobox;
+        private System.Windows.Forms.ComboBox alergiasCombobox;
+        private System.Windows.Forms.ComboBox enfermedadesCombobox;
+        private System.Windows.Forms.Label idLabel;
+        private System.Windows.Forms.Label nombreLabel;
     }
 }
