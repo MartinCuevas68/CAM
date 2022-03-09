@@ -148,7 +148,7 @@
     <value>informacionGeneralAlumno</value>
   </data>
   <data name="&gt;&gt;nombreAlLabel.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>16</value>
   </data>
   <data name="fechaNaLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -178,7 +178,7 @@
     <value>informacionGeneralAlumno</value>
   </data>
   <data name="&gt;&gt;fechaNaLabel.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>22</value>
   </data>
   <data name="lugarNaLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -211,7 +211,7 @@
     <value>informacionGeneralAlumno</value>
   </data>
   <data name="&gt;&gt;lugarNaLabel.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>24</value>
   </data>
   <data name="direccionAlumnoLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -244,7 +244,7 @@
     <value>informacionGeneralAlumno</value>
   </data>
   <data name="&gt;&gt;direccionAlumnoLabel.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>27</value>
   </data>
   <data name="telPersonalLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -337,7 +337,7 @@
     <value>informacionGeneralAlumno</value>
   </data>
   <data name="&gt;&gt;curpLabel.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>17</value>
   </data>
   <data name="añosCumLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -367,7 +367,7 @@
     <value>informacionGeneralAlumno</value>
   </data>
   <data name="&gt;&gt;añosCumLabel.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>20</value>
   </data>
   <data name="cicloEscLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -757,7 +757,7 @@
     <value>informacionGeneralAlumno</value>
   </data>
   <data name="&gt;&gt;fechaNa.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>23</value>
   </data>
   <data name="nombreTLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1120,7 +1120,7 @@
     <value>informacionGeneralAlumno</value>
   </data>
   <data name="&gt;&gt;ciudadLabel.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>25</value>
   </data>
   <data name="estadoLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1150,7 +1150,7 @@
     <value>informacionGeneralAlumno</value>
   </data>
   <data name="&gt;&gt;estadoLabel.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>26</value>
   </data>
   <data name="apellidoPLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1180,7 +1180,7 @@
     <value>informacionGeneralAlumno</value>
   </data>
   <data name="&gt;&gt;apellidoPLabel.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>19</value>
   </data>
   <data name="apellidoMLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1210,7 +1210,7 @@
     <value>informacionGeneralAlumno</value>
   </data>
   <data name="&gt;&gt;apellidoMLabel.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>21</value>
   </data>
   <data name="calleLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1240,7 +1240,7 @@
     <value>informacionGeneralAlumno</value>
   </data>
   <data name="&gt;&gt;calleLabel.ZOrder" xml:space="preserve">
-    <value>22</value>
+    <value>28</value>
   </data>
   <data name="numeroCasaLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1270,7 +1270,7 @@
     <value>informacionGeneralAlumno</value>
   </data>
   <data name="&gt;&gt;numeroCasaLabel.ZOrder" xml:space="preserve">
-    <value>23</value>
+    <value>29</value>
   </data>
   <data name="coloniaLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1300,7 +1300,7 @@
     <value>informacionGeneralAlumno</value>
   </data>
   <data name="&gt;&gt;coloniaLabel.ZOrder" xml:space="preserve">
-    <value>24</value>
+    <value>30</value>
   </data>
   <data name="apellidoP.Location" type="System.Drawing.Point, System.Drawing">
     <value>25, 12</value>
@@ -1804,7 +1804,7 @@
     <value>NoControl</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>625, 556</value>
+    <value>639, 556</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>0, 17</value>
@@ -2070,6 +2070,168 @@
   <data name="&gt;&gt;grupoSanguineo.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="button2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1258, 60</value>
+  </data>
+  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 42</value>
+  </data>
+  <data name="button2.TabIndex" type="System.Int32, mscorlib">
+    <value>151</value>
+  </data>
+  <data name="button2.Text" xml:space="preserve">
+    <value>x</value>
+  </data>
+  <data name="&gt;&gt;button2.Name" xml:space="preserve">
+    <value>button2</value>
+  </data>
+  <data name="&gt;&gt;button2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
+    <value>informacionGeneralAlumno</value>
+  </data>
+  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="button1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1065, 60</value>
+  </data>
+  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 42</value>
+  </data>
+  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+    <value>150</value>
+  </data>
+  <data name="button1.Text" xml:space="preserve">
+    <value>x</value>
+  </data>
+  <data name="&gt;&gt;button1.Name" xml:space="preserve">
+    <value>button1</value>
+  </data>
+  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+    <value>informacionGeneralAlumno</value>
+  </data>
+  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pbImagen2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pbImagen2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1002, 98</value>
+  </data>
+  <data name="pbImagen2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 133</value>
+  </data>
+  <data name="pbImagen2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="pbImagen2.TabIndex" type="System.Int32, mscorlib">
+    <value>149</value>
+  </data>
+  <data name="&gt;&gt;pbImagen2.Name" xml:space="preserve">
+    <value>pbImagen2</value>
+  </data>
+  <data name="&gt;&gt;pbImagen2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pbImagen2.Parent" xml:space="preserve">
+    <value>informacionGeneralAlumno</value>
+  </data>
+  <data name="&gt;&gt;pbImagen2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnMostrarFoto.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnMostrarFoto.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1178, 292</value>
+  </data>
+  <data name="btnMostrarFoto.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 42</value>
+  </data>
+  <data name="btnMostrarFoto.TabIndex" type="System.Int32, mscorlib">
+    <value>148</value>
+  </data>
+  <data name="btnMostrarFoto.Text" xml:space="preserve">
+    <value>Mostrar</value>
+  </data>
+  <data name="&gt;&gt;btnMostrarFoto.Name" xml:space="preserve">
+    <value>btnMostrarFoto</value>
+  </data>
+  <data name="&gt;&gt;btnMostrarFoto.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnMostrarFoto.Parent" xml:space="preserve">
+    <value>informacionGeneralAlumno</value>
+  </data>
+  <data name="&gt;&gt;btnMostrarFoto.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btnSeleccionarFoto.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnSeleccionarFoto.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1178, 244</value>
+  </data>
+  <data name="btnSeleccionarFoto.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 42</value>
+  </data>
+  <data name="btnSeleccionarFoto.TabIndex" type="System.Int32, mscorlib">
+    <value>147</value>
+  </data>
+  <data name="btnSeleccionarFoto.Text" xml:space="preserve">
+    <value>Subir</value>
+  </data>
+  <data name="&gt;&gt;btnSeleccionarFoto.Name" xml:space="preserve">
+    <value>btnSeleccionarFoto</value>
+  </data>
+  <data name="&gt;&gt;btnSeleccionarFoto.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnSeleccionarFoto.Parent" xml:space="preserve">
+    <value>informacionGeneralAlumno</value>
+  </data>
+  <data name="&gt;&gt;btnSeleccionarFoto.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="pbImagen.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pbImagen.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1178, 98</value>
+  </data>
+  <data name="pbImagen.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 133</value>
+  </data>
+  <data name="pbImagen.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="pbImagen.TabIndex" type="System.Int32, mscorlib">
+    <value>146</value>
+  </data>
+  <data name="&gt;&gt;pbImagen.Name" xml:space="preserve">
+    <value>pbImagen</value>
+  </data>
+  <data name="&gt;&gt;pbImagen.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pbImagen.Parent" xml:space="preserve">
+    <value>informacionGeneralAlumno</value>
+  </data>
+  <data name="&gt;&gt;pbImagen.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
   <data name="curpPanel.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
@@ -2092,7 +2254,7 @@
     <value>informacionGeneralAlumno</value>
   </data>
   <data name="&gt;&gt;curpPanel.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>6</value>
   </data>
   <data name="añosCumPanel.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -2116,7 +2278,7 @@
     <value>informacionGeneralAlumno</value>
   </data>
   <data name="&gt;&gt;añosCumPanel.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>7</value>
   </data>
   <data name="coloniaPanel.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -2140,7 +2302,7 @@
     <value>informacionGeneralAlumno</value>
   </data>
   <data name="&gt;&gt;coloniaPanel.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>8</value>
   </data>
   <data name="numeroCasaPanel.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -2164,7 +2326,7 @@
     <value>informacionGeneralAlumno</value>
   </data>
   <data name="&gt;&gt;numeroCasaPanel.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>9</value>
   </data>
   <data name="callePanel.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -2188,7 +2350,7 @@
     <value>informacionGeneralAlumno</value>
   </data>
   <data name="&gt;&gt;callePanel.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>10</value>
   </data>
   <data name="estadoPanel.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -2212,7 +2374,7 @@
     <value>informacionGeneralAlumno</value>
   </data>
   <data name="&gt;&gt;estadoPanel.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>11</value>
   </data>
   <data name="ciudadPanel.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -2236,7 +2398,7 @@
     <value>informacionGeneralAlumno</value>
   </data>
   <data name="&gt;&gt;ciudadPanel.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>12</value>
   </data>
   <data name="apellidoMPanel.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -2260,7 +2422,7 @@
     <value>informacionGeneralAlumno</value>
   </data>
   <data name="&gt;&gt;apellidoMPanel.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>13</value>
   </data>
   <data name="apellidoPPanel.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -2284,7 +2446,7 @@
     <value>informacionGeneralAlumno</value>
   </data>
   <data name="&gt;&gt;apellidoPPanel.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>14</value>
   </data>
   <data name="nombreAlPanel.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -2335,7 +2497,7 @@
     <value>informacionGeneralAlumno</value>
   </data>
   <data name="&gt;&gt;nombreAlPanel.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>15</value>
   </data>
   <data name="limpiarFormato1Button.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2368,13 +2530,13 @@
     <value>informacionGeneralAlumno</value>
   </data>
   <data name="&gt;&gt;limpiarFormato1Button.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>18</value>
   </data>
   <data name="informacionGeneralAlumno.Font" type="System.Drawing.Font, System.Drawing">
     <value>Gadugi, 14.25pt</value>
   </data>
   <data name="informacionGeneralAlumno.Location" type="System.Drawing.Point, System.Drawing">
-    <value>66, 106</value>
+    <value>80, 106</value>
   </data>
   <data name="informacionGeneralAlumno.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -2536,7 +2698,7 @@
     <value>Gadugi, 14.25pt</value>
   </data>
   <data name="informacionGeneralAlumno2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1429, 120</value>
+    <value>1443, 120</value>
   </data>
   <data name="informacionGeneralAlumno2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -3124,7 +3286,7 @@
     <value>14</value>
   </data>
   <data name="informacionMedicaAlumnoGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>52, 480</value>
+    <value>66, 480</value>
   </data>
   <data name="informacionMedicaAlumnoGroupBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
@@ -3591,6 +3753,39 @@
   <data name="&gt;&gt;altaalumnoLabel.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
+  <data name="logo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="logo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>49, -9</value>
+  </data>
+  <data name="logo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="logo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 185</value>
+  </data>
+  <data name="logo.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="logo.TabIndex" type="System.Int32, mscorlib">
+    <value>140</value>
+  </data>
+  <data name="&gt;&gt;logo.Name" xml:space="preserve">
+    <value>logo</value>
+  </data>
+  <data name="&gt;&gt;logo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;logo.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;logo.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <metadata name="openFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <data name="siguiente3Button.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
@@ -3604,7 +3799,7 @@
     <value>NoControl</value>
   </data>
   <data name="siguiente3Button.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2050, 828</value>
+    <value>2078, 828</value>
   </data>
   <data name="siguiente3Button.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>6, 6, 6, 6</value>
@@ -3643,7 +3838,7 @@
     <value>NoControl</value>
   </data>
   <data name="siguiente2Button.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1844, 828</value>
+    <value>1872, 828</value>
   </data>
   <data name="siguiente2Button.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>6, 6, 6, 6</value>
@@ -3682,7 +3877,7 @@
     <value>NoControl</value>
   </data>
   <data name="regresarMenuButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1615, 776</value>
+    <value>1643, 776</value>
   </data>
   <data name="regresarMenuButton.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>6, 6, 6, 6</value>
@@ -3721,7 +3916,7 @@
     <value>NoControl</value>
   </data>
   <data name="regresarButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1624, 870</value>
+    <value>1652, 870</value>
   </data>
   <data name="regresarButton.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>6, 6, 6, 6</value>
@@ -3760,7 +3955,7 @@
     <value>NoControl</value>
   </data>
   <data name="siguiente1Button.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1844, 757</value>
+    <value>1872, 757</value>
   </data>
   <data name="siguiente1Button.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>6, 6, 6, 6</value>
@@ -3799,7 +3994,7 @@
     <value>NoControl</value>
   </data>
   <data name="realizarAltaButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2050, 757</value>
+    <value>2078, 757</value>
   </data>
   <data name="realizarAltaButton.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>6, 6, 6, 6</value>
@@ -3825,36 +4020,6 @@
   <data name="&gt;&gt;realizarAltaButton.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="logo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="logo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>49, -9</value>
-  </data>
-  <data name="logo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="logo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 185</value>
-  </data>
-  <data name="logo.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
-  </data>
-  <data name="logo.TabIndex" type="System.Int32, mscorlib">
-    <value>140</value>
-  </data>
-  <data name="&gt;&gt;logo.Name" xml:space="preserve">
-    <value>logo</value>
-  </data>
-  <data name="&gt;&gt;logo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;logo.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;logo.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -3871,13 +4036,22 @@
     <value>True</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1924, 985</value>
+    <value>1924, 1027</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Alta Alumno</value>
+  </data>
+  <data name="&gt;&gt;openFileDialog1.Name" xml:space="preserve">
+    <value>openFileDialog1</value>
+  </data>
+  <data name="&gt;&gt;openFileDialog1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>altaAlumno</value>
