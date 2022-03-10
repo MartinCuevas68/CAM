@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a5b365477a7d42d59c987857b597438b" Name="Diagram1">
+        <EntityTypeShape EntityType="BDCAMModel1.alumno" Width="1.5" PointX="0.75" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCAMModel1.permiso" Width="1.5" PointX="7.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCAMModel1.programa" Width="1.5" PointX="3" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCAMModel1.recurso" Width="1.5" PointX="5.25" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCAMModel1.role" Width="1.5" PointX="7.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCAMModel1.subpermiso" Width="1.5" PointX="7.75" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCAMModel1.sysdiagram" Width="1.5" PointX="7.75" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCAMModel1.tabla_indicadores_telefono" Width="1.5" PointX="3" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCAMModel1.tabla_medica" Width="1.5" PointX="3" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCAMModel1.turno" Width="1.5" PointX="5.25" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCAMModel1.tutor" Width="1.5" PointX="3" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCAMModel1.usuario" Width="1.5" PointX="10" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCAMModel1.alergia" Width="1.5" PointX="5.25" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCAMModel1.discapacidade" Width="1.5" PointX="5.25" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCAMModel1.enfermedade" Width="1.5" PointX="5.25" PointY="12.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCAMModel1.rol_tiene_permiso" Width="1.5" PointX="10" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCAMModel1.telefono_tutores" Width="1.5" PointX="5.25" PointY="15.5" IsExpanded="true" />
+        <AssociationConnector Association="BDCAMModel1.permiso1" ManuallyRouted="false" />
+        <AssociationConnector Association="BDCAMModel1.rol_permiso" ManuallyRouted="false" />
+        <AssociationConnector Association="BDCAMModel1.subpermiso1" ManuallyRouted="false" />
+        <AssociationConnector Association="BDCAMModel1.FK_Tele" ManuallyRouted="false" />
+        <AssociationConnector Association="BDCAMModel1.FK_alergias_tabla_medica" ManuallyRouted="false" />
+        <AssociationConnector Association="BDCAMModel1.FK_discapacidades_tabla_medica" ManuallyRouted="false" />
+        <AssociationConnector Association="BDCAMModel1.FK_enfermedades_tabla_medica" ManuallyRouted="false" />
+        <AssociationConnector Association="BDCAMModel1.FK_Tuto" ManuallyRouted="false" />
+        <AssociationConnector Association="BDCAMModel1.alumno_cartilla" ManuallyRouted="false" />
+        <AssociationConnector Association="BDCAMModel1.alumno_programa" ManuallyRouted="false" />
+        <AssociationConnector Association="BDCAMModel1.programa_turno" ManuallyRouted="false" />
+        <AssociationConnector Association="BDCAMModel1.recurso_programa" ManuallyRouted="false" />
+        <AssociationConnector Association="BDCAMModel1.tutor_alumno" ManuallyRouted="false" />
+        <AssociationConnector Association="BDCAMModel1.usuario_tiene_rol" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

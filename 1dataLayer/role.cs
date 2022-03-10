@@ -12,30 +12,21 @@ namespace _1dataLayer
     using System;
     using System.Collections.Generic;
     
-    public partial class tutor
+    public partial class role
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public tutor()
+        public role()
         {
-            this.telefono_tutores = new HashSet<telefono_tutores>();
-            this.alumnoes = new HashSet<alumno>();
+            this.rol_tiene_permiso = new HashSet<rol_tiene_permiso>();
+            this.usuarios = new HashSet<usuario>();
         }
     
-        public int id_tutor { get; set; }
-        public string nombre { get; set; }
-        public string apellido_paterno { get; set; }
-        public string apellido_materno { get; set; }
-        public string colonia_tutor { get; set; }
-        public string calle_tutor { get; set; }
-        public string numero_tutor { get; set; }
-        public string ocupacion_tutor { get; set; }
-        public string colonia_trabajo_tutor { get; set; }
-        public string calle_trabajo_tutor { get; set; }
-        public string numero_trabajo_tutor { get; set; }
+        public int id_rol { get; set; }
+        public string nombre_rol { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<telefono_tutores> telefono_tutores { get; set; }
+        public virtual ICollection<rol_tiene_permiso> rol_tiene_permiso { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<alumno> alumnoes { get; set; }
+        public virtual ICollection<usuario> usuarios { get; set; }
     }
 }
