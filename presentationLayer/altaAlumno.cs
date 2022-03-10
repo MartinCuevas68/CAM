@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Imaging;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -276,6 +278,7 @@ namespace presentationLayer
 
         private void altaAlumno_Load(object sender, EventArgs e)
         {
+            
             limpiarFormato1Button.Hide();
             limpiarFormato2Button.Hide();
             limpiarFormato3Button.Hide();
@@ -303,6 +306,9 @@ namespace presentationLayer
                                               escuelaP.Text,
                                               canalizado.Text
                                               );
+
+                //businessLayer.Hueso.SetTutor(nombreT.Text,apellidoPT.Text,apellidoMT.Text,coloniaT.Text,calleT.Text,numeroCasaT.Text,ocupacion.Text);
+                //businessLayer.Hueso.SetinfoMedAlumno(servMedico.Text,grupoSanguineo.Text,telefono.Text);
 
                 this.Hide();
                 Consultas consultas = new Consultas();
@@ -457,6 +463,28 @@ namespace presentationLayer
                 discapacidadesCombobox.Items.Add(item3.discapacidades);
             }
 
+        private void siguiente2Button_Click(object sender, EventArgs e)
+        {
+            informacionGeneralAlumno2.Visible = false;
+            informacionTutor.Visible = true;
+
+            infGeneralAlLabel.Visible = false;
+            infoTutorLabel.Visible = true;
+
+            siguiente2Button.Visible = false;
+            siguiente3Button.Visible = true;
+        }
+
+        private void siguiente3Button_Click(object sender, EventArgs e)
+        {
+            informacionTutor.Visible = false;
+            informacionMedicaAlumnoGroupBox.Visible = true;
+
+            infoTutorLabel.Visible = false;
+            informacionMedLabel.Visible = true;
+
+            siguiente3Button.Visible = false;
+            realizarAltaButton.Visible = true;
         }
 
        
@@ -496,13 +524,19 @@ namespace presentationLayer
                 siguiente3Button.Visible = true;
                 realizarAltaButton.Visible = false;
             }
+
+            using (_1dataLayer.BDCAMEntities db = new _1dataLayer.BDCAMEntities())
+            {
+                _1dataLayer.alumno oImage = new _1dataLayer.alumno();
+                db.alumno.Add(oImage);
+                db.SaveChanges();
+            }  
         }
 
         private void regresarMenuButton_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Consultas formConsulta = new Consultas();
-            formConsulta.Show();
+            
+            pbImagen2.Image = null;
         }
 
          private void siguienteButton1_Click(object sender, EventArgs e)
@@ -541,5 +575,69 @@ namespace presentationLayer
             realizarAltaButton.Visible = true;
         }
 
+        private void btnSeleccionarFoto_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.Filter = "Imagenes|*.jpg; *.png";
+            openFileDialog1.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures);
+            openFileDialog1.Title = "Seleccionar Imagen";
+
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                pbImagen.Image = Image.FromFile(openFileDialog1.FileName);
+            }
+        }
+
+        private void realizarAltaButton_Click(object sender, EventArgs e)
+        {
+            //prueba
+            MessageBox.Show("Hola");
+
+
+            //Guardar Foto alumno   **NO BORRAR LO QUE ESTÁ COMENTADO!!!!!**
+            /*if (pbImagen.Image == null)
+            {
+                MessageBox.Show("Debes ingresar una imagen");
+                return;
+            }
+            byte[] archivo = null;
+            Stream myStream = openFileDialog1.OpenFile();
+            using (MemoryStream ms = new MemoryStream())
+            {
+                myStream.CopyTo(ms);
+                archivo = ms.ToArray();
+            }
+
+            using (_1dataLayer.BDCAMEntities db = new _1dataLayer.BDCAMEntities())
+            {
+                _1dataLayer.alumno oImage = new _1dataLayer.alumno();
+                db.alumno.Add(oImage);
+                db.SaveChanges();
+            }  
+        }
+
+        //Mostrar Foto alumno
+        private void btnMostrarFoto_Click(object sender, EventArgs e)
+        {
+            pbImagen2.Image = Image.FromFile(openFileDialog1.FileName);
+            
+            /*using (_1dataLayer.BDCAMEntities)
+            {
+
+            }*/
+        }
+
+        /*//Limpiar imagen 2
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+            pbImagen2.Image = null;
+        }
+
+        //Limpiar imagen 1
+        private void button2_Click(object sender, EventArgs e)
+        {
+            pbImagen.Image = null;
+
+        }*/
     }
 }
