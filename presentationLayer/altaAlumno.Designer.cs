@@ -138,6 +138,7 @@ namespace presentationLayer
             this.eliminarEnfermedadButton = new System.Windows.Forms.Button();
             this.informacionMedLabel = new System.Windows.Forms.Label();
             this.informacionTutor = new System.Windows.Forms.GroupBox();
+            this.ocupacionTPanel = new System.Windows.Forms.Panel();
             this.apellidoPTPanel = new System.Windows.Forms.Panel();
             this.nombreTPanel = new System.Windows.Forms.Panel();
             this.telTrabajoTPanel = new System.Windows.Forms.Panel();
@@ -151,14 +152,15 @@ namespace presentationLayer
             this.calleTPanel = new System.Windows.Forms.Panel();
             this.infoTutorLabel = new System.Windows.Forms.Label();
             this.altaalumnoLabel = new System.Windows.Forms.Label();
+            this.logo = new System.Windows.Forms.PictureBox();
+            this.eliminarTratamientoButton = new System.Windows.Forms.Button();
             this.siguiente3Button = new presentationLayer.buttonSystem();
             this.siguiente2Button = new presentationLayer.buttonSystem();
             this.regresarMenuButton = new presentationLayer.buttonSystem();
             this.regresarButton = new presentationLayer.buttonSystem();
             this.siguiente1Button = new presentationLayer.buttonSystem();
             this.realizarAltaButton = new presentationLayer.buttonSystem();
-            this.logo = new System.Windows.Forms.PictureBox();
-            this.ocupacionTPanel = new System.Windows.Forms.Panel();
+            this.fotoAlumno = new System.Windows.Forms.PictureBox();
             this.tipoIngresoGroupBox.SuspendLayout();
             this.informacionGeneralAlumno.SuspendLayout();
             this.curpPanel.SuspendLayout();
@@ -185,6 +187,7 @@ namespace presentationLayer
             this.servMedicoPanel.SuspendLayout();
             this.discapacidadPanel.SuspendLayout();
             this.informacionTutor.SuspendLayout();
+            this.ocupacionTPanel.SuspendLayout();
             this.apellidoPTPanel.SuspendLayout();
             this.nombreTPanel.SuspendLayout();
             this.telTrabajoTPanel.SuspendLayout();
@@ -195,7 +198,7 @@ namespace presentationLayer
             this.numeroCasaTPanel.SuspendLayout();
             this.calleTPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
-            this.ocupacionTPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fotoAlumno)).BeginInit();
             this.SuspendLayout();
             // 
             // nombreAlLabel
@@ -598,6 +601,7 @@ namespace presentationLayer
             // informacionGeneralAlumno
             // 
             this.informacionGeneralAlumno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.informacionGeneralAlumno.Controls.Add(this.fotoAlumno);
             this.informacionGeneralAlumno.Controls.Add(this.curpPanel);
             this.informacionGeneralAlumno.Controls.Add(this.añosCumPanel);
             this.informacionGeneralAlumno.Controls.Add(this.coloniaPanel);
@@ -766,6 +770,7 @@ namespace presentationLayer
             // informacionMedicaAlumnoGroupBox
             // 
             this.informacionMedicaAlumnoGroupBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.informacionMedicaAlumnoGroupBox.Controls.Add(this.eliminarTratamientoButton);
             this.informacionMedicaAlumnoGroupBox.Controls.Add(this.alergiasPanel);
             this.informacionMedicaAlumnoGroupBox.Controls.Add(this.tratamientoPanel);
             this.informacionMedicaAlumnoGroupBox.Controls.Add(this.telefonoPanel);
@@ -963,6 +968,13 @@ namespace presentationLayer
             this.informacionTutor.Name = "informacionTutor";
             this.informacionTutor.TabStop = false;
             // 
+            // ocupacionTPanel
+            // 
+            this.ocupacionTPanel.BackgroundImage = global::presentationLayer.Properties.Resources.textBox__2_;
+            resources.ApplyResources(this.ocupacionTPanel, "ocupacionTPanel");
+            this.ocupacionTPanel.Controls.Add(this.ocupacion);
+            this.ocupacionTPanel.Name = "ocupacionTPanel";
+            // 
             // apellidoPTPanel
             // 
             this.apellidoPTPanel.BackgroundImage = global::presentationLayer.Properties.Resources.textBox__2_;
@@ -1049,6 +1061,20 @@ namespace presentationLayer
             resources.ApplyResources(this.altaalumnoLabel, "altaalumnoLabel");
             this.altaalumnoLabel.Name = "altaalumnoLabel";
             // 
+            // logo
+            // 
+            this.logo.Image = global::presentationLayer.Properties.Resources.log_fondo_blanco;
+            resources.ApplyResources(this.logo, "logo");
+            this.logo.Name = "logo";
+            this.logo.TabStop = false;
+            // 
+            // eliminarTratamientoButton
+            // 
+            resources.ApplyResources(this.eliminarTratamientoButton, "eliminarTratamientoButton");
+            this.eliminarTratamientoButton.BackgroundImage = global::presentationLayer.Properties.Resources.boteBasura;
+            this.eliminarTratamientoButton.Name = "eliminarTratamientoButton";
+            this.eliminarTratamientoButton.UseVisualStyleBackColor = true;
+            // 
             // siguiente3Button
             // 
             resources.ApplyResources(this.siguiente3Button, "siguiente3Button");
@@ -1120,19 +1146,12 @@ namespace presentationLayer
             this.realizarAltaButton.Name = "realizarAltaButton";
             this.realizarAltaButton.UseVisualStyleBackColor = false;
             // 
-            // logo
+            // fotoAlumno
             // 
-            this.logo.Image = global::presentationLayer.Properties.Resources.log_fondo_blanco;
-            resources.ApplyResources(this.logo, "logo");
-            this.logo.Name = "logo";
-            this.logo.TabStop = false;
-            // 
-            // ocupacionTPanel
-            // 
-            this.ocupacionTPanel.BackgroundImage = global::presentationLayer.Properties.Resources.textBox__2_;
-            resources.ApplyResources(this.ocupacionTPanel, "ocupacionTPanel");
-            this.ocupacionTPanel.Controls.Add(this.ocupacion);
-            this.ocupacionTPanel.Name = "ocupacionTPanel";
+            this.fotoAlumno.BackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.fotoAlumno, "fotoAlumno");
+            this.fotoAlumno.Name = "fotoAlumno";
+            this.fotoAlumno.TabStop = false;
             // 
             // altaAlumno
             // 
@@ -1206,6 +1225,8 @@ namespace presentationLayer
             this.discapacidadPanel.ResumeLayout(false);
             this.informacionTutor.ResumeLayout(false);
             this.informacionTutor.PerformLayout();
+            this.ocupacionTPanel.ResumeLayout(false);
+            this.ocupacionTPanel.PerformLayout();
             this.apellidoPTPanel.ResumeLayout(false);
             this.apellidoPTPanel.PerformLayout();
             this.nombreTPanel.ResumeLayout(false);
@@ -1225,8 +1246,7 @@ namespace presentationLayer
             this.calleTPanel.ResumeLayout(false);
             this.calleTPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
-            this.ocupacionTPanel.ResumeLayout(false);
-            this.ocupacionTPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fotoAlumno)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1362,6 +1382,8 @@ namespace presentationLayer
         private System.Windows.Forms.Panel telPersonalPanel;
         private System.Windows.Forms.Panel cicloEscPanel;
         private System.Windows.Forms.Panel ocupacionTPanel;
+        private System.Windows.Forms.Button eliminarTratamientoButton;
+        private System.Windows.Forms.PictureBox fotoAlumno;
     }
 }
 
