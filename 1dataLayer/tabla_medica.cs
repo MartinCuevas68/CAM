@@ -17,10 +17,10 @@ namespace _1dataLayer
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public tabla_medica()
         {
-            this.alergias = new HashSet<alergias>();
-            this.discapacidades = new HashSet<discapacidades>();
-            this.enfermedades = new HashSet<enfermedades>();
-            this.alumno = new HashSet<alumno>();
+            this.alergias = new HashSet<alergia>();
+            this.discapacidades = new HashSet<discapacidade>();
+            this.enfermedades = new HashSet<enfermedade>();
+            this.alumnoes = new HashSet<alumno>();
         }
     
         public int id_cartilla_medica { get; set; }
@@ -33,12 +33,12 @@ namespace _1dataLayer
         public string estatura { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<alergias> alergias { get; set; }
+        public virtual ICollection<alergia> alergias { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<discapacidades> discapacidades { get; set; }
+        public virtual ICollection<discapacidade> discapacidades { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<enfermedades> enfermedades { get; set; }
+        public virtual ICollection<enfermedade> enfermedades { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<alumno> alumno { get; set; }
+        public virtual ICollection<alumno> alumnoes { get; set; }
     }
 }
