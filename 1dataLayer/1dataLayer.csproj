@@ -99,15 +99,33 @@
     </Compile>
     <Compile Include="role.cs" />
     <Compile Include="rol_tiene_permiso.cs" />
-    <Compile Include="SP_FichaTecnicaAlumnoMedica_Result.cs" />
-    <Compile Include="SP_FichaTecnicaAlumnoTutor_Result.cs" />
-    <Compile Include="SP_FichaTecnicaAlumno_Result.cs" />
-    <Compile Include="sp_helpdiagramdefinition_Result.cs" />
-    <Compile Include="sp_helpdiagrams_Result.cs" />
-    <Compile Include="SP_ListaAlergia_Result.cs" />
-    <Compile Include="SP_ListaAlumnos_Result.cs" />
-    <Compile Include="SP_ListaDiscapacidad_Result.cs" />
-    <Compile Include="SP_ListaEnfermedad_Result.cs" />
+    <Compile Include="SP_FichaTecnicaAlumnoMedica_Result.cs">
+      <DependentUpon>BDCAM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_FichaTecnicaAlumnoTutor_Result.cs">
+      <DependentUpon>BDCAM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_FichaTecnicaAlumno_Result.cs">
+      <DependentUpon>BDCAM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>BDCAM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagrams_Result.cs">
+      <DependentUpon>BDCAM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_ListaAlergia_Result.cs">
+      <DependentUpon>BDCAM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_ListaAlumnos_Result.cs">
+      <DependentUpon>BDCAM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_ListaDiscapacidad_Result.cs">
+      <DependentUpon>BDCAM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_ListaEnfermedad_Result.cs">
+      <DependentUpon>BDCAM.tt</DependentUpon>
+    </Compile>
     <Compile Include="subpermiso.cs" />
     <Compile Include="sysdiagram.cs" />
     <Compile Include="sysdiagrams.cs">

@@ -283,5 +283,186 @@
       <End Role="tutor" EntitySet="tutor" />
       <End Role="alumno" EntitySet="alumno" />
     </AssociationSet>
+    <FunctionImport Name="sp_altaalergias">
+      <Parameter Name="id" Mode="In" Type="Int32" />
+      <Parameter Name="alergia" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_AltaAlumno" ReturnType="Collection(Decimal)">
+      <Parameter Name="fecha_registro" Mode="In" Type="DateTime" />
+      <Parameter Name="cicloescolar" Mode="In" Type="String" />
+      <Parameter Name="nombre" Mode="In" Type="String" />
+      <Parameter Name="apellido_pat" Mode="In" Type="String" />
+      <Parameter Name="apellido_mat" Mode="In" Type="String" />
+      <Parameter Name="fecha_nac" Mode="In" Type="DateTime" />
+      <Parameter Name="edad_alumno" Mode="In" Type="String" />
+      <Parameter Name="curp" Mode="In" Type="String" />
+      <Parameter Name="estadonac" Mode="In" Type="String" />
+      <Parameter Name="ciudadnac" Mode="In" Type="String" />
+      <Parameter Name="colonia" Mode="In" Type="String" />
+      <Parameter Name="calle" Mode="In" Type="String" />
+      <Parameter Name="numero_alumno" Mode="In" Type="String" />
+      <Parameter Name="telefonoper" Mode="In" Type="String" />
+      <Parameter Name="escuela" Mode="In" Type="String" />
+      <Parameter Name="documentacion" Mode="In" Type="String" />
+      <Parameter Name="atendidopor" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_altaalumnocartilla">
+      <Parameter Name="id_al" Mode="In" Type="Int32" />
+      <Parameter Name="id_car" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_altacartilla">
+      <Parameter Name="servicio" Mode="In" Type="String" />
+      <Parameter Name="grupo" Mode="In" Type="String" />
+      <Parameter Name="telefono" Mode="In" Type="String" />
+      <Parameter Name="peso" Mode="In" Type="String" />
+      <Parameter Name="genero" Mode="In" Type="String" />
+      <Parameter Name="color_textura" Mode="In" Type="String" />
+      <Parameter Name="estatura" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_altadiscapacidades">
+      <Parameter Name="id_car" Mode="In" Type="Int32" />
+      <Parameter Name="dis" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_altaenfermedades">
+      <Parameter Name="id_car" Mode="In" Type="Int32" />
+      <Parameter Name="enf" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_altatutor">
+      <Parameter Name="nombre" Mode="In" Type="String" />
+      <Parameter Name="apellidopat" Mode="In" Type="String" />
+      <Parameter Name="apellidomat" Mode="In" Type="String" />
+      <Parameter Name="colonia" Mode="In" Type="String" />
+      <Parameter Name="calle" Mode="In" Type="String" />
+      <Parameter Name="numero" Mode="In" Type="String" />
+      <Parameter Name="ocupacion" Mode="In" Type="String" />
+      <Parameter Name="coloniatrabajo" Mode="In" Type="String" />
+      <Parameter Name="calletrabajo" Mode="In" Type="String" />
+      <Parameter Name="numerotrabajo" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_alterdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_creatediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_dropdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_FichaTecnicaAlumno" ReturnType="Collection(BDCAMModel.SP_FichaTecnicaAlumno_Result)">
+      <Parameter Name="id_alumno" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_FichaTecnicaAlumnoMedica" ReturnType="Collection(BDCAMModel.SP_FichaTecnicaAlumnoMedica_Result)">
+      <Parameter Name="id_alumno" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_FichaTecnicaAlumnoTutor" ReturnType="Collection(BDCAMModel.SP_FichaTecnicaAlumnoTutor_Result)">
+      <Parameter Name="id_alumno" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(BDCAMModel.sp_helpdiagramdefinition_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(BDCAMModel.sp_helpdiagrams_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_ListaAlergia" ReturnType="Collection(BDCAMModel.SP_ListaAlergia_Result)">
+      <Parameter Name="id_alumno" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_ListaAlumnos" ReturnType="Collection(BDCAMModel.SP_ListaAlumnos_Result)" />
+    <FunctionImport Name="SP_ListaDiscapacidad" ReturnType="Collection(BDCAMModel.SP_ListaDiscapacidad_Result)">
+      <Parameter Name="id_alumno" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_ListaEnfermedad" ReturnType="Collection(BDCAMModel.SP_ListaEnfermedad_Result)">
+      <Parameter Name="id_alumno" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_regresarid" ReturnType="Collection(Decimal)" />
+    <FunctionImport Name="sp_regresaridcartilla" ReturnType="Collection(Decimal)" />
+    <FunctionImport Name="sp_regresaridtutor" ReturnType="Collection(Decimal)" />
+    <FunctionImport Name="sp_renamediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="new_diagramname" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_telefonotutores">
+      <Parameter Name="idtutor" Mode="In" Type="Int32" />
+      <Parameter Name="idtelefono" Mode="In" Type="Int32" />
+      <Parameter Name="telefono" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_tutoralumno">
+      <Parameter Name="id_alumno" Mode="In" Type="Int32" />
+      <Parameter Name="id_tutor" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_upgraddiagrams" />
   </EntityContainer>
+  <ComplexType Name="SP_FichaTecnicaAlumno_Result">
+    <Property Type="String" Name="nombre" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="apellido_materno" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="apellido_paterno" Nullable="false" MaxLength="30" />
+    <Property Type="DateTime" Name="fecha_nacimiento" Nullable="false" />
+    <Property Type="String" Name="ciudad_nacimiento_alumno" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="colonia_alumno" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="calle_alumno" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="telefono_personal_alumno" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="escuela_procedencia_alumno" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="edad_alumno" Nullable="false" MaxLength="2" />
+    <Property Type="String" Name="estado_nacimiento_alumno" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="CURP_alumno" Nullable="false" MaxLength="18" />
+    <Property Type="String" Name="atendido_por" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="ciclo_escolar" Nullable="false" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="SP_FichaTecnicaAlumnoMedica_Result">
+    <Property Type="String" Name="nombre" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="grupo_sanguineo" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="telefono_contacto" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="estatura" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="genero" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="peso" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="color_textura_piel" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="servicio_medico" Nullable="false" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="SP_FichaTecnicaAlumnoTutor_Result">
+    <Property Type="String" Name="nombre" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="apellido_paterno" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="apellido_materno" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="calle_tutor" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="colonia_tutor" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="numero_tutor" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="ocupacion_tutor" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="telefono" Nullable="false" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagramdefinition_Result">
+    <Property Type="Int32" Name="version" Nullable="true" />
+    <Property Type="Binary" Name="definition" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagrams_Result">
+    <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
+    <Property Type="Int32" Name="OwnerID" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="SP_ListaAlergia_Result">
+    <Property Type="Int32" Name="id_cartilla_medica" Nullable="false" />
+    <Property Type="String" Name="alergia" Nullable="false" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="SP_ListaAlumnos_Result">
+    <Property Type="Int32" Name="id_alumno" Nullable="false" />
+    <Property Type="String" Name="nombre" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="telefono_contacto" Nullable="false" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="SP_ListaDiscapacidad_Result">
+    <Property Type="Int32" Name="id_cartilla_medica" Nullable="false" />
+    <Property Type="String" Name="discapacidades" Nullable="false" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="SP_ListaEnfermedad_Result">
+    <Property Type="Int32" Name="id_cartilla_medica" Nullable="false" />
+    <Property Type="String" Name="enfermedad" Nullable="false" MaxLength="30" />
+  </ComplexType>
 </Schema>
