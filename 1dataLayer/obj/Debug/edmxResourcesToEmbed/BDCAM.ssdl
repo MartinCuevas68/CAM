@@ -21,14 +21,14 @@ warning 6002: The table/view 'BDCAM.dbo.alergias' does not have a primary key de
     <Property Name="apellido_paterno" Type="varchar" MaxLength="30" Nullable="false" />
     <Property Name="apellido_materno" Type="varchar" MaxLength="30" Nullable="false" />
     <Property Name="fecha_nacimiento" Type="date" Nullable="false" />
-    <Property Name="edad_alumno" Type="varchar" MaxLength="3" Nullable="false" />
-    <Property Name="CURP_alumno" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="edad_alumno" Type="varchar" MaxLength="2" Nullable="false" />
+    <Property Name="CURP_alumno" Type="varchar" MaxLength="18" Nullable="false" />
     <Property Name="estado_nacimiento_alumno" Type="varchar" MaxLength="30" Nullable="false" />
     <Property Name="ciudad_nacimiento_alumno" Type="varchar" MaxLength="30" Nullable="false" />
     <Property Name="colonia_alumno" Type="varchar" MaxLength="30" Nullable="false" />
     <Property Name="calle_alumno" Type="varchar" MaxLength="30" Nullable="false" />
     <Property Name="numero_alumno" Type="varchar" MaxLength="30" Nullable="false" />
-    <Property Name="telefono_personal_alumno" Type="varchar" MaxLength="30" />
+    <Property Name="telefono_personal_alumno" Type="varchar" MaxLength="10" />
     <Property Name="escuela_procedencia_alumno" Type="varchar" MaxLength="30" Nullable="false" />
     <Property Name="documentacion_alumno" Type="nvarchar(max)" />
     <Property Name="atendido_por" Type="varchar" MaxLength="30" Nullable="false" />
@@ -200,7 +200,7 @@ warning 6002: The table/view 'BDCAM.dbo.tutor-alumno' does not have a primary ke
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_alumno-cartilla_alumno">
+  <Association Name="FK_alumno-cartilla">
     <End Role="alumno" Type="Self.alumno" Multiplicity="1" />
     <End Role="alumno-cartilla" Type="Self.alumno-cartilla" Multiplicity="*" />
     <ReferentialConstraint>
@@ -212,7 +212,7 @@ warning 6002: The table/view 'BDCAM.dbo.tutor-alumno' does not have a primary ke
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_alumno-programa_alumno">
+  <Association Name="FK_alumno-programa">
     <End Role="alumno" Type="Self.alumno" Multiplicity="1" />
     <End Role="alumno-programa" Type="Self.alumno-programa" Multiplicity="*" />
     <ReferentialConstraint>
@@ -220,6 +220,18 @@ warning 6002: The table/view 'BDCAM.dbo.tutor-alumno' does not have a primary ke
         <PropertyRef Name="id_alumno" />
       </Principal>
       <Dependent Role="alumno-programa">
+        <PropertyRef Name="id_alumno" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Alumno-tutor">
+    <End Role="alumno" Type="Self.alumno" Multiplicity="1" />
+    <End Role="tutor-alumno" Type="Self.tutor-alumno" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="alumno">
+        <PropertyRef Name="id_alumno" />
+      </Principal>
+      <Dependent Role="tutor-alumno">
         <PropertyRef Name="id_alumno" />
       </Dependent>
     </ReferentialConstraint>
@@ -356,18 +368,6 @@ warning 6002: The table/view 'BDCAM.dbo.tutor-alumno' does not have a primary ke
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_tutor-alumno_alumno">
-    <End Role="alumno" Type="Self.alumno" Multiplicity="1" />
-    <End Role="tutor-alumno" Type="Self.tutor-alumno" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="alumno">
-        <PropertyRef Name="id_alumno" />
-      </Principal>
-      <Dependent Role="tutor-alumno">
-        <PropertyRef Name="id_alumno" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <EntityContainer Name="BDCAMModelStoreContainer">
     <EntitySet Name="alumno" EntityType="Self.alumno" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="programa" EntityType="Self.programa" Schema="dbo" store:Type="Tables" />
@@ -436,13 +436,17 @@ warning 6002: The table/view 'BDCAM.dbo.tutor-alumno' does not have a primary ke
       <End Role="tabla_medica" EntitySet="tabla_medica" />
       <End Role="alergias" EntitySet="alergias" />
     </AssociationSet>
-    <AssociationSet Name="FK_alumno-cartilla_alumno" Association="Self.FK_alumno-cartilla_alumno">
+    <AssociationSet Name="FK_alumno-cartilla" Association="Self.FK_alumno-cartilla">
       <End Role="alumno" EntitySet="alumno" />
       <End Role="alumno-cartilla" EntitySet="alumno-cartilla" />
     </AssociationSet>
-    <AssociationSet Name="FK_alumno-programa_alumno" Association="Self.FK_alumno-programa_alumno">
+    <AssociationSet Name="FK_alumno-programa" Association="Self.FK_alumno-programa">
       <End Role="alumno" EntitySet="alumno" />
       <End Role="alumno-programa" EntitySet="alumno-programa" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Alumno-tutor" Association="Self.FK_Alumno-tutor">
+      <End Role="alumno" EntitySet="alumno" />
+      <End Role="tutor-alumno" EntitySet="tutor-alumno" />
     </AssociationSet>
     <AssociationSet Name="FK_cartilla-alumno" Association="Self.FK_cartilla-alumno">
       <End Role="tabla_medica" EntitySet="tabla_medica" />
@@ -486,10 +490,6 @@ warning 6002: The table/view 'BDCAM.dbo.tutor-alumno' does not have a primary ke
     </AssociationSet>
     <AssociationSet Name="FK_tutor_id" Association="Self.FK_tutor_id">
       <End Role="tutor" EntitySet="tutor" />
-      <End Role="tutor-alumno" EntitySet="tutor-alumno" />
-    </AssociationSet>
-    <AssociationSet Name="FK_tutor-alumno_alumno" Association="Self.FK_tutor-alumno_alumno">
-      <End Role="alumno" EntitySet="alumno" />
       <End Role="tutor-alumno" EntitySet="tutor-alumno" />
     </AssociationSet>
   </EntityContainer>
