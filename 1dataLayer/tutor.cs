@@ -18,7 +18,7 @@ namespace _1dataLayer
         public tutor()
         {
             this.telefono_tutores = new HashSet<telefono_tutores>();
-            this.alumno = new HashSet<alumno>();
+            this.alumnoes = new HashSet<alumno>();
         }
     
         public int id_tutor { get; set; }
@@ -36,6 +36,6 @@ namespace _1dataLayer
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<telefono_tutores> telefono_tutores { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<alumno> alumno { get; set; }
+        public virtual ICollection<alumno> alumnoes { get; set; }
     }
 }
