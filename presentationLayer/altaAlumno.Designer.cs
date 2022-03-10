@@ -138,6 +138,7 @@ namespace presentationLayer
             this.eliminarEnfermedadButton = new System.Windows.Forms.Button();
             this.informacionMedLabel = new System.Windows.Forms.Label();
             this.informacionTutor = new System.Windows.Forms.GroupBox();
+            this.ocupacionTPanel = new System.Windows.Forms.Panel();
             this.apellidoPTPanel = new System.Windows.Forms.Panel();
             this.nombreTPanel = new System.Windows.Forms.Panel();
             this.telTrabajoTPanel = new System.Windows.Forms.Panel();
@@ -151,14 +152,20 @@ namespace presentationLayer
             this.calleTPanel = new System.Windows.Forms.Panel();
             this.infoTutorLabel = new System.Windows.Forms.Label();
             this.altaalumnoLabel = new System.Windows.Forms.Label();
+            this.logo = new System.Windows.Forms.PictureBox();
+            this.pbImagen = new System.Windows.Forms.PictureBox();
+            this.btnSeleccionarFoto = new System.Windows.Forms.Button();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.siguiente3Button = new presentationLayer.buttonSystem();
             this.siguiente2Button = new presentationLayer.buttonSystem();
             this.regresarMenuButton = new presentationLayer.buttonSystem();
             this.regresarButton = new presentationLayer.buttonSystem();
             this.siguiente1Button = new presentationLayer.buttonSystem();
             this.realizarAltaButton = new presentationLayer.buttonSystem();
-            this.logo = new System.Windows.Forms.PictureBox();
-            this.ocupacionTPanel = new System.Windows.Forms.Panel();
+            this.btnMostrarFoto = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.pbImagen2 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.tipoIngresoGroupBox.SuspendLayout();
             this.informacionGeneralAlumno.SuspendLayout();
             this.curpPanel.SuspendLayout();
@@ -185,6 +192,7 @@ namespace presentationLayer
             this.servMedicoPanel.SuspendLayout();
             this.discapacidadPanel.SuspendLayout();
             this.informacionTutor.SuspendLayout();
+            this.ocupacionTPanel.SuspendLayout();
             this.apellidoPTPanel.SuspendLayout();
             this.nombreTPanel.SuspendLayout();
             this.telTrabajoTPanel.SuspendLayout();
@@ -195,7 +203,8 @@ namespace presentationLayer
             this.numeroCasaTPanel.SuspendLayout();
             this.calleTPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
-            this.ocupacionTPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbImagen)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbImagen2)).BeginInit();
             this.SuspendLayout();
             // 
             // nombreAlLabel
@@ -598,6 +607,12 @@ namespace presentationLayer
             // informacionGeneralAlumno
             // 
             this.informacionGeneralAlumno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.informacionGeneralAlumno.Controls.Add(this.button2);
+            this.informacionGeneralAlumno.Controls.Add(this.button1);
+            this.informacionGeneralAlumno.Controls.Add(this.pbImagen2);
+            this.informacionGeneralAlumno.Controls.Add(this.btnMostrarFoto);
+            this.informacionGeneralAlumno.Controls.Add(this.btnSeleccionarFoto);
+            this.informacionGeneralAlumno.Controls.Add(this.pbImagen);
             this.informacionGeneralAlumno.Controls.Add(this.curpPanel);
             this.informacionGeneralAlumno.Controls.Add(this.añosCumPanel);
             this.informacionGeneralAlumno.Controls.Add(this.coloniaPanel);
@@ -963,6 +978,13 @@ namespace presentationLayer
             this.informacionTutor.Name = "informacionTutor";
             this.informacionTutor.TabStop = false;
             // 
+            // ocupacionTPanel
+            // 
+            this.ocupacionTPanel.BackgroundImage = global::presentationLayer.Properties.Resources.textBox__2_;
+            resources.ApplyResources(this.ocupacionTPanel, "ocupacionTPanel");
+            this.ocupacionTPanel.Controls.Add(this.ocupacion);
+            this.ocupacionTPanel.Name = "ocupacionTPanel";
+            // 
             // apellidoPTPanel
             // 
             this.apellidoPTPanel.BackgroundImage = global::presentationLayer.Properties.Resources.textBox__2_;
@@ -1049,6 +1071,32 @@ namespace presentationLayer
             resources.ApplyResources(this.altaalumnoLabel, "altaalumnoLabel");
             this.altaalumnoLabel.Name = "altaalumnoLabel";
             // 
+            // logo
+            // 
+            this.logo.Image = global::presentationLayer.Properties.Resources.log_fondo_blanco;
+            resources.ApplyResources(this.logo, "logo");
+            this.logo.Name = "logo";
+            this.logo.TabStop = false;
+            // 
+            // pbImagen
+            // 
+            this.pbImagen.BackColor = System.Drawing.Color.Cornsilk;
+            this.pbImagen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.pbImagen, "pbImagen");
+            this.pbImagen.Name = "pbImagen";
+            this.pbImagen.TabStop = false;
+            // 
+            // btnSeleccionarFoto
+            // 
+            resources.ApplyResources(this.btnSeleccionarFoto, "btnSeleccionarFoto");
+            this.btnSeleccionarFoto.Name = "btnSeleccionarFoto";
+            this.btnSeleccionarFoto.UseVisualStyleBackColor = true;
+            this.btnSeleccionarFoto.Click += new System.EventHandler(this.btnSeleccionarFoto_Click);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
             // siguiente3Button
             // 
             resources.ApplyResources(this.siguiente3Button, "siguiente3Button");
@@ -1119,20 +1167,36 @@ namespace presentationLayer
             this.realizarAltaButton.ForeColor = System.Drawing.Color.White;
             this.realizarAltaButton.Name = "realizarAltaButton";
             this.realizarAltaButton.UseVisualStyleBackColor = false;
+            this.realizarAltaButton.Click += new System.EventHandler(this.realizarAltaButton_Click);
             // 
-            // logo
+            // btnMostrarFoto
             // 
-            this.logo.Image = global::presentationLayer.Properties.Resources.log_fondo_blanco;
-            resources.ApplyResources(this.logo, "logo");
-            this.logo.Name = "logo";
-            this.logo.TabStop = false;
+            resources.ApplyResources(this.btnMostrarFoto, "btnMostrarFoto");
+            this.btnMostrarFoto.Name = "btnMostrarFoto";
+            this.btnMostrarFoto.UseVisualStyleBackColor = true;
+            this.btnMostrarFoto.Click += new System.EventHandler(this.btnMostrarFoto_Click);
             // 
-            // ocupacionTPanel
+            // button2
             // 
-            this.ocupacionTPanel.BackgroundImage = global::presentationLayer.Properties.Resources.textBox__2_;
-            resources.ApplyResources(this.ocupacionTPanel, "ocupacionTPanel");
-            this.ocupacionTPanel.Controls.Add(this.ocupacion);
-            this.ocupacionTPanel.Name = "ocupacionTPanel";
+            resources.ApplyResources(this.button2, "button2");
+            this.button2.Name = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // pbImagen2
+            // 
+            this.pbImagen2.BackColor = System.Drawing.Color.Cornsilk;
+            this.pbImagen2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.pbImagen2, "pbImagen2");
+            this.pbImagen2.Name = "pbImagen2";
+            this.pbImagen2.TabStop = false;
+            // 
+            // button1
+            // 
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // altaAlumno
             // 
@@ -1206,6 +1270,8 @@ namespace presentationLayer
             this.discapacidadPanel.ResumeLayout(false);
             this.informacionTutor.ResumeLayout(false);
             this.informacionTutor.PerformLayout();
+            this.ocupacionTPanel.ResumeLayout(false);
+            this.ocupacionTPanel.PerformLayout();
             this.apellidoPTPanel.ResumeLayout(false);
             this.apellidoPTPanel.PerformLayout();
             this.nombreTPanel.ResumeLayout(false);
@@ -1225,8 +1291,8 @@ namespace presentationLayer
             this.calleTPanel.ResumeLayout(false);
             this.calleTPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
-            this.ocupacionTPanel.ResumeLayout(false);
-            this.ocupacionTPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbImagen)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbImagen2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1362,6 +1428,13 @@ namespace presentationLayer
         private System.Windows.Forms.Panel telPersonalPanel;
         private System.Windows.Forms.Panel cicloEscPanel;
         private System.Windows.Forms.Panel ocupacionTPanel;
+        private System.Windows.Forms.Button btnSeleccionarFoto;
+        private System.Windows.Forms.PictureBox pbImagen;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox pbImagen2;
+        private System.Windows.Forms.Button btnMostrarFoto;
     }
 }
 

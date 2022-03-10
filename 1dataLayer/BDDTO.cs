@@ -31,6 +31,7 @@ namespace _1dataLayer
         public string escuela_procedencia_alumno { get; set; }
         public string documentacion_alumno { get; set; }
         public string atendido_por { get; set; }
+        public byte[] imagen { get; set; }
     }
    
     public class tabla_medicaDTO
