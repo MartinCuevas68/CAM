@@ -292,6 +292,15 @@ namespace presentationLayer
             limpiarFormato1Button.Hide();
             limpiarFormato2Button.Hide();
             limpiarFormato3Button.Hide();
+
+            this.FormClosed += new FormClosedEventHandler(cerrarForm);
+        }
+
+        private void cerrarForm(object sender, EventArgs e)
+        {
+            Consultas formConsultas = new Consultas();
+            this.Hide();
+            formConsultas.Show();
         }
 
 
@@ -557,14 +566,30 @@ namespace presentationLayer
             realizarAltaButton.Visible = true;
         }
 
-        private void realizarAltaButton_Click(object sender, EventArgs e)
+        //Cargar y Mostrar Foto Alumno ALTA ALUMNO
+        private void fotoBtn_Click(object sender, EventArgs e)
         {
-            //prueba
-            MessageBox.Show("Hola");
+            openFileDialog1.Filter = "Imagenes|*.jpg; *.png";
+            openFileDialog1.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures);
+            openFileDialog1.Title = "Seleccionar Imagen";
 
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                fotoAl.Image = Image.FromFile(openFileDialog1.FileName);
+            }
+        }
+
+        private void realizarAltaButton_Click_1(object sender, EventArgs e)
+        {
+            //Condición de que si no ingresa nombre de alumno y foto de alumno no le deja hacer la alta
+            if (nombreAl.Text == "" && fotoAl.Image == null)
+            {
+                MessageBox.Show("Falta información por ingresar", "ALTA ALUMNO", MessageBoxButtons.OK);
+                return;
+            }
 
             //Guardar Foto alumno   **NO BORRAR LO QUE ESTÁ COMENTADO!!!!!**
-            /*if (fotoAlumno.Image == null)
+            /*if (fotoAl.Image == null)
             {
                 MessageBox.Show("Debes ingresar una imagen");
                 return;
@@ -583,32 +608,25 @@ namespace presentationLayer
                 db.alumno.Add(oImage);
                 db.SaveChanges();
             }  
-        }
-
-        //Mostrar Foto alumno
-        private void btnMostrarFoto_Click(object sender, EventArgs e)
-        {
-            pbImagen2.Image = Image.FromFile(openFileDialog1.FileName);
-            
-            /*using (_1dataLayer.BDCAMEntities)
-            {
-
-            }*/
-        }
-
-        /*//Limpiar imagen 2
-        private void button1_Click(object sender, EventArgs e)
-        {
-            
-            pbImagen2.Image = null;
-        }
-
-        //Limpiar imagen 1
-        private void button2_Click(object sender, EventArgs e)
-        {
-            pbImagen.Image = null;
-
         }*/
+
+
+            //Condición para permitirle al usuario si desea realizar otra alta o no
+            //Si elige SI, se cierra la ventana de alta y se abre una nueva con los campos limpios
+            //Si elige NO, se cierra la ventana de alta y se abre la ventana de consultas
+            DialogResult dr = MessageBox.Show("Alta realizada con exito! Deseas realizar otra alta?", "ALTA ALUMNO", MessageBoxButtons.YesNo);
+            if (dr == DialogResult.Yes)
+            {
+                this.Hide();
+                altaAlumno formaltaAlumno = new altaAlumno();
+                formaltaAlumno.Show();
+            } else if (dr == DialogResult.No)
+            {
+                this.Hide();
+                Consultas formConsulta = new Consultas();
+                formConsulta.Show();
+            }
+        }
     }
 }
 
