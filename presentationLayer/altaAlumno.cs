@@ -285,7 +285,6 @@ namespace presentationLayer
 
         private void altaAlumno_Load(object sender, EventArgs e)
         {
-            
             limpiarFormato1Button.Hide();
             limpiarFormato2Button.Hide();
             limpiarFormato3Button.Hide();
@@ -554,5 +553,58 @@ namespace presentationLayer
             realizarAltaButton.Visible = true;
         }
 
+        private void realizarAltaButton_Click(object sender, EventArgs e)
+        {
+            //prueba
+            MessageBox.Show("Hola");
+
+
+            //Guardar Foto alumno   **NO BORRAR LO QUE ESTÁ COMENTADO!!!!!**
+            /*if (fotoAlumno.Image == null)
+            {
+                MessageBox.Show("Debes ingresar una imagen");
+                return;
+            }
+            byte[] archivo = null;
+            Stream myStream = openFileDialog1.OpenFile();
+            using (MemoryStream ms = new MemoryStream())
+            {
+                myStream.CopyTo(ms);
+                archivo = ms.ToArray();
+            }
+
+            using (_1dataLayer.BDCAMEntities db = new _1dataLayer.BDCAMEntities())
+            {
+                _1dataLayer.alumno oImage = new _1dataLayer.alumno();
+                db.alumno.Add(oImage);
+                db.SaveChanges();
+            }  
+        }
+
+        //Mostrar Foto alumno
+        private void btnMostrarFoto_Click(object sender, EventArgs e)
+        {
+            pbImagen2.Image = Image.FromFile(openFileDialog1.FileName);
+            
+            /*using (_1dataLayer.BDCAMEntities)
+            {
+
+            }*/
+        }
+
+        /*//Limpiar imagen 2
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+            pbImagen2.Image = null;
+        }
+
+        //Limpiar imagen 1
+        private void button2_Click(object sender, EventArgs e)
+        {
+            pbImagen.Image = null;
+
+        }*/
     }
 }
+
