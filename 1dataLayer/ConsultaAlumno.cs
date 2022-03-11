@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace _1dataLayer
 {
-    class ConsultaAlumno
+    public class ConsultaAlumno
     {
         
        //Todo lo comentado son pruebas y demostracion de como revisar y obtener los datos
