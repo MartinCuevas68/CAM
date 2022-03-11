@@ -45,24 +45,13 @@ namespace presentationLayer
             this.tipoIngresoGroupBox = new System.Windows.Forms.GroupBox();
             this.nuevoIngreso = new System.Windows.Forms.RadioButton();
             this.tipoIngLabel = new System.Windows.Forms.Label();
-            this.telPersonal = new System.Windows.Forms.TextBox();
-            this.escuelaP = new System.Windows.Forms.TextBox();
-            this.canalizado = new System.Windows.Forms.TextBox();
-            this.cicloEsc = new System.Windows.Forms.TextBox();
-            this.curp = new System.Windows.Forms.TextBox();
-            this.añosCum = new System.Windows.Forms.TextBox();
             this.fechaNa = new System.Windows.Forms.DateTimePicker();
             this.nombreTLabel = new System.Windows.Forms.Label();
             this.direccionTLabel = new System.Windows.Forms.Label();
             this.ocupacionLabel = new System.Windows.Forms.Label();
-            this.nombreT = new System.Windows.Forms.TextBox();
-            this.ocupacion = new System.Windows.Forms.TextBox();
             this.telCasaTLabel = new System.Windows.Forms.Label();
             this.telMovilTLabel = new System.Windows.Forms.Label();
             this.telTrabajoTLabel = new System.Windows.Forms.Label();
-            this.telCasaT = new System.Windows.Forms.TextBox();
-            this.telMovilT = new System.Windows.Forms.TextBox();
-            this.telTrabajoT = new System.Windows.Forms.TextBox();
             this.ciudadLabel = new System.Windows.Forms.Label();
             this.estadoLabel = new System.Windows.Forms.Label();
             this.apellidoPLabel = new System.Windows.Forms.Label();
@@ -70,23 +59,11 @@ namespace presentationLayer
             this.calleLabel = new System.Windows.Forms.Label();
             this.numeroCasaLabel = new System.Windows.Forms.Label();
             this.coloniaLabel = new System.Windows.Forms.Label();
-            this.apellidoP = new System.Windows.Forms.TextBox();
-            this.apellidoM = new System.Windows.Forms.TextBox();
-            this.ciudad = new System.Windows.Forms.TextBox();
-            this.estado = new System.Windows.Forms.TextBox();
-            this.calle = new System.Windows.Forms.TextBox();
-            this.numeroCasa = new System.Windows.Forms.TextBox();
-            this.colonia = new System.Windows.Forms.TextBox();
             this.apellidoPTLabel = new System.Windows.Forms.Label();
             this.apellidoMTLabel = new System.Windows.Forms.Label();
-            this.apellidoPT = new System.Windows.Forms.TextBox();
-            this.apellidoMT = new System.Windows.Forms.TextBox();
             this.calleTLabel = new System.Windows.Forms.Label();
             this.numeroCasaTLabel = new System.Windows.Forms.Label();
             this.coloniaTLabel = new System.Windows.Forms.Label();
-            this.calleT = new System.Windows.Forms.TextBox();
-            this.numeroCasaT = new System.Windows.Forms.TextBox();
-            this.coloniaT = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.servMedicoLabel = new System.Windows.Forms.Label();
@@ -94,38 +71,54 @@ namespace presentationLayer
             this.enfermedadesLabel = new System.Windows.Forms.Label();
             this.alergiasLabel = new System.Windows.Forms.Label();
             this.telefonoLabel = new System.Windows.Forms.Label();
-            this.servMedico = new System.Windows.Forms.TextBox();
-            this.telefono = new System.Windows.Forms.TextBox();
-            this.grupoSanguineo = new System.Windows.Forms.TextBox();
             this.informacionGeneralAlumno = new System.Windows.Forms.GroupBox();
+            this.fotoBtn = new presentationLayer.buttonSystem();
+            this.fotoAl = new System.Windows.Forms.PictureBox();
             this.curpPanel = new System.Windows.Forms.Panel();
+            this.curp = new System.Windows.Forms.TextBox();
             this.añosCumPanel = new System.Windows.Forms.Panel();
+            this.añosCum = new System.Windows.Forms.TextBox();
             this.coloniaPanel = new System.Windows.Forms.Panel();
+            this.colonia = new System.Windows.Forms.TextBox();
             this.numeroCasaPanel = new System.Windows.Forms.Panel();
+            this.numeroCasa = new System.Windows.Forms.TextBox();
             this.callePanel = new System.Windows.Forms.Panel();
+            this.calle = new System.Windows.Forms.TextBox();
             this.estadoPanel = new System.Windows.Forms.Panel();
+            this.estado = new System.Windows.Forms.TextBox();
             this.ciudadPanel = new System.Windows.Forms.Panel();
+            this.ciudad = new System.Windows.Forms.TextBox();
             this.apellidoMPanel = new System.Windows.Forms.Panel();
+            this.apellidoM = new System.Windows.Forms.TextBox();
             this.apellidoPPanel = new System.Windows.Forms.Panel();
+            this.apellidoP = new System.Windows.Forms.TextBox();
             this.nombreAlPanel = new System.Windows.Forms.Panel();
             this.nombreAl = new System.Windows.Forms.TextBox();
             this.limpiarFormato1Button = new System.Windows.Forms.Button();
-            this.escuelaPPanel = new System.Windows.Forms.Panel();
-            this.canalizadoPanel = new System.Windows.Forms.Panel();
-            this.telPersonalPanel = new System.Windows.Forms.Panel();
             this.infGeneralAlLabel = new System.Windows.Forms.Label();
             this.informacionGeneralAlumno2 = new System.Windows.Forms.GroupBox();
+            this.canalizadoPanel = new System.Windows.Forms.Panel();
+            this.canalizado = new System.Windows.Forms.TextBox();
+            this.escuelaPPanel = new System.Windows.Forms.Panel();
+            this.escuelaP = new System.Windows.Forms.TextBox();
             this.cicloEscPanel = new System.Windows.Forms.Panel();
+            this.cicloEsc = new System.Windows.Forms.TextBox();
+            this.telPersonalPanel = new System.Windows.Forms.Panel();
+            this.telPersonal = new System.Windows.Forms.TextBox();
             this.informacionMedicaAlumnoGroupBox = new System.Windows.Forms.GroupBox();
+            this.eliminarTratamientoButton = new System.Windows.Forms.Button();
             this.alergiasPanel = new System.Windows.Forms.Panel();
             this.alergias = new System.Windows.Forms.RichTextBox();
             this.tratamientoPanel = new System.Windows.Forms.Panel();
             this.tratamiento = new System.Windows.Forms.RichTextBox();
             this.telefonoPanel = new System.Windows.Forms.Panel();
+            this.telefono = new System.Windows.Forms.TextBox();
             this.enfermedadesPanel = new System.Windows.Forms.Panel();
             this.enfermedades = new System.Windows.Forms.RichTextBox();
             this.grupoSanguineoPanel = new System.Windows.Forms.Panel();
+            this.grupoSanguineo = new System.Windows.Forms.TextBox();
             this.servMedicoPanel = new System.Windows.Forms.Panel();
+            this.servMedico = new System.Windows.Forms.TextBox();
             this.tratamientoLabel = new System.Windows.Forms.Label();
             this.alergiasCombobox = new System.Windows.Forms.ComboBox();
             this.discapacidadesCombobox = new System.Windows.Forms.ComboBox();
@@ -139,30 +132,39 @@ namespace presentationLayer
             this.informacionMedLabel = new System.Windows.Forms.Label();
             this.informacionTutor = new System.Windows.Forms.GroupBox();
             this.ocupacionTPanel = new System.Windows.Forms.Panel();
+            this.ocupacion = new System.Windows.Forms.TextBox();
             this.apellidoPTPanel = new System.Windows.Forms.Panel();
+            this.apellidoPT = new System.Windows.Forms.TextBox();
             this.nombreTPanel = new System.Windows.Forms.Panel();
+            this.nombreT = new System.Windows.Forms.TextBox();
             this.telTrabajoTPanel = new System.Windows.Forms.Panel();
+            this.telTrabajoT = new System.Windows.Forms.TextBox();
             this.infContactoLabel = new System.Windows.Forms.Label();
             this.telMovilTPanel = new System.Windows.Forms.Panel();
+            this.telMovilT = new System.Windows.Forms.TextBox();
             this.limpiarFormato2Button = new System.Windows.Forms.Button();
             this.telCasaTPanel = new System.Windows.Forms.Panel();
+            this.telCasaT = new System.Windows.Forms.TextBox();
             this.coloniaTPanel = new System.Windows.Forms.Panel();
+            this.coloniaT = new System.Windows.Forms.TextBox();
             this.apellidoMTPanel = new System.Windows.Forms.Panel();
+            this.apellidoMT = new System.Windows.Forms.TextBox();
             this.numeroCasaTPanel = new System.Windows.Forms.Panel();
+            this.numeroCasaT = new System.Windows.Forms.TextBox();
             this.calleTPanel = new System.Windows.Forms.Panel();
+            this.calleT = new System.Windows.Forms.TextBox();
             this.infoTutorLabel = new System.Windows.Forms.Label();
             this.altaalumnoLabel = new System.Windows.Forms.Label();
             this.logo = new System.Windows.Forms.PictureBox();
-            this.eliminarTratamientoButton = new System.Windows.Forms.Button();
             this.siguiente3Button = new presentationLayer.buttonSystem();
             this.siguiente2Button = new presentationLayer.buttonSystem();
             this.regresarMenuButton = new presentationLayer.buttonSystem();
             this.regresarButton = new presentationLayer.buttonSystem();
             this.siguiente1Button = new presentationLayer.buttonSystem();
             this.realizarAltaButton = new presentationLayer.buttonSystem();
-            this.fotoAlumno = new System.Windows.Forms.PictureBox();
             this.tipoIngresoGroupBox.SuspendLayout();
             this.informacionGeneralAlumno.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fotoAl)).BeginInit();
             this.curpPanel.SuspendLayout();
             this.añosCumPanel.SuspendLayout();
             this.coloniaPanel.SuspendLayout();
@@ -173,11 +175,11 @@ namespace presentationLayer
             this.apellidoMPanel.SuspendLayout();
             this.apellidoPPanel.SuspendLayout();
             this.nombreAlPanel.SuspendLayout();
-            this.escuelaPPanel.SuspendLayout();
-            this.canalizadoPanel.SuspendLayout();
-            this.telPersonalPanel.SuspendLayout();
             this.informacionGeneralAlumno2.SuspendLayout();
+            this.canalizadoPanel.SuspendLayout();
+            this.escuelaPPanel.SuspendLayout();
             this.cicloEscPanel.SuspendLayout();
+            this.telPersonalPanel.SuspendLayout();
             this.informacionMedicaAlumnoGroupBox.SuspendLayout();
             this.alergiasPanel.SuspendLayout();
             this.tratamientoPanel.SuspendLayout();
@@ -198,7 +200,6 @@ namespace presentationLayer
             this.numeroCasaTPanel.SuspendLayout();
             this.calleTPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fotoAlumno)).BeginInit();
             this.SuspendLayout();
             // 
             // nombreAlLabel
@@ -283,48 +284,6 @@ namespace presentationLayer
             resources.ApplyResources(this.tipoIngLabel, "tipoIngLabel");
             this.tipoIngLabel.Name = "tipoIngLabel";
             // 
-            // telPersonal
-            // 
-            this.telPersonal.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.telPersonal.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.telPersonal, "telPersonal");
-            this.telPersonal.Name = "telPersonal";
-            // 
-            // escuelaP
-            // 
-            this.escuelaP.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.escuelaP.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.escuelaP, "escuelaP");
-            this.escuelaP.Name = "escuelaP";
-            // 
-            // canalizado
-            // 
-            this.canalizado.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.canalizado.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.canalizado, "canalizado");
-            this.canalizado.Name = "canalizado";
-            // 
-            // cicloEsc
-            // 
-            this.cicloEsc.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.cicloEsc.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.cicloEsc, "cicloEsc");
-            this.cicloEsc.Name = "cicloEsc";
-            // 
-            // curp
-            // 
-            this.curp.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.curp.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.curp, "curp");
-            this.curp.Name = "curp";
-            // 
-            // añosCum
-            // 
-            this.añosCum.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.añosCum.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.añosCum, "añosCum");
-            this.añosCum.Name = "añosCum";
-            // 
             // fechaNa
             // 
             resources.ApplyResources(this.fechaNa, "fechaNa");
@@ -348,20 +307,6 @@ namespace presentationLayer
             resources.ApplyResources(this.ocupacionLabel, "ocupacionLabel");
             this.ocupacionLabel.Name = "ocupacionLabel";
             // 
-            // nombreT
-            // 
-            this.nombreT.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.nombreT.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.nombreT, "nombreT");
-            this.nombreT.Name = "nombreT";
-            // 
-            // ocupacion
-            // 
-            this.ocupacion.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.ocupacion.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.ocupacion, "ocupacion");
-            this.ocupacion.Name = "ocupacion";
-            // 
             // telCasaTLabel
             // 
             resources.ApplyResources(this.telCasaTLabel, "telCasaTLabel");
@@ -376,27 +321,6 @@ namespace presentationLayer
             // 
             resources.ApplyResources(this.telTrabajoTLabel, "telTrabajoTLabel");
             this.telTrabajoTLabel.Name = "telTrabajoTLabel";
-            // 
-            // telCasaT
-            // 
-            this.telCasaT.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.telCasaT.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.telCasaT, "telCasaT");
-            this.telCasaT.Name = "telCasaT";
-            // 
-            // telMovilT
-            // 
-            this.telMovilT.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.telMovilT.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.telMovilT, "telMovilT");
-            this.telMovilT.Name = "telMovilT";
-            // 
-            // telTrabajoT
-            // 
-            this.telTrabajoT.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.telTrabajoT.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.telTrabajoT, "telTrabajoT");
-            this.telTrabajoT.Name = "telTrabajoT";
             // 
             // ciudadLabel
             // 
@@ -433,55 +357,6 @@ namespace presentationLayer
             resources.ApplyResources(this.coloniaLabel, "coloniaLabel");
             this.coloniaLabel.Name = "coloniaLabel";
             // 
-            // apellidoP
-            // 
-            this.apellidoP.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.apellidoP.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.apellidoP, "apellidoP");
-            this.apellidoP.Name = "apellidoP";
-            // 
-            // apellidoM
-            // 
-            this.apellidoM.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.apellidoM.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.apellidoM, "apellidoM");
-            this.apellidoM.Name = "apellidoM";
-            // 
-            // ciudad
-            // 
-            this.ciudad.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.ciudad.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.ciudad, "ciudad");
-            this.ciudad.Name = "ciudad";
-            // 
-            // estado
-            // 
-            this.estado.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.estado.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.estado, "estado");
-            this.estado.Name = "estado";
-            // 
-            // calle
-            // 
-            this.calle.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.calle.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.calle, "calle");
-            this.calle.Name = "calle";
-            // 
-            // numeroCasa
-            // 
-            this.numeroCasa.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.numeroCasa.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.numeroCasa, "numeroCasa");
-            this.numeroCasa.Name = "numeroCasa";
-            // 
-            // colonia
-            // 
-            this.colonia.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.colonia.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.colonia, "colonia");
-            this.colonia.Name = "colonia";
-            // 
             // apellidoPTLabel
             // 
             resources.ApplyResources(this.apellidoPTLabel, "apellidoPTLabel");
@@ -491,20 +366,6 @@ namespace presentationLayer
             // 
             resources.ApplyResources(this.apellidoMTLabel, "apellidoMTLabel");
             this.apellidoMTLabel.Name = "apellidoMTLabel";
-            // 
-            // apellidoPT
-            // 
-            this.apellidoPT.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.apellidoPT.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.apellidoPT, "apellidoPT");
-            this.apellidoPT.Name = "apellidoPT";
-            // 
-            // apellidoMT
-            // 
-            this.apellidoMT.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.apellidoMT.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.apellidoMT, "apellidoMT");
-            this.apellidoMT.Name = "apellidoMT";
             // 
             // calleTLabel
             // 
@@ -520,27 +381,6 @@ namespace presentationLayer
             // 
             resources.ApplyResources(this.coloniaTLabel, "coloniaTLabel");
             this.coloniaTLabel.Name = "coloniaTLabel";
-            // 
-            // calleT
-            // 
-            this.calleT.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.calleT.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.calleT, "calleT");
-            this.calleT.Name = "calleT";
-            // 
-            // numeroCasaT
-            // 
-            this.numeroCasaT.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.numeroCasaT.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.numeroCasaT, "numeroCasaT");
-            this.numeroCasaT.Name = "numeroCasaT";
-            // 
-            // coloniaT
-            // 
-            this.coloniaT.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.coloniaT.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.coloniaT, "coloniaT");
-            this.coloniaT.Name = "coloniaT";
             // 
             // label1
             // 
@@ -577,31 +417,11 @@ namespace presentationLayer
             resources.ApplyResources(this.telefonoLabel, "telefonoLabel");
             this.telefonoLabel.Name = "telefonoLabel";
             // 
-            // servMedico
-            // 
-            this.servMedico.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.servMedico.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.servMedico, "servMedico");
-            this.servMedico.Name = "servMedico";
-            // 
-            // telefono
-            // 
-            this.telefono.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.telefono.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.telefono, "telefono");
-            this.telefono.Name = "telefono";
-            // 
-            // grupoSanguineo
-            // 
-            this.grupoSanguineo.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.grupoSanguineo.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.grupoSanguineo, "grupoSanguineo");
-            this.grupoSanguineo.Name = "grupoSanguineo";
-            // 
             // informacionGeneralAlumno
             // 
             this.informacionGeneralAlumno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.informacionGeneralAlumno.Controls.Add(this.fotoAlumno);
+            this.informacionGeneralAlumno.Controls.Add(this.fotoBtn);
+            this.informacionGeneralAlumno.Controls.Add(this.fotoAl);
             this.informacionGeneralAlumno.Controls.Add(this.curpPanel);
             this.informacionGeneralAlumno.Controls.Add(this.añosCumPanel);
             this.informacionGeneralAlumno.Controls.Add(this.coloniaPanel);
@@ -631,72 +451,145 @@ namespace presentationLayer
             this.informacionGeneralAlumno.Name = "informacionGeneralAlumno";
             this.informacionGeneralAlumno.TabStop = false;
             // 
+            // fotoBtn
+            // 
+            this.fotoBtn.BackColor = System.Drawing.Color.White;
+            this.fotoBtn.BackgroundColor = System.Drawing.Color.White;
+            this.fotoBtn.BorderRadius = 25;
+            this.fotoBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.fotoBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(142)))), ((int)(((byte)(244)))));
+            resources.ApplyResources(this.fotoBtn, "fotoBtn");
+            this.fotoBtn.ForeColor = System.Drawing.Color.Black;
+            this.fotoBtn.Name = "fotoBtn";
+            this.fotoBtn.UseVisualStyleBackColor = false;
+            // 
+            // fotoAl
+            // 
+            this.fotoAl.BackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.fotoAl, "fotoAl");
+            this.fotoAl.Name = "fotoAl";
+            this.fotoAl.TabStop = false;
+            // 
             // curpPanel
             // 
-            this.curpPanel.BackgroundImage = global::presentationLayer.Properties.Resources.textBoxSmall;
             resources.ApplyResources(this.curpPanel, "curpPanel");
             this.curpPanel.Controls.Add(this.curp);
             this.curpPanel.Name = "curpPanel";
             // 
+            // curp
+            // 
+            this.curp.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.curp.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            resources.ApplyResources(this.curp, "curp");
+            this.curp.Name = "curp";
+            // 
             // añosCumPanel
             // 
-            this.añosCumPanel.BackgroundImage = global::presentationLayer.Properties.Resources.textBoxSmall;
             resources.ApplyResources(this.añosCumPanel, "añosCumPanel");
             this.añosCumPanel.Controls.Add(this.añosCum);
             this.añosCumPanel.Name = "añosCumPanel";
             // 
+            // añosCum
+            // 
+            this.añosCum.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.añosCum.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            resources.ApplyResources(this.añosCum, "añosCum");
+            this.añosCum.Name = "añosCum";
+            // 
             // coloniaPanel
             // 
-            this.coloniaPanel.BackgroundImage = global::presentationLayer.Properties.Resources.textBoxSmall;
             resources.ApplyResources(this.coloniaPanel, "coloniaPanel");
             this.coloniaPanel.Controls.Add(this.colonia);
             this.coloniaPanel.Name = "coloniaPanel";
             // 
+            // colonia
+            // 
+            this.colonia.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.colonia.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            resources.ApplyResources(this.colonia, "colonia");
+            this.colonia.Name = "colonia";
+            // 
             // numeroCasaPanel
             // 
-            this.numeroCasaPanel.BackgroundImage = global::presentationLayer.Properties.Resources.textBoxSmall;
             resources.ApplyResources(this.numeroCasaPanel, "numeroCasaPanel");
             this.numeroCasaPanel.Controls.Add(this.numeroCasa);
             this.numeroCasaPanel.Name = "numeroCasaPanel";
             // 
+            // numeroCasa
+            // 
+            this.numeroCasa.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.numeroCasa.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            resources.ApplyResources(this.numeroCasa, "numeroCasa");
+            this.numeroCasa.Name = "numeroCasa";
+            // 
             // callePanel
             // 
-            this.callePanel.BackgroundImage = global::presentationLayer.Properties.Resources.textBoxSmall;
             resources.ApplyResources(this.callePanel, "callePanel");
             this.callePanel.Controls.Add(this.calle);
             this.callePanel.Name = "callePanel";
             // 
+            // calle
+            // 
+            this.calle.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.calle.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            resources.ApplyResources(this.calle, "calle");
+            this.calle.Name = "calle";
+            // 
             // estadoPanel
             // 
-            this.estadoPanel.BackgroundImage = global::presentationLayer.Properties.Resources.textBoxSmall;
             resources.ApplyResources(this.estadoPanel, "estadoPanel");
             this.estadoPanel.Controls.Add(this.estado);
             this.estadoPanel.Name = "estadoPanel";
             // 
+            // estado
+            // 
+            this.estado.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.estado.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            resources.ApplyResources(this.estado, "estado");
+            this.estado.Name = "estado";
+            // 
             // ciudadPanel
             // 
-            this.ciudadPanel.BackgroundImage = global::presentationLayer.Properties.Resources.textBoxSmall;
             resources.ApplyResources(this.ciudadPanel, "ciudadPanel");
             this.ciudadPanel.Controls.Add(this.ciudad);
             this.ciudadPanel.Name = "ciudadPanel";
             // 
+            // ciudad
+            // 
+            this.ciudad.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ciudad.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            resources.ApplyResources(this.ciudad, "ciudad");
+            this.ciudad.Name = "ciudad";
+            // 
             // apellidoMPanel
             // 
-            this.apellidoMPanel.BackgroundImage = global::presentationLayer.Properties.Resources.textBoxSmall;
+            this.apellidoMPanel.BackgroundImage = global::presentationLayer.Properties.Resources.TextBox01;
             resources.ApplyResources(this.apellidoMPanel, "apellidoMPanel");
             this.apellidoMPanel.Controls.Add(this.apellidoM);
             this.apellidoMPanel.Name = "apellidoMPanel";
             // 
+            // apellidoM
+            // 
+            this.apellidoM.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.apellidoM.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            resources.ApplyResources(this.apellidoM, "apellidoM");
+            this.apellidoM.Name = "apellidoM";
+            // 
             // apellidoPPanel
             // 
-            this.apellidoPPanel.BackgroundImage = global::presentationLayer.Properties.Resources.textBoxSmall;
             resources.ApplyResources(this.apellidoPPanel, "apellidoPPanel");
             this.apellidoPPanel.Controls.Add(this.apellidoP);
             this.apellidoPPanel.Name = "apellidoPPanel";
             // 
+            // apellidoP
+            // 
+            this.apellidoP.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.apellidoP.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            resources.ApplyResources(this.apellidoP, "apellidoP");
+            this.apellidoP.Name = "apellidoP";
+            // 
             // nombreAlPanel
             // 
-            this.nombreAlPanel.BackgroundImage = global::presentationLayer.Properties.Resources.textBox__2_;
             resources.ApplyResources(this.nombreAlPanel, "nombreAlPanel");
             this.nombreAlPanel.Controls.Add(this.nombreAl);
             this.nombreAlPanel.Name = "nombreAlPanel";
@@ -716,27 +609,6 @@ namespace presentationLayer
             this.limpiarFormato1Button.Name = "limpiarFormato1Button";
             this.limpiarFormato1Button.UseVisualStyleBackColor = true;
             this.limpiarFormato1Button.Click += new System.EventHandler(this.limpiarFormato1Button_Click);
-            // 
-            // escuelaPPanel
-            // 
-            this.escuelaPPanel.BackgroundImage = global::presentationLayer.Properties.Resources.textBox__2_;
-            resources.ApplyResources(this.escuelaPPanel, "escuelaPPanel");
-            this.escuelaPPanel.Controls.Add(this.escuelaP);
-            this.escuelaPPanel.Name = "escuelaPPanel";
-            // 
-            // canalizadoPanel
-            // 
-            this.canalizadoPanel.BackgroundImage = global::presentationLayer.Properties.Resources.textBox__2_;
-            resources.ApplyResources(this.canalizadoPanel, "canalizadoPanel");
-            this.canalizadoPanel.Controls.Add(this.canalizado);
-            this.canalizadoPanel.Name = "canalizadoPanel";
-            // 
-            // telPersonalPanel
-            // 
-            this.telPersonalPanel.BackgroundImage = global::presentationLayer.Properties.Resources.textBox__2_;
-            resources.ApplyResources(this.telPersonalPanel, "telPersonalPanel");
-            this.telPersonalPanel.Controls.Add(this.telPersonal);
-            this.telPersonalPanel.Name = "telPersonalPanel";
             // 
             // infGeneralAlLabel
             // 
@@ -760,12 +632,57 @@ namespace presentationLayer
             this.informacionGeneralAlumno2.Name = "informacionGeneralAlumno2";
             this.informacionGeneralAlumno2.TabStop = false;
             // 
+            // canalizadoPanel
+            // 
+            resources.ApplyResources(this.canalizadoPanel, "canalizadoPanel");
+            this.canalizadoPanel.Controls.Add(this.canalizado);
+            this.canalizadoPanel.Name = "canalizadoPanel";
+            // 
+            // canalizado
+            // 
+            this.canalizado.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.canalizado.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            resources.ApplyResources(this.canalizado, "canalizado");
+            this.canalizado.Name = "canalizado";
+            // 
+            // escuelaPPanel
+            // 
+            resources.ApplyResources(this.escuelaPPanel, "escuelaPPanel");
+            this.escuelaPPanel.Controls.Add(this.escuelaP);
+            this.escuelaPPanel.Name = "escuelaPPanel";
+            // 
+            // escuelaP
+            // 
+            this.escuelaP.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.escuelaP.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            resources.ApplyResources(this.escuelaP, "escuelaP");
+            this.escuelaP.Name = "escuelaP";
+            // 
             // cicloEscPanel
             // 
-            this.cicloEscPanel.BackgroundImage = global::presentationLayer.Properties.Resources.textBoxSmall;
             resources.ApplyResources(this.cicloEscPanel, "cicloEscPanel");
             this.cicloEscPanel.Controls.Add(this.cicloEsc);
             this.cicloEscPanel.Name = "cicloEscPanel";
+            // 
+            // cicloEsc
+            // 
+            this.cicloEsc.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.cicloEsc.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            resources.ApplyResources(this.cicloEsc, "cicloEsc");
+            this.cicloEsc.Name = "cicloEsc";
+            // 
+            // telPersonalPanel
+            // 
+            resources.ApplyResources(this.telPersonalPanel, "telPersonalPanel");
+            this.telPersonalPanel.Controls.Add(this.telPersonal);
+            this.telPersonalPanel.Name = "telPersonalPanel";
+            // 
+            // telPersonal
+            // 
+            this.telPersonal.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.telPersonal.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            resources.ApplyResources(this.telPersonal, "telPersonal");
+            this.telPersonal.Name = "telPersonal";
             // 
             // informacionMedicaAlumnoGroupBox
             // 
@@ -796,9 +713,15 @@ namespace presentationLayer
             this.informacionMedicaAlumnoGroupBox.Name = "informacionMedicaAlumnoGroupBox";
             this.informacionMedicaAlumnoGroupBox.TabStop = false;
             // 
+            // eliminarTratamientoButton
+            // 
+            resources.ApplyResources(this.eliminarTratamientoButton, "eliminarTratamientoButton");
+            this.eliminarTratamientoButton.BackgroundImage = global::presentationLayer.Properties.Resources.boteBasura;
+            this.eliminarTratamientoButton.Name = "eliminarTratamientoButton";
+            this.eliminarTratamientoButton.UseVisualStyleBackColor = true;
+            // 
             // alergiasPanel
             // 
-            this.alergiasPanel.BackgroundImage = global::presentationLayer.Properties.Resources.textBoxSmall;
             resources.ApplyResources(this.alergiasPanel, "alergiasPanel");
             this.alergiasPanel.Controls.Add(this.alergias);
             this.alergiasPanel.Name = "alergiasPanel";
@@ -811,7 +734,6 @@ namespace presentationLayer
             // 
             // tratamientoPanel
             // 
-            this.tratamientoPanel.BackgroundImage = global::presentationLayer.Properties.Resources.textBoxSmall;
             resources.ApplyResources(this.tratamientoPanel, "tratamientoPanel");
             this.tratamientoPanel.Controls.Add(this.tratamiento);
             this.tratamientoPanel.Name = "tratamientoPanel";
@@ -824,14 +746,19 @@ namespace presentationLayer
             // 
             // telefonoPanel
             // 
-            this.telefonoPanel.BackgroundImage = global::presentationLayer.Properties.Resources.textBoxSmall;
             resources.ApplyResources(this.telefonoPanel, "telefonoPanel");
             this.telefonoPanel.Controls.Add(this.telefono);
             this.telefonoPanel.Name = "telefonoPanel";
             // 
+            // telefono
+            // 
+            this.telefono.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.telefono.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            resources.ApplyResources(this.telefono, "telefono");
+            this.telefono.Name = "telefono";
+            // 
             // enfermedadesPanel
             // 
-            this.enfermedadesPanel.BackgroundImage = global::presentationLayer.Properties.Resources.textBoxSmall;
             resources.ApplyResources(this.enfermedadesPanel, "enfermedadesPanel");
             this.enfermedadesPanel.Controls.Add(this.enfermedades);
             this.enfermedadesPanel.Name = "enfermedadesPanel";
@@ -844,17 +771,29 @@ namespace presentationLayer
             // 
             // grupoSanguineoPanel
             // 
-            this.grupoSanguineoPanel.BackgroundImage = global::presentationLayer.Properties.Resources.textBoxSmall;
             resources.ApplyResources(this.grupoSanguineoPanel, "grupoSanguineoPanel");
             this.grupoSanguineoPanel.Controls.Add(this.grupoSanguineo);
             this.grupoSanguineoPanel.Name = "grupoSanguineoPanel";
             // 
+            // grupoSanguineo
+            // 
+            this.grupoSanguineo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.grupoSanguineo.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            resources.ApplyResources(this.grupoSanguineo, "grupoSanguineo");
+            this.grupoSanguineo.Name = "grupoSanguineo";
+            // 
             // servMedicoPanel
             // 
-            this.servMedicoPanel.BackgroundImage = global::presentationLayer.Properties.Resources.textBoxSmall;
             resources.ApplyResources(this.servMedicoPanel, "servMedicoPanel");
             this.servMedicoPanel.Controls.Add(this.servMedico);
             this.servMedicoPanel.Name = "servMedicoPanel";
+            // 
+            // servMedico
+            // 
+            this.servMedico.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.servMedico.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            resources.ApplyResources(this.servMedico, "servMedico");
+            this.servMedico.Name = "servMedico";
             // 
             // tratamientoLabel
             // 
@@ -905,7 +844,6 @@ namespace presentationLayer
             // 
             // discapacidadPanel
             // 
-            this.discapacidadPanel.BackgroundImage = global::presentationLayer.Properties.Resources.textBoxSmall;
             resources.ApplyResources(this.discapacidadPanel, "discapacidadPanel");
             this.discapacidadPanel.Controls.Add(this.discapacidad);
             this.discapacidadPanel.Name = "discapacidadPanel";
@@ -970,31 +908,55 @@ namespace presentationLayer
             // 
             // ocupacionTPanel
             // 
-            this.ocupacionTPanel.BackgroundImage = global::presentationLayer.Properties.Resources.textBox__2_;
             resources.ApplyResources(this.ocupacionTPanel, "ocupacionTPanel");
             this.ocupacionTPanel.Controls.Add(this.ocupacion);
             this.ocupacionTPanel.Name = "ocupacionTPanel";
             // 
+            // ocupacion
+            // 
+            this.ocupacion.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ocupacion.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            resources.ApplyResources(this.ocupacion, "ocupacion");
+            this.ocupacion.Name = "ocupacion";
+            // 
             // apellidoPTPanel
             // 
-            this.apellidoPTPanel.BackgroundImage = global::presentationLayer.Properties.Resources.textBox__2_;
             resources.ApplyResources(this.apellidoPTPanel, "apellidoPTPanel");
             this.apellidoPTPanel.Controls.Add(this.apellidoPT);
             this.apellidoPTPanel.Name = "apellidoPTPanel";
             // 
+            // apellidoPT
+            // 
+            this.apellidoPT.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.apellidoPT.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            resources.ApplyResources(this.apellidoPT, "apellidoPT");
+            this.apellidoPT.Name = "apellidoPT";
+            // 
             // nombreTPanel
             // 
-            this.nombreTPanel.BackgroundImage = global::presentationLayer.Properties.Resources.textBox__2_;
             resources.ApplyResources(this.nombreTPanel, "nombreTPanel");
             this.nombreTPanel.Controls.Add(this.nombreT);
             this.nombreTPanel.Name = "nombreTPanel";
             // 
+            // nombreT
+            // 
+            this.nombreT.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.nombreT.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            resources.ApplyResources(this.nombreT, "nombreT");
+            this.nombreT.Name = "nombreT";
+            // 
             // telTrabajoTPanel
             // 
-            this.telTrabajoTPanel.BackgroundImage = global::presentationLayer.Properties.Resources.textBoxSmall;
             resources.ApplyResources(this.telTrabajoTPanel, "telTrabajoTPanel");
             this.telTrabajoTPanel.Controls.Add(this.telTrabajoT);
             this.telTrabajoTPanel.Name = "telTrabajoTPanel";
+            // 
+            // telTrabajoT
+            // 
+            this.telTrabajoT.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.telTrabajoT.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            resources.ApplyResources(this.telTrabajoT, "telTrabajoT");
+            this.telTrabajoT.Name = "telTrabajoT";
             // 
             // infContactoLabel
             // 
@@ -1003,10 +965,16 @@ namespace presentationLayer
             // 
             // telMovilTPanel
             // 
-            this.telMovilTPanel.BackgroundImage = global::presentationLayer.Properties.Resources.textBoxSmall;
             resources.ApplyResources(this.telMovilTPanel, "telMovilTPanel");
             this.telMovilTPanel.Controls.Add(this.telMovilT);
             this.telMovilTPanel.Name = "telMovilTPanel";
+            // 
+            // telMovilT
+            // 
+            this.telMovilT.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.telMovilT.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            resources.ApplyResources(this.telMovilT, "telMovilT");
+            this.telMovilT.Name = "telMovilT";
             // 
             // limpiarFormato2Button
             // 
@@ -1018,38 +986,68 @@ namespace presentationLayer
             // 
             // telCasaTPanel
             // 
-            this.telCasaTPanel.BackgroundImage = global::presentationLayer.Properties.Resources.textBoxSmall;
             resources.ApplyResources(this.telCasaTPanel, "telCasaTPanel");
             this.telCasaTPanel.Controls.Add(this.telCasaT);
             this.telCasaTPanel.Name = "telCasaTPanel";
             // 
+            // telCasaT
+            // 
+            this.telCasaT.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.telCasaT.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            resources.ApplyResources(this.telCasaT, "telCasaT");
+            this.telCasaT.Name = "telCasaT";
+            // 
             // coloniaTPanel
             // 
-            this.coloniaTPanel.BackgroundImage = global::presentationLayer.Properties.Resources.textBoxSmall;
             resources.ApplyResources(this.coloniaTPanel, "coloniaTPanel");
             this.coloniaTPanel.Controls.Add(this.coloniaT);
             this.coloniaTPanel.Name = "coloniaTPanel";
             // 
+            // coloniaT
+            // 
+            this.coloniaT.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.coloniaT.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            resources.ApplyResources(this.coloniaT, "coloniaT");
+            this.coloniaT.Name = "coloniaT";
+            // 
             // apellidoMTPanel
             // 
-            this.apellidoMTPanel.BackgroundImage = global::presentationLayer.Properties.Resources.textBox__2_;
             resources.ApplyResources(this.apellidoMTPanel, "apellidoMTPanel");
             this.apellidoMTPanel.Controls.Add(this.apellidoMT);
             this.apellidoMTPanel.Name = "apellidoMTPanel";
             // 
+            // apellidoMT
+            // 
+            this.apellidoMT.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.apellidoMT.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            resources.ApplyResources(this.apellidoMT, "apellidoMT");
+            this.apellidoMT.Name = "apellidoMT";
+            // 
             // numeroCasaTPanel
             // 
-            this.numeroCasaTPanel.BackgroundImage = global::presentationLayer.Properties.Resources.textBoxSmall;
             resources.ApplyResources(this.numeroCasaTPanel, "numeroCasaTPanel");
             this.numeroCasaTPanel.Controls.Add(this.numeroCasaT);
             this.numeroCasaTPanel.Name = "numeroCasaTPanel";
             // 
+            // numeroCasaT
+            // 
+            this.numeroCasaT.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.numeroCasaT.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            resources.ApplyResources(this.numeroCasaT, "numeroCasaT");
+            this.numeroCasaT.Name = "numeroCasaT";
+            // 
             // calleTPanel
             // 
-            this.calleTPanel.BackgroundImage = global::presentationLayer.Properties.Resources.textBoxSmall;
             resources.ApplyResources(this.calleTPanel, "calleTPanel");
             this.calleTPanel.Controls.Add(this.calleT);
             this.calleTPanel.Name = "calleTPanel";
+            // 
+            // calleT
+            // 
+            this.calleT.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.calleT.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            resources.ApplyResources(this.calleT, "calleT");
+            this.calleT.Name = "calleT";
             // 
             // infoTutorLabel
             // 
@@ -1067,13 +1065,6 @@ namespace presentationLayer
             resources.ApplyResources(this.logo, "logo");
             this.logo.Name = "logo";
             this.logo.TabStop = false;
-            // 
-            // eliminarTratamientoButton
-            // 
-            resources.ApplyResources(this.eliminarTratamientoButton, "eliminarTratamientoButton");
-            this.eliminarTratamientoButton.BackgroundImage = global::presentationLayer.Properties.Resources.boteBasura;
-            this.eliminarTratamientoButton.Name = "eliminarTratamientoButton";
-            this.eliminarTratamientoButton.UseVisualStyleBackColor = true;
             // 
             // siguiente3Button
             // 
@@ -1146,13 +1137,6 @@ namespace presentationLayer
             this.realizarAltaButton.Name = "realizarAltaButton";
             this.realizarAltaButton.UseVisualStyleBackColor = false;
             // 
-            // fotoAlumno
-            // 
-            this.fotoAlumno.BackColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.fotoAlumno, "fotoAlumno");
-            this.fotoAlumno.Name = "fotoAlumno";
-            this.fotoAlumno.TabStop = false;
-            // 
             // altaAlumno
             // 
             resources.ApplyResources(this, "$this");
@@ -1181,6 +1165,7 @@ namespace presentationLayer
             this.tipoIngresoGroupBox.PerformLayout();
             this.informacionGeneralAlumno.ResumeLayout(false);
             this.informacionGeneralAlumno.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fotoAl)).EndInit();
             this.curpPanel.ResumeLayout(false);
             this.curpPanel.PerformLayout();
             this.añosCumPanel.ResumeLayout(false);
@@ -1201,16 +1186,16 @@ namespace presentationLayer
             this.apellidoPPanel.PerformLayout();
             this.nombreAlPanel.ResumeLayout(false);
             this.nombreAlPanel.PerformLayout();
-            this.escuelaPPanel.ResumeLayout(false);
-            this.escuelaPPanel.PerformLayout();
-            this.canalizadoPanel.ResumeLayout(false);
-            this.canalizadoPanel.PerformLayout();
-            this.telPersonalPanel.ResumeLayout(false);
-            this.telPersonalPanel.PerformLayout();
             this.informacionGeneralAlumno2.ResumeLayout(false);
             this.informacionGeneralAlumno2.PerformLayout();
+            this.canalizadoPanel.ResumeLayout(false);
+            this.canalizadoPanel.PerformLayout();
+            this.escuelaPPanel.ResumeLayout(false);
+            this.escuelaPPanel.PerformLayout();
             this.cicloEscPanel.ResumeLayout(false);
             this.cicloEscPanel.PerformLayout();
+            this.telPersonalPanel.ResumeLayout(false);
+            this.telPersonalPanel.PerformLayout();
             this.informacionMedicaAlumnoGroupBox.ResumeLayout(false);
             this.informacionMedicaAlumnoGroupBox.PerformLayout();
             this.alergiasPanel.ResumeLayout(false);
@@ -1246,7 +1231,6 @@ namespace presentationLayer
             this.calleTPanel.ResumeLayout(false);
             this.calleTPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fotoAlumno)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1383,7 +1367,8 @@ namespace presentationLayer
         private System.Windows.Forms.Panel cicloEscPanel;
         private System.Windows.Forms.Panel ocupacionTPanel;
         private System.Windows.Forms.Button eliminarTratamientoButton;
-        private System.Windows.Forms.PictureBox fotoAlumno;
+        private System.Windows.Forms.PictureBox fotoAl;
+        private buttonSystem fotoBtn;
     }
 }
 

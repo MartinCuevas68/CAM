@@ -182,6 +182,15 @@
   <ItemGroup>
     <None Include="Resources\textBoxSmall.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TextBox011.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TextBox031.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TextBox21.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
