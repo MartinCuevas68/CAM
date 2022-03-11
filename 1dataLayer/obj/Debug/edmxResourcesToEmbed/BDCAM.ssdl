@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="BDCAMModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-  <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BDCAM.dbo.alergias' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.alergias' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
   <EntityType Name="alergias">
     <Key>
       <PropertyRef Name="id_cartilla_medica" />
@@ -33,8 +33,8 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.alergias' no tiene definida ningun
     <Property Name="documentacion_alumno" Type="nvarchar(max)" />
     <Property Name="atendido_por" Type="varchar" MaxLength="30" Nullable="false" />
   </EntityType>
-  <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BDCAM.dbo.alumno-cartilla' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.alumno-cartilla' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
   <EntityType Name="alumno-cartilla">
     <Key>
       <PropertyRef Name="id_alumno" />
@@ -43,8 +43,8 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.alumno-cartilla' no tiene definida
     <Property Name="id_alumno" Type="int" Nullable="false" />
     <Property Name="id_cartilla" Type="int" Nullable="false" />
   </EntityType>
-  <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BDCAM.dbo.alumno-programa' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.alumno-programa' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
   <EntityType Name="alumno-programa">
     <Key>
       <PropertyRef Name="id_alumno" />
@@ -53,8 +53,8 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.alumno-programa' no tiene definida
     <Property Name="id_alumno" Type="int" Nullable="false" />
     <Property Name="id_programa" Type="int" Nullable="false" />
   </EntityType>
-  <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BDCAM.dbo.discapacidades' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.discapacidades' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
   <EntityType Name="discapacidades">
     <Key>
       <PropertyRef Name="id_cartilla_medica" />
@@ -63,8 +63,8 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.discapacidades' no tiene definida 
     <Property Name="id_cartilla_medica" Type="int" Nullable="false" />
     <Property Name="discapacidades" Type="varchar" MaxLength="30" Nullable="false" />
   </EntityType>
-  <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BDCAM.dbo.enfermedades' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.enfermedades' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
   <EntityType Name="enfermedades">
     <Key>
       <PropertyRef Name="id_cartilla_medica" />
@@ -72,6 +72,13 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.enfermedades' no tiene definida ni
     </Key>
     <Property Name="id_cartilla_medica" Type="int" Nullable="false" />
     <Property Name="enfermedad" Type="varchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityType Name="permisos">
+    <Key>
+      <PropertyRef Name="id_permisos" />
+    </Key>
+    <Property Name="id_permisos" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="permisos" Type="varchar" MaxLength="250" Nullable="false" />
   </EntityType>
   <EntityType Name="programa">
     <Key>
@@ -86,8 +93,8 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.enfermedades' no tiene definida ni
     <Property Name="modulos" Type="varchar" MaxLength="30" Nullable="false" />
     <Property Name="proyecto" Type="varchar" MaxLength="30" Nullable="false" />
   </EntityType>
-  <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BDCAM.dbo.programa-turno' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.programa-turno' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
   <EntityType Name="programa-turno">
     <Key>
       <PropertyRef Name="id_turno" />
@@ -96,8 +103,8 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.programa-turno' no tiene definida 
     <Property Name="id_turno" Type="int" Nullable="false" />
     <Property Name="id_programa" Type="int" Nullable="false" />
   </EntityType>
-  <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BDCAM.dbo.recurso-programa' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.recurso-programa' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
   <EntityType Name="recurso-programa">
     <Key>
       <PropertyRef Name="id_recurso" />
@@ -112,6 +119,32 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.recurso-programa' no tiene definid
     </Key>
     <Property Name="id_recurso" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="recurso" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="roles">
+    <Key>
+      <PropertyRef Name="id_rol" />
+    </Key>
+    <Property Name="id_rol" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre_rol" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.rol-tiene-permiso' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="rol-tiene-permiso">
+    <Key>
+      <PropertyRef Name="id_rol" />
+      <PropertyRef Name="id_permiso" />
+      <PropertyRef Name="id_subpermiso" />
+    </Key>
+    <Property Name="id_rol" Type="int" Nullable="false" />
+    <Property Name="id_permiso" Type="int" Nullable="false" />
+    <Property Name="id_subpermiso" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="subpermisos">
+    <Key>
+      <PropertyRef Name="id_subpermisos" />
+    </Key>
+    <Property Name="id_subpermisos" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="subpermisos" Type="varchar" MaxLength="150" Nullable="false" />
   </EntityType>
   <EntityType Name="sysdiagrams">
     <Key>
@@ -143,8 +176,8 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.recurso-programa' no tiene definid
     <Property Name="color_textura_piel" Type="varchar" MaxLength="50" />
     <Property Name="estatura" Type="varchar" MaxLength="50" />
   </EntityType>
-  <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BDCAM.dbo.telefono-tutores' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.telefono-tutores' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
   <EntityType Name="telefono-tutores">
     <Key>
       <PropertyRef Name="id_tutor" />
@@ -178,8 +211,8 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.telefono-tutores' no tiene definid
     <Property Name="calle_trabajo_tutor" Type="varchar" MaxLength="30" Nullable="false" />
     <Property Name="numero_trabajo_tutor" Type="varchar" MaxLength="30" Nullable="false" />
   </EntityType>
-  <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BDCAM.dbo.tutor-alumno' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.tutor-alumno' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
   <EntityType Name="tutor-alumno">
     <Key>
       <PropertyRef Name="id_tutor" />
@@ -187,6 +220,24 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.tutor-alumno' no tiene definida ni
     </Key>
     <Property Name="id_tutor" Type="int" Nullable="false" />
     <Property Name="id_alumno" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="usuario">
+    <Key>
+      <PropertyRef Name="id_usuario" />
+    </Key>
+    <Property Name="id_usuario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="contraseña" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="usuario-tiene-rol">
+    <Key>
+      <PropertyRef Name="id_usuario" />
+      <PropertyRef Name="id_roles" />
+    </Key>
+    <Property Name="id_usuario" Type="int" Nullable="false" />
+    <Property Name="id_roles" Type="int" Nullable="false" />
   </EntityType>
   <Association Name="FK_alergias_tabla_medica">
     <End Role="tabla_medica" Type="Self.tabla_medica" Multiplicity="1" />
@@ -368,6 +419,66 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.tutor-alumno' no tiene definida ni
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="permiso">
+    <End Role="permisos" Type="Self.permisos" Multiplicity="1" />
+    <End Role="rol-tiene-permiso" Type="Self.rol-tiene-permiso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="permisos">
+        <PropertyRef Name="id_permisos" />
+      </Principal>
+      <Dependent Role="rol-tiene-permiso">
+        <PropertyRef Name="id_permiso" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="rol-permiso">
+    <End Role="roles" Type="Self.roles" Multiplicity="1" />
+    <End Role="rol-tiene-permiso" Type="Self.rol-tiene-permiso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="roles">
+        <PropertyRef Name="id_rol" />
+      </Principal>
+      <Dependent Role="rol-tiene-permiso">
+        <PropertyRef Name="id_rol" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="rol-usuario">
+    <End Role="roles" Type="Self.roles" Multiplicity="1" />
+    <End Role="usuario-tiene-rol" Type="Self.usuario-tiene-rol" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="roles">
+        <PropertyRef Name="id_rol" />
+      </Principal>
+      <Dependent Role="usuario-tiene-rol">
+        <PropertyRef Name="id_roles" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="subpermiso">
+    <End Role="subpermisos" Type="Self.subpermisos" Multiplicity="1" />
+    <End Role="rol-tiene-permiso" Type="Self.rol-tiene-permiso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="subpermisos">
+        <PropertyRef Name="id_subpermisos" />
+      </Principal>
+      <Dependent Role="rol-tiene-permiso">
+        <PropertyRef Name="id_subpermiso" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="usuario-rol">
+    <End Role="usuario" Type="Self.usuario" Multiplicity="1" />
+    <End Role="usuario-tiene-rol" Type="Self.usuario-tiene-rol" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuario">
+        <PropertyRef Name="id_usuario" />
+      </Principal>
+      <Dependent Role="usuario-tiene-rol">
+        <PropertyRef Name="id_usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Function Name="fn_diagramobjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int" />
   <Function Name="sp_altaalergias" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="id" Type="int" Mode="In" />
@@ -488,13 +599,17 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.tutor-alumno' no tiene definida ni
   <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
   <EntityContainer Name="BDCAMModelStoreContainer">
     <EntitySet Name="alumno" EntityType="Self.alumno" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="permisos" EntityType="Self.permisos" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="programa" EntityType="Self.programa" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="recursos" EntityType="Self.recursos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="roles" EntityType="Self.roles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="subpermisos" EntityType="Self.subpermisos" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="tabla_indicadores_telefono" EntityType="Self.tabla_indicadores_telefono" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="tabla_medica" EntityType="Self.tabla_medica" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="turnos" EntityType="Self.turnos" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="tutor" EntityType="Self.tutor" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="usuario" EntityType="Self.usuario" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="alergias" EntityType="Self.alergias" store:Type="Tables" store:Schema="dbo">
       <DefiningQuery>SELECT 
     [alergias].[id_cartilla_medica] AS [id_cartilla_medica], 
@@ -537,6 +652,13 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.tutor-alumno' no tiene definida ni
     [recurso-programa].[id_programa] AS [id_programa]
     FROM [dbo].[recurso-programa] AS [recurso-programa]</DefiningQuery>
     </EntitySet>
+    <EntitySet Name="rol-tiene-permiso" EntityType="Self.rol-tiene-permiso" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [rol-tiene-permiso].[id_rol] AS [id_rol], 
+    [rol-tiene-permiso].[id_permiso] AS [id_permiso], 
+    [rol-tiene-permiso].[id_subpermiso] AS [id_subpermiso]
+    FROM [dbo].[rol-tiene-permiso] AS [rol-tiene-permiso]</DefiningQuery>
+    </EntitySet>
     <EntitySet Name="telefono-tutores" EntityType="Self.telefono-tutores" store:Type="Tables" store:Schema="dbo">
       <DefiningQuery>SELECT 
     [telefono-tutores].[id_tutor] AS [id_tutor], 
@@ -549,6 +671,12 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.tutor-alumno' no tiene definida ni
     [tutor-alumno].[id_tutor] AS [id_tutor], 
     [tutor-alumno].[id_alumno] AS [id_alumno]
     FROM [dbo].[tutor-alumno] AS [tutor-alumno]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="usuario-tiene-rol" EntityType="Self.usuario-tiene-rol" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [usuario-tiene-rol].[id_usuario] AS [id_usuario], 
+    [usuario-tiene-rol].[id_roles] AS [id_roles]
+    FROM [dbo].[usuario-tiene-rol] AS [usuario-tiene-rol]</DefiningQuery>
     </EntitySet>
     <AssociationSet Name="FK_alergias_tabla_medica" Association="Self.FK_alergias_tabla_medica">
       <End Role="tabla_medica" EntitySet="tabla_medica" />
@@ -609,6 +737,26 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.tutor-alumno' no tiene definida ni
     <AssociationSet Name="FK_tutor_id" Association="Self.FK_tutor_id">
       <End Role="tutor" EntitySet="tutor" />
       <End Role="tutor-alumno" EntitySet="tutor-alumno" />
+    </AssociationSet>
+    <AssociationSet Name="permiso" Association="Self.permiso">
+      <End Role="permisos" EntitySet="permisos" />
+      <End Role="rol-tiene-permiso" EntitySet="rol-tiene-permiso" />
+    </AssociationSet>
+    <AssociationSet Name="rol-permiso" Association="Self.rol-permiso">
+      <End Role="roles" EntitySet="roles" />
+      <End Role="rol-tiene-permiso" EntitySet="rol-tiene-permiso" />
+    </AssociationSet>
+    <AssociationSet Name="rol-usuario" Association="Self.rol-usuario">
+      <End Role="roles" EntitySet="roles" />
+      <End Role="usuario-tiene-rol" EntitySet="usuario-tiene-rol" />
+    </AssociationSet>
+    <AssociationSet Name="subpermiso" Association="Self.subpermiso">
+      <End Role="subpermisos" EntitySet="subpermisos" />
+      <End Role="rol-tiene-permiso" EntitySet="rol-tiene-permiso" />
+    </AssociationSet>
+    <AssociationSet Name="usuario-rol" Association="Self.usuario-rol">
+      <End Role="usuario" EntitySet="usuario" />
+      <End Role="usuario-tiene-rol" EntitySet="usuario-tiene-rol" />
     </AssociationSet>
   </EntityContainer>
 </Schema>

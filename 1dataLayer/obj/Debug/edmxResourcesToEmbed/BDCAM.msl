@@ -295,5 +295,55 @@
     <FunctionImportMapping FunctionImportName="sp_telefonotutores" FunctionName="BDCAMModel.Store.sp_telefonotutores" />
     <FunctionImportMapping FunctionImportName="sp_tutoralumno" FunctionName="BDCAMModel.Store.sp_tutoralumno" />
     <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="BDCAMModel.Store.sp_upgraddiagrams" />
+    <EntitySetMapping Name="permisos">
+      <EntityTypeMapping TypeName="BDCAMModel.permisos">
+        <MappingFragment StoreEntitySet="permisos">
+          <ScalarProperty Name="permisos1" ColumnName="permisos" />
+          <ScalarProperty Name="id_permisos" ColumnName="id_permisos" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="roles">
+      <EntityTypeMapping TypeName="BDCAMModel.roles">
+        <MappingFragment StoreEntitySet="roles">
+          <ScalarProperty Name="nombre_rol" ColumnName="nombre_rol" />
+          <ScalarProperty Name="id_rol" ColumnName="id_rol" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="subpermisos">
+      <EntityTypeMapping TypeName="BDCAMModel.subpermisos">
+        <MappingFragment StoreEntitySet="subpermisos">
+          <ScalarProperty Name="subpermisos1" ColumnName="subpermisos" />
+          <ScalarProperty Name="id_subpermisos" ColumnName="id_subpermisos" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="usuario">
+      <EntityTypeMapping TypeName="BDCAMModel.usuario">
+        <MappingFragment StoreEntitySet="usuario">
+          <ScalarProperty Name="contraseña" ColumnName="contraseña" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="id_usuario" ColumnName="id_usuario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="rol_tiene_permiso">
+      <EntityTypeMapping TypeName="BDCAMModel.rol_tiene_permiso">
+        <MappingFragment StoreEntitySet="rol-tiene-permiso">
+          <ScalarProperty Name="id_subpermiso" ColumnName="id_subpermiso" />
+          <ScalarProperty Name="id_permiso" ColumnName="id_permiso" />
+          <ScalarProperty Name="id_rol" ColumnName="id_rol" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="usuario_tiene_rol" TypeName="BDCAMModel.usuario_tiene_rol" StoreEntitySet="usuario-tiene-rol">
+      <EndProperty Name="usuario">
+        <ScalarProperty Name="id_usuario" ColumnName="id_usuario" />
+      </EndProperty>
+      <EndProperty Name="roles">
+        <ScalarProperty Name="id_rol" ColumnName="id_roles" />
+      </EndProperty>
+    </AssociationSetMapping>
   </EntityContainerMapping>
 </Mapping>

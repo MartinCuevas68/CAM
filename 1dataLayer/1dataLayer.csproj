@@ -89,6 +89,9 @@
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>
     <Compile Include="permiso.cs" />
+    <Compile Include="permisos.cs">
+      <DependentUpon>BDCAM.tt</DependentUpon>
+    </Compile>
     <Compile Include="programa.cs">
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>
@@ -98,7 +101,12 @@
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>
     <Compile Include="role.cs" />
-    <Compile Include="rol_tiene_permiso.cs" />
+    <Compile Include="roles.cs">
+      <DependentUpon>BDCAM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="rol_tiene_permiso.cs">
+      <DependentUpon>BDCAM.tt</DependentUpon>
+    </Compile>
     <Compile Include="SP_FichaTecnicaAlumnoMedica_Result.cs">
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>
@@ -127,6 +135,9 @@
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>
     <Compile Include="subpermiso.cs" />
+    <Compile Include="subpermisos.cs">
+      <DependentUpon>BDCAM.tt</DependentUpon>
+    </Compile>
     <Compile Include="sysdiagram.cs" />
     <Compile Include="sysdiagrams.cs">
       <DependentUpon>BDCAM.tt</DependentUpon>
@@ -147,7 +158,9 @@
     <Compile Include="tutor.cs">
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>
-    <Compile Include="usuario.cs" />
+    <Compile Include="usuario.cs">
+      <DependentUpon>BDCAM.tt</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.Config" />

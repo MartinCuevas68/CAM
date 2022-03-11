@@ -400,6 +400,27 @@
       <Parameter Name="id_tutor" Mode="In" Type="Int32" />
     </FunctionImport>
     <FunctionImport Name="sp_upgraddiagrams" />
+    <EntitySet Name="permisos" EntityType="BDCAMModel.permisos" />
+    <EntitySet Name="roles" EntityType="BDCAMModel.roles" />
+    <EntitySet Name="subpermisos" EntityType="BDCAMModel.subpermisos" />
+    <EntitySet Name="usuario" EntityType="BDCAMModel.usuario" />
+    <EntitySet Name="rol_tiene_permiso" EntityType="BDCAMModel.rol_tiene_permiso" />
+    <AssociationSet Name="permiso" Association="BDCAMModel.permiso">
+      <End Role="permisos" EntitySet="permisos" />
+      <End Role="rol_tiene_permiso" EntitySet="rol_tiene_permiso" />
+    </AssociationSet>
+    <AssociationSet Name="rol_permiso" Association="BDCAMModel.rol_permiso">
+      <End Role="roles" EntitySet="roles" />
+      <End Role="rol_tiene_permiso" EntitySet="rol_tiene_permiso" />
+    </AssociationSet>
+    <AssociationSet Name="subpermiso" Association="BDCAMModel.subpermiso">
+      <End Role="subpermisos" EntitySet="subpermisos" />
+      <End Role="rol_tiene_permiso" EntitySet="rol_tiene_permiso" />
+    </AssociationSet>
+    <AssociationSet Name="usuario_tiene_rol" Association="BDCAMModel.usuario_tiene_rol">
+      <End Role="roles" EntitySet="roles" />
+      <End Role="usuario" EntitySet="usuario" />
+    </AssociationSet>
   </EntityContainer>
   <ComplexType Name="SP_FichaTecnicaAlumno_Result">
     <Property Type="String" Name="nombre" Nullable="false" MaxLength="30" />
@@ -465,4 +486,91 @@
     <Property Type="Int32" Name="id_cartilla_medica" Nullable="false" />
     <Property Type="String" Name="enfermedad" Nullable="false" MaxLength="30" />
   </ComplexType>
+  <EntityType Name="permisos">
+    <Key>
+      <PropertyRef Name="id_permisos" />
+    </Key>
+    <Property Name="id_permisos" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="permisos1" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="rol_tiene_permiso" Relationship="BDCAMModel.permiso" FromRole="permisos" ToRole="rol_tiene_permiso" />
+  </EntityType>
+  <EntityType Name="roles">
+    <Key>
+      <PropertyRef Name="id_rol" />
+    </Key>
+    <Property Name="id_rol" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre_rol" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="rol_tiene_permiso" Relationship="BDCAMModel.rol_permiso" FromRole="roles" ToRole="rol_tiene_permiso" />
+    <NavigationProperty Name="usuario" Relationship="BDCAMModel.usuario_tiene_rol" FromRole="roles" ToRole="usuario" />
+  </EntityType>
+  <EntityType Name="subpermisos">
+    <Key>
+      <PropertyRef Name="id_subpermisos" />
+    </Key>
+    <Property Name="id_subpermisos" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="subpermisos1" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="rol_tiene_permiso" Relationship="BDCAMModel.subpermiso" FromRole="subpermisos" ToRole="rol_tiene_permiso" />
+  </EntityType>
+  <EntityType Name="usuario">
+    <Key>
+      <PropertyRef Name="id_usuario" />
+    </Key>
+    <Property Name="id_usuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="contraseña" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="roles" Relationship="BDCAMModel.usuario_tiene_rol" FromRole="usuario" ToRole="roles" />
+  </EntityType>
+  <EntityType Name="rol_tiene_permiso">
+    <Key>
+      <PropertyRef Name="id_rol" />
+      <PropertyRef Name="id_permiso" />
+      <PropertyRef Name="id_subpermiso" />
+    </Key>
+    <Property Name="id_rol" Type="Int32" Nullable="false" />
+    <Property Name="id_permiso" Type="Int32" Nullable="false" />
+    <Property Name="id_subpermiso" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="permisos" Relationship="BDCAMModel.permiso" FromRole="rol_tiene_permiso" ToRole="permisos" />
+    <NavigationProperty Name="roles" Relationship="BDCAMModel.rol_permiso" FromRole="rol_tiene_permiso" ToRole="roles" />
+    <NavigationProperty Name="subpermisos" Relationship="BDCAMModel.subpermiso" FromRole="rol_tiene_permiso" ToRole="subpermisos" />
+  </EntityType>
+  <Association Name="permiso">
+    <End Type="BDCAMModel.permisos" Role="permisos" Multiplicity="1" />
+    <End Type="BDCAMModel.rol_tiene_permiso" Role="rol_tiene_permiso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="permisos">
+        <PropertyRef Name="id_permisos" />
+      </Principal>
+      <Dependent Role="rol_tiene_permiso">
+        <PropertyRef Name="id_permiso" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="rol_permiso">
+    <End Type="BDCAMModel.roles" Role="roles" Multiplicity="1" />
+    <End Type="BDCAMModel.rol_tiene_permiso" Role="rol_tiene_permiso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="roles">
+        <PropertyRef Name="id_rol" />
+      </Principal>
+      <Dependent Role="rol_tiene_permiso">
+        <PropertyRef Name="id_rol" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="subpermiso">
+    <End Type="BDCAMModel.subpermisos" Role="subpermisos" Multiplicity="1" />
+    <End Type="BDCAMModel.rol_tiene_permiso" Role="rol_tiene_permiso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="subpermisos">
+        <PropertyRef Name="id_subpermisos" />
+      </Principal>
+      <Dependent Role="rol_tiene_permiso">
+        <PropertyRef Name="id_subpermiso" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="usuario_tiene_rol">
+    <End Type="BDCAMModel.roles" Role="roles" Multiplicity="*" />
+    <End Type="BDCAMModel.usuario" Role="usuario" Multiplicity="*" />
+  </Association>
 </Schema>
