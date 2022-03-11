@@ -39,6 +39,11 @@ namespace _1dataLayer
         public virtual DbSet<discapacidades> discapacidades { get; set; }
         public virtual DbSet<enfermedades> enfermedades { get; set; }
         public virtual DbSet<telefono_tutores> telefono_tutores { get; set; }
+        public virtual DbSet<permisos> permisos { get; set; }
+        public virtual DbSet<roles> roles { get; set; }
+        public virtual DbSet<subpermisos> subpermisos { get; set; }
+        public virtual DbSet<usuario> usuario { get; set; }
+        public virtual DbSet<rol_tiene_permiso> rol_tiene_permiso { get; set; }
     
         public virtual int sp_altaalergias(Nullable<int> id, string alergia)
         {

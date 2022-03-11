@@ -18,8 +18,8 @@ namespace _1dataLayer
         public int id_permiso { get; set; }
         public int id_subpermiso { get; set; }
     
-        public virtual permiso permiso { get; set; }
-        public virtual role role { get; set; }
-        public virtual subpermiso subpermiso { get; set; }
+        public virtual permisos permisos { get; set; }
+        public virtual roles roles { get; set; }
+        public virtual subpermisos subpermisos { get; set; }
     }
 }

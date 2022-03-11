@@ -12,19 +12,18 @@ namespace _1dataLayer
     using System;
     using System.Collections.Generic;
     
-    public partial class usuario
+    public partial class permisos
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public usuario()
+        public permisos()
         {
-            this.roles = new HashSet<roles>();
+            this.rol_tiene_permiso = new HashSet<rol_tiene_permiso>();
         }
     
-        public int id_usuario { get; set; }
-        public string nombre { get; set; }
-        public string contraseña { get; set; }
+        public int id_permisos { get; set; }
+        public string permisos1 { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<roles> roles { get; set; }
+        public virtual ICollection<rol_tiene_permiso> rol_tiene_permiso { get; set; }
     }
 }

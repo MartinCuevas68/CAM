@@ -78,6 +78,13 @@ warning 6002: The table/view 'BDCAM.dbo.enfermedades' does not have a primary ke
           <Property Name="id_cartilla_medica" Type="int" Nullable="false" />
           <Property Name="enfermedad" Type="varchar" MaxLength="30" Nullable="false" />
         </EntityType>
+        <EntityType Name="permisos">
+          <Key>
+            <PropertyRef Name="id_permisos" />
+          </Key>
+          <Property Name="id_permisos" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="permisos" Type="varchar" MaxLength="250" Nullable="false" />
+        </EntityType>
         <EntityType Name="programa">
           <Key>
             <PropertyRef Name="id_programa" />
@@ -117,6 +124,32 @@ warning 6002: The table/view 'BDCAM.dbo.recurso-programa' does not have a primar
           </Key>
           <Property Name="id_recurso" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="recurso" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="roles">
+          <Key>
+            <PropertyRef Name="id_rol" />
+          </Key>
+          <Property Name="id_rol" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nombre_rol" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.rol-tiene-permiso' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="rol-tiene-permiso">
+          <Key>
+            <PropertyRef Name="id_rol" />
+            <PropertyRef Name="id_permiso" />
+            <PropertyRef Name="id_subpermiso" />
+          </Key>
+          <Property Name="id_rol" Type="int" Nullable="false" />
+          <Property Name="id_permiso" Type="int" Nullable="false" />
+          <Property Name="id_subpermiso" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="subpermisos">
+          <Key>
+            <PropertyRef Name="id_subpermisos" />
+          </Key>
+          <Property Name="id_subpermisos" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="subpermisos" Type="varchar" MaxLength="150" Nullable="false" />
         </EntityType>
         <EntityType Name="sysdiagrams">
           <Key>
@@ -192,6 +225,24 @@ warning 6002: The table/view 'BDCAM.dbo.tutor-alumno' does not have a primary ke
           </Key>
           <Property Name="id_tutor" Type="int" Nullable="false" />
           <Property Name="id_alumno" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="usuario">
+          <Key>
+            <PropertyRef Name="id_usuario" />
+          </Key>
+          <Property Name="id_usuario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nombre" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="contraseña" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="usuario-tiene-rol">
+          <Key>
+            <PropertyRef Name="id_usuario" />
+            <PropertyRef Name="id_roles" />
+          </Key>
+          <Property Name="id_usuario" Type="int" Nullable="false" />
+          <Property Name="id_roles" Type="int" Nullable="false" />
         </EntityType>
         <Association Name="FK_alergias_tabla_medica">
           <End Role="tabla_medica" Type="Self.tabla_medica" Multiplicity="1" />
@@ -373,6 +424,66 @@ warning 6002: The table/view 'BDCAM.dbo.tutor-alumno' does not have a primary ke
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="permiso">
+          <End Role="permisos" Type="Self.permisos" Multiplicity="1" />
+          <End Role="rol-tiene-permiso" Type="Self.rol-tiene-permiso" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="permisos">
+              <PropertyRef Name="id_permisos" />
+            </Principal>
+            <Dependent Role="rol-tiene-permiso">
+              <PropertyRef Name="id_permiso" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="rol-permiso">
+          <End Role="roles" Type="Self.roles" Multiplicity="1" />
+          <End Role="rol-tiene-permiso" Type="Self.rol-tiene-permiso" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="roles">
+              <PropertyRef Name="id_rol" />
+            </Principal>
+            <Dependent Role="rol-tiene-permiso">
+              <PropertyRef Name="id_rol" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="rol-usuario">
+          <End Role="roles" Type="Self.roles" Multiplicity="1" />
+          <End Role="usuario-tiene-rol" Type="Self.usuario-tiene-rol" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="roles">
+              <PropertyRef Name="id_rol" />
+            </Principal>
+            <Dependent Role="usuario-tiene-rol">
+              <PropertyRef Name="id_roles" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="subpermiso">
+          <End Role="subpermisos" Type="Self.subpermisos" Multiplicity="1" />
+          <End Role="rol-tiene-permiso" Type="Self.rol-tiene-permiso" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="subpermisos">
+              <PropertyRef Name="id_subpermisos" />
+            </Principal>
+            <Dependent Role="rol-tiene-permiso">
+              <PropertyRef Name="id_subpermiso" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="usuario-rol">
+          <End Role="usuario" Type="Self.usuario" Multiplicity="1" />
+          <End Role="usuario-tiene-rol" Type="Self.usuario-tiene-rol" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="usuario">
+              <PropertyRef Name="id_usuario" />
+            </Principal>
+            <Dependent Role="usuario-tiene-rol">
+              <PropertyRef Name="id_usuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Function Name="fn_diagramobjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int" />
         <Function Name="sp_altaalergias" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="id" Type="int" Mode="In" />
@@ -493,13 +604,17 @@ warning 6002: The table/view 'BDCAM.dbo.tutor-alumno' does not have a primary ke
         <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <EntityContainer Name="BDCAMModelStoreContainer">
           <EntitySet Name="alumno" EntityType="Self.alumno" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="permisos" EntityType="Self.permisos" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="programa" EntityType="Self.programa" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="recursos" EntityType="Self.recursos" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="roles" EntityType="Self.roles" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="subpermisos" EntityType="Self.subpermisos" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="tabla_indicadores_telefono" EntityType="Self.tabla_indicadores_telefono" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="tabla_medica" EntityType="Self.tabla_medica" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="turnos" EntityType="Self.turnos" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="tutor" EntityType="Self.tutor" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="usuario" EntityType="Self.usuario" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="alergias" EntityType="Self.alergias" store:Type="Tables" store:Schema="dbo">
             <DefiningQuery>SELECT 
     [alergias].[id_cartilla_medica] AS [id_cartilla_medica], 
@@ -542,6 +657,13 @@ warning 6002: The table/view 'BDCAM.dbo.tutor-alumno' does not have a primary ke
     [recurso-programa].[id_programa] AS [id_programa]
     FROM [dbo].[recurso-programa] AS [recurso-programa]</DefiningQuery>
           </EntitySet>
+          <EntitySet Name="rol-tiene-permiso" EntityType="Self.rol-tiene-permiso" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [rol-tiene-permiso].[id_rol] AS [id_rol], 
+    [rol-tiene-permiso].[id_permiso] AS [id_permiso], 
+    [rol-tiene-permiso].[id_subpermiso] AS [id_subpermiso]
+    FROM [dbo].[rol-tiene-permiso] AS [rol-tiene-permiso]</DefiningQuery>
+          </EntitySet>
           <EntitySet Name="telefono-tutores" EntityType="Self.telefono-tutores" store:Type="Tables" store:Schema="dbo">
             <DefiningQuery>SELECT 
     [telefono-tutores].[id_tutor] AS [id_tutor], 
@@ -554,6 +676,12 @@ warning 6002: The table/view 'BDCAM.dbo.tutor-alumno' does not have a primary ke
     [tutor-alumno].[id_tutor] AS [id_tutor], 
     [tutor-alumno].[id_alumno] AS [id_alumno]
     FROM [dbo].[tutor-alumno] AS [tutor-alumno]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="usuario-tiene-rol" EntityType="Self.usuario-tiene-rol" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [usuario-tiene-rol].[id_usuario] AS [id_usuario], 
+    [usuario-tiene-rol].[id_roles] AS [id_roles]
+    FROM [dbo].[usuario-tiene-rol] AS [usuario-tiene-rol]</DefiningQuery>
           </EntitySet>
           <AssociationSet Name="FK_alergias_tabla_medica" Association="Self.FK_alergias_tabla_medica">
             <End Role="tabla_medica" EntitySet="tabla_medica" />
@@ -614,6 +742,26 @@ warning 6002: The table/view 'BDCAM.dbo.tutor-alumno' does not have a primary ke
           <AssociationSet Name="FK_tutor_id" Association="Self.FK_tutor_id">
             <End Role="tutor" EntitySet="tutor" />
             <End Role="tutor-alumno" EntitySet="tutor-alumno" />
+          </AssociationSet>
+          <AssociationSet Name="permiso" Association="Self.permiso">
+            <End Role="permisos" EntitySet="permisos" />
+            <End Role="rol-tiene-permiso" EntitySet="rol-tiene-permiso" />
+          </AssociationSet>
+          <AssociationSet Name="rol-permiso" Association="Self.rol-permiso">
+            <End Role="roles" EntitySet="roles" />
+            <End Role="rol-tiene-permiso" EntitySet="rol-tiene-permiso" />
+          </AssociationSet>
+          <AssociationSet Name="rol-usuario" Association="Self.rol-usuario">
+            <End Role="roles" EntitySet="roles" />
+            <End Role="usuario-tiene-rol" EntitySet="usuario-tiene-rol" />
+          </AssociationSet>
+          <AssociationSet Name="subpermiso" Association="Self.subpermiso">
+            <End Role="subpermisos" EntitySet="subpermisos" />
+            <End Role="rol-tiene-permiso" EntitySet="rol-tiene-permiso" />
+          </AssociationSet>
+          <AssociationSet Name="usuario-rol" Association="Self.usuario-rol">
+            <End Role="usuario" EntitySet="usuario" />
+            <End Role="usuario-tiene-rol" EntitySet="usuario-tiene-rol" />
           </AssociationSet>
         </EntityContainer>
       </Schema></edmx:StorageModels>
@@ -976,13 +1124,13 @@ warning 6002: The table/view 'BDCAM.dbo.tutor-alumno' does not have a primary ke
             <Parameter Name="owner_id" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="SP_FichaTecnicaAlumno" ReturnType="Collection(BDCAMModel.SP_FichaTecnicaAlumno_Result)">
-            <Parameter Name="id_alumno" Mode="In" Type="Int32" />
+          <Parameter Name="id_alumno" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="SP_FichaTecnicaAlumnoMedica" ReturnType="Collection(BDCAMModel.SP_FichaTecnicaAlumnoMedica_Result)">
-            <Parameter Name="id_alumno" Mode="In" Type="Int32" />
+          <Parameter Name="id_alumno" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="SP_FichaTecnicaAlumnoTutor" ReturnType="Collection(BDCAMModel.SP_FichaTecnicaAlumnoTutor_Result)">
-            <Parameter Name="id_alumno" Mode="In" Type="Int32" />
+          <Parameter Name="id_alumno" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(BDCAMModel.sp_helpdiagramdefinition_Result)">
             <Parameter Name="diagramname" Mode="In" Type="String" />
@@ -993,14 +1141,14 @@ warning 6002: The table/view 'BDCAM.dbo.tutor-alumno' does not have a primary ke
             <Parameter Name="owner_id" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="SP_ListaAlergia" ReturnType="Collection(BDCAMModel.SP_ListaAlergia_Result)">
-            <Parameter Name="id_alumno" Mode="In" Type="Int32" />
+          <Parameter Name="id_alumno" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="SP_ListaAlumnos" ReturnType="Collection(BDCAMModel.SP_ListaAlumnos_Result)" />
           <FunctionImport Name="SP_ListaDiscapacidad" ReturnType="Collection(BDCAMModel.SP_ListaDiscapacidad_Result)">
-            <Parameter Name="id_alumno" Mode="In" Type="Int32" />
+          <Parameter Name="id_alumno" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="SP_ListaEnfermedad" ReturnType="Collection(BDCAMModel.SP_ListaEnfermedad_Result)">
-            <Parameter Name="id_alumno" Mode="In" Type="Int32" />
+          <Parameter Name="id_alumno" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="sp_regresarid" ReturnType="Collection(Decimal)" />
           <FunctionImport Name="sp_regresaridcartilla" ReturnType="Collection(Decimal)" />
@@ -1020,6 +1168,27 @@ warning 6002: The table/view 'BDCAM.dbo.tutor-alumno' does not have a primary ke
             <Parameter Name="id_tutor" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="sp_upgraddiagrams" />
+          <EntitySet Name="permisos" EntityType="BDCAMModel.permisos" />
+          <EntitySet Name="roles" EntityType="BDCAMModel.roles" />
+          <EntitySet Name="subpermisos" EntityType="BDCAMModel.subpermisos" />
+          <EntitySet Name="usuario" EntityType="BDCAMModel.usuario" />
+          <EntitySet Name="rol_tiene_permiso" EntityType="BDCAMModel.rol_tiene_permiso" />
+          <AssociationSet Name="permiso" Association="BDCAMModel.permiso">
+            <End Role="permisos" EntitySet="permisos" />
+            <End Role="rol_tiene_permiso" EntitySet="rol_tiene_permiso" />
+          </AssociationSet>
+          <AssociationSet Name="rol_permiso" Association="BDCAMModel.rol_permiso">
+            <End Role="roles" EntitySet="roles" />
+            <End Role="rol_tiene_permiso" EntitySet="rol_tiene_permiso" />
+          </AssociationSet>
+          <AssociationSet Name="subpermiso" Association="BDCAMModel.subpermiso">
+            <End Role="subpermisos" EntitySet="subpermisos" />
+            <End Role="rol_tiene_permiso" EntitySet="rol_tiene_permiso" />
+          </AssociationSet>
+          <AssociationSet Name="usuario_tiene_rol" Association="BDCAMModel.usuario_tiene_rol">
+            <End Role="roles" EntitySet="roles" />
+            <End Role="usuario" EntitySet="usuario" />
+          </AssociationSet>
         </EntityContainer>
         <ComplexType Name="SP_FichaTecnicaAlumno_Result">
           <Property Type="String" Name="nombre" Nullable="false" MaxLength="30" />
@@ -1085,6 +1254,93 @@ warning 6002: The table/view 'BDCAM.dbo.tutor-alumno' does not have a primary ke
           <Property Type="Int32" Name="id_cartilla_medica" Nullable="false" />
           <Property Type="String" Name="enfermedad" Nullable="false" MaxLength="30" />
         </ComplexType>
+        <EntityType Name="permisos">
+          <Key>
+            <PropertyRef Name="id_permisos" />
+          </Key>
+          <Property Name="id_permisos" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="permisos1" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="rol_tiene_permiso" Relationship="BDCAMModel.permiso" FromRole="permisos" ToRole="rol_tiene_permiso" />
+        </EntityType>
+        <EntityType Name="roles">
+          <Key>
+            <PropertyRef Name="id_rol" />
+          </Key>
+          <Property Name="id_rol" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nombre_rol" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="rol_tiene_permiso" Relationship="BDCAMModel.rol_permiso" FromRole="roles" ToRole="rol_tiene_permiso" />
+          <NavigationProperty Name="usuario" Relationship="BDCAMModel.usuario_tiene_rol" FromRole="roles" ToRole="usuario" />
+        </EntityType>
+        <EntityType Name="subpermisos">
+          <Key>
+            <PropertyRef Name="id_subpermisos" />
+          </Key>
+          <Property Name="id_subpermisos" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="subpermisos1" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="rol_tiene_permiso" Relationship="BDCAMModel.subpermiso" FromRole="subpermisos" ToRole="rol_tiene_permiso" />
+        </EntityType>
+        <EntityType Name="usuario">
+          <Key>
+            <PropertyRef Name="id_usuario" />
+          </Key>
+          <Property Name="id_usuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nombre" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="contraseña" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="roles" Relationship="BDCAMModel.usuario_tiene_rol" FromRole="usuario" ToRole="roles" />
+        </EntityType>
+        <EntityType Name="rol_tiene_permiso">
+          <Key>
+            <PropertyRef Name="id_rol" />
+            <PropertyRef Name="id_permiso" />
+            <PropertyRef Name="id_subpermiso" />
+          </Key>
+          <Property Name="id_rol" Type="Int32" Nullable="false" />
+          <Property Name="id_permiso" Type="Int32" Nullable="false" />
+          <Property Name="id_subpermiso" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="permisos" Relationship="BDCAMModel.permiso" FromRole="rol_tiene_permiso" ToRole="permisos" />
+          <NavigationProperty Name="roles" Relationship="BDCAMModel.rol_permiso" FromRole="rol_tiene_permiso" ToRole="roles" />
+          <NavigationProperty Name="subpermisos" Relationship="BDCAMModel.subpermiso" FromRole="rol_tiene_permiso" ToRole="subpermisos" />
+        </EntityType>
+        <Association Name="permiso">
+          <End Type="BDCAMModel.permisos" Role="permisos" Multiplicity="1" />
+          <End Type="BDCAMModel.rol_tiene_permiso" Role="rol_tiene_permiso" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="permisos">
+              <PropertyRef Name="id_permisos" />
+            </Principal>
+            <Dependent Role="rol_tiene_permiso">
+              <PropertyRef Name="id_permiso" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="rol_permiso">
+          <End Type="BDCAMModel.roles" Role="roles" Multiplicity="1" />
+          <End Type="BDCAMModel.rol_tiene_permiso" Role="rol_tiene_permiso" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="roles">
+              <PropertyRef Name="id_rol" />
+            </Principal>
+            <Dependent Role="rol_tiene_permiso">
+              <PropertyRef Name="id_rol" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="subpermiso">
+          <End Type="BDCAMModel.subpermisos" Role="subpermisos" Multiplicity="1" />
+          <End Type="BDCAMModel.rol_tiene_permiso" Role="rol_tiene_permiso" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="subpermisos">
+              <PropertyRef Name="id_subpermisos" />
+            </Principal>
+            <Dependent Role="rol_tiene_permiso">
+              <PropertyRef Name="id_subpermiso" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="usuario_tiene_rol">
+          <End Type="BDCAMModel.roles" Role="roles" Multiplicity="*" />
+          <End Type="BDCAMModel.usuario" Role="usuario" Multiplicity="*" />
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -1385,6 +1641,56 @@ warning 6002: The table/view 'BDCAM.dbo.tutor-alumno' does not have a primary ke
           <FunctionImportMapping FunctionImportName="sp_telefonotutores" FunctionName="BDCAMModel.Store.sp_telefonotutores" />
           <FunctionImportMapping FunctionImportName="sp_tutoralumno" FunctionName="BDCAMModel.Store.sp_tutoralumno" />
           <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="BDCAMModel.Store.sp_upgraddiagrams" />
+          <EntitySetMapping Name="permisos">
+            <EntityTypeMapping TypeName="BDCAMModel.permisos">
+              <MappingFragment StoreEntitySet="permisos">
+                <ScalarProperty Name="permisos1" ColumnName="permisos" />
+                <ScalarProperty Name="id_permisos" ColumnName="id_permisos" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="roles">
+            <EntityTypeMapping TypeName="BDCAMModel.roles">
+              <MappingFragment StoreEntitySet="roles">
+                <ScalarProperty Name="nombre_rol" ColumnName="nombre_rol" />
+                <ScalarProperty Name="id_rol" ColumnName="id_rol" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="subpermisos">
+            <EntityTypeMapping TypeName="BDCAMModel.subpermisos">
+              <MappingFragment StoreEntitySet="subpermisos">
+                <ScalarProperty Name="subpermisos1" ColumnName="subpermisos" />
+                <ScalarProperty Name="id_subpermisos" ColumnName="id_subpermisos" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="usuario">
+            <EntityTypeMapping TypeName="BDCAMModel.usuario">
+              <MappingFragment StoreEntitySet="usuario">
+                <ScalarProperty Name="contraseña" ColumnName="contraseña" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="id_usuario" ColumnName="id_usuario" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="rol_tiene_permiso">
+            <EntityTypeMapping TypeName="BDCAMModel.rol_tiene_permiso">
+              <MappingFragment StoreEntitySet="rol-tiene-permiso">
+                <ScalarProperty Name="id_subpermiso" ColumnName="id_subpermiso" />
+                <ScalarProperty Name="id_permiso" ColumnName="id_permiso" />
+                <ScalarProperty Name="id_rol" ColumnName="id_rol" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <AssociationSetMapping Name="usuario_tiene_rol" TypeName="BDCAMModel.usuario_tiene_rol" StoreEntitySet="usuario-tiene-rol">
+            <EndProperty Name="usuario">
+              <ScalarProperty Name="id_usuario" ColumnName="id_usuario" />
+            </EndProperty>
+            <EndProperty Name="roles">
+              <ScalarProperty Name="id_rol" ColumnName="id_roles" />
+            </EndProperty>
+          </AssociationSetMapping>
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>
