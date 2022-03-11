@@ -10,6 +10,15 @@ namespace _1dataLayer
     {
     }
 
+    public class alumnoenfermedadDTO
+    {
+        public int id_alumno { get; set; }
+        public string nombre { get; set; }
+        public string telefono_contacto { get; set; }
+        public string alergias { get; set; }
+        public string discapacidad { get; set; }
+    }
+
 
     public class alumnoDTO
     {
