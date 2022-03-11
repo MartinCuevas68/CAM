@@ -25,7 +25,7 @@ namespace presentationLayer
 
             infoGen(nombreAlLabel, nombreAl, nombreAlPanel, apellidoPLabel, apellidoP, apellidoPPanel, apellidoMLabel, apellidoM, apellidoMPanel, fechaNaLabel, fechaNa, añosCumLabel, 
                 añosCum,añosCumPanel, curpLabel,curp,curpPanel, direccionAlumnoLabel,calleLabel, calle,callePanel, numeroCasaLabel, numeroCasa,numeroCasaPanel, coloniaLabel,colonia,coloniaPanel,lugarNaLabel,
-                ciudadLabel,ciudad,ciudadPanel,estadoLabel,estado,estadoPanel,fotoAlumno);
+                ciudadLabel,ciudad,ciudadPanel,estadoLabel,estado,estadoPanel,fotoAl,fotoBtn);
 
             infoGen2(telPersonalLabel, telPersonal,telPersonalPanel, escuelaPLabel, escuelaP,escuelaPPanel, canalizadoLabel, canalizado,canalizadoPanel, cicloEscLabel, cicloEsc,cicloEscPanel,tipoIngLabel,
                 tipoIngresoGroupBox);
@@ -100,10 +100,14 @@ namespace presentationLayer
             Label fechaNaL, DateTimePicker fechaNa, Label añosCumL, TextBox añosCum, Panel añosCumP, Label curpL, TextBox curp, Panel curpP,
             Label direccion, Label calleL,
             TextBox calle, Panel calleP, Label numL, TextBox num, Panel numP, Label coloniaL, TextBox colonia, Panel coloniaP, Label lugarNa,
-            Label ciudadL, TextBox ciudad, Panel ciudadP, Label estadoL, TextBox estado, Panel estadoP, PictureBox foto)
+            Label ciudadL, TextBox ciudad, Panel ciudadP, Label estadoL, TextBox estado, Panel estadoP, PictureBox foto, Button fotoB)
         {
 
             foto.Location = new Point(1000,50);
+            foto.Size = new Size(200, 220);
+            fotoB.Location = new Point(1000, 285);
+            fotoB.Size = new Size(200, 45);
+            fotoB.Font = new Font("Gadugi", 14);
 
             nombreL.Location = new Point(50, 50);
             nombreP.Location = new Point(260, 50);
@@ -123,7 +127,7 @@ namespace presentationLayer
 
             añosCumL.Location = new Point(50,290);
             añosCumP.Location = new Point(260,290);
-            añosCumP.Size = new Size(300, 45);
+            añosCumP.Size = new Size(150, 45);
 
             curpL.Location = new Point(50,350);
             curpP.Location = new Point(260,350);
@@ -134,15 +138,15 @@ namespace presentationLayer
 
             calleL.Location = new Point(650,110);
             calleP.Location = new Point(740,110);
-            calleP.Size = new Size(100, 45);
+            calleP.Size = new Size(240, 45);
 
             numL.Location = new Point(650,170);
             numP.Location = new Point(740,170);
-            numP.Size = new Size(100, 45);
+            numP.Size = new Size(150, 45);
 
             coloniaL.Location = new Point(650,230);
             coloniaP.Location = new Point(740,230);
-            coloniaP.Size = new Size(100, 45);
+            coloniaP.Size = new Size(240, 45);
 
             //LUGAR NACIMIENTO
             lugarNa.Location = new Point(650, 290);
@@ -150,11 +154,11 @@ namespace presentationLayer
 
             ciudadL.Location = new Point(650, 350);
             ciudadP.Location = new Point(740, 350);
-            ciudadP.Size = new Size(100, 45);
+            ciudadP.Size = new Size(240, 45);
 
             estadoL.Location = new Point(650, 410);
             estadoP.Location = new Point(740, 410);
-            estadoP.Size = new Size(100, 45);
+            estadoP.Size = new Size(240, 45);
         }
 
 
@@ -164,19 +168,19 @@ namespace presentationLayer
         {
             telL.Location = new Point(50, 50);
             telP.Location = new Point(280, 50);
-            telP.Size = new Size(100, 45);
+            telP.Size = new Size(220, 45);
 
             escuelaPL.Location = new Point(50,110);
             escuelaPP.Location = new Point(280,110);
-            escuelaPP.Size = new Size(100, 45);
+            escuelaPP.Size = new Size(250, 45);
 
             canalizadoL.Location = new Point(50,170);
             canalizadoP.Location = new Point(280,170);
-            canalizadoP.Size = new Size(150, 45);
+            canalizadoP.Size = new Size(250, 45);
 
             cicloL.Location = new Point(50,230);
             cicloP.Location = new Point(280,230);
-            cicloP.Size = new Size(100, 45);
+            cicloP.Size = new Size(150, 45);
 
             tipoIng.Location = new Point(50,290);
 
@@ -246,7 +250,7 @@ namespace presentationLayer
         {
             servMedicoL.Location = new Point(50, 50);
             servMedP.Location = new Point(220,50);
-            servMedP.Size = new Size(100, 45);
+            servMedP.Size = new Size(150, 45);
 
             grupoSanL.Location = new Point(400, 50);
             grupoSanP.Location = new Point(580, 50);
@@ -254,33 +258,33 @@ namespace presentationLayer
 
             telL.Location = new Point(750, 50);
             telP.Location = new Point(960, 50);
-            telP.Size = new Size(100, 45);
+            telP.Size = new Size(150, 45);
 
             discapacidadL.Location = new Point(50, 150);
             eliDisc.Location = new Point(200,150);
             discapacidad.Location = new Point(50, 210);
             discapacidadCB.Location = new Point(50, 310);
             discapacidadP.Location = new Point(50, 210);
-            discapacidadP.Size = new Size(100, 45);
+            discapacidadP.Size = new Size(200, 45);
 
             enfermedadL.Location = new Point(300, 150);
             eliEnf.Location = new Point(450,150);
             enfermedad.Location = new Point(300, 210);
             enfermedadCB.Location = new Point(300, 310);
             enfermedadP.Location = new Point(300, 210);
-            enfermedadP.Size = new Size(100, 45);
+            enfermedadP.Size = new Size(200, 45);
 
             alergiaL.Location = new Point(550, 150);
             eliAle.Location = new Point(650,150);
             alergia.Location = new Point(550, 210);
             alergiaCB.Location = new Point(550, 310);
             alergiaP.Location = new Point(550, 210);
-            alergiaP.Size = new Size(100, 45);
+            alergiaP.Size = new Size(200, 45);
 
             tratamientoL.Location = new Point(800, 150);
             eliTra.Location = new Point(930,150);
             tratamientoP.Location = new Point(800, 210);
-            tratamientoP.Size = new Size(100, 45);
+            tratamientoP.Size = new Size(120, 45);
         }
 
         private void altaAlumno_Load(object sender, EventArgs e)

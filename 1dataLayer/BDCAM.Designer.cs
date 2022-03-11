@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ﻿// La generación de código T4 está habilitada para el modelo 'D:\Canela\Documents\GitHub\CAM\1dataLayer\BDCAM.edmx'. 
+=======
+﻿// La generación de código T4 está habilitada para el modelo 'C:\Users\DELL\Source\Repos\CAM\1dataLayer\BDCAM.edmx'. 
+>>>>>>> 22
 // Para habilitar la generación de código heredada, cambie el valor de la propiedad del diseñador 'Estrategia de generación de código'
 // por 'ObjectContext heredado'. Esta propiedad está disponible en la ventana Propiedades cuando se abre
 // el modelo en el diseñador.
