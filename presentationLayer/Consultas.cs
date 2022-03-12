@@ -67,7 +67,16 @@ namespace presentationLayer
 
             altaDataGridView.Location = new Point((int)(x * 0.15), (int)(y * 0.25));
             altaDataGridView.Size = new Size((int)(x * 0.7), (int)(y * 0.55));
-    }
+
+            //Sentencia que manda a llamar el método para cerrar Consultas usando la X
+            this.FormClosed += new FormClosedEventHandler(cerrarForm);
+        }
+
+        //Metodo para cerrar Consultas usando la X ya que antes se cerraba pero se seguía ejecutando.
+        private void cerrarForm(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
 
         private void modificarButton_Click_1(object sender, EventArgs e)
         {

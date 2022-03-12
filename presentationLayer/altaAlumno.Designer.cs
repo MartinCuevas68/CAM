@@ -72,7 +72,6 @@ namespace presentationLayer
             this.alergiasLabel = new System.Windows.Forms.Label();
             this.telefonoLabel = new System.Windows.Forms.Label();
             this.informacionGeneralAlumno = new System.Windows.Forms.GroupBox();
-            this.fotoBtn = new presentationLayer.buttonSystem();
             this.fotoAl = new System.Windows.Forms.PictureBox();
             this.curpPanel = new System.Windows.Forms.Panel();
             this.curp = new System.Windows.Forms.TextBox();
@@ -156,12 +155,14 @@ namespace presentationLayer
             this.infoTutorLabel = new System.Windows.Forms.Label();
             this.altaalumnoLabel = new System.Windows.Forms.Label();
             this.logo = new System.Windows.Forms.PictureBox();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.siguiente3Button = new presentationLayer.buttonSystem();
             this.siguiente2Button = new presentationLayer.buttonSystem();
             this.regresarMenuButton = new presentationLayer.buttonSystem();
             this.regresarButton = new presentationLayer.buttonSystem();
             this.siguiente1Button = new presentationLayer.buttonSystem();
             this.realizarAltaButton = new presentationLayer.buttonSystem();
+            this.fotoBtn = new presentationLayer.buttonSystem();
             this.tipoIngresoGroupBox.SuspendLayout();
             this.informacionGeneralAlumno.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fotoAl)).BeginInit();
@@ -450,18 +451,6 @@ namespace presentationLayer
             resources.ApplyResources(this.informacionGeneralAlumno, "informacionGeneralAlumno");
             this.informacionGeneralAlumno.Name = "informacionGeneralAlumno";
             this.informacionGeneralAlumno.TabStop = false;
-            // 
-            // fotoBtn
-            // 
-            this.fotoBtn.BackColor = System.Drawing.Color.White;
-            this.fotoBtn.BackgroundColor = System.Drawing.Color.White;
-            this.fotoBtn.BorderRadius = 25;
-            this.fotoBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.fotoBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(142)))), ((int)(((byte)(244)))));
-            resources.ApplyResources(this.fotoBtn, "fotoBtn");
-            this.fotoBtn.ForeColor = System.Drawing.Color.Black;
-            this.fotoBtn.Name = "fotoBtn";
-            this.fotoBtn.UseVisualStyleBackColor = false;
             // 
             // fotoAl
             // 
@@ -1066,6 +1055,10 @@ namespace presentationLayer
             this.logo.Name = "logo";
             this.logo.TabStop = false;
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
             // siguiente3Button
             // 
             resources.ApplyResources(this.siguiente3Button, "siguiente3Button");
@@ -1136,6 +1129,20 @@ namespace presentationLayer
             this.realizarAltaButton.ForeColor = System.Drawing.Color.White;
             this.realizarAltaButton.Name = "realizarAltaButton";
             this.realizarAltaButton.UseVisualStyleBackColor = false;
+            this.realizarAltaButton.Click += new System.EventHandler(this.realizarAltaButton_Click_1);
+            // 
+            // fotoBtn
+            // 
+            this.fotoBtn.BackColor = System.Drawing.Color.White;
+            this.fotoBtn.BackgroundColor = System.Drawing.Color.White;
+            this.fotoBtn.BorderRadius = 25;
+            this.fotoBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.fotoBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(142)))), ((int)(((byte)(244)))));
+            resources.ApplyResources(this.fotoBtn, "fotoBtn");
+            this.fotoBtn.ForeColor = System.Drawing.Color.Black;
+            this.fotoBtn.Name = "fotoBtn";
+            this.fotoBtn.UseVisualStyleBackColor = false;
+            this.fotoBtn.Click += new System.EventHandler(this.fotoBtn_Click);
             // 
             // altaAlumno
             // 
@@ -1369,6 +1376,7 @@ namespace presentationLayer
         private System.Windows.Forms.Button eliminarTratamientoButton;
         private System.Windows.Forms.PictureBox fotoAl;
         private buttonSystem fotoBtn;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
 
