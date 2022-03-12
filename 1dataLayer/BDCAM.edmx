@@ -5,8 +5,8 @@
     <!-- SSDL content -->
     <edmx:StorageModels>
     <Schema Namespace="BDCAMModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-        <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BDCAM.dbo.alergias' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.alergias' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="alergias">
           <Key>
             <PropertyRef Name="id_cartilla_medica" />
@@ -38,8 +38,8 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.alergias' no tiene definida ningun
           <Property Name="documentacion_alumno" Type="nvarchar(max)" />
           <Property Name="atendido_por" Type="varchar" MaxLength="30" Nullable="false" />
         </EntityType>
-        <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BDCAM.dbo.alumno-cartilla' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.alumno-cartilla' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="alumno-cartilla">
           <Key>
             <PropertyRef Name="id_alumno" />
@@ -48,8 +48,8 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.alumno-cartilla' no tiene definida
           <Property Name="id_alumno" Type="int" Nullable="false" />
           <Property Name="id_cartilla" Type="int" Nullable="false" />
         </EntityType>
-        <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BDCAM.dbo.alumno-programa' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.alumno-programa' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="alumno-programa">
           <Key>
             <PropertyRef Name="id_alumno" />
@@ -58,8 +58,8 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.alumno-programa' no tiene definida
           <Property Name="id_alumno" Type="int" Nullable="false" />
           <Property Name="id_programa" Type="int" Nullable="false" />
         </EntityType>
-        <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BDCAM.dbo.discapacidades' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.discapacidades' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="discapacidades">
           <Key>
             <PropertyRef Name="id_cartilla_medica" />
@@ -68,8 +68,8 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.discapacidades' no tiene definida 
           <Property Name="id_cartilla_medica" Type="int" Nullable="false" />
           <Property Name="discapacidades" Type="varchar" MaxLength="30" Nullable="false" />
         </EntityType>
-        <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BDCAM.dbo.enfermedades' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.enfermedades' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="enfermedades">
           <Key>
             <PropertyRef Name="id_cartilla_medica" />
@@ -77,6 +77,18 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.enfermedades' no tiene definida ni
           </Key>
           <Property Name="id_cartilla_medica" Type="int" Nullable="false" />
           <Property Name="enfermedad" Type="varchar" MaxLength="30" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.foto-alumno' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="foto-alumno">
+          <Key>
+            <PropertyRef Name="id_alumno" />
+            <PropertyRef Name="imagen_alumno" />
+            <PropertyRef Name="nombre" />
+          </Key>
+          <Property Name="id_alumno" Type="int" Nullable="false" />
+          <Property Name="imagen_alumno" Type="image" Nullable="false" />
+          <Property Name="nombre" Type="varchar" MaxLength="100" Nullable="false" />
         </EntityType>
         <EntityType Name="permisos">
           <Key>
@@ -98,8 +110,8 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.enfermedades' no tiene definida ni
           <Property Name="modulos" Type="varchar" MaxLength="30" Nullable="false" />
           <Property Name="proyecto" Type="varchar" MaxLength="30" Nullable="false" />
         </EntityType>
-        <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BDCAM.dbo.programa-turno' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.programa-turno' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="programa-turno">
           <Key>
             <PropertyRef Name="id_turno" />
@@ -108,8 +120,8 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.programa-turno' no tiene definida 
           <Property Name="id_turno" Type="int" Nullable="false" />
           <Property Name="id_programa" Type="int" Nullable="false" />
         </EntityType>
-        <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BDCAM.dbo.recurso-programa' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.recurso-programa' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="recurso-programa">
           <Key>
             <PropertyRef Name="id_recurso" />
@@ -181,8 +193,8 @@ warning 6002: The table/view 'BDCAM.dbo.rol-tiene-permiso' does not have a prima
           <Property Name="color_textura_piel" Type="varchar" MaxLength="50" />
           <Property Name="estatura" Type="varchar" MaxLength="50" />
         </EntityType>
-        <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BDCAM.dbo.telefono-tutores' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.telefono-tutores' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="telefono-tutores">
           <Key>
             <PropertyRef Name="id_tutor" />
@@ -216,8 +228,8 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.telefono-tutores' no tiene definid
           <Property Name="calle_trabajo_tutor" Type="varchar" MaxLength="30" Nullable="false" />
           <Property Name="numero_trabajo_tutor" Type="varchar" MaxLength="30" Nullable="false" />
         </EntityType>
-        <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BDCAM.dbo.tutor-alumno' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.tutor-alumno' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="tutor-alumno">
           <Key>
             <PropertyRef Name="id_tutor" />
@@ -264,6 +276,18 @@ warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a prima
               <PropertyRef Name="id_alumno" />
             </Principal>
             <Dependent Role="alumno-cartilla">
+              <PropertyRef Name="id_alumno" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_alumno-foto">
+          <End Role="alumno" Type="Self.alumno" Multiplicity="1" />
+          <End Role="foto-alumno" Type="Self.foto-alumno" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="alumno">
+              <PropertyRef Name="id_alumno" />
+            </Principal>
+            <Dependent Role="foto-alumno">
               <PropertyRef Name="id_alumno" />
             </Dependent>
           </ReferentialConstraint>
@@ -529,6 +553,11 @@ warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a prima
           <Parameter Name="id_car" Type="int" Mode="In" />
           <Parameter Name="enf" Type="varchar" Mode="In" />
         </Function>
+        <Function Name="SP_AltaImagenAlumno" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id_alumno" Type="int" Mode="In" />
+          <Parameter Name="imagen_alumno" Type="image" Mode="In" />
+          <Parameter Name="nombre" Type="varchar" Mode="In" />
+        </Function>
         <Function Name="sp_altatutor" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="nombre" Type="varchar" Mode="In" />
           <Parameter Name="apellidopat" Type="varchar" Mode="In" />
@@ -645,6 +674,13 @@ warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a prima
     [enfermedades].[enfermedad] AS [enfermedad]
     FROM [dbo].[enfermedades] AS [enfermedades]</DefiningQuery>
           </EntitySet>
+          <EntitySet Name="foto-alumno" EntityType="Self.foto-alumno" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [foto-alumno].[id_alumno] AS [id_alumno], 
+    [foto-alumno].[imagen_alumno] AS [imagen_alumno], 
+    [foto-alumno].[nombre] AS [nombre]
+    FROM [dbo].[foto-alumno] AS [foto-alumno]</DefiningQuery>
+          </EntitySet>
           <EntitySet Name="programa-turno" EntityType="Self.programa-turno" store:Type="Tables" store:Schema="dbo">
             <DefiningQuery>SELECT 
     [programa-turno].[id_turno] AS [id_turno], 
@@ -690,6 +726,10 @@ warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a prima
           <AssociationSet Name="FK_alumno-cartilla" Association="Self.FK_alumno-cartilla">
             <End Role="alumno" EntitySet="alumno" />
             <End Role="alumno-cartilla" EntitySet="alumno-cartilla" />
+          </AssociationSet>
+          <AssociationSet Name="FK_alumno-foto" Association="Self.FK_alumno-foto">
+            <End Role="alumno" EntitySet="alumno" />
+            <End Role="foto-alumno" EntitySet="foto-alumno" />
           </AssociationSet>
           <AssociationSet Name="FK_alumno-programa" Association="Self.FK_alumno-programa">
             <End Role="alumno" EntitySet="alumno" />
@@ -793,6 +833,7 @@ warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a prima
           <NavigationProperty Name="tabla_medica" Relationship="Self.alumno_cartilla" FromRole="alumno" ToRole="tabla_medica" />
           <NavigationProperty Name="programa" Relationship="Self.alumno_programa" FromRole="alumno" ToRole="programa" />
           <NavigationProperty Name="tutor" Relationship="Self.tutor_alumno" FromRole="alumno" ToRole="tutor" />
+          <NavigationProperty Name="foto_alumno" Relationship="BDCAMModel.FK_alumno_foto" FromRole="alumno" ToRole="foto_alumno" />
         </EntityType>
         <EntityType Name="programa">
           <Key>
@@ -1189,6 +1230,16 @@ warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a prima
             <End Role="roles" EntitySet="roles" />
             <End Role="usuario" EntitySet="usuario" />
           </AssociationSet>
+          <EntitySet Name="foto_alumno" EntityType="BDCAMModel.foto_alumno" />
+          <AssociationSet Name="FK_alumno_foto" Association="BDCAMModel.FK_alumno_foto">
+            <End Role="alumno" EntitySet="alumno" />
+            <End Role="foto_alumno" EntitySet="foto_alumno" />
+          </AssociationSet>
+          <FunctionImport Name="SP_AltaImagenAlumno">
+            <Parameter Name="id_alumno" Mode="In" Type="Int32" />
+            <Parameter Name="imagen_alumno" Mode="In" Type="Binary" />
+            <Parameter Name="nombre" Mode="In" Type="String" />
+          </FunctionImport>
         </EntityContainer>
         <ComplexType Name="SP_FichaTecnicaAlumno_Result">
           <Property Type="String" Name="nombre" Nullable="false" MaxLength="30" />
@@ -1340,6 +1391,29 @@ warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a prima
         <Association Name="usuario_tiene_rol">
           <End Type="BDCAMModel.roles" Role="roles" Multiplicity="*" />
           <End Type="BDCAMModel.usuario" Role="usuario" Multiplicity="*" />
+        </Association>
+        <EntityType Name="foto_alumno">
+          <Key>
+            <PropertyRef Name="id_alumno" />
+            <PropertyRef Name="imagen_alumno" />
+            <PropertyRef Name="nombre" />
+          </Key>
+          <Property Name="id_alumno" Type="Int32" Nullable="false" />
+          <Property Name="imagen_alumno" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+          <Property Name="nombre" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="alumno" Relationship="BDCAMModel.FK_alumno_foto" FromRole="foto_alumno" ToRole="alumno" />
+        </EntityType>
+        <Association Name="FK_alumno_foto">
+          <End Type="BDCAMModel.alumno" Role="alumno" Multiplicity="1" />
+          <End Type="BDCAMModel.foto_alumno" Role="foto_alumno" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="alumno">
+              <PropertyRef Name="id_alumno" />
+            </Principal>
+            <Dependent Role="foto_alumno">
+              <PropertyRef Name="id_alumno" />
+            </Dependent>
+          </ReferentialConstraint>
         </Association>
       </Schema>
     </edmx:ConceptualModels>
@@ -1691,6 +1765,16 @@ warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a prima
               <ScalarProperty Name="id_rol" ColumnName="id_roles" />
             </EndProperty>
           </AssociationSetMapping>
+          <EntitySetMapping Name="foto_alumno">
+            <EntityTypeMapping TypeName="BDCAMModel.foto_alumno">
+              <MappingFragment StoreEntitySet="foto-alumno">
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="imagen_alumno" ColumnName="imagen_alumno" />
+                <ScalarProperty Name="id_alumno" ColumnName="id_alumno" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="SP_AltaImagenAlumno" FunctionName="BDCAMModel.Store.SP_AltaImagenAlumno" />
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>
