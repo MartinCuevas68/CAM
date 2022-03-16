@@ -1295,7 +1295,9 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.usuario-tiene-rol' no tiene defini
         <ComplexType Name="SP_ListaAlumnos_Result">
           <Property Type="Int32" Name="id_alumno" Nullable="false" />
           <Property Type="String" Name="nombre" Nullable="false" MaxLength="30" />
-          <Property Type="String" Name="telefono_contacto" Nullable="false" MaxLength="30" />
+          <Property Type="String" Name="apellido_paterno" Nullable="false" MaxLength="30" />
+          <Property Type="String" Name="apellido_materno" Nullable="false" MaxLength="30" />
+          <Property Type="String" Name="telefono_personal_alumno" Nullable="true" MaxLength="10" />
         </ComplexType>
         <ComplexType Name="SP_ListaDiscapacidad_Result">
           <Property Type="Int32" Name="id_cartilla_medica" Nullable="false" />
@@ -1688,7 +1690,9 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.usuario-tiene-rol' no tiene defini
               <ComplexTypeMapping TypeName="BDCAMModel.SP_ListaAlumnos_Result">
                 <ScalarProperty Name="id_alumno" ColumnName="id_alumno" />
                 <ScalarProperty Name="nombre" ColumnName="nombre" />
-                <ScalarProperty Name="telefono_contacto" ColumnName="telefono_contacto" />
+                <ScalarProperty Name="apellido_paterno" ColumnName="apellido_paterno" />
+                <ScalarProperty Name="apellido_materno" ColumnName="apellido_materno" />
+                <ScalarProperty Name="telefono_personal_alumno" ColumnName="telefono_personal_alumno" />
               </ComplexTypeMapping>
             </ResultMapping>
           </FunctionImportMapping>
