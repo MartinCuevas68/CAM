@@ -88,6 +88,9 @@
     <Compile Include="enfermedades.cs">
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>
+    <Compile Include="foto_alumno.cs">
+      <DependentUpon>BDCAM.tt</DependentUpon>
+    </Compile>
     <Compile Include="permiso.cs" />
     <Compile Include="permisos.cs">
       <DependentUpon>BDCAM.tt</DependentUpon>

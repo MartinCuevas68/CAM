@@ -109,6 +109,13 @@ namespace _1dataLayer
             }
         }
 
+        public static void AltaImagenAlumno(imagenalumnoDTO imagen)
+        {
+            using (BDCAMEntities db = new BDCAMEntities())
+            {
+                db.SP_AltaImagenAlumno(imagen.id_alumno, imagen.imagen, imagen.nombre);
+            }
+        }
 
     }
 }

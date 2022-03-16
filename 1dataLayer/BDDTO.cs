@@ -129,4 +129,11 @@ namespace _1dataLayer
         public int id_turno { get; }
         public string turno { get; set; }
     }
+
+    public class imagenalumnoDTO
+    {
+        public int id_alumno { get; set; }
+        public byte[] imagen { get; set; }
+        public string nombre { get; set; }
+    }
 }
