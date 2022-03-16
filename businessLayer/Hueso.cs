@@ -144,6 +144,32 @@ namespace businessLayer
                 throw;
             }
         }
+
+        //Alta imagen alumno
+        public static void SetFotoAlumno(byte[] imagen, string nombre)
+        {
+            byte[] x = { (byte)204, 29, (byte)207, (byte)217 };
+            int a = 1;
+
+            try
+            {
+                using (_1dataLayer.BDCAMEntities db = new _1dataLayer.BDCAMEntities())
+
+                {
+                    var query = db.Set<_1dataLayer.foto_alumno>();
+                    query.Add(new _1dataLayer.foto_alumno
+                    {
+                    });;
+
+                    db.SaveChanges();
+
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
     }
 
 

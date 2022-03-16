@@ -345,5 +345,15 @@
         <ScalarProperty Name="id_rol" ColumnName="id_roles" />
       </EndProperty>
     </AssociationSetMapping>
+    <EntitySetMapping Name="foto_alumno">
+      <EntityTypeMapping TypeName="BDCAMModel.foto_alumno">
+        <MappingFragment StoreEntitySet="foto-alumno">
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="imagen_alumno" ColumnName="imagen_alumno" />
+          <ScalarProperty Name="id_alumno" ColumnName="id_alumno" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="SP_AltaImagenAlumno" FunctionName="BDCAMModel.Store.SP_AltaImagenAlumno" />
   </EntityContainerMapping>
 </Mapping>
