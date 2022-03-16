@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Entity.Validation;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -582,18 +584,13 @@ namespace presentationLayer
         private void realizarAltaButton_Click_1(object sender, EventArgs e)
         {
             //Condición de que si no ingresa nombre de alumno y foto de alumno no le deja hacer la alta
-            if (nombreAl.Text == "" && fotoAl.Image == null)
+            if (fotoAl.Image == null)
             {
                 MessageBox.Show("Falta información por ingresar", "ALTA ALUMNO", MessageBoxButtons.OK);
                 return;
             }
 
             //Guardar Foto alumno   **NO BORRAR LO QUE ESTÁ COMENTADO!!!!!**
-            /*if (fotoAl.Image == null)
-            {
-                MessageBox.Show("Debes ingresar una imagen");
-                return;
-            }
             byte[] archivo = null;
             Stream myStream = openFileDialog1.OpenFile();
             using (MemoryStream ms = new MemoryStream())
@@ -604,13 +601,24 @@ namespace presentationLayer
 
             using (_1dataLayer.BDCAMEntities db = new _1dataLayer.BDCAMEntities())
             {
-                _1dataLayer.alumno oImage = new _1dataLayer.alumno();
-                db.alumno.Add(oImage);
-                db.SaveChanges();
+                _1dataLayer.imagenalumnoDTO oImage = new _1dataLayer.imagenalumnoDTO();
+                 
+                //db.foto_alumno.Add(oImage);
+                try
+                {
+                    oImage.id_alumno = 6;
+                    oImage.imagen = archivo;
+                    oImage.nombre = openFileDialog1.FileName;
+                    _1dataLayer.AltaAlumno.AltaImagenAlumno(oImage);
+                    //db.SaveChanges();
+                }
+                catch (DbEntityValidationException ex)
+                {
+                    MessageBox.Show("Error al guardar imagen");
+                    return;
+                }
             }  
-        }*/
-
-
+        
             //Condición para permitirle al usuario si desea realizar otra alta o no
             //Si elige SI, se cierra la ventana de alta y se abre una nueva con los campos limpios
             //Si elige NO, se cierra la ventana de alta y se abre la ventana de consultas

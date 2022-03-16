@@ -25,6 +25,7 @@
     <NavigationProperty Name="tabla_medica" Relationship="Self.alumno_cartilla" FromRole="alumno" ToRole="tabla_medica" />
     <NavigationProperty Name="programa" Relationship="Self.alumno_programa" FromRole="alumno" ToRole="programa" />
     <NavigationProperty Name="tutor" Relationship="Self.tutor_alumno" FromRole="alumno" ToRole="tutor" />
+    <NavigationProperty Name="foto_alumno" Relationship="BDCAMModel.FK_alumno_foto" FromRole="alumno" ToRole="foto_alumno" />
   </EntityType>
   <EntityType Name="programa">
     <Key>
@@ -421,6 +422,16 @@
       <End Role="roles" EntitySet="roles" />
       <End Role="usuario" EntitySet="usuario" />
     </AssociationSet>
+    <EntitySet Name="foto_alumno" EntityType="BDCAMModel.foto_alumno" />
+    <AssociationSet Name="FK_alumno_foto" Association="BDCAMModel.FK_alumno_foto">
+      <End Role="alumno" EntitySet="alumno" />
+      <End Role="foto_alumno" EntitySet="foto_alumno" />
+    </AssociationSet>
+    <FunctionImport Name="SP_AltaImagenAlumno">
+      <Parameter Name="id_alumno" Mode="In" Type="Int32" />
+      <Parameter Name="imagen_alumno" Mode="In" Type="Binary" />
+      <Parameter Name="nombre" Mode="In" Type="String" />
+    </FunctionImport>
   </EntityContainer>
   <ComplexType Name="SP_FichaTecnicaAlumno_Result">
     <Property Type="String" Name="nombre" Nullable="false" MaxLength="30" />
@@ -572,5 +583,28 @@
   <Association Name="usuario_tiene_rol">
     <End Type="BDCAMModel.roles" Role="roles" Multiplicity="*" />
     <End Type="BDCAMModel.usuario" Role="usuario" Multiplicity="*" />
+  </Association>
+  <EntityType Name="foto_alumno">
+    <Key>
+      <PropertyRef Name="id_alumno" />
+      <PropertyRef Name="imagen_alumno" />
+      <PropertyRef Name="nombre" />
+    </Key>
+    <Property Name="id_alumno" Type="Int32" Nullable="false" />
+    <Property Name="imagen_alumno" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+    <Property Name="nombre" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="alumno" Relationship="BDCAMModel.FK_alumno_foto" FromRole="foto_alumno" ToRole="alumno" />
+  </EntityType>
+  <Association Name="FK_alumno_foto">
+    <End Type="BDCAMModel.alumno" Role="alumno" Multiplicity="1" />
+    <End Type="BDCAMModel.foto_alumno" Role="foto_alumno" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="alumno">
+        <PropertyRef Name="id_alumno" />
+      </Principal>
+      <Dependent Role="foto_alumno">
+        <PropertyRef Name="id_alumno" />
+      </Dependent>
+    </ReferentialConstraint>
   </Association>
 </Schema>
