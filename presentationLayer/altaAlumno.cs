@@ -583,46 +583,69 @@ namespace presentationLayer
 
         private void realizarAltaButton_Click_1(object sender, EventArgs e)
         {
-            //Condición de que si no ingresa nombre de alumno y foto de alumno no le deja hacer la alta
-            if (fotoAl.Image == null)
+            //Condición realizar alta , si no se ingresa nombre completo alumno no le deja hacer la lata.
+            if (nombreAl.Text == "" && apellidoP.Text == "" && apellidoM.Text == "")
             {
-                MessageBox.Show("Falta información por ingresar", "ALTA ALUMNO", MessageBoxButtons.OK);
+                MessageBox.Show("¡No puedes dar de alta a este alumno sin su NOMBRE COMPLETO!", "CAM - Alta Alumno", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-
-            //Guardar Foto alumno   **NO BORRAR LO QUE ESTÁ COMENTADO!!!!!**
-            byte[] archivo = null;
-            Stream myStream = openFileDialog1.OpenFile();
-            using (MemoryStream ms = new MemoryStream())
+            
+            //Condición guardar foto alumno
+            if (fotoAl.Image == null)
             {
-                myStream.CopyTo(ms);
-                archivo = ms.ToArray();
-            }
-
-            using (_1dataLayer.BDCAMEntities db = new _1dataLayer.BDCAMEntities())
-            {
-                _1dataLayer.imagenalumnoDTO oImage = new _1dataLayer.imagenalumnoDTO();
-                 
-                //db.foto_alumno.Add(oImage);
-                try
+                DialogResult result = MessageBox.Show("¡Falta subir la foto del alumno! ¿Deseas realizar la alta de todos modos?", "CAM - Alta Alumno", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (result == DialogResult.Yes)
                 {
-                    oImage.id_alumno = 6;
-                    oImage.imagen = archivo;
-                    oImage.nombre = openFileDialog1.FileName;
-                    _1dataLayer.AltaAlumno.AltaImagenAlumno(oImage);
-                    //db.SaveChanges();
+                    //Aquí se puede ingresar el método para realizar la alta de alumno...
+
+                    //Guardar Foto alumno   **NO BORRAR LO QUE ESTÁ COMENTADO!!!!!**
+                    byte[] archivo = null;
+                    try
+                    {
+                        Stream myStream = openFileDialog1.OpenFile();
+
+                        using (MemoryStream ms = new MemoryStream())
+                        {
+                            myStream.CopyTo(ms);
+                            archivo = ms.ToArray();
+                        }
+                    }
+                    catch (FileNotFoundException)
+                    {
+                        MessageBox.Show("Error: no se pudo guardar la foto del alumno", "CAM - Alta Alumno", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+
+                    using (_1dataLayer.BDCAMEntities db = new _1dataLayer.BDCAMEntities())
+                    {
+                        _1dataLayer.imagenalumnoDTO oImage = new _1dataLayer.imagenalumnoDTO();
+
+                        //db.foto_alumno.Add(oImage);
+                        try
+                        {
+                            oImage.id_alumno = 6;
+                            oImage.imagen = archivo;
+                            oImage.nombre = openFileDialog1.FileName;
+                            _1dataLayer.AltaAlumno.AltaImagenAlumno(oImage);
+                            //db.SaveChanges();
+                        }
+                        catch (DbEntityValidationException ex)
+                        {
+                            MessageBox.Show("Error: no se pudo guardar la foto del alumno", "CAM - Alta Alumno", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            return;
+                        }
+                    }
                 }
-                catch (DbEntityValidationException ex)
+                if (result == DialogResult.No)
                 {
-                    MessageBox.Show("Error al guardar imagen");
                     return;
                 }
-            }  
+            }
         
             //Condición para permitirle al usuario si desea realizar otra alta o no
             //Si elige SI, se cierra la ventana de alta y se abre una nueva con los campos limpios
             //Si elige NO, se cierra la ventana de alta y se abre la ventana de consultas
-            DialogResult dr = MessageBox.Show("Alta realizada con exito! Deseas realizar otra alta?", "ALTA ALUMNO", MessageBoxButtons.YesNo);
+            DialogResult dr = MessageBox.Show("Alta realizada con exito! Deseas realizar otra alta?", "CAM - Alta ALumno", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
             if (dr == DialogResult.Yes)
             {
                 this.Hide();
