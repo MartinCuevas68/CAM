@@ -136,7 +136,11 @@ namespace businessLayer
 
 
         //Altas información médica del alumno
+<<<<<<< HEAD
         public static void SetInfoMedAlumno(string servMedico, string grupoSanguineo, string telefono, string genero, string peso, string color_textura_piel, string estatura)
+=======
+        public static void SetInfoMedAlumno(string servMedico, string grupoSanguineo, string telefono, string peso, string color_textura_piel, string estatura)
+>>>>>>> Gabriel_16_03_2022_6
         {
             byte[] x = { (byte)204, 29, (byte)207, (byte)217 };
             int y = 1;
@@ -155,6 +159,7 @@ namespace businessLayer
                         servicio_medico = servMedico,
                         grupo_sanguineo = grupoSanguineo,
                         telefono_contacto = telefono,
+<<<<<<< HEAD
                         genero = genero,
                         peso = peso,
                         color_textura_piel = color_textura_piel,
@@ -189,6 +194,12 @@ namespace businessLayer
                     {
                         id_cartilla_medica = y++,
                         discapacidades = discapacidad
+=======
+                        //genero = genero,
+                        peso = peso,
+                        color_textura_piel = color_textura_piel,
+                        estatura = estatura
+>>>>>>> Gabriel_16_03_2022_6
                     });
 
                     db.SaveChanges();
@@ -201,8 +212,13 @@ namespace businessLayer
             }
         }
 
+<<<<<<< HEAD
         //Altas Enfermedad
         public static void SetEnfermedades(string enfermedades)
+=======
+        //Altas Discapacidad
+        /*public static void SetDiscapacidades(string discapacidad)
+>>>>>>> Gabriel_16_03_2022_6
         {
             byte[] x = { (byte)204, 29, (byte)207, (byte)217 };
             int y = 1;
@@ -214,6 +230,7 @@ namespace businessLayer
                 using (_1dataLayer.BDCAMEntities db = new _1dataLayer.BDCAMEntities())
 
                 {
+<<<<<<< HEAD
                     var query = db.Set<_1dataLayer.enfermedade>();
                     query.Add(new _1dataLayer.enfermedade
                     {
@@ -249,6 +266,13 @@ namespace businessLayer
                     {
                         id_cartilla_medica = y++,
                         alergia = alergias
+=======
+                    var query = db.Set<_1dataLayer.discapacidades>();
+                    query.Add(new _1dataLayer.discapacidades
+                    {
+                        id_cartilla_medica = y++,
+                        discapacidades1 = discapacidad
+>>>>>>> Gabriel_16_03_2022_6
                     });
 
                     db.SaveChanges();
@@ -259,7 +283,71 @@ namespace businessLayer
             {
                 throw;
             }
+<<<<<<< HEAD
         }
+=======
+        }*/
+
+        //Altas Enfermedad
+        /*public static void SetEnfermedades(string enfermedades)
+        {
+            byte[] x = { (byte)204, 29, (byte)207, (byte)217 };
+            int y = 1;
+
+
+
+            try
+            {
+                using (_1dataLayer.BDCAMEntities db = new _1dataLayer.BDCAMEntities())
+
+                {
+                    var query = db.Set<_1dataLayer.enfermedade>();
+                    query.Add(new _1dataLayer.enfermedade
+                    {
+                        id_cartilla_medica = y++,
+                        enfermedad = enfermedades
+                    });
+
+                    db.SaveChanges();
+
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }*/
+
+        //Altas Alergias
+        /*public static void SetAlergias(string alergias)
+        {
+            byte[] x = { (byte)204, 29, (byte)207, (byte)217 };
+            int y = 1;
+
+
+
+            try
+            {
+                using (_1dataLayer.BDCAMEntities db = new _1dataLayer.BDCAMEntities())
+
+                {
+                    var query = db.Set<_1dataLayer.alergias>();
+                    query.Add(new _1dataLayer.alergias
+                    {
+                        id_cartilla_medica = y++,
+                        alergia = alergias
+                    });
+
+                    db.SaveChanges();
+
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }*/
+>>>>>>> Gabriel_16_03_2022_6
 
         //Altas Tratamiento
         /*public static void SetTratamiento(string tratamiento)

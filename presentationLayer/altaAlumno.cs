@@ -308,7 +308,7 @@ namespace presentationLayer
 
         private void guardarButton_Click(object sender, EventArgs e)
         {
-            if (!nombreAl.Text.Equals("") && !apellidoP.Text.Equals("") && !apellidoM.Text.Equals(""))
+            /*if (!nombreAl.Text.Equals("") && !apellidoP.Text.Equals("") && !apellidoM.Text.Equals(""))
             {
                 MessageBox.Show("REGISTRO EXITOSO!");
                 businessLayer.Hueso.SetAlumno(cicloEsc.Text,
@@ -339,7 +339,7 @@ namespace presentationLayer
             else
             {
                 MessageBox.Show("NO PUEDES CREAR UN REGISTRO SIN NOMBRE COMPLETO DEL ALUMNO!");
-            }
+            }*/
         }
 
         public void altasBotonesParaNavegar(Button siguiente1, Button siguiente2, Button siguiente3, Button regresar, Button guardar, Button regresarMenu)
@@ -583,8 +583,66 @@ namespace presentationLayer
 
         private void realizarAltaButton_Click_1(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             //Condición realizar alta , si no se ingresa nombre completo alumno no le deja hacer la lata.
             if (nombreAl.Text == "" && apellidoP.Text == "" && apellidoM.Text == "")
+=======
+            string colonia_trabajo_tutor = "", calle_trabajo_tutor = "", numero_trabajo_tutor = "";
+            string peso = "", color_textura_piel = "", estatura = "", discapacidad = "", enfermedades = "", alergias = "";
+
+            if (!nombreAl.Text.Equals("") && !apellidoP.Text.Equals("") && !apellidoM.Text.Equals(""))
+            {
+                //MessageBox.Show("REGISTRO EXITOSO!");
+                businessLayer.Hueso.SetAlumno(cicloEsc.Text,
+                                              nombreAl.Text,
+                                              apellidoP.Text,
+                                              apellidoM.Text,
+                                              fechaNa.Value,
+                                              añosCum.Text,
+                                              curp.Text,
+                                              estado.Text,
+                                              ciudad.Text,
+                                              colonia.Text,
+                                              calle.Text,
+                                              numeroCasa.Text,
+                                              telPersonal.Text,
+                                              escuelaP.Text,
+                                              canalizado.Text
+                                              );
+
+                businessLayer.Hueso.SetTutor(nombreT.Text,
+                                             apellidoPT.Text,
+                                             apellidoMT.Text,
+                                             coloniaT.Text,
+                                             calleT.Text,
+                                             numeroCasaT.Text,
+                                             ocupacion.Text,
+                                             colonia_trabajo_tutor,
+                                             calle_trabajo_tutor,
+                                             numero_trabajo_tutor);
+
+                businessLayer.Hueso.SetInfoMedAlumno(servMedico.Text,
+                                                     grupoSanguineo.Text,
+                                                     telefono.Text,
+                                                     peso,
+                                                     color_textura_piel,
+                                                     estatura);
+
+                //businessLayer.Hueso.SetDiscapacidades(discapacidad);
+
+                //businessLayer.Hueso.SetEnfermedades(enfermedades);
+
+                //businessLayer.Hueso.SetAlergias(alergias);
+
+                //businessLayer.Hueso.setTratamiento(tratamiento);
+
+                //this.Hide();
+                //Consultas consultas = new Consultas();
+                //consultas.Show();
+
+                //Condición de que si no ingresa nombre de alumno y foto de alumno no le deja hacer la alta
+            if (fotoAl.Image == null)
+>>>>>>> Gabriel_16_03_2022_6
             {
                 MessageBox.Show("¡No puedes dar de alta a este alumno sin su NOMBRE COMPLETO!", "CAM - Alta Alumno", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
@@ -656,6 +714,12 @@ namespace presentationLayer
                 this.Hide();
                 Consultas formConsulta = new Consultas();
                 formConsulta.Show();
+            }
+                
+            }
+            else
+            {
+                MessageBox.Show("NO PUEDES CREAR UN REGISTRO SIN NOMBRE COMPLETO DEL ALUMNO!");
             }
         }
     }
