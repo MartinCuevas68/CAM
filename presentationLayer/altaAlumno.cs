@@ -620,17 +620,17 @@ namespace presentationLayer
 
                 businessLayer.Hueso.SetInfoMedAlumno(servMedico.Text,
                                                      grupoSanguineo.Text,
-                                                     telefono.Text
+                                                     telefono.Text,
                                                      genero,
                                                      peso,
                                                      color_textura_piel,
                                                      estatura);
 
-                businessLayer.Hueso.SetDiscapacidades(discapacidad);
+                //businessLayer.Hueso.SetDiscapacidades(discapacidad);
 
-                businessLayer.Hueso.SetEnfermedades(enfermedades);
+                //businessLayer.Hueso.SetEnfermedades(enfermedades);
 
-                businessLayer.Hueso.SetAlergias(alergias);
+                //businessLayer.Hueso.SetAlergias(alergias);
 
                 //businessLayer.Hueso.setTratamiento(tratamiento);
 

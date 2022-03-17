@@ -270,7 +270,7 @@
           <ScalarProperty Name="nombre" ColumnName="nombre" />
           <ScalarProperty Name="apellido_paterno" ColumnName="apellido_paterno" />
           <ScalarProperty Name="apellido_materno" ColumnName="apellido_materno" />
-          <ScalarProperty Name="telefono_personal_alumno" ColumnName="telefono_personal_alumno" />
+          <ScalarProperty Name="telefono_contacto" ColumnName="telefono_contacto" />
         </ComplexTypeMapping>
       </ResultMapping>
     </FunctionImportMapping>

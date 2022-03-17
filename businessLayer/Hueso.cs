@@ -9,6 +9,9 @@ namespace businessLayer
 {
     public class Hueso
     {
+        static int id_alumno;
+        static int id_tutor;
+        static int id_medica;
         //Altas
 
         //Altas alumno
@@ -17,42 +20,32 @@ namespace businessLayer
             DateTime fechaNa, string añosCum, string curp, string estado, string ciudad, string colonia,
             string calle, string numeroCasa, string telPersonal, string escuelaP, string canalizado)
         {
-            byte[] x = { (byte)204, 29, (byte)207, (byte)217 };
-            int y = 1;
+            //byte[] x = { (byte)204, 29, (byte)207, (byte)217 };
+            //int y = 1;
+           
 
-
-
+            _1dataLayer.alumnoDTO al = new _1dataLayer.alumnoDTO();
             try
             {
-                using (_1dataLayer.BDCAMEntities db = new _1dataLayer.BDCAMEntities())
-
-                {
-                    var query = db.Set<_1dataLayer.alumno>();
-                    query.Add(new _1dataLayer.alumno
-                    {
-                        id_alumno = y++,
-                        fecha_registro = DateTime.Now,
-                        ciclo_escolar = cicloEsc,
-                        nombre = nombreAl,
-                        apellido_paterno = apellidoP,
-                        apellido_materno = apellidoM,
-                        fecha_nacimiento = fechaNa.Date,
-                        edad_alumno = añosCum,
-                        CURP_alumno = curp,
-                        estado_nacimiento_alumno = estado,
-                        ciudad_nacimiento_alumno = ciudad,
-                        colonia_alumno = colonia,
-                        calle_alumno = calle,
-                        numero_alumno = numeroCasa,
-                        telefono_personal_alumno = telPersonal,
-                        escuela_procedencia_alumno = escuelaP,
-                        //documentacion_alumno = documentacion_alumno,
-                        atendido_por = canalizado
-                    });
-
-                    db.SaveChanges();
-
-                }
+                al.fecha_registro = DateTime.Now;
+                al.ciclo_escolar = cicloEsc;
+                al.nombre = nombreAl;
+                al.apellido_paterno = apellidoP;
+                al.apellido_materno = apellidoM;
+                al.fecha_nacimiento = fechaNa.Date;
+                al.edad_alumno = añosCum;
+                al.CURP_alumno = curp;
+                al.estado_nacimiento_alumno = estado;
+                al.ciudad_nacimiento_alumno = ciudad;
+                al.colonia_alumno = colonia;
+                al.calle_alumno = calle;
+                al.numero_alumno = numeroCasa;
+                al.telefono_personal_alumno = telPersonal;
+                al.escuela_procedencia_alumno = escuelaP;
+                al.documentacion_alumno = "";
+                al.atendido_por = canalizado;
+                id_alumno = _1dataLayer.AltaAlumno.Altaalumno(al);
+                
             }
             catch (Exception)
             {
@@ -65,39 +58,28 @@ namespace businessLayer
             string ocupacion, string colonia_trabajo_tutor, string calle_trabajo_tutor, string numero_trabajo_tutor)
             //, string telCasaT, string telMovilT, string telTrabajoT
         {
-            byte[] x = { (byte)204, 29, (byte)207, (byte)217 };
-            int y = 1;
+            //byte[] x = { (byte)204, 29, (byte)207, (byte)217 };
+            //int y = 1;
 
-
+            _1dataLayer.tutorDTO tuto = new _1dataLayer.tutorDTO();
 
             try
             {
-                using (_1dataLayer.BDCAMEntities db = new _1dataLayer.BDCAMEntities())
 
-                {
-                    var query = db.Set<_1dataLayer.tutor>();
-                    query.Add(new _1dataLayer.tutor
-                    {
-                        id_tutor = y++,
-                        nombre = nombreT,
-                        apellido_paterno = apellidoPT,
-                        apellido_materno = apellidoMT,
-                        colonia_tutor = coloniaT,
-                        calle_tutor = calleT,
-                        numero_tutor = numeroCasaT,
-                        ocupacion_tutor = ocupacion,
-                        colonia_trabajo_tutor = colonia_trabajo_tutor,
-                        calle_trabajo_tutor = calle_trabajo_tutor,
-                        numero_trabajo_tutor = numero_trabajo_tutor,
-                        //telCasaT = telCasaT,
-                        //telMovilT = telMovilT,
-                        //telTrabajoT = telTrabajoT
-
-                    });
-
-                    db.SaveChanges();
-
-                }
+                tuto.nombre = nombreT;
+                tuto.apellido_paterno = apellidoPT;
+                tuto.apellido_materno = apellidoMT;
+                tuto.colonia_tutor = coloniaT;
+                tuto.calle_tutor = calleT;
+                tuto.numero_tutor = numeroCasaT;
+                tuto.ocupacion_tutor = ocupacion;
+                tuto.colonia_trabajo_tutor = colonia_trabajo_tutor;
+                tuto.calle_trabajo_tutor = calle_trabajo_tutor;
+                tuto.numero_trabajo_tutor = numero_trabajo_tutor;
+                //telCasaT = telCasaT,
+                //telMovilT = telMovilT,
+                //telTrabajoT = telTrabajoT
+                id_tutor = _1dataLayer.AltaAlumno.Altatutor(tuto);
             }
             catch (Exception)
             {
@@ -138,32 +120,23 @@ namespace businessLayer
         //Altas información médica del alumno
         public static void SetInfoMedAlumno(string servMedico, string grupoSanguineo, string telefono, string genero, string peso, string color_textura_piel, string estatura)
         {
-            byte[] x = { (byte)204, 29, (byte)207, (byte)217 };
-            int y = 1;
+            //byte[] x = { (byte)204, 29, (byte)207, (byte)217 };
+            //int y = 1;
 
-
+            _1dataLayer.tabla_medicaDTO tablita = new _1dataLayer.tabla_medicaDTO();
 
             try
             {
-                using (_1dataLayer.BDCAMEntities db = new _1dataLayer.BDCAMEntities())
-
-                {
-                    var query = db.Set<_1dataLayer.tabla_medica>();
-                    query.Add(new _1dataLayer.tabla_medica
-                    {
-                        id_cartilla_medica = y++,
-                        servicio_medico = servMedico,
-                        grupo_sanguineo = grupoSanguineo,
-                        telefono_contacto = telefono,
-                        genero = genero,
-                        peso = peso,
-                        color_textura_piel = color_textura_piel,
-                        estatura = estatura
-                    });
-
-                    db.SaveChanges();
-
-                }
+                tablita.servicio_medico = servMedico;
+                tablita.grupo_sanguineo = grupoSanguineo;
+                tablita.telefono_contacto = telefono;
+                tablita.genero = null;
+                tablita.peso = 82;
+                tablita.color_textura_piel = "Carton";
+                tablita.estatura = 1.98;
+                id_medica = _1dataLayer.AltaAlumno.Altacartilla(tablita);
+                _1dataLayer.AltaAlumno.Altaalumnocartilla(id_alumno, id_medica);
+                _1dataLayer.AltaAlumno.Altaalumnotutor(id_alumno, id_tutor);
             }
             catch (Exception)
             {
