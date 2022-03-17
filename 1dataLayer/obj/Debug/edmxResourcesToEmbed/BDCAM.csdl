@@ -489,7 +489,7 @@
     <Property Type="String" Name="nombre" Nullable="false" MaxLength="30" />
     <Property Type="String" Name="apellido_paterno" Nullable="false" MaxLength="30" />
     <Property Type="String" Name="apellido_materno" Nullable="false" MaxLength="30" />
-    <Property Type="String" Name="telefono_personal_alumno" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="telefono_contacto" Nullable="false" MaxLength="30" />
   </ComplexType>
   <ComplexType Name="SP_ListaDiscapacidad_Result">
     <Property Type="Int32" Name="id_cartilla_medica" Nullable="false" />
