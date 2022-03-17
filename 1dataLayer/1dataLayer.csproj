@@ -149,7 +149,6 @@
     <Compile Include="telefono_tutores.cs">
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>
-    <Compile Include="turno.cs" />
     <Compile Include="turnos.cs">
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>

@@ -225,7 +225,6 @@ F:\Github\UABC\CAM\presentationLayer\bin\Debug\EntityFramework.SqlServer.xml
 F:\Github\UABC\CAM\presentationLayer\obj\Debug\presentationLayer.csproj.AssemblyReference.cache
 F:\Github\UABC\CAM\presentationLayer\obj\Debug\presentationLayer.csproj.SuggestedBindingRedirects.cache
 F:\Github\UABC\CAM\presentationLayer\obj\Debug\presentationLayer.altaAlumno.resources
-F:\Github\UABC\CAM\presentationLayer\obj\Debug\presentationLayer.Consultas.resources
 F:\Github\UABC\CAM\presentationLayer\obj\Debug\presentationLayer.modificacionesAlumno.resources
 F:\Github\UABC\CAM\presentationLayer\obj\Debug\presentationLayer.Properties.Resources.resources
 F:\Github\UABC\CAM\presentationLayer\obj\Debug\presentationLayer.csproj.GenerateResource.cache
@@ -234,7 +233,6 @@ F:\Github\UABC\CAM\presentationLayer\obj\Debug\presentationLayer.csproj.CopyComp
 F:\Github\UABC\CAM\presentationLayer\obj\Debug\presentationLayer.exe
 F:\Github\UABC\CAM\presentationLayer\obj\Debug\presentationLayer.pdb
 C:\Users\Juan2\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.imprimirFormatos.resources
-F:\Github\UABC\CAM\presentationLayer\obj\Debug\presentationLayer.imprimirFormatos.resources
 C:\Users\Juan2\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.fichaTecnica.resources
 C:\Users\DELL\Source\Repos\CAM\presentationLayer\bin\Debug\presentationLayer.exe.config
 C:\Users\DELL\Source\Repos\CAM\presentationLayer\bin\Debug\presentationLayer.exe
@@ -293,3 +291,5 @@ D:\Canela\Documents\GitHub\CAM\presentationLayer\obj\Debug\presentationLayer.exe
 D:\Canela\Documents\GitHub\CAM\presentationLayer\obj\Debug\presentationLayer.pdb
 C:\Users\galle\source\repos\CAM3\presentationLayer\obj\Debug\presentationLayer.fichaTecnica.resources
 C:\Users\galle\source\repos\CAM3\presentationLayer\obj\Debug\presentationLayer.imprimirFormatos.resources
+F:\Github\UABC\CAM\presentationLayer\obj\Debug\presentationLayer.ConsultaAlumno.resources
+F:\Github\UABC\CAM\presentationLayer\obj\Debug\presentationLayer.imprimirFormatosAlumno.resources

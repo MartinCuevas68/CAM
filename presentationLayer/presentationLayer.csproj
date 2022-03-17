@@ -63,56 +63,56 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Contenedor.cs" />
-    <Compile Include="Claudia.cs" />
-    <Compile Include="Consultas.cs">
+    <Compile Include="Forms\AltaAlumno\PLAltaAlumno.cs.cs" />
+    <Compile Include="Forms\ConsultaAlumno\ConsultaAlumno.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Consultas.designer.cs">
-      <DependentUpon>Consultas.cs</DependentUpon>
+    <Compile Include="Forms\ConsultaAlumno\ConsultaAlumno.designer.cs">
+      <DependentUpon>ConsultaAlumno.cs</DependentUpon>
     </Compile>
-    <Compile Include="Edder.cs" />
-    <Compile Include="Evelyn.cs" />
-    <Compile Include="altaAlumno.cs">
+    <Compile Include="Forms\ConsultaAlumno\PLConsultaAlumno.cs" />
+    <Compile Include="Forms\modificacionAlumno\PLmodificacionAlumno.cs" />
+    <Compile Include="Forms\AltaAlumno\altaAlumno.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="altaAlumno.Designer.cs">
+    <Compile Include="Forms\AltaAlumno\altaAlumno.Designer.cs">
       <DependentUpon>altaAlumno.cs</DependentUpon>
     </Compile>
-    <Compile Include="FichaTec.cs" />
-    <Compile Include="fichaTecnica.cs">
+    <Compile Include="Forms\fichatecnincaAlumno\PLfichatecnicaAlumno.cs" />
+    <Compile Include="Forms\fichatecnincaAlumno\fichaTecnica.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fichaTecnica.Designer.cs">
+    <Compile Include="Forms\fichatecnincaAlumno\fichaTecnica.Designer.cs">
       <DependentUpon>fichaTecnica.cs</DependentUpon>
     </Compile>
-    <Compile Include="imprimirFormatos.cs">
+    <Compile Include="Forms\imprimirformatos\imprimirFormatos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="imprimirFormatos.Designer.cs">
+    <Compile Include="Forms\imprimirformatos\imprimirFormatos.Designer.cs">
       <DependentUpon>imprimirFormatos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Martin.cs" />
-    <Compile Include="modificacionesAlumno.cs">
+    <Compile Include="Forms\imprimirformatos\PLimprimirFormatos.cs" />
+    <Compile Include="Forms\modificacionAlumno\modificacionesAlumno.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="modificacionesAlumno.Designer.cs">
+    <Compile Include="Forms\modificacionAlumno\modificacionesAlumno.Designer.cs">
       <DependentUpon>modificacionesAlumno.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="altaAlumno.resx">
+    <EmbeddedResource Include="Forms\AltaAlumno\altaAlumno.resx">
       <DependentUpon>altaAlumno.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Consultas.resx">
-      <DependentUpon>Consultas.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\ConsultaAlumno\ConsultaAlumno.resx">
+      <DependentUpon>ConsultaAlumno.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fichaTecnica.resx">
+    <EmbeddedResource Include="Forms\fichatecnincaAlumno\fichaTecnica.resx">
       <DependentUpon>fichaTecnica.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="imprimirFormatos.resx">
+    <EmbeddedResource Include="Forms\imprimirformatos\imprimirFormatos.resx">
       <DependentUpon>imprimirFormatos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="modificacionesAlumno.resx">
+    <EmbeddedResource Include="Forms\modificacionAlumno\modificacionesAlumno.resx">
       <DependentUpon>modificacionesAlumno.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -193,6 +193,7 @@
     <Content Include="Resources\TextBox2.png" />
     <None Include="Resources\TextBox22.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
