@@ -63,10 +63,8 @@ namespace presentationLayer
             checkboxDgv.FlatStyle = FlatStyle.Standard;
             altaDataGridView.Columns.Add(checkboxDgv);
 
-            int x = this.ClientSize.Width, y = this.ClientSize.Height;
-
-            altaDataGridView.Location = new Point((int)(x * 0.15), (int)(y * 0.25));
-            altaDataGridView.Size = new Size((int)(x * 0.7), (int)(y * 0.55));
+            altaDataGridView.Location = new Point(230,220);
+            altaDataGridView.Size = new Size(1070, 420);
 
             //Sentencia que manda a llamar el método para cerrar Consultas usando la X
             this.FormClosed += new FormClosedEventHandler(cerrarForm);
@@ -165,11 +163,10 @@ namespace presentationLayer
 
         public void consultaBotonesAlumnos(Button agregar, Button modificar, Button eliminar)
         {
-            int x = this.ClientSize.Width, y = this.ClientSize.Height;
-
-            agregar.Location = new Point((int)(x * 0.84), (int)(y * 0.17));
-            modificar.Location = new Point((int)(x * 0.88), (int)(y * 0.17));
-            eliminar.Location = new Point((int)(x * 0.92), (int)(y * 0.17));
+            
+            agregar.Location = new Point(1130, 150);
+            modificar.Location = new Point(1190, 150);
+            eliminar.Location = new Point(1250, 150);
 
             agregar.Size = new Size(50, 50);
             modificar.Size = new Size(50, 50);
@@ -178,18 +175,15 @@ namespace presentationLayer
         public void tituloAlumnos(Label titulo)
         {
             //tamaño pantalla
-            int x = this.ClientSize.Width, y = this.ClientSize.Height;
             logo.Location = new Point(50, 20);
 
             //TITULO PRINCIPAL
-            titulo.Location = new Point(x / 2 - titulo.Width / 3, logo.Height / 2 - 20);
+            titulo.Location = new Point(620, 50);
         }
 
         public void consultaBusquedaAlumnos(Panel panelB, TextBox txBusqueda, Button buscar)
         {
-            int x = this.ClientSize.Width, y = this.ClientSize.Height;
-
-            panelB.Location = new Point((int)(x * 0.38), (int)(y * 0.17));
+            panelB.Location = new Point(540,120);
             
             panelB.Size = new Size(400, 50);
             buscar.Size = new Size(30, 30);
@@ -202,9 +196,9 @@ namespace presentationLayer
             int x = this.ClientSize.Width, y = this.ClientSize.Height;
 
 
-            cerrarSesion.Location = new Point((int)(x * 0.17), (int)(y * 0.9));
-            imprimir.Location = new Point((int)(x * 0.65), (int)(y * 0.9));
-            fichaTecnica.Location = new Point((int)(x * 0.82), (int)(y * 0.9));
+            cerrarSesion.Location = new Point(230, 660);
+            imprimir.Location = new Point(900, 660);
+            fichaTecnica.Location = new Point(1120, 660);
 
             cerrarSesion.Size = new Size(180, 75);
             imprimir.Size = new Size(200, 75);
@@ -226,6 +220,11 @@ namespace presentationLayer
         }
 
         private void eliminarButton_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void imprimirFormatosButton_Click(object sender, EventArgs e)
         {
 
         }

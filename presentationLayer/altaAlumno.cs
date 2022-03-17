@@ -61,7 +61,6 @@ namespace presentationLayer
             realizarAltaButton.Visible = false;
 
 
-
             altasBotonesParaNavegar(siguiente1Button, siguiente2Button, siguiente3Button, regresarButton, realizarAltaButton, regresarMenuButton);
             
         }
@@ -71,30 +70,32 @@ namespace presentationLayer
             GroupBox infoGeneral2, GroupBox infoTutor, GroupBox infoMedica)
         {
             //tamaño pantalla
-            int x = this.ClientSize.Width,y = this.ClientSize.Height;
+            
             logo.Location = new Point(50, 20);
 
             //TITULO PRINCIPAL
-            nomLabel.Location = new Point(x/2-nomLabel.Width/2, logo.Height/2 - 20);
+            nomLabel.Location = new Point(620, 50);
            
             //SUBTITULOS
-            infGenLabel.Location = new Point(x / 2 - infGenLabel.Width / 2, logo.Height / 2 + 50);
-            infoTutorLabel.Location = new Point(x / 2 - infoTutorLabel.Width / 2, logo.Height / 2 + 50);
-            infoMedLabel.Location = new Point(x / 2 - infGenLabel.Width / 2, logo.Height / 2 + 50);
+            infGenLabel.Location = new Point(620, 120);
+            infoTutorLabel.Location = new Point(670, 120);
+            infoMedLabel.Location = new Point(620, 120);
+
 
             //GROUPBOXS
-            infoGeneral.Size = new Size(x - 200, y - 150);
-            infoGeneral.Location = new Point(x/2- infoGeneral.Width/2 + 50, y / 2 - infoGeneral.Height / 2 + 120);
+            infoGeneral.Size = new Size(1220, 480);
+            infoGeneral.Location = new Point(180, 180);
 
-            infoGeneral2.Size = new Size(x - 200, y - 150);
-            infoGeneral2.Location = new Point(x / 2 - infoGeneral2.Width / 2 + 100, y / 2 - infoGeneral2.Height / 2 + 120);
+            infoGeneral2.Size = new Size(580, 460);
+            infoGeneral2.Location = new Point(510, 180);
 
-            infoTutor.Size = new Size(x - 200, y - 150);
-            infoTutor.Location = new Point(x / 2 - infoTutor.Width / 2 + 100, y / 2 - infoTutor.Height / 2 + 120);
+            infoTutor.Size = new Size(1100, 480);
+            infoTutor.Location = new Point(260, 180);
 
-            infoMedica.Size = new Size(x - 200, y - 150);
-            infoMedica.Location = new Point(x / 2 - infoMedica.Width / 2 + 100, y / 2 - infoMedica.Height / 2 + 120);
+            infoMedica.Size = new Size(1220, 440);
+            infoMedica.Location = new Point(180, 180);
         }
+    
 
         //INFORMACION GENERAL ALUMNO
         private void infoGen(Label nombreL, TextBox nombre, Panel nombreP, Label apellidoPL, TextBox apellidoP, Panel apellidoPP, Label apellidoML, 
@@ -170,7 +171,7 @@ namespace presentationLayer
         {
             telL.Location = new Point(50, 50);
             telP.Location = new Point(280, 50);
-            telP.Size = new Size(220, 45);
+            telP.Size = new Size(150, 45);
 
             escuelaPL.Location = new Point(50,110);
             escuelaPP.Location = new Point(280,110);
@@ -198,49 +199,49 @@ namespace presentationLayer
             Label ocupacionL, TextBox ocupacion, Panel ocupacionP)
         {
            
-            nombreL.Location = new Point(50,50);
-            nombreP.Location = new Point(150,50);
-            nombreP.Size = new Size(150, 45);
+            nombreL.Location = new Point(50, 50);
+            nombreP.Location = new Point(215, 50);
+            nombreP.Size = new Size(300, 50);
 
-            apellidoPL.Location = new Point(330,50);
-            apellidoPP.Location = new Point(510,50);
-            apellidoPP.Size = new Size(150, 45);
+            apellidoPL.Location = new Point(50, 110);
+            apellidoPP.Location = new Point(215, 110);
+            apellidoPP.Size = new Size(300, 50);
 
-            apellidoML.Location = new Point(690,50);
-            apellidoMP.Location = new Point(870,50);
-            apellidoMP.Size = new Size(150, 45);
+            apellidoML.Location = new Point(50, 170);
+            apellidoMP.Location = new Point(215, 170);
+            apellidoMP.Size = new Size(300, 50);
 
-            direccion.Location = new Point(50,170);
+            direccion.Location = new Point(650, 45);
 
-            calleL.Location = new Point(50,230);
-            calleP.Location = new Point(150,230);
-            calleP.Size = new Size(150, 45);
+            calleL.Location = new Point(650, 90);
+            calleP.Location = new Point(740, 90);
+            calleP.Size = new Size(300, 50);
 
-            numL.Location = new Point(330,230);
-            numP.Location = new Point(460,230);
-            numP.Size = new Size(150, 45);
+            numL.Location = new Point(650, 150);
+            numP.Location = new Point(740, 150);
+            numP.Size = new Size(150, 50);
 
-            coloniaL.Location = new Point(690,230);
-            coloniaP.Location = new Point(810,230);
-            coloniaP.Size = new Size(150, 45);
+            coloniaL.Location = new Point(650, 210);
+            coloniaP.Location = new Point(740, 210);
+            coloniaP.Size = new Size(300, 50);
 
-            infoCon.Location = new Point(50,350);
+            infoCon.Location = new Point(50,250);
 
-            telCasaL.Location = new Point(50,410 );
-            telCasaP.Location = new Point(200, 410);
-            telCasaP.Size = new Size(150, 45);
+            telCasaL.Location = new Point(50,290 );
+            telCasaP.Location = new Point(215, 290);
+            telCasaP.Size = new Size(150, 50);
 
-            telMovilL.Location = new Point(390, 410);
-            telMovilP.Location = new Point(550, 410);
-            telMovilP.Size = new Size(150, 45);
+            telMovilL.Location = new Point(400, 290);
+            telMovilP.Location = new Point(550, 290);
+            telMovilP.Size = new Size(150, 50);
 
-            telTrabajoL.Location = new Point(740, 410);
-            telTrabajoP.Location = new Point(920, 410);
-            telTrabajoP.Size = new Size(150, 45);
+            telTrabajoL.Location = new Point(50, 410);
+            telTrabajoP.Location = new Point(215, 410);
+            telTrabajoP.Size = new Size(150, 50);
 
-            ocupacionL.Location = new Point(390, 530);
-            ocupacionP.Location = new Point(550, 530);
-            ocupacionP.Size = new Size(150, 45);
+            ocupacionL.Location = new Point(50, 350);
+            ocupacionP.Location = new Point(215, 350);
+            ocupacionP.Size = new Size(300, 50);
         }
 
         //INFORMACION MEDICA
@@ -251,42 +252,45 @@ namespace presentationLayer
             ComboBox discapacidadCB, ComboBox enfermedadCB, ComboBox alergiaCB,Button eliDisc, Button eliEnf, Button eliAle)
         {
             servMedicoL.Location = new Point(50, 50);
-            servMedP.Location = new Point(220,50);
-            servMedP.Size = new Size(150, 45);
+            servMedP.Location = new Point(210,50);
+            servMedP.Size = new Size(300, 50);
 
-            grupoSanL.Location = new Point(400, 50);
-            grupoSanP.Location = new Point(580, 50);
-            grupoSanP.Size = new Size(100, 45);
+            grupoSanL.Location = new Point(530, 50);
+            grupoSanP.Location = new Point(700, 50);
+            grupoSanP.Size = new Size(110, 50);
 
-            telL.Location = new Point(750, 50);
-            telP.Location = new Point(960, 50);
+            telL.Location = new Point(830, 50);
+            telP.Location = new Point(1030, 50);
             telP.Size = new Size(150, 45);
 
             discapacidadL.Location = new Point(50, 150);
-            eliDisc.Location = new Point(200,150);
-            discapacidad.Location = new Point(50, 210);
-            discapacidadCB.Location = new Point(50, 310);
-            discapacidadP.Location = new Point(50, 210);
-            discapacidadP.Size = new Size(200, 45);
+            eliDisc.Location = new Point(290,150);
+            discapacidad.Location = new Point(50, 170);
+            discapacidadCB.Location = new Point(50, 340);
+            discapacidadP.Location = new Point(50, 180);
+            discapacidadP.Size = new Size(270, 150);
+            discapacidadCB.Size = new Size(270, 60);
 
-            enfermedadL.Location = new Point(300, 150);
-            eliEnf.Location = new Point(450,150);
-            enfermedad.Location = new Point(300, 210);
-            enfermedadCB.Location = new Point(300, 310);
-            enfermedadP.Location = new Point(300, 210);
-            enfermedadP.Size = new Size(200, 45);
+            enfermedadL.Location = new Point(340, 150);
+            eliEnf.Location = new Point(580,150);
+            enfermedad.Location = new Point(340, 210);
+            enfermedadCB.Location = new Point(340, 340);
+            enfermedadP.Location = new Point(340, 180);
+            enfermedadP.Size = new Size(270, 150);
+            enfermedadCB.Size = new Size(270, 60);
 
-            alergiaL.Location = new Point(550, 150);
-            eliAle.Location = new Point(650,150);
-            alergia.Location = new Point(550, 210);
-            alergiaCB.Location = new Point(550, 310);
-            alergiaP.Location = new Point(550, 210);
-            alergiaP.Size = new Size(200, 45);
+            alergiaL.Location = new Point(630, 150);
+            eliAle.Location = new Point(870,150);
+            alergia.Location = new Point(630, 210);
+            alergiaCB.Location = new Point(630, 340);
+            alergiaP.Location = new Point(630, 180);
+            alergiaP.Size = new Size(270, 150);
+            alergiaCB.Size = new Size(270, 60);
 
-            tratamientoL.Location = new Point(800, 150);
-            eliTra.Location = new Point(930,150);
-            tratamientoP.Location = new Point(800, 210);
-            tratamientoP.Size = new Size(120, 45);
+            tratamientoL.Location = new Point(920, 150);
+            eliTra.Location = new Point(1160,150);
+            tratamientoP.Location = new Point(920, 180);
+            tratamientoP.Size = new Size(270, 150);
         }
 
         private void altaAlumno_Load(object sender, EventArgs e)
@@ -344,14 +348,12 @@ namespace presentationLayer
 
         public void altasBotonesParaNavegar(Button siguiente1, Button siguiente2, Button siguiente3, Button regresar, Button guardar, Button regresarMenu)
         {
-            int x = this.ClientSize.Width, y = this.ClientSize.Height;
-
-            siguiente1.Location = new Point((int)(x * 0.9), (int)(y * 0.54));
-            siguiente2.Location = new Point((int)(x * 0.9), (int)(y * 0.54));
-            siguiente3.Location = new Point((int)(x * 0.9), (int)(y * 0.54));
-            regresar.Location = new Point((int)(x * 0.40), (int)(y * 0.54));
-            regresarMenu.Location = new Point((int)(x * 0.40), (int)(y * 0.54));
-            guardar.Location = new Point((int)(x * 0.9), (int)(y * 0.54));
+            siguiente1.Location = new Point(1215, 700);
+            siguiente2.Location = new Point(1215, 700);
+            siguiente3.Location = new Point(1215, 700);
+            regresar.Location = new Point(180, 700);
+            regresarMenu.Location = new Point(180, 700);
+            guardar.Location = new Point(1215, 700);
 
             siguiente1.Size = new Size(180, 75);
             siguiente2.Size = new Size(180, 75);
@@ -486,8 +488,6 @@ namespace presentationLayer
 
         }
 
-       
-
         private void regresarButton_Click_1(object sender, EventArgs e)
         {
             if (informacionGeneralAlumno2.Visible == true) {
@@ -532,17 +532,18 @@ namespace presentationLayer
             formConsulta.Show();
         }
 
-         private void siguienteButton1_Click(object sender, EventArgs e)
-            {
-                informacionGeneralAlumno.Visible = false;
-                informacionGeneralAlumno2.Visible = true;
+        private void siguiente1Button_Click(object sender, EventArgs e)
+        {
+            informacionGeneralAlumno.Visible = false;
+            informacionGeneralAlumno2.Visible = true;
 
-                regresarMenuButton.Visible = false;
-                regresarButton.Visible = true;
+            regresarMenuButton.Visible = false;
+            regresarButton.Visible = true;
 
-                siguiente1Button.Visible = false;
-                siguiente2Button.Visible = true;
-            }
+            siguiente1Button.Visible = false;
+            siguiente2Button.Visible = true;
+        }
+
 
         private void siguiente2Button_Click(object sender, EventArgs e)
         {
@@ -721,6 +722,11 @@ namespace presentationLayer
             {
                 MessageBox.Show("NO PUEDES CREAR UN REGISTRO SIN NOMBRE COMPLETO DEL ALUMNO!");
             }
+        }
+
+        private void eliminarTratamientoButton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
