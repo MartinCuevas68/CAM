@@ -473,15 +473,15 @@ namespace presentationLayer
         private void loaddata()
         {
 
-            foreach (var item in businessLayer.Martin.alergiasGet())
+            foreach (var item in businessLayer.BLEliminacionAlumno.alergiasGet())
             {
                 alergiasCombobox.Items.Add(item.alergia);
             }
-            foreach (var item2 in businessLayer.Martin.enfermedadesGet())
+            foreach (var item2 in businessLayer.BLEliminacionAlumno.enfermedadesGet())
             {
                 enfermedadesCombobox.Items.Add(item2.enfermedad);
             }
-            foreach (var item3 in businessLayer.Martin.discapacidadesGet())
+            foreach (var item3 in businessLayer.BLEliminacionAlumno.discapacidadesGet())
             {
                 discapacidadesCombobox.Items.Add(item3.discapacidades);
             }
@@ -680,7 +680,8 @@ namespace presentationLayer
                             oImage.id_alumno = 6;
                             oImage.imagen = archivo;
                             oImage.nombre = openFileDialog1.FileName;
-                            _1dataLayer.AltaAlumno.AltaImagenAlumno(oImage);
+                            _1dataLayer.DLAltaAlumno.AltaImagenAlumno(oImage);
+                            
                             //db.SaveChanges();
                         }
                         catch (DbEntityValidationException ex)

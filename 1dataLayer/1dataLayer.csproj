@@ -53,7 +53,6 @@
     <Compile Include="alergias.cs">
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>
-    <Compile Include="AltaAlumno.cs" />
     <Compile Include="alumno.cs">
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>
@@ -73,10 +72,13 @@
       <DependentUpon>BDCAM.edmx</DependentUpon>
     </Compile>
     <Compile Include="BDDTO.cs" />
-    <Compile Include="ConsultaAlumno.cs" />
     <Compile Include="discapacidades.cs">
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>
+    <Compile Include="Funciones\Alumnos\DLAltaAlumno.cs" />
+    <Compile Include="Funciones\Alumnos\DLConsultaAlumno.cs" />
+    <Compile Include="Funciones\Alumnos\DLEliminacionAlumno.cs" />
+    <Compile Include="Funciones\Alumnos\DLModificacionAlumno.cs" />
     <Compile Include="enfermedades.cs">
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>
