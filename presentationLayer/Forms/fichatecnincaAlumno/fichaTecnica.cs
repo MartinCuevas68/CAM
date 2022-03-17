@@ -16,11 +16,11 @@ namespace presentationLayer
         public fichaTecnica()
         {
             InitializeComponent();
-            FichaTec.posicionLabel(logoPictureBox , fichaLabel, infogenLabel,nombreLabel,nombrequeryLabel, edadLabel, edadqueryLabel, fechanacLabel, fechaqueryLabel,
+            PLfichatecnicaAlumno.posicionLabel(logoPictureBox , fichaLabel, infogenLabel,nombreLabel,nombrequeryLabel, edadLabel, edadqueryLabel, fechanacLabel, fechaqueryLabel,
                                     lugarnacLabel, lugarqueryLabel, curpLabel, curpqueryLabel, direccionLabel, direccionqueryLabel,
                                 telefonoLabel, telefonoqueryLabel, escuelaLabel, escuelaproqueryLabel, canalizadoLabel, canalizadoqueryLabel, cicloLabel, cicloqueryLabel, tipoingresoLabel ,tipoingresoqueryLabel);
 
-            FichaTec.posicionFotoButtons(fotoalumnoPictureBox, informaciontutorButton, informacionmedicaButton);
+            PLfichatecnicaAlumno.posicionFotoButtons(fotoalumnoPictureBox, informaciontutorButton, informacionmedicaButton);
         }
 
         

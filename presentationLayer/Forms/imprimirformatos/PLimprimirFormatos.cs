@@ -3,7 +3,7 @@ using System.Windows.Forms;
 
 namespace presentationLayer
 {
-    internal class PLimprimirFormatos
+    public class PLimprimirFormatos
     {
         public static void panelNavBar(Panel navBarPanel)
         {

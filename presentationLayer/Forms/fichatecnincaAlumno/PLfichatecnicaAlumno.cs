@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace presentationLayer
 {
-    class FichaTec
+    public class PLfichatecnicaAlumno
     {
 
         public static void posicionLabel(PictureBox logo , Label ficha, Label info, Label nombre, Label nombreq, Label edad, Label edadq,

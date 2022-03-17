@@ -4,7 +4,7 @@ using System.Windows.Forms;
 
 namespace presentationLayer
 {
-    class PLmodificacionAlumno
+    public class PLmodificacionAlumno
     {
 
         public static void informacionMedicaGroupBox(GroupBox groupBox)
