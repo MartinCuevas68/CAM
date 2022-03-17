@@ -584,10 +584,6 @@ namespace presentationLayer
 
         private void realizarAltaButton_Click_1(object sender, EventArgs e)
         {
-<<<<<<< HEAD
-            //Condición realizar alta , si no se ingresa nombre completo alumno no le deja hacer la lata.
-            if (nombreAl.Text == "" && apellidoP.Text == "" && apellidoM.Text == "")
-=======
             string colonia_trabajo_tutor = "", calle_trabajo_tutor = "", numero_trabajo_tutor = "";
             string peso = "", color_textura_piel = "", estatura = "", discapacidad = "", enfermedades = "", alergias = "";
 
@@ -643,7 +639,6 @@ namespace presentationLayer
 
                 //Condición de que si no ingresa nombre de alumno y foto de alumno no le deja hacer la alta
             if (fotoAl.Image == null)
->>>>>>> Gabriel_16_03_2022_6
             {
                 MessageBox.Show("¡No puedes dar de alta a este alumno sin su NOMBRE COMPLETO!", "CAM - Alta Alumno", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
