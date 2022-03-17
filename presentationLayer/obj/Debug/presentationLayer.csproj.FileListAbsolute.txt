@@ -291,3 +291,5 @@ D:\Canela\Documents\GitHub\CAM\presentationLayer\obj\Debug\presentationLayer.csp
 D:\Canela\Documents\GitHub\CAM\presentationLayer\obj\Debug\presentationLayer.csproj.CopyComplete
 D:\Canela\Documents\GitHub\CAM\presentationLayer\obj\Debug\presentationLayer.exe
 D:\Canela\Documents\GitHub\CAM\presentationLayer\obj\Debug\presentationLayer.pdb
+C:\Users\galle\source\repos\CAM3\presentationLayer\obj\Debug\presentationLayer.fichaTecnica.resources
+C:\Users\galle\source\repos\CAM3\presentationLayer\obj\Debug\presentationLayer.imprimirFormatos.resources
