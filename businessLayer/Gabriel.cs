@@ -70,7 +70,7 @@ namespace businessLayer
                 {
                     var.id_alumno = result.id_alumno;
                     var.nombre = result.nombre;
-                    var.telefono_contacto = result.telefono_contacto;
+                    var.telefono_contacto = result.telefono_personal_alumno;
                     mostrarAlergias = listaAlumnos.ListaAlergias(result.id_alumno);
                     foreach (_1dataLayer.SP_ListaAlergia_Result a in mostrarAlergias)
                     {

@@ -62,8 +62,8 @@ namespace businessLayer
 
         //Altas tutor
         public static void SetTutor(string nombreT, string apellidoPT, string apellidoMT, string coloniaT, string calleT, string numeroCasaT,
-            string ocupacion)
-        //, string telCasaT, string telMovilT, string telTrabajoT       FALTAN
+            string ocupacion, string colonia_trabajo_tutor, string calle_trabajo_tutor, string numero_trabajo_tutor)
+            //, string telCasaT, string telMovilT, string telTrabajoT
         {
             byte[] x = { (byte)204, 29, (byte)207, (byte)217 };
             int y = 1;
@@ -85,16 +85,14 @@ namespace businessLayer
                         colonia_tutor = coloniaT,
                         calle_tutor = calleT,
                         numero_tutor = numeroCasaT,
-                        ocupacion_tutor = ocupacion
-                        //DATOS QUE DEBERIAN ESTAR
+                        ocupacion_tutor = ocupacion,
+                        colonia_trabajo_tutor = colonia_trabajo_tutor,
+                        calle_trabajo_tutor = calle_trabajo_tutor,
+                        numero_trabajo_tutor = numero_trabajo_tutor,
                         //telCasaT = telCasaT,
                         //telMovilT = telMovilT,
-                        //telTrabajoT = telTrabajoT,
+                        //telTrabajoT = telTrabajoT
 
-                        //DATOS QUE NO DEBEN DE ESTAR
-                        //colonia_trabajo_tutor = colonia_trabajo_tutor,
-                        //calle_trabajo_tutor = calle_trabajo_tutor,
-                        //numero_trabajo_tutor = numero_trabajo_tutor,
                     });
 
                     db.SaveChanges();
@@ -107,8 +105,38 @@ namespace businessLayer
             }
         }
 
+        //Altas telefono tutor
+        /*public static void SetTelefonoTutor(telCasa, telMovil, telTrabajo)
+        {
+            byte[] x = { (byte)204, 29, (byte)207, (byte)217 };
+            int y = 1;
+
+
+
+            try
+            {
+                using (_1dataLayer.BDCAMEntities db = new _1dataLayer.BDCAMEntities())
+
+                {
+                    var query = db.Set<_1dataLayer.telefono_tutores>();
+                    query.Add(new _1dataLayer.telefono_tutores
+                    {
+                        telCsa =
+                    });
+
+                    db.SaveChanges();
+
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }*/
+
+
         //Altas información médica del alumno
-        public static void SetinfoMedAlumno(string servMedico, string grupoSanguineo, string telefono)
+        public static void SetInfoMedAlumno(string servMedico, string grupoSanguineo, string telefono, string genero, string peso, string color_textura_piel, string estatura)
         {
             byte[] x = { (byte)204, 29, (byte)207, (byte)217 };
             int y = 1;
@@ -126,13 +154,11 @@ namespace businessLayer
                         id_cartilla_medica = y++,
                         servicio_medico = servMedico,
                         grupo_sanguineo = grupoSanguineo,
-                        telefono_contacto = telefono
-
-                        //DATOS QUE NO DEBEN ESTAR
-                        //genero =
-                        //peso =
-                        //color_textura_piel =
-                        //estatura =
+                        telefono_contacto = telefono,
+                        genero = genero,
+                        peso = peso,
+                        color_textura_piel = color_textura_piel,
+                        estatura = estatura
                     });
 
                     db.SaveChanges();
@@ -145,21 +171,25 @@ namespace businessLayer
             }
         }
 
-        //Alta imagen alumno
-        public static void SetFotoAlumno(byte[] imagen, string nombre)
+        //Altas Discapacidad
+        public static void SetDiscapacidades(string discapacidad)
         {
             byte[] x = { (byte)204, 29, (byte)207, (byte)217 };
-            int a = 1;
+            int y = 1;
+
+
 
             try
             {
                 using (_1dataLayer.BDCAMEntities db = new _1dataLayer.BDCAMEntities())
 
                 {
-                    var query = db.Set<_1dataLayer.foto_alumno>();
-                    query.Add(new _1dataLayer.foto_alumno
+                    var query = db.Set<_1dataLayer.discapacidade>();
+                    query.Add(new _1dataLayer.discapacidade
                     {
-                    });;
+                        id_cartilla_medica = y++,
+                        discapacidades = discapacidad
+                    });
 
                     db.SaveChanges();
 
@@ -170,6 +200,97 @@ namespace businessLayer
                 throw;
             }
         }
+
+        //Altas Enfermedad
+        public static void SetEnfermedades(string enfermedades)
+        {
+            byte[] x = { (byte)204, 29, (byte)207, (byte)217 };
+            int y = 1;
+
+
+
+            try
+            {
+                using (_1dataLayer.BDCAMEntities db = new _1dataLayer.BDCAMEntities())
+
+                {
+                    var query = db.Set<_1dataLayer.enfermedade>();
+                    query.Add(new _1dataLayer.enfermedade
+                    {
+                        id_cartilla_medica = y++,
+                        enfermedad = enfermedades
+                    });
+
+                    db.SaveChanges();
+
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        //Altas Alergias
+        public static void SetAlergias(string alergias)
+        {
+            byte[] x = { (byte)204, 29, (byte)207, (byte)217 };
+            int y = 1;
+
+
+
+            try
+            {
+                using (_1dataLayer.BDCAMEntities db = new _1dataLayer.BDCAMEntities())
+
+                {
+                    var query = db.Set<_1dataLayer.alergias>();
+                    query.Add(new _1dataLayer.alergias
+                    {
+                        id_cartilla_medica = y++,
+                        alergia = alergias
+                    });
+
+                    db.SaveChanges();
+
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        //Altas Tratamiento
+        /*public static void SetTratamiento(string tratamiento)
+        {
+            byte[] x = { (byte)204, 29, (byte)207, (byte)217 };
+            int y = 1;
+
+
+
+            try
+            {
+                using (_1dataLayer.BDCAMEntities db = new _1dataLayer.BDCAMEntities())
+
+                {
+                    var query = db.Set<_1dataLayer.tratamientos>();
+                    query.Add(new _1dataLayer.tratamientos
+                    {
+                        id_cartilla_medica = y++,
+                        tratamiento = tratamiento
+                    });
+
+                    db.SaveChanges();
+
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }*/
+
     }
 
 
