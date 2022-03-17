@@ -270,7 +270,7 @@
           <ScalarProperty Name="nombre" ColumnName="nombre" />
           <ScalarProperty Name="apellido_paterno" ColumnName="apellido_paterno" />
           <ScalarProperty Name="apellido_materno" ColumnName="apellido_materno" />
-          <ScalarProperty Name="telefono_personal_alumno" ColumnName="telefono_personal_alumno" />
+          <ScalarProperty Name="telefono_contacto" ColumnName="telefono_contacto" />
         </ComplexTypeMapping>
       </ResultMapping>
     </FunctionImportMapping>
@@ -357,5 +357,27 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <FunctionImportMapping FunctionImportName="SP_AltaImagenAlumno" FunctionName="BDCAMModel.Store.SP_AltaImagenAlumno" />
+    <FunctionImportMapping FunctionImportName="SP_ListaAlumnos1" FunctionName="BDCAMModel.Store.SP_ListaAlumnos1">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BDCAMModel.SP_ListaAlumnos1_Result">
+          <ScalarProperty Name="id_alumno" ColumnName="id_alumno" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="telefono_contacto" ColumnName="telefono_contacto" />
+          <ScalarProperty Name="apellido_paterno" ColumnName="apellido_paterno" />
+          <ScalarProperty Name="apellido_materno" ColumnName="apellido_materno" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_ListaAlumnos2" FunctionName="BDCAMModel.Store.SP_ListaAlumnos2">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BDCAMModel.SP_ListaAlumnos2_Result">
+          <ScalarProperty Name="id_alumno" ColumnName="id_alumno" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="telefono_contacto" ColumnName="telefono_contacto" />
+          <ScalarProperty Name="apellido_paterno" ColumnName="apellido_paterno" />
+          <ScalarProperty Name="apellido_materno" ColumnName="apellido_materno" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
   </EntityContainerMapping>
 </Mapping>

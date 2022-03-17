@@ -432,6 +432,8 @@
       <Parameter Name="imagen_alumno" Mode="In" Type="Binary" />
       <Parameter Name="nombre" Mode="In" Type="String" />
     </FunctionImport>
+    <FunctionImport Name="SP_ListaAlumnos1" ReturnType="Collection(BDCAMModel.SP_ListaAlumnos1_Result)" />
+    <FunctionImport Name="SP_ListaAlumnos2" ReturnType="Collection(BDCAMModel.SP_ListaAlumnos2_Result)" />
   </EntityContainer>
   <ComplexType Name="SP_FichaTecnicaAlumno_Result">
     <Property Type="String" Name="nombre" Nullable="false" MaxLength="30" />
@@ -489,7 +491,7 @@
     <Property Type="String" Name="nombre" Nullable="false" MaxLength="30" />
     <Property Type="String" Name="apellido_paterno" Nullable="false" MaxLength="30" />
     <Property Type="String" Name="apellido_materno" Nullable="false" MaxLength="30" />
-    <Property Type="String" Name="telefono_personal_alumno" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="telefono_contacto" Nullable="false" MaxLength="30" />
   </ComplexType>
   <ComplexType Name="SP_ListaDiscapacidad_Result">
     <Property Type="Int32" Name="id_cartilla_medica" Nullable="false" />
@@ -609,4 +611,18 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <ComplexType Name="SP_ListaAlumnos1_Result">
+    <Property Type="Int32" Name="id_alumno" Nullable="false" />
+    <Property Type="String" Name="nombre" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="telefono_contacto" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="apellido_paterno" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="apellido_materno" Nullable="false" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="SP_ListaAlumnos2_Result">
+    <Property Type="Int32" Name="id_alumno" Nullable="false" />
+    <Property Type="String" Name="nombre" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="telefono_contacto" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="apellido_paterno" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="apellido_materno" Nullable="false" MaxLength="30" />
+  </ComplexType>
 </Schema>

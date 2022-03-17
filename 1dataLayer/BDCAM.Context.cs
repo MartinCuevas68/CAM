@@ -472,5 +472,15 @@ namespace _1dataLayer
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_AltaImagenAlumno", id_alumnoParameter, imagen_alumnoParameter, nombreParameter);
         }
+    
+        public virtual ObjectResult<SP_ListaAlumnos1_Result> SP_ListaAlumnos1()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_ListaAlumnos1_Result>("SP_ListaAlumnos1");
+        }
+    
+        public virtual ObjectResult<SP_ListaAlumnos2_Result> SP_ListaAlumnos2()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_ListaAlumnos2_Result>("SP_ListaAlumnos2");
+        }
     }
 }

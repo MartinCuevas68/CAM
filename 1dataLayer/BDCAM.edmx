@@ -5,8 +5,8 @@
     <!-- SSDL content -->
     <edmx:StorageModels>
     <Schema Namespace="BDCAMModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-        <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BDCAM.dbo.alergias' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.alergias' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="alergias">
           <Key>
             <PropertyRef Name="id_cartilla_medica" />
@@ -38,8 +38,8 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.alergias' no tiene definida ningun
           <Property Name="documentacion_alumno" Type="nvarchar(max)" />
           <Property Name="atendido_por" Type="varchar" MaxLength="30" Nullable="false" />
         </EntityType>
-        <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BDCAM.dbo.alumno-cartilla' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.alumno-cartilla' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="alumno-cartilla">
           <Key>
             <PropertyRef Name="id_alumno" />
@@ -48,8 +48,8 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.alumno-cartilla' no tiene definida
           <Property Name="id_alumno" Type="int" Nullable="false" />
           <Property Name="id_cartilla" Type="int" Nullable="false" />
         </EntityType>
-        <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BDCAM.dbo.alumno-programa' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.alumno-programa' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="alumno-programa">
           <Key>
             <PropertyRef Name="id_alumno" />
@@ -58,8 +58,8 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.alumno-programa' no tiene definida
           <Property Name="id_alumno" Type="int" Nullable="false" />
           <Property Name="id_programa" Type="int" Nullable="false" />
         </EntityType>
-        <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BDCAM.dbo.discapacidades' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.discapacidades' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="discapacidades">
           <Key>
             <PropertyRef Name="id_cartilla_medica" />
@@ -68,8 +68,8 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.discapacidades' no tiene definida 
           <Property Name="id_cartilla_medica" Type="int" Nullable="false" />
           <Property Name="discapacidades" Type="varchar" MaxLength="30" Nullable="false" />
         </EntityType>
-        <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BDCAM.dbo.enfermedades' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.enfermedades' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="enfermedades">
           <Key>
             <PropertyRef Name="id_cartilla_medica" />
@@ -78,8 +78,8 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.enfermedades' no tiene definida ni
           <Property Name="id_cartilla_medica" Type="int" Nullable="false" />
           <Property Name="enfermedad" Type="varchar" MaxLength="30" Nullable="false" />
         </EntityType>
-        <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BDCAM.dbo.foto-alumno' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.foto-alumno' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="foto-alumno">
           <Key>
             <PropertyRef Name="id_alumno" />
@@ -110,8 +110,8 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.foto-alumno' no tiene definida nin
           <Property Name="modulos" Type="varchar" MaxLength="30" Nullable="false" />
           <Property Name="proyecto" Type="varchar" MaxLength="30" Nullable="false" />
         </EntityType>
-        <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BDCAM.dbo.programa-turno' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.programa-turno' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="programa-turno">
           <Key>
             <PropertyRef Name="id_turno" />
@@ -120,8 +120,8 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.programa-turno' no tiene definida 
           <Property Name="id_turno" Type="int" Nullable="false" />
           <Property Name="id_programa" Type="int" Nullable="false" />
         </EntityType>
-        <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BDCAM.dbo.recurso-programa' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.recurso-programa' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="recurso-programa">
           <Key>
             <PropertyRef Name="id_recurso" />
@@ -144,8 +144,8 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.recurso-programa' no tiene definid
           <Property Name="id_rol" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="nombre_rol" Type="varchar" MaxLength="50" Nullable="false" />
         </EntityType>
-        <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BDCAM.dbo.rol-tiene-permiso' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.rol-tiene-permiso' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="rol-tiene-permiso">
           <Key>
             <PropertyRef Name="id_rol" />
@@ -193,8 +193,8 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.rol-tiene-permiso' no tiene defini
           <Property Name="color_textura_piel" Type="varchar" MaxLength="50" />
           <Property Name="estatura" Type="varchar" MaxLength="50" />
         </EntityType>
-        <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BDCAM.dbo.telefono-tutores' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.telefono-tutores' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="telefono-tutores">
           <Key>
             <PropertyRef Name="id_tutor" />
@@ -228,8 +228,8 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.telefono-tutores' no tiene definid
           <Property Name="calle_trabajo_tutor" Type="varchar" MaxLength="30" Nullable="false" />
           <Property Name="numero_trabajo_tutor" Type="varchar" MaxLength="30" Nullable="false" />
         </EntityType>
-        <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BDCAM.dbo.tutor-alumno' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.tutor-alumno' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="tutor-alumno">
           <Key>
             <PropertyRef Name="id_tutor" />
@@ -246,8 +246,8 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.tutor-alumno' no tiene definida ni
           <Property Name="nombre" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="contraseña" Type="varchar" MaxLength="50" Nullable="false" />
         </EntityType>
-        <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BDCAM.dbo.usuario-tiene-rol' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="usuario-tiene-rol">
           <Key>
             <PropertyRef Name="id_usuario" />
@@ -607,6 +607,8 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.usuario-tiene-rol' no tiene defini
           <Parameter Name="id_alumno" Type="int" Mode="In" />
         </Function>
         <Function Name="SP_ListaAlumnos" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_ListaAlumnos1" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_ListaAlumnos2" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <Function Name="SP_ListaDiscapacidad" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="id_alumno" Type="int" Mode="In" />
         </Function>
@@ -1240,6 +1242,8 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.usuario-tiene-rol' no tiene defini
             <Parameter Name="imagen_alumno" Mode="In" Type="Binary" />
             <Parameter Name="nombre" Mode="In" Type="String" />
           </FunctionImport>
+          <FunctionImport Name="SP_ListaAlumnos1" ReturnType="Collection(BDCAMModel.SP_ListaAlumnos1_Result)" />
+          <FunctionImport Name="SP_ListaAlumnos2" ReturnType="Collection(BDCAMModel.SP_ListaAlumnos2_Result)" />
         </EntityContainer>
         <ComplexType Name="SP_FichaTecnicaAlumno_Result">
           <Property Type="String" Name="nombre" Nullable="false" MaxLength="30" />
@@ -1297,7 +1301,7 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.usuario-tiene-rol' no tiene defini
           <Property Type="String" Name="nombre" Nullable="false" MaxLength="30" />
           <Property Type="String" Name="apellido_paterno" Nullable="false" MaxLength="30" />
           <Property Type="String" Name="apellido_materno" Nullable="false" MaxLength="30" />
-          <Property Type="String" Name="telefono_personal_alumno" Nullable="true" MaxLength="10" />
+          <Property Type="String" Name="telefono_contacto" Nullable="false" MaxLength="30" />
         </ComplexType>
         <ComplexType Name="SP_ListaDiscapacidad_Result">
           <Property Type="Int32" Name="id_cartilla_medica" Nullable="false" />
@@ -1417,6 +1421,20 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.usuario-tiene-rol' no tiene defini
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <ComplexType Name="SP_ListaAlumnos1_Result">
+          <Property Type="Int32" Name="id_alumno" Nullable="false" />
+          <Property Type="String" Name="nombre" Nullable="false" MaxLength="30" />
+          <Property Type="String" Name="telefono_contacto" Nullable="false" MaxLength="30" />
+          <Property Type="String" Name="apellido_paterno" Nullable="false" MaxLength="30" />
+          <Property Type="String" Name="apellido_materno" Nullable="false" MaxLength="30" />
+        </ComplexType>
+        <ComplexType Name="SP_ListaAlumnos2_Result">
+          <Property Type="Int32" Name="id_alumno" Nullable="false" />
+          <Property Type="String" Name="nombre" Nullable="false" MaxLength="30" />
+          <Property Type="String" Name="telefono_contacto" Nullable="false" MaxLength="30" />
+          <Property Type="String" Name="apellido_paterno" Nullable="false" MaxLength="30" />
+          <Property Type="String" Name="apellido_materno" Nullable="false" MaxLength="30" />
+        </ComplexType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -1692,7 +1710,7 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.usuario-tiene-rol' no tiene defini
                 <ScalarProperty Name="nombre" ColumnName="nombre" />
                 <ScalarProperty Name="apellido_paterno" ColumnName="apellido_paterno" />
                 <ScalarProperty Name="apellido_materno" ColumnName="apellido_materno" />
-                <ScalarProperty Name="telefono_personal_alumno" ColumnName="telefono_personal_alumno" />
+                <ScalarProperty Name="telefono_contacto" ColumnName="telefono_contacto" />
               </ComplexTypeMapping>
             </ResultMapping>
           </FunctionImportMapping>
@@ -1779,6 +1797,28 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.usuario-tiene-rol' no tiene defini
             </EntityTypeMapping>
           </EntitySetMapping>
           <FunctionImportMapping FunctionImportName="SP_AltaImagenAlumno" FunctionName="BDCAMModel.Store.SP_AltaImagenAlumno" />
+          <FunctionImportMapping FunctionImportName="SP_ListaAlumnos1" FunctionName="BDCAMModel.Store.SP_ListaAlumnos1">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="BDCAMModel.SP_ListaAlumnos1_Result">
+                <ScalarProperty Name="id_alumno" ColumnName="id_alumno" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="telefono_contacto" ColumnName="telefono_contacto" />
+                <ScalarProperty Name="apellido_paterno" ColumnName="apellido_paterno" />
+                <ScalarProperty Name="apellido_materno" ColumnName="apellido_materno" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_ListaAlumnos2" FunctionName="BDCAMModel.Store.SP_ListaAlumnos2">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="BDCAMModel.SP_ListaAlumnos2_Result">
+                <ScalarProperty Name="id_alumno" ColumnName="id_alumno" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="telefono_contacto" ColumnName="telefono_contacto" />
+                <ScalarProperty Name="apellido_paterno" ColumnName="apellido_paterno" />
+                <ScalarProperty Name="apellido_materno" ColumnName="apellido_materno" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

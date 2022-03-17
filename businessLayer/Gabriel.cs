@@ -70,7 +70,7 @@ namespace businessLayer
                 {
                     var.id_alumno = result.id_alumno;
                     var.nombre = result.nombre;
-                    var.telefono_contacto = result.telefono_personal_alumno;
+                    var.telefono_contacto = result.telefono_contacto;
                     mostrarAlergias = listaAlumnos.ListaAlergias(result.id_alumno);
                     foreach (_1dataLayer.SP_ListaAlergia_Result a in mostrarAlergias)
                     {
@@ -101,7 +101,7 @@ namespace businessLayer
         {
             try
             {
-                List<String> al = null;
+              
                 String alergias = null;
                 _1dataLayer.ConsultaAlumno listaAlumnos = new _1dataLayer.ConsultaAlumno();
                 List<_1dataLayer.SP_ListaAlumnos_Result> mostrarAlumnos = new List<_1dataLayer.SP_ListaAlumnos_Result>();
