@@ -104,7 +104,7 @@ namespace presentationLayer
             
 
 
-            foreach (var item in businessLayer.Martin.nombreGetid(Contenedor.id))
+            foreach (var item in businessLayer.BLEliminacionAlumno.nombreGetid(Contenedor.id))
             {
                 nombreLabel.Text = item.nombre;
             }
@@ -192,7 +192,7 @@ namespace presentationLayer
             if (!nombreAlumnoTextBox.Text.Equals("") && !apellidoPaternoAlumnoTextBox.Text.Equals("") && !apellidoMaternoAlumnoTextBox.Text.Equals(""))
             {
                 MessageBox.Show("MODIFICACION EXITOSA!");
-                businessLayer.Martin.ModAlumno(cicloEscolarTextBox.Text,
+                businessLayer.BLEliminacionAlumno.ModAlumno(cicloEscolarTextBox.Text,
                                               nombreAlumnoTextBox.Text,
                                               apellidoPaternoAlumnoTextBox.Text,
                                               apellidoMaternoAlumnoTextBox.Text,
@@ -231,15 +231,15 @@ namespace presentationLayer
 
         private void loaddata()
         {
-            foreach (var item in businessLayer.Martin.alergiasGet())
+            foreach (var item in businessLayer.BLEliminacionAlumno.alergiasGet())
             {
                 alergiasCombobox.Items.Add(item.alergia);
             }
-            foreach (var item in businessLayer.Martin.alergiasGet())
+            foreach (var item in businessLayer.BLEliminacionAlumno.alergiasGet())
             {
                 enfermedadesCombobox.Items.Add(item.alergia);
             }
-            foreach (var item in businessLayer.Martin.alergiasGet())
+            foreach (var item in businessLayer.BLEliminacionAlumno.alergiasGet())
             {
                 discapacidadesCombobox.Items.Add(item.alergia);
             }

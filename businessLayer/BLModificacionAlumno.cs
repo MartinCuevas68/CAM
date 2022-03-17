@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace businessLayer
 {
-    class Emanuel
+    class BLModificacionAlumno
     {
         /*//Modificacion
         public static void ModColaborador(int id, string nombre, string telefono, string ncuenta)

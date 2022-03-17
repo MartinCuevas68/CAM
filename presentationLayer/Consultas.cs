@@ -137,7 +137,7 @@ namespace presentationLayer
                 if (confirm == DialogResult.Yes)
                 {
 
-                    businessLayer.Martin.EliminarColaborador(id);
+                    businessLayer.BLEliminacionAlumno.EliminarColaborador(id);
 
                     altaDataGridView.DataSource = businessLayer.Gabriel.alumnosGet();
 

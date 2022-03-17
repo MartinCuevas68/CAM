@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace businessLayer
 {
-    public class Martin
+    public class BLEliminacionAlumno
     {
 
         public static void EliminarColaborador(int id)

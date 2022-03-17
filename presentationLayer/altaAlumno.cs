@@ -590,7 +590,7 @@ namespace presentationLayer
             if (!nombreAl.Text.Equals("") && !apellidoP.Text.Equals("") && !apellidoM.Text.Equals(""))
             {
                 //MessageBox.Show("REGISTRO EXITOSO!");
-                businessLayer.Hueso.SetAlumno(cicloEsc.Text,
+                businessLayer.BLAltaAlumno.SetAlumno(cicloEsc.Text,
                                               nombreAl.Text,
                                               apellidoP.Text,
                                               apellidoM.Text,
@@ -607,7 +607,7 @@ namespace presentationLayer
                                               canalizado.Text
                                               );
 
-                businessLayer.Hueso.SetTutor(nombreT.Text,
+                businessLayer.BLAltaAlumno.SetTutor(nombreT.Text,
                                              apellidoPT.Text,
                                              apellidoMT.Text,
                                              coloniaT.Text,
@@ -618,7 +618,7 @@ namespace presentationLayer
                                              calle_trabajo_tutor,
                                              numero_trabajo_tutor);
 
-                businessLayer.Hueso.SetInfoMedAlumno(servMedico.Text,
+                businessLayer.BLAltaAlumno.SetInfoMedAlumno(servMedico.Text,
                                                      grupoSanguineo.Text,
                                                      telefono.Text,
                                                      peso,
