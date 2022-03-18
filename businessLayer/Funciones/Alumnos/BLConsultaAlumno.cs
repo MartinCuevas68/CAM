@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace businessLayer
 {
-    public class Gabriel
+    public class BLConsultaAlumno
     {
         /*public static List<_1dataLayer.alumnoDTO> alumnosGet()
         {

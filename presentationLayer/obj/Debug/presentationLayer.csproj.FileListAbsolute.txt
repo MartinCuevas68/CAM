@@ -293,3 +293,14 @@ C:\Users\galle\source\repos\CAM3\presentationLayer\obj\Debug\presentationLayer.f
 C:\Users\galle\source\repos\CAM3\presentationLayer\obj\Debug\presentationLayer.imprimirFormatos.resources
 F:\Github\UABC\CAM\presentationLayer\obj\Debug\presentationLayer.ConsultaAlumno.resources
 F:\Github\UABC\CAM\presentationLayer\obj\Debug\presentationLayer.imprimirFormatosAlumno.resources
+C:\Users\ferna\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.csproj.AssemblyReference.cache
+C:\Users\ferna\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.altaAlumno.resources
+C:\Users\ferna\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.ConsultaAlumno.resources
+C:\Users\ferna\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.fichaTecnica.resources
+C:\Users\ferna\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.imprimirFormatosAlumno.resources
+C:\Users\ferna\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.modificacionesAlumno.resources
+C:\Users\ferna\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.Properties.Resources.resources
+C:\Users\ferna\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.csproj.GenerateResource.cache
+C:\Users\ferna\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.csproj.CoreCompileInputs.cache
+C:\Users\ferna\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.exe
+C:\Users\ferna\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.pdb
