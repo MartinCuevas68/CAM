@@ -680,7 +680,7 @@ namespace presentationLayer
                             oImage.id_alumno = 6;
                             oImage.imagen = archivo;
                             oImage.nombre = openFileDialog1.FileName;
-                            _1dataLayer.DLAltaAlumno.AltaImagenAlumno(oImage);
+                            businessLayer.BLAltaAlumno.SetFotoAlumno(oImage);
                             
                             //db.SaveChanges();
                         }

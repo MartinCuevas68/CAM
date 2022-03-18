@@ -144,6 +144,11 @@ namespace businessLayer
             }
         }
 
+        public static void SetFotoAlumno(_1dataLayer.imagenalumnoDTO foto)
+        {
+            foto.id_alumno = id_alumno;
+            _1dataLayer.DLAltaAlumno.AltaImagenAlumno(foto);
+        }
         //Altas Discapacidad
        /* public static void SetDiscapacidades(string discapacidad)
         {
