@@ -28,7 +28,7 @@ namespace presentationLayer
 
         private void Consultas_Load(object sender, EventArgs e)
         {
-            altaDataGridView.DataSource = businessLayer.Gabriel.alumnosGet();
+            altaDataGridView.DataSource = businessLayer.BLConsultaAlumno.alumnosGet();
 
             altaDataGridView.AllowUserToOrderColumns = true;
             altaDataGridView.AllowUserToResizeColumns = true;
@@ -139,7 +139,7 @@ namespace presentationLayer
 
                     businessLayer.BLEliminacionAlumno.EliminarColaborador(id);
 
-                    altaDataGridView.DataSource = businessLayer.Gabriel.alumnosGet();
+                    altaDataGridView.DataSource = businessLayer.BLConsultaAlumno.alumnosGet();
 
                     MessageBox.Show("Eliminado correctamente");
 

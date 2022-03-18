@@ -16,7 +16,7 @@ namespace businessLayer
 
         //Altas alumno
 
-        public static void SetAlumno(string cicloEsc, string nombreAl, string apellidoP, string apellidoM,
+        public static void SetAlumno2(string cicloEsc, string nombreAl, string apellidoP, string apellidoM,
             DateTime fechaNa, string añosCum, string curp, string estado, string ciudad, string colonia,
             string calle, string numeroCasa, string telPersonal, string escuelaP, string canalizado)
         {
@@ -52,7 +52,7 @@ namespace businessLayer
         }
 
         //Altas tutor
-        public static void SetTutor(string nombreT, string apellidoPT, string apellidoMT, string coloniaT, string calleT, string numeroCasaT,
+        public static void SetTutor2(string nombreT, string apellidoPT, string apellidoMT, string coloniaT, string calleT, string numeroCasaT,
             string ocupacion, string colonia_trabajo_tutor, string calle_trabajo_tutor, string numero_trabajo_tutor)
         //, string telCasaT, string telMovilT, string telTrabajoT
         {
@@ -116,7 +116,7 @@ namespace businessLayer
 
 
         //Altas información médica del alumno
-        public static void SetInfoMedAlumno(string servMedico, string grupoSanguineo, string telefono, string peso, string color_textura_piel, string estatura)
+        public static void SetInfoMedAlumno2(string servMedico, string grupoSanguineo, string telefono, string peso, string color_textura_piel, string estatura)
         {
             //byte[] x = { (byte)204, 29, (byte)207, (byte)217 };
             //int y = 1;
@@ -130,9 +130,11 @@ namespace businessLayer
                 tablita.telefono_contacto = telefono;
                 tablita.genero = null;
                 tablita.peso = 82;
-                tablita.color_textura_piel = "";
+                tablita.color_textura_piel = "aaa";
                 tablita.estatura = 1.98;
                 id_medica = _1dataLayer.DLAltaAlumno.Altacartilla(tablita);
+                
+                Console.WriteLine(id_medica+" "+ id_alumno+" "+ id_tutor);
                 _1dataLayer.DLAltaAlumno.Altaalumnocartilla(id_alumno, id_medica);
                 _1dataLayer.DLAltaAlumno.Altaalumnotutor(id_alumno, id_tutor);
             }
