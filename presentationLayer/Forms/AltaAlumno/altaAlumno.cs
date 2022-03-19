@@ -534,39 +534,103 @@ namespace presentationLayer
 
         private void siguiente1Button_Click(object sender, EventArgs e)
         {
-            informacionGeneralAlumno.Visible = false;
-            informacionGeneralAlumno2.Visible = true;
 
-            regresarMenuButton.Visible = false;
-            regresarButton.Visible = true;
+            if (nombreAl.Text.Equals("") || apellidoP.Text.Equals(""))
+            {
+                MessageBox.Show("¡No se ha ingresado el nombre completo del alumno!", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else {
+                if (curp.Text.Equals("")) { 
+                    MessageBox.Show("¡No se ha ingresado la CURP del alumno!", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }else {
+                    if (calle.Text.Equals("")) {
+                        MessageBox.Show("¡No se ha ingresado la calle del alumno!", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }else { 
+                        if (numeroCasa.Text.Equals("")) {
+                            MessageBox.Show("¡No se ha ingresado el numero de casa del alumno!", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }else {
+                            if (colonia.Text.Equals("")) {
+                                MessageBox.Show("¡No se ha ingresado la colonia del alumno!", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            }else {
+                                if (ciudad.Text.Equals("")) {
+                                    MessageBox.Show("¡No se ha ingresado la ciudad del alumno!", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                }else {
+                                    if (estado.Text.Equals("")) {
+                                        MessageBox.Show("¡No se ha ingresado el estado del alumno!", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                    }else {
+                                        if (fotoAl.Image == null){
+                                            MessageBox.Show("¡No puedes dar de alta a este alumno sin una foto", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                        }else { 
+                                            informacionGeneralAlumno.Visible = false;
+                                            informacionGeneralAlumno2.Visible = true;
 
-            siguiente1Button.Visible = false;
-            siguiente2Button.Visible = true;
+                                            regresarMenuButton.Visible = false;
+                                            regresarButton.Visible = true;
+
+                                            siguiente1Button.Visible = false;
+                                            siguiente2Button.Visible = true;   
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
 
 
         private void siguiente2Button_Click(object sender, EventArgs e)
         {
-            informacionGeneralAlumno2.Visible = false;
-            informacionTutor.Visible = true;
+            if (canalizado.Text.Equals("")) { 
+                MessageBox.Show("¡No se ha respondido el campo \"Canalizado por\" ", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }else { 
+                if (cicloEsc.Text.Equals("")) { 
+                    MessageBox.Show("¡No se ha ingresado el ciclo escolar", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }else { 
+                    informacionGeneralAlumno2.Visible = false;
+                    informacionTutor.Visible = true;
 
-            infGeneralAlLabel.Visible = false;
-            infoTutorLabel.Visible = true;
+                    infGeneralAlLabel.Visible = false;
+                    infoTutorLabel.Visible = true;
 
-            siguiente2Button.Visible = false;
-            siguiente3Button.Visible = true;
+                    siguiente2Button.Visible = false;
+                    siguiente3Button.Visible = true;
+                }
+            }
+
         }
 
         private void siguiente3Button_Click(object sender, EventArgs e)
         {
-            informacionTutor.Visible = false;
-            informacionMedicaAlumnoGroupBox.Visible = true;
+            if (nombreT.Text.Equals("") || apellidoPT.Text.Equals("")) { 
+                MessageBox.Show("¡No se ha ingresado el nombre completo del tutor!", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }else { 
+                if (calleT.Text.Equals("")) { 
+                    MessageBox.Show("¡No se ha ingresado la calle del tutor!", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }else { 
+                    if (numeroCasaT.Text.Equals("")) { 
+                         MessageBox.Show("¡No se ha ingresado el numero de casa del tutor!", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }else { 
+                        if (coloniaT.Text.Equals("")) { 
+                            MessageBox.Show("¡No se ha ingresado la colonia del tutor!", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }else { 
+                            if (telCasaT.Text.Equals("") && telMovilT.Text.Equals("") && telTrabajoT.Text.Equals("")) { 
+                                MessageBox.Show("¡Ingresar al menos un telefono de contacto!", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            }else { 
+                                informacionTutor.Visible = false;
+                                informacionMedicaAlumnoGroupBox.Visible = true;
 
-            infoTutorLabel.Visible = false;
-            informacionMedLabel.Visible = true;
+                                infoTutorLabel.Visible = false;
+                                informacionMedLabel.Visible = true;
 
-            siguiente3Button.Visible = false;
-            realizarAltaButton.Visible = true;
+                                siguiente3Button.Visible = false;
+                                realizarAltaButton.Visible = true;
+                            }
+                        }
+                    }
+                }
+            }
         }
 
         //Cargar y Mostrar Foto Alumno ALTA ALUMNO
@@ -586,44 +650,7 @@ namespace presentationLayer
         {
             string colonia_trabajo_tutor = "", calle_trabajo_tutor = "", numero_trabajo_tutor = "";
             string peso = "", color_textura_piel = "", estatura = "", discapacidad = "", enfermedades = "", alergias = "";
-
-            if (!nombreAl.Text.Equals("") && !apellidoP.Text.Equals("") && !apellidoM.Text.Equals(""))
-            {
-                //MessageBox.Show("REGISTRO EXITOSO!");
-                businessLayer.BLAltaAlumno.SetAlumno(cicloEsc.Text,
-                                              nombreAl.Text,
-                                              apellidoP.Text,
-                                              apellidoM.Text,
-                                              fechaNa.Value,
-                                              añosCum.Text,
-                                              curp.Text,
-                                              estado.Text,
-                                              ciudad.Text,
-                                              colonia.Text,
-                                              calle.Text,
-                                              numeroCasa.Text,
-                                              telPersonal.Text,
-                                              escuelaP.Text,
-                                              canalizado.Text
-                                              );
-
-                businessLayer.BLAltaAlumno.SetTutor(nombreT.Text,
-                                             apellidoPT.Text,
-                                             apellidoMT.Text,
-                                             coloniaT.Text,
-                                             calleT.Text,
-                                             numeroCasaT.Text,
-                                             ocupacion.Text,
-                                             colonia_trabajo_tutor,
-                                             calle_trabajo_tutor,
-                                             numero_trabajo_tutor);
-
-                businessLayer.BLAltaAlumno.SetInfoMedAlumno(servMedico.Text,
-                                                     grupoSanguineo.Text,
-                                                     telefono.Text,
-                                                     peso,
-                                                     color_textura_piel,
-                                                     estatura);
+               
 
                 //businessLayer.Hueso.SetDiscapacidades(discapacidad);
 
@@ -636,24 +663,58 @@ namespace presentationLayer
                 //this.Hide();
                 //Consultas consultas = new Consultas();
                 //consultas.Show();
-
-                //Condición de que si no ingresa nombre de alumno y foto de alumno no le deja hacer la alta
-            if (fotoAl.Image == null)
-            {
-                MessageBox.Show("¡No puedes dar de alta a este alumno sin su NOMBRE COMPLETO!", "CAM - Alta Alumno", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
             
-            //Condición guardar foto alumno
-            if (fotoAl.Image == null)
-            {
-                DialogResult result = MessageBox.Show("¡Falta subir la foto del alumno! ¿Deseas realizar la alta de todos modos?", "CAM - Alta Alumno", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (result == DialogResult.Yes)
-                {
-                    //Aquí se puede ingresar el método para realizar la alta de alumno...
 
-                    //Guardar Foto alumno   **NO BORRAR LO QUE ESTÁ COMENTADO!!!!!**
-                    byte[] archivo = null;
+                        //Aquí se puede ingresar el método para realizar la alta de alumno...
+                if (servMedico.Text.Equals("")) {
+                    MessageBox.Show("¡Ingresar el servicio medico del alumno!", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }else { 
+                    if (grupoSanguineo.Text.Equals("")) { 
+                        MessageBox.Show("¡Ingresar el grupo sanguineo del alumno!", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }else { 
+                        if (telefono.Text.Equals("")) { 
+                            MessageBox.Show("¡Ingresar el telefono!", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }else { 
+                            //La validacion de Discapacidad, Enfermedad, Alergias y Tratamiento para que no se pueda hacer el alta sin dichos datos queda pendiente
+                            //Para poder hacer pruebas, ya que esos datos aun no funcionan
+
+                            businessLayer.BLAltaAlumno.SetAlumno2(cicloEsc.Text,
+                                                                 nombreAl.Text,
+                                                                 apellidoP.Text,
+                                                                 apellidoM.Text,
+                                                                 fechaNa.Value,
+                                                                 añosCum.Text,
+                                                                 curp.Text,
+                                                                 estado.Text,
+                                                                 ciudad.Text,
+                                                                 colonia.Text,
+                                                                 calle.Text,
+                                                                 numeroCasa.Text,
+                                                                 telPersonal.Text,
+                                                                 escuelaP.Text,
+                                                                 canalizado.Text
+                                                                 );
+
+                            businessLayer.BLAltaAlumno.SetTutor2(nombreT.Text,
+                                                                 apellidoPT.Text,
+                                                                 apellidoMT.Text,
+                                                                 coloniaT.Text,
+                                                                 calleT.Text,
+                                                                 numeroCasaT.Text,
+                                                                 ocupacion.Text,
+                                                                 colonia_trabajo_tutor,
+                                                                 calle_trabajo_tutor,
+                                                                 numero_trabajo_tutor);
+
+                            businessLayer.BLAltaAlumno.SetInfoMedAlumno2(servMedico.Text,
+                                                                         grupoSanguineo.Text,
+                                                                         telefono.Text,
+                                                                         peso,
+                                                                         color_textura_piel,
+                                                                         estatura);
+
+                        //Guardar Foto alumno   **NO BORRAR LO QUE ESTÁ COMENTADO!!!!!**
+                        byte[] archivo = null;
                     try
                     {
                         Stream myStream = openFileDialog1.OpenFile();
@@ -680,7 +741,7 @@ namespace presentationLayer
                             oImage.id_alumno = 6;
                             oImage.imagen = archivo;
                             oImage.nombre = openFileDialog1.FileName;
-                            _1dataLayer.DLAltaAlumno.AltaImagenAlumno(oImage);
+                            businessLayer.BLAltaAlumno.SetFotoAlumno(oImage);
                             
                             //db.SaveChanges();
                         }
@@ -690,17 +751,17 @@ namespace presentationLayer
                             return;
                         }
                     }
+                            this.Hide();
+                            ConsultaAlumno formConsulta = new ConsultaAlumno();
+                            formConsulta.Show();
+                        }
+                    }
                 }
-                if (result == DialogResult.No)
-                {
-                    return;
-                }
-            }
-        
             //Condición para permitirle al usuario si desea realizar otra alta o no
             //Si elige SI, se cierra la ventana de alta y se abre una nueva con los campos limpios
             //Si elige NO, se cierra la ventana de alta y se abre la ventana de consultas
-            DialogResult dr = MessageBox.Show("Alta realizada con exito! Deseas realizar otra alta?", "CAM - Alta ALumno", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            
+            /*DialogResult dr = MessageBox.Show("Alta realizada con exito! Deseas realizar otra alta?", "CAM - Alta ALumno", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
             if (dr == DialogResult.Yes)
             {
                 this.Hide();
@@ -711,13 +772,7 @@ namespace presentationLayer
                 this.Hide();
                 ConsultaAlumno formConsulta = new ConsultaAlumno();
                 formConsulta.Show();
-            }
-                
-            }
-            else
-            {
-                MessageBox.Show("NO PUEDES CREAR UN REGISTRO SIN NOMBRE COMPLETO DEL ALUMNO!");
-            }
+            }*/
         }
 
         private void eliminarTratamientoButton_Click(object sender, EventArgs e)

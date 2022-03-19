@@ -51,7 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Funciones\Alumnos\BLConsultaAlumno.cs.cs" />
+    <Compile Include="Funciones\Alumnos\BLConsultaAlumno.cs" />
     <Compile Include="Funciones\Alumnos\BLAltaAlumno.cs" />
     <Compile Include="Funciones\Alumnos\BLModificacionAlumno.cs" />
     <Compile Include="Funciones\Alumnos\BLEliminacionAlumno.cs" />
