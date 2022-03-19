@@ -176,7 +176,6 @@ C:\Users\galle\source\repos\CAM3\presentationLayer\bin\Debug\EntityFramework.xml
 C:\Users\galle\source\repos\CAM3\presentationLayer\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\galle\source\repos\CAM3\presentationLayer\obj\Debug\presentationLayer.csproj.AssemblyReference.cache
 C:\Users\galle\source\repos\CAM3\presentationLayer\obj\Debug\presentationLayer.altaAlumno.resources
-C:\Users\galle\source\repos\CAM3\presentationLayer\obj\Debug\presentationLayer.Consultas.resources
 C:\Users\galle\source\repos\CAM3\presentationLayer\obj\Debug\presentationLayer.modificacionesAlumno.resources
 C:\Users\galle\source\repos\CAM3\presentationLayer\obj\Debug\presentationLayer.Properties.Resources.resources
 C:\Users\galle\source\repos\CAM3\presentationLayer\obj\Debug\presentationLayer.csproj.GenerateResource.cache
@@ -290,7 +289,6 @@ D:\Canela\Documents\GitHub\CAM\presentationLayer\obj\Debug\presentationLayer.csp
 D:\Canela\Documents\GitHub\CAM\presentationLayer\obj\Debug\presentationLayer.exe
 D:\Canela\Documents\GitHub\CAM\presentationLayer\obj\Debug\presentationLayer.pdb
 C:\Users\galle\source\repos\CAM3\presentationLayer\obj\Debug\presentationLayer.fichaTecnica.resources
-C:\Users\galle\source\repos\CAM3\presentationLayer\obj\Debug\presentationLayer.imprimirFormatos.resources
 F:\Github\UABC\CAM\presentationLayer\obj\Debug\presentationLayer.ConsultaAlumno.resources
 F:\Github\UABC\CAM\presentationLayer\obj\Debug\presentationLayer.imprimirFormatosAlumno.resources
 C:\Users\ferna\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.csproj.AssemblyReference.cache
@@ -318,3 +316,5 @@ C:\Users\ferna\source\repos\CAM\presentationLayer\bin\Debug\businessLayer.dll.co
 C:\Users\ferna\source\repos\CAM\presentationLayer\bin\Debug\EntityFramework.xml
 C:\Users\ferna\source\repos\CAM\presentationLayer\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\ferna\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.csproj.CopyComplete
+C:\Users\galle\source\repos\CAM3\presentationLayer\obj\Debug\presentationLayer.ConsultaAlumno.resources
+C:\Users\galle\source\repos\CAM3\presentationLayer\obj\Debug\presentationLayer.imprimirFormatosAlumno.resources
