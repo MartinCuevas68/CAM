@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 
@@ -257,6 +258,6 @@ namespace presentationLayer
             tt.SetToolTip(formato1, "LIMPIAR ESPACIOS");
             tt.SetToolTip(formato2, "LIMPIAR ESPACIOS");
             tt.SetToolTip(formato3, "LIMPIAR ESPACIOS");
-        }
+        }  
     }
 }
