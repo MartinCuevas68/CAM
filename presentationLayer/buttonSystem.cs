@@ -13,10 +13,10 @@ namespace presentationLayer
 {
     public class buttonSystem : Button
     {
-        private int borderSize;
+        private int borderSize = 0;
         private int borderRadius = 20;
         private Color borderColor = Color.Black;
-
+                
         [Category("R] Opcional")]
         public int BorderRadius
         {
