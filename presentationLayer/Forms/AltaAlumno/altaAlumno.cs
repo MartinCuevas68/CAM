@@ -35,7 +35,7 @@ namespace presentationLayer
             infoTutor(nombreTLabel, nombreT,nombreTPanel, apellidoPTLabel, apellidoPT,apellidoPTPanel, apellidoMTLabel, apellidoMT,apellidoMTPanel, direccionTLabel, 
                 calleTLabel, calleT,calleTPanel, numeroCasaTLabel,
                 numeroCasaT,numeroCasaTPanel, coloniaTLabel, coloniaT,coloniaTPanel, infContactoLabel,telCasaTLabel,telCasaT,telCasaTPanel,telMovilTLabel,telMovilT,telMovilTPanel,
-                telTrabajoTLabel,telTrabajoT,telTrabajoTPanel,ocupacionLabel,ocupacion,ocupacionTPanel, direccionRButton);
+                telTrabajoTLabel,telTrabajoT,telTrabajoTPanel,ocupacionLabel,ocupacion,ocupacionTPanel, direccionCheckBox);
 
             infoMedica(servMedicoLabel, servMedico,servMedicoPanel, grupoSanguineoLabel, grupoSanguineo,grupoSanguineoPanel, grupoSanguineoComboBox, telefonoLabel,
                 telefono,telefonoPanel,discapacidadLabel,discapacidad,discapacidadPanel,enfermedadesLabel, enfermedades,enfermedadesPanel,
@@ -196,7 +196,7 @@ namespace presentationLayer
             Label direccion, Label calleL, TextBox calle, Panel calleP, Label numL, TextBox num, Panel numP, Label coloniaL, TextBox colonia, Panel coloniaP, 
             Label infoCon, Label telCasaL,
             TextBox telCasa, Panel telCasaP, Label telMovilL, TextBox telMovil, Panel telMovilP, Label telTrabajoL, TextBox telTrabajo, Panel telTrabajoP, 
-            Label ocupacionL, TextBox ocupacion, Panel ocupacionP, RadioButton mismaDireccion)
+            Label ocupacionL, TextBox ocupacion, Panel ocupacionP, CheckBox mismaDireccion)
         {
            
             nombreL.Location = new Point(50, 50);
@@ -214,8 +214,9 @@ namespace presentationLayer
             direccion.Location = new Point(650, 45);
 
             mismaDireccion.Location = new Point(770, 45);
+            mismaDireccion.Checked = false;
 
-            calleL.Location = new Point(650, 90);
+           calleL.Location = new Point(650, 90);
             calleP.Location = new Point(740, 90);
             calleP.Size = new Size(300, 50);
 
