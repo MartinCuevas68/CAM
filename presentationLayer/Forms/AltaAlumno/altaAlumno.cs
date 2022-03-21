@@ -31,14 +31,14 @@ namespace presentationLayer
             infoGen2(telPersonalLabel, telPersonal, telPersonalPanel, escuelaPLabel, escuelaP, escuelaPPanel, canalizadoLabel, canalizado, canalizadoPanel, cicloEscLabel, cicloEsc, cicloEscPanel, tipoIngLabel,
                 tipoIngresoGroupBox);
 
-            infoTutor(nombreTLabel, nombreT, nombreTPanel, apellidoPTLabel, apellidoPT, apellidoPTPanel, apellidoMTLabel, apellidoMT, apellidoMTPanel, direccionTLabel,
-                calleTLabel, calleT, calleTPanel, numeroCasaTLabel,
-                numeroCasaT, numeroCasaTPanel, coloniaTLabel, coloniaT, coloniaTPanel, infContactoLabel, telCasaTLabel, telCasaT, telCasaTPanel, telMovilTLabel, telMovilT, telMovilTPanel,
-                telTrabajoTLabel, telTrabajoT, telTrabajoTPanel, ocupacionLabel, ocupacion, ocupacionTPanel);
+            infoTutor(nombreTLabel, nombreT,nombreTPanel, apellidoPTLabel, apellidoPT,apellidoPTPanel, apellidoMTLabel, apellidoMT,apellidoMTPanel, direccionTLabel, 
+                calleTLabel, calleT,calleTPanel, numeroCasaTLabel,
+                numeroCasaT,numeroCasaTPanel, coloniaTLabel, coloniaT,coloniaTPanel, infContactoLabel,telCasaTLabel,telCasaT,telCasaTPanel,telMovilTLabel,telMovilT,telMovilTPanel,
+                telTrabajoTLabel,telTrabajoT,telTrabajoTPanel,ocupacionLabel,ocupacion,ocupacionTPanel, direccionRButton);
 
-            infoMedica(servMedicoLabel, servMedico, servMedicoPanel, grupoSanguineoLabel, grupoSanguineo, grupoSanguineoPanel, telefonoLabel,
-                telefono, telefonoPanel, discapacidadLabel, discapacidad, discapacidadPanel, enfermedadesLabel, enfermedades, enfermedadesPanel,
-                alergiasLabel, alergias, alergiasPanel, tratamientoLabel, tratamiento, tratamientoPanel, eliminarTratamientoButton, discapacidadesCombobox, enfermedadesCombobox, alergiasCombobox,
+            infoMedica(servMedicoLabel, servMedico,servMedicoPanel, grupoSanguineoLabel, grupoSanguineo,grupoSanguineoPanel, grupoSanguineoComboBox, telefonoLabel,
+                telefono,telefonoPanel,discapacidadLabel,discapacidad,discapacidadPanel,enfermedadesLabel, enfermedades,enfermedadesPanel,
+                alergiasLabel, alergias,alergiasPanel,tratamientoLabel,tratamiento,tratamientoPanel, eliminarTratamientoButton,discapacidadesCombobox,enfermedadesCombobox,alergiasCombobox,
                 eliminarDiscapacidadesButton,
                 eliminarEnfermedadButton, eliminarAlergiasButton);
 
@@ -201,8 +201,8 @@ namespace presentationLayer
             Label apellidoML, TextBox apellidoM, Panel apellidoMP,
             Label direccion, Label calleL, TextBox calle, Panel calleP, Label numL, TextBox num, Panel numP, Label coloniaL, TextBox colonia, Panel coloniaP,
             Label infoCon, Label telCasaL,
-            TextBox telCasa, Panel telCasaP, Label telMovilL, TextBox telMovil, Panel telMovilP, Label telTrabajoL, TextBox telTrabajo, Panel telTrabajoP,
-            Label ocupacionL, TextBox ocupacion, Panel ocupacionP)
+            TextBox telCasa, Panel telCasaP, Label telMovilL, TextBox telMovil, Panel telMovilP, Label telTrabajoL, TextBox telTrabajo, Panel telTrabajoP, 
+            Label ocupacionL, TextBox ocupacion, Panel ocupacionP, RadioButton mismaDireccion)
         {
 
             nombreL.Location = new Point(50, 50);
@@ -218,6 +218,8 @@ namespace presentationLayer
             apellidoMP.Size = new Size(300, 50);
 
             direccion.Location = new Point(650, 45);
+
+            mismaDireccion.Location = new Point(770, 45);
 
             calleL.Location = new Point(650, 90);
             calleP.Location = new Point(740, 90);
@@ -252,7 +254,7 @@ namespace presentationLayer
 
         //INFORMACION MEDICA
         private void infoMedica(Label servMedicoL, TextBox servMed, Panel servMedP, Label grupoSanL, TextBox grupoSan, Panel grupoSanP,
-            Label telL, TextBox tel, Panel telP, Label discapacidadL, RichTextBox discapacidad, Panel discapacidadP,
+            ComboBox grupoSanCB, Label telL, TextBox tel, Panel telP, Label discapacidadL, RichTextBox discapacidad, Panel discapacidadP,
             Label enfermedadL, RichTextBox enfermedad, Panel enfermedadP, Label alergiaL, RichTextBox alergia, Panel alergiaP,
             Label tratamientoL, RichTextBox tratamiento, Panel tratamientoP, Button eliTra,
             ComboBox discapacidadCB, ComboBox enfermedadCB, ComboBox alergiaCB, Button eliDisc, Button eliEnf, Button eliAle)
@@ -264,6 +266,9 @@ namespace presentationLayer
             grupoSanL.Location = new Point(530, 50);
             grupoSanP.Location = new Point(700, 50);
             grupoSanP.Size = new Size(110, 50);
+            grupoSanP.Visible = false;
+            grupoSanCB.Location = new Point(700, 50);
+            grupoSanCB.Size = new Size(110, 50);
 
             telL.Location = new Point(830, 50);
             telP.Location = new Point(1030, 50);
