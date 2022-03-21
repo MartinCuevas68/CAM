@@ -16,31 +16,32 @@ namespace presentationLayer
     {
         public altaAlumno()
         {
-
+ 
             InitializeComponent();
             loaddata();
-
+            
+           
             //CODIGO NUEVO
-            centrarLabel(altaalumnoLabel, infoTutorLabel, informacionMedLabel, logo, infGeneralAlLabel, informacionGeneralAlumno,
-                informacionGeneralAlumno2, informacionTutor, informacionMedicaAlumnoGroupBox);
+            centrarLabel(altaalumnoLabel,infoTutorLabel, informacionMedLabel,logo, infGeneralAlLabel,informacionGeneralAlumno,
+                informacionGeneralAlumno2,informacionTutor,informacionMedicaAlumnoGroupBox);
 
-            infoGen(nombreAlLabel, nombreAl, nombreAlPanel, apellidoPLabel, apellidoP, apellidoPPanel, apellidoMLabel, apellidoM, apellidoMPanel, fechaNaLabel, fechaNa, añosCumLabel,
-                añosCum, añosCumPanel, curpLabel, curp, curpPanel, direccionAlumnoLabel, calleLabel, calle, callePanel, numeroCasaLabel, numeroCasa, numeroCasaPanel, coloniaLabel, colonia, coloniaPanel, lugarNaLabel,
-                ciudadLabel, ciudad, ciudadPanel, estadoLabel, estado, estadoPanel, fotoAl, fotoBtn);
+            infoGen(nombreAlLabel, nombreAl, nombreAlPanel, apellidoPLabel, apellidoP, apellidoPPanel, apellidoMLabel, apellidoM, apellidoMPanel, fechaNaLabel, fechaNa, añosCumLabel, 
+                añosCum,añosCumPanel, curpLabel,curp,curpPanel, direccionAlumnoLabel,calleLabel, calle,callePanel, numeroCasaLabel, numeroCasa,numeroCasaPanel, coloniaLabel,colonia,coloniaPanel,lugarNaLabel,
+                ciudadLabel,ciudad,ciudadPanel,estadoLabel,estado,estadoPanel,fotoAl,fotoBtn);
 
-            infoGen2(telPersonalLabel, telPersonal, telPersonalPanel, escuelaPLabel, escuelaP, escuelaPPanel, canalizadoLabel, canalizado, canalizadoPanel, cicloEscLabel, cicloEsc, cicloEscPanel, tipoIngLabel,
+            infoGen2(telPersonalLabel, telPersonal,telPersonalPanel, escuelaPLabel, escuelaP,escuelaPPanel, canalizadoLabel, canalizado,canalizadoPanel, cicloEscLabel, cicloEsc,cicloEscPanel,tipoIngLabel,
                 tipoIngresoGroupBox);
 
-            infoTutor(nombreTLabel, nombreT, nombreTPanel, apellidoPTLabel, apellidoPT, apellidoPTPanel, apellidoMTLabel, apellidoMT, apellidoMTPanel, direccionTLabel,
-                calleTLabel, calleT, calleTPanel, numeroCasaTLabel,
-                numeroCasaT, numeroCasaTPanel, coloniaTLabel, coloniaT, coloniaTPanel, infContactoLabel, telCasaTLabel, telCasaT, telCasaTPanel, telMovilTLabel, telMovilT, telMovilTPanel,
-                telTrabajoTLabel, telTrabajoT, telTrabajoTPanel, ocupacionLabel, ocupacion, ocupacionTPanel);
+            infoTutor(nombreTLabel, nombreT,nombreTPanel, apellidoPTLabel, apellidoPT,apellidoPTPanel, apellidoMTLabel, apellidoMT,apellidoMTPanel, direccionTLabel, 
+                calleTLabel, calleT,calleTPanel, numeroCasaTLabel,
+                numeroCasaT,numeroCasaTPanel, coloniaTLabel, coloniaT,coloniaTPanel, infContactoLabel,telCasaTLabel,telCasaT,telCasaTPanel,telMovilTLabel,telMovilT,telMovilTPanel,
+                telTrabajoTLabel,telTrabajoT,telTrabajoTPanel,ocupacionLabel,ocupacion,ocupacionTPanel, direccionRButton);
 
-            infoMedica(servMedicoLabel, servMedico, servMedicoPanel, grupoSanguineoLabel, grupoSanguineo, grupoSanguineoPanel, telefonoLabel,
-                telefono, telefonoPanel, discapacidadLabel, discapacidad, discapacidadPanel, enfermedadesLabel, enfermedades, enfermedadesPanel,
-                alergiasLabel, alergias, alergiasPanel, tratamientoLabel, tratamiento, tratamientoPanel, eliminarTratamientoButton, discapacidadesCombobox, enfermedadesCombobox, alergiasCombobox,
+            infoMedica(servMedicoLabel, servMedico,servMedicoPanel, grupoSanguineoLabel, grupoSanguineo,grupoSanguineoPanel, grupoSanguineoComboBox, telefonoLabel,
+                telefono,telefonoPanel,discapacidadLabel,discapacidad,discapacidadPanel,enfermedadesLabel, enfermedades,enfermedadesPanel,
+                alergiasLabel, alergias,alergiasPanel,tratamientoLabel,tratamiento,tratamientoPanel, eliminarTratamientoButton,discapacidadesCombobox,enfermedadesCombobox,alergiasCombobox,
                 eliminarDiscapacidadesButton,
-                eliminarEnfermedadButton, eliminarAlergiasButton);
+                eliminarEnfermedadButton,eliminarAlergiasButton);
 
             informacionGeneralAlumno.Visible = true;
             informacionGeneralAlumno2.Visible = false;
@@ -61,27 +62,20 @@ namespace presentationLayer
 
 
             altasBotonesParaNavegar(siguiente1Button, siguiente2Button, siguiente3Button, regresarButton, realizarAltaButton, regresarMenuButton);
-
-            //Este código autocompleta la edad alumno en el componente añosCum al iniciar la aplicación///
-            DateTime fechaActualI = DateTime.Today;
-            int anioI = fechaNa.Value.Year;
-            int edadI = fechaActualI.Year - anioI;
-            String edadConvertidaI = edadI.ToString();
-            añosCum.Text = edadConvertidaI;
-            //////////////////////////////////////////////////////////////////////////////////////////////
+            
         }
 
         //CENTRAR TITULO
-        private void centrarLabel(Label nomLabel, Label infoTutorL, Label infoMedLabel, PictureBox logo, Label infGenLabel, GroupBox infoGeneral,
+        private void centrarLabel(Label nomLabel, Label infoTutorL, Label infoMedLabel, PictureBox logo, Label infGenLabel, GroupBox infoGeneral, 
             GroupBox infoGeneral2, GroupBox infoTutor, GroupBox infoMedica)
         {
             //tamaño pantalla
-
+            
             logo.Location = new Point(50, 20);
 
             //TITULO PRINCIPAL
             nomLabel.Location = new Point(620, 50);
-
+           
             //SUBTITULOS
             infGenLabel.Location = new Point(620, 120);
             infoTutorLabel.Location = new Point(670, 120);
@@ -101,10 +95,10 @@ namespace presentationLayer
             infoMedica.Size = new Size(1220, 440);
             infoMedica.Location = new Point(180, 180);
         }
-
+    
 
         //INFORMACION GENERAL ALUMNO
-        private void infoGen(Label nombreL, TextBox nombre, Panel nombreP, Label apellidoPL, TextBox apellidoP, Panel apellidoPP, Label apellidoML,
+        private void infoGen(Label nombreL, TextBox nombre, Panel nombreP, Label apellidoPL, TextBox apellidoP, Panel apellidoPP, Label apellidoML, 
             TextBox apellidoM, Panel apellidoMP,
             Label fechaNaL, DateTimePicker fechaNa, Label añosCumL, TextBox añosCum, Panel añosCumP, Label curpL, TextBox curp, Panel curpP,
             Label direccion, Label calleL,
@@ -112,7 +106,7 @@ namespace presentationLayer
             Label ciudadL, TextBox ciudad, Panel ciudadP, Label estadoL, TextBox estado, Panel estadoP, PictureBox foto, Button fotoB)
         {
 
-            foto.Location = new Point(1000, 50);
+            foto.Location = new Point(1000,50);
             foto.Size = new Size(200, 220);
             fotoB.Location = new Point(1000, 285);
             fotoB.Size = new Size(200, 45);
@@ -120,41 +114,41 @@ namespace presentationLayer
 
             nombreL.Location = new Point(50, 50);
             nombreP.Location = new Point(260, 50);
-            nombreP.Size = new Size(300, 45);
+            nombreP.Size = new Size(300,45);
             //nombreP.Padding = new Padding(2,2,2,2);
 
-            apellidoPL.Location = new Point(50, 110);
-            apellidoPP.Location = new Point(260, 110);
+            apellidoPL.Location = new Point(50,110);
+            apellidoPP.Location = new Point(260,110);
             apellidoPP.Size = new Size(300, 45);
 
-            apellidoML.Location = new Point(50, 170);
-            apellidoMP.Location = new Point(260, 170);
+            apellidoML.Location = new Point(50,170);
+            apellidoMP.Location = new Point(260,170);
             apellidoMP.Size = new Size(300, 45);
 
-            fechaNaL.Location = new Point(50, 230);
-            fechaNa.Location = new Point(260, 230);
+            fechaNaL.Location = new Point(50,230);
+            fechaNa.Location = new Point(260,230);
 
-            añosCumL.Location = new Point(50, 290);
-            añosCumP.Location = new Point(260, 290);
+            añosCumL.Location = new Point(50,290);
+            añosCumP.Location = new Point(260,290);
             añosCumP.Size = new Size(150, 45);
 
-            curpL.Location = new Point(50, 350);
-            curpP.Location = new Point(260, 350);
+            curpL.Location = new Point(50,350);
+            curpP.Location = new Point(260,350);
             curpP.Size = new Size(300, 45);
 
             //DIRECCION
             direccion.Location = new Point(650, 50);
 
-            calleL.Location = new Point(650, 110);
-            calleP.Location = new Point(740, 110);
+            calleL.Location = new Point(650,110);
+            calleP.Location = new Point(740,110);
             calleP.Size = new Size(240, 45);
 
-            numL.Location = new Point(650, 170);
-            numP.Location = new Point(740, 170);
+            numL.Location = new Point(650,170);
+            numP.Location = new Point(740,170);
             numP.Size = new Size(150, 45);
 
-            coloniaL.Location = new Point(650, 230);
-            coloniaP.Location = new Point(740, 230);
+            coloniaL.Location = new Point(650,230);
+            coloniaP.Location = new Point(740,230);
             coloniaP.Size = new Size(240, 45);
 
             //LUGAR NACIMIENTO
@@ -173,38 +167,38 @@ namespace presentationLayer
 
         //INFORMACION GENERAL ALUMNO 2
         private void infoGen2(Label telL, TextBox tel, Panel telP, Label escuelaPL, TextBox escuelaP, Panel escuelaPP, Label canalizadoL, TextBox canalizado, Panel canalizadoP, Label cicloL,
-            TextBox ciclo, Panel cicloP, Label tipoIng, GroupBox ingresos)
+            TextBox ciclo, Panel cicloP, Label tipoIng,GroupBox ingresos)
         {
             telL.Location = new Point(50, 50);
             telP.Location = new Point(280, 50);
             telP.Size = new Size(150, 45);
 
-            escuelaPL.Location = new Point(50, 110);
-            escuelaPP.Location = new Point(280, 110);
+            escuelaPL.Location = new Point(50,110);
+            escuelaPP.Location = new Point(280,110);
             escuelaPP.Size = new Size(250, 45);
 
-            canalizadoL.Location = new Point(50, 170);
-            canalizadoP.Location = new Point(280, 170);
+            canalizadoL.Location = new Point(50,170);
+            canalizadoP.Location = new Point(280,170);
             canalizadoP.Size = new Size(250, 45);
 
-            cicloL.Location = new Point(50, 230);
-            cicloP.Location = new Point(280, 230);
+            cicloL.Location = new Point(50,230);
+            cicloP.Location = new Point(280,230);
             cicloP.Size = new Size(150, 45);
 
-            tipoIng.Location = new Point(50, 290);
+            tipoIng.Location = new Point(50,290);
 
             ingresos.Location = new Point(50, 330);
         }
 
         //INFORMACION TUTOR
         private void infoTutor(Label nombreL, TextBox nombre, Panel nombreP, Label apellidoPL, TextBox apellidoP, Panel apellidoPP,
-            Label apellidoML, TextBox apellidoM, Panel apellidoMP,
-            Label direccion, Label calleL, TextBox calle, Panel calleP, Label numL, TextBox num, Panel numP, Label coloniaL, TextBox colonia, Panel coloniaP,
+            Label apellidoML, TextBox apellidoM,Panel apellidoMP,
+            Label direccion, Label calleL, TextBox calle, Panel calleP, Label numL, TextBox num, Panel numP, Label coloniaL, TextBox colonia, Panel coloniaP, 
             Label infoCon, Label telCasaL,
-            TextBox telCasa, Panel telCasaP, Label telMovilL, TextBox telMovil, Panel telMovilP, Label telTrabajoL, TextBox telTrabajo, Panel telTrabajoP,
-            Label ocupacionL, TextBox ocupacion, Panel ocupacionP)
+            TextBox telCasa, Panel telCasaP, Label telMovilL, TextBox telMovil, Panel telMovilP, Label telTrabajoL, TextBox telTrabajo, Panel telTrabajoP, 
+            Label ocupacionL, TextBox ocupacion, Panel ocupacionP, RadioButton mismaDireccion)
         {
-
+           
             nombreL.Location = new Point(50, 50);
             nombreP.Location = new Point(215, 50);
             nombreP.Size = new Size(300, 50);
@@ -219,6 +213,8 @@ namespace presentationLayer
 
             direccion.Location = new Point(650, 45);
 
+            mismaDireccion.Location = new Point(770, 45);
+
             calleL.Location = new Point(650, 90);
             calleP.Location = new Point(740, 90);
             calleP.Size = new Size(300, 50);
@@ -231,9 +227,9 @@ namespace presentationLayer
             coloniaP.Location = new Point(740, 210);
             coloniaP.Size = new Size(300, 50);
 
-            infoCon.Location = new Point(50, 250);
+            infoCon.Location = new Point(50,250);
 
-            telCasaL.Location = new Point(50, 290);
+            telCasaL.Location = new Point(50,290 );
             telCasaP.Location = new Point(215, 290);
             telCasaP.Size = new Size(150, 50);
 
@@ -252,25 +248,28 @@ namespace presentationLayer
 
         //INFORMACION MEDICA
         private void infoMedica(Label servMedicoL, TextBox servMed, Panel servMedP, Label grupoSanL, TextBox grupoSan, Panel grupoSanP,
-            Label telL, TextBox tel, Panel telP, Label discapacidadL, RichTextBox discapacidad, Panel discapacidadP,
+            ComboBox grupoSanCB, Label telL, TextBox tel, Panel telP, Label discapacidadL, RichTextBox discapacidad, Panel discapacidadP,
             Label enfermedadL, RichTextBox enfermedad, Panel enfermedadP, Label alergiaL, RichTextBox alergia, Panel alergiaP,
-            Label tratamientoL, RichTextBox tratamiento, Panel tratamientoP, Button eliTra,
-            ComboBox discapacidadCB, ComboBox enfermedadCB, ComboBox alergiaCB, Button eliDisc, Button eliEnf, Button eliAle)
+            Label tratamientoL, RichTextBox tratamiento, Panel tratamientoP,Button eliTra,
+            ComboBox discapacidadCB, ComboBox enfermedadCB, ComboBox alergiaCB,Button eliDisc, Button eliEnf, Button eliAle)
         {
             servMedicoL.Location = new Point(50, 50);
-            servMedP.Location = new Point(210, 50);
+            servMedP.Location = new Point(210,50);
             servMedP.Size = new Size(300, 50);
 
             grupoSanL.Location = new Point(530, 50);
             grupoSanP.Location = new Point(700, 50);
             grupoSanP.Size = new Size(110, 50);
+            grupoSanP.Visible = false;
+            grupoSanCB.Location = new Point(700, 50);
+            grupoSanCB.Size = new Size(110, 50);
 
             telL.Location = new Point(830, 50);
             telP.Location = new Point(1030, 50);
             telP.Size = new Size(150, 45);
 
             discapacidadL.Location = new Point(50, 150);
-            eliDisc.Location = new Point(290, 150);
+            eliDisc.Location = new Point(290,150);
             discapacidad.Location = new Point(50, 170);
             discapacidadCB.Location = new Point(50, 340);
             discapacidadP.Location = new Point(50, 180);
@@ -278,7 +277,7 @@ namespace presentationLayer
             discapacidadCB.Size = new Size(270, 60);
 
             enfermedadL.Location = new Point(340, 150);
-            eliEnf.Location = new Point(580, 150);
+            eliEnf.Location = new Point(580,150);
             enfermedad.Location = new Point(340, 210);
             enfermedadCB.Location = new Point(340, 340);
             enfermedadP.Location = new Point(340, 180);
@@ -286,7 +285,7 @@ namespace presentationLayer
             enfermedadCB.Size = new Size(270, 60);
 
             alergiaL.Location = new Point(630, 150);
-            eliAle.Location = new Point(870, 150);
+            eliAle.Location = new Point(870,150);
             alergia.Location = new Point(630, 210);
             alergiaCB.Location = new Point(630, 340);
             alergiaP.Location = new Point(630, 180);
@@ -294,7 +293,7 @@ namespace presentationLayer
             alergiaCB.Size = new Size(270, 60);
 
             tratamientoL.Location = new Point(920, 150);
-            eliTra.Location = new Point(1160, 150);
+            eliTra.Location = new Point(1160,150);
             tratamientoP.Location = new Point(920, 180);
             tratamientoP.Size = new Size(270, 150);
         }
@@ -388,7 +387,7 @@ namespace presentationLayer
         private void agregarEnfermedadesButton_Click(object sender, EventArgs e)
         {
             string informacion = this.enfermedadesCombobox.GetItemText(this.enfermedadesCombobox.SelectedItem);
-            enfermedades.Text = enfermedades.Text + informacion + "\n";
+            enfermedades.Text = enfermedades.Text+ informacion + "\n";
 
         }
 
@@ -451,7 +450,7 @@ namespace presentationLayer
         private void limpiarFormato3Button_Click(object sender, EventArgs e)
         {
             servMedico.Clear();
-
+        
             telefono.Clear();
             grupoSanguineo.Clear();
             //documentacionListBox.SetItemChecked = false; *CLAUDIA CAMBIARÁ ESTO POR UN CONJUNTO DE CHECKBUTTONS*
@@ -496,8 +495,7 @@ namespace presentationLayer
 
         private void regresarButton_Click_1(object sender, EventArgs e)
         {
-            if (informacionGeneralAlumno2.Visible == true)
-            {
+            if (informacionGeneralAlumno2.Visible == true) {
 
                 informacionGeneralAlumno.Visible = true;
                 informacionGeneralAlumno2.Visible = false;
@@ -508,8 +506,7 @@ namespace presentationLayer
                 siguiente1Button.Visible = true;
                 siguiente2Button.Visible = false;
             }
-            if (informacionTutor.Visible == true)
-            {
+            if (informacionTutor.Visible == true){
 
                 informacionGeneralAlumno2.Visible = true;
                 informacionTutor.Visible = false;
@@ -520,8 +517,7 @@ namespace presentationLayer
                 siguiente2Button.Visible = true;
                 siguiente3Button.Visible = false;
             }
-            if (informacionMedicaAlumnoGroupBox.Visible == true)
-            {
+            if (informacionMedicaAlumnoGroupBox.Visible == true) {
 
                 informacionTutor.Visible = true;
                 informacionMedicaAlumnoGroupBox.Visible = false;
@@ -543,474 +539,39 @@ namespace presentationLayer
 
         private void siguiente1Button_Click(object sender, EventArgs e)
         {
+            informacionGeneralAlumno.Visible = false;
+            informacionGeneralAlumno2.Visible = true;
 
-            int curple = curp.TextLength; //Variable int que guarda la longitud de caracteres del CURP
+            regresarMenuButton.Visible = false;
+            regresarButton.Visible = true;
 
-            if (nombreAl.Text.Equals("") || apellidoP.Text.Equals(""))
-            {
-                MessageBox.Show("¡No se ha ingresado el nombre completo del alumno!", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-            else
-            {
-                if (curp.Text.Equals(""))
-                {
-                    MessageBox.Show("¡No se ha ingresado la CURP del alumno!", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                }
-                else
-                {
-                    if (calle.Text.Equals(""))
-                    {
-                        MessageBox.Show("¡No se ha ingresado la calle del alumno!", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                    else
-                    {
-                        if (numeroCasa.Text.Equals(""))
-                        {
-                            MessageBox.Show("¡No se ha ingresado el numero de casa del alumno!", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        }
-                        else
-                        {
-                            if (colonia.Text.Equals(""))
-                            {
-                                MessageBox.Show("¡No se ha ingresado la colonia del alumno!", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                            }
-                            else
-                            {
-                                if (ciudad.Text.Equals(""))
-                                {
-                                    MessageBox.Show("¡No se ha ingresado la ciudad del alumno!", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                                }
-                                else
-                                {
-                                    if (estado.Text.Equals(""))
-                                    {
-                                        MessageBox.Show("¡No se ha ingresado el estado del alumno!", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                                    }
-                                    else
-                                    {
-                                        if (fotoAl.Image == null)
-                                        {
-                                            MessageBox.Show("¡No puedes dar de alta a este alumno sin una foto", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                                        }
-                                        else
-                                        {
-                                            if (curple < 18)
-                                            {
-
-                                                String curpl = Convert.ToString(18 - curp.TextLength);
-                                                MessageBox.Show("¡El CURP del alumno está incompleto, falta " + curpl + " caracter(es)", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                                                return;
-                                            }
-                                            else
-                                            {
-                                                if (añosCum.Text == "")
-                                                {
-                                                    MessageBox.Show("¡No se ha seleccionado la fecha de nacimiento de este alumno", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                                                    return;
-                                                }
-                                                else
-                                                {
-                                                    informacionGeneralAlumno.Visible = false;
-                                                    informacionGeneralAlumno2.Visible = true;
-
-                                                    regresarMenuButton.Visible = false;
-                                                    regresarButton.Visible = true;
-
-                                                    siguiente1Button.Visible = false;
-                                                    siguiente2Button.Visible = true;
-                                                }
-
-                                            }
-
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+            siguiente1Button.Visible = false;
+            siguiente2Button.Visible = true;
         }
 
 
         private void siguiente2Button_Click(object sender, EventArgs e)
         {
-            if (canalizado.Text.Equals(""))
-            {
-                MessageBox.Show("¡No se ha respondido el campo \"Canalizado por\" ", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-            else
-            {
-                if (cicloEsc.Text.Equals(""))
-                {
-                    MessageBox.Show("¡No se ha ingresado el ciclo escolar", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                }
-                else
-                {
-                    if (telPersonal.Text == "") //POR PULIR
-                    {
-                        DialogResult dr = MessageBox.Show("¡El telefono personal del alumno está vacio! ¿Deseas registrarlo?", "Dato requerido", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                        if (dr == DialogResult.No)
-                        {
-                            informacionGeneralAlumno2.Visible = false;
-                            informacionTutor.Visible = true;
+            informacionGeneralAlumno2.Visible = false;
+            informacionTutor.Visible = true;
 
-                            infGeneralAlLabel.Visible = false;
-                            infoTutorLabel.Visible = true;
+            infGeneralAlLabel.Visible = false;
+            infoTutorLabel.Visible = true;
 
-                            siguiente2Button.Visible = false;
-                            siguiente3Button.Visible = true;
-                        }
-                        if (dr == DialogResult.Yes)
-                        {
-                            return;
-
-                        }
-                    }
-
-                    else
-                    {
-                        informacionGeneralAlumno2.Visible = false;
-                        informacionTutor.Visible = true;
-
-                        infGeneralAlLabel.Visible = false;
-                        infoTutorLabel.Visible = true;
-
-                        siguiente2Button.Visible = false;
-                        siguiente3Button.Visible = true;
-                    }
-                }
-            }
+            siguiente2Button.Visible = false;
+            siguiente3Button.Visible = true;
         }
 
         private void siguiente3Button_Click(object sender, EventArgs e)
         {
-            if (nombreT.Text.Equals("") || apellidoPT.Text.Equals(""))
-            {
-                MessageBox.Show("¡No se ha ingresado el nombre completo del tutor!", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-            else
-            {
-                if (calleT.Text.Equals(""))
-                {
-                    MessageBox.Show("¡No se ha ingresado la calle del tutor!", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                }
-                else
-                {
-                    if (numeroCasaT.Text.Equals(""))
-                    {
-                        MessageBox.Show("¡No se ha ingresado el numero de casa del tutor!", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                    else
-                    {
-                        if (coloniaT.Text.Equals(""))
-                        {
-                            MessageBox.Show("¡No se ha ingresado la colonia del tutor!", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        }
-                        else
-                        {
-                            if (telCasaT.Text.Equals("") && telMovilT.Text.Equals("") && telTrabajoT.Text.Equals(""))
-                            {
-                                MessageBox.Show("¡Ingresar al menos un telefono de contacto!", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                            }
-                            else
-                            {//////////////////////////
-                             //VALIDAR 1 COMPLET0 Y 2 VACIOS
-                             //Casa completo, movil vacio, trabajo vacio
-                                if ((telCasaT.TextLength == 10) && (telMovilT.Text == "") && (telTrabajoT.Text == ""))
-                                {
-                                    informacionTutor.Visible = false;
-                                    informacionMedicaAlumnoGroupBox.Visible = true;
+            informacionTutor.Visible = false;
+            informacionMedicaAlumnoGroupBox.Visible = true;
 
-                                    infoTutorLabel.Visible = false;
-                                    informacionMedLabel.Visible = true;
+            infoTutorLabel.Visible = false;
+            informacionMedLabel.Visible = true;
 
-                                    siguiente3Button.Visible = false;
-                                    realizarAltaButton.Visible = true;
-                                }
-                                else
-                                {//Casa vacio, movil completo, trabajo vacio
-                                    if ((telMovilT.TextLength == 10) && (telCasaT.Text == "") && (telTrabajoT.Text == ""))
-                                    {
-                                        informacionTutor.Visible = false;
-                                        informacionMedicaAlumnoGroupBox.Visible = true;
-
-                                        infoTutorLabel.Visible = false;
-                                        informacionMedLabel.Visible = true;
-
-                                        siguiente3Button.Visible = false;
-                                        realizarAltaButton.Visible = true;
-                                    }
-                                    else
-                                    {//Casa vacio, movil vacio, trabajo completo
-                                        if ((telTrabajoT.TextLength == 10) && (telCasaT.Text == "") && (telMovilT.Text == ""))
-                                        {
-                                            informacionTutor.Visible = false;
-                                            informacionMedicaAlumnoGroupBox.Visible = true;
-
-                                            infoTutorLabel.Visible = false;
-                                            informacionMedLabel.Visible = true;
-
-                                            siguiente3Button.Visible = false;
-                                            realizarAltaButton.Visible = true;
-                                        }
-                                        else
-                                        {
-                                            //VALIDACION DOS CAMPOS COMPLETOS Y 1 VACIO
-                                            //Casa completo, movil completo, trabajo vacio
-                                            if ((telCasaT.TextLength == 10) && (telMovilT.TextLength == 10) && (telTrabajoT.Text == ""))
-                                            {
-                                                informacionTutor.Visible = false;
-                                                informacionMedicaAlumnoGroupBox.Visible = true;
-
-                                                infoTutorLabel.Visible = false;
-                                                informacionMedLabel.Visible = true;
-
-                                                siguiente3Button.Visible = false;
-                                                realizarAltaButton.Visible = true;
-                                            }
-                                            else
-                                            {
-                                                //Casa completo, movil vacio, trabajo completo
-                                                if ((telCasaT.TextLength == 10) && (telMovilT.Text == "") && (telTrabajoT.TextLength == 10))
-                                                {
-                                                    informacionTutor.Visible = false;
-                                                    informacionMedicaAlumnoGroupBox.Visible = true;
-
-                                                    infoTutorLabel.Visible = false;
-                                                    informacionMedLabel.Visible = true;
-
-                                                    siguiente3Button.Visible = false;
-                                                    realizarAltaButton.Visible = true;
-                                                }
-                                                else
-                                                {//Casa vacio, movil completo, trabajo completo
-                                                    if ((telCasaT.Text == "") && (telMovilT.TextLength == 10) && (telTrabajoT.TextLength == 10))
-                                                    {
-                                                        informacionTutor.Visible = false;
-                                                        informacionMedicaAlumnoGroupBox.Visible = true;
-
-                                                        infoTutorLabel.Visible = false;
-                                                        informacionMedLabel.Visible = true;
-
-                                                        siguiente3Button.Visible = false;
-                                                        realizarAltaButton.Visible = true;
-                                                    }
-                                                    else
-                                                    { //VALIDAR DOS COMPLETOS Y UNO INCOMPLETO 
-                                                      //Casa completo, movil completo, trabajo incompleto
-                                                        if ((telCasaT.TextLength == 10) && (telMovilT.TextLength == 10) && (telTrabajoT.TextLength < 10))
-                                                        {
-                                                            String telTrabajoTut = Convert.ToString(10 - telTrabajoT.TextLength);
-                                                            MessageBox.Show("¡El telefono de trabajo del tutor está incompleto, falta " + telTrabajoTut + " numero(s)", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                                                            return;
-                                                        }
-                                                        else
-                                                        {
-                                                            //Casa completo, movil incompleto, trabajo completo
-                                                            if ((telCasaT.TextLength == 10) && (telMovilT.TextLength < 10) && (telTrabajoT.TextLength == 10))
-                                                            {
-                                                                String telMovilTut = Convert.ToString(10 - telMovilT.TextLength);
-                                                                MessageBox.Show("¡El telefono movil del tutor está incompleto, falta " + telMovilTut + " numero(s)", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                                                                return;
-                                                            }
-                                                            else
-                                                            {//Casa incompleto, movil completo, trabajo completo
-                                                                if ((telCasaT.TextLength < 10) && (telMovilT.TextLength == 10) && (telTrabajoT.TextLength == 10))
-                                                                {
-                                                                    String telCasaTut = Convert.ToString(10 - telCasaT.TextLength);
-                                                                    MessageBox.Show("¡El telefono de casa del tutor está incompleto, falta " + telCasaTut + " numero(s)", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                                                                    return;
-                                                                }
-                                                                else
-                                                                {//VALIDAR 1 CAMPO COMPLETO, 1 INCOMPLETO Y 1 VACIO
-                                                                 //casa 10, movil incompl, trabajo vacio
-                                                                    if (telCasaT.TextLength == 10 && telMovilT.TextLength < 10 && telTrabajoT.Text == "")
-                                                                    {
-                                                                        String telMovilTut = Convert.ToString(10 - telMovilT.TextLength);
-                                                                        MessageBox.Show("¡El telefono movil del tutor está incompleto, falta " + telMovilTut + " numero(s)", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                                                                        return;
-                                                                    }
-                                                                    else
-                                                                    {
-                                                                        //casa 10, movil vacio, trabajo incompl
-                                                                        if (telCasaT.TextLength == 10 && telMovilT.Text == "" && telTrabajoT.TextLength < 10)
-                                                                        {
-                                                                            String telTrabajoTut = Convert.ToString(10 - telTrabajoT.TextLength);
-                                                                            MessageBox.Show("¡El telefono de trabajo del tutor está incompleto, falta " + telTrabajoTut + " numero(s)", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                                                                            return;
-                                                                        }
-                                                                        else
-                                                                        {
-                                                                            //movil 10, casa incompl, trabajo vacio
-                                                                            if (telCasaT.TextLength < 10 && telMovilT.TextLength == 10 && telTrabajoT.Text == "")
-                                                                            {
-                                                                                String telCasaTut = Convert.ToString(10 - telCasaT.TextLength);
-                                                                                MessageBox.Show("¡El telefono de casa del tutor está incompleto, falta " + telCasaTut + " numero(s)", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                                                                                return;
-                                                                            }
-                                                                            else
-                                                                            {
-                                                                                //movil 10, casa vacio, trabajo incompleto
-                                                                                if (telCasaT.Text == "" && telMovilT.TextLength == 10 && telTrabajoT.TextLength < 10)
-                                                                                {
-                                                                                    String telTrabajoTut = Convert.ToString(10 - telTrabajoT.TextLength);
-                                                                                    MessageBox.Show("¡El telefono de trabajo del tutor está incompleto, falta " + telTrabajoTut + " numero(s)", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                                                                                    return;
-                                                                                }
-                                                                                else
-                                                                                {
-                                                                                    //trabajo 10, movil incompl, casa vacio
-                                                                                    if (telCasaT.Text == "" && telMovilT.TextLength < 10 && telTrabajoT.TextLength == 10)
-                                                                                    {
-                                                                                        String telMovilTut = Convert.ToString(10 - telMovilT.TextLength);
-                                                                                        MessageBox.Show("¡El telefono movil del tutor está incompleto, falta " + telMovilTut + " numero(s)", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                                                                                        return;
-                                                                                    }
-                                                                                    else
-                                                                                    {
-                                                                                        //trabajo 10, movil vacio, casa incompl
-                                                                                        if (telCasaT.TextLength < 10 && telMovilT.Text == "" && telTrabajoT.TextLength == 10)
-                                                                                        {
-                                                                                            String telCasaTut = Convert.ToString(10 - telCasaT.TextLength);
-                                                                                            MessageBox.Show("¡El telefono de casa del tutor está incompleto, falta " + telCasaTut + " numero(s)", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                                                                                            return;
-                                                                                        }
-                                                                                        else
-                                                                                        {
-                                                                                            //VALIDACION 1 CAMPO COMPLETO Y DOS INCOMPLETOS
-                                                                                            //Casa completo, movil incompleto, trabajo incompleto
-                                                                                            if ((telCasaT.TextLength == 10) && (telMovilT.TextLength < 10) && (telTrabajoT.TextLength < 10))
-                                                                                            {
-                                                                                                String telMovilTut = Convert.ToString(10 - telMovilT.TextLength);
-                                                                                                String telTrabajoTut = Convert.ToString(10 - telTrabajoT.TextLength);
-                                                                                                MessageBox.Show("¡El telefono de movil y de trabajo del tutor están incompletos, falta " + "Movil: " + telMovilTut + " numero(s) | " + "Trabajo: " + telTrabajoTut + " numero(s)", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                                                                                                return;
-                                                                                            }
-                                                                                            else
-                                                                                            {
-                                                                                                //Casa incompleto, movil incompleto, trabajo completo
-                                                                                                if ((telCasaT.TextLength < 10) && (telMovilT.TextLength == 10) && (telTrabajoT.TextLength < 10))
-                                                                                                {
-                                                                                                    String telCasaTut = Convert.ToString(10 - telCasaT.TextLength);
-                                                                                                    String telTrabajoTut = Convert.ToString(10 - telTrabajoT.TextLength);
-                                                                                                    MessageBox.Show("¡El telefono de casa y de trabajo del tutor están incompletos, falta " + "Casa: " + telCasaTut + " numero(s) | " + "Trabajo: " + telTrabajoTut + " numero(s)", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                                                                                                    return;
-                                                                                                }
-                                                                                                else
-                                                                                                {//Casa incompleto, movil incompleto, trabajo completo
-                                                                                                    if ((telCasaT.TextLength < 10) && (telMovilT.TextLength < 10) && (telTrabajoT.TextLength == 10))
-                                                                                                    {
-                                                                                                        String telCasaTut = Convert.ToString(10 - telCasaT.TextLength);
-                                                                                                        String telMovilTut = Convert.ToString(10 - telMovilT.TextLength);
-                                                                                                        MessageBox.Show("¡El telefono de casa y movil del tutor están incompletos, falta " + "Casa: " + telCasaTut + " numero(s) | " + "Movil: " + telMovilTut + " numero(s)", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                                                                                                        return;
-                                                                                                    }
-                                                                                                    else
-                                                                                                    {
-
-                                                                                                        if ((telCasaT.TextLength < 10) && (telMovilT.Text == "") && (telTrabajoT.Text == ""))
-                                                                                                        {
-                                                                                                            String telCasaTut = Convert.ToString(10 - telCasaT.TextLength);
-                                                                                                            MessageBox.Show("¡El telefono de casa del tutor está incompleto, falta " + telCasaTut + " numero(s)", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                                                                                                            return;
-                                                                                                        }
-                                                                                                        else
-                                                                                                        { //VALIDAR 1 CAMPO INCOMPLETO Y DOS VACIOS
-                                                                                                            if ((telMovilT.TextLength < 10) && (telCasaT.Text == "") && (telTrabajoT.Text == ""))
-                                                                                                            {
-                                                                                                                String telMovilTut = Convert.ToString(10 - telMovilT.TextLength);
-                                                                                                                MessageBox.Show("¡El telefono movil del tutor está incompleto, falta " + telMovilTut + " numero(s)", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                                                                                                                return;
-                                                                                                            }
-                                                                                                            else
-                                                                                                            {
-                                                                                                                if ((telTrabajoT.TextLength < 10) && (telCasaT.Text == "") && (telMovilT.Text == ""))
-                                                                                                                {
-                                                                                                                    String telTrabajoTuto = Convert.ToString(10 - telTrabajoT.TextLength);
-                                                                                                                    MessageBox.Show("¡El telefono de trabajo del tutor está incompleto, falta " + telTrabajoTuto + " numero(s)", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                                                                                                                    return;
-                                                                                                                }
-                                                                                                                else
-                                                                                                                {//VALIDAR DOS CAMPOS INCOMPLETOS Y 1 VACIO
-                                                                                                                    if (telCasaT.TextLength < 10 && telMovilT.TextLength < 10 && telTrabajoT.Text == "")
-                                                                                                                    {
-                                                                                                                        String telCasaTut = Convert.ToString(10 - telCasaT.TextLength);
-                                                                                                                        String telMovilTut = Convert.ToString(10 - telMovilT.TextLength);
-                                                                                                                        MessageBox.Show("¡El telefono de casa y movil del tutor están incompletos, falta " + "Casa: " + telCasaTut + " numero(s) | " + "Movil: " + telMovilTut + " numero(s)", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                                                                                                                        return;
-                                                                                                                    }
-                                                                                                                    else
-                                                                                                                    {
-                                                                                                                        if (telCasaT.TextLength < 10 && telMovilT.Text == "" && telTrabajoT.TextLength < 10)
-                                                                                                                        {
-                                                                                                                            String telCasaTut = Convert.ToString(10 - telCasaT.TextLength);
-                                                                                                                            String telTrabajoTuto = Convert.ToString(10 - telTrabajoT.TextLength);
-                                                                                                                            MessageBox.Show("¡El telefono de casa y trabajo del tutor están incompletos, falta " + "Casa: " + telCasaTut + " numero(s) | " + "Trabajo: " + telTrabajoTuto + " numero(s)", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                                                                                                                            return;
-                                                                                                                        }
-                                                                                                                        else
-                                                                                                                        {
-                                                                                                                            if (telCasaT.Text == "" && telMovilT.TextLength < 10 && telTrabajoT.TextLength < 10)
-                                                                                                                            {
-                                                                                                                                String telMovilTut = Convert.ToString(10 - telMovilT.TextLength);
-                                                                                                                                String telTrabajoTuto = Convert.ToString(10 - telTrabajoT.TextLength);
-                                                                                                                                MessageBox.Show("¡El telefono de movil y trabajo del tutor están incompletos, falta " + "Movil: " + telMovilTut + " numero(s) | " + "Trabajo: " + telTrabajoTuto + " numero(s)", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                                                                                                                                return;
-                                                                                                                            }
-                                                                                                                            else
-                                                                                                                            {
-                                                                                                                                if (telCasaT.TextLength < 10 && telMovilT.TextLength < 10 && telTrabajoT.TextLength < 10)
-                                                                                                                                {
-                                                                                                                                    String telCasaTut = Convert.ToString(10 - telCasaT.TextLength);
-                                                                                                                                    String telMovilTut = Convert.ToString(10 - telMovilT.TextLength);
-                                                                                                                                    String telTrabajoTuto = Convert.ToString(10 - telTrabajoT.TextLength);
-                                                                                                                                    MessageBox.Show("¡El telefono de casa, movil y trabajo del tutor están incompletos, falta " + "Casa: " + telCasaTut + " numero(s) | " + "Movil: " + telMovilTut + " numero(s) | " + "Trabajo: " + telTrabajoTuto + " numero(s)", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                                                                                                                                    return;
-                                                                                                                                }
-
-                                                                                                                                else
-                                                                                                                                {
-                                                                                                                                    informacionTutor.Visible = false;
-                                                                                                                                    informacionMedicaAlumnoGroupBox.Visible = true;
-
-                                                                                                                                    infoTutorLabel.Visible = false;
-                                                                                                                                    informacionMedLabel.Visible = true;
-
-                                                                                                                                    siguiente3Button.Visible = false;
-                                                                                                                                    realizarAltaButton.Visible = true;
-                                                                                                                                }
-                                                                                                                            }
-                                                                                                                        }
-                                                                                                                    }
-                                                                                                                }
-                                                                                                            }
-
-                                                                                                        }
-                                                                                                    }
-                                                                                                }
-                                                                                            }
-                                                                                        }
-                                                                                    }
-                                                                                }
-                                                                            }
-                                                                        }
-                                                                    }
-                                                                }
-                                                            }
-                                                        }
-                                                    }
-
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+            siguiente3Button.Visible = false;
+            realizarAltaButton.Visible = true;
         }
 
         //Cargar y Mostrar Foto Alumno ALTA ALUMNO
@@ -1031,128 +592,120 @@ namespace presentationLayer
             string colonia_trabajo_tutor = "", calle_trabajo_tutor = "", numero_trabajo_tutor = "";
             string peso = "", color_textura_piel = "", estatura = "", discapacidad = "", enfermedades = "", alergias = "";
 
-
-
-
-            //businessLayer.Hueso.SetDiscapacidades(discapacidad);
-
-            //businessLayer.Hueso.SetEnfermedades(enfermedades);
-
-            //businessLayer.Hueso.SetAlergias(alergias);
-
-            //businessLayer.Hueso.setTratamiento(tratamiento);
-
-            //this.Hide();
-            //Consultas consultas = new Consultas();
-            //consultas.Show();
-
-
-            //Aquí se puede ingresar el método para realizar la alta de alumno...
-            if (servMedico.Text.Equals(""))
+            if (!nombreAl.Text.Equals("") && !apellidoP.Text.Equals("") && !apellidoM.Text.Equals(""))
             {
-                MessageBox.Show("¡Ingresar el servicio medico del alumno!", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                //MessageBox.Show("REGISTRO EXITOSO!");
+                businessLayer.BLAltaAlumno.SetAlumno(cicloEsc.Text,
+                                              nombreAl.Text,
+                                              apellidoP.Text,
+                                              apellidoM.Text,
+                                              fechaNa.Value,
+                                              añosCum.Text,
+                                              curp.Text,
+                                              estado.Text,
+                                              ciudad.Text,
+                                              colonia.Text,
+                                              calle.Text,
+                                              numeroCasa.Text,
+                                              telPersonal.Text,
+                                              escuelaP.Text,
+                                              canalizado.Text
+                                              );
+
+                businessLayer.BLAltaAlumno.SetTutor(nombreT.Text,
+                                             apellidoPT.Text,
+                                             apellidoMT.Text,
+                                             coloniaT.Text,
+                                             calleT.Text,
+                                             numeroCasaT.Text,
+                                             ocupacion.Text,
+                                             colonia_trabajo_tutor,
+                                             calle_trabajo_tutor,
+                                             numero_trabajo_tutor);
+
+                businessLayer.BLAltaAlumno.SetInfoMedAlumno(servMedico.Text,
+                                                     grupoSanguineo.Text,
+                                                     telefono.Text,
+                                                     peso,
+                                                     color_textura_piel,
+                                                     estatura);
+
+                //businessLayer.Hueso.SetDiscapacidades(discapacidad);
+
+                //businessLayer.Hueso.SetEnfermedades(enfermedades);
+
+                //businessLayer.Hueso.SetAlergias(alergias);
+
+                //businessLayer.Hueso.setTratamiento(tratamiento);
+
+                //this.Hide();
+                //Consultas consultas = new Consultas();
+                //consultas.Show();
+
+                //Condición de que si no ingresa nombre de alumno y foto de alumno no le deja hacer la alta
+            if (fotoAl.Image == null)
+            {
+                MessageBox.Show("¡No puedes dar de alta a este alumno sin su NOMBRE COMPLETO!", "CAM - Alta Alumno", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
             }
-            else
+            
+            //Condición guardar foto alumno
+            if (fotoAl.Image == null)
             {
-                if (grupoSanguineo.Text.Equals(""))
+                DialogResult result = MessageBox.Show("¡Falta subir la foto del alumno! ¿Deseas realizar la alta de todos modos?", "CAM - Alta Alumno", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (result == DialogResult.Yes)
                 {
-                    MessageBox.Show("¡Ingresar el grupo sanguineo del alumno!", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                }
-                else
-                {
-                    if (telefono.Text.Equals(""))
+                    //Aquí se puede ingresar el método para realizar la alta de alumno...
+
+                    //Guardar Foto alumno   **NO BORRAR LO QUE ESTÁ COMENTADO!!!!!**
+                    byte[] archivo = null;
+                    try
                     {
-                        MessageBox.Show("¡Ingresar el telefono!", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        Stream myStream = openFileDialog1.OpenFile();
+
+                        using (MemoryStream ms = new MemoryStream())
+                        {
+                            myStream.CopyTo(ms);
+                            archivo = ms.ToArray();
+                        }
                     }
-                    else
+                    catch (FileNotFoundException)
                     {
-                        //La validacion de Discapacidad, Enfermedad, Alergias y Tratamiento para que no se pueda hacer el alta sin dichos datos queda pendiente
-                        //Para poder hacer pruebas, ya que esos datos aun no funcionan
+                        MessageBox.Show("Error: no se pudo guardar la foto del alumno", "CAM - Alta Alumno", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
 
-                        businessLayer.BLAltaAlumno.SetAlumno2(cicloEsc.Text,
-                                                             nombreAl.Text,
-                                                             apellidoP.Text,
-                                                             apellidoM.Text,
-                                                             fechaNa.Value,
-                                                             añosCum.Text,
-                                                             curp.Text,
-                                                             estado.Text,
-                                                             ciudad.Text,
-                                                             colonia.Text,
-                                                             calle.Text,
-                                                             numeroCasa.Text,
-                                                             telPersonal.Text,
-                                                             escuelaP.Text,
-                                                             canalizado.Text
-                                                             );
+                    using (_1dataLayer.BDCAMEntities db = new _1dataLayer.BDCAMEntities())
+                    {
+                        _1dataLayer.imagenalumnoDTO oImage = new _1dataLayer.imagenalumnoDTO();
 
-                        businessLayer.BLAltaAlumno.SetTutor2(nombreT.Text,
-                                                             apellidoPT.Text,
-                                                             apellidoMT.Text,
-                                                             coloniaT.Text,
-                                                             calleT.Text,
-                                                             numeroCasaT.Text,
-                                                             ocupacion.Text,
-                                                             colonia_trabajo_tutor,
-                                                             calle_trabajo_tutor,
-                                                             numero_trabajo_tutor);
-
-                        businessLayer.BLAltaAlumno.SetInfoMedAlumno2(servMedico.Text,
-                                                                     grupoSanguineo.Text,
-                                                                     telefono.Text,
-                                                                     peso,
-                                                                     color_textura_piel,
-                                                                     estatura);
-
-                        //Guardar Foto alumno   **NO BORRAR LO QUE ESTÁ COMENTADO!!!!!**
-                        byte[] archivo = null;
+                        //db.foto_alumno.Add(oImage);
                         try
                         {
-                            Stream myStream = openFileDialog1.OpenFile();
-
-                            using (MemoryStream ms = new MemoryStream())
-                            {
-                                myStream.CopyTo(ms);
-                                archivo = ms.ToArray();
-                            }
+                            oImage.id_alumno = 6;
+                            oImage.imagen = archivo;
+                            oImage.nombre = openFileDialog1.FileName;
+                            _1dataLayer.DLAltaAlumno.AltaImagenAlumno(oImage);
+                            
+                            //db.SaveChanges();
                         }
-                        catch (FileNotFoundException)
+                        catch (DbEntityValidationException ex)
                         {
                             MessageBox.Show("Error: no se pudo guardar la foto del alumno", "CAM - Alta Alumno", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             return;
                         }
-
-                        using (_1dataLayer.BDCAMEntities db = new _1dataLayer.BDCAMEntities())
-                        {
-                            _1dataLayer.imagenalumnoDTO oImage = new _1dataLayer.imagenalumnoDTO();
-
-                            //db.foto_alumno.Add(oImage);
-                            try
-                            {
-                                oImage.id_alumno = 6;
-                                oImage.imagen = archivo;
-                                oImage.nombre = openFileDialog1.FileName;
-                                businessLayer.BLAltaAlumno.SetFotoAlumno(oImage);
-
-                                //db.SaveChanges();
-                            }
-                            catch (DbEntityValidationException ex)
-                            {
-                                MessageBox.Show("Error: no se pudo guardar la foto del alumno", "CAM - Alta Alumno", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                                return;
-                            }
-                        }
-                        this.Hide();
-                        ConsultaAlumno formConsulta = new ConsultaAlumno();
-                        formConsulta.Show();
                     }
                 }
+                if (result == DialogResult.No)
+                {
+                    return;
+                }
             }
+        
             //Condición para permitirle al usuario si desea realizar otra alta o no
             //Si elige SI, se cierra la ventana de alta y se abre una nueva con los campos limpios
             //Si elige NO, se cierra la ventana de alta y se abre la ventana de consultas
-
-            /*DialogResult dr = MessageBox.Show("Alta realizada con exito! Deseas realizar otra alta?", "CAM - Alta ALumno", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            DialogResult dr = MessageBox.Show("Alta realizada con exito! Deseas realizar otra alta?", "CAM - Alta ALumno", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
             if (dr == DialogResult.Yes)
             {
                 this.Hide();
@@ -1163,595 +716,17 @@ namespace presentationLayer
                 this.Hide();
                 ConsultaAlumno formConsulta = new ConsultaAlumno();
                 formConsulta.Show();
-            }*/
+            }
+                
+            }
+            else
+            {
+                MessageBox.Show("NO PUEDES CREAR UN REGISTRO SIN NOMBRE COMPLETO DEL ALUMNO!");
+            }
         }
 
         private void eliminarTratamientoButton_Click(object sender, EventArgs e)
         {
-
-        }
-
-        //Método que autocompleta la edad poniendo la fecha de nacimiento
-        private void fechaNa_ValueChanged(object sender, EventArgs e)
-        {
-            DateTime fechaActual = DateTime.Today;
-            int anio = fechaNa.Value.Year;
-            int edad = fechaActual.Year - anio;
-            String edadConvertida = edad.ToString();
-            añosCum.Text = edadConvertida;
-
-        }
-
-        private void añosCum_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (Char.IsDigit(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else if (Char.IsSeparator(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else if (Char.IsControl(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void apellidoM_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (Char.IsLetter(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else if (Char.IsSeparator(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else if (Char.IsControl(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void apellidoMT_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (Char.IsLetter(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else if (Char.IsSeparator(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else if (Char.IsControl(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else
-            {
-                e.Handled = true;
-            }
-
-        }
-
-        private void apellidoP_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (Char.IsLetter(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else if (Char.IsSeparator(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else if (Char.IsControl(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else
-            {
-                e.Handled = true;
-            }
-
-        }
-
-        private void apellidoPT_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (Char.IsLetter(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else if (Char.IsSeparator(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else if (Char.IsControl(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else
-            {
-                e.Handled = true;
-            }
-
-        }
-
-        private void calle_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (Char.IsLetter(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else if (Char.IsSeparator(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else if (Char.IsControl(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else
-            {
-                e.Handled = true;
-            }
-
-        }
-
-        private void calleT_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (Char.IsLetter(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else if (Char.IsSeparator(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else if (Char.IsControl(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else
-            {
-                e.Handled = true;
-            }
-
-        }
-
-        private void canalizado_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (Char.IsLetter(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else if (Char.IsSeparator(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else if (Char.IsControl(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else
-            {
-                e.Handled = true;
-            }
-
-        }
-
-        private void cicloEsc_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (e.KeyChar == '-')
-            {
-                e.Handled = false;
-            }
-            else if (Char.IsDigit(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else if (Char.IsSeparator(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else if (Char.IsControl(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void ciudad_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (Char.IsLetter(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else if (Char.IsSeparator(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else if (Char.IsControl(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void colonia_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (Char.IsLetter(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else if (Char.IsSeparator(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else if (Char.IsControl(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void coloniaT_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (Char.IsLetter(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else if (Char.IsSeparator(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else if (Char.IsControl(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void curp_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (Char.IsLetter(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else if (Char.IsDigit(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else if (Char.IsSeparator(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else if (Char.IsControl(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void escuelaP_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (Char.IsLetter(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else if (Char.IsSeparator(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else if (Char.IsControl(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void estado_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (Char.IsLetter(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else if (Char.IsSeparator(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else if (Char.IsControl(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void grupoSanguineo_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (e.KeyChar == '-')
-            {
-                e.Handled = false;
-            }
-            if (e.KeyChar == '+')
-            {
-                e.Handled = false;
-            }
-            if (Char.IsLetter(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else if (Char.IsSeparator(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else if (Char.IsControl(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void nombreAl_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (Char.IsLetter(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else if (Char.IsSeparator(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else if (Char.IsControl(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else
-            {
-                e.Handled = true;
-            }
-
-        }
-
-        private void nombreT_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (Char.IsLetter(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else if (Char.IsSeparator(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else if (Char.IsControl(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else
-            {
-                e.Handled = true;
-            }
-
-        }
-
-        private void numeroCasa_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (Char.IsDigit(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else if (Char.IsSeparator(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else if (Char.IsControl(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else
-            {
-                e.Handled = true;
-            }
-
-        }
-
-        private void numeroCasaT_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (Char.IsDigit(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else if (Char.IsSeparator(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else if (Char.IsControl(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else
-            {
-                e.Handled = true;
-            }
-
-        }
-
-        private void ocupacion_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (Char.IsLetter(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else if (Char.IsSeparator(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else if (Char.IsControl(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else
-            {
-                e.Handled = true;
-            }
-
-        }
-
-        private void servMedico_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (Char.IsLetter(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else if (Char.IsSeparator(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else if (Char.IsControl(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else
-            {
-                e.Handled = true;
-            }
-
-        }
-
-        private void telCasaT_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (Char.IsDigit(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else if (Char.IsSeparator(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else if (Char.IsControl(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else
-            {
-                e.Handled = true;
-            }
-
-        }
-
-        private void telefono_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (Char.IsDigit(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else if (Char.IsSeparator(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else if (Char.IsControl(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else
-            {
-                e.Handled = true;
-            }
-
-        }
-
-        private void telMovilT_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (Char.IsDigit(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else if (Char.IsSeparator(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else if (Char.IsControl(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else
-            {
-                e.Handled = true;
-            }
-
-        }
-
-        private void telPersonal_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (Char.IsDigit(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else if (Char.IsSeparator(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else if (Char.IsControl(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else
-            {
-                e.Handled = true;
-            }
-
-        }
-
-        private void telTrabajoT_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (Char.IsDigit(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else if (Char.IsSeparator(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else if (Char.IsControl(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else
-            {
-                e.Handled = true;
-            }
 
         }
     }
