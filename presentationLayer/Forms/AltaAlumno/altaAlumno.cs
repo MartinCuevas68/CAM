@@ -32,6 +32,7 @@ namespace presentationLayer
             infoGen2(telPersonalLabel, telPersonal,telPersonalPanel, escuelaPLabel, escuelaP,escuelaPPanel, canalizadoLabel, canalizado,canalizadoPanel, cicloEscLabel, cicloEsc,cicloEscPanel,tipoIngLabel,
                 tipoIngresoGroupBox);
 
+<<<<<<< HEAD
             infoTutor(nombreTLabel, nombreT, nombreTPanel, apellidoPTLabel, apellidoPT, apellidoPTPanel, apellidoMTLabel, apellidoMT, apellidoMTPanel, direccionTLabel,
                 calleTLabel, calleT, calleTPanel, numeroCasaTLabel,
                 numeroCasaT, numeroCasaTPanel, coloniaTLabel, coloniaT, coloniaTPanel, infContactoLabel, telCasaTLabel, telCasaT, telCasaTPanel, telMovilTLabel, telMovilT, telMovilTPanel,
@@ -40,6 +41,16 @@ namespace presentationLayer
             infoMedica(servMedicoLabel, servMedico, servMedicoPanel, grupoSanguineoLabel, grupoSanguineo, grupoSanguineoPanel, telefonoLabel,
                 telefono, telefonoPanel, discapacidadLabel, discapacidad, discapacidadPanel, enfermedadesLabel, enfermedades, enfermedadesPanel,
                 alergiasLabel, alergias, alergiasPanel, tratamientoLabel, tratamiento, tratamientoPanel, eliminarTratamientoButton, discapacidadesCombobox, enfermedadesCombobox, alergiasCombobox,
+=======
+            infoTutor(nombreTLabel, nombreT,nombreTPanel, apellidoPTLabel, apellidoPT,apellidoPTPanel, apellidoMTLabel, apellidoMT,apellidoMTPanel, direccionTLabel, 
+                calleTLabel, calleT,calleTPanel, numeroCasaTLabel,
+                numeroCasaT,numeroCasaTPanel, coloniaTLabel, coloniaT,coloniaTPanel, infContactoLabel,telCasaTLabel,telCasaT,telCasaTPanel,telMovilTLabel,telMovilT,telMovilTPanel,
+                telTrabajoTLabel,telTrabajoT,telTrabajoTPanel,ocupacionLabel,ocupacion,ocupacionTPanel, direccionCheckBox);
+
+            infoMedica(servMedicoLabel, servMedico,servMedicoPanel, grupoSanguineoLabel, grupoSanguineo,grupoSanguineoPanel, grupoSanguineoComboBox, telefonoLabel,
+                telefono,telefonoPanel,discapacidadLabel,discapacidad,discapacidadPanel,enfermedadesLabel, enfermedades,enfermedadesPanel,
+                alergiasLabel, alergias,alergiasPanel,tratamientoLabel,tratamiento,tratamientoPanel, eliminarTratamientoButton,discapacidadesCombobox,enfermedadesCombobox,alergiasCombobox,
+>>>>>>> Claudia-20-03-22
                 eliminarDiscapacidadesButton,
                 eliminarEnfermedadButton,eliminarAlergiasButton);
 
@@ -195,8 +206,13 @@ namespace presentationLayer
             Label apellidoML, TextBox apellidoM,Panel apellidoMP,
             Label direccion, Label calleL, TextBox calle, Panel calleP, Label numL, TextBox num, Panel numP, Label coloniaL, TextBox colonia, Panel coloniaP, 
             Label infoCon, Label telCasaL,
+<<<<<<< HEAD
             TextBox telCasa, Panel telCasaP, Label telMovilL, TextBox telMovil, Panel telMovilP, Label telTrabajoL, TextBox telTrabajo, Panel telTrabajoP,
             Label ocupacionL, TextBox ocupacion, Panel ocupacionP)
+=======
+            TextBox telCasa, Panel telCasaP, Label telMovilL, TextBox telMovil, Panel telMovilP, Label telTrabajoL, TextBox telTrabajo, Panel telTrabajoP, 
+            Label ocupacionL, TextBox ocupacion, Panel ocupacionP, CheckBox mismaDireccion)
+>>>>>>> Claudia-20-03-22
         {
            
             nombreL.Location = new Point(50, 50);
@@ -213,7 +229,14 @@ namespace presentationLayer
 
             direccion.Location = new Point(650, 45);
 
+<<<<<<< HEAD
             calleL.Location = new Point(650, 90);
+=======
+            mismaDireccion.Location = new Point(770, 45);
+            mismaDireccion.Checked = false;
+
+           calleL.Location = new Point(650, 90);
+>>>>>>> Claudia-20-03-22
             calleP.Location = new Point(740, 90);
             calleP.Size = new Size(300, 50);
 

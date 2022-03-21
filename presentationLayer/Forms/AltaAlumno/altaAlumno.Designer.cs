@@ -105,6 +105,7 @@ namespace presentationLayer
             this.telPersonalPanel = new System.Windows.Forms.Panel();
             this.telPersonal = new System.Windows.Forms.TextBox();
             this.informacionMedicaAlumnoGroupBox = new System.Windows.Forms.GroupBox();
+            this.grupoSanguineoComboBox = new System.Windows.Forms.ComboBox();
             this.eliminarTratamientoButton = new System.Windows.Forms.Button();
             this.alergiasPanel = new System.Windows.Forms.Panel();
             this.alergias = new System.Windows.Forms.RichTextBox();
@@ -156,8 +157,6 @@ namespace presentationLayer
             this.altaalumnoLabel = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.logo = new System.Windows.Forms.PictureBox();
-            this.direccionRButton = new System.Windows.Forms.RadioButton();
-            this.grupoSanguineoComboBox = new System.Windows.Forms.ComboBox();
             this.regresarMenuButton = new presentationLayer.buttonSystem();
             this.regresarButton = new presentationLayer.buttonSystem();
             this.realizarAltaButton = new presentationLayer.buttonSystem();
@@ -165,6 +164,7 @@ namespace presentationLayer
             this.siguiente2Button = new presentationLayer.buttonSystem();
             this.siguiente1Button = new presentationLayer.buttonSystem();
             this.fotoBtn = new presentationLayer.buttonSystem();
+            this.direccionCheckBox = new System.Windows.Forms.CheckBox();
             this.tipoIngresoGroupBox.SuspendLayout();
             this.informacionGeneralAlumno.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fotoAl)).BeginInit();
@@ -1074,6 +1074,24 @@ namespace presentationLayer
             this.informacionMedicaAlumnoGroupBox.TabIndex = 133;
             this.informacionMedicaAlumnoGroupBox.TabStop = false;
             // 
+            // grupoSanguineoComboBox
+            // 
+            this.grupoSanguineoComboBox.Font = new System.Drawing.Font("Gadugi", 14.25F);
+            this.grupoSanguineoComboBox.FormattingEnabled = true;
+            this.grupoSanguineoComboBox.Items.AddRange(new object[] {
+            "A+",
+            "A-",
+            "B+",
+            "B-",
+            "AB+",
+            "AB-",
+            "O+",
+            "O-"});
+            this.grupoSanguineoComboBox.Location = new System.Drawing.Point(275, 142);
+            this.grupoSanguineoComboBox.Name = "grupoSanguineoComboBox";
+            this.grupoSanguineoComboBox.Size = new System.Drawing.Size(121, 36);
+            this.grupoSanguineoComboBox.TabIndex = 149;
+            // 
             // eliminarTratamientoButton
             // 
             this.eliminarTratamientoButton.AutoSize = true;
@@ -1364,7 +1382,7 @@ namespace presentationLayer
             // informacionTutor
             // 
             this.informacionTutor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.informacionTutor.Controls.Add(this.direccionRButton);
+            this.informacionTutor.Controls.Add(this.direccionCheckBox);
             this.informacionTutor.Controls.Add(this.ocupacionTPanel);
             this.informacionTutor.Controls.Add(this.apellidoPTPanel);
             this.informacionTutor.Controls.Add(this.nombreTPanel);
@@ -1682,36 +1700,6 @@ namespace presentationLayer
             this.logo.TabIndex = 140;
             this.logo.TabStop = false;
             // 
-            // direccionRButton
-            // 
-            this.direccionRButton.AutoSize = true;
-            this.direccionRButton.Font = new System.Drawing.Font("Gadugi", 14.25F);
-            this.direccionRButton.Location = new System.Drawing.Point(1147, 43);
-            this.direccionRButton.Name = "direccionRButton";
-            this.direccionRButton.Size = new System.Drawing.Size(336, 32);
-            this.direccionRButton.TabIndex = 157;
-            this.direccionRButton.TabStop = true;
-            this.direccionRButton.Text = "Misma dirección del alumno";
-            this.direccionRButton.UseVisualStyleBackColor = true;
-            // 
-            // grupoSanguineoComboBox
-            // 
-            this.grupoSanguineoComboBox.Font = new System.Drawing.Font("Gadugi", 14.25F);
-            this.grupoSanguineoComboBox.FormattingEnabled = true;
-            this.grupoSanguineoComboBox.Items.AddRange(new object[] {
-            "A+",
-            "A-",
-            "B+",
-            "B-",
-            "AB+",
-            "AB-",
-            "O+",
-            "O-"});
-            this.grupoSanguineoComboBox.Location = new System.Drawing.Point(275, 142);
-            this.grupoSanguineoComboBox.Name = "grupoSanguineoComboBox";
-            this.grupoSanguineoComboBox.Size = new System.Drawing.Size(121, 36);
-            this.grupoSanguineoComboBox.TabIndex = 149;
-            // 
             // regresarMenuButton
             // 
             this.regresarMenuButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(98)))), ((int)(((byte)(242)))));
@@ -1840,6 +1828,17 @@ namespace presentationLayer
             this.fotoBtn.Text = "Cargar imagen";
             this.fotoBtn.UseVisualStyleBackColor = false;
             this.fotoBtn.Click += new System.EventHandler(this.fotoBtn_Click);
+            // 
+            // direccionCheckBox
+            // 
+            this.direccionCheckBox.AutoSize = true;
+            this.direccionCheckBox.Font = new System.Drawing.Font("Gadugi", 14.25F);
+            this.direccionCheckBox.Location = new System.Drawing.Point(1152, 107);
+            this.direccionCheckBox.Name = "direccionCheckBox";
+            this.direccionCheckBox.Size = new System.Drawing.Size(337, 32);
+            this.direccionCheckBox.TabIndex = 158;
+            this.direccionCheckBox.Text = "Misma dirección del alumno";
+            this.direccionCheckBox.UseVisualStyleBackColor = true;
             // 
             // altaAlumno
             // 
@@ -2079,8 +2078,8 @@ namespace presentationLayer
         private buttonSystem realizarAltaButton;
         private buttonSystem regresarButton;
         private buttonSystem regresarMenuButton;
-        private System.Windows.Forms.RadioButton direccionRButton;
         private System.Windows.Forms.ComboBox grupoSanguineoComboBox;
+        private System.Windows.Forms.CheckBox direccionCheckBox;
     }
 }
 
