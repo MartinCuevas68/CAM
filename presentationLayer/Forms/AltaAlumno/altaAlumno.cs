@@ -16,32 +16,32 @@ namespace presentationLayer
     {
         public altaAlumno()
         {
- 
+
             InitializeComponent();
             loaddata();
-            
-           
+
+
             //CODIGO NUEVO
-            centrarLabel(altaalumnoLabel,infoTutorLabel, informacionMedLabel,logo, infGeneralAlLabel,informacionGeneralAlumno,
-                informacionGeneralAlumno2,informacionTutor,informacionMedicaAlumnoGroupBox);
+            centrarLabel(altaalumnoLabel, infoTutorLabel, informacionMedLabel, logo, infGeneralAlLabel, informacionGeneralAlumno,
+                informacionGeneralAlumno2, informacionTutor, informacionMedicaAlumnoGroupBox);
 
-            infoGen(nombreAlLabel, nombreAl, nombreAlPanel, apellidoPLabel, apellidoP, apellidoPPanel, apellidoMLabel, apellidoM, apellidoMPanel, fechaNaLabel, fechaNa, añosCumLabel, 
-                añosCum,añosCumPanel, curpLabel,curp,curpPanel, direccionAlumnoLabel,calleLabel, calle,callePanel, numeroCasaLabel, numeroCasa,numeroCasaPanel, coloniaLabel,colonia,coloniaPanel,lugarNaLabel,
-                ciudadLabel,ciudad,ciudadPanel,estadoLabel,estado,estadoPanel,fotoAl,fotoBtn);
+            infoGen(nombreAlLabel, nombreAl, nombreAlPanel, apellidoPLabel, apellidoP, apellidoPPanel, apellidoMLabel, apellidoM, apellidoMPanel, fechaNaLabel, fechaNa, añosCumLabel,
+                añosCum, añosCumPanel, curpLabel, curp, curpPanel, direccionAlumnoLabel, calleLabel, calle, callePanel, numeroCasaLabel, numeroCasa, numeroCasaPanel, coloniaLabel, colonia, coloniaPanel, lugarNaLabel,
+                ciudadLabel, ciudad, ciudadPanel, estadoLabel, estado, estadoPanel, fotoAl, fotoBtn);
 
-            infoGen2(telPersonalLabel, telPersonal,telPersonalPanel, escuelaPLabel, escuelaP,escuelaPPanel, canalizadoLabel, canalizado,canalizadoPanel, cicloEscLabel, cicloEsc,cicloEscPanel,tipoIngLabel,
+            infoGen2(telPersonalLabel, telPersonal, telPersonalPanel, escuelaPLabel, escuelaP, escuelaPPanel, canalizadoLabel, canalizado, canalizadoPanel, cicloEscLabel, cicloEsc, cicloEscPanel, tipoIngLabel,
                 tipoIngresoGroupBox);
 
-            infoTutor(nombreTLabel, nombreT,nombreTPanel, apellidoPTLabel, apellidoPT,apellidoPTPanel, apellidoMTLabel, apellidoMT,apellidoMTPanel, direccionTLabel, 
-                calleTLabel, calleT,calleTPanel, numeroCasaTLabel,
-                numeroCasaT,numeroCasaTPanel, coloniaTLabel, coloniaT,coloniaTPanel, infContactoLabel,telCasaTLabel,telCasaT,telCasaTPanel,telMovilTLabel,telMovilT,telMovilTPanel,
-                telTrabajoTLabel,telTrabajoT,telTrabajoTPanel,ocupacionLabel,ocupacion,ocupacionTPanel, direccionCheckBox);
+            infoTutor(nombreTLabel, nombreT, nombreTPanel, apellidoPTLabel, apellidoPT, apellidoPTPanel, apellidoMTLabel, apellidoMT, apellidoMTPanel, direccionTLabel,
+                calleTLabel, calleT, calleTPanel, numeroCasaTLabel,
+                numeroCasaT, numeroCasaTPanel, coloniaTLabel, coloniaT, coloniaTPanel, infContactoLabel, telCasaTLabel, telCasaT, telCasaTPanel, telMovilTLabel, telMovilT, telMovilTPanel,
+                telTrabajoTLabel, telTrabajoT, telTrabajoTPanel, ocupacionLabel, ocupacion, ocupacionTPanel, direccionCheckBox);
 
-            infoMedica(servMedicoLabel, servMedico,servMedicoPanel, grupoSanguineoLabel, grupoSanguineo,grupoSanguineoPanel, grupoSanguineoComboBox, telefonoLabel,
-                telefono,telefonoPanel,discapacidadLabel,discapacidad,discapacidadPanel,enfermedadesLabel, enfermedades,enfermedadesPanel,
-                alergiasLabel, alergias,alergiasPanel,tratamientoLabel,tratamiento,tratamientoPanel, eliminarTratamientoButton,discapacidadesCombobox,enfermedadesCombobox,alergiasCombobox,
+            infoMedica(servMedicoLabel, servMedico, servMedicoPanel, grupoSanguineoLabel, grupoSanguineo, grupoSanguineoPanel, grupoSanguineoComboBox, telefonoLabel,
+                telefono, telefonoPanel, discapacidadLabel, discapacidad, discapacidadPanel, enfermedadesLabel, enfermedades, enfermedadesPanel,
+                alergiasLabel, alergias, alergiasPanel, tratamientoLabel, tratamiento, tratamientoPanel, eliminarTratamientoButton, discapacidadesCombobox, enfermedadesCombobox, alergiasCombobox,
                 eliminarDiscapacidadesButton,
-                eliminarEnfermedadButton,eliminarAlergiasButton);
+                eliminarEnfermedadButton, eliminarAlergiasButton);
 
             informacionGeneralAlumno.Visible = true;
             informacionGeneralAlumno2.Visible = false;
@@ -62,20 +62,25 @@ namespace presentationLayer
 
 
             altasBotonesParaNavegar(siguiente1Button, siguiente2Button, siguiente3Button, regresarButton, realizarAltaButton, regresarMenuButton);
-            
+
+            DateTime fechaActualI = DateTime.Today;
+            int anioI = fechaNa.Value.Year;
+            int edadI = fechaActualI.Year - anioI;
+            String edadConvertidaI = edadI.ToString();
+            añosCum.Text = edadConvertidaI;
         }
 
         //CENTRAR TITULO
-        private void centrarLabel(Label nomLabel, Label infoTutorL, Label infoMedLabel, PictureBox logo, Label infGenLabel, GroupBox infoGeneral, 
+        private void centrarLabel(Label nomLabel, Label infoTutorL, Label infoMedLabel, PictureBox logo, Label infGenLabel, GroupBox infoGeneral,
             GroupBox infoGeneral2, GroupBox infoTutor, GroupBox infoMedica)
         {
             //tamaño pantalla
-            
+
             logo.Location = new Point(50, 20);
 
             //TITULO PRINCIPAL
             nomLabel.Location = new Point(620, 50);
-           
+
             //SUBTITULOS
             infGenLabel.Location = new Point(620, 120);
             infoTutorLabel.Location = new Point(670, 120);
@@ -95,10 +100,10 @@ namespace presentationLayer
             infoMedica.Size = new Size(1220, 440);
             infoMedica.Location = new Point(180, 180);
         }
-    
+
 
         //INFORMACION GENERAL ALUMNO
-        private void infoGen(Label nombreL, TextBox nombre, Panel nombreP, Label apellidoPL, TextBox apellidoP, Panel apellidoPP, Label apellidoML, 
+        private void infoGen(Label nombreL, TextBox nombre, Panel nombreP, Label apellidoPL, TextBox apellidoP, Panel apellidoPP, Label apellidoML,
             TextBox apellidoM, Panel apellidoMP,
             Label fechaNaL, DateTimePicker fechaNa, Label añosCumL, TextBox añosCum, Panel añosCumP, Label curpL, TextBox curp, Panel curpP,
             Label direccion, Label calleL,
@@ -106,7 +111,7 @@ namespace presentationLayer
             Label ciudadL, TextBox ciudad, Panel ciudadP, Label estadoL, TextBox estado, Panel estadoP, PictureBox foto, Button fotoB)
         {
 
-            foto.Location = new Point(1000,50);
+            foto.Location = new Point(1000, 50);
             foto.Size = new Size(200, 220);
             fotoB.Location = new Point(1000, 285);
             fotoB.Size = new Size(200, 45);
@@ -114,41 +119,41 @@ namespace presentationLayer
 
             nombreL.Location = new Point(50, 50);
             nombreP.Location = new Point(260, 50);
-            nombreP.Size = new Size(300,45);
+            nombreP.Size = new Size(300, 45);
             //nombreP.Padding = new Padding(2,2,2,2);
 
-            apellidoPL.Location = new Point(50,110);
-            apellidoPP.Location = new Point(260,110);
+            apellidoPL.Location = new Point(50, 110);
+            apellidoPP.Location = new Point(260, 110);
             apellidoPP.Size = new Size(300, 45);
 
-            apellidoML.Location = new Point(50,170);
-            apellidoMP.Location = new Point(260,170);
+            apellidoML.Location = new Point(50, 170);
+            apellidoMP.Location = new Point(260, 170);
             apellidoMP.Size = new Size(300, 45);
 
-            fechaNaL.Location = new Point(50,230);
-            fechaNa.Location = new Point(260,230);
+            fechaNaL.Location = new Point(50, 230);
+            fechaNa.Location = new Point(260, 230);
 
-            añosCumL.Location = new Point(50,290);
-            añosCumP.Location = new Point(260,290);
+            añosCumL.Location = new Point(50, 290);
+            añosCumP.Location = new Point(260, 290);
             añosCumP.Size = new Size(150, 45);
 
-            curpL.Location = new Point(50,350);
-            curpP.Location = new Point(260,350);
+            curpL.Location = new Point(50, 350);
+            curpP.Location = new Point(260, 350);
             curpP.Size = new Size(300, 45);
 
             //DIRECCION
             direccion.Location = new Point(650, 50);
 
-            calleL.Location = new Point(650,110);
-            calleP.Location = new Point(740,110);
+            calleL.Location = new Point(650, 110);
+            calleP.Location = new Point(740, 110);
             calleP.Size = new Size(240, 45);
 
-            numL.Location = new Point(650,170);
-            numP.Location = new Point(740,170);
+            numL.Location = new Point(650, 170);
+            numP.Location = new Point(740, 170);
             numP.Size = new Size(150, 45);
 
-            coloniaL.Location = new Point(650,230);
-            coloniaP.Location = new Point(740,230);
+            coloniaL.Location = new Point(650, 230);
+            coloniaP.Location = new Point(740, 230);
             coloniaP.Size = new Size(240, 45);
 
             //LUGAR NACIMIENTO
@@ -167,38 +172,38 @@ namespace presentationLayer
 
         //INFORMACION GENERAL ALUMNO 2
         private void infoGen2(Label telL, TextBox tel, Panel telP, Label escuelaPL, TextBox escuelaP, Panel escuelaPP, Label canalizadoL, TextBox canalizado, Panel canalizadoP, Label cicloL,
-            TextBox ciclo, Panel cicloP, Label tipoIng,GroupBox ingresos)
+            TextBox ciclo, Panel cicloP, Label tipoIng, GroupBox ingresos)
         {
             telL.Location = new Point(50, 50);
             telP.Location = new Point(280, 50);
             telP.Size = new Size(150, 45);
 
-            escuelaPL.Location = new Point(50,110);
-            escuelaPP.Location = new Point(280,110);
+            escuelaPL.Location = new Point(50, 110);
+            escuelaPP.Location = new Point(280, 110);
             escuelaPP.Size = new Size(250, 45);
 
-            canalizadoL.Location = new Point(50,170);
-            canalizadoP.Location = new Point(280,170);
+            canalizadoL.Location = new Point(50, 170);
+            canalizadoP.Location = new Point(280, 170);
             canalizadoP.Size = new Size(250, 45);
 
-            cicloL.Location = new Point(50,230);
-            cicloP.Location = new Point(280,230);
+            cicloL.Location = new Point(50, 230);
+            cicloP.Location = new Point(280, 230);
             cicloP.Size = new Size(150, 45);
 
-            tipoIng.Location = new Point(50,290);
+            tipoIng.Location = new Point(50, 290);
 
             ingresos.Location = new Point(50, 330);
         }
 
         //INFORMACION TUTOR
         private void infoTutor(Label nombreL, TextBox nombre, Panel nombreP, Label apellidoPL, TextBox apellidoP, Panel apellidoPP,
-            Label apellidoML, TextBox apellidoM,Panel apellidoMP,
-            Label direccion, Label calleL, TextBox calle, Panel calleP, Label numL, TextBox num, Panel numP, Label coloniaL, TextBox colonia, Panel coloniaP, 
+            Label apellidoML, TextBox apellidoM, Panel apellidoMP,
+            Label direccion, Label calleL, TextBox calle, Panel calleP, Label numL, TextBox num, Panel numP, Label coloniaL, TextBox colonia, Panel coloniaP,
             Label infoCon, Label telCasaL,
-            TextBox telCasa, Panel telCasaP, Label telMovilL, TextBox telMovil, Panel telMovilP, Label telTrabajoL, TextBox telTrabajo, Panel telTrabajoP, 
+            TextBox telCasa, Panel telCasaP, Label telMovilL, TextBox telMovil, Panel telMovilP, Label telTrabajoL, TextBox telTrabajo, Panel telTrabajoP,
             Label ocupacionL, TextBox ocupacion, Panel ocupacionP, CheckBox mismaDireccion)
         {
-           
+
             nombreL.Location = new Point(50, 50);
             nombreP.Location = new Point(215, 50);
             nombreP.Size = new Size(300, 50);
@@ -216,7 +221,7 @@ namespace presentationLayer
             mismaDireccion.Location = new Point(770, 45);
             mismaDireccion.Checked = false;
 
-           calleL.Location = new Point(650, 90);
+            calleL.Location = new Point(650, 90);
             calleP.Location = new Point(740, 90);
             calleP.Size = new Size(300, 50);
 
@@ -228,9 +233,9 @@ namespace presentationLayer
             coloniaP.Location = new Point(740, 210);
             coloniaP.Size = new Size(300, 50);
 
-            infoCon.Location = new Point(50,250);
+            infoCon.Location = new Point(50, 250);
 
-            telCasaL.Location = new Point(50,290 );
+            telCasaL.Location = new Point(50, 290);
             telCasaP.Location = new Point(215, 290);
             telCasaP.Size = new Size(150, 50);
 
@@ -251,11 +256,11 @@ namespace presentationLayer
         private void infoMedica(Label servMedicoL, TextBox servMed, Panel servMedP, Label grupoSanL, TextBox grupoSan, Panel grupoSanP,
             ComboBox grupoSanCB, Label telL, TextBox tel, Panel telP, Label discapacidadL, RichTextBox discapacidad, Panel discapacidadP,
             Label enfermedadL, RichTextBox enfermedad, Panel enfermedadP, Label alergiaL, RichTextBox alergia, Panel alergiaP,
-            Label tratamientoL, RichTextBox tratamiento, Panel tratamientoP,Button eliTra,
-            ComboBox discapacidadCB, ComboBox enfermedadCB, ComboBox alergiaCB,Button eliDisc, Button eliEnf, Button eliAle)
+            Label tratamientoL, RichTextBox tratamiento, Panel tratamientoP, Button eliTra,
+            ComboBox discapacidadCB, ComboBox enfermedadCB, ComboBox alergiaCB, Button eliDisc, Button eliEnf, Button eliAle)
         {
             servMedicoL.Location = new Point(50, 50);
-            servMedP.Location = new Point(210,50);
+            servMedP.Location = new Point(210, 50);
             servMedP.Size = new Size(300, 50);
 
             grupoSanL.Location = new Point(530, 50);
@@ -270,7 +275,7 @@ namespace presentationLayer
             telP.Size = new Size(150, 45);
 
             discapacidadL.Location = new Point(50, 150);
-            eliDisc.Location = new Point(290,150);
+            eliDisc.Location = new Point(290, 150);
             discapacidad.Location = new Point(50, 170);
             discapacidadCB.Location = new Point(50, 340);
             discapacidadP.Location = new Point(50, 180);
@@ -278,7 +283,7 @@ namespace presentationLayer
             discapacidadCB.Size = new Size(270, 60);
 
             enfermedadL.Location = new Point(340, 150);
-            eliEnf.Location = new Point(580,150);
+            eliEnf.Location = new Point(580, 150);
             enfermedad.Location = new Point(340, 210);
             enfermedadCB.Location = new Point(340, 340);
             enfermedadP.Location = new Point(340, 180);
@@ -286,7 +291,7 @@ namespace presentationLayer
             enfermedadCB.Size = new Size(270, 60);
 
             alergiaL.Location = new Point(630, 150);
-            eliAle.Location = new Point(870,150);
+            eliAle.Location = new Point(870, 150);
             alergia.Location = new Point(630, 210);
             alergiaCB.Location = new Point(630, 340);
             alergiaP.Location = new Point(630, 180);
@@ -294,7 +299,7 @@ namespace presentationLayer
             alergiaCB.Size = new Size(270, 60);
 
             tratamientoL.Location = new Point(920, 150);
-            eliTra.Location = new Point(1160,150);
+            eliTra.Location = new Point(1160, 150);
             tratamientoP.Location = new Point(920, 180);
             tratamientoP.Size = new Size(270, 150);
         }
@@ -388,7 +393,7 @@ namespace presentationLayer
         private void agregarEnfermedadesButton_Click(object sender, EventArgs e)
         {
             string informacion = this.enfermedadesCombobox.GetItemText(this.enfermedadesCombobox.SelectedItem);
-            enfermedades.Text = enfermedades.Text+ informacion + "\n";
+            enfermedades.Text = enfermedades.Text + informacion + "\n";
 
         }
 
@@ -451,7 +456,7 @@ namespace presentationLayer
         private void limpiarFormato3Button_Click(object sender, EventArgs e)
         {
             servMedico.Clear();
-        
+
             telefono.Clear();
             grupoSanguineo.Clear();
             //documentacionListBox.SetItemChecked = false; *CLAUDIA CAMBIARÁ ESTO POR UN CONJUNTO DE CHECKBUTTONS*
@@ -496,7 +501,8 @@ namespace presentationLayer
 
         private void regresarButton_Click_1(object sender, EventArgs e)
         {
-            if (informacionGeneralAlumno2.Visible == true) {
+            if (informacionGeneralAlumno2.Visible == true)
+            {
 
                 informacionGeneralAlumno.Visible = true;
                 informacionGeneralAlumno2.Visible = false;
@@ -507,7 +513,8 @@ namespace presentationLayer
                 siguiente1Button.Visible = true;
                 siguiente2Button.Visible = false;
             }
-            if (informacionTutor.Visible == true){
+            if (informacionTutor.Visible == true)
+            {
 
                 informacionGeneralAlumno2.Visible = true;
                 informacionTutor.Visible = false;
@@ -518,7 +525,8 @@ namespace presentationLayer
                 siguiente2Button.Visible = true;
                 siguiente3Button.Visible = false;
             }
-            if (informacionMedicaAlumnoGroupBox.Visible == true) {
+            if (informacionMedicaAlumnoGroupBox.Visible == true)
+            {
 
                 informacionTutor.Visible = true;
                 informacionMedicaAlumnoGroupBox.Visible = false;
@@ -632,7 +640,92 @@ namespace presentationLayer
 
         private void siguiente2Button_Click(object sender, EventArgs e)
         {
-            if (canalizado.Text.Equals(""))
+            if (telPersonal.Text == "") //POR PULIR
+            {
+                DialogResult dr = MessageBox.Show("¡El telefono personal del alumno está vacio! ¿Deseas registrarlo?", "Dato requerido", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dr == DialogResult.No)
+                {
+                    if (canalizado.Text.Equals(""))
+                    {
+                        MessageBox.Show("¡No se ha respondido el campo \"Canalizado por\" ", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
+                    }
+                    else
+                    {
+                        if (cicloEsc.Text.Equals(""))
+                        {
+                            MessageBox.Show("¡No se ha ingresado el ciclo escolar", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            return;
+                        }
+                        else
+                        {
+                            if (tipoIngresoGroupBox.Controls == null)
+                            {
+                                MessageBox.Show("¡No se ha seleccionado si el alumno es nuevo Ingreso o reingreso", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            }
+                            else
+                            {
+                                informacionGeneralAlumno2.Visible = false;
+                                informacionTutor.Visible = true;
+
+                                infGeneralAlLabel.Visible = false;
+                                infoTutorLabel.Visible = true;
+
+                                siguiente2Button.Visible = false;
+                                siguiente3Button.Visible = true;
+                            }
+                        }
+                    }
+
+                }
+                if (dr == DialogResult.Yes)
+                {
+                    return;
+                }
+            }
+            else if (telPersonal.TextLength < 10) //Validación si se da siguiente y el telefono está incompleto
+            {
+                String telPersonalAl = Convert.ToString(10 - telPersonal.TextLength);
+                MessageBox.Show("¡El telefono personal del alumno está incompleto, falta " + telPersonalAl + " numero(s)", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            else if (telPersonal.TextLength == 10)
+            {
+                if (canalizado.Text.Equals(""))
+                {
+                    MessageBox.Show("¡No se ha respondido el campo \"Canalizado por\" ", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+                else
+                {
+                    if (cicloEsc.Text.Equals(""))
+                    {
+                        MessageBox.Show("¡No se ha ingresado el ciclo escolar", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
+                    }
+                    else
+                    {
+                        if (tipoIngresoGroupBox.Controls == null)
+                        {
+                            MessageBox.Show("¡No se ha seleccionado si el alumno es nuevo Ingreso o reingreso", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
+                        else
+                        {
+                            informacionGeneralAlumno2.Visible = false;
+                            informacionTutor.Visible = true;
+
+                            infGeneralAlLabel.Visible = false;
+                            infoTutorLabel.Visible = true;
+
+                            siguiente2Button.Visible = false;
+                            siguiente3Button.Visible = true;
+                        }
+                    }
+                }
+            }
+
+
+            /*if (canalizado.Text.Equals(""))
             {
                 MessageBox.Show("¡No se ha respondido el campo \"Canalizado por\" ", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
@@ -677,7 +770,7 @@ namespace presentationLayer
                         siguiente3Button.Visible = true;
                     }
                 }
-            }
+            }*/
         }
 
         private void siguiente3Button_Click(object sender, EventArgs e)
@@ -1179,6 +1272,10 @@ namespace presentationLayer
 
         }
 
+        //De aqui para abajo son eventos keypress
+        //Para validar que ciertos textbox admitan solo letros o numeros
+        //o tambien numeros y letras
+        //o también numeros y guiones
         private void añosCum_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (Char.IsDigit(e.KeyChar))
@@ -1750,6 +1847,28 @@ namespace presentationLayer
                 e.Handled = true;
             }
 
+        }
+
+        //Metodo para validar misma dirección de alumno y tutor
+        private void direccionCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            calleT.Text = calle.Text;
+            calleT.Enabled = false;
+            numeroCasaT.Text = numeroCasa.Text;
+            numeroCasaT.Enabled = false;
+            coloniaT.Text = colonia.Text;
+            coloniaT.Enabled = false;
+
+            if (direccionCheckBox.Checked == false)
+            {
+                calleT.Text = "";
+                calleT.Enabled = true;
+                numeroCasaT.Text = "";
+                numeroCasaT.Enabled = true;
+                coloniaT.Text = "";
+                coloniaT.Enabled = true;
+
+            }
         }
     }
 }
