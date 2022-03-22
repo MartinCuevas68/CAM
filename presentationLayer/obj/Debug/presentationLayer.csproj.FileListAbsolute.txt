@@ -275,9 +275,7 @@ D:\Canela\Documents\GitHub\CAM\presentationLayer\bin\Debug\EntityFramework.xml
 D:\Canela\Documents\GitHub\CAM\presentationLayer\bin\Debug\EntityFramework.SqlServer.xml
 D:\Canela\Documents\GitHub\CAM\presentationLayer\obj\Debug\presentationLayer.csproj.AssemblyReference.cache
 D:\Canela\Documents\GitHub\CAM\presentationLayer\obj\Debug\presentationLayer.altaAlumno.resources
-D:\Canela\Documents\GitHub\CAM\presentationLayer\obj\Debug\presentationLayer.Consultas.resources
 D:\Canela\Documents\GitHub\CAM\presentationLayer\obj\Debug\presentationLayer.fichaTecnica.resources
-D:\Canela\Documents\GitHub\CAM\presentationLayer\obj\Debug\presentationLayer.imprimirFormatos.resources
 D:\Canela\Documents\GitHub\CAM\presentationLayer\obj\Debug\presentationLayer.modificacionesAlumno.resources
 D:\Canela\Documents\GitHub\CAM\presentationLayer\obj\Debug\presentationLayer.Properties.Resources.resources
 D:\Canela\Documents\GitHub\CAM\presentationLayer\obj\Debug\presentationLayer.csproj.GenerateResource.cache
@@ -293,3 +291,5 @@ C:\Users\DELL\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.Con
 C:\Users\DELL\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.imprimirFormatosAlumno.resources
 C:\Users\Juan2\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.ConsultaAlumno.resources
 C:\Users\Juan2\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.imprimirFormatosAlumno.resources
+D:\Canela\Documents\GitHub\CAM\presentationLayer\obj\Debug\presentationLayer.ConsultaAlumno.resources
+D:\Canela\Documents\GitHub\CAM\presentationLayer\obj\Debug\presentationLayer.imprimirFormatosAlumno.resources
