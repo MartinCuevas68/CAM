@@ -86,6 +86,30 @@ namespace _1dataLayer
             }
             return FichaTecnicaAlumno;
         }
+        public List<SP_FichaTecnicaAlumnoTutor_Result> FichaTecnicaTutor(int id)
+        {
+            List<SP_FichaTecnicaAlumnoTutor_Result> FTtutor = new List<SP_FichaTecnicaAlumnoTutor_Result>();
+            using (BDCAMEntities db = new BDCAMEntities())
+            {
+                ObjectResult<SP_FichaTecnicaAlumnoTutor_Result> x = db.SP_FichaTecnicaAlumnoTutor(id);
+                foreach (SP_FichaTecnicaAlumnoTutor_Result result in x)
+                    FTtutor.Add(result);
+            }
+
+            return FTtutor;
+        }
+        public List<SP_FichaTecnicaAlumnoMedica_Result> FichaTecnicaMedica(int id)
+        {
+            List<SP_FichaTecnicaAlumnoMedica_Result> FTMedica = new List<SP_FichaTecnicaAlumnoMedica_Result>();
+            using (BDCAMEntities db = new BDCAMEntities())
+            {
+                ObjectResult<SP_FichaTecnicaAlumnoMedica_Result> x = db.SP_FichaTecnicaAlumnoMedica(id);
+                foreach (SP_FichaTecnicaAlumnoMedica_Result result in x)
+                    FTMedica.Add(result);
+            }
+
+            return FTMedica;
+        }
         public List<SP_ListaAlergia_Result> ListaAlergias(int id)
         {
             List<SP_ListaAlergia_Result> alergias = new List<SP_ListaAlergia_Result>();
