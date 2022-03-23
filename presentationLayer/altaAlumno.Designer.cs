@@ -72,8 +72,17 @@ namespace presentationLayer
             this.alergiasLabel = new System.Windows.Forms.Label();
             this.telefonoLabel = new System.Windows.Forms.Label();
             this.informacionGeneralAlumno = new System.Windows.Forms.GroupBox();
+<<<<<<< HEAD
             this.fotoBtn = new presentationLayer.buttonSystem();
             this.fotoAl = new System.Windows.Forms.PictureBox();
+=======
+<<<<<<< HEAD
+            this.fotoAlumno = new System.Windows.Forms.PictureBox();
+=======
+            this.fotoBtn = new presentationLayer.buttonSystem();
+            this.fotoAl = new System.Windows.Forms.PictureBox();
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
             this.curpPanel = new System.Windows.Forms.Panel();
             this.curp = new System.Windows.Forms.TextBox();
             this.añosCumPanel = new System.Windows.Forms.Panel();
@@ -164,7 +173,15 @@ namespace presentationLayer
             this.realizarAltaButton = new presentationLayer.buttonSystem();
             this.tipoIngresoGroupBox.SuspendLayout();
             this.informacionGeneralAlumno.SuspendLayout();
+<<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)(this.fotoAl)).BeginInit();
+=======
+<<<<<<< HEAD
+            ((System.ComponentModel.ISupportInitialize)(this.fotoAlumno)).BeginInit();
+=======
+            ((System.ComponentModel.ISupportInitialize)(this.fotoAl)).BeginInit();
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
             this.curpPanel.SuspendLayout();
             this.añosCumPanel.SuspendLayout();
             this.coloniaPanel.SuspendLayout();
@@ -451,6 +468,17 @@ namespace presentationLayer
             this.informacionGeneralAlumno.Name = "informacionGeneralAlumno";
             this.informacionGeneralAlumno.TabStop = false;
             // 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+            // fotoAlumno
+            // 
+            this.fotoAlumno.BackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.fotoAlumno, "fotoAlumno");
+            this.fotoAlumno.Name = "fotoAlumno";
+            this.fotoAlumno.TabStop = false;
+=======
+>>>>>>> Juan_3_11_2022_2
             // fotoBtn
             // 
             this.fotoBtn.BackColor = System.Drawing.Color.White;
@@ -469,6 +497,10 @@ namespace presentationLayer
             resources.ApplyResources(this.fotoAl, "fotoAl");
             this.fotoAl.Name = "fotoAl";
             this.fotoAl.TabStop = false;
+<<<<<<< HEAD
+=======
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
             // 
             // curpPanel
             // 
@@ -1136,6 +1168,13 @@ namespace presentationLayer
             this.realizarAltaButton.ForeColor = System.Drawing.Color.White;
             this.realizarAltaButton.Name = "realizarAltaButton";
             this.realizarAltaButton.UseVisualStyleBackColor = false;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+            this.realizarAltaButton.Click += new System.EventHandler(this.realizarAltaButton_Click);
+=======
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
             // 
             // altaAlumno
             // 
@@ -1165,7 +1204,15 @@ namespace presentationLayer
             this.tipoIngresoGroupBox.PerformLayout();
             this.informacionGeneralAlumno.ResumeLayout(false);
             this.informacionGeneralAlumno.PerformLayout();
+<<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)(this.fotoAl)).EndInit();
+=======
+<<<<<<< HEAD
+            ((System.ComponentModel.ISupportInitialize)(this.fotoAlumno)).EndInit();
+=======
+            ((System.ComponentModel.ISupportInitialize)(this.fotoAl)).EndInit();
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
             this.curpPanel.ResumeLayout(false);
             this.curpPanel.PerformLayout();
             this.añosCumPanel.ResumeLayout(false);

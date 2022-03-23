@@ -588,6 +588,156 @@
   <data name="&gt;&gt;tipoIngLabel.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  <data name="telPersonal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>35, 2</value>
+  </data>
+  <data name="telPersonal.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="telPersonal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>265, 32</value>
+  </data>
+  <data name="telPersonal.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;telPersonal.Name" xml:space="preserve">
+    <value>telPersonal</value>
+  </data>
+  <data name="&gt;&gt;telPersonal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;telPersonal.Parent" xml:space="preserve">
+    <value>telPersonalPanel</value>
+  </data>
+  <data name="&gt;&gt;telPersonal.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="escuelaP.Location" type="System.Drawing.Point, System.Drawing">
+    <value>37, 7</value>
+  </data>
+  <data name="escuelaP.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="escuelaP.Size" type="System.Drawing.Size, System.Drawing">
+    <value>265, 32</value>
+  </data>
+  <data name="escuelaP.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;escuelaP.Name" xml:space="preserve">
+    <value>escuelaP</value>
+  </data>
+  <data name="&gt;&gt;escuelaP.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;escuelaP.Parent" xml:space="preserve">
+    <value>escuelaPPanel</value>
+  </data>
+  <data name="&gt;&gt;escuelaP.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="canalizado.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 10</value>
+  </data>
+  <data name="canalizado.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="canalizado.Size" type="System.Drawing.Size, System.Drawing">
+    <value>265, 32</value>
+  </data>
+  <data name="canalizado.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;canalizado.Name" xml:space="preserve">
+    <value>canalizado</value>
+  </data>
+  <data name="&gt;&gt;canalizado.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;canalizado.Parent" xml:space="preserve">
+    <value>canalizadoPanel</value>
+  </data>
+  <data name="&gt;&gt;canalizado.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="cicloEsc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 7</value>
+  </data>
+  <data name="cicloEsc.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="cicloEsc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 32</value>
+  </data>
+  <data name="cicloEsc.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;cicloEsc.Name" xml:space="preserve">
+    <value>cicloEsc</value>
+  </data>
+  <data name="&gt;&gt;cicloEsc.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cicloEsc.Parent" xml:space="preserve">
+    <value>cicloEscPanel</value>
+  </data>
+  <data name="&gt;&gt;cicloEsc.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="curp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 11</value>
+  </data>
+  <data name="curp.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="curp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 32</value>
+  </data>
+  <data name="curp.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;curp.Name" xml:space="preserve">
+    <value>curp</value>
+  </data>
+  <data name="&gt;&gt;curp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;curp.Parent" xml:space="preserve">
+    <value>curpPanel</value>
+  </data>
+  <data name="&gt;&gt;curp.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="añosCum.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 15</value>
+  </data>
+  <data name="añosCum.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="añosCum.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 32</value>
+  </data>
+  <data name="añosCum.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="&gt;&gt;añosCum.Name" xml:space="preserve">
+    <value>añosCum</value>
+  </data>
+  <data name="&gt;&gt;añosCum.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;añosCum.Parent" xml:space="preserve">
+    <value>añosCumPanel</value>
+  </data>
+  <data name="&gt;&gt;añosCum.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+=======
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
   <data name="fechaNa.CustomFormat" xml:space="preserve">
     <value>dd-MM-yyyy</value>
   </data>
@@ -714,6 +864,66 @@
   <data name="&gt;&gt;ocupacionLabel.ZOrder" xml:space="preserve">
     <value>13</value>
   </data>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  <data name="nombreT.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Gadugi, 14.25pt</value>
+  </data>
+  <data name="nombreT.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 2</value>
+  </data>
+  <data name="nombreT.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="nombreT.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 32</value>
+  </data>
+  <data name="nombreT.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="&gt;&gt;nombreT.Name" xml:space="preserve">
+    <value>nombreT</value>
+  </data>
+  <data name="&gt;&gt;nombreT.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nombreT.Parent" xml:space="preserve">
+    <value>nombreTPanel</value>
+  </data>
+  <data name="&gt;&gt;nombreT.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ocupacion.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Gadugi, 14.25pt</value>
+  </data>
+  <data name="ocupacion.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 2</value>
+  </data>
+  <data name="ocupacion.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="ocupacion.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 32</value>
+  </data>
+  <data name="ocupacion.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
+  </data>
+  <data name="&gt;&gt;ocupacion.Name" xml:space="preserve">
+    <value>ocupacion</value>
+  </data>
+  <data name="&gt;&gt;ocupacion.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ocupacion.Parent" xml:space="preserve">
+    <value>ocupacionTPanel</value>
+  </data>
+  <data name="&gt;&gt;ocupacion.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+=======
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
   <data name="telCasaTLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -757,7 +967,15 @@
     <value>NoControl</value>
   </data>
   <data name="telMovilTLabel.Location" type="System.Drawing.Point, System.Drawing">
+<<<<<<< HEAD
     <value>533, 174</value>
+=======
+<<<<<<< HEAD
+    <value>372, 174</value>
+=======
+    <value>533, 174</value>
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
   </data>
   <data name="telMovilTLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>178, 28</value>
@@ -790,7 +1008,15 @@
     <value>NoControl</value>
   </data>
   <data name="telTrabajoTLabel.Location" type="System.Drawing.Point, System.Drawing">
+<<<<<<< HEAD
     <value>938, 174</value>
+=======
+<<<<<<< HEAD
+    <value>696, 170</value>
+=======
+    <value>938, 174</value>
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
   </data>
   <data name="telTrabajoTLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>193, 28</value>
@@ -813,6 +1039,93 @@
   <data name="&gt;&gt;telTrabajoTLabel.ZOrder" xml:space="preserve">
     <value>18</value>
   </data>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  <data name="telCasaT.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Gadugi, 14.25pt</value>
+  </data>
+  <data name="telCasaT.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 2</value>
+  </data>
+  <data name="telCasaT.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="telCasaT.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 32</value>
+  </data>
+  <data name="telCasaT.TabIndex" type="System.Int32, mscorlib">
+    <value>54</value>
+  </data>
+  <data name="&gt;&gt;telCasaT.Name" xml:space="preserve">
+    <value>telCasaT</value>
+  </data>
+  <data name="&gt;&gt;telCasaT.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;telCasaT.Parent" xml:space="preserve">
+    <value>telCasaTPanel</value>
+  </data>
+  <data name="&gt;&gt;telCasaT.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="telMovilT.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Gadugi, 14.25pt</value>
+  </data>
+  <data name="telMovilT.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 2</value>
+  </data>
+  <data name="telMovilT.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="telMovilT.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 32</value>
+  </data>
+  <data name="telMovilT.TabIndex" type="System.Int32, mscorlib">
+    <value>55</value>
+  </data>
+  <data name="&gt;&gt;telMovilT.Name" xml:space="preserve">
+    <value>telMovilT</value>
+  </data>
+  <data name="&gt;&gt;telMovilT.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;telMovilT.Parent" xml:space="preserve">
+    <value>telMovilTPanel</value>
+  </data>
+  <data name="&gt;&gt;telMovilT.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="telTrabajoT.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Gadugi, 14.25pt</value>
+  </data>
+  <data name="telTrabajoT.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 6</value>
+  </data>
+  <data name="telTrabajoT.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="telTrabajoT.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 32</value>
+  </data>
+  <data name="telTrabajoT.TabIndex" type="System.Int32, mscorlib">
+    <value>56</value>
+  </data>
+  <data name="&gt;&gt;telTrabajoT.Name" xml:space="preserve">
+    <value>telTrabajoT</value>
+  </data>
+  <data name="&gt;&gt;telTrabajoT.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;telTrabajoT.Parent" xml:space="preserve">
+    <value>telTrabajoTPanel</value>
+  </data>
+  <data name="&gt;&gt;telTrabajoT.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+=======
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
   <data name="ciudadLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -820,7 +1133,15 @@
     <value>NoControl</value>
   </data>
   <data name="ciudadLabel.Location" type="System.Drawing.Point, System.Drawing">
+<<<<<<< HEAD
     <value>260, 167</value>
+=======
+<<<<<<< HEAD
+    <value>284, 170</value>
+=======
+    <value>260, 167</value>
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
   </data>
   <data name="ciudadLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>92, 28</value>
@@ -850,7 +1171,15 @@
     <value>NoControl</value>
   </data>
   <data name="estadoLabel.Location" type="System.Drawing.Point, System.Drawing">
+<<<<<<< HEAD
     <value>596, 171</value>
+=======
+<<<<<<< HEAD
+    <value>547, 170</value>
+=======
+    <value>596, 171</value>
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
   </data>
   <data name="estadoLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>87, 28</value>
@@ -880,7 +1209,15 @@
     <value>NoControl</value>
   </data>
   <data name="apellidoPLabel.Location" type="System.Drawing.Point, System.Drawing">
+<<<<<<< HEAD
     <value>492, 44</value>
+=======
+<<<<<<< HEAD
+    <value>525, 39</value>
+=======
+    <value>492, 44</value>
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
   </data>
   <data name="apellidoPLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>195, 28</value>
@@ -998,6 +1335,8 @@
   </data>
   <data name="coloniaLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+<<<<<<< HEAD
+=======
   </data>
   <data name="coloniaLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>759, 231</value>
@@ -1021,7 +1360,188 @@
     <value>informacionGeneralAlumno</value>
   </data>
   <data name="&gt;&gt;coloniaLabel.ZOrder" xml:space="preserve">
+<<<<<<< HEAD
+    <value>25</value>
+  </data>
+  <data name="apellidoP.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 12</value>
+  </data>
+  <data name="apellidoP.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="apellidoP.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 32</value>
+  </data>
+  <data name="apellidoP.TabIndex" type="System.Int32, mscorlib">
+    <value>71</value>
+  </data>
+  <data name="&gt;&gt;apellidoP.Name" xml:space="preserve">
+    <value>apellidoP</value>
+  </data>
+  <data name="&gt;&gt;apellidoP.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;apellidoP.Parent" xml:space="preserve">
+    <value>apellidoPPanel</value>
+  </data>
+  <data name="&gt;&gt;apellidoP.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="apellidoM.Location" type="System.Drawing.Point, System.Drawing">
+    <value>33, 10</value>
+  </data>
+  <data name="apellidoM.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="apellidoM.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 32</value>
+  </data>
+  <data name="apellidoM.TabIndex" type="System.Int32, mscorlib">
+    <value>72</value>
+  </data>
+  <data name="&gt;&gt;apellidoM.Name" xml:space="preserve">
+    <value>apellidoM</value>
+  </data>
+  <data name="&gt;&gt;apellidoM.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;apellidoM.Parent" xml:space="preserve">
+    <value>apellidoMPanel</value>
+  </data>
+  <data name="&gt;&gt;apellidoM.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ciudad.Location" type="System.Drawing.Point, System.Drawing">
+    <value>32, 10</value>
+  </data>
+  <data name="ciudad.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="ciudad.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 32</value>
+  </data>
+  <data name="ciudad.TabIndex" type="System.Int32, mscorlib">
+    <value>73</value>
+  </data>
+  <data name="&gt;&gt;ciudad.Name" xml:space="preserve">
+    <value>ciudad</value>
+  </data>
+  <data name="&gt;&gt;ciudad.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ciudad.Parent" xml:space="preserve">
+    <value>ciudadPanel</value>
+  </data>
+  <data name="&gt;&gt;ciudad.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="estado.Location" type="System.Drawing.Point, System.Drawing">
+    <value>35, 11</value>
+  </data>
+  <data name="estado.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="estado.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 32</value>
+  </data>
+  <data name="estado.TabIndex" type="System.Int32, mscorlib">
+    <value>74</value>
+  </data>
+  <data name="&gt;&gt;estado.Name" xml:space="preserve">
+    <value>estado</value>
+  </data>
+  <data name="&gt;&gt;estado.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;estado.Parent" xml:space="preserve">
+    <value>estadoPanel</value>
+  </data>
+  <data name="&gt;&gt;estado.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="calle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>35, 11</value>
+  </data>
+  <data name="calle.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="calle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 32</value>
+  </data>
+  <data name="calle.TabIndex" type="System.Int32, mscorlib">
+    <value>75</value>
+  </data>
+  <data name="&gt;&gt;calle.Name" xml:space="preserve">
+    <value>calle</value>
+  </data>
+  <data name="&gt;&gt;calle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;calle.Parent" xml:space="preserve">
+    <value>callePanel</value>
+  </data>
+  <data name="&gt;&gt;calle.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="numeroCasa.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 11</value>
+  </data>
+  <data name="numeroCasa.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="numeroCasa.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 32</value>
+  </data>
+  <data name="numeroCasa.TabIndex" type="System.Int32, mscorlib">
+    <value>76</value>
+  </data>
+  <data name="&gt;&gt;numeroCasa.Name" xml:space="preserve">
+    <value>numeroCasa</value>
+  </data>
+  <data name="&gt;&gt;numeroCasa.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numeroCasa.Parent" xml:space="preserve">
+    <value>numeroCasaPanel</value>
+  </data>
+  <data name="&gt;&gt;numeroCasa.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="colonia.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 12</value>
+>>>>>>> Juan_3_11_2022_2
+  </data>
+  <data name="coloniaLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>759, 231</value>
+  </data>
+  <data name="coloniaLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 28</value>
+  </data>
+  <data name="coloniaLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="coloniaLabel.Text" xml:space="preserve">
+    <value>Colonia:</value>
+  </data>
+  <data name="&gt;&gt;coloniaLabel.Name" xml:space="preserve">
+    <value>coloniaLabel</value>
+  </data>
+  <data name="&gt;&gt;coloniaLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+<<<<<<< HEAD
+  <data name="&gt;&gt;coloniaLabel.Parent" xml:space="preserve">
+    <value>informacionGeneralAlumno</value>
+  </data>
+  <data name="&gt;&gt;coloniaLabel.ZOrder" xml:space="preserve">
     <value>26</value>
+=======
+  <data name="&gt;&gt;colonia.ZOrder" xml:space="preserve">
+    <value>0</value>
+=======
+    <value>26</value>
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
   </data>
   <data name="apellidoPTLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1092,6 +1612,63 @@
   <data name="calleTLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  <data name="apellidoPT.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 5</value>
+  </data>
+  <data name="apellidoPT.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="apellidoPT.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 32</value>
+  </data>
+  <data name="apellidoPT.TabIndex" type="System.Int32, mscorlib">
+    <value>80</value>
+  </data>
+  <data name="&gt;&gt;apellidoPT.Name" xml:space="preserve">
+    <value>apellidoPT</value>
+  </data>
+  <data name="&gt;&gt;apellidoPT.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;apellidoPT.Parent" xml:space="preserve">
+    <value>apellidoPTPanel</value>
+  </data>
+  <data name="&gt;&gt;apellidoPT.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="apellidoMT.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Gadugi, 14.25pt</value>
+  </data>
+  <data name="apellidoMT.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 2</value>
+  </data>
+  <data name="apellidoMT.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="apellidoMT.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 32</value>
+  </data>
+  <data name="apellidoMT.TabIndex" type="System.Int32, mscorlib">
+    <value>81</value>
+  </data>
+  <data name="&gt;&gt;apellidoMT.Name" xml:space="preserve">
+    <value>apellidoMT</value>
+  </data>
+  <data name="&gt;&gt;apellidoMT.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;apellidoMT.Parent" xml:space="preserve">
+    <value>apellidoMTPanel</value>
+  </data>
+  <data name="&gt;&gt;apellidoMT.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="calleTLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="calleTLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Gadugi, 14.25pt</value>
   </data>
@@ -1101,6 +1678,21 @@
   <data name="calleTLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>315, 84</value>
   </data>
+=======
+>>>>>>> Juan_3_11_2022_2
+  <data name="calleTLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Gadugi, 14.25pt</value>
+  </data>
+  <data name="calleTLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="calleTLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>315, 84</value>
+  </data>
+<<<<<<< HEAD
+=======
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
   <data name="calleTLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>69, 28</value>
   </data>
@@ -1188,6 +1780,93 @@
   <data name="&gt;&gt;coloniaTLabel.ZOrder" xml:space="preserve">
     <value>20</value>
   </data>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  <data name="calleT.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Gadugi, 14.25pt</value>
+  </data>
+  <data name="calleT.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 6</value>
+  </data>
+  <data name="calleT.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="calleT.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 32</value>
+  </data>
+  <data name="calleT.TabIndex" type="System.Int32, mscorlib">
+    <value>92</value>
+  </data>
+  <data name="&gt;&gt;calleT.Name" xml:space="preserve">
+    <value>calleT</value>
+  </data>
+  <data name="&gt;&gt;calleT.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;calleT.Parent" xml:space="preserve">
+    <value>calleTPanel</value>
+  </data>
+  <data name="&gt;&gt;calleT.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="numeroCasaT.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Gadugi, 14.25pt</value>
+  </data>
+  <data name="numeroCasaT.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 7</value>
+  </data>
+  <data name="numeroCasaT.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="numeroCasaT.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 32</value>
+  </data>
+  <data name="numeroCasaT.TabIndex" type="System.Int32, mscorlib">
+    <value>93</value>
+  </data>
+  <data name="&gt;&gt;numeroCasaT.Name" xml:space="preserve">
+    <value>numeroCasaT</value>
+  </data>
+  <data name="&gt;&gt;numeroCasaT.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numeroCasaT.Parent" xml:space="preserve">
+    <value>numeroCasaTPanel</value>
+  </data>
+  <data name="&gt;&gt;numeroCasaT.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="coloniaT.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Gadugi, 14.25pt</value>
+  </data>
+  <data name="coloniaT.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 5</value>
+  </data>
+  <data name="coloniaT.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="coloniaT.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 32</value>
+  </data>
+  <data name="coloniaT.TabIndex" type="System.Int32, mscorlib">
+    <value>94</value>
+  </data>
+  <data name="&gt;&gt;coloniaT.Name" xml:space="preserve">
+    <value>coloniaT</value>
+  </data>
+  <data name="&gt;&gt;coloniaT.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;coloniaT.Parent" xml:space="preserve">
+    <value>coloniaTPanel</value>
+  </data>
+  <data name="&gt;&gt;coloniaT.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+=======
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -1222,7 +1901,15 @@
     <value>NoControl</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+<<<<<<< HEAD
     <value>2249, 1286</value>
+=======
+<<<<<<< HEAD
+    <value>625, 556</value>
+=======
+    <value>2249, 1286</value>
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>0, 17</value>
@@ -1407,11 +2094,31 @@
   <data name="&gt;&gt;telefonoLabel.ZOrder" xml:space="preserve">
     <value>20</value>
   </data>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  <data name="servMedico.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Gadugi, 14.25pt</value>
+  </data>
+  <data name="servMedico.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 10</value>
+  </data>
+  <data name="servMedico.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="servMedico.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 32</value>
+=======
+>>>>>>> Juan_3_11_2022_2
   <data name="fotoBtn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
   <data name="fotoBtn.Font" type="System.Drawing.Font, System.Drawing">
     <value>Gadugi, 14pt, style=Bold</value>
+<<<<<<< HEAD
+=======
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
   </data>
   <data name="fotoBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1431,6 +2138,19 @@
   <data name="fotoBtn.TabIndex" type="System.Int32, mscorlib">
     <value>148</value>
   </data>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  <data name="telefono.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 5</value>
+  </data>
+  <data name="telefono.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="telefono.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 32</value>
+=======
+>>>>>>> Juan_3_11_2022_2
   <data name="fotoBtn.Text" xml:space="preserve">
     <value>Cargar imagen</value>
   </data>
@@ -1439,6 +2159,10 @@
   </data>
   <data name="&gt;&gt;fotoBtn.Type" xml:space="preserve">
     <value>presentationLayer.buttonSystem, presentationLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+<<<<<<< HEAD
+=======
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
   </data>
   <data name="&gt;&gt;fotoBtn.Parent" xml:space="preserve">
     <value>informacionGeneralAlumno</value>
@@ -1458,6 +2182,19 @@
   <data name="fotoAl.Size" type="System.Drawing.Size, System.Drawing">
     <value>244, 218</value>
   </data>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  <data name="grupoSanguineo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 17</value>
+  </data>
+  <data name="grupoSanguineo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="grupoSanguineo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 32</value>
+=======
+>>>>>>> Juan_3_11_2022_2
   <data name="fotoAl.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>
   </data>
@@ -1466,6 +2203,10 @@
   </data>
   <data name="&gt;&gt;fotoAl.Name" xml:space="preserve">
     <value>fotoAl</value>
+<<<<<<< HEAD
+=======
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
   </data>
   <data name="&gt;&gt;fotoAl.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1597,11 +2338,28 @@
   <data name="curpPanel.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  <data name="fotoAlumno.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1103, 85</value>
+  </data>
+  <data name="fotoAlumno.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="fotoAlumno.Size" type="System.Drawing.Size, System.Drawing">
+    <value>244, 218</value>
+=======
+>>>>>>> Juan_3_11_2022_2
   <data name="curp.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 11</value>
   </data>
   <data name="curp.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
+<<<<<<< HEAD
+=======
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
   </data>
   <data name="curp.Size" type="System.Drawing.Size, System.Drawing">
     <value>246, 32</value>
@@ -1628,7 +2386,15 @@
     <value>3, 2, 3, 2</value>
   </data>
   <data name="curpPanel.Size" type="System.Drawing.Size, System.Drawing">
+<<<<<<< HEAD
     <value>257, 50</value>
+=======
+<<<<<<< HEAD
+    <value>171, 50</value>
+=======
+    <value>257, 50</value>
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
   </data>
   <data name="curpPanel.TabIndex" type="System.Int32, mscorlib">
     <value>145</value>
@@ -1904,11 +2670,28 @@
   <data name="coloniaPanel.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  <data name="coloniaPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>863, 217</value>
+  </data>
+  <data name="coloniaPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="coloniaPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>171, 50</value>
+=======
+>>>>>>> Juan_3_11_2022_2
   <data name="colonia.Location" type="System.Drawing.Point, System.Drawing">
     <value>1, 10</value>
   </data>
   <data name="colonia.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
+<<<<<<< HEAD
+=======
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
   </data>
   <data name="colonia.Size" type="System.Drawing.Size, System.Drawing">
     <value>229, 32</value>
@@ -2242,7 +3025,15 @@
     <value>3, 2, 3, 2</value>
   </data>
   <data name="callePanel.Size" type="System.Drawing.Size, System.Drawing">
+<<<<<<< HEAD
     <value>222, 50</value>
+=======
+<<<<<<< HEAD
+    <value>171, 50</value>
+=======
+    <value>222, 50</value>
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
   </data>
   <data name="callePanel.TabIndex" type="System.Int32, mscorlib">
     <value>145</value>
@@ -2405,13 +3196,29 @@
     <value>0</value>
   </data>
   <data name="estadoPanel.Location" type="System.Drawing.Point, System.Drawing">
+<<<<<<< HEAD
     <value>686, 158</value>
+=======
+<<<<<<< HEAD
+    <value>639, 158</value>
+=======
+    <value>686, 158</value>
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
   </data>
   <data name="estadoPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
   <data name="estadoPanel.Size" type="System.Drawing.Size, System.Drawing">
+<<<<<<< HEAD
     <value>296, 50</value>
+=======
+<<<<<<< HEAD
+    <value>171, 50</value>
+=======
+    <value>296, 50</value>
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
   </data>
   <data name="estadoPanel.TabIndex" type="System.Int32, mscorlib">
     <value>145</value>
@@ -2574,13 +3381,29 @@
     <value>0</value>
   </data>
   <data name="ciudadPanel.Location" type="System.Drawing.Point, System.Drawing">
+<<<<<<< HEAD
     <value>348, 158</value>
+=======
+<<<<<<< HEAD
+    <value>371, 158</value>
+=======
+    <value>348, 158</value>
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
   </data>
   <data name="ciudadPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
   <data name="ciudadPanel.Size" type="System.Drawing.Size, System.Drawing">
+<<<<<<< HEAD
     <value>245, 50</value>
+=======
+<<<<<<< HEAD
+    <value>171, 50</value>
+=======
+    <value>245, 50</value>
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
   </data>
   <data name="ciudadPanel.TabIndex" type="System.Int32, mscorlib">
     <value>145</value>
@@ -2794,13 +3617,29 @@
     <value>0</value>
   </data>
   <data name="apellidoPPanel.Location" type="System.Drawing.Point, System.Drawing">
+<<<<<<< HEAD
     <value>686, 30</value>
+=======
+<<<<<<< HEAD
+    <value>725, 30</value>
+=======
+    <value>686, 30</value>
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
   </data>
   <data name="apellidoPPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
   <data name="apellidoPPanel.Size" type="System.Drawing.Size, System.Drawing">
+<<<<<<< HEAD
     <value>211, 50</value>
+=======
+<<<<<<< HEAD
+    <value>148, 50</value>
+=======
+    <value>211, 50</value>
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
   </data>
   <data name="apellidoPPanel.TabIndex" type="System.Int32, mscorlib">
     <value>143</value>
@@ -2948,7 +3787,15 @@
     <value>True</value>
   </data>
   <data name="nombreAl.Size" type="System.Drawing.Size, System.Drawing">
+<<<<<<< HEAD
     <value>200, 40</value>
+=======
+<<<<<<< HEAD
+    <value>313, 31</value>
+=======
+    <value>200, 40</value>
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
   </data>
   <data name="nombreAl.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
@@ -3026,7 +3873,15 @@
     <value>Gadugi, 14.25pt</value>
   </data>
   <data name="informacionGeneralAlumno.Location" type="System.Drawing.Point, System.Drawing">
+<<<<<<< HEAD
     <value>21, 323</value>
+=======
+<<<<<<< HEAD
+    <value>67, 105</value>
+=======
+    <value>21, 323</value>
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
   </data>
   <data name="informacionGeneralAlumno.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -3052,6 +3907,22 @@
   <data name="&gt;&gt;informacionGeneralAlumno.ZOrder" xml:space="preserve">
     <value>14</value>
   </data>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  <data name="escuelaPPanel.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="escuelaPPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>224, 144</value>
+  </data>
+  <data name="escuelaPPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="escuelaPPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>247, 50</value>
+=======
+>>>>>>> Juan_3_11_2022_2
   <data name="infGeneralAlLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -3174,6 +4045,10 @@
         /tHHk2RoEyStBAKE6/S/k45ptX8/od5ISKNQyzr5CxD6yXdTVSBjzzj4II4hikYBgpBiQPEfKJA7EABc
         q/EYwDgg+6Eo/wtU1/VArdzrrwAAAABJRU5ErkJggg==
 </value>
+<<<<<<< HEAD
+=======
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
   </data>
   <data name="canalizadoPanel.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -3226,6 +4101,22 @@
   <data name="&gt;&gt;canalizadoPanel.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  <data name="telPersonalPanel.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="telPersonalPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>172, 84</value>
+  </data>
+  <data name="telPersonalPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="telPersonalPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>337, 50</value>
+=======
+>>>>>>> Juan_3_11_2022_2
   <data name="escuelaPPanel.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQEAAABFCAYAAABKUlMzAAAABGdBTUEAALGPC/xhBQAAEw5JREFUeF7t
@@ -3318,6 +4209,10 @@
   </data>
   <data name="escuelaP.Location" type="System.Drawing.Point, System.Drawing">
     <value>37, 7</value>
+<<<<<<< HEAD
+=======
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
   </data>
   <data name="escuelaP.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
@@ -3343,11 +4238,28 @@
   <data name="escuelaPPanel.Location" type="System.Drawing.Point, System.Drawing">
     <value>224, 144</value>
   </data>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  <data name="infGeneralAlLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>267, 76</value>
+  </data>
+  <data name="infGeneralAlLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="infGeneralAlLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>474, 40</value>
+=======
+>>>>>>> Juan_3_11_2022_2
   <data name="escuelaPPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
   <data name="escuelaPPanel.Size" type="System.Drawing.Size, System.Drawing">
     <value>247, 50</value>
+<<<<<<< HEAD
+=======
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
   </data>
   <data name="escuelaPPanel.TabIndex" type="System.Int32, mscorlib">
     <value>143</value>
@@ -3644,7 +4556,15 @@
     <value>Gadugi, 14.25pt</value>
   </data>
   <data name="informacionGeneralAlumno2.Location" type="System.Drawing.Point, System.Drawing">
+<<<<<<< HEAD
     <value>1450, 323</value>
+=======
+<<<<<<< HEAD
+    <value>1429, 121</value>
+=======
+    <value>1450, 323</value>
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
   </data>
   <data name="informacionGeneralAlumno2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -3653,7 +4573,15 @@
     <value>4, 4, 4, 4</value>
   </data>
   <data name="informacionGeneralAlumno2.Size" type="System.Drawing.Size, System.Drawing">
+<<<<<<< HEAD
     <value>413, 410</value>
+=======
+<<<<<<< HEAD
+    <value>509, 410</value>
+=======
+    <value>413, 410</value>
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
   </data>
   <data name="informacionGeneralAlumno2.TabIndex" type="System.Int32, mscorlib">
     <value>132</value>
@@ -3800,13 +4728,29 @@
     <value>Gadugi, 14.25pt</value>
   </data>
   <data name="alergias.Location" type="System.Drawing.Point, System.Drawing">
+<<<<<<< HEAD
     <value>6, 2</value>
+=======
+<<<<<<< HEAD
+    <value>3, 12</value>
+=======
+    <value>6, 2</value>
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
   </data>
   <data name="alergias.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
   <data name="alergias.Size" type="System.Drawing.Size, System.Drawing">
+<<<<<<< HEAD
     <value>199, 37</value>
+=======
+<<<<<<< HEAD
+    <value>157, 37</value>
+=======
+    <value>199, 37</value>
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
   </data>
   <data name="alergias.TabIndex" type="System.Int32, mscorlib">
     <value>130</value>
@@ -3833,7 +4777,15 @@
     <value>3, 2, 3, 2</value>
   </data>
   <data name="alergiasPanel.Size" type="System.Drawing.Size, System.Drawing">
+<<<<<<< HEAD
     <value>213, 50</value>
+=======
+<<<<<<< HEAD
+    <value>171, 50</value>
+=======
+    <value>213, 50</value>
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
   </data>
   <data name="alergiasPanel.TabIndex" type="System.Int32, mscorlib">
     <value>146</value>
@@ -3950,7 +4902,15 @@
     <value>4, 4, 4, 4</value>
   </data>
   <data name="tratamiento.Size" type="System.Drawing.Size, System.Drawing">
+<<<<<<< HEAD
     <value>206, 34</value>
+=======
+<<<<<<< HEAD
+    <value>151, 34</value>
+=======
+    <value>206, 34</value>
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
   </data>
   <data name="tratamiento.TabIndex" type="System.Int32, mscorlib">
     <value>147</value>
@@ -3977,7 +4937,15 @@
     <value>3, 2, 3, 2</value>
   </data>
   <data name="tratamientoPanel.Size" type="System.Drawing.Size, System.Drawing">
+<<<<<<< HEAD
     <value>237, 50</value>
+=======
+<<<<<<< HEAD
+    <value>171, 50</value>
+=======
+    <value>237, 50</value>
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
   </data>
   <data name="tratamientoPanel.TabIndex" type="System.Int32, mscorlib">
     <value>147</value>
@@ -4149,7 +5117,15 @@
     <value>3, 2, 3, 2</value>
   </data>
   <data name="telefonoPanel.Size" type="System.Drawing.Size, System.Drawing">
+<<<<<<< HEAD
     <value>168, 50</value>
+=======
+<<<<<<< HEAD
+    <value>125, 50</value>
+=======
+    <value>168, 50</value>
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
   </data>
   <data name="telefonoPanel.TabIndex" type="System.Int32, mscorlib">
     <value>145</value>
@@ -4266,7 +5242,15 @@
     <value>3, 2, 3, 2</value>
   </data>
   <data name="enfermedades.Size" type="System.Drawing.Size, System.Drawing">
+<<<<<<< HEAD
     <value>204, 37</value>
+=======
+<<<<<<< HEAD
+    <value>143, 37</value>
+=======
+    <value>204, 37</value>
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
   </data>
   <data name="enfermedades.TabIndex" type="System.Int32, mscorlib">
     <value>129</value>
@@ -4287,13 +5271,29 @@
     <value>0</value>
   </data>
   <data name="enfermedadesPanel.Location" type="System.Drawing.Point, System.Drawing">
+<<<<<<< HEAD
     <value>232, 123</value>
+=======
+<<<<<<< HEAD
+    <value>292, 123</value>
+=======
+    <value>232, 123</value>
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
   </data>
   <data name="enfermedadesPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
   <data name="enfermedadesPanel.Size" type="System.Drawing.Size, System.Drawing">
+<<<<<<< HEAD
     <value>231, 50</value>
+=======
+<<<<<<< HEAD
+    <value>171, 50</value>
+=======
+    <value>231, 50</value>
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
   </data>
   <data name="enfermedadesPanel.TabIndex" type="System.Int32, mscorlib">
     <value>145</value>
@@ -4637,7 +5637,15 @@
     <value>3, 2, 3, 2</value>
   </data>
   <data name="servMedicoPanel.Size" type="System.Drawing.Size, System.Drawing">
+<<<<<<< HEAD
     <value>167, 50</value>
+=======
+<<<<<<< HEAD
+    <value>133, 50</value>
+=======
+    <value>167, 50</value>
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
   </data>
   <data name="servMedicoPanel.TabIndex" type="System.Int32, mscorlib">
     <value>145</value>
@@ -4949,13 +5957,29 @@
     <value>Gadugi, 14.25pt</value>
   </data>
   <data name="discapacidad.Location" type="System.Drawing.Point, System.Drawing">
+<<<<<<< HEAD
     <value>6, 7</value>
+=======
+<<<<<<< HEAD
+    <value>3, 12</value>
+=======
+    <value>6, 7</value>
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
   </data>
   <data name="discapacidad.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
   <data name="discapacidad.Size" type="System.Drawing.Size, System.Drawing">
+<<<<<<< HEAD
     <value>191, 37</value>
+=======
+<<<<<<< HEAD
+    <value>157, 37</value>
+=======
+    <value>191, 37</value>
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
   </data>
   <data name="discapacidad.TabIndex" type="System.Int32, mscorlib">
     <value>128</value>
@@ -4976,13 +6000,29 @@
     <value>0</value>
   </data>
   <data name="discapacidadPanel.Location" type="System.Drawing.Point, System.Drawing">
+<<<<<<< HEAD
     <value>0, 123</value>
+=======
+<<<<<<< HEAD
+    <value>35, 123</value>
+=======
+    <value>0, 123</value>
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
   </data>
   <data name="discapacidadPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
   <data name="discapacidadPanel.Size" type="System.Drawing.Size, System.Drawing">
+<<<<<<< HEAD
     <value>206, 50</value>
+=======
+<<<<<<< HEAD
+    <value>171, 50</value>
+=======
+    <value>206, 50</value>
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
   </data>
   <data name="discapacidadPanel.TabIndex" type="System.Int32, mscorlib">
     <value>144</value>
@@ -5072,7 +6112,15 @@
     <value>15</value>
   </data>
   <data name="informacionMedicaAlumnoGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+<<<<<<< HEAD
     <value>13, 947</value>
+=======
+<<<<<<< HEAD
+    <value>67, 502</value>
+=======
+    <value>13, 947</value>
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
   </data>
   <data name="informacionMedicaAlumnoGroupBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
@@ -5081,7 +6129,15 @@
     <value>3, 2, 3, 2</value>
   </data>
   <data name="informacionMedicaAlumnoGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+<<<<<<< HEAD
     <value>1355, 257</value>
+=======
+<<<<<<< HEAD
+    <value>1081, 257</value>
+=======
+    <value>1355, 257</value>
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
   </data>
   <data name="informacionMedicaAlumnoGroupBox.TabIndex" type="System.Int32, mscorlib">
     <value>133</value>
@@ -5108,7 +6164,15 @@
     <value>NoControl</value>
   </data>
   <data name="informacionMedLabel.Location" type="System.Drawing.Point, System.Drawing">
+<<<<<<< HEAD
     <value>811, 161</value>
+=======
+<<<<<<< HEAD
+    <value>1140, 502</value>
+=======
+    <value>811, 161</value>
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
   </data>
   <data name="informacionMedLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -5768,7 +6832,15 @@
     <value>0</value>
   </data>
   <data name="telTrabajoTPanel.Location" type="System.Drawing.Point, System.Drawing">
+<<<<<<< HEAD
     <value>1152, 162</value>
+=======
+<<<<<<< HEAD
+    <value>895, 158</value>
+=======
+    <value>1152, 162</value>
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
   </data>
   <data name="telTrabajoTPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
@@ -5945,13 +7017,29 @@
     <value>0</value>
   </data>
   <data name="telMovilTPanel.Location" type="System.Drawing.Point, System.Drawing">
+<<<<<<< HEAD
     <value>716, 162</value>
+=======
+<<<<<<< HEAD
+    <value>556, 162</value>
+=======
+    <value>716, 162</value>
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
   </data>
   <data name="telMovilTPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
   <data name="telMovilTPanel.Size" type="System.Drawing.Size, System.Drawing">
+<<<<<<< HEAD
     <value>216, 50</value>
+=======
+<<<<<<< HEAD
+    <value>111, 50</value>
+=======
+    <value>216, 50</value>
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
   </data>
   <data name="telMovilTPanel.TabIndex" type="System.Int32, mscorlib">
     <value>156</value>
@@ -6122,7 +7210,15 @@
     <value>3, 2, 3, 2</value>
   </data>
   <data name="telCasaTPanel.Size" type="System.Drawing.Size, System.Drawing">
+<<<<<<< HEAD
     <value>251, 50</value>
+=======
+<<<<<<< HEAD
+    <value>143, 50</value>
+=======
+    <value>251, 50</value>
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
   </data>
   <data name="telCasaTPanel.TabIndex" type="System.Int32, mscorlib">
     <value>155</value>
@@ -6294,7 +7390,15 @@
     <value>3, 2, 3, 2</value>
   </data>
   <data name="coloniaTPanel.Size" type="System.Drawing.Size, System.Drawing">
+<<<<<<< HEAD
     <value>237, 50</value>
+=======
+<<<<<<< HEAD
+    <value>133, 50</value>
+=======
+    <value>237, 50</value>
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
   </data>
   <data name="coloniaTPanel.TabIndex" type="System.Int32, mscorlib">
     <value>155</value>
@@ -6797,7 +7901,15 @@
     <value>14</value>
   </data>
   <data name="informacionTutor.Location" type="System.Drawing.Point, System.Drawing">
+<<<<<<< HEAD
     <value>12, 697</value>
+=======
+<<<<<<< HEAD
+    <value>51, 738</value>
+=======
+    <value>12, 697</value>
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
   </data>
   <data name="informacionTutor.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
@@ -6806,7 +7918,15 @@
     <value>3, 2, 3, 2</value>
   </data>
   <data name="informacionTutor.Size" type="System.Drawing.Size, System.Drawing">
+<<<<<<< HEAD
     <value>1493, 226</value>
+=======
+<<<<<<< HEAD
+    <value>1087, 226</value>
+=======
+    <value>1493, 226</value>
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
   </data>
   <data name="informacionTutor.TabIndex" type="System.Int32, mscorlib">
     <value>135</value>
@@ -6833,7 +7953,15 @@
     <value>NoControl</value>
   </data>
   <data name="infoTutorLabel.Location" type="System.Drawing.Point, System.Drawing">
+<<<<<<< HEAD
     <value>831, 133</value>
+=======
+<<<<<<< HEAD
+    <value>1140, 533</value>
+=======
+    <value>831, 133</value>
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
   </data>
   <data name="infoTutorLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -6899,7 +8027,15 @@
     <value>NoControl</value>
   </data>
   <data name="logo.Location" type="System.Drawing.Point, System.Drawing">
+<<<<<<< HEAD
     <value>13, -24</value>
+=======
+<<<<<<< HEAD
+    <value>85, -14</value>
+=======
+    <value>13, -24</value>
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
   </data>
   <data name="logo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -6938,7 +8074,15 @@
     <value>NoControl</value>
   </data>
   <data name="siguiente3Button.Location" type="System.Drawing.Point, System.Drawing">
+<<<<<<< HEAD
     <value>2600, 840</value>
+=======
+<<<<<<< HEAD
+    <value>3298, 828</value>
+=======
+    <value>2600, 840</value>
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
   </data>
   <data name="siguiente3Button.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
@@ -6980,7 +8124,15 @@
     <value>NoControl</value>
   </data>
   <data name="siguiente2Button.Location" type="System.Drawing.Point, System.Drawing">
+<<<<<<< HEAD
     <value>2600, 684</value>
+=======
+<<<<<<< HEAD
+    <value>3091, 828</value>
+=======
+    <value>2600, 684</value>
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
   </data>
   <data name="siguiente2Button.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
@@ -7022,7 +8174,15 @@
     <value>NoControl</value>
   </data>
   <data name="regresarMenuButton.Location" type="System.Drawing.Point, System.Drawing">
+<<<<<<< HEAD
     <value>2803, 781</value>
+=======
+<<<<<<< HEAD
+    <value>2862, 775</value>
+=======
+    <value>2803, 781</value>
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
   </data>
   <data name="regresarMenuButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
@@ -7064,7 +8224,15 @@
     <value>NoControl</value>
   </data>
   <data name="regresarButton.Location" type="System.Drawing.Point, System.Drawing">
+<<<<<<< HEAD
     <value>2803, 684</value>
+=======
+<<<<<<< HEAD
+    <value>2871, 870</value>
+=======
+    <value>2803, 684</value>
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
   </data>
   <data name="regresarButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
@@ -7106,7 +8274,15 @@
     <value>NoControl</value>
   </data>
   <data name="siguiente1Button.Location" type="System.Drawing.Point, System.Drawing">
+<<<<<<< HEAD
     <value>2600, 761</value>
+=======
+<<<<<<< HEAD
+    <value>3091, 757</value>
+=======
+    <value>2600, 761</value>
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
   </data>
   <data name="siguiente1Button.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
@@ -7148,7 +8324,15 @@
     <value>NoControl</value>
   </data>
   <data name="realizarAltaButton.Location" type="System.Drawing.Point, System.Drawing">
+<<<<<<< HEAD
     <value>2616, 910</value>
+=======
+<<<<<<< HEAD
+    <value>3298, 757</value>
+=======
+    <value>2616, 910</value>
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
   </data>
   <data name="realizarAltaButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
@@ -7193,7 +8377,15 @@
     <value>True</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+<<<<<<< HEAD
     <value>982, 753</value>
+=======
+<<<<<<< HEAD
+    <value>1827, 922</value>
+=======
+    <value>982, 753</value>
+>>>>>>> 22
+>>>>>>> Juan_3_11_2022_2
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
