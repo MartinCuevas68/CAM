@@ -10,6 +10,15 @@ namespace _1dataLayer
     {
     }
 
+    public class alumnoenfermedadDTO
+    {
+        public int id_alumno { get; set; }
+        public string nombre { get; set; }
+        public string telefono_contacto { get; set; }
+        public string alergias { get; set; }
+        public string discapacidad { get; set; }
+    }
+
 
     public class alumnoDTO
     {
@@ -29,7 +38,9 @@ namespace _1dataLayer
         public string numero_alumno { get; set; }
         public string telefono_personal_alumno { get; set; }
         public string escuela_procedencia_alumno { get; set; }
+        public string documentacion_alumno { get; set; }
         public string atendido_por { get; set; }
+        public byte[] imagen { get; set; }
     }
    
     public class tabla_medicaDTO
@@ -47,7 +58,7 @@ namespace _1dataLayer
 
     public class enfermedadesDTO
     {
-        public int id_cartilla_medica { get; }
+        public int id_cartilla_medica { get; set; }
         public string enfermedad { get; set; }
     }
 

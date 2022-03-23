@@ -178,5 +178,172 @@
         <ScalarProperty Name="id_alumno" ColumnName="id_alumno" />
       </EndProperty>
     </AssociationSetMapping>
+    <FunctionImportMapping FunctionImportName="sp_altaalergias" FunctionName="BDCAMModel.Store.sp_altaalergias" />
+    <FunctionImportMapping FunctionImportName="SP_AltaAlumno" FunctionName="BDCAMModel.Store.SP_AltaAlumno" />
+    <FunctionImportMapping FunctionImportName="sp_altaalumnocartilla" FunctionName="BDCAMModel.Store.sp_altaalumnocartilla" />
+    <FunctionImportMapping FunctionImportName="sp_altacartilla" FunctionName="BDCAMModel.Store.sp_altacartilla" />
+    <FunctionImportMapping FunctionImportName="sp_altadiscapacidades" FunctionName="BDCAMModel.Store.sp_altadiscapacidades" />
+    <FunctionImportMapping FunctionImportName="sp_altaenfermedades" FunctionName="BDCAMModel.Store.sp_altaenfermedades" />
+    <FunctionImportMapping FunctionImportName="sp_altatutor" FunctionName="BDCAMModel.Store.sp_altatutor" />
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="BDCAMModel.Store.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="BDCAMModel.Store.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="BDCAMModel.Store.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="SP_FichaTecnicaAlumno" FunctionName="BDCAMModel.Store.SP_FichaTecnicaAlumno">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BDCAMModel.SP_FichaTecnicaAlumno_Result">
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="apellido_materno" ColumnName="apellido_materno" />
+          <ScalarProperty Name="apellido_paterno" ColumnName="apellido_paterno" />
+          <ScalarProperty Name="fecha_nacimiento" ColumnName="fecha_nacimiento" />
+          <ScalarProperty Name="ciudad_nacimiento_alumno" ColumnName="ciudad_nacimiento_alumno" />
+          <ScalarProperty Name="colonia_alumno" ColumnName="colonia_alumno" />
+          <ScalarProperty Name="calle_alumno" ColumnName="calle_alumno" />
+          <ScalarProperty Name="telefono_personal_alumno" ColumnName="telefono_personal_alumno" />
+          <ScalarProperty Name="escuela_procedencia_alumno" ColumnName="escuela_procedencia_alumno" />
+          <ScalarProperty Name="edad_alumno" ColumnName="edad_alumno" />
+          <ScalarProperty Name="estado_nacimiento_alumno" ColumnName="estado_nacimiento_alumno" />
+          <ScalarProperty Name="CURP_alumno" ColumnName="CURP_alumno" />
+          <ScalarProperty Name="atendido_por" ColumnName="atendido_por" />
+          <ScalarProperty Name="ciclo_escolar" ColumnName="ciclo_escolar" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_FichaTecnicaAlumnoMedica" FunctionName="BDCAMModel.Store.SP_FichaTecnicaAlumnoMedica">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BDCAMModel.SP_FichaTecnicaAlumnoMedica_Result">
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="grupo_sanguineo" ColumnName="grupo_sanguineo" />
+          <ScalarProperty Name="telefono_contacto" ColumnName="telefono_contacto" />
+          <ScalarProperty Name="estatura" ColumnName="estatura" />
+          <ScalarProperty Name="genero" ColumnName="genero" />
+          <ScalarProperty Name="peso" ColumnName="peso" />
+          <ScalarProperty Name="color_textura_piel" ColumnName="color_textura_piel" />
+          <ScalarProperty Name="servicio_medico" ColumnName="servicio_medico" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_FichaTecnicaAlumnoTutor" FunctionName="BDCAMModel.Store.SP_FichaTecnicaAlumnoTutor">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BDCAMModel.SP_FichaTecnicaAlumnoTutor_Result">
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="apellido_paterno" ColumnName="apellido_paterno" />
+          <ScalarProperty Name="apellido_materno" ColumnName="apellido_materno" />
+          <ScalarProperty Name="calle_tutor" ColumnName="calle_tutor" />
+          <ScalarProperty Name="colonia_tutor" ColumnName="colonia_tutor" />
+          <ScalarProperty Name="numero_tutor" ColumnName="numero_tutor" />
+          <ScalarProperty Name="ocupacion_tutor" ColumnName="ocupacion_tutor" />
+          <ScalarProperty Name="telefono" ColumnName="telefono" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="BDCAMModel.Store.sp_helpdiagramdefinition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BDCAMModel.sp_helpdiagramdefinition_Result">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="BDCAMModel.Store.sp_helpdiagrams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BDCAMModel.sp_helpdiagrams_Result">
+          <ScalarProperty Name="Database" ColumnName="Database" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_ListaAlergia" FunctionName="BDCAMModel.Store.SP_ListaAlergia">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BDCAMModel.SP_ListaAlergia_Result">
+          <ScalarProperty Name="id_cartilla_medica" ColumnName="id_cartilla_medica" />
+          <ScalarProperty Name="alergia" ColumnName="alergia" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_ListaAlumnos" FunctionName="BDCAMModel.Store.SP_ListaAlumnos">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BDCAMModel.SP_ListaAlumnos_Result">
+          <ScalarProperty Name="id_alumno" ColumnName="id_alumno" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="telefono_contacto" ColumnName="telefono_contacto" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_ListaDiscapacidad" FunctionName="BDCAMModel.Store.SP_ListaDiscapacidad">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BDCAMModel.SP_ListaDiscapacidad_Result">
+          <ScalarProperty Name="id_cartilla_medica" ColumnName="id_cartilla_medica" />
+          <ScalarProperty Name="discapacidades" ColumnName="discapacidades" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_ListaEnfermedad" FunctionName="BDCAMModel.Store.SP_ListaEnfermedad">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BDCAMModel.SP_ListaEnfermedad_Result">
+          <ScalarProperty Name="id_cartilla_medica" ColumnName="id_cartilla_medica" />
+          <ScalarProperty Name="enfermedad" ColumnName="enfermedad" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_regresarid" FunctionName="BDCAMModel.Store.sp_regresarid" />
+    <FunctionImportMapping FunctionImportName="sp_regresaridcartilla" FunctionName="BDCAMModel.Store.sp_regresaridcartilla" />
+    <FunctionImportMapping FunctionImportName="sp_regresaridtutor" FunctionName="BDCAMModel.Store.sp_regresaridtutor" />
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="BDCAMModel.Store.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="sp_telefonotutores" FunctionName="BDCAMModel.Store.sp_telefonotutores" />
+    <FunctionImportMapping FunctionImportName="sp_tutoralumno" FunctionName="BDCAMModel.Store.sp_tutoralumno" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="BDCAMModel.Store.sp_upgraddiagrams" />
+    <EntitySetMapping Name="permisos">
+      <EntityTypeMapping TypeName="BDCAMModel.permisos">
+        <MappingFragment StoreEntitySet="permisos">
+          <ScalarProperty Name="permisos1" ColumnName="permisos" />
+          <ScalarProperty Name="id_permisos" ColumnName="id_permisos" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="roles">
+      <EntityTypeMapping TypeName="BDCAMModel.roles">
+        <MappingFragment StoreEntitySet="roles">
+          <ScalarProperty Name="nombre_rol" ColumnName="nombre_rol" />
+          <ScalarProperty Name="id_rol" ColumnName="id_rol" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="subpermisos">
+      <EntityTypeMapping TypeName="BDCAMModel.subpermisos">
+        <MappingFragment StoreEntitySet="subpermisos">
+          <ScalarProperty Name="subpermisos1" ColumnName="subpermisos" />
+          <ScalarProperty Name="id_subpermisos" ColumnName="id_subpermisos" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="usuario">
+      <EntityTypeMapping TypeName="BDCAMModel.usuario">
+        <MappingFragment StoreEntitySet="usuario">
+          <ScalarProperty Name="contraseña" ColumnName="contraseña" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="id_usuario" ColumnName="id_usuario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="rol_tiene_permiso">
+      <EntityTypeMapping TypeName="BDCAMModel.rol_tiene_permiso">
+        <MappingFragment StoreEntitySet="rol-tiene-permiso">
+          <ScalarProperty Name="id_subpermiso" ColumnName="id_subpermiso" />
+          <ScalarProperty Name="id_permiso" ColumnName="id_permiso" />
+          <ScalarProperty Name="id_rol" ColumnName="id_rol" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="usuario_tiene_rol" TypeName="BDCAMModel.usuario_tiene_rol" StoreEntitySet="usuario-tiene-rol">
+      <EndProperty Name="usuario">
+        <ScalarProperty Name="id_usuario" ColumnName="id_usuario" />
+      </EndProperty>
+      <EndProperty Name="roles">
+        <ScalarProperty Name="id_rol" ColumnName="id_roles" />
+      </EndProperty>
+    </AssociationSetMapping>
   </EntityContainerMapping>
 </Mapping>

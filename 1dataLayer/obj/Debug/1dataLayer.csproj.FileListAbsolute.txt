@@ -126,3 +126,15 @@ C:\Users\DELL\Source\Repos\CAM\1dataLayer\obj\Debug\1dataLayer.csproj.CoreCompil
 C:\Users\DELL\Source\Repos\CAM\1dataLayer\obj\Debug\1dataLayer.csproj.CopyComplete
 C:\Users\DELL\Source\Repos\CAM\1dataLayer\obj\Debug\1dataLayer.dll
 C:\Users\DELL\Source\Repos\CAM\1dataLayer\obj\Debug\1dataLayer.pdb
+D:\Canela\Documents\GitHub\CAM\1dataLayer\bin\Debug\1dataLayer.dll.config
+D:\Canela\Documents\GitHub\CAM\1dataLayer\bin\Debug\1dataLayer.dll
+D:\Canela\Documents\GitHub\CAM\1dataLayer\bin\Debug\1dataLayer.pdb
+D:\Canela\Documents\GitHub\CAM\1dataLayer\bin\Debug\EntityFramework.dll
+D:\Canela\Documents\GitHub\CAM\1dataLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\Canela\Documents\GitHub\CAM\1dataLayer\bin\Debug\EntityFramework.xml
+D:\Canela\Documents\GitHub\CAM\1dataLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\Canela\Documents\GitHub\CAM\1dataLayer\obj\Debug\1dataLayer.csproj.AssemblyReference.cache
+D:\Canela\Documents\GitHub\CAM\1dataLayer\obj\Debug\1dataLayer.csproj.CoreCompileInputs.cache
+D:\Canela\Documents\GitHub\CAM\1dataLayer\obj\Debug\1dataLayer.csproj.CopyComplete
+D:\Canela\Documents\GitHub\CAM\1dataLayer\obj\Debug\1dataLayer.dll
+D:\Canela\Documents\GitHub\CAM\1dataLayer\obj\Debug\1dataLayer.pdb

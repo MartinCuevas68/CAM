@@ -81,7 +81,7 @@ namespace _1dataLayer
             String s = tabla.estatura.ToString();
             using (BDCAMEntities1 db = new BDCAMEntities1())
             {
-                db.sp_altacartilla(tabla.servicio_medico, tabla.grupo_sanguineo, tabla.telefono_contacto, p, tabla.genero, tabla.color_textura_piel, s);
+                db.sp_altacartilla(tabla.servicio_medico, tabla.grupo_sanguineo, tabla.telefono_contacto, p, tabla.genero, tabla.color_textura_piel,s);
                 e = db.sp_regresaridcartilla();
                 foreach (decimal? a in e)
                 {

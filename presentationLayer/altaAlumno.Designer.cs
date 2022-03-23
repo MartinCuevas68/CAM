@@ -98,6 +98,7 @@ namespace presentationLayer
             this.telefono = new System.Windows.Forms.TextBox();
             this.grupoSanguineo = new System.Windows.Forms.TextBox();
             this.informacionGeneralAlumno = new System.Windows.Forms.GroupBox();
+            this.fotoAlumno = new System.Windows.Forms.PictureBox();
             this.curpPanel = new System.Windows.Forms.Panel();
             this.añosCumPanel = new System.Windows.Forms.Panel();
             this.coloniaPanel = new System.Windows.Forms.Panel();
@@ -117,6 +118,7 @@ namespace presentationLayer
             this.informacionGeneralAlumno2 = new System.Windows.Forms.GroupBox();
             this.cicloEscPanel = new System.Windows.Forms.Panel();
             this.informacionMedicaAlumnoGroupBox = new System.Windows.Forms.GroupBox();
+            this.eliminarTratamientoButton = new System.Windows.Forms.Button();
             this.alergiasPanel = new System.Windows.Forms.Panel();
             this.alergias = new System.Windows.Forms.RichTextBox();
             this.tratamientoPanel = new System.Windows.Forms.Panel();
@@ -153,16 +155,15 @@ namespace presentationLayer
             this.infoTutorLabel = new System.Windows.Forms.Label();
             this.altaalumnoLabel = new System.Windows.Forms.Label();
             this.logo = new System.Windows.Forms.PictureBox();
-            this.eliminarTratamientoButton = new System.Windows.Forms.Button();
             this.siguiente3Button = new presentationLayer.buttonSystem();
             this.siguiente2Button = new presentationLayer.buttonSystem();
             this.regresarMenuButton = new presentationLayer.buttonSystem();
             this.regresarButton = new presentationLayer.buttonSystem();
             this.siguiente1Button = new presentationLayer.buttonSystem();
             this.realizarAltaButton = new presentationLayer.buttonSystem();
-            this.fotoAlumno = new System.Windows.Forms.PictureBox();
             this.tipoIngresoGroupBox.SuspendLayout();
             this.informacionGeneralAlumno.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fotoAlumno)).BeginInit();
             this.curpPanel.SuspendLayout();
             this.añosCumPanel.SuspendLayout();
             this.coloniaPanel.SuspendLayout();
@@ -198,7 +199,6 @@ namespace presentationLayer
             this.numeroCasaTPanel.SuspendLayout();
             this.calleTPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fotoAlumno)).BeginInit();
             this.SuspendLayout();
             // 
             // nombreAlLabel
@@ -631,6 +631,13 @@ namespace presentationLayer
             this.informacionGeneralAlumno.Name = "informacionGeneralAlumno";
             this.informacionGeneralAlumno.TabStop = false;
             // 
+            // fotoAlumno
+            // 
+            this.fotoAlumno.BackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.fotoAlumno, "fotoAlumno");
+            this.fotoAlumno.Name = "fotoAlumno";
+            this.fotoAlumno.TabStop = false;
+            // 
             // curpPanel
             // 
             this.curpPanel.BackgroundImage = global::presentationLayer.Properties.Resources.textBoxSmall;
@@ -795,6 +802,13 @@ namespace presentationLayer
             resources.ApplyResources(this.informacionMedicaAlumnoGroupBox, "informacionMedicaAlumnoGroupBox");
             this.informacionMedicaAlumnoGroupBox.Name = "informacionMedicaAlumnoGroupBox";
             this.informacionMedicaAlumnoGroupBox.TabStop = false;
+            // 
+            // eliminarTratamientoButton
+            // 
+            resources.ApplyResources(this.eliminarTratamientoButton, "eliminarTratamientoButton");
+            this.eliminarTratamientoButton.BackgroundImage = global::presentationLayer.Properties.Resources.boteBasura;
+            this.eliminarTratamientoButton.Name = "eliminarTratamientoButton";
+            this.eliminarTratamientoButton.UseVisualStyleBackColor = true;
             // 
             // alergiasPanel
             // 
@@ -1068,13 +1082,6 @@ namespace presentationLayer
             this.logo.Name = "logo";
             this.logo.TabStop = false;
             // 
-            // eliminarTratamientoButton
-            // 
-            resources.ApplyResources(this.eliminarTratamientoButton, "eliminarTratamientoButton");
-            this.eliminarTratamientoButton.BackgroundImage = global::presentationLayer.Properties.Resources.boteBasura;
-            this.eliminarTratamientoButton.Name = "eliminarTratamientoButton";
-            this.eliminarTratamientoButton.UseVisualStyleBackColor = true;
-            // 
             // siguiente3Button
             // 
             resources.ApplyResources(this.siguiente3Button, "siguiente3Button");
@@ -1145,13 +1152,7 @@ namespace presentationLayer
             this.realizarAltaButton.ForeColor = System.Drawing.Color.White;
             this.realizarAltaButton.Name = "realizarAltaButton";
             this.realizarAltaButton.UseVisualStyleBackColor = false;
-            // 
-            // fotoAlumno
-            // 
-            this.fotoAlumno.BackColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.fotoAlumno, "fotoAlumno");
-            this.fotoAlumno.Name = "fotoAlumno";
-            this.fotoAlumno.TabStop = false;
+            this.realizarAltaButton.Click += new System.EventHandler(this.realizarAltaButton_Click);
             // 
             // altaAlumno
             // 
@@ -1181,6 +1182,7 @@ namespace presentationLayer
             this.tipoIngresoGroupBox.PerformLayout();
             this.informacionGeneralAlumno.ResumeLayout(false);
             this.informacionGeneralAlumno.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fotoAlumno)).EndInit();
             this.curpPanel.ResumeLayout(false);
             this.curpPanel.PerformLayout();
             this.añosCumPanel.ResumeLayout(false);
@@ -1246,7 +1248,6 @@ namespace presentationLayer
             this.calleTPanel.ResumeLayout(false);
             this.calleTPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fotoAlumno)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -11,14 +11,14 @@
     <Property Name="apellido_paterno" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="apellido_materno" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="fecha_nacimiento" Type="DateTime" Nullable="false" Precision="0" />
-    <Property Name="edad_alumno" Type="String" MaxLength="3" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="CURP_alumno" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="edad_alumno" Type="String" MaxLength="2" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CURP_alumno" Type="String" MaxLength="18" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="estado_nacimiento_alumno" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="ciudad_nacimiento_alumno" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="colonia_alumno" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="calle_alumno" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="numero_alumno" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="telefono_personal_alumno" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="telefono_personal_alumno" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
     <Property Name="escuela_procedencia_alumno" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="documentacion_alumno" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
     <Property Name="atendido_por" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
@@ -283,5 +283,294 @@
       <End Role="tutor" EntitySet="tutor" />
       <End Role="alumno" EntitySet="alumno" />
     </AssociationSet>
+    <FunctionImport Name="sp_altaalergias">
+      <Parameter Name="id" Mode="In" Type="Int32" />
+      <Parameter Name="alergia" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_AltaAlumno" ReturnType="Collection(Decimal)">
+      <Parameter Name="fecha_registro" Mode="In" Type="DateTime" />
+      <Parameter Name="cicloescolar" Mode="In" Type="String" />
+      <Parameter Name="nombre" Mode="In" Type="String" />
+      <Parameter Name="apellido_pat" Mode="In" Type="String" />
+      <Parameter Name="apellido_mat" Mode="In" Type="String" />
+      <Parameter Name="fecha_nac" Mode="In" Type="DateTime" />
+      <Parameter Name="edad_alumno" Mode="In" Type="String" />
+      <Parameter Name="curp" Mode="In" Type="String" />
+      <Parameter Name="estadonac" Mode="In" Type="String" />
+      <Parameter Name="ciudadnac" Mode="In" Type="String" />
+      <Parameter Name="colonia" Mode="In" Type="String" />
+      <Parameter Name="calle" Mode="In" Type="String" />
+      <Parameter Name="numero_alumno" Mode="In" Type="String" />
+      <Parameter Name="telefonoper" Mode="In" Type="String" />
+      <Parameter Name="escuela" Mode="In" Type="String" />
+      <Parameter Name="documentacion" Mode="In" Type="String" />
+      <Parameter Name="atendidopor" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_altaalumnocartilla">
+      <Parameter Name="id_al" Mode="In" Type="Int32" />
+      <Parameter Name="id_car" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_altacartilla">
+      <Parameter Name="servicio" Mode="In" Type="String" />
+      <Parameter Name="grupo" Mode="In" Type="String" />
+      <Parameter Name="telefono" Mode="In" Type="String" />
+      <Parameter Name="peso" Mode="In" Type="String" />
+      <Parameter Name="genero" Mode="In" Type="String" />
+      <Parameter Name="color_textura" Mode="In" Type="String" />
+      <Parameter Name="estatura" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_altadiscapacidades">
+      <Parameter Name="id_car" Mode="In" Type="Int32" />
+      <Parameter Name="dis" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_altaenfermedades">
+      <Parameter Name="id_car" Mode="In" Type="Int32" />
+      <Parameter Name="enf" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_altatutor">
+      <Parameter Name="nombre" Mode="In" Type="String" />
+      <Parameter Name="apellidopat" Mode="In" Type="String" />
+      <Parameter Name="apellidomat" Mode="In" Type="String" />
+      <Parameter Name="colonia" Mode="In" Type="String" />
+      <Parameter Name="calle" Mode="In" Type="String" />
+      <Parameter Name="numero" Mode="In" Type="String" />
+      <Parameter Name="ocupacion" Mode="In" Type="String" />
+      <Parameter Name="coloniatrabajo" Mode="In" Type="String" />
+      <Parameter Name="calletrabajo" Mode="In" Type="String" />
+      <Parameter Name="numerotrabajo" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_alterdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_creatediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_dropdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_FichaTecnicaAlumno" ReturnType="Collection(BDCAMModel.SP_FichaTecnicaAlumno_Result)">
+      <Parameter Name="id_alumno" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_FichaTecnicaAlumnoMedica" ReturnType="Collection(BDCAMModel.SP_FichaTecnicaAlumnoMedica_Result)">
+      <Parameter Name="id_alumno" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_FichaTecnicaAlumnoTutor" ReturnType="Collection(BDCAMModel.SP_FichaTecnicaAlumnoTutor_Result)">
+      <Parameter Name="id_alumno" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(BDCAMModel.sp_helpdiagramdefinition_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(BDCAMModel.sp_helpdiagrams_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_ListaAlergia" ReturnType="Collection(BDCAMModel.SP_ListaAlergia_Result)">
+      <Parameter Name="id_alumno" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_ListaAlumnos" ReturnType="Collection(BDCAMModel.SP_ListaAlumnos_Result)" />
+    <FunctionImport Name="SP_ListaDiscapacidad" ReturnType="Collection(BDCAMModel.SP_ListaDiscapacidad_Result)">
+      <Parameter Name="id_alumno" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_ListaEnfermedad" ReturnType="Collection(BDCAMModel.SP_ListaEnfermedad_Result)">
+      <Parameter Name="id_alumno" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_regresarid" ReturnType="Collection(Decimal)" />
+    <FunctionImport Name="sp_regresaridcartilla" ReturnType="Collection(Decimal)" />
+    <FunctionImport Name="sp_regresaridtutor" ReturnType="Collection(Decimal)" />
+    <FunctionImport Name="sp_renamediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="new_diagramname" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_telefonotutores">
+      <Parameter Name="idtutor" Mode="In" Type="Int32" />
+      <Parameter Name="idtelefono" Mode="In" Type="Int32" />
+      <Parameter Name="telefono" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_tutoralumno">
+      <Parameter Name="id_alumno" Mode="In" Type="Int32" />
+      <Parameter Name="id_tutor" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_upgraddiagrams" />
+    <EntitySet Name="permisos" EntityType="BDCAMModel.permisos" />
+    <EntitySet Name="roles" EntityType="BDCAMModel.roles" />
+    <EntitySet Name="subpermisos" EntityType="BDCAMModel.subpermisos" />
+    <EntitySet Name="usuario" EntityType="BDCAMModel.usuario" />
+    <EntitySet Name="rol_tiene_permiso" EntityType="BDCAMModel.rol_tiene_permiso" />
+    <AssociationSet Name="permiso" Association="BDCAMModel.permiso">
+      <End Role="permisos" EntitySet="permisos" />
+      <End Role="rol_tiene_permiso" EntitySet="rol_tiene_permiso" />
+    </AssociationSet>
+    <AssociationSet Name="rol_permiso" Association="BDCAMModel.rol_permiso">
+      <End Role="roles" EntitySet="roles" />
+      <End Role="rol_tiene_permiso" EntitySet="rol_tiene_permiso" />
+    </AssociationSet>
+    <AssociationSet Name="subpermiso" Association="BDCAMModel.subpermiso">
+      <End Role="subpermisos" EntitySet="subpermisos" />
+      <End Role="rol_tiene_permiso" EntitySet="rol_tiene_permiso" />
+    </AssociationSet>
+    <AssociationSet Name="usuario_tiene_rol" Association="BDCAMModel.usuario_tiene_rol">
+      <End Role="roles" EntitySet="roles" />
+      <End Role="usuario" EntitySet="usuario" />
+    </AssociationSet>
   </EntityContainer>
+  <ComplexType Name="SP_FichaTecnicaAlumno_Result">
+    <Property Type="String" Name="nombre" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="apellido_materno" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="apellido_paterno" Nullable="false" MaxLength="30" />
+    <Property Type="DateTime" Name="fecha_nacimiento" Nullable="false" />
+    <Property Type="String" Name="ciudad_nacimiento_alumno" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="colonia_alumno" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="calle_alumno" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="telefono_personal_alumno" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="escuela_procedencia_alumno" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="edad_alumno" Nullable="false" MaxLength="2" />
+    <Property Type="String" Name="estado_nacimiento_alumno" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="CURP_alumno" Nullable="false" MaxLength="18" />
+    <Property Type="String" Name="atendido_por" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="ciclo_escolar" Nullable="false" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="SP_FichaTecnicaAlumnoMedica_Result">
+    <Property Type="String" Name="nombre" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="grupo_sanguineo" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="telefono_contacto" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="estatura" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="genero" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="peso" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="color_textura_piel" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="servicio_medico" Nullable="false" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="SP_FichaTecnicaAlumnoTutor_Result">
+    <Property Type="String" Name="nombre" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="apellido_paterno" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="apellido_materno" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="calle_tutor" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="colonia_tutor" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="numero_tutor" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="ocupacion_tutor" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="telefono" Nullable="false" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagramdefinition_Result">
+    <Property Type="Int32" Name="version" Nullable="true" />
+    <Property Type="Binary" Name="definition" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagrams_Result">
+    <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
+    <Property Type="Int32" Name="OwnerID" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="SP_ListaAlergia_Result">
+    <Property Type="Int32" Name="id_cartilla_medica" Nullable="false" />
+    <Property Type="String" Name="alergia" Nullable="false" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="SP_ListaAlumnos_Result">
+    <Property Type="Int32" Name="id_alumno" Nullable="false" />
+    <Property Type="String" Name="nombre" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="telefono_contacto" Nullable="false" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="SP_ListaDiscapacidad_Result">
+    <Property Type="Int32" Name="id_cartilla_medica" Nullable="false" />
+    <Property Type="String" Name="discapacidades" Nullable="false" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="SP_ListaEnfermedad_Result">
+    <Property Type="Int32" Name="id_cartilla_medica" Nullable="false" />
+    <Property Type="String" Name="enfermedad" Nullable="false" MaxLength="30" />
+  </ComplexType>
+  <EntityType Name="permisos">
+    <Key>
+      <PropertyRef Name="id_permisos" />
+    </Key>
+    <Property Name="id_permisos" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="permisos1" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="rol_tiene_permiso" Relationship="BDCAMModel.permiso" FromRole="permisos" ToRole="rol_tiene_permiso" />
+  </EntityType>
+  <EntityType Name="roles">
+    <Key>
+      <PropertyRef Name="id_rol" />
+    </Key>
+    <Property Name="id_rol" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre_rol" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="rol_tiene_permiso" Relationship="BDCAMModel.rol_permiso" FromRole="roles" ToRole="rol_tiene_permiso" />
+    <NavigationProperty Name="usuario" Relationship="BDCAMModel.usuario_tiene_rol" FromRole="roles" ToRole="usuario" />
+  </EntityType>
+  <EntityType Name="subpermisos">
+    <Key>
+      <PropertyRef Name="id_subpermisos" />
+    </Key>
+    <Property Name="id_subpermisos" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="subpermisos1" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="rol_tiene_permiso" Relationship="BDCAMModel.subpermiso" FromRole="subpermisos" ToRole="rol_tiene_permiso" />
+  </EntityType>
+  <EntityType Name="usuario">
+    <Key>
+      <PropertyRef Name="id_usuario" />
+    </Key>
+    <Property Name="id_usuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="contraseña" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="roles" Relationship="BDCAMModel.usuario_tiene_rol" FromRole="usuario" ToRole="roles" />
+  </EntityType>
+  <EntityType Name="rol_tiene_permiso">
+    <Key>
+      <PropertyRef Name="id_rol" />
+      <PropertyRef Name="id_permiso" />
+      <PropertyRef Name="id_subpermiso" />
+    </Key>
+    <Property Name="id_rol" Type="Int32" Nullable="false" />
+    <Property Name="id_permiso" Type="Int32" Nullable="false" />
+    <Property Name="id_subpermiso" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="permisos" Relationship="BDCAMModel.permiso" FromRole="rol_tiene_permiso" ToRole="permisos" />
+    <NavigationProperty Name="roles" Relationship="BDCAMModel.rol_permiso" FromRole="rol_tiene_permiso" ToRole="roles" />
+    <NavigationProperty Name="subpermisos" Relationship="BDCAMModel.subpermiso" FromRole="rol_tiene_permiso" ToRole="subpermisos" />
+  </EntityType>
+  <Association Name="permiso">
+    <End Type="BDCAMModel.permisos" Role="permisos" Multiplicity="1" />
+    <End Type="BDCAMModel.rol_tiene_permiso" Role="rol_tiene_permiso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="permisos">
+        <PropertyRef Name="id_permisos" />
+      </Principal>
+      <Dependent Role="rol_tiene_permiso">
+        <PropertyRef Name="id_permiso" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="rol_permiso">
+    <End Type="BDCAMModel.roles" Role="roles" Multiplicity="1" />
+    <End Type="BDCAMModel.rol_tiene_permiso" Role="rol_tiene_permiso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="roles">
+        <PropertyRef Name="id_rol" />
+      </Principal>
+      <Dependent Role="rol_tiene_permiso">
+        <PropertyRef Name="id_rol" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="subpermiso">
+    <End Type="BDCAMModel.subpermisos" Role="subpermisos" Multiplicity="1" />
+    <End Type="BDCAMModel.rol_tiene_permiso" Role="rol_tiene_permiso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="subpermisos">
+        <PropertyRef Name="id_subpermisos" />
+      </Principal>
+      <Dependent Role="rol_tiene_permiso">
+        <PropertyRef Name="id_subpermiso" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="usuario_tiene_rol">
+    <End Type="BDCAMModel.roles" Role="roles" Multiplicity="*" />
+    <End Type="BDCAMModel.usuario" Role="usuario" Multiplicity="*" />
+  </Association>
 </Schema>

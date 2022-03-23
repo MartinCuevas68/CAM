@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="BDCAMModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-  <!--Errors Found During Generation:
-warning 6002: The table/view 'BDCAM.dbo.alergias' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'BDCAM.dbo.alergias' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
   <EntityType Name="alergias">
     <Key>
       <PropertyRef Name="id_cartilla_medica" />
@@ -21,20 +21,20 @@ warning 6002: The table/view 'BDCAM.dbo.alergias' does not have a primary key de
     <Property Name="apellido_paterno" Type="varchar" MaxLength="30" Nullable="false" />
     <Property Name="apellido_materno" Type="varchar" MaxLength="30" Nullable="false" />
     <Property Name="fecha_nacimiento" Type="date" Nullable="false" />
-    <Property Name="edad_alumno" Type="varchar" MaxLength="3" Nullable="false" />
-    <Property Name="CURP_alumno" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="edad_alumno" Type="varchar" MaxLength="2" Nullable="false" />
+    <Property Name="CURP_alumno" Type="varchar" MaxLength="18" Nullable="false" />
     <Property Name="estado_nacimiento_alumno" Type="varchar" MaxLength="30" Nullable="false" />
     <Property Name="ciudad_nacimiento_alumno" Type="varchar" MaxLength="30" Nullable="false" />
     <Property Name="colonia_alumno" Type="varchar" MaxLength="30" Nullable="false" />
     <Property Name="calle_alumno" Type="varchar" MaxLength="30" Nullable="false" />
     <Property Name="numero_alumno" Type="varchar" MaxLength="30" Nullable="false" />
-    <Property Name="telefono_personal_alumno" Type="varchar" MaxLength="30" />
+    <Property Name="telefono_personal_alumno" Type="varchar" MaxLength="10" />
     <Property Name="escuela_procedencia_alumno" Type="varchar" MaxLength="30" Nullable="false" />
     <Property Name="documentacion_alumno" Type="nvarchar(max)" />
     <Property Name="atendido_por" Type="varchar" MaxLength="30" Nullable="false" />
   </EntityType>
-  <!--Errors Found During Generation:
-warning 6002: The table/view 'BDCAM.dbo.alumno-cartilla' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'BDCAM.dbo.alumno-cartilla' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
   <EntityType Name="alumno-cartilla">
     <Key>
       <PropertyRef Name="id_alumno" />
@@ -43,8 +43,8 @@ warning 6002: The table/view 'BDCAM.dbo.alumno-cartilla' does not have a primary
     <Property Name="id_alumno" Type="int" Nullable="false" />
     <Property Name="id_cartilla" Type="int" Nullable="false" />
   </EntityType>
-  <!--Errors Found During Generation:
-warning 6002: The table/view 'BDCAM.dbo.alumno-programa' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'BDCAM.dbo.alumno-programa' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
   <EntityType Name="alumno-programa">
     <Key>
       <PropertyRef Name="id_alumno" />
@@ -53,8 +53,8 @@ warning 6002: The table/view 'BDCAM.dbo.alumno-programa' does not have a primary
     <Property Name="id_alumno" Type="int" Nullable="false" />
     <Property Name="id_programa" Type="int" Nullable="false" />
   </EntityType>
-  <!--Errors Found During Generation:
-warning 6002: The table/view 'BDCAM.dbo.discapacidades' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'BDCAM.dbo.discapacidades' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
   <EntityType Name="discapacidades">
     <Key>
       <PropertyRef Name="id_cartilla_medica" />
@@ -63,8 +63,8 @@ warning 6002: The table/view 'BDCAM.dbo.discapacidades' does not have a primary 
     <Property Name="id_cartilla_medica" Type="int" Nullable="false" />
     <Property Name="discapacidades" Type="varchar" MaxLength="30" Nullable="false" />
   </EntityType>
-  <!--Errors Found During Generation:
-warning 6002: The table/view 'BDCAM.dbo.enfermedades' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'BDCAM.dbo.enfermedades' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
   <EntityType Name="enfermedades">
     <Key>
       <PropertyRef Name="id_cartilla_medica" />
@@ -72,6 +72,13 @@ warning 6002: The table/view 'BDCAM.dbo.enfermedades' does not have a primary ke
     </Key>
     <Property Name="id_cartilla_medica" Type="int" Nullable="false" />
     <Property Name="enfermedad" Type="varchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityType Name="permisos">
+    <Key>
+      <PropertyRef Name="id_permisos" />
+    </Key>
+    <Property Name="id_permisos" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="permisos" Type="varchar" MaxLength="250" Nullable="false" />
   </EntityType>
   <EntityType Name="programa">
     <Key>
@@ -86,8 +93,8 @@ warning 6002: The table/view 'BDCAM.dbo.enfermedades' does not have a primary ke
     <Property Name="modulos" Type="varchar" MaxLength="30" Nullable="false" />
     <Property Name="proyecto" Type="varchar" MaxLength="30" Nullable="false" />
   </EntityType>
-  <!--Errors Found During Generation:
-warning 6002: The table/view 'BDCAM.dbo.programa-turno' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'BDCAM.dbo.programa-turno' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
   <EntityType Name="programa-turno">
     <Key>
       <PropertyRef Name="id_turno" />
@@ -96,8 +103,8 @@ warning 6002: The table/view 'BDCAM.dbo.programa-turno' does not have a primary 
     <Property Name="id_turno" Type="int" Nullable="false" />
     <Property Name="id_programa" Type="int" Nullable="false" />
   </EntityType>
-  <!--Errors Found During Generation:
-warning 6002: The table/view 'BDCAM.dbo.recurso-programa' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'BDCAM.dbo.recurso-programa' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
   <EntityType Name="recurso-programa">
     <Key>
       <PropertyRef Name="id_recurso" />
@@ -112,6 +119,32 @@ warning 6002: The table/view 'BDCAM.dbo.recurso-programa' does not have a primar
     </Key>
     <Property Name="id_recurso" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="recurso" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="roles">
+    <Key>
+      <PropertyRef Name="id_rol" />
+    </Key>
+    <Property Name="id_rol" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre_rol" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.rol-tiene-permiso' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="rol-tiene-permiso">
+    <Key>
+      <PropertyRef Name="id_rol" />
+      <PropertyRef Name="id_permiso" />
+      <PropertyRef Name="id_subpermiso" />
+    </Key>
+    <Property Name="id_rol" Type="int" Nullable="false" />
+    <Property Name="id_permiso" Type="int" Nullable="false" />
+    <Property Name="id_subpermiso" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="subpermisos">
+    <Key>
+      <PropertyRef Name="id_subpermisos" />
+    </Key>
+    <Property Name="id_subpermisos" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="subpermisos" Type="varchar" MaxLength="150" Nullable="false" />
   </EntityType>
   <EntityType Name="sysdiagrams">
     <Key>
@@ -143,8 +176,8 @@ warning 6002: The table/view 'BDCAM.dbo.recurso-programa' does not have a primar
     <Property Name="color_textura_piel" Type="varchar" MaxLength="50" />
     <Property Name="estatura" Type="varchar" MaxLength="50" />
   </EntityType>
-  <!--Errors Found During Generation:
-warning 6002: The table/view 'BDCAM.dbo.telefono-tutores' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'BDCAM.dbo.telefono-tutores' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
   <EntityType Name="telefono-tutores">
     <Key>
       <PropertyRef Name="id_tutor" />
@@ -178,8 +211,8 @@ warning 6002: The table/view 'BDCAM.dbo.telefono-tutores' does not have a primar
     <Property Name="calle_trabajo_tutor" Type="varchar" MaxLength="30" Nullable="false" />
     <Property Name="numero_trabajo_tutor" Type="varchar" MaxLength="30" Nullable="false" />
   </EntityType>
-  <!--Errors Found During Generation:
-warning 6002: The table/view 'BDCAM.dbo.tutor-alumno' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'BDCAM.dbo.tutor-alumno' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
   <EntityType Name="tutor-alumno">
     <Key>
       <PropertyRef Name="id_tutor" />
@@ -187,6 +220,24 @@ warning 6002: The table/view 'BDCAM.dbo.tutor-alumno' does not have a primary ke
     </Key>
     <Property Name="id_tutor" Type="int" Nullable="false" />
     <Property Name="id_alumno" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="usuario">
+    <Key>
+      <PropertyRef Name="id_usuario" />
+    </Key>
+    <Property Name="id_usuario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="contraseña" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="usuario-tiene-rol">
+    <Key>
+      <PropertyRef Name="id_usuario" />
+      <PropertyRef Name="id_roles" />
+    </Key>
+    <Property Name="id_usuario" Type="int" Nullable="false" />
+    <Property Name="id_roles" Type="int" Nullable="false" />
   </EntityType>
   <Association Name="FK_alergias_tabla_medica">
     <End Role="tabla_medica" Type="Self.tabla_medica" Multiplicity="1" />
@@ -200,7 +251,7 @@ warning 6002: The table/view 'BDCAM.dbo.tutor-alumno' does not have a primary ke
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_alumno-cartilla_alumno">
+  <Association Name="FK_alumno-cartilla">
     <End Role="alumno" Type="Self.alumno" Multiplicity="1" />
     <End Role="alumno-cartilla" Type="Self.alumno-cartilla" Multiplicity="*" />
     <ReferentialConstraint>
@@ -212,7 +263,7 @@ warning 6002: The table/view 'BDCAM.dbo.tutor-alumno' does not have a primary ke
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_alumno-programa_alumno">
+  <Association Name="FK_alumno-programa">
     <End Role="alumno" Type="Self.alumno" Multiplicity="1" />
     <End Role="alumno-programa" Type="Self.alumno-programa" Multiplicity="*" />
     <ReferentialConstraint>
@@ -220,6 +271,18 @@ warning 6002: The table/view 'BDCAM.dbo.tutor-alumno' does not have a primary ke
         <PropertyRef Name="id_alumno" />
       </Principal>
       <Dependent Role="alumno-programa">
+        <PropertyRef Name="id_alumno" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Alumno-tutor">
+    <End Role="alumno" Type="Self.alumno" Multiplicity="1" />
+    <End Role="tutor-alumno" Type="Self.tutor-alumno" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="alumno">
+        <PropertyRef Name="id_alumno" />
+      </Principal>
+      <Dependent Role="tutor-alumno">
         <PropertyRef Name="id_alumno" />
       </Dependent>
     </ReferentialConstraint>
@@ -356,27 +419,197 @@ warning 6002: The table/view 'BDCAM.dbo.tutor-alumno' does not have a primary ke
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_tutor-alumno_alumno">
-    <End Role="alumno" Type="Self.alumno" Multiplicity="1" />
-    <End Role="tutor-alumno" Type="Self.tutor-alumno" Multiplicity="*" />
+  <Association Name="permiso">
+    <End Role="permisos" Type="Self.permisos" Multiplicity="1" />
+    <End Role="rol-tiene-permiso" Type="Self.rol-tiene-permiso" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="alumno">
-        <PropertyRef Name="id_alumno" />
+      <Principal Role="permisos">
+        <PropertyRef Name="id_permisos" />
       </Principal>
-      <Dependent Role="tutor-alumno">
-        <PropertyRef Name="id_alumno" />
+      <Dependent Role="rol-tiene-permiso">
+        <PropertyRef Name="id_permiso" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="rol-permiso">
+    <End Role="roles" Type="Self.roles" Multiplicity="1" />
+    <End Role="rol-tiene-permiso" Type="Self.rol-tiene-permiso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="roles">
+        <PropertyRef Name="id_rol" />
+      </Principal>
+      <Dependent Role="rol-tiene-permiso">
+        <PropertyRef Name="id_rol" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="rol-usuario">
+    <End Role="roles" Type="Self.roles" Multiplicity="1" />
+    <End Role="usuario-tiene-rol" Type="Self.usuario-tiene-rol" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="roles">
+        <PropertyRef Name="id_rol" />
+      </Principal>
+      <Dependent Role="usuario-tiene-rol">
+        <PropertyRef Name="id_roles" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="subpermiso">
+    <End Role="subpermisos" Type="Self.subpermisos" Multiplicity="1" />
+    <End Role="rol-tiene-permiso" Type="Self.rol-tiene-permiso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="subpermisos">
+        <PropertyRef Name="id_subpermisos" />
+      </Principal>
+      <Dependent Role="rol-tiene-permiso">
+        <PropertyRef Name="id_subpermiso" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="usuario-rol">
+    <End Role="usuario" Type="Self.usuario" Multiplicity="1" />
+    <End Role="usuario-tiene-rol" Type="Self.usuario-tiene-rol" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuario">
+        <PropertyRef Name="id_usuario" />
+      </Principal>
+      <Dependent Role="usuario-tiene-rol">
+        <PropertyRef Name="id_usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="fn_diagramobjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int" />
+  <Function Name="sp_altaalergias" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+    <Parameter Name="alergia" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_AltaAlumno" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="fecha_registro" Type="date" Mode="In" />
+    <Parameter Name="cicloescolar" Type="varchar" Mode="In" />
+    <Parameter Name="nombre" Type="varchar" Mode="In" />
+    <Parameter Name="apellido_pat" Type="varchar" Mode="In" />
+    <Parameter Name="apellido_mat" Type="varchar" Mode="In" />
+    <Parameter Name="fecha_nac" Type="date" Mode="In" />
+    <Parameter Name="edad_alumno" Type="varchar" Mode="In" />
+    <Parameter Name="curp" Type="varchar" Mode="In" />
+    <Parameter Name="estadonac" Type="varchar" Mode="In" />
+    <Parameter Name="ciudadnac" Type="varchar" Mode="In" />
+    <Parameter Name="colonia" Type="varchar" Mode="In" />
+    <Parameter Name="calle" Type="varchar" Mode="In" />
+    <Parameter Name="numero_alumno" Type="varchar" Mode="In" />
+    <Parameter Name="telefonoper" Type="varchar" Mode="In" />
+    <Parameter Name="escuela" Type="varchar" Mode="In" />
+    <Parameter Name="documentacion" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="atendidopor" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_altaalumnocartilla" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id_al" Type="int" Mode="In" />
+    <Parameter Name="id_car" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_altacartilla" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="servicio" Type="varchar" Mode="In" />
+    <Parameter Name="grupo" Type="varchar" Mode="In" />
+    <Parameter Name="telefono" Type="varchar" Mode="In" />
+    <Parameter Name="peso" Type="varchar" Mode="In" />
+    <Parameter Name="genero" Type="varchar" Mode="In" />
+    <Parameter Name="color_textura" Type="varchar" Mode="In" />
+    <Parameter Name="estatura" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_altadiscapacidades" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id_car" Type="int" Mode="In" />
+    <Parameter Name="dis" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_altaenfermedades" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id_car" Type="int" Mode="In" />
+    <Parameter Name="enf" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_altatutor" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="nombre" Type="varchar" Mode="In" />
+    <Parameter Name="apellidopat" Type="varchar" Mode="In" />
+    <Parameter Name="apellidomat" Type="varchar" Mode="In" />
+    <Parameter Name="colonia" Type="varchar" Mode="In" />
+    <Parameter Name="calle" Type="varchar" Mode="In" />
+    <Parameter Name="numero" Type="varchar" Mode="In" />
+    <Parameter Name="ocupacion" Type="varchar" Mode="In" />
+    <Parameter Name="coloniatrabajo" Type="varchar" Mode="In" />
+    <Parameter Name="calletrabajo" Type="varchar" Mode="In" />
+    <Parameter Name="numerotrabajo" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_FichaTecnicaAlumno" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id_alumno" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_FichaTecnicaAlumnoMedica" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id_alumno" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_FichaTecnicaAlumnoTutor" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id_alumno" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_ListaAlergia" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id_alumno" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_ListaAlumnos" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_ListaDiscapacidad" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id_alumno" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_ListaEnfermedad" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id_alumno" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_regresarid" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="sp_regresaridcartilla" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="sp_regresaridtutor" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_telefonotutores" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idtutor" Type="int" Mode="In" />
+    <Parameter Name="idtelefono" Type="int" Mode="In" />
+    <Parameter Name="telefono" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_tutoralumno" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id_alumno" Type="int" Mode="In" />
+    <Parameter Name="id_tutor" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
   <EntityContainer Name="BDCAMModelStoreContainer">
     <EntitySet Name="alumno" EntityType="Self.alumno" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="permisos" EntityType="Self.permisos" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="programa" EntityType="Self.programa" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="recursos" EntityType="Self.recursos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="roles" EntityType="Self.roles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="subpermisos" EntityType="Self.subpermisos" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="tabla_indicadores_telefono" EntityType="Self.tabla_indicadores_telefono" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="tabla_medica" EntityType="Self.tabla_medica" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="turnos" EntityType="Self.turnos" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="tutor" EntityType="Self.tutor" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="usuario" EntityType="Self.usuario" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="alergias" EntityType="Self.alergias" store:Type="Tables" store:Schema="dbo">
       <DefiningQuery>SELECT 
     [alergias].[id_cartilla_medica] AS [id_cartilla_medica], 
@@ -419,6 +652,13 @@ warning 6002: The table/view 'BDCAM.dbo.tutor-alumno' does not have a primary ke
     [recurso-programa].[id_programa] AS [id_programa]
     FROM [dbo].[recurso-programa] AS [recurso-programa]</DefiningQuery>
     </EntitySet>
+    <EntitySet Name="rol-tiene-permiso" EntityType="Self.rol-tiene-permiso" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [rol-tiene-permiso].[id_rol] AS [id_rol], 
+    [rol-tiene-permiso].[id_permiso] AS [id_permiso], 
+    [rol-tiene-permiso].[id_subpermiso] AS [id_subpermiso]
+    FROM [dbo].[rol-tiene-permiso] AS [rol-tiene-permiso]</DefiningQuery>
+    </EntitySet>
     <EntitySet Name="telefono-tutores" EntityType="Self.telefono-tutores" store:Type="Tables" store:Schema="dbo">
       <DefiningQuery>SELECT 
     [telefono-tutores].[id_tutor] AS [id_tutor], 
@@ -432,17 +672,27 @@ warning 6002: The table/view 'BDCAM.dbo.tutor-alumno' does not have a primary ke
     [tutor-alumno].[id_alumno] AS [id_alumno]
     FROM [dbo].[tutor-alumno] AS [tutor-alumno]</DefiningQuery>
     </EntitySet>
+    <EntitySet Name="usuario-tiene-rol" EntityType="Self.usuario-tiene-rol" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [usuario-tiene-rol].[id_usuario] AS [id_usuario], 
+    [usuario-tiene-rol].[id_roles] AS [id_roles]
+    FROM [dbo].[usuario-tiene-rol] AS [usuario-tiene-rol]</DefiningQuery>
+    </EntitySet>
     <AssociationSet Name="FK_alergias_tabla_medica" Association="Self.FK_alergias_tabla_medica">
       <End Role="tabla_medica" EntitySet="tabla_medica" />
       <End Role="alergias" EntitySet="alergias" />
     </AssociationSet>
-    <AssociationSet Name="FK_alumno-cartilla_alumno" Association="Self.FK_alumno-cartilla_alumno">
+    <AssociationSet Name="FK_alumno-cartilla" Association="Self.FK_alumno-cartilla">
       <End Role="alumno" EntitySet="alumno" />
       <End Role="alumno-cartilla" EntitySet="alumno-cartilla" />
     </AssociationSet>
-    <AssociationSet Name="FK_alumno-programa_alumno" Association="Self.FK_alumno-programa_alumno">
+    <AssociationSet Name="FK_alumno-programa" Association="Self.FK_alumno-programa">
       <End Role="alumno" EntitySet="alumno" />
       <End Role="alumno-programa" EntitySet="alumno-programa" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Alumno-tutor" Association="Self.FK_Alumno-tutor">
+      <End Role="alumno" EntitySet="alumno" />
+      <End Role="tutor-alumno" EntitySet="tutor-alumno" />
     </AssociationSet>
     <AssociationSet Name="FK_cartilla-alumno" Association="Self.FK_cartilla-alumno">
       <End Role="tabla_medica" EntitySet="tabla_medica" />
@@ -488,9 +738,25 @@ warning 6002: The table/view 'BDCAM.dbo.tutor-alumno' does not have a primary ke
       <End Role="tutor" EntitySet="tutor" />
       <End Role="tutor-alumno" EntitySet="tutor-alumno" />
     </AssociationSet>
-    <AssociationSet Name="FK_tutor-alumno_alumno" Association="Self.FK_tutor-alumno_alumno">
-      <End Role="alumno" EntitySet="alumno" />
-      <End Role="tutor-alumno" EntitySet="tutor-alumno" />
+    <AssociationSet Name="permiso" Association="Self.permiso">
+      <End Role="permisos" EntitySet="permisos" />
+      <End Role="rol-tiene-permiso" EntitySet="rol-tiene-permiso" />
+    </AssociationSet>
+    <AssociationSet Name="rol-permiso" Association="Self.rol-permiso">
+      <End Role="roles" EntitySet="roles" />
+      <End Role="rol-tiene-permiso" EntitySet="rol-tiene-permiso" />
+    </AssociationSet>
+    <AssociationSet Name="rol-usuario" Association="Self.rol-usuario">
+      <End Role="roles" EntitySet="roles" />
+      <End Role="usuario-tiene-rol" EntitySet="usuario-tiene-rol" />
+    </AssociationSet>
+    <AssociationSet Name="subpermiso" Association="Self.subpermiso">
+      <End Role="subpermisos" EntitySet="subpermisos" />
+      <End Role="rol-tiene-permiso" EntitySet="rol-tiene-permiso" />
+    </AssociationSet>
+    <AssociationSet Name="usuario-rol" Association="Self.usuario-rol">
+      <End Role="usuario" EntitySet="usuario" />
+      <End Role="usuario-tiene-rol" EntitySet="usuario-tiene-rol" />
     </AssociationSet>
   </EntityContainer>
 </Schema>
