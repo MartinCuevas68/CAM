@@ -1264,11 +1264,18 @@ namespace presentationLayer
         //Método que autocompleta la edad poniendo la fecha de nacimiento
         private void fechaNa_ValueChanged(object sender, EventArgs e)
         {
-            DateTime fechaActual = DateTime.Today;
+            /*DateTime fechaActual = DateTime.Today;
             int anio = fechaNa.Value.Year;
             int edad = fechaActual.Year - anio;
             String edadConvertida = edad.ToString();
-            añosCum.Text = edadConvertida;
+            añosCum.Text = edadConvertida;*/
+
+            DateTime fechaNacimiento = fechaNa.Value;
+            DateTime fechaActual = DateTime.Now;
+            TimeSpan diferencia = fechaActual - fechaNacimiento;
+            double dias = diferencia.TotalDays;
+            double anios = Math.Floor(dias/365);
+            añosCum.Text = anios.ToString();
 
         }
 
