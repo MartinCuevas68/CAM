@@ -803,38 +803,20 @@ namespace presentationLayer
                             {
                                 MessageBox.Show("¡Ingresar al menos un telefono de contacto!", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                             }
-                            else
-                            {//////////////////////////
-                             //VALIDAR 1 COMPLET0 Y 2 VACIOS
-                             //Casa completo, movil vacio, trabajo vacio
-                                if ((telCasaT.TextLength == 10) && (telMovilT.Text == "") && (telTrabajoT.Text == ""))
-                                {
-                                    informacionTutor.Visible = false;
-                                    informacionMedicaAlumnoGroupBox.Visible = true;
-
-                                    infoTutorLabel.Visible = false;
-                                    informacionMedLabel.Visible = true;
-
-                                    siguiente3Button.Visible = false;
-                                    realizarAltaButton.Visible = true;
+                            else {
+                                if (!telCasaT.Text.Equals("") && telCasaT.TextLength < 10) { 
+                                    MessageBox.Show("¡El telefono de casa está incompleto, debe contener 10 digitos ", "Formato incorrecto", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                                 }
                                 else
-                                {//Casa vacio, movil completo, trabajo vacio
-                                    if ((telMovilT.TextLength == 10) && (telCasaT.Text == "") && (telTrabajoT.Text == ""))
-                                    {
-                                        informacionTutor.Visible = false;
-                                        informacionMedicaAlumnoGroupBox.Visible = true;
-
-                                        infoTutorLabel.Visible = false;
-                                        informacionMedLabel.Visible = true;
-
-                                        siguiente3Button.Visible = false;
-                                        realizarAltaButton.Visible = true;
+                                {
+                                    if (!telMovilT.Text.Equals("") && telMovilT.TextLength < 10) { 
+                                        MessageBox.Show("¡El telefono móvil está incompleto, debe contener 10 digitos ", "Formato incorrecto", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                                     }
-                                    else
-                                    {//Casa vacio, movil vacio, trabajo completo
-                                        if ((telTrabajoT.TextLength == 10) && (telCasaT.Text == "") && (telMovilT.Text == ""))
-                                        {
+                                    else {
+                                        if (!telTrabajoT.Text.Equals("") && telTrabajoT.TextLength < 10) { 
+                                            MessageBox.Show("¡El telefono del trabajo está incompleto, debe contener 10 digitos ", "Formato incorrecto", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                        }
+                                        else { 
                                             informacionTutor.Visible = false;
                                             informacionMedicaAlumnoGroupBox.Visible = true;
 
@@ -843,256 +825,6 @@ namespace presentationLayer
 
                                             siguiente3Button.Visible = false;
                                             realizarAltaButton.Visible = true;
-                                        }
-                                        else
-                                        {
-                                            //VALIDACION DOS CAMPOS COMPLETOS Y 1 VACIO
-                                            //Casa completo, movil completo, trabajo vacio
-                                            if ((telCasaT.TextLength == 10) && (telMovilT.TextLength == 10) && (telTrabajoT.Text == ""))
-                                            {
-                                                informacionTutor.Visible = false;
-                                                informacionMedicaAlumnoGroupBox.Visible = true;
-
-                                                infoTutorLabel.Visible = false;
-                                                informacionMedLabel.Visible = true;
-
-                                                siguiente3Button.Visible = false;
-                                                realizarAltaButton.Visible = true;
-                                            }
-                                            else
-                                            {
-                                                //Casa completo, movil vacio, trabajo completo
-                                                if ((telCasaT.TextLength == 10) && (telMovilT.Text == "") && (telTrabajoT.TextLength == 10))
-                                                {
-                                                    informacionTutor.Visible = false;
-                                                    informacionMedicaAlumnoGroupBox.Visible = true;
-
-                                                    infoTutorLabel.Visible = false;
-                                                    informacionMedLabel.Visible = true;
-
-                                                    siguiente3Button.Visible = false;
-                                                    realizarAltaButton.Visible = true;
-                                                }
-                                                else
-                                                {//Casa vacio, movil completo, trabajo completo
-                                                    if ((telCasaT.Text == "") && (telMovilT.TextLength == 10) && (telTrabajoT.TextLength == 10))
-                                                    {
-                                                        informacionTutor.Visible = false;
-                                                        informacionMedicaAlumnoGroupBox.Visible = true;
-
-                                                        infoTutorLabel.Visible = false;
-                                                        informacionMedLabel.Visible = true;
-
-                                                        siguiente3Button.Visible = false;
-                                                        realizarAltaButton.Visible = true;
-                                                    }
-                                                    else
-                                                    { //VALIDAR DOS COMPLETOS Y UNO INCOMPLETO 
-                                                      //Casa completo, movil completo, trabajo incompleto
-                                                        if ((telCasaT.TextLength == 10) && (telMovilT.TextLength == 10) && (telTrabajoT.TextLength < 10))
-                                                        {
-                                                            String telTrabajoTut = Convert.ToString(10 - telTrabajoT.TextLength);
-                                                            MessageBox.Show("¡El telefono de trabajo del tutor está incompleto, falta " + telTrabajoTut + " numero(s)", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                                                            return;
-                                                        }
-                                                        else
-                                                        {
-                                                            //Casa completo, movil incompleto, trabajo completo
-                                                            if ((telCasaT.TextLength == 10) && (telMovilT.TextLength < 10) && (telTrabajoT.TextLength == 10))
-                                                            {
-                                                                String telMovilTut = Convert.ToString(10 - telMovilT.TextLength);
-                                                                MessageBox.Show("¡El telefono movil del tutor está incompleto, falta " + telMovilTut + " numero(s)", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                                                                return;
-                                                            }
-                                                            else
-                                                            {//Casa incompleto, movil completo, trabajo completo
-                                                                if ((telCasaT.TextLength < 10) && (telMovilT.TextLength == 10) && (telTrabajoT.TextLength == 10))
-                                                                {
-                                                                    String telCasaTut = Convert.ToString(10 - telCasaT.TextLength);
-                                                                    MessageBox.Show("¡El telefono de casa del tutor está incompleto, falta " + telCasaTut + " numero(s)", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                                                                    return;
-                                                                }
-                                                                else
-                                                                {//VALIDAR 1 CAMPO COMPLETO, 1 INCOMPLETO Y 1 VACIO
-                                                                 //casa 10, movil incompl, trabajo vacio
-                                                                    if (telCasaT.TextLength == 10 && telMovilT.TextLength < 10 && telTrabajoT.Text == "")
-                                                                    {
-                                                                        String telMovilTut = Convert.ToString(10 - telMovilT.TextLength);
-                                                                        MessageBox.Show("¡El telefono movil del tutor está incompleto, falta " + telMovilTut + " numero(s)", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                                                                        return;
-                                                                    }
-                                                                    else
-                                                                    {
-                                                                        //casa 10, movil vacio, trabajo incompl
-                                                                        if (telCasaT.TextLength == 10 && telMovilT.Text == "" && telTrabajoT.TextLength < 10)
-                                                                        {
-                                                                            String telTrabajoTut = Convert.ToString(10 - telTrabajoT.TextLength);
-                                                                            MessageBox.Show("¡El telefono de trabajo del tutor está incompleto, falta " + telTrabajoTut + " numero(s)", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                                                                            return;
-                                                                        }
-                                                                        else
-                                                                        {
-                                                                            //movil 10, casa incompl, trabajo vacio
-                                                                            if (telCasaT.TextLength < 10 && telMovilT.TextLength == 10 && telTrabajoT.Text == "")
-                                                                            {
-                                                                                String telCasaTut = Convert.ToString(10 - telCasaT.TextLength);
-                                                                                MessageBox.Show("¡El telefono de casa del tutor está incompleto, falta " + telCasaTut + " numero(s)", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                                                                                return;
-                                                                            }
-                                                                            else
-                                                                            {
-                                                                                //movil 10, casa vacio, trabajo incompleto
-                                                                                if (telCasaT.Text == "" && telMovilT.TextLength == 10 && telTrabajoT.TextLength < 10)
-                                                                                {
-                                                                                    String telTrabajoTut = Convert.ToString(10 - telTrabajoT.TextLength);
-                                                                                    MessageBox.Show("¡El telefono de trabajo del tutor está incompleto, falta " + telTrabajoTut + " numero(s)", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                                                                                    return;
-                                                                                }
-                                                                                else
-                                                                                {
-                                                                                    //trabajo 10, movil incompl, casa vacio
-                                                                                    if (telCasaT.Text == "" && telMovilT.TextLength < 10 && telTrabajoT.TextLength == 10)
-                                                                                    {
-                                                                                        String telMovilTut = Convert.ToString(10 - telMovilT.TextLength);
-                                                                                        MessageBox.Show("¡El telefono movil del tutor está incompleto, falta " + telMovilTut + " numero(s)", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                                                                                        return;
-                                                                                    }
-                                                                                    else
-                                                                                    {
-                                                                                        //trabajo 10, movil vacio, casa incompl
-                                                                                        if (telCasaT.TextLength < 10 && telMovilT.Text == "" && telTrabajoT.TextLength == 10)
-                                                                                        {
-                                                                                            String telCasaTut = Convert.ToString(10 - telCasaT.TextLength);
-                                                                                            MessageBox.Show("¡El telefono de casa del tutor está incompleto, falta " + telCasaTut + " numero(s)", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                                                                                            return;
-                                                                                        }
-                                                                                        else
-                                                                                        {
-                                                                                            //VALIDACION 1 CAMPO COMPLETO Y DOS INCOMPLETOS
-                                                                                            //Casa completo, movil incompleto, trabajo incompleto
-                                                                                            if ((telCasaT.TextLength == 10) && (telMovilT.TextLength < 10) && (telTrabajoT.TextLength < 10))
-                                                                                            {
-                                                                                                String telMovilTut = Convert.ToString(10 - telMovilT.TextLength);
-                                                                                                String telTrabajoTut = Convert.ToString(10 - telTrabajoT.TextLength);
-                                                                                                MessageBox.Show("¡El telefono de movil y de trabajo del tutor están incompletos, falta " + "Movil: " + telMovilTut + " numero(s) | " + "Trabajo: " + telTrabajoTut + " numero(s)", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                                                                                                return;
-                                                                                            }
-                                                                                            else
-                                                                                            {
-                                                                                                //Casa incompleto, movil incompleto, trabajo completo
-                                                                                                if ((telCasaT.TextLength < 10) && (telMovilT.TextLength == 10) && (telTrabajoT.TextLength < 10))
-                                                                                                {
-                                                                                                    String telCasaTut = Convert.ToString(10 - telCasaT.TextLength);
-                                                                                                    String telTrabajoTut = Convert.ToString(10 - telTrabajoT.TextLength);
-                                                                                                    MessageBox.Show("¡El telefono de casa y de trabajo del tutor están incompletos, falta " + "Casa: " + telCasaTut + " numero(s) | " + "Trabajo: " + telTrabajoTut + " numero(s)", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                                                                                                    return;
-                                                                                                }
-                                                                                                else
-                                                                                                {//Casa incompleto, movil incompleto, trabajo completo
-                                                                                                    if ((telCasaT.TextLength < 10) && (telMovilT.TextLength < 10) && (telTrabajoT.TextLength == 10))
-                                                                                                    {
-                                                                                                        String telCasaTut = Convert.ToString(10 - telCasaT.TextLength);
-                                                                                                        String telMovilTut = Convert.ToString(10 - telMovilT.TextLength);
-                                                                                                        MessageBox.Show("¡El telefono de casa y movil del tutor están incompletos, falta " + "Casa: " + telCasaTut + " numero(s) | " + "Movil: " + telMovilTut + " numero(s)", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                                                                                                        return;
-                                                                                                    }
-                                                                                                    else
-                                                                                                    {
-
-                                                                                                        if ((telCasaT.TextLength < 10) && (telMovilT.Text == "") && (telTrabajoT.Text == ""))
-                                                                                                        {
-                                                                                                            String telCasaTut = Convert.ToString(10 - telCasaT.TextLength);
-                                                                                                            MessageBox.Show("¡El telefono de casa del tutor está incompleto, falta " + telCasaTut + " numero(s)", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                                                                                                            return;
-                                                                                                        }
-                                                                                                        else
-                                                                                                        { //VALIDAR 1 CAMPO INCOMPLETO Y DOS VACIOS
-                                                                                                            if ((telMovilT.TextLength < 10) && (telCasaT.Text == "") && (telTrabajoT.Text == ""))
-                                                                                                            {
-                                                                                                                String telMovilTut = Convert.ToString(10 - telMovilT.TextLength);
-                                                                                                                MessageBox.Show("¡El telefono movil del tutor está incompleto, falta " + telMovilTut + " numero(s)", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                                                                                                                return;
-                                                                                                            }
-                                                                                                            else
-                                                                                                            {
-                                                                                                                if ((telTrabajoT.TextLength < 10) && (telCasaT.Text == "") && (telMovilT.Text == ""))
-                                                                                                                {
-                                                                                                                    String telTrabajoTuto = Convert.ToString(10 - telTrabajoT.TextLength);
-                                                                                                                    MessageBox.Show("¡El telefono de trabajo del tutor está incompleto, falta " + telTrabajoTuto + " numero(s)", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                                                                                                                    return;
-                                                                                                                }
-                                                                                                                else
-                                                                                                                {//VALIDAR DOS CAMPOS INCOMPLETOS Y 1 VACIO
-                                                                                                                    if (telCasaT.TextLength < 10 && telMovilT.TextLength < 10 && telTrabajoT.Text == "")
-                                                                                                                    {
-                                                                                                                        String telCasaTut = Convert.ToString(10 - telCasaT.TextLength);
-                                                                                                                        String telMovilTut = Convert.ToString(10 - telMovilT.TextLength);
-                                                                                                                        MessageBox.Show("¡El telefono de casa y movil del tutor están incompletos, falta " + "Casa: " + telCasaTut + " numero(s) | " + "Movil: " + telMovilTut + " numero(s)", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                                                                                                                        return;
-                                                                                                                    }
-                                                                                                                    else
-                                                                                                                    {
-                                                                                                                        if (telCasaT.TextLength < 10 && telMovilT.Text == "" && telTrabajoT.TextLength < 10)
-                                                                                                                        {
-                                                                                                                            String telCasaTut = Convert.ToString(10 - telCasaT.TextLength);
-                                                                                                                            String telTrabajoTuto = Convert.ToString(10 - telTrabajoT.TextLength);
-                                                                                                                            MessageBox.Show("¡El telefono de casa y trabajo del tutor están incompletos, falta " + "Casa: " + telCasaTut + " numero(s) | " + "Trabajo: " + telTrabajoTuto + " numero(s)", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                                                                                                                            return;
-                                                                                                                        }
-                                                                                                                        else
-                                                                                                                        {
-                                                                                                                            if (telCasaT.Text == "" && telMovilT.TextLength < 10 && telTrabajoT.TextLength < 10)
-                                                                                                                            {
-                                                                                                                                String telMovilTut = Convert.ToString(10 - telMovilT.TextLength);
-                                                                                                                                String telTrabajoTuto = Convert.ToString(10 - telTrabajoT.TextLength);
-                                                                                                                                MessageBox.Show("¡El telefono de movil y trabajo del tutor están incompletos, falta " + "Movil: " + telMovilTut + " numero(s) | " + "Trabajo: " + telTrabajoTuto + " numero(s)", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                                                                                                                                return;
-                                                                                                                            }
-                                                                                                                            else
-                                                                                                                            {
-                                                                                                                                if (telCasaT.TextLength < 10 && telMovilT.TextLength < 10 && telTrabajoT.TextLength < 10)
-                                                                                                                                {
-                                                                                                                                    String telCasaTut = Convert.ToString(10 - telCasaT.TextLength);
-                                                                                                                                    String telMovilTut = Convert.ToString(10 - telMovilT.TextLength);
-                                                                                                                                    String telTrabajoTuto = Convert.ToString(10 - telTrabajoT.TextLength);
-                                                                                                                                    MessageBox.Show("¡El telefono de casa, movil y trabajo del tutor están incompletos, falta " + "Casa: " + telCasaTut + " numero(s) | " + "Movil: " + telMovilTut + " numero(s) | " + "Trabajo: " + telTrabajoTuto + " numero(s)", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                                                                                                                                    return;
-                                                                                                                                }
-
-                                                                                                                                else
-                                                                                                                                {
-                                                                                                                                    informacionTutor.Visible = false;
-                                                                                                                                    informacionMedicaAlumnoGroupBox.Visible = true;
-
-                                                                                                                                    infoTutorLabel.Visible = false;
-                                                                                                                                    informacionMedLabel.Visible = true;
-
-                                                                                                                                    siguiente3Button.Visible = false;
-                                                                                                                                    realizarAltaButton.Visible = true;
-                                                                                                                                }
-                                                                                                                            }
-                                                                                                                        }
-                                                                                                                    }
-                                                                                                                }
-                                                                                                            }
-
-                                                                                                        }
-                                                                                                    }
-                                                                                                }
-                                                                                            }
-                                                                                        }
-                                                                                    }
-                                                                                }
-                                                                            }
-                                                                        }
-                                                                    }
-                                                                }
-                                                            }
-                                                        }
-                                                    }
-
-                                                }
-                                            }
                                         }
                                     }
                                 }
@@ -1264,19 +996,12 @@ namespace presentationLayer
         //Método que autocompleta la edad poniendo la fecha de nacimiento
         private void fechaNa_ValueChanged(object sender, EventArgs e)
         {
-            /*DateTime fechaActual = DateTime.Today;
-            int anio = fechaNa.Value.Year;
-            int edad = fechaActual.Year - anio;
-            String edadConvertida = edad.ToString();
-            añosCum.Text = edadConvertida;*/
-
             DateTime fechaNacimiento = fechaNa.Value;
             DateTime fechaActual = DateTime.Now;
             TimeSpan diferencia = fechaActual - fechaNacimiento;
             double dias = diferencia.TotalDays;
             double anios = Math.Floor(dias/365);
             añosCum.Text = anios.ToString();
-
         }
 
         //De aqui para abajo son eventos keypress
