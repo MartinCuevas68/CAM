@@ -33,15 +33,15 @@ namespace presentationLayer
                 tipoIngresoGroupBox);
 
             infoTutor(nombreTLabel, nombreT, nombreTPanel, apellidoPTLabel, apellidoPT, apellidoPTPanel, apellidoMTLabel, apellidoMT, apellidoMTPanel, direccionTLabel,
-                calleTLabel, calleT, calleTPanel, numeroCasaTLabel,
-                numeroCasaT, numeroCasaTPanel, coloniaTLabel, coloniaT, coloniaTPanel, infContactoLabel, telCasaTLabel, telCasaT, telCasaTPanel, telMovilTLabel, telMovilT, telMovilTPanel,
+                calleTLabel, calleT, calleTPanel, numeroCasaTLabel, numeroCasaT, numeroCasaTPanel, coloniaTLabel, coloniaT, coloniaTPanel, 
+                calleDatoLabel, numeroDatoLabel, coloniaDatoLabel, infContactoLabel,telCasaTLabel, telCasaT, telCasaTPanel, telMovilTLabel, telMovilT, telMovilTPanel,
                 telTrabajoTLabel, telTrabajoT, telTrabajoTPanel, ocupacionLabel, ocupacion, ocupacionTPanel, direccionCheckBox);
 
             infoMedica(servMedicoLabel, servMedico, servMedicoPanel, grupoSanguineoLabel, grupoSanguineo, grupoSanguineoPanel, grupoSanguineoComboBox, telefonoLabel,
                 telefono, telefonoPanel, discapacidadLabel, discapacidad, discapacidadPanel, enfermedadesLabel, enfermedades, enfermedadesPanel,
-                alergiasLabel, alergias, alergiasPanel, tratamientoLabel, tratamiento, tratamientoPanel, eliminarTratamientoButton, discapacidadesCombobox, enfermedadesCombobox, alergiasCombobox,
-                eliminarDiscapacidadesButton,
-                eliminarEnfermedadButton, eliminarAlergiasButton);
+                alergiasLabel, alergias, alergiasPanel, tratamientoLabel, tratamiento, tratamientoPanel, discapacidadesCombobox, enfermedadesCombobox, alergiasCombobox,
+                eliminarEnfermedadesButton, eliminarDiscapacidadesButton, eliminarAlergiasButton, eliminarTratamientosButton,
+                 agregarDiscapacidadesButton,agregarEnfermedadesButton, agregarAlergiasButton);
 
             informacionGeneralAlumno.Visible = true;
             informacionGeneralAlumno2.Visible = false;
@@ -59,7 +59,6 @@ namespace presentationLayer
             siguiente2Button.Visible = false;
             siguiente3Button.Visible = false;
             realizarAltaButton.Visible = false;
-
 
             altasBotonesParaNavegar(siguiente1Button, siguiente2Button, siguiente3Button, regresarButton, realizarAltaButton, regresarMenuButton);
 
@@ -197,10 +196,9 @@ namespace presentationLayer
 
         //INFORMACION TUTOR
         private void infoTutor(Label nombreL, TextBox nombre, Panel nombreP, Label apellidoPL, TextBox apellidoP, Panel apellidoPP,
-            Label apellidoML, TextBox apellidoM, Panel apellidoMP,
-            Label direccion, Label calleL, TextBox calle, Panel calleP, Label numL, TextBox num, Panel numP, Label coloniaL, TextBox colonia, Panel coloniaP,
-            Label infoCon, Label telCasaL,
-            TextBox telCasa, Panel telCasaP, Label telMovilL, TextBox telMovil, Panel telMovilP, Label telTrabajoL, TextBox telTrabajo, Panel telTrabajoP,
+            Label apellidoML, TextBox apellidoM, Panel apellidoMP, Label direccion, Label calleL, TextBox calle, Panel calleP, 
+            Label numL, TextBox num, Panel numP, Label coloniaL, TextBox colonia, Panel coloniaP, Label datoCalle, Label datoNumeroCasa, Label datoColonia,
+            Label infoCon, Label telCasaL,TextBox telCasa, Panel telCasaP, Label telMovilL, TextBox telMovil, Panel telMovilP, Label telTrabajoL, TextBox telTrabajo, Panel telTrabajoP,
             Label ocupacionL, TextBox ocupacion, Panel ocupacionP, CheckBox mismaDireccion)
         {
 
@@ -256,8 +254,8 @@ namespace presentationLayer
         private void infoMedica(Label servMedicoL, TextBox servMed, Panel servMedP, Label grupoSanL, TextBox grupoSan, Panel grupoSanP,
             ComboBox grupoSanCB, Label telL, TextBox tel, Panel telP, Label discapacidadL, RichTextBox discapacidad, Panel discapacidadP,
             Label enfermedadL, RichTextBox enfermedad, Panel enfermedadP, Label alergiaL, RichTextBox alergia, Panel alergiaP,
-            Label tratamientoL, RichTextBox tratamiento, Panel tratamientoP, Button eliTra,
-            ComboBox discapacidadCB, ComboBox enfermedadCB, ComboBox alergiaCB, Button eliDisc, Button eliEnf, Button eliAle)
+            Label tratamientoL, RichTextBox tratamiento, Panel tratamientoP, ComboBox discapacidadCB, ComboBox enfermedadCB, ComboBox alergiaCB,
+            Button eliTra, Button eliDisc, Button eliEnf, Button eliAle,  Button agregarDisc, Button agregarEnf, Button agregarAler)
         {
             servMedicoL.Location = new Point(50, 50);
             servMedP.Location = new Point(210, 50);
@@ -280,7 +278,10 @@ namespace presentationLayer
             discapacidadCB.Location = new Point(50, 340);
             discapacidadP.Location = new Point(50, 180);
             discapacidadP.Size = new Size(270, 150);
-            discapacidadCB.Size = new Size(270, 60);
+            discapacidadCB.Size = new Size(230, 60);
+            agregarDisc.Size = new Size(35, 35);
+            agregarDisc.Location = new Point(285, 335);
+            agregarDisc.Text = "";
 
             enfermedadL.Location = new Point(340, 150);
             eliEnf.Location = new Point(580, 150);
@@ -288,15 +289,21 @@ namespace presentationLayer
             enfermedadCB.Location = new Point(340, 340);
             enfermedadP.Location = new Point(340, 180);
             enfermedadP.Size = new Size(270, 150);
-            enfermedadCB.Size = new Size(270, 60);
-
+            enfermedadCB.Size = new Size(230, 60);
+            agregarEnf.Size = new Size(35, 35);
+            agregarEnf.Location = new Point(575, 335);
+            agregarEnf.Text = "";
+            
             alergiaL.Location = new Point(630, 150);
             eliAle.Location = new Point(870, 150);
             alergia.Location = new Point(630, 210);
             alergiaCB.Location = new Point(630, 340);
             alergiaP.Location = new Point(630, 180);
             alergiaP.Size = new Size(270, 150);
-            alergiaCB.Size = new Size(270, 60);
+            alergiaCB.Size = new Size(230, 60);
+            agregarAler.Size = new Size(35, 35);
+            agregarAler.Location = new Point(865, 335);
+            agregarAler.Text = "";
 
             tratamientoL.Location = new Point(920, 150);
             eliTra.Location = new Point(1160, 150);
@@ -1584,12 +1591,20 @@ namespace presentationLayer
         //Metodo para validar misma dirección de alumno y tutor
         private void direccionCheckBox_CheckedChanged(object sender, EventArgs e)
         {
+            numeroCasaT.Visible = false;
+            coloniaT.Visible = false;
+            calleT.Visible = false;
+            calleDatoLabel.Visible = true;
+            numeroDatoLabel.Visible = true;
+            coloniaDatoLabel.Visible = true;
+
+            calleDatoLabel.Text = calle.Text;
+            numeroDatoLabel.Text = numeroCasa.Text;
+            coloniaDatoLabel.Text = colonia.Text;
+
             calleT.Text = calle.Text;
-            calleT.Enabled = false;
             numeroCasaT.Text = numeroCasa.Text;
-            numeroCasaT.Enabled = false;
             coloniaT.Text = colonia.Text;
-            coloniaT.Enabled = false;
 
             if (direccionCheckBox.Checked == false)
             {
@@ -1600,6 +1615,12 @@ namespace presentationLayer
                 coloniaT.Text = "";
                 coloniaT.Enabled = true;
 
+                numeroCasaT.Visible = true;
+                coloniaT.Visible = true;
+                calleT.Visible = true;
+                calleDatoLabel.Visible = false;
+                numeroDatoLabel.Visible = false;
+                coloniaDatoLabel.Visible = false;
             }
         }
     }
