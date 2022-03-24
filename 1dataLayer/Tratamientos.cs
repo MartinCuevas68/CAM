@@ -10,13 +10,13 @@
 namespace _1dataLayer
 {
     using System;
+    using System.Collections.Generic;
     
-    public partial class SP_ListaAlumnos1_Result
+    public partial class Tratamientos
     {
-        public int id_alumno { get; set; }
-        public string nombre { get; set; }
-        public string telefono_contacto { get; set; }
-        public string apellido_paterno { get; set; }
-        public string apellido_materno { get; set; }
+        public int id_cartilla_medica { get; set; }
+        public string Tratamiento { get; set; }
+    
+        public virtual tabla_medica tabla_medica { get; set; }
     }
 }
