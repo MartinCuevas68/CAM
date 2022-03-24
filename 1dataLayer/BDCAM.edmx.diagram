@@ -38,6 +38,8 @@
         <AssociationConnector Association="BDCAMModel.usuario_tiene_rol" />
         <EntityTypeShape EntityType="BDCAMModel.foto_alumno" Width="1.5" PointX="5.25" PointY="13.625" />
         <AssociationConnector Association="BDCAMModel.FK_alumno_foto" />
+        <EntityTypeShape EntityType="BDCAMModel.Tratamientos" Width="1.5" PointX="7.5" PointY="15" />
+        <AssociationConnector Association="BDCAMModel.FK_Tabla_Medica_Tratamiento" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
