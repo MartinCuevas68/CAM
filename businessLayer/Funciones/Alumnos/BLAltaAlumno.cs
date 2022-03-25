@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,8 +15,26 @@ namespace businessLayer
         static int id_medica;
         //Altas
 
-        //Altas alumno
+       /* //Altas alergias
+        public static void SetAlergias(_1dataLayer.alergias alergia)
+        {
+            // foto.id_alumno = id_alumno;
+            // _1dataLayer.DLAltaAlumno.AltaImagenAlumno(foto);
 
+
+            ArrayList alergiasAl = new ArrayList();
+            _1dataLayer.alergiasDTO alergiasAL = new _1dataLayer.alergiasDTO();
+            try
+            {
+                alergiasAL.alergia = alergiasAl.Add();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }*/
+     
+        //Altas alumno
         public static void SetAlumno2(string cicloEsc, string nombreAl, string apellidoP, string apellidoM,
             DateTime fechaNa, string añosCum, string curp, string estado, string ciudad, string colonia,
             string calle, string numeroCasa, string telPersonal, string escuelaP, string canalizado)
@@ -42,6 +61,7 @@ namespace businessLayer
                 al.escuela_procedencia_alumno = escuelaP;
                 al.documentacion_alumno = "";
                 al.atendido_por = canalizado;
+                
                 id_alumno = _1dataLayer.DLAltaAlumno.Altaalumno(al);
 
             }
@@ -116,7 +136,7 @@ namespace businessLayer
 
 
         //Altas información médica del alumno
-        public static void SetInfoMedAlumno2(string servMedico, string grupoSanguineo, string telefono, string peso, string color_textura_piel, string estatura)
+        public static void SetInfoMedAlumno2(string servMedico, string grupoSanguineoComboBox, string telefono, string peso, string color_textura_piel, string estatura)
         {
             //byte[] x = { (byte)204, 29, (byte)207, (byte)217 };
             //int y = 1;
@@ -126,12 +146,14 @@ namespace businessLayer
             try
             {
                 tablita.servicio_medico = servMedico;
-                tablita.grupo_sanguineo = grupoSanguineo;
+                tablita.grupo_sanguineo = grupoSanguineoComboBox;
                 tablita.telefono_contacto = telefono;
                 tablita.genero = null;
                 tablita.peso = 82;
                 tablita.color_textura_piel = "aaa";
                 tablita.estatura = 1.98;
+                
+               
                 id_medica = _1dataLayer.DLAltaAlumno.Altacartilla(tablita);
                 
                 Console.WriteLine(id_medica+" "+ id_alumno+" "+ id_tutor);

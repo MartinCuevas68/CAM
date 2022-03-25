@@ -72,7 +72,6 @@ namespace presentationLayer
             this.alergiasLabel = new System.Windows.Forms.Label();
             this.telefonoLabel = new System.Windows.Forms.Label();
             this.informacionGeneralAlumno = new System.Windows.Forms.GroupBox();
-            this.fotoBtn = new presentationLayer.buttonSystem();
             this.fotoAl = new System.Windows.Forms.PictureBox();
             this.curpPanel = new System.Windows.Forms.Panel();
             this.curp = new System.Windows.Forms.TextBox();
@@ -106,9 +105,6 @@ namespace presentationLayer
             this.telPersonalPanel = new System.Windows.Forms.Panel();
             this.telPersonal = new System.Windows.Forms.TextBox();
             this.informacionMedicaAlumnoGroupBox = new System.Windows.Forms.GroupBox();
-            this.agregarAlergiasButton = new presentationLayer.buttonSystem();
-            this.agregarDiscapacidadesButton = new presentationLayer.buttonSystem();
-            this.agregarEnfermedadesButton = new presentationLayer.buttonSystem();
             this.eliminarDiscapacidadesButton = new System.Windows.Forms.Button();
             this.eliminarEnfermedadesButton = new System.Windows.Forms.Button();
             this.grupoSanguineoComboBox = new System.Windows.Forms.ComboBox();
@@ -171,6 +167,10 @@ namespace presentationLayer
             this.siguiente3Button = new presentationLayer.buttonSystem();
             this.siguiente2Button = new presentationLayer.buttonSystem();
             this.siguiente1Button = new presentationLayer.buttonSystem();
+            this.agregarAlergiasButton = new presentationLayer.buttonSystem();
+            this.agregarDiscapacidadesButton = new presentationLayer.buttonSystem();
+            this.agregarEnfermedadesButton = new presentationLayer.buttonSystem();
+            this.fotoBtn = new presentationLayer.buttonSystem();
             this.tipoIngresoGroupBox.SuspendLayout();
             this.informacionGeneralAlumno.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fotoAl)).BeginInit();
@@ -690,27 +690,6 @@ namespace presentationLayer
             this.informacionGeneralAlumno.TabIndex = 131;
             this.informacionGeneralAlumno.TabStop = false;
             // 
-            // fotoBtn
-            // 
-            this.fotoBtn.BackColor = System.Drawing.Color.White;
-            this.fotoBtn.BackgroundColor = System.Drawing.Color.White;
-            this.fotoBtn.BorderRadius = 25;
-            this.fotoBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.fotoBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(142)))), ((int)(((byte)(244)))));
-            this.fotoBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.fotoBtn.Font = new System.Drawing.Font("Gadugi", 14F, System.Drawing.FontStyle.Bold);
-            this.fotoBtn.ForeColor = System.Drawing.Color.Black;
-            this.fotoBtn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.fotoBtn.Location = new System.Drawing.Point(1092, 308);
-            this.fotoBtn.Margin = new System.Windows.Forms.Padding(4);
-            this.fotoBtn.Name = "fotoBtn";
-            this.fotoBtn.Padding = new System.Windows.Forms.Padding(8, 7, 8, 7);
-            this.fotoBtn.Size = new System.Drawing.Size(244, 55);
-            this.fotoBtn.TabIndex = 148;
-            this.fotoBtn.Text = "Cargar imagen";
-            this.fotoBtn.UseVisualStyleBackColor = false;
-            this.fotoBtn.Click += new System.EventHandler(this.fotoBtn_Click);
-            // 
             // fotoAl
             // 
             this.fotoAl.BackColor = System.Drawing.Color.White;
@@ -1123,66 +1102,6 @@ namespace presentationLayer
             this.informacionMedicaAlumnoGroupBox.Size = new System.Drawing.Size(1196, 269);
             this.informacionMedicaAlumnoGroupBox.TabIndex = 133;
             this.informacionMedicaAlumnoGroupBox.TabStop = false;
-            // 
-            // agregarAlergiasButton
-            // 
-            this.agregarAlergiasButton.BackColor = System.Drawing.Color.Black;
-            this.agregarAlergiasButton.BackgroundColor = System.Drawing.Color.Black;
-            this.agregarAlergiasButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("agregarAlergiasButton.BackgroundImage")));
-            this.agregarAlergiasButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.agregarAlergiasButton.BorderRadius = 0;
-            this.agregarAlergiasButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.agregarAlergiasButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(142)))), ((int)(((byte)(244)))));
-            this.agregarAlergiasButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.agregarAlergiasButton.Font = new System.Drawing.Font("Gadugi", 14F, System.Drawing.FontStyle.Bold);
-            this.agregarAlergiasButton.ForeColor = System.Drawing.Color.White;
-            this.agregarAlergiasButton.Location = new System.Drawing.Point(1147, 95);
-            this.agregarAlergiasButton.Name = "agregarAlergiasButton";
-            this.agregarAlergiasButton.Padding = new System.Windows.Forms.Padding(6);
-            this.agregarAlergiasButton.Size = new System.Drawing.Size(43, 44);
-            this.agregarAlergiasButton.TabIndex = 160;
-            this.agregarAlergiasButton.Text = "Botón";
-            this.agregarAlergiasButton.UseVisualStyleBackColor = false;
-            // 
-            // agregarDiscapacidadesButton
-            // 
-            this.agregarDiscapacidadesButton.BackColor = System.Drawing.Color.Black;
-            this.agregarDiscapacidadesButton.BackgroundColor = System.Drawing.Color.Black;
-            this.agregarDiscapacidadesButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("agregarDiscapacidadesButton.BackgroundImage")));
-            this.agregarDiscapacidadesButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.agregarDiscapacidadesButton.BorderRadius = 0;
-            this.agregarDiscapacidadesButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.agregarDiscapacidadesButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(142)))), ((int)(((byte)(244)))));
-            this.agregarDiscapacidadesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.agregarDiscapacidadesButton.Font = new System.Drawing.Font("Gadugi", 14F, System.Drawing.FontStyle.Bold);
-            this.agregarDiscapacidadesButton.ForeColor = System.Drawing.Color.White;
-            this.agregarDiscapacidadesButton.Location = new System.Drawing.Point(1098, 95);
-            this.agregarDiscapacidadesButton.Name = "agregarDiscapacidadesButton";
-            this.agregarDiscapacidadesButton.Padding = new System.Windows.Forms.Padding(6);
-            this.agregarDiscapacidadesButton.Size = new System.Drawing.Size(43, 44);
-            this.agregarDiscapacidadesButton.TabIndex = 153;
-            this.agregarDiscapacidadesButton.Text = "Botón";
-            this.agregarDiscapacidadesButton.UseVisualStyleBackColor = false;
-            // 
-            // agregarEnfermedadesButton
-            // 
-            this.agregarEnfermedadesButton.BackColor = System.Drawing.Color.Black;
-            this.agregarEnfermedadesButton.BackgroundColor = System.Drawing.Color.Black;
-            this.agregarEnfermedadesButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("agregarEnfermedadesButton.BackgroundImage")));
-            this.agregarEnfermedadesButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.agregarEnfermedadesButton.BorderRadius = 0;
-            this.agregarEnfermedadesButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.agregarEnfermedadesButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(142)))), ((int)(((byte)(244)))));
-            this.agregarEnfermedadesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.agregarEnfermedadesButton.Font = new System.Drawing.Font("Gadugi", 14F, System.Drawing.FontStyle.Bold);
-            this.agregarEnfermedadesButton.ForeColor = System.Drawing.Color.White;
-            this.agregarEnfermedadesButton.Location = new System.Drawing.Point(1049, 95);
-            this.agregarEnfermedadesButton.Name = "agregarEnfermedadesButton";
-            this.agregarEnfermedadesButton.Padding = new System.Windows.Forms.Padding(6);
-            this.agregarEnfermedadesButton.Size = new System.Drawing.Size(43, 44);
-            this.agregarEnfermedadesButton.TabIndex = 152;
-            this.agregarEnfermedadesButton.Text = "Botón";
-            this.agregarEnfermedadesButton.UseVisualStyleBackColor = false;
             // 
             // eliminarDiscapacidadesButton
             // 
@@ -1979,6 +1898,90 @@ namespace presentationLayer
             this.siguiente1Button.Text = "Siguiente";
             this.siguiente1Button.UseVisualStyleBackColor = false;
             this.siguiente1Button.Click += new System.EventHandler(this.siguiente1Button_Click);
+            // 
+            // agregarAlergiasButton
+            // 
+            this.agregarAlergiasButton.BackColor = System.Drawing.Color.Black;
+            this.agregarAlergiasButton.BackgroundColor = System.Drawing.Color.Black;
+            this.agregarAlergiasButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("agregarAlergiasButton.BackgroundImage")));
+            this.agregarAlergiasButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.agregarAlergiasButton.BorderRadius = 0;
+            this.agregarAlergiasButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.agregarAlergiasButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(142)))), ((int)(((byte)(244)))));
+            this.agregarAlergiasButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.agregarAlergiasButton.Font = new System.Drawing.Font("Gadugi", 14F, System.Drawing.FontStyle.Bold);
+            this.agregarAlergiasButton.ForeColor = System.Drawing.Color.White;
+            this.agregarAlergiasButton.Location = new System.Drawing.Point(1147, 95);
+            this.agregarAlergiasButton.Name = "agregarAlergiasButton";
+            this.agregarAlergiasButton.Padding = new System.Windows.Forms.Padding(6);
+            this.agregarAlergiasButton.Size = new System.Drawing.Size(43, 44);
+            this.agregarAlergiasButton.TabIndex = 160;
+            this.agregarAlergiasButton.Text = "Botón";
+            this.agregarAlergiasButton.UseVisualStyleBackColor = false;
+            this.agregarAlergiasButton.Click += new System.EventHandler(this.agregarAlergiasButton_Click_1);
+            // 
+            // agregarDiscapacidadesButton
+            // 
+            this.agregarDiscapacidadesButton.BackColor = System.Drawing.Color.Black;
+            this.agregarDiscapacidadesButton.BackgroundColor = System.Drawing.Color.Black;
+            this.agregarDiscapacidadesButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("agregarDiscapacidadesButton.BackgroundImage")));
+            this.agregarDiscapacidadesButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.agregarDiscapacidadesButton.BorderRadius = 0;
+            this.agregarDiscapacidadesButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.agregarDiscapacidadesButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(142)))), ((int)(((byte)(244)))));
+            this.agregarDiscapacidadesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.agregarDiscapacidadesButton.Font = new System.Drawing.Font("Gadugi", 14F, System.Drawing.FontStyle.Bold);
+            this.agregarDiscapacidadesButton.ForeColor = System.Drawing.Color.White;
+            this.agregarDiscapacidadesButton.Location = new System.Drawing.Point(1098, 95);
+            this.agregarDiscapacidadesButton.Name = "agregarDiscapacidadesButton";
+            this.agregarDiscapacidadesButton.Padding = new System.Windows.Forms.Padding(6);
+            this.agregarDiscapacidadesButton.Size = new System.Drawing.Size(43, 44);
+            this.agregarDiscapacidadesButton.TabIndex = 153;
+            this.agregarDiscapacidadesButton.Text = "Botón";
+            this.agregarDiscapacidadesButton.UseVisualStyleBackColor = false;
+            this.agregarDiscapacidadesButton.Click += new System.EventHandler(this.agregarDiscapacidadesButton_Click);
+            // 
+            // agregarEnfermedadesButton
+            // 
+            this.agregarEnfermedadesButton.BackColor = System.Drawing.Color.Black;
+            this.agregarEnfermedadesButton.BackgroundColor = System.Drawing.Color.Black;
+            this.agregarEnfermedadesButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("agregarEnfermedadesButton.BackgroundImage")));
+            this.agregarEnfermedadesButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.agregarEnfermedadesButton.BorderRadius = 0;
+            this.agregarEnfermedadesButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.agregarEnfermedadesButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(142)))), ((int)(((byte)(244)))));
+            this.agregarEnfermedadesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.agregarEnfermedadesButton.Font = new System.Drawing.Font("Gadugi", 14F, System.Drawing.FontStyle.Bold);
+            this.agregarEnfermedadesButton.ForeColor = System.Drawing.Color.White;
+            this.agregarEnfermedadesButton.Location = new System.Drawing.Point(1049, 95);
+            this.agregarEnfermedadesButton.Name = "agregarEnfermedadesButton";
+            this.agregarEnfermedadesButton.Padding = new System.Windows.Forms.Padding(6);
+            this.agregarEnfermedadesButton.Size = new System.Drawing.Size(43, 44);
+            this.agregarEnfermedadesButton.TabIndex = 152;
+            this.agregarEnfermedadesButton.Text = "Botón";
+            this.agregarEnfermedadesButton.UseVisualStyleBackColor = false;
+            this.agregarEnfermedadesButton.Click += new System.EventHandler(this.agregarEnfermedadesButton_Click_1);
+            // 
+            // fotoBtn
+            // 
+            this.fotoBtn.BackColor = System.Drawing.Color.White;
+            this.fotoBtn.BackgroundColor = System.Drawing.Color.White;
+            this.fotoBtn.BorderRadius = 25;
+            this.fotoBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.fotoBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(142)))), ((int)(((byte)(244)))));
+            this.fotoBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.fotoBtn.Font = new System.Drawing.Font("Gadugi", 14F, System.Drawing.FontStyle.Bold);
+            this.fotoBtn.ForeColor = System.Drawing.Color.Black;
+            this.fotoBtn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.fotoBtn.Location = new System.Drawing.Point(1092, 308);
+            this.fotoBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.fotoBtn.Name = "fotoBtn";
+            this.fotoBtn.Padding = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.fotoBtn.Size = new System.Drawing.Size(244, 55);
+            this.fotoBtn.TabIndex = 148;
+            this.fotoBtn.Text = "Cargar imagen";
+            this.fotoBtn.UseVisualStyleBackColor = false;
+            this.fotoBtn.Click += new System.EventHandler(this.fotoBtn_Click);
             // 
             // altaAlumno
             // 
