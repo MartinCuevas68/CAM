@@ -60,7 +60,7 @@ namespace _1dataLayer
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("sp_altaalergias", idParameter, alergiaParameter);
         }
     
-        public virtual ObjectResult<Nullable<decimal>> SP_AltaAlumno(Nullable<System.DateTime> fecha_registro, string cicloescolar, string nombre, string apellido_pat, string apellido_mat, Nullable<System.DateTime> fecha_nac, string edad_alumno, string curp, string estadonac, string ciudadnac, string colonia, string calle, string numero_alumno, string telefonoper, string escuela, string documentacion, string atendidopor)
+        public virtual ObjectResult<Nullable<decimal>> SP_AltaAlumno(Nullable<System.DateTime> fecha_registro, string cicloescolar, string nombre, string apellido_pat, string apellido_mat, Nullable<System.DateTime> fecha_nac, string edad_alumno, string curp, string estadonac, string ciudadnac, string colonia, string calle, string numero_alumno, string telefonoper, string escuela, string documentacion, string tipo_ingreso, string atendidopor)
         {
             var fecha_registroParameter = fecha_registro.HasValue ?
                 new ObjectParameter("fecha_registro", fecha_registro) :
@@ -126,11 +126,15 @@ namespace _1dataLayer
                 new ObjectParameter("documentacion", documentacion) :
                 new ObjectParameter("documentacion", typeof(string));
     
+            var tipo_ingresoParameter = tipo_ingreso != null ?
+                new ObjectParameter("tipo_ingreso", tipo_ingreso) :
+                new ObjectParameter("tipo_ingreso", typeof(string));
+    
             var atendidoporParameter = atendidopor != null ?
                 new ObjectParameter("atendidopor", atendidopor) :
                 new ObjectParameter("atendidopor", typeof(string));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<decimal>>("SP_AltaAlumno", fecha_registroParameter, cicloescolarParameter, nombreParameter, apellido_patParameter, apellido_matParameter, fecha_nacParameter, edad_alumnoParameter, curpParameter, estadonacParameter, ciudadnacParameter, coloniaParameter, calleParameter, numero_alumnoParameter, telefonoperParameter, escuelaParameter, documentacionParameter, atendidoporParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<decimal>>("SP_AltaAlumno", fecha_registroParameter, cicloescolarParameter, nombreParameter, apellido_patParameter, apellido_matParameter, fecha_nacParameter, edad_alumnoParameter, curpParameter, estadonacParameter, ciudadnacParameter, coloniaParameter, calleParameter, numero_alumnoParameter, telefonoperParameter, escuelaParameter, documentacionParameter, tipo_ingresoParameter, atendidoporParameter);
         }
     
         public virtual int sp_altaalumnocartilla(Nullable<int> id_al, Nullable<int> id_car)

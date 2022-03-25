@@ -16,6 +16,7 @@ namespace _1dataLayer
     {
         public int id_cartilla_medica { get; set; }
         public string Tratamiento { get; set; }
+        public int id_tratamiento { get; set; }
     
         public virtual tabla_medica tabla_medica { get; set; }
     }
