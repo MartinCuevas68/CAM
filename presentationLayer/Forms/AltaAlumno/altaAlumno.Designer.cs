@@ -110,13 +110,10 @@ namespace presentationLayer
             this.grupoSanguineoComboBox = new System.Windows.Forms.ComboBox();
             this.eliminarTratamientosButton = new System.Windows.Forms.Button();
             this.alergiasPanel = new System.Windows.Forms.Panel();
-            this.alergias = new System.Windows.Forms.RichTextBox();
             this.tratamientoPanel = new System.Windows.Forms.Panel();
-            this.tratamiento = new System.Windows.Forms.RichTextBox();
             this.telefonoPanel = new System.Windows.Forms.Panel();
             this.telefono = new System.Windows.Forms.TextBox();
             this.enfermedadesPanel = new System.Windows.Forms.Panel();
-            this.enfermedades = new System.Windows.Forms.RichTextBox();
             this.grupoSanguineoPanel = new System.Windows.Forms.Panel();
             this.grupoSanguineo = new System.Windows.Forms.TextBox();
             this.servMedicoPanel = new System.Windows.Forms.Panel();
@@ -128,7 +125,6 @@ namespace presentationLayer
             this.limpiarFormato3Button = new System.Windows.Forms.Button();
             this.eliminarAlergiasButton = new System.Windows.Forms.Button();
             this.discapacidadPanel = new System.Windows.Forms.Panel();
-            this.discapacidad = new System.Windows.Forms.RichTextBox();
             this.informacionMedLabel = new System.Windows.Forms.Label();
             this.informacionTutor = new System.Windows.Forms.GroupBox();
             this.direccionCheckBox = new System.Windows.Forms.CheckBox();
@@ -161,6 +157,10 @@ namespace presentationLayer
             this.altaalumnoLabel = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.logo = new System.Windows.Forms.PictureBox();
+            this.enfermedades = new System.Windows.Forms.RichTextBox();
+            this.tratamiento = new System.Windows.Forms.RichTextBox();
+            this.discapacidad = new System.Windows.Forms.RichTextBox();
+            this.alergias = new System.Windows.Forms.RichTextBox();
             this.regresarMenuButton = new presentationLayer.buttonSystem();
             this.regresarButton = new presentationLayer.buttonSystem();
             this.realizarAltaButton = new presentationLayer.buttonSystem();
@@ -1177,17 +1177,6 @@ namespace presentationLayer
             this.alergiasPanel.Size = new System.Drawing.Size(321, 68);
             this.alergiasPanel.TabIndex = 146;
             // 
-            // alergias
-            // 
-            this.alergias.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.alergias.Font = new System.Drawing.Font("Gadugi", 14.25F);
-            this.alergias.Location = new System.Drawing.Point(20, 10);
-            this.alergias.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.alergias.Name = "alergias";
-            this.alergias.Size = new System.Drawing.Size(300, 220);
-            this.alergias.TabIndex = 130;
-            this.alergias.Text = "";
-            // 
             // tratamientoPanel
             // 
             this.tratamientoPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tratamientoPanel.BackgroundImage")));
@@ -1198,17 +1187,6 @@ namespace presentationLayer
             this.tratamientoPanel.Name = "tratamientoPanel";
             this.tratamientoPanel.Size = new System.Drawing.Size(345, 60);
             this.tratamientoPanel.TabIndex = 147;
-            // 
-            // tratamiento
-            // 
-            this.tratamiento.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tratamiento.Font = new System.Drawing.Font("Gadugi", 14.25F);
-            this.tratamiento.Location = new System.Drawing.Point(20, 10);
-            this.tratamiento.Margin = new System.Windows.Forms.Padding(4);
-            this.tratamiento.Name = "tratamiento";
-            this.tratamiento.Size = new System.Drawing.Size(305, 165);
-            this.tratamiento.TabIndex = 147;
-            this.tratamiento.Text = "";
             // 
             // telefonoPanel
             // 
@@ -1244,23 +1222,12 @@ namespace presentationLayer
             this.enfermedadesPanel.Size = new System.Drawing.Size(372, 65);
             this.enfermedadesPanel.TabIndex = 145;
             // 
-            // enfermedades
-            // 
-            this.enfermedades.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.enfermedades.Font = new System.Drawing.Font("Gadugi", 14.25F);
-            this.enfermedades.Location = new System.Drawing.Point(20, 10);
-            this.enfermedades.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.enfermedades.Name = "enfermedades";
-            this.enfermedades.Size = new System.Drawing.Size(300, 220);
-            this.enfermedades.TabIndex = 129;
-            this.enfermedades.Text = "";
-            // 
             // grupoSanguineoPanel
             // 
             this.grupoSanguineoPanel.BackgroundImage = global::presentationLayer.Properties.Resources.TextBox21;
             this.grupoSanguineoPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.grupoSanguineoPanel.Controls.Add(this.grupoSanguineo);
-            this.grupoSanguineoPanel.Location = new System.Drawing.Point(860, 83);
+            this.grupoSanguineoPanel.Location = new System.Drawing.Point(857, 89);
             this.grupoSanguineoPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grupoSanguineoPanel.Name = "grupoSanguineoPanel";
             this.grupoSanguineoPanel.Size = new System.Drawing.Size(186, 65);
@@ -1386,19 +1353,8 @@ namespace presentationLayer
             this.discapacidadPanel.Location = new System.Drawing.Point(313, 178);
             this.discapacidadPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.discapacidadPanel.Name = "discapacidadPanel";
-            this.discapacidadPanel.Size = new System.Drawing.Size(251, 62);
+            this.discapacidadPanel.Size = new System.Drawing.Size(298, 62);
             this.discapacidadPanel.TabIndex = 144;
-            // 
-            // discapacidad
-            // 
-            this.discapacidad.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.discapacidad.Font = new System.Drawing.Font("Gadugi", 14.25F);
-            this.discapacidad.Location = new System.Drawing.Point(20, 10);
-            this.discapacidad.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.discapacidad.Name = "discapacidad";
-            this.discapacidad.Size = new System.Drawing.Size(300, 220);
-            this.discapacidad.TabIndex = 128;
-            this.discapacidad.Text = "";
             // 
             // informacionMedLabel
             // 
@@ -1791,6 +1747,50 @@ namespace presentationLayer
             this.logo.TabIndex = 140;
             this.logo.TabStop = false;
             // 
+            // enfermedades
+            // 
+            this.enfermedades.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.enfermedades.Font = new System.Drawing.Font("Gadugi", 14.25F);
+            this.enfermedades.Location = new System.Drawing.Point(20, 10);
+            this.enfermedades.Name = "enfermedades";
+            this.enfermedades.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
+            this.enfermedades.Size = new System.Drawing.Size(300, 220);
+            this.enfermedades.TabIndex = 0;
+            this.enfermedades.Text = "";
+            // 
+            // tratamiento
+            // 
+            this.tratamiento.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tratamiento.Font = new System.Drawing.Font("Gadugi", 14.25F);
+            this.tratamiento.Location = new System.Drawing.Point(20, 10);
+            this.tratamiento.Name = "tratamiento";
+            this.tratamiento.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
+            this.tratamiento.Size = new System.Drawing.Size(315, 160);
+            this.tratamiento.TabIndex = 160;
+            this.tratamiento.Text = "";
+            // 
+            // discapacidad
+            // 
+            this.discapacidad.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.discapacidad.Font = new System.Drawing.Font("Gadugi", 14.25F);
+            this.discapacidad.Location = new System.Drawing.Point(20, 10);
+            this.discapacidad.Name = "discapacidad";
+            this.discapacidad.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
+            this.discapacidad.Size = new System.Drawing.Size(300, 220);
+            this.discapacidad.TabIndex = 160;
+            this.discapacidad.Text = "";
+            // 
+            // alergias
+            // 
+            this.alergias.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.alergias.Font = new System.Drawing.Font("Gadugi", 14.25F);
+            this.alergias.Location = new System.Drawing.Point(20, 10);
+            this.alergias.Name = "alergias";
+            this.alergias.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
+            this.alergias.Size = new System.Drawing.Size(300, 220);
+            this.alergias.TabIndex = 161;
+            this.alergias.Text = "";
+            // 
             // regresarMenuButton
             // 
             this.regresarMenuButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(98)))), ((int)(((byte)(242)))));
@@ -2158,9 +2158,6 @@ namespace presentationLayer
         private System.Windows.Forms.GroupBox informacionGeneralAlumno;
         private System.Windows.Forms.GroupBox informacionGeneralAlumno2;
         private System.Windows.Forms.GroupBox informacionMedicaAlumnoGroupBox;
-        private System.Windows.Forms.RichTextBox alergias;
-        private System.Windows.Forms.RichTextBox enfermedades;
-        private System.Windows.Forms.RichTextBox discapacidad;
         private System.Windows.Forms.GroupBox informacionTutor;
         private System.Windows.Forms.Button eliminarAlergiasButton;
         private System.Windows.Forms.Button limpiarFormato2Button;
@@ -2177,7 +2174,6 @@ namespace presentationLayer
         private System.Windows.Forms.PictureBox logo;
         private System.Windows.Forms.Label infContactoLabel;
         private System.Windows.Forms.Label tratamientoLabel;
-        private System.Windows.Forms.RichTextBox tratamiento;
         private System.Windows.Forms.Panel nombreAlPanel;
         private System.Windows.Forms.Panel apellidoMTPanel;
         private System.Windows.Forms.Panel apellidoPTPanel;
@@ -2229,6 +2225,10 @@ namespace presentationLayer
         private buttonSystem agregarEnfermedadesButton;
         private buttonSystem agregarAlergiasButton;
         private buttonSystem agregarDiscapacidadesButton;
+        private System.Windows.Forms.RichTextBox alergias;
+        private System.Windows.Forms.RichTextBox tratamiento;
+        private System.Windows.Forms.RichTextBox enfermedades;
+        private System.Windows.Forms.RichTextBox discapacidad;
     }
 }
 
