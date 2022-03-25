@@ -57,7 +57,7 @@ namespace _1dataLayer
                   Console.ReadKey();
               */
         }
-
+        //regresa el listado de todos los alumnos del cam
         public List<SP_ListaAlumnos_Result> AlumnoLista()
         {
             List<SP_ListaAlumnos_Result> alumnos = new List<SP_ListaAlumnos_Result>();
@@ -75,41 +75,46 @@ namespace _1dataLayer
 
             return alumnos;
         }
-        public List<SP_FichaTecnicaAlumno_Result> FichaTenicaAlumno(int id)
+        //regresa la ficha tecnica de 1 solo alumno 
+        public static SP_FichaTecnicaAlumno_Result FichaTenicaAlumno(int id)
         {
-            List<SP_FichaTecnicaAlumno_Result> FichaTecnicaAlumno = new List<SP_FichaTecnicaAlumno_Result>();
+            SP_FichaTecnicaAlumno_Result FichaTecnicaAlumno = new SP_FichaTecnicaAlumno_Result();
             using (BDCAMEntities db = new BDCAMEntities())
             {
                 ObjectResult<SP_FichaTecnicaAlumno_Result> x = db.SP_FichaTecnicaAlumno(id);
                 foreach (SP_FichaTecnicaAlumno_Result result in x)
-                    FichaTecnicaAlumno.Add(result);
+                    FichaTecnicaAlumno = result;
             }
             return FichaTecnicaAlumno;
         }
-        public List<SP_FichaTecnicaAlumnoTutor_Result> FichaTecnicaTutor(int id)
+
+        //regresa la ficha tecnica del tutor de 1 alumno
+        public static SP_FichaTecnicaAlumnoTutor_Result FichaTecnicaTutor(int id)
         {
-            List<SP_FichaTecnicaAlumnoTutor_Result> FTtutor = new List<SP_FichaTecnicaAlumnoTutor_Result>();
+            SP_FichaTecnicaAlumnoTutor_Result FTtutor = new SP_FichaTecnicaAlumnoTutor_Result();
             using (BDCAMEntities db = new BDCAMEntities())
             {
                 ObjectResult<SP_FichaTecnicaAlumnoTutor_Result> x = db.SP_FichaTecnicaAlumnoTutor(id);
                 foreach (SP_FichaTecnicaAlumnoTutor_Result result in x)
-                    FTtutor.Add(result);
+                    FTtutor = result;
             }
 
             return FTtutor;
         }
-        public List<SP_FichaTecnicaAlumnoMedica_Result> FichaTecnicaMedica(int id)
+        //regresa la ficha tecnica medica de 1 solo alumno
+        public static SP_FichaTecnicaAlumnoMedica_Result FichaTecnicaMedica(int id)
         {
-            List<SP_FichaTecnicaAlumnoMedica_Result> FTMedica = new List<SP_FichaTecnicaAlumnoMedica_Result>();
+            SP_FichaTecnicaAlumnoMedica_Result FTMedica = new SP_FichaTecnicaAlumnoMedica_Result();
             using (BDCAMEntities db = new BDCAMEntities())
             {
                 ObjectResult<SP_FichaTecnicaAlumnoMedica_Result> x = db.SP_FichaTecnicaAlumnoMedica(id);
                 foreach (SP_FichaTecnicaAlumnoMedica_Result result in x)
-                    FTMedica.Add(result);
+                    FTMedica = result;
             }
 
             return FTMedica;
         }
+        //regresa la lista de todas las alergias que 1 alumno tiene
         public List<SP_ListaAlergia_Result> ListaAlergias(int id)
         {
             List<SP_ListaAlergia_Result> alergias = new List<SP_ListaAlergia_Result>();
@@ -126,6 +131,8 @@ namespace _1dataLayer
 
             return alergias;
         }
+        //regresa la lista de todas las enfermedades que 1 alumno tiene
+
         public List<SP_ListaEnfermedad_Result> ListaEnfermedades(int id)
         {
             List<SP_ListaEnfermedad_Result> enfermedades = new List<SP_ListaEnfermedad_Result>();
@@ -143,6 +150,8 @@ namespace _1dataLayer
 
             return enfermedades;
         }
+        //regresa la lista de todas las discapacidades que 1 alumno tiene
+
         public List<SP_ListaDiscapacidad_Result> ListaDiscapacidad(int id)
         {
             List<SP_ListaDiscapacidad_Result> discapacidades = new List<SP_ListaDiscapacidad_Result>();
@@ -151,6 +160,22 @@ namespace _1dataLayer
             {
                 ObjectResult<SP_ListaDiscapacidad_Result> x = db.SP_ListaDiscapacidad(id);
                 foreach (SP_ListaDiscapacidad_Result result in x)
+                {
+                    discapacidades.Add(result);
+                }
+
+            }
+
+            return discapacidades;
+        }
+        public List<SP_ListaTratamiento_Result> ListaTratamiento(int id)
+        {
+            List<SP_ListaTratamiento_Result> discapacidades = new List<SP_ListaTratamiento_Result>();
+
+            using (BDCAMEntities db = new BDCAMEntities())
+            {
+                ObjectResult<SP_ListaTratamiento_Result> x = db.SP_ListaTratamiento(id);
+                foreach (SP_ListaTratamiento_Result result in x)
                 {
                     discapacidades.Add(result);
                 }
