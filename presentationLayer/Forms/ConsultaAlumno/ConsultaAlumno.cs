@@ -218,5 +218,25 @@ namespace presentationLayer
         {
 
         }
+
+        private void fichaTecnicaButton_Click(object sender, EventArgs e)
+        {
+            ConsultaAlumno consulta = new ConsultaAlumno();
+            consulta.Hide();
+            this.Hide();
+            String id;
+            int x = 0;
+            foreach (DataGridViewRow row in this.altaDataGridView.Rows)
+            {
+                if (Convert.ToBoolean(row.Cells[5].Value) == true)
+                {
+                    id = Convert.ToString(row.Cells[0].Value);
+                    MessageBox.Show(id);
+                    x = int.Parse(id);
+                }
+            }
+            fichaTecnica ficha = new fichaTecnica(x);
+            ficha.Show();
+        }
     }
 }

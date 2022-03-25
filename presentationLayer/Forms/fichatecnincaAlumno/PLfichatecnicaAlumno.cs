@@ -11,13 +11,13 @@ namespace presentationLayer
     public class PLfichatecnicaAlumno
     {
 
-        public static void posicionLabel(PictureBox logo , Label ficha, Label info, Label nombre, Label nombreq, Label edad, Label edadq,
+        public static void posicionLabel(PictureBox logo , Label ficha, Label info, Label nombre, TextBox nombreq, Label edad, Label edadq,
                                         Label fecha, Label fechaq, Label lugar, Label lugarq, Label curp, Label curpq, 
                                         Label direccion, Label direccionq, Label telefono, Label telefonoq, Label escuela, Label escuelaq,
                                         Label canalizado, Label canalizadoq, Label ciclo, Label cicloq, Label ingreso, Label ingresoq)
         {
-            int centro = (fichaTecnica.ActiveForm.Width / 2) - ficha.Width;
-            int pos = fichaTecnica.ActiveForm.Width / 5;
+            int centro = (1085 / 2) - ficha.Width;
+            int pos = 1085 / 5;
 
             ficha.Location = new Point(centro, 25);
             logo.Location = new Point(25, 25);
@@ -59,7 +59,7 @@ namespace presentationLayer
 
         public static void posicionFotoButtons(PictureBox foto, Button tutor, Button medico)
         {
-            int pos = fichaTecnica.ActiveForm.Width / 4;
+            int pos = 1085 / 4;
             pos = pos *3;
             foto.Location = new Point(pos - (foto.Width/2), 140);
             tutor.Location = new Point(pos - (tutor.Width/2), foto.Location.Y + foto.Height + 50);

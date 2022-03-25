@@ -107,7 +107,7 @@
     <Compile Include="SP_FichaTecnicaAlumnoTutor_Result.cs">
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>
-    <Compile Include="SP_FichaTecnicaAlumno_Result.cs">
+    <Compile Include="SP_FichaTecnicaAlumno_Result3.cs">
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>
     <Compile Include="sp_helpdiagramdefinition_Result.cs">
@@ -147,6 +147,9 @@
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>
     <Compile Include="telefono_tutores.cs">
+      <DependentUpon>BDCAM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tratamientos.cs">
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>
     <Compile Include="turnos.cs">

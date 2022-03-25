@@ -11,21 +11,23 @@ namespace _1dataLayer
 {
     using System;
     
-    public partial class SP_FichaTecnicaAlumno_Result
+    public partial class SP_FichaTecnicaAlumno_Result3
     {
+        public int id_alumno { get; set; }
         public string nombre { get; set; }
-        public string apellido_materno { get; set; }
         public string apellido_paterno { get; set; }
-        public System.DateTime fecha_nacimiento { get; set; }
-        public string ciudad_nacimiento_alumno { get; set; }
-        public string colonia_alumno { get; set; }
-        public string calle_alumno { get; set; }
-        public string telefono_personal_alumno { get; set; }
-        public string escuela_procedencia_alumno { get; set; }
+        public string apellido_materno { get; set; }
         public string edad_alumno { get; set; }
+        public System.DateTime fecha_nacimiento { get; set; }
         public string estado_nacimiento_alumno { get; set; }
+        public string ciudad_nacimiento_alumno { get; set; }
         public string CURP_alumno { get; set; }
-        public string atendido_por { get; set; }
+        public string telefono_personal_alumno { get; set; }
+        public string calle_alumno { get; set; }
+        public string colonia_alumno { get; set; }
+        public string numero_alumno { get; set; }
         public string ciclo_escolar { get; set; }
+        public string escuela_procedencia_alumno { get; set; }
+        public string atendido_por { get; set; }
     }
 }
