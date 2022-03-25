@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -1623,6 +1624,86 @@ namespace presentationLayer
                 coloniaDatoLabel.Visible = false;
             }
         }
+
+        //Metodo para dar de alta enfermedades
+        private void agregarEnfermedadesButton_Click_1(object sender, EventArgs e)
+        {
+            ArrayList agregarEnfermedad = new ArrayList(); // Aquí está creado el arraylist
+            // _1dataLayer.enfermedadDTO al = _1dataLayer.enfermedadDTO(); // instancia de enfermedad DTO *me sale error*
+            int id_cartilla_medica = 1;
+            try
+            {
+                if (discapacidadesCombobox.SelectedItem == null)
+                {
+                    MessageBox.Show("No puedes agregar espacio en blanco a la lista de enfermedades!");
+                }
+                else
+                {
+                    enfermedades.AppendText(enfermedadesCombobox.SelectedItem + "\n"); //aqui se agrega la enfermedad del combobox al richtextbox y se le concatena un salto de linea
+                    agregarEnfermedad.Add(enfermedades); //agregar la info del richtextbox a la lista
+
+                    //id_cartilla_medica = _1dataLayer.DLAltaAlumno.Altadiscapacidades(); //aqui se supone que mando a llamar el metodo para dar de alta la enfermedad pero me marca error, no sé cómo implementarlo correctamente
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Error al agregar una enfermedad!");
+            }
+        }
+
+        //Metodo para dar de alta discapacidades
+        private void agregarDiscapacidadesButton_Click(object sender, EventArgs e)
+        {
+            ArrayList agregarDiscapacidad = new ArrayList(); // Aquí está creado el arraylist
+            // _1dataLayer.discapacidadDTO al = _1dataLayer.discapacidadDTO(); // instancia de discapacidad DTO *me sale error*
+            int id_cartilla_medica = 1;
+            try
+            {
+                if (discapacidadesCombobox.SelectedItem == null)
+                {
+                    MessageBox.Show("No puedes agregar espacio en blanco a la lista de discapacidades!");
+                }
+                else
+                {
+                    discapacidad.AppendText(discapacidadesCombobox.SelectedItem + "\n"); //aqui se agrega la discapacidad del combobox al richtextbox y se le concatena un salto de linea
+                    agregarDiscapacidad.Add(discapacidad); //agregar la info del richtextbox a la lista
+
+                    //id_cartilla_medica = _1dataLayer.DLAltaAlumno.Altadiscapacidades(); //aqui se supone que mando a llamar el metodo para dar de alta la discapacidad pero me marca error, no sé cómo implementarlo correctamente
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Error al agregar una discapacidad!");
+            } 
+        }
+
+        //Metodo para dar de alta alergias
+        private void agregarAlergiasButton_Click_1(object sender, EventArgs e)
+        {
+            ArrayList agregarAlergias = new ArrayList(); // Aquí está creado el arraylist
+            // _1dataLayer.alergiasDTO al = _1dataLayer.alergiasDTO(); // instancia de alergias DTO *me sale error*
+            int id_cartilla_medica = 1;
+            try
+            {
+                if (discapacidadesCombobox.SelectedItem == null)
+                {
+                    MessageBox.Show("No puedes agregar espacio en blanco a la lista de alergias!");
+                }
+                else
+                {
+                    alergias.AppendText(alergiasCombobox.SelectedItem + "\n"); //aqui se agrega la discapacidad del combobox al richtextbox y se le concatena un salto de linea
+                    agregarAlergias.Add(alergias); //agregar la info del richtextbox a la lista
+
+                    //id_cartilla_medica = _1dataLayer.DLAltaAlumno.Altaalergias(); //aqui se supone que mando a llamar el metodo para dar de alta la alergia pero me marca error, no sé cómo implementarlo correctamente
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Error al agregar una alergia!");
+            }
+        }
+
+        
     }
 }
 
