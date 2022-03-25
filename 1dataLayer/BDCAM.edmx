@@ -5,8 +5,8 @@
     <!-- SSDL content -->
     <edmx:StorageModels>
     <Schema Namespace="BDCAMModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-        <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BDCAM.dbo.alergias' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.alergias' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="alergias">
           <Key>
             <PropertyRef Name="id_cartilla_medica" />
@@ -38,8 +38,8 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.alergias' no tiene definida ningun
           <Property Name="documentacion_alumno" Type="nvarchar(max)" />
           <Property Name="atendido_por" Type="varchar" MaxLength="30" Nullable="false" />
         </EntityType>
-        <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BDCAM.dbo.alumno-cartilla' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.alumno-cartilla' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="alumno-cartilla">
           <Key>
             <PropertyRef Name="id_alumno" />
@@ -48,8 +48,8 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.alumno-cartilla' no tiene definida
           <Property Name="id_alumno" Type="int" Nullable="false" />
           <Property Name="id_cartilla" Type="int" Nullable="false" />
         </EntityType>
-        <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BDCAM.dbo.alumno-programa' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.alumno-programa' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="alumno-programa">
           <Key>
             <PropertyRef Name="id_alumno" />
@@ -58,8 +58,8 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.alumno-programa' no tiene definida
           <Property Name="id_alumno" Type="int" Nullable="false" />
           <Property Name="id_programa" Type="int" Nullable="false" />
         </EntityType>
-        <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BDCAM.dbo.discapacidades' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.discapacidades' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="discapacidades">
           <Key>
             <PropertyRef Name="id_cartilla_medica" />
@@ -68,8 +68,8 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.discapacidades' no tiene definida 
           <Property Name="id_cartilla_medica" Type="int" Nullable="false" />
           <Property Name="discapacidades" Type="varchar" MaxLength="30" Nullable="false" />
         </EntityType>
-        <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BDCAM.dbo.enfermedades' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.enfermedades' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="enfermedades">
           <Key>
             <PropertyRef Name="id_cartilla_medica" />
@@ -78,8 +78,8 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.enfermedades' no tiene definida ni
           <Property Name="id_cartilla_medica" Type="int" Nullable="false" />
           <Property Name="enfermedad" Type="varchar" MaxLength="30" Nullable="false" />
         </EntityType>
-        <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BDCAM.dbo.foto-alumno' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.foto-alumno' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="foto-alumno">
           <Key>
             <PropertyRef Name="id_alumno" />
@@ -110,8 +110,8 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.foto-alumno' no tiene definida nin
           <Property Name="modulos" Type="varchar" MaxLength="30" Nullable="false" />
           <Property Name="proyecto" Type="varchar" MaxLength="30" Nullable="false" />
         </EntityType>
-        <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BDCAM.dbo.programa-turno' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.programa-turno' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="programa-turno">
           <Key>
             <PropertyRef Name="id_turno" />
@@ -120,8 +120,8 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.programa-turno' no tiene definida 
           <Property Name="id_turno" Type="int" Nullable="false" />
           <Property Name="id_programa" Type="int" Nullable="false" />
         </EntityType>
-        <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BDCAM.dbo.recurso-programa' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.recurso-programa' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="recurso-programa">
           <Key>
             <PropertyRef Name="id_recurso" />
@@ -144,8 +144,8 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.recurso-programa' no tiene definid
           <Property Name="id_rol" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="nombre_rol" Type="varchar" MaxLength="50" Nullable="false" />
         </EntityType>
-        <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BDCAM.dbo.rol-tiene-permiso' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.rol-tiene-permiso' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="rol-tiene-permiso">
           <Key>
             <PropertyRef Name="id_rol" />
@@ -193,8 +193,8 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.rol-tiene-permiso' no tiene defini
           <Property Name="color_textura_piel" Type="varchar" MaxLength="50" />
           <Property Name="estatura" Type="varchar" MaxLength="50" />
         </EntityType>
-        <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BDCAM.dbo.telefono-tutores' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.telefono-tutores' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="telefono-tutores">
           <Key>
             <PropertyRef Name="id_tutor" />
@@ -205,8 +205,8 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.telefono-tutores' no tiene definid
           <Property Name="id_telefono" Type="int" Nullable="false" />
           <Property Name="telefono" Type="varchar" MaxLength="30" Nullable="false" />
         </EntityType>
-        <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BDCAM.dbo.Tratamientos' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.Tratamientos' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="Tratamientos">
           <Key>
             <PropertyRef Name="id_cartilla_medica" />
@@ -238,8 +238,8 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.Tratamientos' no tiene definida ni
           <Property Name="calle_trabajo_tutor" Type="varchar" MaxLength="30" Nullable="false" />
           <Property Name="numero_trabajo_tutor" Type="varchar" MaxLength="30" Nullable="false" />
         </EntityType>
-        <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BDCAM.dbo.tutor-alumno' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.tutor-alumno' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="tutor-alumno">
           <Key>
             <PropertyRef Name="id_tutor" />
@@ -256,8 +256,8 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.tutor-alumno' no tiene definida ni
           <Property Name="nombre" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="contraseña" Type="varchar" MaxLength="50" Nullable="false" />
         </EntityType>
-        <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BDCAM.dbo.usuario-tiene-rol' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="usuario-tiene-rol">
           <Key>
             <PropertyRef Name="id_usuario" />
@@ -1308,10 +1308,10 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.usuario-tiene-rol' no tiene defini
             <End Role="Tratamientos" EntitySet="Tratamientos" />
           </AssociationSet>
           <FunctionImport Name="SP_ListaTelefonosTutor" ReturnType="Collection(BDCAMModel.SP_ListaTelefonosTutor_Result)">
-            <Parameter Name="id_tutor" Mode="In" Type="Int32" />
+          <Parameter Name="id_tutor" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="SP_ListaTratamiento" ReturnType="Collection(BDCAMModel.SP_ListaTratamiento_Result)">
-            <Parameter Name="id_alumno" Mode="In" Type="Int32" />
+          <Parameter Name="id_alumno" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="SP_ModificacionAlumno">
             <Parameter Name="id_alumno" Mode="In" Type="Int32" />

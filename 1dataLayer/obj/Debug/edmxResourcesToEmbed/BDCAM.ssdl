@@ -200,6 +200,16 @@ warning 6002: The table/view 'BDCAM.dbo.telefono-tutores' does not have a primar
     <Property Name="id_telefono" Type="int" Nullable="false" />
     <Property Name="telefono" Type="varchar" MaxLength="30" Nullable="false" />
   </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.Tratamientos' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Tratamientos">
+    <Key>
+      <PropertyRef Name="id_cartilla_medica" />
+      <PropertyRef Name="Tratamiento" />
+    </Key>
+    <Property Name="id_cartilla_medica" Type="int" Nullable="false" />
+    <Property Name="Tratamiento" Type="varchar" MaxLength="255" Nullable="false" />
+  </EntityType>
   <EntityType Name="turnos">
     <Key>
       <PropertyRef Name="id_turno" />
@@ -407,6 +417,18 @@ warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a prima
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK_Tabla_Medica_Tratamiento">
+    <End Role="tabla_medica" Type="Self.tabla_medica" Multiplicity="1" />
+    <End Role="Tratamientos" Type="Self.Tratamientos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tabla_medica">
+        <PropertyRef Name="id_cartilla_medica" />
+      </Principal>
+      <Dependent Role="Tratamientos">
+        <PropertyRef Name="id_cartilla_medica" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_Tele">
     <End Role="tabla_indicadores_telefono" Type="Self.tabla_indicadores_telefono" Multiplicity="1" />
     <End Role="telefono-tutores" Type="Self.telefono-tutores" Multiplicity="*" />
@@ -610,6 +632,31 @@ warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a prima
   <Function Name="SP_ListaEnfermedad" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="id_alumno" Type="int" Mode="In" />
   </Function>
+  <Function Name="SP_ListaTelefonosTutor" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id_tutor" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_ListaTratamiento" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id_alumno" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_ModificacionAlumno" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id_alumno" Type="int" Mode="In" />
+    <Parameter Name="cicloescolar" Type="varchar" Mode="In" />
+    <Parameter Name="nombre" Type="varchar" Mode="In" />
+    <Parameter Name="apellido_pat" Type="varchar" Mode="In" />
+    <Parameter Name="apellido_mat" Type="varchar" Mode="In" />
+    <Parameter Name="fecha_nac" Type="date" Mode="In" />
+    <Parameter Name="edad_alumno" Type="varchar" Mode="In" />
+    <Parameter Name="curp" Type="varchar" Mode="In" />
+    <Parameter Name="estadonac" Type="varchar" Mode="In" />
+    <Parameter Name="ciudadnac" Type="varchar" Mode="In" />
+    <Parameter Name="colonia" Type="varchar" Mode="In" />
+    <Parameter Name="calle" Type="varchar" Mode="In" />
+    <Parameter Name="numero_alumno" Type="varchar" Mode="In" />
+    <Parameter Name="telefonoper" Type="varchar" Mode="In" />
+    <Parameter Name="escuela" Type="varchar" Mode="In" />
+    <Parameter Name="documentacion" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="atendidopor" Type="varchar" Mode="In" />
+  </Function>
   <Function Name="sp_regresarid" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
   <Function Name="sp_regresaridcartilla" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
   <Function Name="sp_regresaridtutor" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
@@ -704,6 +751,12 @@ warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a prima
     [telefono-tutores].[telefono] AS [telefono]
     FROM [dbo].[telefono-tutores] AS [telefono-tutores]</DefiningQuery>
     </EntitySet>
+    <EntitySet Name="Tratamientos" EntityType="Self.Tratamientos" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Tratamientos].[id_cartilla_medica] AS [id_cartilla_medica], 
+    [Tratamientos].[Tratamiento] AS [Tratamiento]
+    FROM [dbo].[Tratamientos] AS [Tratamientos]</DefiningQuery>
+    </EntitySet>
     <EntitySet Name="tutor-alumno" EntityType="Self.tutor-alumno" store:Type="Tables" store:Schema="dbo">
       <DefiningQuery>SELECT 
     [tutor-alumno].[id_tutor] AS [id_tutor], 
@@ -767,6 +820,10 @@ warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a prima
     <AssociationSet Name="FK_recurso" Association="Self.FK_recurso">
       <End Role="recursos" EntitySet="recursos" />
       <End Role="recurso-programa" EntitySet="recurso-programa" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tabla_Medica_Tratamiento" Association="Self.FK_Tabla_Medica_Tratamiento">
+      <End Role="tabla_medica" EntitySet="tabla_medica" />
+      <End Role="Tratamientos" EntitySet="Tratamientos" />
     </AssociationSet>
     <AssociationSet Name="FK_Tele" Association="Self.FK_Tele">
       <End Role="tabla_indicadores_telefono" EntitySet="tabla_indicadores_telefono" />
