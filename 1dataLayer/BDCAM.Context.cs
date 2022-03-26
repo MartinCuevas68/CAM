@@ -30,7 +30,6 @@ namespace _1dataLayer
         public virtual DbSet<alumno> alumno { get; set; }
         public virtual DbSet<programa> programa { get; set; }
         public virtual DbSet<recursos> recursos { get; set; }
-        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<tabla_indicadores_telefono> tabla_indicadores_telefono { get; set; }
         public virtual DbSet<tabla_medica> tabla_medica { get; set; }
         public virtual DbSet<turnos> turnos { get; set; }
@@ -45,6 +44,7 @@ namespace _1dataLayer
         public virtual DbSet<usuario> usuario { get; set; }
         public virtual DbSet<rol_tiene_permiso> rol_tiene_permiso { get; set; }
         public virtual DbSet<foto_alumno> foto_alumno { get; set; }
+        public virtual DbSet<Tratamientos> Tratamientos { get; set; }
     
         public virtual int sp_altaalergias(Nullable<int> id, string alergia)
         {
@@ -59,7 +59,7 @@ namespace _1dataLayer
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("sp_altaalergias", idParameter, alergiaParameter);
         }
     
-        public virtual ObjectResult<Nullable<decimal>> SP_AltaAlumno(Nullable<System.DateTime> fecha_registro, string cicloescolar, string nombre, string apellido_pat, string apellido_mat, Nullable<System.DateTime> fecha_nac, string edad_alumno, string curp, string estadonac, string ciudadnac, string colonia, string calle, string numero_alumno, string telefonoper, string escuela, string documentacion, string atendidopor)
+        public virtual ObjectResult<Nullable<decimal>> SP_AltaAlumno(Nullable<System.DateTime> fecha_registro, string cicloescolar, string nombre, string apellido_pat, string apellido_mat, Nullable<System.DateTime> fecha_nac, string edad_alumno, string curp, string estadonac, string ciudadnac, string colonia, string calle, string numero_alumno, string telefonoper, string escuela, string documentacion, string tipo_ingreso, string atendidopor)
         {
             var fecha_registroParameter = fecha_registro.HasValue ?
                 new ObjectParameter("fecha_registro", fecha_registro) :
@@ -125,11 +125,15 @@ namespace _1dataLayer
                 new ObjectParameter("documentacion", documentacion) :
                 new ObjectParameter("documentacion", typeof(string));
     
+            var tipo_ingresoParameter = tipo_ingreso != null ?
+                new ObjectParameter("tipo_ingreso", tipo_ingreso) :
+                new ObjectParameter("tipo_ingreso", typeof(string));
+    
             var atendidoporParameter = atendidopor != null ?
                 new ObjectParameter("atendidopor", atendidopor) :
                 new ObjectParameter("atendidopor", typeof(string));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<decimal>>("SP_AltaAlumno", fecha_registroParameter, cicloescolarParameter, nombreParameter, apellido_patParameter, apellido_matParameter, fecha_nacParameter, edad_alumnoParameter, curpParameter, estadonacParameter, ciudadnacParameter, coloniaParameter, calleParameter, numero_alumnoParameter, telefonoperParameter, escuelaParameter, documentacionParameter, atendidoporParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<decimal>>("SP_AltaAlumno", fecha_registroParameter, cicloescolarParameter, nombreParameter, apellido_patParameter, apellido_matParameter, fecha_nacParameter, edad_alumnoParameter, curpParameter, estadonacParameter, ciudadnacParameter, coloniaParameter, calleParameter, numero_alumnoParameter, telefonoperParameter, escuelaParameter, documentacionParameter, tipo_ingresoParameter, atendidoporParameter);
         }
     
         public virtual int sp_altaalumnocartilla(Nullable<int> id_al, Nullable<int> id_car)
@@ -481,6 +485,97 @@ namespace _1dataLayer
         public virtual ObjectResult<SP_ListaAlumnos2_Result> SP_ListaAlumnos2()
         {
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_ListaAlumnos2_Result>("SP_ListaAlumnos2");
+        }
+    
+        public virtual ObjectResult<SP_ListaTelefonosTutor_Result> SP_ListaTelefonosTutor(Nullable<int> id_tutor)
+        {
+            var id_tutorParameter = id_tutor.HasValue ?
+                new ObjectParameter("id_tutor", id_tutor) :
+                new ObjectParameter("id_tutor", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_ListaTelefonosTutor_Result>("SP_ListaTelefonosTutor", id_tutorParameter);
+        }
+    
+        public virtual ObjectResult<SP_ListaTratamiento_Result> SP_ListaTratamiento(Nullable<int> id_alumno)
+        {
+            var id_alumnoParameter = id_alumno.HasValue ?
+                new ObjectParameter("id_alumno", id_alumno) :
+                new ObjectParameter("id_alumno", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_ListaTratamiento_Result>("SP_ListaTratamiento", id_alumnoParameter);
+        }
+    
+        public virtual int SP_ModificacionAlumno(Nullable<int> id_alumno, string cicloescolar, string nombre, string apellido_pat, string apellido_mat, Nullable<System.DateTime> fecha_nac, string edad_alumno, string curp, string estadonac, string ciudadnac, string colonia, string calle, string numero_alumno, string telefonoper, string escuela, string documentacion, string atendidopor)
+        {
+            var id_alumnoParameter = id_alumno.HasValue ?
+                new ObjectParameter("id_alumno", id_alumno) :
+                new ObjectParameter("id_alumno", typeof(int));
+    
+            var cicloescolarParameter = cicloescolar != null ?
+                new ObjectParameter("cicloescolar", cicloescolar) :
+                new ObjectParameter("cicloescolar", typeof(string));
+    
+            var nombreParameter = nombre != null ?
+                new ObjectParameter("nombre", nombre) :
+                new ObjectParameter("nombre", typeof(string));
+    
+            var apellido_patParameter = apellido_pat != null ?
+                new ObjectParameter("apellido_pat", apellido_pat) :
+                new ObjectParameter("apellido_pat", typeof(string));
+    
+            var apellido_matParameter = apellido_mat != null ?
+                new ObjectParameter("apellido_mat", apellido_mat) :
+                new ObjectParameter("apellido_mat", typeof(string));
+    
+            var fecha_nacParameter = fecha_nac.HasValue ?
+                new ObjectParameter("fecha_nac", fecha_nac) :
+                new ObjectParameter("fecha_nac", typeof(System.DateTime));
+    
+            var edad_alumnoParameter = edad_alumno != null ?
+                new ObjectParameter("edad_alumno", edad_alumno) :
+                new ObjectParameter("edad_alumno", typeof(string));
+    
+            var curpParameter = curp != null ?
+                new ObjectParameter("curp", curp) :
+                new ObjectParameter("curp", typeof(string));
+    
+            var estadonacParameter = estadonac != null ?
+                new ObjectParameter("estadonac", estadonac) :
+                new ObjectParameter("estadonac", typeof(string));
+    
+            var ciudadnacParameter = ciudadnac != null ?
+                new ObjectParameter("ciudadnac", ciudadnac) :
+                new ObjectParameter("ciudadnac", typeof(string));
+    
+            var coloniaParameter = colonia != null ?
+                new ObjectParameter("colonia", colonia) :
+                new ObjectParameter("colonia", typeof(string));
+    
+            var calleParameter = calle != null ?
+                new ObjectParameter("calle", calle) :
+                new ObjectParameter("calle", typeof(string));
+    
+            var numero_alumnoParameter = numero_alumno != null ?
+                new ObjectParameter("numero_alumno", numero_alumno) :
+                new ObjectParameter("numero_alumno", typeof(string));
+    
+            var telefonoperParameter = telefonoper != null ?
+                new ObjectParameter("telefonoper", telefonoper) :
+                new ObjectParameter("telefonoper", typeof(string));
+    
+            var escuelaParameter = escuela != null ?
+                new ObjectParameter("escuela", escuela) :
+                new ObjectParameter("escuela", typeof(string));
+    
+            var documentacionParameter = documentacion != null ?
+                new ObjectParameter("documentacion", documentacion) :
+                new ObjectParameter("documentacion", typeof(string));
+    
+            var atendidoporParameter = atendidopor != null ?
+                new ObjectParameter("atendidopor", atendidopor) :
+                new ObjectParameter("atendidopor", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_ModificacionAlumno", id_alumnoParameter, cicloescolarParameter, nombreParameter, apellido_patParameter, apellido_matParameter, fecha_nacParameter, edad_alumnoParameter, curpParameter, estadonacParameter, ciudadnacParameter, coloniaParameter, calleParameter, numero_alumnoParameter, telefonoperParameter, escuelaParameter, documentacionParameter, atendidoporParameter);
         }
     }
 }

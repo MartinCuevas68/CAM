@@ -221,11 +221,11 @@ namespace presentationLayer
 
         private void buscarButton_Click(object sender, EventArgs e)
         {
-            /*BindingSource bs = new BindingSource();
+            BindingSource bs = new BindingSource();
             bs.DataSource = altaDataGridView.DataSource;
             bs.Filter = altaDataGridView.Columns[1].HeaderText.ToString() + " LIKE '%" + busquedaTextBox.Text + "%'";
             altaDataGridView.DataSource = bs;
-            */
+            
             /*string searchValue = busquedaTextBox.Text.Trim();
             altaDataGridView.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             try
@@ -259,6 +259,7 @@ namespace presentationLayer
 
         private void busquedaTextBox_TextChanged(object sender, EventArgs e)
         {
+            //AQUI ESTA EL PROBLEMA, CHECAR EL METODO
             DataTable data = businessLayer.BLConsultaAlumno.ConvertToDatatable((List<_1dataLayer.alumnoenfermedadDTO>)altaDataGridView.DataSource);
             string searchValue = busquedaTextBox.Text.Trim();
             try

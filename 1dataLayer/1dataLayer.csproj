@@ -134,10 +134,13 @@
     <Compile Include="SP_ListaEnfermedad_Result.cs">
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>
-    <Compile Include="subpermisos.cs">
+    <Compile Include="SP_ListaTelefonosTutor_Result.cs">
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>
-    <Compile Include="sysdiagrams.cs">
+    <Compile Include="SP_ListaTratamiento_Result.cs">
+      <DependentUpon>BDCAM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="subpermisos.cs">
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>
     <Compile Include="tabla_indicadores_telefono.cs">
@@ -147,6 +150,9 @@
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>
     <Compile Include="telefono_tutores.cs">
+      <DependentUpon>BDCAM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tratamientos.cs">
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>
     <Compile Include="turnos.cs">
