@@ -218,5 +218,14 @@ namespace presentationLayer
         {
 
         }
+
+        private void fichaTecnicaButton_Click(object sender, EventArgs e)
+        {
+            ConsultaAlumno consultas = new ConsultaAlumno();
+            consultas.Close();
+            this.Hide();
+            fichaTecnica ficha = new fichaTecnica();
+            ficha.Show();
+        }
     }
 }

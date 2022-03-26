@@ -56,10 +56,9 @@ namespace presentationLayer
             // 
             this.consultaLabel.AutoSize = true;
             this.consultaLabel.Font = new System.Drawing.Font("Trebuchet MS", 30F, System.Drawing.FontStyle.Bold);
-            this.consultaLabel.Location = new System.Drawing.Point(753, 14);
-            this.consultaLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.consultaLabel.Location = new System.Drawing.Point(565, 11);
             this.consultaLabel.Name = "consultaLabel";
-            this.consultaLabel.Size = new System.Drawing.Size(314, 63);
+            this.consultaLabel.Size = new System.Drawing.Size(251, 49);
             this.consultaLabel.TabIndex = 15;
             this.consultaLabel.Text = "A l u m n o s";
             // 
@@ -90,8 +89,8 @@ namespace presentationLayer
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.altaDataGridView.DefaultCellStyle = dataGridViewCellStyle3;
-            this.altaDataGridView.Location = new System.Drawing.Point(51, 226);
-            this.altaDataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.altaDataGridView.Location = new System.Drawing.Point(38, 184);
+            this.altaDataGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.altaDataGridView.Name = "altaDataGridView";
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
@@ -102,24 +101,23 @@ namespace presentationLayer
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.altaDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.altaDataGridView.RowHeadersWidth = 51;
-            this.altaDataGridView.Size = new System.Drawing.Size(1629, 598);
+            this.altaDataGridView.Size = new System.Drawing.Size(1222, 486);
             this.altaDataGridView.TabIndex = 10;
             // 
             // vScrollBar1
             // 
-            this.vScrollBar1.Location = new System.Drawing.Point(2529, 46);
+            this.vScrollBar1.Location = new System.Drawing.Point(1897, 37);
             this.vScrollBar1.Name = "vScrollBar1";
-            this.vScrollBar1.Size = new System.Drawing.Size(27, 1225);
+            this.vScrollBar1.Size = new System.Drawing.Size(27, 995);
             this.vScrollBar1.TabIndex = 138;
             // 
             // logo
             // 
             this.logo.Image = global::presentationLayer.Properties.Resources.log_fondo_blanco;
             this.logo.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.logo.Location = new System.Drawing.Point(51, 14);
-            this.logo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.logo.Location = new System.Drawing.Point(38, 11);
             this.logo.Name = "logo";
-            this.logo.Size = new System.Drawing.Size(200, 185);
+            this.logo.Size = new System.Drawing.Size(150, 150);
             this.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.logo.TabIndex = 148;
             this.logo.TabStop = false;
@@ -130,20 +128,18 @@ namespace presentationLayer
             this.busquedaPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.busquedaPanel.Controls.Add(this.busquedaTextBox);
             this.busquedaPanel.Controls.Add(this.buscarButton);
-            this.busquedaPanel.Location = new System.Drawing.Point(695, 146);
-            this.busquedaPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.busquedaPanel.Location = new System.Drawing.Point(521, 119);
             this.busquedaPanel.Name = "busquedaPanel";
-            this.busquedaPanel.Size = new System.Drawing.Size(413, 60);
+            this.busquedaPanel.Size = new System.Drawing.Size(310, 49);
             this.busquedaPanel.TabIndex = 144;
             // 
             // busquedaTextBox
             // 
             this.busquedaTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.busquedaTextBox.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.busquedaTextBox.Location = new System.Drawing.Point(69, 14);
-            this.busquedaTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.busquedaTextBox.Location = new System.Drawing.Point(52, 11);
             this.busquedaTextBox.Name = "busquedaTextBox";
-            this.busquedaTextBox.Size = new System.Drawing.Size(225, 22);
+            this.busquedaTextBox.Size = new System.Drawing.Size(169, 18);
             this.busquedaTextBox.TabIndex = 12;
             // 
             // buscarButton
@@ -154,10 +150,10 @@ namespace presentationLayer
             this.buscarButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buscarButton.FlatAppearance.BorderSize = 0;
             this.buscarButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buscarButton.Location = new System.Drawing.Point(15, 11);
-            this.buscarButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buscarButton.Location = new System.Drawing.Point(11, 9);
+            this.buscarButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buscarButton.Name = "buscarButton";
-            this.buscarButton.Size = new System.Drawing.Size(36, 30);
+            this.buscarButton.Size = new System.Drawing.Size(27, 24);
             this.buscarButton.TabIndex = 11;
             this.buscarButton.UseVisualStyleBackColor = false;
             // 
@@ -168,10 +164,9 @@ namespace presentationLayer
             this.modificarButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.modificarButton.FlatAppearance.BorderSize = 0;
             this.modificarButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.modificarButton.Location = new System.Drawing.Point(1575, 167);
-            this.modificarButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.modificarButton.Location = new System.Drawing.Point(1181, 136);
             this.modificarButton.Name = "modificarButton";
-            this.modificarButton.Size = new System.Drawing.Size(57, 53);
+            this.modificarButton.Size = new System.Drawing.Size(43, 43);
             this.modificarButton.TabIndex = 142;
             this.modificarButton.UseVisualStyleBackColor = true;
             this.modificarButton.Click += new System.EventHandler(this.modificarButton_Click);
@@ -183,10 +178,9 @@ namespace presentationLayer
             this.eliminarButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.eliminarButton.FlatAppearance.BorderSize = 0;
             this.eliminarButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.eliminarButton.Location = new System.Drawing.Point(1625, 167);
-            this.eliminarButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.eliminarButton.Location = new System.Drawing.Point(1219, 136);
             this.eliminarButton.Name = "eliminarButton";
-            this.eliminarButton.Size = new System.Drawing.Size(57, 50);
+            this.eliminarButton.Size = new System.Drawing.Size(43, 41);
             this.eliminarButton.TabIndex = 141;
             this.eliminarButton.UseVisualStyleBackColor = true;
             this.eliminarButton.Click += new System.EventHandler(this.eliminarButton_Click_1);
@@ -198,10 +192,9 @@ namespace presentationLayer
             this.agregarButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.agregarButton.FlatAppearance.BorderSize = 0;
             this.agregarButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.agregarButton.Location = new System.Drawing.Point(1525, 167);
-            this.agregarButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.agregarButton.Location = new System.Drawing.Point(1144, 136);
             this.agregarButton.Name = "agregarButton";
-            this.agregarButton.Size = new System.Drawing.Size(57, 53);
+            this.agregarButton.Size = new System.Drawing.Size(43, 43);
             this.agregarButton.TabIndex = 140;
             this.agregarButton.UseVisualStyleBackColor = true;
             this.agregarButton.Click += new System.EventHandler(this.agregarButton_Click);
@@ -216,11 +209,10 @@ namespace presentationLayer
             this.cerrarSesionButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cerrarSesionButton.Font = new System.Drawing.Font("Gadugi", 14F, System.Drawing.FontStyle.Bold);
             this.cerrarSesionButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(98)))), ((int)(((byte)(242)))));
-            this.cerrarSesionButton.Location = new System.Drawing.Point(51, 849);
-            this.cerrarSesionButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cerrarSesionButton.Location = new System.Drawing.Point(38, 690);
             this.cerrarSesionButton.Name = "cerrarSesionButton";
-            this.cerrarSesionButton.Padding = new System.Windows.Forms.Padding(8, 7, 8, 7);
-            this.cerrarSesionButton.Size = new System.Drawing.Size(219, 55);
+            this.cerrarSesionButton.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.cerrarSesionButton.Size = new System.Drawing.Size(164, 45);
             this.cerrarSesionButton.TabIndex = 147;
             this.cerrarSesionButton.Text = "Cerrar sesión";
             this.cerrarSesionButton.UseVisualStyleBackColor = false;
@@ -235,11 +227,10 @@ namespace presentationLayer
             this.imprimirFormatosButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.imprimirFormatosButton.Font = new System.Drawing.Font("Gadugi", 14F, System.Drawing.FontStyle.Bold);
             this.imprimirFormatosButton.ForeColor = System.Drawing.Color.White;
-            this.imprimirFormatosButton.Location = new System.Drawing.Point(969, 849);
-            this.imprimirFormatosButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.imprimirFormatosButton.Location = new System.Drawing.Point(727, 690);
             this.imprimirFormatosButton.Name = "imprimirFormatosButton";
-            this.imprimirFormatosButton.Padding = new System.Windows.Forms.Padding(8, 7, 8, 7);
-            this.imprimirFormatosButton.Size = new System.Drawing.Size(269, 55);
+            this.imprimirFormatosButton.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.imprimirFormatosButton.Size = new System.Drawing.Size(202, 45);
             this.imprimirFormatosButton.TabIndex = 146;
             this.imprimirFormatosButton.Text = "Imprimir formatos";
             this.imprimirFormatosButton.UseVisualStyleBackColor = false;
@@ -255,21 +246,21 @@ namespace presentationLayer
             this.fichaTecnicaButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.fichaTecnicaButton.Font = new System.Drawing.Font("Gadugi", 14F, System.Drawing.FontStyle.Bold);
             this.fichaTecnicaButton.ForeColor = System.Drawing.Color.White;
-            this.fichaTecnicaButton.Location = new System.Drawing.Point(1381, 849);
-            this.fichaTecnicaButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.fichaTecnicaButton.Location = new System.Drawing.Point(1036, 690);
             this.fichaTecnicaButton.Name = "fichaTecnicaButton";
-            this.fichaTecnicaButton.Padding = new System.Windows.Forms.Padding(8, 7, 8, 7);
-            this.fichaTecnicaButton.Size = new System.Drawing.Size(219, 55);
+            this.fichaTecnicaButton.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.fichaTecnicaButton.Size = new System.Drawing.Size(164, 45);
             this.fichaTecnicaButton.TabIndex = 145;
             this.fichaTecnicaButton.Text = "Ficha técnica";
             this.fichaTecnicaButton.UseVisualStyleBackColor = false;
+            this.fichaTecnicaButton.Click += new System.EventHandler(this.fichaTecnicaButton_Click);
             // 
-            // Consultas
+            // ConsultaAlumno
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1827, 922);
+            this.ClientSize = new System.Drawing.Size(1251, 749);
             this.Controls.Add(this.logo);
             this.Controls.Add(this.cerrarSesionButton);
             this.Controls.Add(this.imprimirFormatosButton);
@@ -282,8 +273,7 @@ namespace presentationLayer
             this.Controls.Add(this.consultaLabel);
             this.Controls.Add(this.altaDataGridView);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "Consultas";
+            this.Name = "ConsultaAlumno";
             this.Text = "CONSULTAS";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Consultas_Load);
