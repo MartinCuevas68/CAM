@@ -153,7 +153,6 @@ C:\Users\edder\source\repos\CAM2\presentationLayer\bin\Debug\EntityFramework.xml
 C:\Users\edder\source\repos\CAM2\presentationLayer\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\edder\source\repos\CAM2\presentationLayer\obj\Debug\presentationLayer.csproj.AssemblyReference.cache
 C:\Users\edder\source\repos\CAM2\presentationLayer\obj\Debug\presentationLayer.altaAlumno.resources
-C:\Users\edder\source\repos\CAM2\presentationLayer\obj\Debug\presentationLayer.Consultas.resources
 C:\Users\edder\source\repos\CAM2\presentationLayer\obj\Debug\presentationLayer.modificacionesAlumno.resources
 C:\Users\edder\source\repos\CAM2\presentationLayer\obj\Debug\presentationLayer.Properties.Resources.resources
 C:\Users\edder\source\repos\CAM2\presentationLayer\obj\Debug\presentationLayer.csproj.GenerateResource.cache
@@ -257,7 +256,6 @@ C:\Users\DELL\Source\Repos\CAM\presentationLayer\obj\Debug\presentationLayer.pdb
 C:\Users\vanes\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.fichaTecnica.resources
 C:\Users\vanes\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.imprimirFormatos.resources
 C:\Users\edder\source\repos\CAM2\presentationLayer\obj\Debug\presentationLayer.fichaTecnica.resources
-C:\Users\edder\source\repos\CAM2\presentationLayer\obj\Debug\presentationLayer.imprimirFormatos.resources
 F:\Github\UABC\CAM\presentationLayer\obj\Debug\presentationLayer.fichaTecnica.resources
 D:\Canela\Documents\GitHub\CAM\presentationLayer\bin\Debug\presentationLayer.exe.config
 D:\Canela\Documents\GitHub\CAM\presentationLayer\bin\Debug\presentationLayer.exe
@@ -293,3 +291,5 @@ C:\Users\Juan2\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.Co
 C:\Users\Juan2\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.imprimirFormatosAlumno.resources
 C:\Users\galle\source\repos\CAM3\presentationLayer\obj\Debug\presentationLayer.ConsultaAlumno.resources
 C:\Users\galle\source\repos\CAM3\presentationLayer\obj\Debug\presentationLayer.imprimirFormatosAlumno.resources
+C:\Users\edder\source\repos\CAM2\presentationLayer\obj\Debug\presentationLayer.ConsultaAlumno.resources
+C:\Users\edder\source\repos\CAM2\presentationLayer\obj\Debug\presentationLayer.imprimirFormatosAlumno.resources
