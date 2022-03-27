@@ -143,9 +143,6 @@
     <Compile Include="subpermisos.cs">
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>
-    <Compile Include="sysdiagrams.cs">
-      <DependentUpon>BDCAM.tt</DependentUpon>
-    </Compile>
     <Compile Include="tabla_indicadores_telefono.cs">
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>

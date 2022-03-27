@@ -218,5 +218,68 @@ namespace presentationLayer
         {
 
         }
+
+        private void buscarButton_Click(object sender, EventArgs e)
+        {
+            BindingSource bs = new BindingSource();
+            bs.DataSource = altaDataGridView.DataSource;
+            bs.Filter = altaDataGridView.Columns[1].HeaderText.ToString() + " LIKE '%" + busquedaTextBox.Text + "%'";
+            altaDataGridView.DataSource = bs;
+            
+            /*string searchValue = busquedaTextBox.Text.Trim();
+            altaDataGridView.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            try
+            {
+                bool valueResult = false;
+                foreach (DataGridViewRow row in altaDataGridView.Rows)
+                {
+                    for (int i = 0; i < row.Cells.Count; i++)
+                    {
+                        if (row.Cells[i].Value != null && row.Cells[i].Value.ToString().Equals(searchValue))
+                        {
+                            int rowIndex = row.Index;
+                            altaDataGridView.Rows[rowIndex].Selected = true;
+                            valueResult = true;
+                            break;
+                        }
+                    }
+
+                }
+                if (!valueResult)
+                {
+                    MessageBox.Show("Unable to find " + busquedaTextBox.Text, "Not Found");
+                    return;
+                }
+            }
+            catch (Exception exc)
+            {
+                MessageBox.Show(exc.Message);
+            }*/
+        }
+
+        private void busquedaTextBox_TextChanged(object sender, EventArgs e)
+        {
+            //AQUI ESTA EL PROBLEMA, CHECAR EL METODO
+            DataTable data = businessLayer.BLConsultaAlumno.ConvertToDatatable((List<_1dataLayer.alumnoenfermedadDTO>)altaDataGridView.DataSource);
+            string searchValue = busquedaTextBox.Text.Trim();
+            try
+            {
+                var re = from row in data.AsEnumerable()
+                         where row[1].ToString().Contains(searchValue)
+                         select row;
+                if (re.Count() == 0)
+                {
+                    MessageBox.Show("No row");
+                }
+                else
+                {
+                    altaDataGridView.DataSource = re.CopyToDataTable();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

@@ -26,6 +26,7 @@
     <NavigationProperty Name="programa" Relationship="Self.alumno_programa" FromRole="alumno" ToRole="programa" />
     <NavigationProperty Name="tutor" Relationship="Self.tutor_alumno" FromRole="alumno" ToRole="tutor" />
     <NavigationProperty Name="foto_alumno" Relationship="BDCAMModel.FK_alumno_foto" FromRole="alumno" ToRole="foto_alumno" />
+    <Property Name="tipo_ingreso" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
   </EntityType>
   <EntityType Name="programa">
     <Key>
@@ -50,16 +51,6 @@
     <Property Name="id_recurso" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="recurso" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
     <NavigationProperty Name="programa" Relationship="Self.recurso_programa" FromRole="recursos" ToRole="programa" />
-  </EntityType>
-  <EntityType Name="sysdiagrams">
-    <Key>
-      <PropertyRef Name="diagram_id" />
-    </Key>
-    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="principal_id" Type="Int32" Nullable="false" />
-    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="version" Type="Int32" />
-    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
   </EntityType>
   <EntityType Name="tabla_indicadores_telefono">
     <Key>
@@ -126,19 +117,23 @@
     <Key>
       <PropertyRef Name="id_cartilla_medica" />
       <PropertyRef Name="discapacidades1" />
+      <PropertyRef Name="id_discapacidades" />
     </Key>
     <Property Name="id_cartilla_medica" Type="Int32" Nullable="false" />
     <Property Name="discapacidades1" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
     <NavigationProperty Name="tabla_medica" Relationship="Self.FK_discapacidades_tabla_medica" FromRole="discapacidades" ToRole="tabla_medica" />
+    <Property Name="id_discapacidades" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
   </EntityType>
   <EntityType Name="enfermedades">
     <Key>
       <PropertyRef Name="id_cartilla_medica" />
       <PropertyRef Name="enfermedad" />
+      <PropertyRef Name="id_enfermedades" />
     </Key>
     <Property Name="id_cartilla_medica" Type="Int32" Nullable="false" />
     <Property Name="enfermedad" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
     <NavigationProperty Name="tabla_medica" Relationship="Self.FK_enfermedades_tabla_medica" FromRole="enfermedades" ToRole="tabla_medica" />
+    <Property Name="id_enfermedades" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
   </EntityType>
   <EntityType Name="telefono_tutores">
     <Key>
@@ -236,7 +231,6 @@
     <EntitySet Name="alumno" EntityType="Self.alumno" />
     <EntitySet Name="programa" EntityType="Self.programa" />
     <EntitySet Name="recursos" EntityType="Self.recursos" />
-    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
     <EntitySet Name="tabla_indicadores_telefono" EntityType="Self.tabla_indicadores_telefono" />
     <EntitySet Name="tabla_medica" EntityType="Self.tabla_medica" />
     <EntitySet Name="turnos" EntityType="Self.turnos" />
@@ -306,6 +300,7 @@
       <Parameter Name="telefonoper" Mode="In" Type="String" />
       <Parameter Name="escuela" Mode="In" Type="String" />
       <Parameter Name="documentacion" Mode="In" Type="String" />
+      <Parameter Name="tipo_ingreso" Mode="In" Type="String" />
       <Parameter Name="atendidopor" Mode="In" Type="String" />
     </FunctionImport>
     <FunctionImport Name="sp_altaalumnocartilla">
@@ -481,12 +476,15 @@
     <Property Type="String" Name="CURP_alumno" Nullable="false" MaxLength="18" />
     <Property Type="String" Name="atendido_por" Nullable="false" MaxLength="30" />
     <Property Type="String" Name="ciclo_escolar" Nullable="false" MaxLength="30" />
-    <Property Type="Int32" Name="id_alumno" Nullable="false" />
-    <Property Type="String" Name="numero_alumno" Nullable="false" MaxLength="30" />
   </ComplexType>
   <ComplexType Name="SP_FichaTecnicaAlumnoMedica_Result">
+    <Property Type="String" Name="nombre" Nullable="false" MaxLength="30" />
     <Property Type="String" Name="grupo_sanguineo" Nullable="false" MaxLength="30" />
     <Property Type="String" Name="telefono_contacto" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="estatura" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="genero" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="peso" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="color_textura_piel" Nullable="true" MaxLength="50" />
     <Property Type="String" Name="servicio_medico" Nullable="false" MaxLength="30" />
   </ComplexType>
   <ComplexType Name="SP_FichaTecnicaAlumnoTutor_Result">
@@ -497,7 +495,7 @@
     <Property Type="String" Name="colonia_tutor" Nullable="false" MaxLength="30" />
     <Property Type="String" Name="numero_tutor" Nullable="false" MaxLength="30" />
     <Property Type="String" Name="ocupacion_tutor" Nullable="true" MaxLength="30" />
-    <Property Type="Int32" Name="id_tutor" Nullable="false" />
+    <Property Type="String" Name="telefono" Nullable="false" MaxLength="30" />
   </ComplexType>
   <ComplexType Name="sp_helpdiagramdefinition_Result">
     <Property Type="Int32" Name="version" Nullable="true" />
@@ -655,9 +653,11 @@
   </ComplexType>
   <EntityType Name="Tratamientos">
     <Key>
+      <PropertyRef Name="id_tratamiento" />
       <PropertyRef Name="id_cartilla_medica" />
       <PropertyRef Name="Tratamiento" />
     </Key>
+    <Property Name="id_tratamiento" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="id_cartilla_medica" Type="Int32" Nullable="false" />
     <Property Name="Tratamiento" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
     <NavigationProperty Name="tabla_medica" Relationship="BDCAMModel.FK_Tabla_Medica_Tratamiento" FromRole="Tratamientos" ToRole="tabla_medica" />

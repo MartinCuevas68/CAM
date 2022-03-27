@@ -14,6 +14,7 @@ namespace _1dataLayer
     
     public partial class Tratamientos
     {
+        public int id_tratamiento { get; set; }
         public int id_cartilla_medica { get; set; }
         public string Tratamiento { get; set; }
     

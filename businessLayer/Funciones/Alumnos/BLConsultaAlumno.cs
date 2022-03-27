@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.Entity.Core.Objects;
 using System.Linq;
 using System.Text;
@@ -69,7 +70,9 @@ namespace businessLayer
                 foreach (_1dataLayer.SP_ListaAlumnos_Result result in mostrarAlumnos)
                 {
                     var.id_alumno = result.id_alumno;
-                    var.nombre = result.nombre;
+                    var.nombre = result.nombre + " ";
+                    var.nombre += result.apellido_paterno + " ";
+                    var.nombre += result.apellido_materno;
                     var.telefono_contacto = result.telefono_contacto;
                     mostrarAlergias = listaAlumnos.ListaAlergias(result.id_alumno);
                     foreach (_1dataLayer.SP_ListaAlergia_Result a in mostrarAlergias)
@@ -151,5 +154,24 @@ namespace businessLayer
                 throw;
             }
         }
+
+        public static DataTable ConvertToDatatable(List<_1dataLayer.alumnoenfermedadDTO> list)
+        {
+            DataTable dt = new DataTable();
+
+            dt.Columns.Add("id_alumno");
+            dt.Columns.Add("nombre");
+            dt.Columns.Add("telefono_contacto");
+            dt.Columns.Add("alergias");
+            dt.Columns.Add("discapacidad");
+
+            foreach (var item in list)
+            {
+                dt.Rows.Add(item.id_alumno, item.nombre, item.telefono_contacto, item.alergias, item.discapacidad);
+            }
+            return dt;
+        }
     }
 }
+
+

@@ -8,7 +8,6 @@
         <EntityTypeShape EntityType="BDCAMModel.alumno" Width="1.5" PointX="3" PointY="5.875" IsExpanded="true" />
         <EntityTypeShape EntityType="BDCAMModel.programa" Width="1.5" PointX="5.25" PointY="3.25" IsExpanded="true" />
         <EntityTypeShape EntityType="BDCAMModel.recursos" Width="1.5" PointX="7.5" PointY="2.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="BDCAMModel.sysdiagrams" Width="1.5" PointX="9.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="BDCAMModel.tabla_indicadores_telefono" Width="1.5" PointX="0.75" PointY="2.625" IsExpanded="true" />
         <EntityTypeShape EntityType="BDCAMModel.tabla_medica" Width="1.5" PointX="5.25" PointY="9" IsExpanded="true" />
         <EntityTypeShape EntityType="BDCAMModel.turnos" Width="1.5" PointX="7.5" PointY="5.25" IsExpanded="true" />
@@ -38,7 +37,7 @@
         <AssociationConnector Association="BDCAMModel.usuario_tiene_rol" />
         <EntityTypeShape EntityType="BDCAMModel.foto_alumno" Width="1.5" PointX="5.25" PointY="13.625" />
         <AssociationConnector Association="BDCAMModel.FK_alumno_foto" />
-        <EntityTypeShape EntityType="BDCAMModel.Tratamientos" Width="1.5" PointX="7.5" PointY="15" />
+        <EntityTypeShape EntityType="BDCAMModel.Tratamientos" Width="1.5" PointX="7.5" PointY="14.875" />
         <AssociationConnector Association="BDCAMModel.FK_Tabla_Medica_Tratamiento" />
       </Diagram>
     </edmx:Diagrams>
