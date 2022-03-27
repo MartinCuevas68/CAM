@@ -141,7 +141,6 @@ namespace presentationLayer
             this.busquedaTextBox.Name = "busquedaTextBox";
             this.busquedaTextBox.Size = new System.Drawing.Size(169, 18);
             this.busquedaTextBox.TabIndex = 12;
-            this.busquedaTextBox.TextChanged += new System.EventHandler(this.busquedaTextBox_TextChanged);
             // 
             // buscarButton
             // 
@@ -157,7 +156,6 @@ namespace presentationLayer
             this.buscarButton.Size = new System.Drawing.Size(27, 24);
             this.buscarButton.TabIndex = 11;
             this.buscarButton.UseVisualStyleBackColor = false;
-            this.buscarButton.Click += new System.EventHandler(this.buscarButton_Click);
             // 
             // modificarButton
             // 
@@ -213,7 +211,7 @@ namespace presentationLayer
             this.cerrarSesionButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(98)))), ((int)(((byte)(242)))));
             this.cerrarSesionButton.Location = new System.Drawing.Point(38, 690);
             this.cerrarSesionButton.Name = "cerrarSesionButton";
-            this.cerrarSesionButton.Padding = new System.Windows.Forms.Padding(6);
+            this.cerrarSesionButton.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.cerrarSesionButton.Size = new System.Drawing.Size(164, 45);
             this.cerrarSesionButton.TabIndex = 147;
             this.cerrarSesionButton.Text = "Cerrar sesión";
@@ -231,7 +229,7 @@ namespace presentationLayer
             this.imprimirFormatosButton.ForeColor = System.Drawing.Color.White;
             this.imprimirFormatosButton.Location = new System.Drawing.Point(727, 690);
             this.imprimirFormatosButton.Name = "imprimirFormatosButton";
-            this.imprimirFormatosButton.Padding = new System.Windows.Forms.Padding(6);
+            this.imprimirFormatosButton.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.imprimirFormatosButton.Size = new System.Drawing.Size(202, 45);
             this.imprimirFormatosButton.TabIndex = 146;
             this.imprimirFormatosButton.Text = "Imprimir formatos";
@@ -250,18 +248,19 @@ namespace presentationLayer
             this.fichaTecnicaButton.ForeColor = System.Drawing.Color.White;
             this.fichaTecnicaButton.Location = new System.Drawing.Point(1036, 690);
             this.fichaTecnicaButton.Name = "fichaTecnicaButton";
-            this.fichaTecnicaButton.Padding = new System.Windows.Forms.Padding(6);
+            this.fichaTecnicaButton.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.fichaTecnicaButton.Size = new System.Drawing.Size(164, 45);
             this.fichaTecnicaButton.TabIndex = 145;
             this.fichaTecnicaButton.Text = "Ficha técnica";
             this.fichaTecnicaButton.UseVisualStyleBackColor = false;
+            this.fichaTecnicaButton.Click += new System.EventHandler(this.fichaTecnicaButton_Click);
             // 
             // ConsultaAlumno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1263, 749);
+            this.ClientSize = new System.Drawing.Size(1251, 749);
             this.Controls.Add(this.logo);
             this.Controls.Add(this.cerrarSesionButton);
             this.Controls.Add(this.imprimirFormatosButton);
