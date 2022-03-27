@@ -1272,10 +1272,10 @@ warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a prima
             <End Role="Tratamientos" EntitySet="Tratamientos" />
           </AssociationSet>
           <FunctionImport Name="SP_ListaTelefonosTutor" ReturnType="Collection(BDCAMModel.SP_ListaTelefonosTutor_Result)">
-            <Parameter Name="id_tutor" Mode="In" Type="Int32" />
+          <Parameter Name="id_tutor" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="SP_ListaTratamiento" ReturnType="Collection(BDCAMModel.SP_ListaTratamiento_Result)">
-            <Parameter Name="id_alumno" Mode="In" Type="Int32" />
+          <Parameter Name="id_alumno" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="SP_ModificacionAlumno">
             <Parameter Name="id_alumno" Mode="In" Type="Int32" />

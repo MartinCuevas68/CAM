@@ -656,13 +656,11 @@
       <PropertyRef Name="id_tratamiento" />
       <PropertyRef Name="id_cartilla_medica" />
       <PropertyRef Name="Tratamiento" />
-      <PropertyRef Name="id_tratamiento" />
     </Key>
     <Property Name="id_tratamiento" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="id_cartilla_medica" Type="Int32" Nullable="false" />
     <Property Name="Tratamiento" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
     <NavigationProperty Name="tabla_medica" Relationship="BDCAMModel.FK_Tabla_Medica_Tratamiento" FromRole="Tratamientos" ToRole="tabla_medica" />
-    <Property Name="id_tratamiento" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
   </EntityType>
   <Association Name="FK_Tabla_Medica_Tratamiento">
     <End Type="BDCAMModel.tabla_medica" Role="tabla_medica" Multiplicity="1" />
