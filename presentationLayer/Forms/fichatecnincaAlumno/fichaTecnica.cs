@@ -12,163 +12,65 @@ namespace presentationLayer
 {
     public partial class fichaTecnica : Form
     {
-       
-        public fichaTecnica()
+        int id;
+        _1dataLayer.alumnoDTO alumnito = new _1dataLayer.alumnoDTO();
+        _1dataLayer.SP_FichaTecnicaAlumno_Result3 alumno = new _1dataLayer.SP_FichaTecnicaAlumno_Result3();
+        public fichaTecnica(int id_alumno)
         {
             InitializeComponent();
+            PLfichatecnicaAlumno.posicionLabel(logoPictureBox, fichaLabel, infogenLabel, nombreLabel, nombre_text, edadLabel, edadqueryLabel, fechanacLabel, fechaqueryLabel,
+                                    lugarnacLabel, lugarqueryLabel, curpLabel, curpqueryLabel, direccionLabel, direccionqueryLabel,
+                                telefonoLabel, telefonoqueryLabel, escuelaLabel, escuelaproqueryLabel, canalizadoLabel, canalizadoqueryLabel, cicloLabel, cicloqueryLabel, tipoingresoLabel, tipoingresoqueryLabel);
 
-            infoGeneralPanel.Visible = true;
-            infoEscolarPanel.Visible = false;
-            infoTutorPanel.Visible = false;
-            infoMedicaPanel.Visible = false;
-
-            PLfichatecnicaAlumno.centrarLabel(fichaLabel, logo, nombreAlLabel, nombreAl, matriculaLabel, matricula, edadLabel, edad, foto, infoGeneralPanel,infoEscolarPanel, infoTutorPanel, infoMedicaPanel, infoGeneralButton, infoEscolarButton, infoTutorButton, infoMedicaButton,regresarMenuButton,editarInfoButton);
-            PLfichatecnicaAlumno.infoAlumno(nombreAlLabel, nombreAl, matriculaLabel, matricula, edadLabel, edad);
-            PLfichatecnicaAlumno.infoGeneral(fechaNaLabel, fechaNa, lugarNaLabel, lugarNa, direccionLabel, direccion, curpLabel, curp, telPersonalLabel, telPersonal);
-            PLfichatecnicaAlumno.infoEscolar(tipoIngresoLabel, tipoIngreso, escuelaPLabel, escuelaP, canalizadoLabel, canalizado, cicloEscLabel, cicloEsc);
-            PLfichatecnicaAlumno.posicionLabel(logoPictureBox , fichaLabel, nombreLabel, nombretxtBox, matriculaLabel,
-                matriculaTxtBox, edadLabel, edadtextBox, tipoingresoLabel, tipoingresotxtBox, fotopictureBox, informaciontutorPanel,
-                generalButton, escolarButton, TutorButton, medicaButton, nombretutorLabel, nombretutortextBox, direccionLabel,
-                direcciontextBox, ocupacionLabel, ocupaciontextBox, telefonosLabel, casaLabel, movilLabel, trabajoLabel,
-                casatextBox, moviltextBox, trabajotextBox, regresarButton, editarButton, subirfotoButton,servicioLabel,
-                telefonoLabel,grupoLabel, serviciotextBox,telefonotextBox,grupotextBox, discapacidadesLabel, enfermedadesLabel,
-                tratamientosLabel,alergiasLabel,discapacidadesrichTextBox,enfermedadesrichTextBox,alergiasrichTextBox,tratamientosrichTextBox);
-            
-            nombretutorLabel.Visible = false;
-            nombretutortextBox.Visible = false;
-            direccionLabel.Visible = false;
-            direcciontextBox.Visible = false;
-            ocupacionLabel.Visible = false;
-            ocupaciontextBox.Visible = false;
-            telefonosLabel.Visible = false;
-            casaLabel.Visible = false;
-            movilLabel.Visible = false;
-            trabajoLabel.Visible = false;
-            casatextBox.Visible = false;
-            moviltextBox.Visible = false;
-            trabajotextBox.Visible = false;
-            servicioLabel.Visible = false;
-            serviciotextBox.Visible = false;
-            telefonoLabel.Visible = false;
-            telefonotextBox.Visible = false;
-            grupoLabel.Visible = false;
-            grupotextBox.Visible = false;
-            discapacidadesLabel.Visible = false;
-            discapacidadesrichTextBox.Visible = false;
-            enfermedadesLabel.Visible = false;
-            enfermedadesrichTextBox.Visible = false;
-            alergiasLabel.Visible = false;
-            alergiasrichTextBox.Visible = false;
-            tratamientosLabel.Visible = false;
-            tratamientosrichTextBox.Visible = false;
+            PLfichatecnicaAlumno.posicionFotoButtons(fotoalumnoPictureBox, informaciontutorButton, informacionmedicaButton);
+            alumno = _1dataLayer.DLConsultaAlumno.FichaTecnicaAlumno(id_alumno);
+            id = id_alumno;
+            alumnito.ciclo_escolar = alumno.ciclo_escolar;
+            alumnito.nombre = alumno.nombre;
+            alumnito.apellido_paterno = alumno.apellido_paterno;
+            alumnito.apellido_materno = alumno.apellido_materno;
+            alumnito.fecha_nacimiento = alumno.fecha_nacimiento;
+            alumnito.edad_alumno = alumno.edad_alumno;
+            alumnito.CURP_alumno = alumno.CURP_alumno;
+            alumnito.estado_nacimiento_alumno = alumno.estado_nacimiento_alumno;
+            alumnito.ciudad_nacimiento_alumno = alumno.ciudad_nacimiento_alumno;
+            alumnito.colonia_alumno = alumno.colonia_alumno;
+            alumnito.calle_alumno = alumno.calle_alumno;
+            alumnito.numero_alumno = alumno.numero_alumno;
+            alumnito.telefono_personal_alumno = alumno.telefono_personal_alumno;
+            alumnito.escuela_procedencia_alumno = alumno.escuela_procedencia_alumno;
+            alumnito.documentacion_alumno = "";
+            alumnito.atendido_por = alumno.atendido_por;
+            nombre_text.Text = alumno.nombre;
         }
 
         
-        private void infoGeneralButton_Click(object sender, EventArgs e)
-        {
-            infoGeneralPanel.Visible = true;
-            infoEscolarPanel.Visible = false;
-            infoTutorPanel.Visible = false;
-            infoMedicaPanel.Visible = false;
-        }
 
-        private void infoEscolarButton_Click(object sender, EventArgs e)
-        {
-            infoEscolarPanel.Visible = true;
-            infoGeneralPanel.Visible = false;            
-            infoTutorPanel.Visible = false;
-            infoMedicaPanel.Visible = false;
-        }
-
-        private void infoTutorButton_Click(object sender, EventArgs e)
-        {
-            infoTutorPanel.Visible = true;
-            infoGeneralPanel.Visible = false;
-            infoEscolarPanel.Visible = false;            
-            infoMedicaPanel.Visible = false;
-        }
-
-        private void infoMedicaButton_Click(object sender, EventArgs e)
-        {
-            infoMedicaPanel.Visible = true;
-            infoGeneralPanel.Visible = false;
-            infoEscolarPanel.Visible = false;
-            infoTutorPanel.Visible = false;            
-        private void label1_Click(object sender, EventArgs e)
+        private void informacionmedicaButton_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void buttonSystem1_Click(object sender, EventArgs e)
+        private void informaciontutorButton_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void medicaButton_Click(object sender, EventArgs e)
-        {
-            nombretutorLabel.Visible = false;
-            nombretutortextBox.Visible = false;
-            direccionLabel.Visible = false;
-            direcciontextBox.Visible = false;
-            ocupacionLabel.Visible = false;
-            ocupaciontextBox.Visible = false;
-            telefonosLabel.Visible = false;
-            casaLabel.Visible = false;
-            movilLabel.Visible = false;
-            trabajoLabel.Visible = false;
-            casatextBox.Visible = false;
-            moviltextBox.Visible = false;
-            trabajotextBox.Visible = false;
-            servicioLabel.Visible = true;
-            serviciotextBox.Visible = true;
-            telefonoLabel.Visible = true;
-            telefonotextBox.Visible = true;
-            grupoLabel.Visible = true;
-            grupotextBox.Visible = true;
-            discapacidadesLabel.Visible = true;
-            discapacidadesrichTextBox.Visible = true;
-            enfermedadesLabel.Visible = true;
-            enfermedadesrichTextBox.Visible = true;
-            alergiasLabel.Visible = true;
-            alergiasrichTextBox.Visible = true;
-            tratamientosLabel.Visible = true;
-            tratamientosrichTextBox.Visible = true;
-        }
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        private void fichaTecnica_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void TutorButton_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-            nombretutorLabel.Visible = true;
-            nombretutortextBox.Visible = true;
-            direccionLabel.Visible = true;
-            direcciontextBox.Visible = true;
-            ocupacionLabel.Visible = true;
-            ocupaciontextBox.Visible = true;
-            telefonosLabel.Visible = true;
-            casaLabel.Visible = true;
-            movilLabel.Visible = true;
-            trabajoLabel.Visible = true;
-            casatextBox.Visible = true;
-            moviltextBox.Visible = true;
-            trabajotextBox.Visible = true;
-            servicioLabel.Visible = false;
-            serviciotextBox.Visible = false;
-            telefonoLabel.Visible = false;
-            telefonotextBox.Visible = false;
-            grupoLabel.Visible = false;
-            grupotextBox.Visible = false;
-            discapacidadesLabel.Visible = false;
-            discapacidadesrichTextBox.Visible = false;
-            enfermedadesLabel.Visible = false;
-            enfermedadesrichTextBox.Visible = false;
-            alergiasLabel.Visible = false;
-            alergiasrichTextBox.Visible = false;
-            tratamientosLabel.Visible = false;
-            tratamientosrichTextBox.Visible = false;
+            //ASI SE DEBERIA IR AGREGANDO LOS VALORES A ALUMNO PARA SU MODIFICACION
+            alumnito.nombre = nombre_text.Text;
+            alumnito.telefono_personal_alumno = "6681022989";
+            alumnito.tipo_ingreso = "NUEVO INGRESO";
+            _1dataLayer.DLModificacionAlumno.Modificacionalumno(id, alumnito);
+            ConsultaAlumno consulta = new ConsultaAlumno();
+            consulta.Show();
+            this.Hide();
         }
     }
 }

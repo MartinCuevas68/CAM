@@ -57,7 +57,7 @@ namespace _1dataLayer
                   Console.ReadKey();
               */
         }
-        //regresa el listado de todos los alumnos del cam
+
         public List<SP_ListaAlumnos_Result> AlumnoLista()
         {
             List<SP_ListaAlumnos_Result> alumnos = new List<SP_ListaAlumnos_Result>();
@@ -75,20 +75,17 @@ namespace _1dataLayer
 
             return alumnos;
         }
-        //regresa la ficha tecnica de 1 solo alumno 
-        public static SP_FichaTecnicaAlumno_Result FichaTenicaAlumno(int id)
+        public static SP_FichaTecnicaAlumno_Result3 FichaTecnicaAlumno(int id)
         {
-            SP_FichaTecnicaAlumno_Result FichaTecnicaAlumno = new SP_FichaTecnicaAlumno_Result();
+            SP_FichaTecnicaAlumno_Result3 FichaTecnicaAlumno = new SP_FichaTecnicaAlumno_Result3();
             using (BDCAMEntities db = new BDCAMEntities())
             {
-                ObjectResult<SP_FichaTecnicaAlumno_Result> x = db.SP_FichaTecnicaAlumno(id);
-                foreach (SP_FichaTecnicaAlumno_Result result in x)
+                ObjectResult<SP_FichaTecnicaAlumno_Result3> x = db.SP_FichaTecnicaAlumno(id);
+                foreach (SP_FichaTecnicaAlumno_Result3 result in x)
                     FichaTecnicaAlumno = result;
             }
             return FichaTecnicaAlumno;
         }
-
-        //regresa la ficha tecnica del tutor de 1 alumno
         public static SP_FichaTecnicaAlumnoTutor_Result FichaTecnicaTutor(int id)
         {
             SP_FichaTecnicaAlumnoTutor_Result FTtutor = new SP_FichaTecnicaAlumnoTutor_Result();
@@ -101,7 +98,6 @@ namespace _1dataLayer
 
             return FTtutor;
         }
-        //regresa la ficha tecnica medica de 1 solo alumno
         public static SP_FichaTecnicaAlumnoMedica_Result FichaTecnicaMedica(int id)
         {
             SP_FichaTecnicaAlumnoMedica_Result FTMedica = new SP_FichaTecnicaAlumnoMedica_Result();
@@ -111,10 +107,8 @@ namespace _1dataLayer
                 foreach (SP_FichaTecnicaAlumnoMedica_Result result in x)
                     FTMedica = result;
             }
-
             return FTMedica;
         }
-        //regresa la lista de todas las alergias que 1 alumno tiene
         public List<SP_ListaAlergia_Result> ListaAlergias(int id)
         {
             List<SP_ListaAlergia_Result> alergias = new List<SP_ListaAlergia_Result>();
@@ -131,9 +125,7 @@ namespace _1dataLayer
 
             return alergias;
         }
-        //regresa la lista de todas las enfermedades que 1 alumno tiene
-
-        public List<SP_ListaEnfermedad_Result> ListaEnfermedades(int id)
+        public static List<SP_ListaEnfermedad_Result> ListaEnfermedades(int id)
         {
             List<SP_ListaEnfermedad_Result> enfermedades = new List<SP_ListaEnfermedad_Result>();
 
@@ -150,8 +142,6 @@ namespace _1dataLayer
 
             return enfermedades;
         }
-        //regresa la lista de todas las discapacidades que 1 alumno tiene
-
         public List<SP_ListaDiscapacidad_Result> ListaDiscapacidad(int id)
         {
             List<SP_ListaDiscapacidad_Result> discapacidades = new List<SP_ListaDiscapacidad_Result>();
@@ -167,38 +157,6 @@ namespace _1dataLayer
             }
 
             return discapacidades;
-        }
-        public List<SP_ListaTratamiento_Result> ListaTratamiento(int id)
-        {
-            List<SP_ListaTratamiento_Result> tratamientos = new List<SP_ListaTratamiento_Result>();
-
-            using (BDCAMEntities db = new BDCAMEntities())
-            {
-                ObjectResult<SP_ListaTratamiento_Result> x = db.SP_ListaTratamiento(id);
-                foreach (SP_ListaTratamiento_Result result in x)
-                {
-                    tratamientos.Add(result);
-                }
-
-            }
-
-            return tratamientos;
-        }
-        //supuesto metodo para obtener la foto no se ha probado
-        public SP_MostrarFotoAlumno_Result Foto_alumno(int id)
-        {
-            SP_MostrarFotoAlumno_Result foto = new SP_MostrarFotoAlumno_Result();
-            using (BDCAMEntities db = new BDCAMEntities())
-            {
-
-                ObjectResult<SP_MostrarFotoAlumno_Result> x = db.SP_MostrarFotoAlumno(id);
-        
-                foreach(SP_MostrarFotoAlumno_Result result in x)
-                {
-                    foto = result;
-                }
-            }
-            return foto;
         }
 
     }

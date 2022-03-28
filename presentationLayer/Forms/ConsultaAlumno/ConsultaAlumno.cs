@@ -14,7 +14,6 @@ namespace presentationLayer
     {
 
         public DataGridViewCheckBoxColumn checkboxDgv = new DataGridViewCheckBoxColumn();
-        DataTable data = new DataTable();
 
 
         public ConsultaAlumno()
@@ -69,7 +68,6 @@ namespace presentationLayer
 
             //Sentencia que manda a llamar el método para cerrar Consultas usando la X
             this.FormClosed += new FormClosedEventHandler(cerrarForm);
-            data = businessLayer.BLConsultaAlumno.ConvertToDatatable((List<_1dataLayer.alumnoenfermedadDTO>)altaDataGridView.DataSource);
         }
 
         //Metodo para cerrar Consultas usando la X ya que antes se cerraba pero se seguía ejecutando.
@@ -223,41 +221,22 @@ namespace presentationLayer
 
         private void fichaTecnicaButton_Click(object sender, EventArgs e)
         {
-            ConsultaAlumno consultas = new ConsultaAlumno();
-            consultas.Close();
+            ConsultaAlumno consulta = new ConsultaAlumno();
+            consulta.Hide();
             this.Hide();
-            fichaTecnica ficha = new fichaTecnica();
+            String id;
+            int x = 0;
+            foreach (DataGridViewRow row in this.altaDataGridView.Rows)
+            {
+                if (Convert.ToBoolean(row.Cells[5].Value) == true)
+                {
+                    id = Convert.ToString(row.Cells[0].Value);
+                    MessageBox.Show(id);
+                    x = int.Parse(id);
+                }
+            }
+            fichaTecnica ficha = new fichaTecnica(x);
             ficha.Show();
-        }
-
-
-        private void busquedaPanel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void busquedaTextBox_TextChanged_1(object sender, EventArgs e)
-        {
-            //AQUI ESTA EL PROBLEMA, CHECAR EL METODO
-            string searchValue = busquedaTextBox.Text.Trim().ToUpper();
-            try
-            {
-                var re = from row in data.AsEnumerable()
-                         where row[1].ToString().ToUpper().Contains(searchValue)
-                         select row;
-                if (re.Count() == 0)
-                {
-                    //MessageBox.Show("No row");
-                }
-                else
-                {
-                    altaDataGridView.DataSource = re.CopyToDataTable();
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
         }
     }
 }
