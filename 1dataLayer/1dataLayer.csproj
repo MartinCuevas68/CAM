@@ -101,10 +101,22 @@
     <Compile Include="rol_tiene_permiso.cs">
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>
+    <Compile Include="SP_FichaTecnicaAlumno1_Result.cs">
+      <DependentUpon>BDCAM.tt</DependentUpon>
+    </Compile>
     <Compile Include="SP_FichaTecnicaAlumnoMedica_Result.cs">
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>
     <Compile Include="SP_FichaTecnicaAlumnoTutor_Result.cs">
+      <DependentUpon>BDCAM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_FichaTecnicaAlumno_Result.cs">
+      <DependentUpon>BDCAM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_FichaTecnicaAlumno_Result1.cs">
+      <DependentUpon>BDCAM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_FichaTecnicaAlumno_Result2.cs">
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>
     <Compile Include="SP_FichaTecnicaAlumno_Result3.cs">
@@ -134,10 +146,16 @@
     <Compile Include="SP_ListaEnfermedad_Result.cs">
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>
-    <Compile Include="subpermisos.cs">
+    <Compile Include="SP_ListaTelefonosTutor_Result.cs">
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>
-    <Compile Include="sysdiagrams.cs">
+    <Compile Include="SP_ListaTratamiento_Result.cs">
+      <DependentUpon>BDCAM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_MostrarFotoAlumno_Result.cs">
+      <DependentUpon>BDCAM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="subpermisos.cs">
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>
     <Compile Include="tabla_indicadores_telefono.cs">

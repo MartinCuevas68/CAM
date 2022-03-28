@@ -41,6 +41,7 @@ namespace _1dataLayer
         public string escuela_procedencia_alumno { get; set; }
         public string documentacion_alumno { get; set; }
         public string atendido_por { get; set; }
+        public string tipo_ingreso { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<tabla_medica> tabla_medica { get; set; }

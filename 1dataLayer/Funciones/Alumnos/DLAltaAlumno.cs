@@ -40,7 +40,7 @@ namespace _1dataLayer
             int id = 0;
             using (BDCAMEntities db = new BDCAMEntities())
             {
-                db.SP_AltaAlumno(alumno.fecha_registro, alumno.ciclo_escolar, alumno.nombre, alumno.apellido_paterno, alumno.apellido_materno, alumno.fecha_nacimiento, alumno.edad_alumno, alumno.CURP_alumno, alumno.estado_nacimiento_alumno, alumno.ciudad_nacimiento_alumno, alumno.colonia_alumno, alumno.calle_alumno, alumno.numero_alumno, alumno.telefono_personal_alumno, alumno.escuela_procedencia_alumno, alumno.documentacion_alumno, alumno.atendido_por);
+                db.SP_AltaAlumno(alumno.fecha_registro, alumno.ciclo_escolar, alumno.nombre, alumno.apellido_paterno, alumno.apellido_materno, alumno.fecha_nacimiento, alumno.edad_alumno, alumno.CURP_alumno, alumno.estado_nacimiento_alumno, alumno.ciudad_nacimiento_alumno, alumno.colonia_alumno, alumno.calle_alumno, alumno.numero_alumno, alumno.telefono_personal_alumno, alumno.escuela_procedencia_alumno, alumno.documentacion_alumno,alumno.tipo_ingreso, alumno.atendido_por);
                 e = db.sp_regresarid();
                 foreach (decimal? a in e)
                 {

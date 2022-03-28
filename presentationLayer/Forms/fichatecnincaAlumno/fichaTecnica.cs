@@ -63,8 +63,10 @@ namespace presentationLayer
 
         private void button2_Click(object sender, EventArgs e)
         {
+            //ASI SE DEBERIA IR AGREGANDO LOS VALORES A ALUMNO PARA SU MODIFICACION
             alumnito.nombre = nombre_text.Text;
             alumnito.telefono_personal_alumno = "6681022989";
+            alumnito.tipo_ingreso = "NUEVO INGRESO";
             _1dataLayer.DLModificacionAlumno.Modificacionalumno(id, alumnito);
             ConsultaAlumno consulta = new ConsultaAlumno();
             consulta.Show();
