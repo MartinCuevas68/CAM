@@ -21,6 +21,7 @@ namespace _1dataLayer
             this.discapacidades = new HashSet<discapacidades>();
             this.enfermedades = new HashSet<enfermedades>();
             this.alumno = new HashSet<alumno>();
+            this.Tratamientos = new HashSet<Tratamientos>();
         }
     
         public int id_cartilla_medica { get; set; }
@@ -40,5 +41,7 @@ namespace _1dataLayer
         public virtual ICollection<enfermedades> enfermedades { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<alumno> alumno { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Tratamientos> Tratamientos { get; set; }
     }
 }

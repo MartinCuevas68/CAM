@@ -75,7 +75,17 @@
     <Compile Include="discapacidades.cs">
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>
+    <Compile Include="Funciones\Alumnos\DLAltaAlumno.cs" />
+    <Compile Include="Funciones\Alumnos\DLConsultaAlumno.cs" />
+    <Compile Include="Funciones\Alumnos\DLEliminacionAlumno.cs" />
+    <Compile Include="Funciones\Alumnos\DLModificacionAlumno.cs" />
     <Compile Include="enfermedades.cs">
+      <DependentUpon>BDCAM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="foto_alumno.cs">
+      <DependentUpon>BDCAM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="permisos.cs">
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>
     <Compile Include="programa.cs">
@@ -85,7 +95,52 @@
     <Compile Include="recursos.cs">
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>
-    <Compile Include="sysdiagrams.cs">
+    <Compile Include="roles.cs">
+      <DependentUpon>BDCAM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="rol_tiene_permiso.cs">
+      <DependentUpon>BDCAM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_FichaTecnicaAlumnoMedica_Result.cs">
+      <DependentUpon>BDCAM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_FichaTecnicaAlumnoTutor_Result.cs">
+      <DependentUpon>BDCAM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_FichaTecnicaAlumno_Result.cs">
+      <DependentUpon>BDCAM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>BDCAM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagrams_Result.cs">
+      <DependentUpon>BDCAM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_ListaAlergia_Result.cs">
+      <DependentUpon>BDCAM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_ListaAlumnos1_Result.cs">
+      <DependentUpon>BDCAM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_ListaAlumnos2_Result.cs">
+      <DependentUpon>BDCAM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_ListaAlumnos_Result.cs">
+      <DependentUpon>BDCAM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_ListaDiscapacidad_Result.cs">
+      <DependentUpon>BDCAM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_ListaEnfermedad_Result.cs">
+      <DependentUpon>BDCAM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_ListaTelefonosTutor_Result.cs">
+      <DependentUpon>BDCAM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_ListaTratamiento_Result.cs">
+      <DependentUpon>BDCAM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="subpermisos.cs">
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>
     <Compile Include="tabla_indicadores_telefono.cs">
@@ -97,10 +152,16 @@
     <Compile Include="telefono_tutores.cs">
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>
+    <Compile Include="Tratamientos.cs">
+      <DependentUpon>BDCAM.tt</DependentUpon>
+    </Compile>
     <Compile Include="turnos.cs">
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>
     <Compile Include="tutor.cs">
+      <DependentUpon>BDCAM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usuario.cs">
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>
   </ItemGroup>

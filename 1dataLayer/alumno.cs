@@ -20,6 +20,7 @@ namespace _1dataLayer
             this.tabla_medica = new HashSet<tabla_medica>();
             this.programa = new HashSet<programa>();
             this.tutor = new HashSet<tutor>();
+            this.foto_alumno = new HashSet<foto_alumno>();
         }
     
         public int id_alumno { get; set; }
@@ -40,6 +41,7 @@ namespace _1dataLayer
         public string escuela_procedencia_alumno { get; set; }
         public string documentacion_alumno { get; set; }
         public string atendido_por { get; set; }
+        public string tipo_ingreso { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<tabla_medica> tabla_medica { get; set; }
@@ -47,5 +49,7 @@ namespace _1dataLayer
         public virtual ICollection<programa> programa { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<tutor> tutor { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<foto_alumno> foto_alumno { get; set; }
     }
 }
