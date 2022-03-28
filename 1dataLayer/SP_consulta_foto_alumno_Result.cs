@@ -10,14 +10,11 @@
 namespace _1dataLayer
 {
     using System;
-    using System.Collections.Generic;
     
-    public partial class discapacidades
+    public partial class SP_consulta_foto_alumno_Result
     {
-        public int id_cartilla_medica { get; set; }
-        public string discapacidades1 { get; set; }
-        public int id_discapacidades { get; set; }
-    
-        public virtual tabla_medica tabla_medica { get; set; }
+        public int id_alumno { get; set; }
+        public byte[] imagen_alumno { get; set; }
+        public string nombre { get; set; }
     }
 }
