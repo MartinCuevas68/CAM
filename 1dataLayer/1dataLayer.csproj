@@ -101,6 +101,9 @@
     <Compile Include="rol_tiene_permiso.cs">
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>
+    <Compile Include="SP_consulta_foto_alumno_Result.cs">
+      <DependentUpon>BDCAM.tt</DependentUpon>
+    </Compile>
     <Compile Include="SP_FichaTecnicaAlumnoMedica_Result.cs">
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>

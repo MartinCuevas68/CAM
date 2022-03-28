@@ -223,10 +223,21 @@ namespace presentationLayer
 
         private void fichaTecnicaButton_Click(object sender, EventArgs e)
         {
+            String id;
+            int id2 = 0;
+            foreach (DataGridViewRow row in this.altaDataGridView.Rows)
+            {
+                if (Convert.ToBoolean(row.Cells[5].Value) == true)
+                {
+                    id = Convert.ToString(row.Cells[0].Value);
+                    id2 = int.Parse(id);
+                    MessageBox.Show(id);
+                }
+            }
             ConsultaAlumno consultas = new ConsultaAlumno();
             consultas.Close();
             this.Hide();
-            fichaTecnica ficha = new fichaTecnica();
+            fichaTecnica ficha = new fichaTecnica(id2);
             ficha.Show();
         }
 

@@ -194,6 +194,9 @@
           <ScalarProperty Name="CURP_alumno" ColumnName="CURP_alumno" />
           <ScalarProperty Name="atendido_por" ColumnName="atendido_por" />
           <ScalarProperty Name="ciclo_escolar" ColumnName="ciclo_escolar" />
+          <ScalarProperty Name="id_alumno" ColumnName="id_alumno" />
+          <ScalarProperty Name="numero_alumno" ColumnName="numero_alumno" />
+          <ScalarProperty Name="tipo_ingreso" ColumnName="tipo_ingreso" />
         </ComplexTypeMapping>
       </ResultMapping>
     </FunctionImportMapping>
@@ -373,5 +376,27 @@
       </ResultMapping>
     </FunctionImportMapping>
     <FunctionImportMapping FunctionImportName="SP_ModificacionAlumno" FunctionName="BDCAMModel.Store.SP_ModificacionAlumno" />
+    <FunctionImportMapping FunctionImportName="SP_ModificacionCartilla" FunctionName="BDCAMModel.Store.SP_ModificacionCartilla" />
+    <FunctionImportMapping FunctionImportName="SP_ModificacionTutor" FunctionName="BDCAMModel.Store.SP_ModificacionTutor" />
+    <FunctionImportMapping FunctionImportName="SP_MostrarFotoAlumno" FunctionName="BDCAMModel.Store.SP_MostrarFotoAlumno">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BDCAMModel.SP_MostrarFotoAlumno_Result">
+          <ScalarProperty Name="imagen_alumno" ColumnName="imagen_alumno" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Modificar_discapacidades" FunctionName="BDCAMModel.Store.Modificar_discapacidades" />
+    <FunctionImportMapping FunctionImportName="Modificar_enfermedades" FunctionName="BDCAMModel.Store.Modificar_enfermedades" />
+    <FunctionImportMapping FunctionImportName="Modificar_tratamiento" FunctionName="BDCAMModel.Store.Modificar_tratamiento" />
+    <FunctionImportMapping FunctionImportName="SP_consulta_foto_alumno" FunctionName="BDCAMModel.Store.SP_consulta_foto_alumno">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BDCAMModel.SP_consulta_foto_alumno_Result">
+          <ScalarProperty Name="id_alumno" ColumnName="id_alumno" />
+          <ScalarProperty Name="imagen_alumno" ColumnName="imagen_alumno" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
   </EntityContainerMapping>
 </Mapping>

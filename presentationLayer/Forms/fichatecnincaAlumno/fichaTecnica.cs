@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,8 +13,8 @@ namespace presentationLayer
 {
     public partial class fichaTecnica : Form
     {
-       
-        public fichaTecnica()
+        _1dataLayer.foto_alumno foto = new _1dataLayer.foto_alumno();
+        public fichaTecnica(int id)
         {
             InitializeComponent();
             PLfichatecnicaAlumno.posicionLabel(logoPictureBox , fichaLabel, nombreLabel, nombretxtBox, matriculaLabel,
@@ -51,9 +52,17 @@ namespace presentationLayer
             alergiasrichTextBox.Visible = false;
             tratamientosLabel.Visible = false;
             tratamientosrichTextBox.Visible = false;
+            foto = _1dataLayer.DLConsultaAlumno.ConsultaFoto(id);
+            MessageBox.Show(foto.nombre);
+            fotopictureBox.Image = byteArrayToImage(foto.imagen_alumno.ToArray());
         }
 
-        
+        public Image byteArrayToImage(byte[] byteArrayIn)
+        {
+            MemoryStream ms = new MemoryStream(byteArrayIn);
+            Image returnImage = Image.FromStream(ms);
+            return returnImage;
+        }
 
         private void informacionmedicaButton_Click(object sender, EventArgs e)
         {
@@ -140,6 +149,11 @@ namespace presentationLayer
             alergiasrichTextBox.Visible = false;
             tratamientosLabel.Visible = false;
             tratamientosrichTextBox.Visible = false;
+        }
+
+        private void fotopictureBox_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

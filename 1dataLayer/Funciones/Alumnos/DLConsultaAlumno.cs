@@ -203,7 +203,7 @@ namespace _1dataLayer
 
 
 
-        public foto_alumno ConsultaFoto(int id)
+        public static foto_alumno ConsultaFoto(int id)
         {
             foto_alumno foto = new foto_alumno();
             using (BDCAMEntities db = new BDCAMEntities())

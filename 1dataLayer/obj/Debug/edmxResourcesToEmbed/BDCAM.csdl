@@ -459,6 +459,41 @@
       <Parameter Name="escuela" Mode="In" Type="String" />
       <Parameter Name="documentacion" Mode="In" Type="String" />
       <Parameter Name="atendidopor" Mode="In" Type="String" />
+      <Parameter Name="tipo_ingreso" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_ModificacionCartilla">
+      <Parameter Name="idtabla" Mode="In" Type="Int32" />
+      <Parameter Name="Servicio" Mode="In" Type="String" />
+      <Parameter Name="Grupo_sanguineo" Mode="In" Type="String" />
+      <Parameter Name="telefono_contacto" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_ModificacionTutor">
+      <Parameter Name="idtutor" Mode="In" Type="Int32" />
+      <Parameter Name="nombre" Mode="In" Type="String" />
+      <Parameter Name="apellido_paterno" Mode="In" Type="String" />
+      <Parameter Name="apellido_materno" Mode="In" Type="String" />
+      <Parameter Name="calle" Mode="In" Type="String" />
+      <Parameter Name="colonia" Mode="In" Type="String" />
+      <Parameter Name="numero" Mode="In" Type="String" />
+      <Parameter Name="ocupacion" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_MostrarFotoAlumno" ReturnType="Collection(BDCAMModel.SP_MostrarFotoAlumno_Result)">
+      <Parameter Name="id_alumno" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="Modificar_discapacidades">
+      <Parameter Name="iddiscapacidad" Mode="In" Type="Int32" />
+      <Parameter Name="discapacidad" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="Modificar_enfermedades">
+      <Parameter Name="idenfermedad" Mode="In" Type="Int32" />
+      <Parameter Name="enfermedad" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="Modificar_tratamiento">
+      <Parameter Name="idtratamiento" Mode="In" Type="Int32" />
+      <Parameter Name="tratamiento" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_consulta_foto_alumno" ReturnType="Collection(BDCAMModel.SP_consulta_foto_alumno_Result)">
+      <Parameter Name="id_alumno" Mode="In" Type="Int32" />
     </FunctionImport>
   </EntityContainer>
   <ComplexType Name="SP_FichaTecnicaAlumno_Result">
@@ -476,6 +511,9 @@
     <Property Type="String" Name="CURP_alumno" Nullable="false" MaxLength="18" />
     <Property Type="String" Name="atendido_por" Nullable="false" MaxLength="30" />
     <Property Type="String" Name="ciclo_escolar" Nullable="false" MaxLength="30" />
+    <Property Type="Int32" Name="id_alumno" Nullable="false" />
+    <Property Type="String" Name="numero_alumno" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="tipo_ingreso" Nullable="true" MaxLength="40" />
   </ComplexType>
   <ComplexType Name="SP_FichaTecnicaAlumnoMedica_Result">
     <Property Type="String" Name="nombre" Nullable="false" MaxLength="30" />
@@ -681,5 +719,14 @@
   <ComplexType Name="SP_ListaTratamiento_Result">
     <Property Type="Int32" Name="id_cartilla_medica" Nullable="false" />
     <Property Type="String" Name="Tratamiento" Nullable="false" MaxLength="255" />
+  </ComplexType>
+  <ComplexType Name="SP_MostrarFotoAlumno_Result">
+    <Property Type="Binary" Name="imagen_alumno" Nullable="false" MaxLength="Max" />
+    <Property Type="String" Name="nombre" Nullable="false" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="SP_consulta_foto_alumno_Result">
+    <Property Type="Int32" Name="id_alumno" Nullable="false" />
+    <Property Type="Binary" Name="imagen_alumno" Nullable="false" MaxLength="Max" />
+    <Property Type="String" Name="nombre" Nullable="false" MaxLength="100" />
   </ComplexType>
 </Schema>
