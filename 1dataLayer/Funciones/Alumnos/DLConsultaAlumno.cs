@@ -170,19 +170,35 @@ namespace _1dataLayer
         }
         public List<SP_ListaTratamiento_Result> ListaTratamiento(int id)
         {
-            List<SP_ListaTratamiento_Result> discapacidades = new List<SP_ListaTratamiento_Result>();
+            List<SP_ListaTratamiento_Result> tratamientos = new List<SP_ListaTratamiento_Result>();
 
             using (BDCAMEntities db = new BDCAMEntities())
             {
                 ObjectResult<SP_ListaTratamiento_Result> x = db.SP_ListaTratamiento(id);
                 foreach (SP_ListaTratamiento_Result result in x)
                 {
-                    discapacidades.Add(result);
+                    tratamientos.Add(result);
                 }
 
             }
 
-            return discapacidades;
+            return tratamientos;
+        }
+        //supuesto metodo para obtener la foto no se ha probado
+        public SP_MostrarFotoAlumno_Result Foto_alumno(int id)
+        {
+            SP_MostrarFotoAlumno_Result foto = new SP_MostrarFotoAlumno_Result();
+            using (BDCAMEntities db = new BDCAMEntities())
+            {
+
+                ObjectResult<SP_MostrarFotoAlumno_Result> x = db.SP_MostrarFotoAlumno(id);
+        
+                foreach(SP_MostrarFotoAlumno_Result result in x)
+                {
+                    foto = result;
+                }
+            }
+            return foto;
         }
 
     }
