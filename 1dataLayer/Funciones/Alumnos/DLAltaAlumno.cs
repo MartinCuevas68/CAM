@@ -11,27 +11,39 @@ namespace _1dataLayer
     {
 
         //Metodo para dar de alta alergias
-        public static void Altaalergias(alergiasDTO alergia)
+        public static void Altaalergias(int id, List<alergiasDTO> alergia)
         {
             using (BDCAMEntities db = new BDCAMEntities())
             {
-                db.sp_altaalergias(alergia.id_cartilla_medica, alergia.alergia);
+                foreach (alergiasDTO alergias in alergia)
+                {
+                    db.sp_altaenfermedades(id, alergias.alergia);
+                }
+
             }
         }
 
-        public static void Altaenfermedades(enfermedadesDTO enfermedad)
+        public static void Altaenfermedades(int id, List<enfermedadesDTO> enfermedad)
         {
             using (BDCAMEntities db = new BDCAMEntities())
             {
-                db.sp_altaenfermedades(enfermedad.id_cartilla_medica, enfermedad.enfermedad);
+                foreach (enfermedadesDTO enfer in enfermedad)
+                {
+                    db.sp_altaenfermedades(id, enfer.enfermedad);
+                }
+
             }
         }
 
-        public static void Altadiscapacidades(discapacidadesDTO discapacidad)
+        public static void Altadiscapacidades(int id, List<discapacidadesDTO> discapacidad)
         {
             using (BDCAMEntities db = new BDCAMEntities())
             {
-                db.sp_altadiscapacidades(discapacidad.id_cartilla_medica, discapacidad.discapacidades);
+                foreach (discapacidadesDTO disc in discapacidad)
+                {
+                    db.sp_altaenfermedades(id, disc.discapacidades);
+                }
+
             }
         }
         public static int Altaalumno(alumnoDTO alumno)
@@ -40,7 +52,7 @@ namespace _1dataLayer
             int id = 0;
             using (BDCAMEntities db = new BDCAMEntities())
             {
-                db.SP_AltaAlumno(alumno.fecha_registro, alumno.ciclo_escolar, alumno.nombre, alumno.apellido_paterno, alumno.apellido_materno, alumno.fecha_nacimiento, alumno.edad_alumno, alumno.CURP_alumno, alumno.estado_nacimiento_alumno, alumno.ciudad_nacimiento_alumno, alumno.colonia_alumno, alumno.calle_alumno, alumno.numero_alumno, alumno.telefono_personal_alumno, alumno.escuela_procedencia_alumno, alumno.documentacion_alumno, alumno.tipo_ingreso,alumno.atendido_por);
+                db.SP_AltaAlumno(alumno.fecha_registro, alumno.ciclo_escolar, alumno.nombre, alumno.apellido_paterno, alumno.apellido_materno, alumno.fecha_nacimiento, alumno.edad_alumno, alumno.CURP_alumno, alumno.estado_nacimiento_alumno, alumno.ciudad_nacimiento_alumno, alumno.colonia_alumno, alumno.calle_alumno, alumno.numero_alumno, alumno.telefono_personal_alumno, alumno.escuela_procedencia_alumno, alumno.documentacion_alumno, alumno.tipo_ingreso, alumno.atendido_por);
                 e = db.sp_regresarid();
                 foreach (decimal? a in e)
                 {
@@ -117,6 +129,9 @@ namespace _1dataLayer
                 db.SP_AltaImagenAlumno(imagen.id_alumno, imagen.imagen, imagen.nombre);
             }
         }
+
+
+       
 
     }
 }
