@@ -527,6 +527,18 @@ warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a prima
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Function Name="Modificar_discapacidades" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="iddiscapacidad" Type="int" Mode="In" />
+          <Parameter Name="discapacidad" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="Modificar_enfermedades" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="idenfermedad" Type="int" Mode="In" />
+          <Parameter Name="enfermedad" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="Modificar_tratamiento" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="idtratamiento" Type="int" Mode="In" />
+          <Parameter Name="tratamiento" Type="varchar" Mode="In" />
+        </Function>
         <Function Name="sp_altaalergias" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="id" Type="int" Mode="In" />
           <Parameter Name="alergia" Type="varchar" Mode="In" />
@@ -1336,6 +1348,18 @@ warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a prima
           <FunctionImport Name="SP_MostrarFotoAlumno" ReturnType="Collection(BDCAMModel.SP_MostrarFotoAlumno_Result)">
           <Parameter Name="id_alumno" Mode="In" Type="Int32" />
           </FunctionImport>
+          <FunctionImport Name="Modificar_discapacidades">
+            <Parameter Name="iddiscapacidad" Mode="In" Type="Int32" />
+            <Parameter Name="discapacidad" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="Modificar_enfermedades">
+            <Parameter Name="idenfermedad" Mode="In" Type="Int32" />
+            <Parameter Name="enfermedad" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="Modificar_tratamiento">
+            <Parameter Name="idtratamiento" Mode="In" Type="Int32" />
+            <Parameter Name="tratamiento" Mode="In" Type="String" />
+          </FunctionImport>
         </EntityContainer>
         <ComplexType Name="SP_FichaTecnicaAlumno_Result">
           <Property Type="String" Name="nombre" Nullable="false" MaxLength="30" />
@@ -2021,6 +2045,9 @@ warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a prima
               </ComplexTypeMapping>
             </ResultMapping>
           </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="Modificar_discapacidades" FunctionName="BDCAMModel.Store.Modificar_discapacidades" />
+          <FunctionImportMapping FunctionImportName="Modificar_enfermedades" FunctionName="BDCAMModel.Store.Modificar_enfermedades" />
+          <FunctionImportMapping FunctionImportName="Modificar_tratamiento" FunctionName="BDCAMModel.Store.Modificar_tratamiento" />
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

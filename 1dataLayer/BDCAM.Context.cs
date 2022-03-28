@@ -648,5 +648,44 @@ namespace _1dataLayer
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_MostrarFotoAlumno_Result>("SP_MostrarFotoAlumno", id_alumnoParameter);
         }
+    
+        public virtual int Modificar_discapacidades(Nullable<int> iddiscapacidad, string discapacidad)
+        {
+            var iddiscapacidadParameter = iddiscapacidad.HasValue ?
+                new ObjectParameter("iddiscapacidad", iddiscapacidad) :
+                new ObjectParameter("iddiscapacidad", typeof(int));
+    
+            var discapacidadParameter = discapacidad != null ?
+                new ObjectParameter("discapacidad", discapacidad) :
+                new ObjectParameter("discapacidad", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Modificar_discapacidades", iddiscapacidadParameter, discapacidadParameter);
+        }
+    
+        public virtual int Modificar_enfermedades(Nullable<int> idenfermedad, string enfermedad)
+        {
+            var idenfermedadParameter = idenfermedad.HasValue ?
+                new ObjectParameter("idenfermedad", idenfermedad) :
+                new ObjectParameter("idenfermedad", typeof(int));
+    
+            var enfermedadParameter = enfermedad != null ?
+                new ObjectParameter("enfermedad", enfermedad) :
+                new ObjectParameter("enfermedad", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Modificar_enfermedades", idenfermedadParameter, enfermedadParameter);
+        }
+    
+        public virtual int Modificar_tratamiento(Nullable<int> idtratamiento, string tratamiento)
+        {
+            var idtratamientoParameter = idtratamiento.HasValue ?
+                new ObjectParameter("idtratamiento", idtratamiento) :
+                new ObjectParameter("idtratamiento", typeof(int));
+    
+            var tratamientoParameter = tratamiento != null ?
+                new ObjectParameter("tratamiento", tratamiento) :
+                new ObjectParameter("tratamiento", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Modificar_tratamiento", idtratamientoParameter, tratamientoParameter);
+        }
     }
 }

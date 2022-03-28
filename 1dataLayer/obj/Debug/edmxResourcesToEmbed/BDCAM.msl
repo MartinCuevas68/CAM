@@ -177,26 +177,6 @@
     <FunctionImportMapping FunctionImportName="sp_altadiscapacidades" FunctionName="BDCAMModel.Store.sp_altadiscapacidades" />
     <FunctionImportMapping FunctionImportName="sp_altaenfermedades" FunctionName="BDCAMModel.Store.sp_altaenfermedades" />
     <FunctionImportMapping FunctionImportName="sp_altatutor" FunctionName="BDCAMModel.Store.sp_altatutor" />
-    <FunctionImportMapping FunctionImportName="SP_FichaTecnicaAlumno" FunctionName="BDCAMModel.Store.SP_FichaTecnicaAlumno">
-      <ResultMapping>
-        <ComplexTypeMapping TypeName="BDCAMModel.SP_FichaTecnicaAlumno_Result">
-          <ScalarProperty Name="nombre" ColumnName="nombre" />
-          <ScalarProperty Name="apellido_materno" ColumnName="apellido_materno" />
-          <ScalarProperty Name="apellido_paterno" ColumnName="apellido_paterno" />
-          <ScalarProperty Name="fecha_nacimiento" ColumnName="fecha_nacimiento" />
-          <ScalarProperty Name="ciudad_nacimiento_alumno" ColumnName="ciudad_nacimiento_alumno" />
-          <ScalarProperty Name="colonia_alumno" ColumnName="colonia_alumno" />
-          <ScalarProperty Name="calle_alumno" ColumnName="calle_alumno" />
-          <ScalarProperty Name="telefono_personal_alumno" ColumnName="telefono_personal_alumno" />
-          <ScalarProperty Name="escuela_procedencia_alumno" ColumnName="escuela_procedencia_alumno" />
-          <ScalarProperty Name="edad_alumno" ColumnName="edad_alumno" />
-          <ScalarProperty Name="estado_nacimiento_alumno" ColumnName="estado_nacimiento_alumno" />
-          <ScalarProperty Name="CURP_alumno" ColumnName="CURP_alumno" />
-          <ScalarProperty Name="atendido_por" ColumnName="atendido_por" />
-          <ScalarProperty Name="ciclo_escolar" ColumnName="ciclo_escolar" />
-        </ComplexTypeMapping>
-      </ResultMapping>
-    </FunctionImportMapping>
     <FunctionImportMapping FunctionImportName="SP_FichaTecnicaAlumnoMedica" FunctionName="BDCAMModel.Store.SP_FichaTecnicaAlumnoMedica">
       <ResultMapping>
         <ComplexTypeMapping TypeName="BDCAMModel.SP_FichaTecnicaAlumnoMedica_Result">
@@ -350,12 +330,35 @@
     <EntitySetMapping Name="Tratamientos">
       <EntityTypeMapping TypeName="BDCAMModel.Tratamientos">
         <MappingFragment StoreEntitySet="Tratamientos">
+          <ScalarProperty Name="id_tratamiento" ColumnName="id_tratamiento" />
           <ScalarProperty Name="Tratamiento" ColumnName="Tratamiento" />
           <ScalarProperty Name="id_cartilla_medica" ColumnName="id_cartilla_medica" />
-          <ScalarProperty Name="id_tratamiento" ColumnName="id_tratamiento" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="SP_ModificacionAlumno" FunctionName="BDCAMModel.Store.SP_ModificacionAlumno" />
+    <FunctionImportMapping FunctionImportName="SP_FichaTecnicaAlumno" FunctionName="BDCAMModel.Store.SP_FichaTecnicaAlumno">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BDCAMModel.SP_FichaTecnicaAlumno_Result3">
+          <ScalarProperty Name="id_alumno" ColumnName="id_alumno" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="apellido_paterno" ColumnName="apellido_paterno" />
+          <ScalarProperty Name="apellido_materno" ColumnName="apellido_materno" />
+          <ScalarProperty Name="edad_alumno" ColumnName="edad_alumno" />
+          <ScalarProperty Name="fecha_nacimiento" ColumnName="fecha_nacimiento" />
+          <ScalarProperty Name="estado_nacimiento_alumno" ColumnName="estado_nacimiento_alumno" />
+          <ScalarProperty Name="ciudad_nacimiento_alumno" ColumnName="ciudad_nacimiento_alumno" />
+          <ScalarProperty Name="CURP_alumno" ColumnName="CURP_alumno" />
+          <ScalarProperty Name="telefono_personal_alumno" ColumnName="telefono_personal_alumno" />
+          <ScalarProperty Name="calle_alumno" ColumnName="calle_alumno" />
+          <ScalarProperty Name="colonia_alumno" ColumnName="colonia_alumno" />
+          <ScalarProperty Name="numero_alumno" ColumnName="numero_alumno" />
+          <ScalarProperty Name="ciclo_escolar" ColumnName="ciclo_escolar" />
+          <ScalarProperty Name="escuela_procedencia_alumno" ColumnName="escuela_procedencia_alumno" />
+          <ScalarProperty Name="atendido_por" ColumnName="atendido_por" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
     <FunctionImportMapping FunctionImportName="SP_ListaTelefonosTutor" FunctionName="BDCAMModel.Store.SP_ListaTelefonosTutor">
       <ResultMapping>
         <ComplexTypeMapping TypeName="BDCAMModel.SP_ListaTelefonosTutor_Result">
@@ -372,6 +375,18 @@
         </ComplexTypeMapping>
       </ResultMapping>
     </FunctionImportMapping>
-    <FunctionImportMapping FunctionImportName="SP_ModificacionAlumno" FunctionName="BDCAMModel.Store.SP_ModificacionAlumno" />
+    <FunctionImportMapping FunctionImportName="SP_ModificacionCartilla" FunctionName="BDCAMModel.Store.SP_ModificacionCartilla" />
+    <FunctionImportMapping FunctionImportName="SP_ModificacionTutor" FunctionName="BDCAMModel.Store.SP_ModificacionTutor" />
+    <FunctionImportMapping FunctionImportName="SP_MostrarFotoAlumno" FunctionName="BDCAMModel.Store.SP_MostrarFotoAlumno">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BDCAMModel.SP_MostrarFotoAlumno_Result">
+          <ScalarProperty Name="imagen_alumno" ColumnName="imagen_alumno" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Modificar_discapacidades" FunctionName="BDCAMModel.Store.Modificar_discapacidades" />
+    <FunctionImportMapping FunctionImportName="Modificar_enfermedades" FunctionName="BDCAMModel.Store.Modificar_enfermedades" />
+    <FunctionImportMapping FunctionImportName="Modificar_tratamiento" FunctionName="BDCAMModel.Store.Modificar_tratamiento" />
   </EntityContainerMapping>
 </Mapping>

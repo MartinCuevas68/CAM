@@ -522,6 +522,18 @@ warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a prima
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Function Name="Modificar_discapacidades" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="iddiscapacidad" Type="int" Mode="In" />
+    <Parameter Name="discapacidad" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="Modificar_enfermedades" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idenfermedad" Type="int" Mode="In" />
+    <Parameter Name="enfermedad" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="Modificar_tratamiento" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idtratamiento" Type="int" Mode="In" />
+    <Parameter Name="tratamiento" Type="varchar" Mode="In" />
+  </Function>
   <Function Name="sp_altaalergias" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="id" Type="int" Mode="In" />
     <Parameter Name="alergia" Type="varchar" Mode="In" />
@@ -629,6 +641,26 @@ warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a prima
     <Parameter Name="escuela" Type="varchar" Mode="In" />
     <Parameter Name="documentacion" Type="nvarchar(max)" Mode="In" />
     <Parameter Name="atendidopor" Type="varchar" Mode="In" />
+    <Parameter Name="tipo_ingreso" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_ModificacionCartilla" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idtabla" Type="int" Mode="In" />
+    <Parameter Name="Servicio" Type="varchar" Mode="In" />
+    <Parameter Name="Grupo_sanguineo" Type="varchar" Mode="In" />
+    <Parameter Name="telefono_contacto" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_ModificacionTutor" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idtutor" Type="int" Mode="In" />
+    <Parameter Name="nombre" Type="varchar" Mode="In" />
+    <Parameter Name="apellido_paterno" Type="varchar" Mode="In" />
+    <Parameter Name="apellido_materno" Type="varchar" Mode="In" />
+    <Parameter Name="calle" Type="varchar" Mode="In" />
+    <Parameter Name="colonia" Type="varchar" Mode="In" />
+    <Parameter Name="numero" Type="varchar" Mode="In" />
+    <Parameter Name="ocupacion" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_MostrarFotoAlumno" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id_alumno" Type="int" Mode="In" />
   </Function>
   <Function Name="sp_regresarid" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
   <Function Name="sp_regresaridcartilla" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
