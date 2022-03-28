@@ -511,6 +511,9 @@
     <Property Type="String" Name="CURP_alumno" Nullable="false" MaxLength="18" />
     <Property Type="String" Name="atendido_por" Nullable="false" MaxLength="30" />
     <Property Type="String" Name="ciclo_escolar" Nullable="false" MaxLength="30" />
+    <Property Type="Int32" Name="id_alumno" Nullable="false" />
+    <Property Type="String" Name="numero_alumno" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="tipo_ingreso" Nullable="true" MaxLength="40" />
   </ComplexType>
   <ComplexType Name="SP_FichaTecnicaAlumnoMedica_Result">
     <Property Type="String" Name="nombre" Nullable="false" MaxLength="30" />

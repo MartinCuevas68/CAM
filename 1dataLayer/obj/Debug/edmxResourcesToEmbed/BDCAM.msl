@@ -194,6 +194,9 @@
           <ScalarProperty Name="CURP_alumno" ColumnName="CURP_alumno" />
           <ScalarProperty Name="atendido_por" ColumnName="atendido_por" />
           <ScalarProperty Name="ciclo_escolar" ColumnName="ciclo_escolar" />
+          <ScalarProperty Name="id_alumno" ColumnName="id_alumno" />
+          <ScalarProperty Name="numero_alumno" ColumnName="numero_alumno" />
+          <ScalarProperty Name="tipo_ingreso" ColumnName="tipo_ingreso" />
         </ComplexTypeMapping>
       </ResultMapping>
     </FunctionImportMapping>
