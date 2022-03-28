@@ -505,7 +505,7 @@ namespace _1dataLayer
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_ListaTratamiento_Result>("SP_ListaTratamiento", id_alumnoParameter);
         }
     
-        public virtual int SP_ModificacionAlumno(Nullable<int> id_alumno, string cicloescolar, string nombre, string apellido_pat, string apellido_mat, Nullable<System.DateTime> fecha_nac, string edad_alumno, string curp, string estadonac, string ciudadnac, string colonia, string calle, string numero_alumno, string telefonoper, string escuela, string documentacion, string atendidopor)
+        public virtual int SP_ModificacionAlumno(Nullable<int> id_alumno, string cicloescolar, string nombre, string apellido_pat, string apellido_mat, Nullable<System.DateTime> fecha_nac, string edad_alumno, string curp, string estadonac, string ciudadnac, string colonia, string calle, string numero_alumno, string telefonoper, string escuela, string documentacion, string atendidopor, string tipo_ingreso)
         {
             var id_alumnoParameter = id_alumno.HasValue ?
                 new ObjectParameter("id_alumno", id_alumno) :
@@ -575,7 +575,126 @@ namespace _1dataLayer
                 new ObjectParameter("atendidopor", atendidopor) :
                 new ObjectParameter("atendidopor", typeof(string));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_ModificacionAlumno", id_alumnoParameter, cicloescolarParameter, nombreParameter, apellido_patParameter, apellido_matParameter, fecha_nacParameter, edad_alumnoParameter, curpParameter, estadonacParameter, ciudadnacParameter, coloniaParameter, calleParameter, numero_alumnoParameter, telefonoperParameter, escuelaParameter, documentacionParameter, atendidoporParameter);
+            var tipo_ingresoParameter = tipo_ingreso != null ?
+                new ObjectParameter("tipo_ingreso", tipo_ingreso) :
+                new ObjectParameter("tipo_ingreso", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_ModificacionAlumno", id_alumnoParameter, cicloescolarParameter, nombreParameter, apellido_patParameter, apellido_matParameter, fecha_nacParameter, edad_alumnoParameter, curpParameter, estadonacParameter, ciudadnacParameter, coloniaParameter, calleParameter, numero_alumnoParameter, telefonoperParameter, escuelaParameter, documentacionParameter, atendidoporParameter, tipo_ingresoParameter);
+        }
+    
+        public virtual int Modificar_discapacidades(Nullable<int> iddiscapacidad, string discapacidad)
+        {
+            var iddiscapacidadParameter = iddiscapacidad.HasValue ?
+                new ObjectParameter("iddiscapacidad", iddiscapacidad) :
+                new ObjectParameter("iddiscapacidad", typeof(int));
+    
+            var discapacidadParameter = discapacidad != null ?
+                new ObjectParameter("discapacidad", discapacidad) :
+                new ObjectParameter("discapacidad", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Modificar_discapacidades", iddiscapacidadParameter, discapacidadParameter);
+        }
+    
+        public virtual int Modificar_enfermedades(Nullable<int> idenfermedad, string enfermedad)
+        {
+            var idenfermedadParameter = idenfermedad.HasValue ?
+                new ObjectParameter("idenfermedad", idenfermedad) :
+                new ObjectParameter("idenfermedad", typeof(int));
+    
+            var enfermedadParameter = enfermedad != null ?
+                new ObjectParameter("enfermedad", enfermedad) :
+                new ObjectParameter("enfermedad", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Modificar_enfermedades", idenfermedadParameter, enfermedadParameter);
+        }
+    
+        public virtual int Modificar_tratamiento(Nullable<int> idtratamiento, string tratamiento)
+        {
+            var idtratamientoParameter = idtratamiento.HasValue ?
+                new ObjectParameter("idtratamiento", idtratamiento) :
+                new ObjectParameter("idtratamiento", typeof(int));
+    
+            var tratamientoParameter = tratamiento != null ?
+                new ObjectParameter("tratamiento", tratamiento) :
+                new ObjectParameter("tratamiento", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Modificar_tratamiento", idtratamientoParameter, tratamientoParameter);
+        }
+    
+        public virtual ObjectResult<SP_consulta_foto_alumno_Result> SP_consulta_foto_alumno(Nullable<int> id_alumno)
+        {
+            var id_alumnoParameter = id_alumno.HasValue ?
+                new ObjectParameter("id_alumno", id_alumno) :
+                new ObjectParameter("id_alumno", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_consulta_foto_alumno_Result>("SP_consulta_foto_alumno", id_alumnoParameter);
+        }
+    
+        public virtual int SP_ModificacionCartilla(Nullable<int> idtabla, string servicio, string grupo_sanguineo, string telefono_contacto)
+        {
+            var idtablaParameter = idtabla.HasValue ?
+                new ObjectParameter("idtabla", idtabla) :
+                new ObjectParameter("idtabla", typeof(int));
+    
+            var servicioParameter = servicio != null ?
+                new ObjectParameter("Servicio", servicio) :
+                new ObjectParameter("Servicio", typeof(string));
+    
+            var grupo_sanguineoParameter = grupo_sanguineo != null ?
+                new ObjectParameter("Grupo_sanguineo", grupo_sanguineo) :
+                new ObjectParameter("Grupo_sanguineo", typeof(string));
+    
+            var telefono_contactoParameter = telefono_contacto != null ?
+                new ObjectParameter("telefono_contacto", telefono_contacto) :
+                new ObjectParameter("telefono_contacto", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_ModificacionCartilla", idtablaParameter, servicioParameter, grupo_sanguineoParameter, telefono_contactoParameter);
+        }
+    
+        public virtual int SP_ModificacionTutor(Nullable<int> idtutor, string nombre, string apellido_paterno, string apellido_materno, string calle, string colonia, string numero, string ocupacion)
+        {
+            var idtutorParameter = idtutor.HasValue ?
+                new ObjectParameter("idtutor", idtutor) :
+                new ObjectParameter("idtutor", typeof(int));
+    
+            var nombreParameter = nombre != null ?
+                new ObjectParameter("nombre", nombre) :
+                new ObjectParameter("nombre", typeof(string));
+    
+            var apellido_paternoParameter = apellido_paterno != null ?
+                new ObjectParameter("apellido_paterno", apellido_paterno) :
+                new ObjectParameter("apellido_paterno", typeof(string));
+    
+            var apellido_maternoParameter = apellido_materno != null ?
+                new ObjectParameter("apellido_materno", apellido_materno) :
+                new ObjectParameter("apellido_materno", typeof(string));
+    
+            var calleParameter = calle != null ?
+                new ObjectParameter("calle", calle) :
+                new ObjectParameter("calle", typeof(string));
+    
+            var coloniaParameter = colonia != null ?
+                new ObjectParameter("colonia", colonia) :
+                new ObjectParameter("colonia", typeof(string));
+    
+            var numeroParameter = numero != null ?
+                new ObjectParameter("numero", numero) :
+                new ObjectParameter("numero", typeof(string));
+    
+            var ocupacionParameter = ocupacion != null ?
+                new ObjectParameter("ocupacion", ocupacion) :
+                new ObjectParameter("ocupacion", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_ModificacionTutor", idtutorParameter, nombreParameter, apellido_paternoParameter, apellido_maternoParameter, calleParameter, coloniaParameter, numeroParameter, ocupacionParameter);
+        }
+    
+        public virtual ObjectResult<SP_MostrarFotoAlumno_Result> SP_MostrarFotoAlumno(Nullable<int> id_alumno)
+        {
+            var id_alumnoParameter = id_alumno.HasValue ?
+                new ObjectParameter("id_alumno", id_alumno) :
+                new ObjectParameter("id_alumno", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_MostrarFotoAlumno_Result>("SP_MostrarFotoAlumno", id_alumnoParameter);
         }
     }
 }
