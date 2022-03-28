@@ -596,6 +596,9 @@ warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a prima
     <Parameter Name="calletrabajo" Type="varchar" Mode="In" />
     <Parameter Name="numerotrabajo" Type="varchar" Mode="In" />
   </Function>
+  <Function Name="SP_consulta_foto_alumno" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id_alumno" Type="int" Mode="In" />
+  </Function>
   <Function Name="SP_FichaTecnicaAlumno" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="id_alumno" Type="int" Mode="In" />
   </Function>

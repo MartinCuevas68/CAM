@@ -27,5 +27,8 @@ namespace _1dataLayer
         public string CURP_alumno { get; set; }
         public string atendido_por { get; set; }
         public string ciclo_escolar { get; set; }
+        public int id_alumno { get; set; }
+        public string numero_alumno { get; set; }
+        public string tipo_ingreso { get; set; }
     }
 }

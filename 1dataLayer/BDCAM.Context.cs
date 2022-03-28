@@ -308,6 +308,15 @@ namespace _1dataLayer
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("sp_dropdiagram", diagramnameParameter, owner_idParameter);
         }
     
+        public virtual ObjectResult<SP_FichaTecnicaAlumno_Result> SP_FichaTecnicaAlumno(Nullable<int> id_alumno)
+        {
+            var id_alumnoParameter = id_alumno.HasValue ?
+                new ObjectParameter("id_alumno", id_alumno) :
+                new ObjectParameter("id_alumno", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_FichaTecnicaAlumno_Result>("SP_FichaTecnicaAlumno", id_alumnoParameter);
+        }
+    
         public virtual ObjectResult<SP_FichaTecnicaAlumnoMedica_Result> SP_FichaTecnicaAlumnoMedica(Nullable<int> id_alumno)
         {
             var id_alumnoParameter = id_alumno.HasValue ?
@@ -478,6 +487,24 @@ namespace _1dataLayer
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_ListaAlumnos2_Result>("SP_ListaAlumnos2");
         }
     
+        public virtual ObjectResult<SP_ListaTelefonosTutor_Result> SP_ListaTelefonosTutor(Nullable<int> id_tutor)
+        {
+            var id_tutorParameter = id_tutor.HasValue ?
+                new ObjectParameter("id_tutor", id_tutor) :
+                new ObjectParameter("id_tutor", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_ListaTelefonosTutor_Result>("SP_ListaTelefonosTutor", id_tutorParameter);
+        }
+    
+        public virtual ObjectResult<SP_ListaTratamiento_Result> SP_ListaTratamiento(Nullable<int> id_alumno)
+        {
+            var id_alumnoParameter = id_alumno.HasValue ?
+                new ObjectParameter("id_alumno", id_alumno) :
+                new ObjectParameter("id_alumno", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_ListaTratamiento_Result>("SP_ListaTratamiento", id_alumnoParameter);
+        }
+    
         public virtual int SP_ModificacionAlumno(Nullable<int> id_alumno, string cicloescolar, string nombre, string apellido_pat, string apellido_mat, Nullable<System.DateTime> fecha_nac, string edad_alumno, string curp, string estadonac, string ciudadnac, string colonia, string calle, string numero_alumno, string telefonoper, string escuela, string documentacion, string atendidopor, string tipo_ingreso)
         {
             var id_alumnoParameter = id_alumno.HasValue ?
@@ -553,33 +580,6 @@ namespace _1dataLayer
                 new ObjectParameter("tipo_ingreso", typeof(string));
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_ModificacionAlumno", id_alumnoParameter, cicloescolarParameter, nombreParameter, apellido_patParameter, apellido_matParameter, fecha_nacParameter, edad_alumnoParameter, curpParameter, estadonacParameter, ciudadnacParameter, coloniaParameter, calleParameter, numero_alumnoParameter, telefonoperParameter, escuelaParameter, documentacionParameter, atendidoporParameter, tipo_ingresoParameter);
-        }
-    
-        public virtual ObjectResult<SP_FichaTecnicaAlumno_Result3> SP_FichaTecnicaAlumno(Nullable<int> id_alumno)
-        {
-            var id_alumnoParameter = id_alumno.HasValue ?
-                new ObjectParameter("id_alumno", id_alumno) :
-                new ObjectParameter("id_alumno", typeof(int));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_FichaTecnicaAlumno_Result3>("SP_FichaTecnicaAlumno", id_alumnoParameter);
-        }
-    
-        public virtual ObjectResult<SP_ListaTelefonosTutor_Result> SP_ListaTelefonosTutor(Nullable<int> id_tutor)
-        {
-            var id_tutorParameter = id_tutor.HasValue ?
-                new ObjectParameter("id_tutor", id_tutor) :
-                new ObjectParameter("id_tutor", typeof(int));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_ListaTelefonosTutor_Result>("SP_ListaTelefonosTutor", id_tutorParameter);
-        }
-    
-        public virtual ObjectResult<SP_ListaTratamiento_Result> SP_ListaTratamiento(Nullable<int> id_alumno)
-        {
-            var id_alumnoParameter = id_alumno.HasValue ?
-                new ObjectParameter("id_alumno", id_alumno) :
-                new ObjectParameter("id_alumno", typeof(int));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_ListaTratamiento_Result>("SP_ListaTratamiento", id_alumnoParameter);
         }
     
         public virtual int SP_ModificacionCartilla(Nullable<int> idtabla, string servicio, string grupo_sanguineo, string telefono_contacto)
@@ -686,6 +686,15 @@ namespace _1dataLayer
                 new ObjectParameter("tratamiento", typeof(string));
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Modificar_tratamiento", idtratamientoParameter, tratamientoParameter);
+        }
+    
+        public virtual ObjectResult<SP_consulta_foto_alumno_Result> SP_consulta_foto_alumno(Nullable<int> id_alumno)
+        {
+            var id_alumnoParameter = id_alumno.HasValue ?
+                new ObjectParameter("id_alumno", id_alumno) :
+                new ObjectParameter("id_alumno", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_consulta_foto_alumno_Result>("SP_consulta_foto_alumno", id_alumnoParameter);
         }
     }
 }

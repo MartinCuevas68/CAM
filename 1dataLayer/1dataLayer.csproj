@@ -101,7 +101,7 @@
     <Compile Include="rol_tiene_permiso.cs">
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>
-    <Compile Include="SP_FichaTecnicaAlumno1_Result.cs">
+    <Compile Include="SP_consulta_foto_alumno_Result.cs">
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>
     <Compile Include="SP_FichaTecnicaAlumnoMedica_Result.cs">
@@ -111,15 +111,6 @@
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>
     <Compile Include="SP_FichaTecnicaAlumno_Result.cs">
-      <DependentUpon>BDCAM.tt</DependentUpon>
-    </Compile>
-    <Compile Include="SP_FichaTecnicaAlumno_Result1.cs">
-      <DependentUpon>BDCAM.tt</DependentUpon>
-    </Compile>
-    <Compile Include="SP_FichaTecnicaAlumno_Result2.cs">
-      <DependentUpon>BDCAM.tt</DependentUpon>
-    </Compile>
-    <Compile Include="SP_FichaTecnicaAlumno_Result3.cs">
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>
     <Compile Include="sp_helpdiagramdefinition_Result.cs">

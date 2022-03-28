@@ -352,6 +352,9 @@
       <Parameter Name="diagramname" Mode="In" Type="String" />
       <Parameter Name="owner_id" Mode="In" Type="Int32" />
     </FunctionImport>
+    <FunctionImport Name="SP_FichaTecnicaAlumno" ReturnType="Collection(BDCAMModel.SP_FichaTecnicaAlumno_Result)">
+      <Parameter Name="id_alumno" Mode="In" Type="Int32" />
+    </FunctionImport>
     <FunctionImport Name="SP_FichaTecnicaAlumnoMedica" ReturnType="Collection(BDCAMModel.SP_FichaTecnicaAlumnoMedica_Result)">
       <Parameter Name="id_alumno" Mode="In" Type="Int32" />
     </FunctionImport>
@@ -432,6 +435,12 @@
       <End Role="tabla_medica" EntitySet="tabla_medica" />
       <End Role="Tratamientos" EntitySet="Tratamientos" />
     </AssociationSet>
+    <FunctionImport Name="SP_ListaTelefonosTutor" ReturnType="Collection(BDCAMModel.SP_ListaTelefonosTutor_Result)">
+      <Parameter Name="id_tutor" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_ListaTratamiento" ReturnType="Collection(BDCAMModel.SP_ListaTratamiento_Result)">
+      <Parameter Name="id_alumno" Mode="In" Type="Int32" />
+    </FunctionImport>
     <FunctionImport Name="SP_ModificacionAlumno">
       <Parameter Name="id_alumno" Mode="In" Type="Int32" />
       <Parameter Name="cicloescolar" Mode="In" Type="String" />
@@ -451,15 +460,6 @@
       <Parameter Name="documentacion" Mode="In" Type="String" />
       <Parameter Name="atendidopor" Mode="In" Type="String" />
       <Parameter Name="tipo_ingreso" Mode="In" Type="String" />
-    </FunctionImport>
-    <FunctionImport Name="SP_FichaTecnicaAlumno" ReturnType="Collection(BDCAMModel.SP_FichaTecnicaAlumno_Result3)">
-      <Parameter Name="id_alumno" Mode="In" Type="Int32" />
-    </FunctionImport>
-    <FunctionImport Name="SP_ListaTelefonosTutor" ReturnType="Collection(BDCAMModel.SP_ListaTelefonosTutor_Result)">
-      <Parameter Name="id_tutor" Mode="In" Type="Int32" />
-    </FunctionImport>
-    <FunctionImport Name="SP_ListaTratamiento" ReturnType="Collection(BDCAMModel.SP_ListaTratamiento_Result)">
-      <Parameter Name="id_alumno" Mode="In" Type="Int32" />
     </FunctionImport>
     <FunctionImport Name="SP_ModificacionCartilla">
       <Parameter Name="idtabla" Mode="In" Type="Int32" />
@@ -492,6 +492,9 @@
       <Parameter Name="idtratamiento" Mode="In" Type="Int32" />
       <Parameter Name="tratamiento" Mode="In" Type="String" />
     </FunctionImport>
+    <FunctionImport Name="SP_consulta_foto_alumno" ReturnType="Collection(BDCAMModel.SP_consulta_foto_alumno_Result)">
+      <Parameter Name="id_alumno" Mode="In" Type="Int32" />
+    </FunctionImport>
   </EntityContainer>
   <ComplexType Name="SP_FichaTecnicaAlumno_Result">
     <Property Type="String" Name="nombre" Nullable="false" MaxLength="30" />
@@ -508,6 +511,9 @@
     <Property Type="String" Name="CURP_alumno" Nullable="false" MaxLength="18" />
     <Property Type="String" Name="atendido_por" Nullable="false" MaxLength="30" />
     <Property Type="String" Name="ciclo_escolar" Nullable="false" MaxLength="30" />
+    <Property Type="Int32" Name="id_alumno" Nullable="false" />
+    <Property Type="String" Name="numero_alumno" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="tipo_ingreso" Nullable="true" MaxLength="40" />
   </ComplexType>
   <ComplexType Name="SP_FichaTecnicaAlumnoMedica_Result">
     <Property Type="String" Name="nombre" Nullable="false" MaxLength="30" />
@@ -685,14 +691,14 @@
   </ComplexType>
   <EntityType Name="Tratamientos">
     <Key>
+      <PropertyRef Name="id_tratamiento" />
       <PropertyRef Name="id_cartilla_medica" />
       <PropertyRef Name="Tratamiento" />
-      <PropertyRef Name="id_tratamiento" />
     </Key>
+    <Property Name="id_tratamiento" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="id_cartilla_medica" Type="Int32" Nullable="false" />
     <Property Name="Tratamiento" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
     <NavigationProperty Name="tabla_medica" Relationship="BDCAMModel.FK_Tabla_Medica_Tratamiento" FromRole="Tratamientos" ToRole="tabla_medica" />
-    <Property Name="id_tratamiento" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
   </EntityType>
   <Association Name="FK_Tabla_Medica_Tratamiento">
     <End Type="BDCAMModel.tabla_medica" Role="tabla_medica" Multiplicity="1" />
@@ -706,75 +712,6 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <ComplexType Name="SP_FichaTecnicaAlumno1_Result">
-    <Property Type="Int32" Name="id_alumno" Nullable="false" />
-    <Property Type="String" Name="nombre" Nullable="false" MaxLength="30" />
-    <Property Type="String" Name="apellido_paterno" Nullable="false" MaxLength="30" />
-    <Property Type="String" Name="apellido_materno" Nullable="false" MaxLength="30" />
-    <Property Type="String" Name="edad_alumno" Nullable="false" MaxLength="2" />
-    <Property Type="DateTime" Name="fecha_nacimiento" Nullable="false" />
-    <Property Type="String" Name="estado_nacimiento_alumno" Nullable="false" MaxLength="30" />
-    <Property Type="String" Name="ciudad_nacimiento_alumno" Nullable="false" MaxLength="30" />
-    <Property Type="String" Name="CURP_alumno" Nullable="false" MaxLength="18" />
-    <Property Type="String" Name="telefono_personal_alumno" Nullable="true" MaxLength="10" />
-    <Property Type="String" Name="calle_alumno" Nullable="false" MaxLength="30" />
-    <Property Type="String" Name="colonia_alumno" Nullable="false" MaxLength="30" />
-    <Property Type="String" Name="numero_alumno" Nullable="false" MaxLength="30" />
-    <Property Type="String" Name="escuela_procedencia_alumno" Nullable="false" MaxLength="30" />
-    <Property Type="String" Name="atendido_por" Nullable="false" MaxLength="30" />
-  </ComplexType>
-  <ComplexType Name="SP_FichaTecnicaAlumno_Result1">
-    <Property Type="Int32" Name="id_alumno" Nullable="false" />
-    <Property Type="String" Name="nombre" Nullable="false" MaxLength="30" />
-    <Property Type="String" Name="apellido_paterno" Nullable="false" MaxLength="30" />
-    <Property Type="String" Name="apellido_materno" Nullable="false" MaxLength="30" />
-    <Property Type="String" Name="edad_alumno" Nullable="false" MaxLength="2" />
-    <Property Type="DateTime" Name="fecha_nacimiento" Nullable="false" />
-    <Property Type="String" Name="estado_nacimiento_alumno" Nullable="false" MaxLength="30" />
-    <Property Type="String" Name="ciudad_nacimiento_alumno" Nullable="false" MaxLength="30" />
-    <Property Type="String" Name="CURP_alumno" Nullable="false" MaxLength="18" />
-    <Property Type="String" Name="telefono_personal_alumno" Nullable="true" MaxLength="10" />
-    <Property Type="String" Name="calle_alumno" Nullable="false" MaxLength="30" />
-    <Property Type="String" Name="colonia_alumno" Nullable="false" MaxLength="30" />
-    <Property Type="String" Name="numero_alumno" Nullable="false" MaxLength="30" />
-    <Property Type="String" Name="escuela_procedencia_alumno" Nullable="false" MaxLength="30" />
-    <Property Type="String" Name="atendido_por" Nullable="false" MaxLength="30" />
-  </ComplexType>
-  <ComplexType Name="SP_FichaTecnicaAlumno_Result2">
-    <Property Type="Int32" Name="id_alumno" Nullable="false" />
-    <Property Type="String" Name="nombre" Nullable="false" MaxLength="30" />
-    <Property Type="String" Name="apellido_paterno" Nullable="false" MaxLength="30" />
-    <Property Type="String" Name="apellido_materno" Nullable="false" MaxLength="30" />
-    <Property Type="String" Name="edad_alumno" Nullable="false" MaxLength="2" />
-    <Property Type="DateTime" Name="fecha_nacimiento" Nullable="false" />
-    <Property Type="String" Name="estado_nacimiento_alumno" Nullable="false" MaxLength="30" />
-    <Property Type="String" Name="ciudad_nacimiento_alumno" Nullable="false" MaxLength="30" />
-    <Property Type="String" Name="CURP_alumno" Nullable="false" MaxLength="18" />
-    <Property Type="String" Name="telefono_personal_alumno" Nullable="true" MaxLength="10" />
-    <Property Type="String" Name="calle_alumno" Nullable="false" MaxLength="30" />
-    <Property Type="String" Name="colonia_alumno" Nullable="false" MaxLength="30" />
-    <Property Type="String" Name="numero_alumno" Nullable="false" MaxLength="30" />
-    <Property Type="String" Name="escuela_procedencia_alumno" Nullable="false" MaxLength="30" />
-    <Property Type="String" Name="atendido_por" Nullable="false" MaxLength="30" />
-  </ComplexType>
-  <ComplexType Name="SP_FichaTecnicaAlumno_Result3">
-    <Property Type="Int32" Name="id_alumno" Nullable="false" />
-    <Property Type="String" Name="nombre" Nullable="false" MaxLength="30" />
-    <Property Type="String" Name="apellido_paterno" Nullable="false" MaxLength="30" />
-    <Property Type="String" Name="apellido_materno" Nullable="false" MaxLength="30" />
-    <Property Type="String" Name="edad_alumno" Nullable="false" MaxLength="2" />
-    <Property Type="DateTime" Name="fecha_nacimiento" Nullable="false" />
-    <Property Type="String" Name="estado_nacimiento_alumno" Nullable="false" MaxLength="30" />
-    <Property Type="String" Name="ciudad_nacimiento_alumno" Nullable="false" MaxLength="30" />
-    <Property Type="String" Name="CURP_alumno" Nullable="false" MaxLength="18" />
-    <Property Type="String" Name="telefono_personal_alumno" Nullable="true" MaxLength="10" />
-    <Property Type="String" Name="calle_alumno" Nullable="false" MaxLength="30" />
-    <Property Type="String" Name="colonia_alumno" Nullable="false" MaxLength="30" />
-    <Property Type="String" Name="numero_alumno" Nullable="false" MaxLength="30" />
-    <Property Type="String" Name="ciclo_escolar" Nullable="false" MaxLength="30" />
-    <Property Type="String" Name="escuela_procedencia_alumno" Nullable="false" MaxLength="30" />
-    <Property Type="String" Name="atendido_por" Nullable="false" MaxLength="30" />
-  </ComplexType>
   <ComplexType Name="SP_ListaTelefonosTutor_Result">
     <Property Type="Int32" Name="id_telefono" Nullable="false" />
     <Property Type="String" Name="telefono" Nullable="false" MaxLength="30" />
@@ -784,6 +721,11 @@
     <Property Type="String" Name="Tratamiento" Nullable="false" MaxLength="255" />
   </ComplexType>
   <ComplexType Name="SP_MostrarFotoAlumno_Result">
+    <Property Type="Binary" Name="imagen_alumno" Nullable="false" MaxLength="Max" />
+    <Property Type="String" Name="nombre" Nullable="false" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="SP_consulta_foto_alumno_Result">
+    <Property Type="Int32" Name="id_alumno" Nullable="false" />
     <Property Type="Binary" Name="imagen_alumno" Nullable="false" MaxLength="Max" />
     <Property Type="String" Name="nombre" Nullable="false" MaxLength="100" />
   </ComplexType>
