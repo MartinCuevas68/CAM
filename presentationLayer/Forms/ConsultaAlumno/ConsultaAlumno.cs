@@ -14,6 +14,7 @@ namespace presentationLayer
     {
 
         public DataGridViewCheckBoxColumn checkboxDgv = new DataGridViewCheckBoxColumn();
+        DataTable data = new DataTable();
 
 
         public ConsultaAlumno()
@@ -68,6 +69,7 @@ namespace presentationLayer
 
             //Sentencia que manda a llamar el método para cerrar Consultas usando la X
             this.FormClosed += new FormClosedEventHandler(cerrarForm);
+            data = businessLayer.BLConsultaAlumno.ConvertToDatatable((List<_1dataLayer.alumnoenfermedadDTO>)altaDataGridView.DataSource);
         }
 
         //Metodo para cerrar Consultas usando la X ya que antes se cerraba pero se seguía ejecutando.
@@ -226,6 +228,36 @@ namespace presentationLayer
             this.Hide();
             fichaTecnica ficha = new fichaTecnica();
             ficha.Show();
+        }
+
+
+        private void busquedaPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void busquedaTextBox_TextChanged_1(object sender, EventArgs e)
+        {
+            //AQUI ESTA EL PROBLEMA, CHECAR EL METODO
+            string searchValue = busquedaTextBox.Text.Trim().ToUpper();
+            try
+            {
+                var re = from row in data.AsEnumerable()
+                         where row[1].ToString().ToUpper().Contains(searchValue)
+                         select row;
+                if (re.Count() == 0)
+                {
+                    //MessageBox.Show("No row");
+                }
+                else
+                {
+                    altaDataGridView.DataSource = re.CopyToDataTable();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
