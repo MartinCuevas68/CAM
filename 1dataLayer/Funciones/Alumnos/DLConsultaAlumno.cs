@@ -111,7 +111,6 @@ namespace _1dataLayer
                 foreach (SP_FichaTecnicaAlumnoMedica_Result result in x)
                     FTMedica = result;
             }
-
             return FTMedica;
         }
         //regresa la lista de todas las alergias que 1 alumno tiene
