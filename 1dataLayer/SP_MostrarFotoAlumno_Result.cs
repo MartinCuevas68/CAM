@@ -11,15 +11,9 @@ namespace _1dataLayer
 {
     using System;
     
-    public partial class SP_FichaTecnicaAlumnoTutor_Result
+    public partial class SP_MostrarFotoAlumno_Result
     {
+        public byte[] imagen_alumno { get; set; }
         public string nombre { get; set; }
-        public string apellido_paterno { get; set; }
-        public string apellido_materno { get; set; }
-        public string calle_tutor { get; set; }
-        public string colonia_tutor { get; set; }
-        public string numero_tutor { get; set; }
-        public string ocupacion_tutor { get; set; }
-        public string telefono { get; set; }
     }
 }

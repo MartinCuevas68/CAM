@@ -11,15 +11,9 @@ namespace _1dataLayer
 {
     using System;
     
-    public partial class SP_FichaTecnicaAlumnoTutor_Result
+    public partial class SP_ListaTelefonosTutor_Result
     {
-        public string nombre { get; set; }
-        public string apellido_paterno { get; set; }
-        public string apellido_materno { get; set; }
-        public string calle_tutor { get; set; }
-        public string colonia_tutor { get; set; }
-        public string numero_tutor { get; set; }
-        public string ocupacion_tutor { get; set; }
+        public int id_telefono { get; set; }
         public string telefono { get; set; }
     }
 }
