@@ -184,7 +184,7 @@ namespace _1dataLayer
             return tratamientos;
         }
         //supuesto metodo para obtener la foto no se ha probado
-        public SP_MostrarFotoAlumno_Result Foto_alumno(int id)
+        /*public SP_MostrarFotoAlumno_Result Foto_alumno(int id)
         {
             SP_MostrarFotoAlumno_Result foto = new SP_MostrarFotoAlumno_Result();
             using (BDCAMEntities db = new BDCAMEntities())
@@ -198,10 +198,29 @@ namespace _1dataLayer
                 }
             }
             return foto;
+        }*/
+
+
+
+        public static foto_alumno ConsultaFoto(int id)
+        {
+            foto_alumno foto = new foto_alumno();
+            using (BDCAMEntities db = new BDCAMEntities())
+            {
+                ObjectResult<SP_consulta_foto_alumno_Result> x = db.SP_consulta_foto_alumno(id);
+                foreach (SP_consulta_foto_alumno_Result result in x)
+                {
+                    foto.id_alumno = id;
+                    foto.imagen_alumno = result.imagen_alumno;
+                    foto.nombre = result.nombre;
+                }
+
+            }
+            return foto;
         }
 
+
     }
-
-
 }
+
 
