@@ -876,7 +876,7 @@ namespace presentationLayer
             //Consultas consultas = new Consultas();
             //consultas.Show();
 
-
+            String ingreso = "NUEVO INGRESO";
             //Aquí se puede ingresar el método para realizar la alta de alumno...
             if (servMedico.Text.Equals(""))
             {
@@ -884,9 +884,9 @@ namespace presentationLayer
             }
             else
             {
-                if (grupoSanguineo.Text.Equals(""))
+                if (nuevoIngreso.Checked == false)
                 {
-                    MessageBox.Show("¡Ingresar el grupo sanguineo del alumno!", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    ingreso = "REINGRESO";
                 }
                 else
                 {
@@ -913,8 +913,8 @@ namespace presentationLayer
                                                              numeroCasa.Text,
                                                              telPersonal.Text,
                                                              escuelaP.Text,
-                                                             canalizado.Text
-                                                             );
+                                                             canalizado.Text,
+                                                             ingreso);
 
                         businessLayer.BLAltaAlumno.SetTutor2(nombreT.Text,
                                                              apellidoPT.Text,

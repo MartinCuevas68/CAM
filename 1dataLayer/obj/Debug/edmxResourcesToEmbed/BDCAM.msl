@@ -98,6 +98,7 @@
     <EntitySetMapping Name="alergias">
       <EntityTypeMapping TypeName="BDCAMModel.alergias">
         <MappingFragment StoreEntitySet="alergias">
+          <ScalarProperty Name="id_alergia" ColumnName="id_alergia" />
           <ScalarProperty Name="id_cartilla_medica" ColumnName="id_cartilla_medica" />
           <ScalarProperty Name="alergia" ColumnName="alergia" />
         </MappingFragment>

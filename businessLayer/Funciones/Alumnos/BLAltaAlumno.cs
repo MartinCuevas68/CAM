@@ -37,7 +37,7 @@ namespace businessLayer
         //Altas alumno
         public static void SetAlumno2(string cicloEsc, string nombreAl, string apellidoP, string apellidoM,
             DateTime fechaNa, string añosCum, string curp, string estado, string ciudad, string colonia,
-            string calle, string numeroCasa, string telPersonal, string escuelaP, string canalizado)
+            string calle, string numeroCasa, string telPersonal, string escuelaP, string canalizado,string tipo_ingreso)
         {
             //byte[] x = { (byte)204, 29, (byte)207, (byte)217 };
             //int y = 1;
@@ -61,6 +61,7 @@ namespace businessLayer
                 al.escuela_procedencia_alumno = escuelaP;
                 al.documentacion_alumno = "";
                 al.atendido_por = canalizado;
+                
                 
                 id_alumno = _1dataLayer.DLAltaAlumno.Altaalumno(al);
 

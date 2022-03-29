@@ -108,10 +108,12 @@
     <Key>
       <PropertyRef Name="id_cartilla_medica" />
       <PropertyRef Name="alergia" />
+      <PropertyRef Name="id_alergia" />
     </Key>
     <Property Name="id_cartilla_medica" Type="Int32" Nullable="false" />
     <Property Name="alergia" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
     <NavigationProperty Name="tabla_medica" Relationship="Self.FK_alergias_tabla_medica" FromRole="alergias" ToRole="tabla_medica" />
+    <Property Name="id_alergia" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
   </EntityType>
   <EntityType Name="discapacidades">
     <Key>
