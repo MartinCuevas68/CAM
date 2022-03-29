@@ -16,7 +16,7 @@ namespace presentationLayer
         public fichaTecnica()
         {
             InitializeComponent();
-
+            
             infoGeneralPanel.Visible = true;
             infoEscolarPanel.Visible = false;
             infoTutorPanel.Visible = false;
@@ -25,14 +25,31 @@ namespace presentationLayer
 
             PLfichatecnicaAlumno.centrarLabel(fichaLabel, logo, nombreAlLabel, nombreAl, matriculaLabel, matricula, edadLabel, edad, foto, infoGeneralPanel, infoEscolarPanel,infoTutorPanel, 
                                 infoMedicaPanel, infoGeneralButton, infoEscolarButton, infoTutorButton, infoMedicaButton, regresarMenuButton, editarInfoButton, cancelarEdiButton, terminarEdiButton);
-            PLfichatecnicaAlumno.infoAlumno(nombreAlLabel, nombreAl, matriculaLabel, matricula, edadLabel, edad);
-            PLfichatecnicaAlumno.infoGeneral(fechaNaLabel, fechaNa, lugarNaLabel, lugarNa, direccionLabel, calle, numeroCasa, colonia, curpLabel, curp, telPersonalLabel, telPersonal);
+            PLfichatecnicaAlumno.infoAlumno(nombreAlLabel, nombreAl,apellidoP,apellidoM, matriculaLabel, matricula, edadLabel, edad);
+            PLfichatecnicaAlumno.infoGeneral(fechaNaLabel, fechaNa, lugarNaLabel, ciudad, estado, direccionLabel, calle, numeroCasa, colonia, curpLabel, curp, telPersonalLabel, telPersonal);
             PLfichatecnicaAlumno.infoEscolar(tipoIngresoLabel, tipoIngreso, escuelaPLabel, escuelaP, canalizadoLabel, canalizado, cicloEscLabel, cicloEsc);
             PLfichatecnicaAlumno.infoTutor(nombreCTLabel, nombreT, apellidoPT, apellidoMT, direccionTLabel, calleT, numeroCasaT, coloniaT, ocupacionLabel, ocupacion, telefonosTLabel,
                                 telCasaTLabel, telMovilTLabel, telTrabajoTLabel, telCasaT, telMovilT, telTrabajoT);
             PLfichatecnicaAlumno.infoMedica(servMedicoLabel, servMedico, telefonoLabel, telefono, grupoSanguineoLabel, grupoSanguineo, discapacidadLabel, enfermedadesLabel, alergiasLabel,
                                             tratamientoLabel, discapacidades, enfermedades, alergias, tratamientos, discapacidadPanel, enfermedadesPanel, alergiasPanel, tratamientoPanel);
-                                            
+            
+            
+            String vista = "";
+            vista = "consulta informacion";
+
+            if (vista == "consulta informacion")
+            {
+                ocultarEditarInformacion();
+            }
+            else
+                mostrarEditarInformacion();
+
+
+            //Ejemplo de alumno
+            nombreAl.Text = "Marcos";apellidoP.Text = "Zavala";apellidoM.Text = "Martinez"; edad.Text = "21";
+            ciudad.Text = "Mexicali"; estado.Text = "Baja California Sur"; calle.Text = "Av. San Luis Potosi";
+            curp.Text = "SASAS5D4555555455";
+
         }
 
         private void infoGeneralButton_Click(object sender, EventArgs e)
@@ -109,20 +126,39 @@ namespace presentationLayer
             formConsulta.Show();
         }
 
+        private void mostrarEditarInformacion()
+        {
+            PLfichatecnicaAlumno.mostrarEditarInformacion(regresarMenuButton, editarInfoButton, cancelarEdiButton, terminarEdiButton, fotoBtn,
+                                nombreAl,apellidoP, apellidoM, edadLabel,edad, ciudad, estado, fechaNa, curp, telPersonal, calle, numeroCasa, colonia, 
+                                tipoIngreso, cicloEsc, escuelaP, canalizado, nombreT, apellidoPT, apellidoMT, calleT, numeroCasaT, coloniaT,
+                                ocupacion, telCasaT, telMovilT, telTrabajoT, servMedico, telefono, grupoSanguineo, discapacidadPanel, enfermedadesPanel,
+                                alergiasPanel, tratamientoPanel, infoMedicaTableLayoutPanel, tipoIngresoComboBox);
+        }
+
+        private void ocultarEditarInformacion()
+        {
+        PLfichatecnicaAlumno.ocultarEditarInformacion(regresarMenuButton, editarInfoButton, cancelarEdiButton, terminarEdiButton, fotoBtn,
+                                        nombreAl, apellidoP, apellidoM, edadLabel, edad, ciudad, estado, fechaNa, curp, telPersonal, calle, numeroCasa, colonia,
+                                        tipoIngreso, cicloEsc, escuelaP, canalizado, nombreT, apellidoPT, apellidoMT, calleT, numeroCasaT, coloniaT,
+                                        ocupacion, telCasaT, telMovilT, telTrabajoT, servMedico, telefono, grupoSanguineo, discapacidadPanel, enfermedadesPanel,
+                                        alergiasPanel, tratamientoPanel, infoMedicaTableLayoutPanel, tipoIngresoComboBox);
+        }
+
         private void editarInfoButton_Click(object sender, EventArgs e)
         {
-            PLfichatecnicaAlumno.mostrarEditarInformacion(regresarMenuButton, editarInfoButton, cancelarEdiButton, terminarEdiButton, fotoBtn);
+            mostrarEditarInformacion();
         }
 
         private void cancelarEdiButton_Click(object sender, EventArgs e)
         {
-
-            PLfichatecnicaAlumno.ocultarEditarInformacion(regresarMenuButton, editarInfoButton, cancelarEdiButton, terminarEdiButton, fotoBtn);
+            ocultarEditarInformacion();
         }
 
         private void terminarEdiButton_Click(object sender, EventArgs e)
         {
-            PLfichatecnicaAlumno.ocultarEditarInformacion(regresarMenuButton, editarInfoButton, cancelarEdiButton, terminarEdiButton, fotoBtn);
+            ocultarEditarInformacion();
         }
+
+
     }
 }

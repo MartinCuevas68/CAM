@@ -1,13 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\businessLayer",
-    "\\businessLayer\\Funciones",
-    "\\businessLayer\\Funciones\\Alumnos",
-    "\\presentationLayer",
-    "\\presentationLayer\\Forms",
-    "\\presentationLayer\\Forms\\AltaAlumno"
+    ""
   ],
-  "SelectedNode": "\\presentationLayer\\Forms\\AltaAlumno\\altaAlumno.cs",
+  "SelectedNode": "\\CAM.sln",
   "PreviewInSolutionExplorer": false
 }

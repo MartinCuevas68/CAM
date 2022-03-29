@@ -77,6 +77,7 @@ namespace presentationLayer
             //tamaño pantalla
 
             logo.Location = new Point(50, 20);
+            logo.Size = new Size(150, 148);
 
             //TITULO PRINCIPAL
             nomLabel.Location = new Point(620, 50);
