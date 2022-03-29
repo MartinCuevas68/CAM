@@ -38,11 +38,12 @@ namespace presentationLayer
                 calleDatoLabel, numeroDatoLabel, coloniaDatoLabel, infContactoLabel,telCasaTLabel, telCasaT, telCasaTPanel, telMovilTLabel, telMovilT, telMovilTPanel,
                 telTrabajoTLabel, telTrabajoT, telTrabajoTPanel, ocupacionLabel, ocupacion, ocupacionTPanel, direccionCheckBox);
 
-            infoMedica(servMedicoLabel, servMedico, servMedicoPanel, grupoSanguineoLabel, grupoSanguineo, grupoSanguineoPanel, grupoSanguineoComboBox, telefonoLabel,
+            PLAltaAlumno.infoMedica(servMedicoLabel, servMedico, servMedicoPanel, grupoSanguineoLabel, grupoSanguineo, grupoSanguineoPanel, grupoSanguineoComboBox, telefonoLabel,
                 telefono, telefonoPanel, discapacidadLabel, discapacidad, discapacidadPanel, enfermedadesLabel, enfermedades, enfermedadesPanel,
                 alergiasLabel, alergias, alergiasPanel, tratamientoLabel, tratamiento, tratamientoPanel, discapacidadesCombobox, enfermedadesCombobox, alergiasCombobox,
                 eliminarEnfermedadesButton, eliminarDiscapacidadesButton, eliminarAlergiasButton, eliminarTratamientosButton,
-                 agregarDiscapacidadesButton,agregarEnfermedadesButton, agregarAlergiasButton);
+                 agregarDiscapacidadesButton, agregarEnfermedadesButton, agregarAlergiasButton);
+
 
             informacionGeneralAlumno.Visible = true;
             informacionGeneralAlumno2.Visible = false;
@@ -252,65 +253,7 @@ namespace presentationLayer
         }
 
         //INFORMACION MEDICA
-        private void infoMedica(Label servMedicoL, TextBox servMed, Panel servMedP, Label grupoSanL, TextBox grupoSan, Panel grupoSanP,
-            ComboBox grupoSanCB, Label telL, TextBox tel, Panel telP, Label discapacidadL, RichTextBox discapacidad, Panel discapacidadP,
-            Label enfermedadL, RichTextBox enfermedad, Panel enfermedadP, Label alergiaL, RichTextBox alergia, Panel alergiaP,
-            Label tratamientoL, RichTextBox tratamiento, Panel tratamientoP, ComboBox discapacidadCB, ComboBox enfermedadCB, ComboBox alergiaCB,
-            Button eliTra, Button eliDisc, Button eliEnf, Button eliAle,  Button agregarDisc, Button agregarEnf, Button agregarAler)
-        {
-            servMedicoL.Location = new Point(50, 50);
-            servMedP.Location = new Point(210, 50);
-            servMedP.Size = new Size(300, 50);
-
-            grupoSanL.Location = new Point(530, 50);
-            grupoSanP.Location = new Point(700, 50);
-            grupoSanP.Size = new Size(110, 50);
-            grupoSanP.Visible = false;
-            grupoSanCB.Location = new Point(700, 50);
-            grupoSanCB.Size = new Size(110, 50);
-
-            telL.Location = new Point(830, 50);
-            telP.Location = new Point(1030, 50);
-            telP.Size = new Size(150, 45);
-
-            discapacidadL.Location = new Point(50, 150);
-            eliDisc.Location = new Point(290, 150);
-            discapacidad.Location = new Point(50, 170);
-            discapacidadCB.Location = new Point(50, 340);
-            discapacidadP.Location = new Point(50, 180);
-            discapacidadP.Size = new Size(270, 150);
-            discapacidadCB.Size = new Size(230, 60);
-            agregarDisc.Size = new Size(35, 35);
-            agregarDisc.Location = new Point(285, 335);
-            agregarDisc.Text = "";
-
-            enfermedadL.Location = new Point(340, 150);
-            eliEnf.Location = new Point(580, 150);
-            enfermedad.Location = new Point(340, 210);
-            enfermedadCB.Location = new Point(340, 340);
-            enfermedadP.Location = new Point(340, 180);
-            enfermedadP.Size = new Size(270, 150);
-            enfermedadCB.Size = new Size(230, 60);
-            agregarEnf.Size = new Size(35, 35);
-            agregarEnf.Location = new Point(575, 335);
-            agregarEnf.Text = "";
-            
-            alergiaL.Location = new Point(630, 150);
-            eliAle.Location = new Point(870, 150);
-            alergia.Location = new Point(630, 210);
-            alergiaCB.Location = new Point(630, 340);
-            alergiaP.Location = new Point(630, 180);
-            alergiaP.Size = new Size(270, 150);
-            alergiaCB.Size = new Size(230, 60);
-            agregarAler.Size = new Size(35, 35);
-            agregarAler.Location = new Point(865, 335);
-            agregarAler.Text = "";
-
-            tratamientoL.Location = new Point(920, 150);
-            eliTra.Location = new Point(1160, 150);
-            tratamientoP.Location = new Point(920, 180);
-            tratamientoP.Size = new Size(270, 150);
-        }
+        
 
         private void altaAlumno_Load(object sender, EventArgs e)
         {
