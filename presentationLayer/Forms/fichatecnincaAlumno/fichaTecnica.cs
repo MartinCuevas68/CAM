@@ -53,9 +53,9 @@ namespace presentationLayer
             alergiasrichTextBox.Visible = false;
             tratamientosLabel.Visible = false;
             tratamientosrichTextBox.Visible = false;
-            foto = _1dataLayer.DLConsultaAlumno.ConsultaFoto(id);
-            MessageBox.Show(foto.nombre);
-            fotopictureBox.Image = byteArrayToImage(foto.imagen_alumno.ToArray());
+            //foto = _1dataLayer.DLConsultaAlumno.ConsultaFoto(id);
+            //MessageBox.Show(foto.nombre);
+           // fotopictureBox.Image = byteArrayToImage(foto.imagen_alumno.ToArray());
         }
 
         public Image byteArrayToImage(byte[] byteArrayIn)
