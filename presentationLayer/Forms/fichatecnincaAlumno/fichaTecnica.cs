@@ -13,8 +13,9 @@ namespace presentationLayer
 {
     public partial class fichaTecnica : Form
     {
-        _1dataLayer.foto_alumno foto = new _1dataLayer.foto_alumno();
-        public fichaTecnica(int id)
+        static _1dataLayer.SP_FichaTecnicaAlumno_Result alumno = new _1dataLayer.SP_FichaTecnicaAlumno_Result();
+
+        public fichaTecnica(int id_alumno)
         {
             InitializeComponent();
             PLfichatecnicaAlumno.posicionLabel(logoPictureBox , fichaLabel, nombreLabel, nombretxtBox, matriculaLabel,
@@ -69,7 +70,13 @@ namespace presentationLayer
 
         }
 
-        private void informaciontutorButton_Click(object sender, EventArgs e)
+        //Metodo para cerrar Consultas usando la X ya que antes se cerraba pero se seguía ejecutando.
+        private void cerrarForm(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void infoGeneralButton_Click(object sender, EventArgs e)
         {
 
         }
@@ -113,6 +120,13 @@ namespace presentationLayer
             alergiasrichTextBox.Visible = true;
             tratamientosLabel.Visible = true;
             tratamientosrichTextBox.Visible = true;
+        }
+
+        private void regresarMenuButton_Click(object sender, EventArgs e)
+        {
+            ConsultaAlumno consultas = new ConsultaAlumno();
+            consultas.Show();
+            this.Hide();
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
