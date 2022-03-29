@@ -884,7 +884,7 @@ namespace presentationLayer
             }
             else
             {
-                if (grupoSanguineo.Text.Equals(""))
+                if (grupoSanguineoComboBox.Text.Equals(""))
                 {
                     MessageBox.Show("¡Ingresar el grupo sanguineo del alumno!", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }

@@ -20,9 +20,9 @@ namespace presentationLayer
         public ConsultaAlumno()
         {
             InitializeComponent();
-            PLConsultaAlumno.consultaBotonesAlumnos(agregarButton,modificarButton,eliminarButton);
-            consultaBotonesParaNavegar(cerrarSesionButton,imprimirFormatosButton,fichaTecnicaButton);
-            consultaBusquedaAlumnos(busquedaPanel,busquedaTextBox, buscarButton);
+            PLConsultaAlumno.consultaBotonesAlumnos(agregarButton, modificarButton, eliminarButton);
+            consultaBotonesParaNavegar(cerrarSesionButton, imprimirFormatosButton, fichaTecnicaButton);
+            consultaBusquedaAlumnos(busquedaPanel, busquedaTextBox, buscarButton);
             tituloAlumnos(consultaLabel);
         }
 
@@ -33,7 +33,7 @@ namespace presentationLayer
 
             altaDataGridView.AllowUserToOrderColumns = true;
             altaDataGridView.AllowUserToResizeColumns = true;
-            
+
             altaDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             altaDataGridView.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None;
             //altaDataGridView.Columns[1].Visible = true;
@@ -64,7 +64,7 @@ namespace presentationLayer
             checkboxDgv.FlatStyle = FlatStyle.Standard;
             altaDataGridView.Columns.Add(checkboxDgv);
 
-            altaDataGridView.Location = new Point(230,220);
+            altaDataGridView.Location = new Point(230, 220);
             altaDataGridView.Size = new Size(1070, 420);
 
             //Sentencia que manda a llamar el método para cerrar Consultas usando la X
@@ -103,8 +103,8 @@ namespace presentationLayer
                 consultas.Close();
 
                 modificacionesAlumno modificacionesAlumno = new modificacionesAlumno();
-                modificacionesAlumno.Show();             
-        
+                modificacionesAlumno.Show();
+
             }
             else
             {
@@ -163,7 +163,7 @@ namespace presentationLayer
 
         }
 
-      
+
         public void tituloAlumnos(Label titulo)
         {
             //tamaño pantalla
@@ -175,8 +175,8 @@ namespace presentationLayer
 
         public void consultaBusquedaAlumnos(Panel panelB, TextBox txBusqueda, Button buscar)
         {
-            panelB.Location = new Point(540,120);
-            
+            panelB.Location = new Point(540, 120);
+
             panelB.Size = new Size(400, 50);
             buscar.Size = new Size(30, 30);
             txBusqueda.Size = new Size(335, 45);
@@ -225,6 +225,7 @@ namespace presentationLayer
         {
             String id;
             int id2 = 0;
+
             foreach (DataGridViewRow row in this.altaDataGridView.Rows)
             {
                 if (Convert.ToBoolean(row.Cells[5].Value) == true)
@@ -232,14 +233,21 @@ namespace presentationLayer
                     id = Convert.ToString(row.Cells[0].Value);
                     id2 = int.Parse(id);
                     MessageBox.Show(id);
+                    ConsultaAlumno consultas = new ConsultaAlumno();
+                    consultas.Close();
+                    this.Hide();
+                    fichaTecnica ficha = new fichaTecnica(id2);
+                    ficha.Show();
                 }
             }
-            ConsultaAlumno consultas = new ConsultaAlumno();
-            consultas.Close();
-            this.Hide();
-            fichaTecnica ficha = new fichaTecnica(id2);
-            ficha.Show();
         }
+
+        //catch (Exception)
+        //{
+        //   MessageBox.Show("Selecciona un alumno usando marcando la casilla", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+        //}
+
 
 
         private void busquedaPanel_Paint(object sender, PaintEventArgs e)

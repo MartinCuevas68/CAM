@@ -16,7 +16,7 @@ namespace presentationLayer
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new altaAlumno());
+            Application.Run(new ConsultaAlumno());
 
             // esto es una prueba
 
