@@ -29,19 +29,19 @@ namespace presentationLayer
             PLfichatecnicaAlumno.infoEscolar(tipoIngresoLabel, tipoIngreso, escuelaPLabel, escuelaP, canalizadoLabel, canalizado, cicloEscLabel, cicloEsc);
 
             //Información del alumno
-            alumno = _1dataLayer.DLConsultaAlumno.FichaTenicaAlumno(id_alumno);
-            nombreAl.Text = alumno.nombre + " " + alumno.apellido_paterno + " " + alumno.apellido_materno;
-            edad.Text = alumno.edad_alumno;
-            matricula.Text = id_alumno.ToString();
-            fechaNa.Text = alumno.fecha_nacimiento.Day.ToString() + "/" + alumno.fecha_nacimiento.Month.ToString() + "/" + alumno.fecha_nacimiento.Year.ToString();
-            lugarNa.Text = alumno.ciudad_nacimiento_alumno + " " + alumno.estado_nacimiento_alumno;
-            curp.Text = alumno.CURP_alumno;
-            telPersonal.Text = alumno.telefono_personal_alumno;
-            direccion.Text = alumno.calle_alumno + " " + alumno.numero_alumno + " " + alumno.colonia_alumno;
-            tipoIngreso.Text = alumno.tipo_ingreso;
-            cicloEsc.Text = alumno.ciclo_escolar;
-            escuelaP.Text = alumno.escuela_procedencia_alumno;
-            canalizado.Text = alumno.atendido_por;
+            //alumno = _1dataLayer.DLConsultaAlumno.FichaTenicaAlumno(id_alumno);
+            //nombreAl.Text = alumno.nombre + " " + alumno.apellido_paterno + " " + alumno.apellido_materno;
+            //edad.Text = alumno.edad_alumno;
+            //matricula.Text = id_alumno.ToString();
+            //fechaNa.Text = alumno.fecha_nacimiento.Day.ToString() + "/" + alumno.fecha_nacimiento.Month.ToString() + "/" + alumno.fecha_nacimiento.Year.ToString();
+            //lugarNa.Text = alumno.ciudad_nacimiento_alumno + " " + alumno.estado_nacimiento_alumno;
+            //curp.Text = alumno.CURP_alumno;
+            //telPersonal.Text = alumno.telefono_personal_alumno;
+            //direccion.Text = alumno.calle_alumno + " " + alumno.numero_alumno + " " + alumno.colonia_alumno;
+            //tipoIngreso.Text = alumno.tipo_ingreso;
+            //cicloEsc.Text = alumno.ciclo_escolar;
+            //escuelaP.Text = alumno.escuela_procedencia_alumno;
+            //canalizado.Text = alumno.atendido_por;
             //foto.Image = alumno.
 
             //Información del tutor
@@ -96,6 +96,11 @@ namespace presentationLayer
             ConsultaAlumno consultas = new ConsultaAlumno();
             consultas.Show();
             this.Hide();
+        }
+
+        private void fichaTecnica_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
