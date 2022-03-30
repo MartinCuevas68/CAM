@@ -79,6 +79,7 @@ namespace presentationLayer
 
             matriculaLabel.Location = new Point(300, 220);
             matricula.Location = new Point(400, 220);
+            matricula.ReadOnly = true;
 
             edadLabel.Location = new Point(970, 220);
             edad.Location = new Point(1030, 220);
@@ -177,7 +178,7 @@ namespace presentationLayer
         public static void infoMedica(Label servicioL, TextBox servicioTB, Label telefonoL, TextBox telefonoTB, Label grupoL, 
                                     TextBox grupoTB,Label discapacidadesL, Label enfermedadesL, Label alergiasL, Label tratamientosL, 
                                     RichTextBox discapacidadesRTB, RichTextBox enfermedadesRTB, RichTextBox alergiasRTB, RichTextBox tratamientosRTB,
-                                    Panel discapacidadesP, Panel enfermedadesP, Panel alergiasP, Panel tratamientosP) {
+                                    Panel discapacidadesP, Panel enfermedadesP, Panel alergiasP, Panel tratamientosP, ComboBox grupoSanComboBox) {
 
             servicioL.Location = new Point(50, 40);
             telefonoL.Location = new Point(50, 90);
@@ -186,6 +187,8 @@ namespace presentationLayer
             servicioTB.Location = new Point(210, 40);
             telefonoTB.Location = new Point(270, 90);
             grupoTB.Location = new Point(1050, 40);
+            grupoSanComboBox.Location = new Point(1050, 40);
+            grupoSanComboBox.Size = new Size(60,40);
 
             discapacidadesL.Location = new Point(50, 145);
             enfermedadesL.Location = new Point(320, 145);
@@ -197,10 +200,19 @@ namespace presentationLayer
             alergiasRTB.Location = new Point(10, 10);
             tratamientosRTB.Location = new Point(10, 10);
 
+            discapacidadesRTB.Enabled = true;
+            enfermedadesRTB.Enabled = true;
+            alergiasRTB.Enabled = true;
+            tratamientosRTB.Enabled = true;
+
             discapacidadesRTB.Size = new Size(225, 128);
+            discapacidadesRTB.ReadOnly = true;
             enfermedadesRTB.Size = new Size(225, 128);
+            enfermedadesRTB.ReadOnly = true;
             alergiasRTB.Size = new Size(225, 128);
+            alergiasRTB.ReadOnly = true;
             tratamientosRTB.Size = new Size(225, 128);
+            tratamientosRTB.ReadOnly = true;
 
             discapacidadesP.Location = new Point(50, 165);
             discapacidadesP.Size = new Size(240, 150);
@@ -219,7 +231,7 @@ namespace presentationLayer
                                 TextBox escuela, TextBox canalizado, TextBox nomTutor, TextBox apePTutor, TextBox apeMTutor, TextBox calleTu,
                                 TextBox numCasaTu, TextBox colTu, TextBox ocupacion, TextBox telCasa, TextBox telMovil, TextBox telTrabajo,
                                 TextBox servicioM, TextBox telContacto, TextBox grupoS, Panel discapacidades, Panel enferemedades,
-                                Panel alergias, Panel tratamiento, TableLayoutPanel infoMedica, ComboBox tipoIngresoCB)
+                                Panel alergias, Panel tratamiento, TableLayoutPanel infoMedica, ComboBox tipoIngresoCB, ComboBox grupoSan)
         {
 
             //Mostrar 
@@ -234,23 +246,23 @@ namespace presentationLayer
             añadirFoto.Location = new Point(1175, 235);
 
             //Encabezado
-            nombreAl.Enabled = true; apellidoP.Enabled = true; apellidoM.Enabled = true; edad.Visible = false; edadL.Visible = false;
+            nombreAl.ReadOnly = false; apellidoP.ReadOnly = false; apellidoM.ReadOnly = false; edad.Visible = false; edadL.Visible = false;
 
             //Seccion 1
-            ciudadNac.Enabled = true; fechaNac.Enabled = true; curp.Enabled = true; telefonoP.Enabled = true;
-            calleAl.Enabled = true; numCasaAl.Enabled = true; coloniaAl.Enabled = true;
+            ciudadNac.ReadOnly = false; estadoNac.ReadOnly = false; fechaNac.Enabled = true; curp.ReadOnly = false; telefonoP.ReadOnly = false;
+            calleAl.ReadOnly = false; numCasaAl.ReadOnly = false; coloniaAl.ReadOnly = false;
 
             //Seccion 2
-            ingreso.Visible = true; ciclo.Enabled = true; escuela.Enabled = true; canalizado.Enabled = true;
+            ingreso.Visible = true; ciclo.ReadOnly = false; escuela.ReadOnly = false; canalizado.ReadOnly = false;
+            tipoIngresoCB.Visible = false;
 
             //Seccion 3
-            nomTutor.Enabled = true; apePTutor.Enabled = true; apePTutor.Enabled = true;
-            calleTu.Enabled = true; numCasaTu.Enabled = true; colTu.Enabled = true; ocupacion.Enabled = true;
-            telCasa.Enabled = true; telMovil.Enabled = true; telTrabajo.Enabled = true;
+            nomTutor.ReadOnly = false; apePTutor.ReadOnly = false; apeMTutor.ReadOnly = false;
+            calleTu.ReadOnly = false; numCasaTu.ReadOnly = false; colTu.ReadOnly = false; ocupacion.ReadOnly = false;
+            telCasa.ReadOnly = false; telMovil.ReadOnly = false; telTrabajo.ReadOnly = false;
 
             //Seccion 4
-            servicioM.Enabled = true; telContacto.Enabled = true; grupoS.Enabled = true;
-            discapacidades.Enabled = false; enferemedades.Enabled = false; alergias.Enabled = false; tratamiento.Enabled = false;
+            servicioM.ReadOnly = false; telContacto.ReadOnly = false; grupoS.Visible = false; grupoSan.Visible = true; ;
             discapacidades.Visible = false; enferemedades.Visible = false; alergias.Visible = false; tratamiento.Visible = false;
 
             infoMedica.Enabled = true;
@@ -258,7 +270,7 @@ namespace presentationLayer
             infoMedica.Size = new Size(1000, 150);
             infoMedica.Visible = true;
 
-            tipoIngresoCB.Size = new Size(280, 30);
+            tipoIngresoCB.Size = new Size(280, 40);
             tipoIngresoCB.Location = new Point(210, 40);
             tipoIngresoCB.Visible = true;
 
@@ -270,7 +282,7 @@ namespace presentationLayer
                                             TextBox  escuela,TextBox  canalizado, TextBox  nomTutor, TextBox  apePTutor, TextBox  apeMTutor,TextBox  calleTu,
                                             TextBox  numCasaTu,TextBox  colTu, TextBox  ocupacion, TextBox telCasa,TextBox telMovil, TextBox  telTrabajo,                                                     
                                             TextBox  servicioM, TextBox  telContacto, TextBox  grupoS,Panel discapacidades, Panel enferemedades, 
-                                            Panel alergias, Panel tratamiento, TableLayoutPanel infoMedica, ComboBox tipoIngresoCB)
+                                            Panel alergias, Panel tratamiento, TableLayoutPanel infoMedica, ComboBox tipoIngresoCB, ComboBox grupoSan)
         {
             regresarMenu.Visible = true;
             editarInfo.Visible = true;
@@ -279,23 +291,31 @@ namespace presentationLayer
             añadirFoto.Visible = false;
 
             //Encabezado
-            nombreAl.Enabled = false; apellidoP.Enabled = false; apellidoM.Enabled = false; edad.Visible = true; edadL.Visible = true;
-            
+            nombreAl.Enabled = true; apellidoP.Enabled = true; apellidoM.Enabled = true; edad.Visible  = true; edadL.Visible = true;
+            nombreAl.ReadOnly = true; apellidoP.ReadOnly = true; apellidoM.ReadOnly = true; edad.ReadOnly = true;
+
             //Seccion 1
-            ciudadNac.Enabled = false; fechaNac.Enabled = false; curp.Enabled = false; telefonoP.Enabled = false;
-            calleAl.Enabled = false; numCasaAl.Enabled = false; coloniaAl.Enabled = false;
+            ciudadNac.Enabled = true; fechaNac.Enabled = false; curp.Enabled = true; telefonoP.Enabled = true;
+            ciudadNac.ReadOnly = true; curp.ReadOnly = true; telefonoP.ReadOnly = true;
+            estadoNac.Enabled = true; estadoNac.ReadOnly = true;
+            calleAl.Enabled = true; numCasaAl.Enabled = true; coloniaAl.Enabled = true;
+            calleAl.ReadOnly = true; numCasaAl.ReadOnly = true; coloniaAl.ReadOnly = true;
 
             //Seccion 2
-            ingreso.Visible = true; ciclo.Enabled = false; escuela.Enabled = false; canalizado.Enabled = false;
+            ingreso.Enabled = true; ciclo.Enabled = true; escuela.Enabled = true; canalizado.Enabled = true;
+            ingreso.ReadOnly = true; ciclo.ReadOnly = true; escuela.ReadOnly = true; canalizado.ReadOnly = true;
 
             //Seccion 3
-            nomTutor.Enabled = false; apePTutor.Enabled = false; apePTutor.Enabled = false;
-            calleTu.Enabled = false; numCasaTu.Enabled = false; colTu.Enabled = false; ocupacion.Enabled = false;
-            telCasa.Enabled = false; telMovil.Enabled = false; telTrabajo.Enabled = false;
+            nomTutor.Enabled = true; apePTutor.Enabled = true; apeMTutor.Enabled = true;
+            nomTutor.ReadOnly = true; apePTutor.ReadOnly = true; apeMTutor.ReadOnly = true;
+            calleTu.Enabled = true; numCasaTu.Enabled = true; colTu.Enabled = true; ocupacion.Enabled = true;
+            calleTu.ReadOnly = true; numCasaTu.ReadOnly = true; colTu.ReadOnly = true; ocupacion.ReadOnly = true;
+            telCasa.Enabled = true; telMovil.Enabled = true; telTrabajo.Enabled = true;
+            telCasa.ReadOnly = true; telMovil.ReadOnly = true; telTrabajo.ReadOnly = true;
 
             //Seccion 4
-            servicioM.Enabled = false; telContacto.Enabled = false; grupoS.Enabled = false;
-            discapacidades.Enabled = true; enferemedades.Enabled = true; alergias.Enabled = true; tratamiento.Enabled = true;
+            servicioM.Enabled = true; telContacto.Enabled = true; grupoS.Enabled = true; grupoS.Visible = true;
+            servicioM.ReadOnly = true; telContacto.ReadOnly = true; grupoS.ReadOnly = true; grupoSan.Visible = false;
             discapacidades.Visible = true; enferemedades.Visible = true; alergias.Visible = true; tratamiento.Visible = true;
 
             infoMedica.Enabled = false;

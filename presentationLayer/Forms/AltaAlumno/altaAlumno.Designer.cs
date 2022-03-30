@@ -591,7 +591,7 @@ namespace presentationLayer
             // 
             this.label2.AutoSize = true;
             this.label2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label2.Location = new System.Drawing.Point(32731, 20766);
+            this.label2.Location = new System.Drawing.Point(32730, 20766);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(0, 17);
             this.label2.TabIndex = 112;
@@ -685,7 +685,7 @@ namespace presentationLayer
             this.informacionGeneralAlumno.Location = new System.Drawing.Point(13, 387);
             this.informacionGeneralAlumno.Margin = new System.Windows.Forms.Padding(0);
             this.informacionGeneralAlumno.Name = "informacionGeneralAlumno";
-            this.informacionGeneralAlumno.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.informacionGeneralAlumno.Padding = new System.Windows.Forms.Padding(4);
             this.informacionGeneralAlumno.Size = new System.Drawing.Size(1227, 317);
             this.informacionGeneralAlumno.TabIndex = 131;
             this.informacionGeneralAlumno.TabStop = false;
@@ -702,7 +702,7 @@ namespace presentationLayer
             this.fotoBtn.ForeColor = System.Drawing.Color.Black;
             this.fotoBtn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.fotoBtn.Location = new System.Drawing.Point(1092, 308);
-            this.fotoBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.fotoBtn.Margin = new System.Windows.Forms.Padding(4);
             this.fotoBtn.Name = "fotoBtn";
             this.fotoBtn.Padding = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.fotoBtn.Size = new System.Drawing.Size(244, 55);
@@ -716,7 +716,7 @@ namespace presentationLayer
             this.fotoAl.BackColor = System.Drawing.Color.White;
             this.fotoAl.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.fotoAl.Location = new System.Drawing.Point(1103, 85);
-            this.fotoAl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.fotoAl.Margin = new System.Windows.Forms.Padding(4);
             this.fotoAl.Name = "fotoAl";
             this.fotoAl.Size = new System.Drawing.Size(244, 218);
             this.fotoAl.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -988,9 +988,9 @@ namespace presentationLayer
             this.informacionGeneralAlumno2.Controls.Add(this.canalizadoLabel);
             this.informacionGeneralAlumno2.Font = new System.Drawing.Font("Gadugi", 14.25F);
             this.informacionGeneralAlumno2.Location = new System.Drawing.Point(1258, 89);
-            this.informacionGeneralAlumno2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.informacionGeneralAlumno2.Margin = new System.Windows.Forms.Padding(4);
             this.informacionGeneralAlumno2.Name = "informacionGeneralAlumno2";
-            this.informacionGeneralAlumno2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.informacionGeneralAlumno2.Padding = new System.Windows.Forms.Padding(4);
             this.informacionGeneralAlumno2.Size = new System.Drawing.Size(665, 410);
             this.informacionGeneralAlumno2.TabIndex = 132;
             this.informacionGeneralAlumno2.TabStop = false;
@@ -1292,7 +1292,7 @@ namespace presentationLayer
             this.tratamiento.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tratamiento.Font = new System.Drawing.Font("Gadugi", 14.25F);
             this.tratamiento.Location = new System.Drawing.Point(20, 10);
-            this.tratamiento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tratamiento.Margin = new System.Windows.Forms.Padding(4);
             this.tratamiento.Name = "tratamiento";
             this.tratamiento.Size = new System.Drawing.Size(305, 165);
             this.tratamiento.TabIndex = 147;
@@ -1405,7 +1405,7 @@ namespace presentationLayer
             this.alergiasCombobox.Font = new System.Drawing.Font("Gadugi", 14.25F);
             this.alergiasCombobox.FormattingEnabled = true;
             this.alergiasCombobox.Location = new System.Drawing.Point(253, 108);
-            this.alergiasCombobox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.alergiasCombobox.Margin = new System.Windows.Forms.Padding(4);
             this.alergiasCombobox.Name = "alergiasCombobox";
             this.alergiasCombobox.Size = new System.Drawing.Size(249, 36);
             this.alergiasCombobox.TabIndex = 145;
@@ -1419,7 +1419,7 @@ namespace presentationLayer
             "SORDERA",
             "MUDEZ"});
             this.discapacidadesCombobox.Location = new System.Drawing.Point(640, 219);
-            this.discapacidadesCombobox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.discapacidadesCombobox.Margin = new System.Windows.Forms.Padding(4);
             this.discapacidadesCombobox.Name = "discapacidadesCombobox";
             this.discapacidadesCombobox.Size = new System.Drawing.Size(249, 36);
             this.discapacidadesCombobox.TabIndex = 144;
@@ -1433,7 +1433,7 @@ namespace presentationLayer
             "DIABETES",
             "NEUMONIA"});
             this.enfermedadesCombobox.Location = new System.Drawing.Point(443, 89);
-            this.enfermedadesCombobox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.enfermedadesCombobox.Margin = new System.Windows.Forms.Padding(4);
             this.enfermedadesCombobox.Name = "enfermedadesCombobox";
             this.enfermedadesCombobox.Size = new System.Drawing.Size(249, 36);
             this.enfermedadesCombobox.TabIndex = 143;
@@ -1873,7 +1873,7 @@ namespace presentationLayer
             this.logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.logo.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.logo.Location = new System.Drawing.Point(13, -25);
-            this.logo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.logo.Margin = new System.Windows.Forms.Padding(4);
             this.logo.Name = "logo";
             this.logo.Size = new System.Drawing.Size(149, 114);
             this.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

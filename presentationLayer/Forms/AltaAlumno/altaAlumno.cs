@@ -1703,8 +1703,6 @@ namespace presentationLayer
                 MessageBox.Show("Error al agregar una alergia!");
             }
         }
-
-   
     }
 }
 
