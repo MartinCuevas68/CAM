@@ -45,8 +45,17 @@ namespace _1dataLayer
         {
            using (BDCAMEntities db = new BDCAMEntities())
             {
-                Console.WriteLine("Desde data layer: ", tutor.nombre + " ID: "+id);
+                Console.WriteLine("Desde data layer: ", tutor.nombre);
+                Console.WriteLine("ID: " + id);
                 db.SP_ModificacionTutor(id, tutor.nombre, tutor.apellido_paterno, tutor.apellido_materno, tutor.calle_tutor, tutor.colonia_tutor, tutor.numero_tutor, tutor.ocupacion_tutor);
+            }
+        }
+
+        public static void modificacionmedica(int id,SP_FichaTecnicaAlumnoMedica_Result medica)
+        {
+            using (BDCAMEntities db = new BDCAMEntities())
+            {
+                db.SP_ModificacionCartilla(id, medica.servicio_medico, medica.grupo_sanguineo, medica.telefono_contacto);
             }
         }
 

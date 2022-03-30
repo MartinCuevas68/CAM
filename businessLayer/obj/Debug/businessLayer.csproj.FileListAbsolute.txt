@@ -216,4 +216,3 @@ C:\Users\ferna\source\repos\CAM\businessLayer\bin\Debug\EntityFramework.SqlServe
 C:\Users\ferna\source\repos\CAM\businessLayer\bin\Debug\businessLayer.exe.config
 C:\Users\ferna\source\repos\CAM\businessLayer\bin\Debug\businessLayer.exe
 C:\Users\ferna\source\repos\CAM\businessLayer\obj\Debug\businessLayer.exe
-C:\Users\ferna\source\repos\CAM\businessLayer\obj\Debug\businessLayer.csproj.CopyComplete
