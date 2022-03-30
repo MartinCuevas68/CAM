@@ -98,6 +98,7 @@
     <EntitySetMapping Name="alergias">
       <EntityTypeMapping TypeName="BDCAMModel.alergias">
         <MappingFragment StoreEntitySet="alergias">
+          <ScalarProperty Name="id_alergia" ColumnName="id_alergia" />
           <ScalarProperty Name="id_cartilla_medica" ColumnName="id_cartilla_medica" />
           <ScalarProperty Name="alergia" ColumnName="alergia" />
         </MappingFragment>
@@ -224,7 +225,7 @@
           <ScalarProperty Name="colonia_tutor" ColumnName="colonia_tutor" />
           <ScalarProperty Name="numero_tutor" ColumnName="numero_tutor" />
           <ScalarProperty Name="ocupacion_tutor" ColumnName="ocupacion_tutor" />
-          <ScalarProperty Name="telefono" ColumnName="telefono" />
+          <ScalarProperty Name="id_tutor" ColumnName="id_tutor" />
         </ComplexTypeMapping>
       </ResultMapping>
     </FunctionImportMapping>
@@ -398,5 +399,6 @@
         </ComplexTypeMapping>
       </ResultMapping>
     </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_Modificar_alergias" FunctionName="BDCAMModel.Store.SP_Modificar_alergias" />
   </EntityContainerMapping>
 </Mapping>
