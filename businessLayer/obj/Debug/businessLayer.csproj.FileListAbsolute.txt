@@ -9,11 +9,9 @@ C:\Users\arias\Source\Repos\CAM\businessLayer\obj\Debug\businessLayer.csprojAsse
 C:\Users\arias\Source\Repos\CAM\businessLayer\obj\Debug\businessLayer.csproj.CoreCompileInputs.cache
 C:\Users\arias\Source\Repos\CAM\businessLayer\obj\Debug\businessLayer.dll
 C:\Users\arias\Source\Repos\CAM\businessLayer\obj\Debug\businessLayer.pdb
-C:\Users\ferna\Source\Repos\CAM\businessLayer\bin\Debug\businessLayer.dll
 C:\Users\ferna\Source\Repos\CAM\businessLayer\bin\Debug\businessLayer.pdb
 C:\Users\ferna\Source\Repos\CAM\businessLayer\obj\Debug\businessLayer.csproj.AssemblyReference.cache
 C:\Users\ferna\Source\Repos\CAM\businessLayer\obj\Debug\businessLayer.csproj.CoreCompileInputs.cache
-C:\Users\ferna\Source\Repos\CAM\businessLayer\obj\Debug\businessLayer.dll
 C:\Users\ferna\Source\Repos\CAM\businessLayer\obj\Debug\businessLayer.pdb
 C:\Users\Juan2\Source\Repos\CAM\businessLayer\bin\Debug\businessLayer.dll.config
 C:\Users\Juan2\Source\Repos\CAM\businessLayer\bin\Debug\businessLayer.dll
@@ -208,7 +206,6 @@ D:\Canela\Documents\GitHub\CAM\businessLayer\obj\Debug\businessLayer.csproj.Core
 D:\Canela\Documents\GitHub\CAM\businessLayer\obj\Debug\businessLayer.csproj.CopyComplete
 D:\Canela\Documents\GitHub\CAM\businessLayer\obj\Debug\businessLayer.dll
 D:\Canela\Documents\GitHub\CAM\businessLayer\obj\Debug\businessLayer.pdb
-C:\Users\ferna\source\repos\CAM\businessLayer\bin\Debug\businessLayer.dll.config
 C:\Users\ferna\source\repos\CAM\businessLayer\bin\Debug\1dataLayer.dll
 C:\Users\ferna\source\repos\CAM\businessLayer\bin\Debug\EntityFramework.dll
 C:\Users\ferna\source\repos\CAM\businessLayer\bin\Debug\EntityFramework.SqlServer.dll
@@ -216,4 +213,6 @@ C:\Users\ferna\source\repos\CAM\businessLayer\bin\Debug\1dataLayer.pdb
 C:\Users\ferna\source\repos\CAM\businessLayer\bin\Debug\1dataLayer.dll.config
 C:\Users\ferna\source\repos\CAM\businessLayer\bin\Debug\EntityFramework.xml
 C:\Users\ferna\source\repos\CAM\businessLayer\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\ferna\source\repos\CAM\businessLayer\obj\Debug\businessLayer.csproj.CopyComplete
+C:\Users\ferna\source\repos\CAM\businessLayer\bin\Debug\businessLayer.exe.config
+C:\Users\ferna\source\repos\CAM\businessLayer\bin\Debug\businessLayer.exe
+C:\Users\ferna\source\repos\CAM\businessLayer\obj\Debug\businessLayer.exe

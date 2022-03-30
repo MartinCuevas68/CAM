@@ -108,10 +108,12 @@
     <Key>
       <PropertyRef Name="id_cartilla_medica" />
       <PropertyRef Name="alergia" />
+      <PropertyRef Name="id_alergia" />
     </Key>
     <Property Name="id_cartilla_medica" Type="Int32" Nullable="false" />
     <Property Name="alergia" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
     <NavigationProperty Name="tabla_medica" Relationship="Self.FK_alergias_tabla_medica" FromRole="alergias" ToRole="tabla_medica" />
+    <Property Name="id_alergia" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
   </EntityType>
   <EntityType Name="discapacidades">
     <Key>
@@ -495,6 +497,10 @@
     <FunctionImport Name="SP_MostrarFotoAlumno" ReturnType="Collection(BDCAMModel.SP_MostrarFotoAlumno_Result)">
       <Parameter Name="id_alumno" Mode="In" Type="Int32" />
     </FunctionImport>
+    <FunctionImport Name="SP_Modificar_alergias">
+      <Parameter Name="id_alergia" Mode="In" Type="Int32" />
+      <Parameter Name="alergia" Mode="In" Type="String" />
+    </FunctionImport>
   </EntityContainer>
   <ComplexType Name="SP_FichaTecnicaAlumno_Result">
     <Property Type="String" Name="nombre" Nullable="false" MaxLength="30" />
@@ -516,14 +522,10 @@
     <Property Type="String" Name="tipo_ingreso" Nullable="true" MaxLength="40" />
   </ComplexType>
   <ComplexType Name="SP_FichaTecnicaAlumnoMedica_Result">
-    <Property Type="String" Name="nombre" Nullable="false" MaxLength="30" />
     <Property Type="String" Name="grupo_sanguineo" Nullable="false" MaxLength="30" />
     <Property Type="String" Name="telefono_contacto" Nullable="false" MaxLength="30" />
-    <Property Type="String" Name="estatura" Nullable="true" MaxLength="50" />
-    <Property Type="String" Name="genero" Nullable="true" MaxLength="50" />
-    <Property Type="String" Name="peso" Nullable="true" MaxLength="50" />
-    <Property Type="String" Name="color_textura_piel" Nullable="true" MaxLength="50" />
     <Property Type="String" Name="servicio_medico" Nullable="false" MaxLength="30" />
+    <Property Type="Int32" Name="id_cartilla_medica" Nullable="false" />
   </ComplexType>
   <ComplexType Name="SP_FichaTecnicaAlumnoTutor_Result">
     <Property Type="String" Name="nombre" Nullable="false" MaxLength="30" />
@@ -533,7 +535,7 @@
     <Property Type="String" Name="colonia_tutor" Nullable="false" MaxLength="30" />
     <Property Type="String" Name="numero_tutor" Nullable="false" MaxLength="30" />
     <Property Type="String" Name="ocupacion_tutor" Nullable="true" MaxLength="30" />
-    <Property Type="String" Name="telefono" Nullable="false" MaxLength="30" />
+    <Property Type="Int32" Name="id_tutor" Nullable="false" />
   </ComplexType>
   <ComplexType Name="sp_helpdiagramdefinition_Result">
     <Property Type="Int32" Name="version" Nullable="true" />

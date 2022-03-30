@@ -8,35 +8,43 @@ namespace businessLayer
 {
     class BLModificacionAlumno
     {
-        /*//Modificacion
-        public static void ModColaborador(int id, string nombre, string telefono, string ncuenta)
+        public static void Main(String[] args)
         {
+            /*Console.WriteLine("Ingrese la enfermedad nueva: ");
+            String enf = Console.ReadLine();
+            Console.WriteLine("Ingrese la discapacidad nueva: ");
+            String disc = Console.ReadLine();
+            Console.WriteLine("Ingrese la alergia nueva: ");
+            String alerg = Console.ReadLine();
+            Console.WriteLine("Ingrese el id del tutor: ");
+            int id = int.Parse(Console.ReadLine());*/
+            Console.WriteLine("Ingrese el id de la cartilla: ");
+            int id_cartilla = int.Parse(Console.ReadLine());
 
-            try
-            {
+            //_1dataLayer.SP_FichaTecnicaAlumnoTutor_Result tutor = new _1dataLayer.SP_FichaTecnicaAlumnoTutor_Result();
+            _1dataLayer.SP_FichaTecnicaAlumnoMedica_Result medica = new _1dataLayer.SP_FichaTecnicaAlumnoMedica_Result();
 
-                using (Data_Tutuli.DB_tutuliEntities db = new Data_Tutuli.DB_tutuliEntities())
-                {
+            //tutor = _1dataLayer.DLConsultaAlumno.FichaTecnicaTutor(id);
+            medica = _1dataLayer.DLConsultaAlumno.FichaTecnicaMedica(id_cartilla);
 
+            /*Console.WriteLine("Tutor escogido: " + tutor.nombre+" "+tutor.apellido_paterno + " ID: "+tutor.id_tutor);
+            Console.WriteLine("Ingrese el nombre del tutor nuevo: ");
 
-                    var query = db.colaboradores.SingleOrDefault(b => b.numeroColaborador == id);
-                    if (query != null)
-                    {
-                        query.nombre = nombre;
-                        query.telefono = telefono;
-                        query.cuenta = ncuenta;
+            string nombre = Console.ReadLine();
+            tutor.nombre = nombre;*/
+            Console.WriteLine("Servicio medico: " + medica.servicio_medico);
+            Console.WriteLine("Grupo Sanguineo: " + medica.grupo_sanguineo);
+            Console.ReadKey();
+            Console.WriteLine("Ingrese el tipo de sangre: ");
+            medica.grupo_sanguineo = Console.ReadLine();
+            
+            Console.ReadKey();
+            //_1dataLayer.DLModificacionAlumno.ModificacionTutor(tutor.id_tutor, tutor);
+            _1dataLayer.DLModificacionAlumno.modificacionmedica(medica.id_cartilla_medica,medica);
+            //tutor = _1dataLayer.DLConsultaAlumno.FichaTecnicaTutor(id);
+            medica = _1dataLayer.DLConsultaAlumno.FichaTecnicaMedica(id_cartilla);
 
-                        db.SaveChanges();
-                    }
-
-                }
-            }
-            catch (Exception)
-            {
-                throw;
-            }
-
-
-        }*/
+            //Console.WriteLine("Nombre del tutor nuevo: " + tutor.nombre);
+        }
     }
 }
