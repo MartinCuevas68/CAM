@@ -63,7 +63,7 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Contenedor.cs" />
-    <Compile Include="Forms\AltaAlumno\PLAltaAlumno.cs.cs" />
+    <Compile Include="Forms\AltaAlumno\PLAltaAlumno.cs" />
     <Compile Include="Forms\ConsultaAlumno\ConsultaAlumno.cs">
       <SubType>Form</SubType>
     </Compile>
