@@ -611,7 +611,7 @@ namespace presentationLayer
                         }
                         else
                         {
-                            if (tipoIngresoGroupBox.Controls == null)
+                            if (!nuevoIngreso.Checked && !reingreso.Checked)
                             {
                                 MessageBox.Show("¡No se ha seleccionado si el alumno es nuevo Ingreso o reingreso", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                             }

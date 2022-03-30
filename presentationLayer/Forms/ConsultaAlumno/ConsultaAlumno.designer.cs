@@ -135,7 +135,7 @@ namespace presentationLayer
             this.busquedaPanel.Name = "busquedaPanel";
             this.busquedaPanel.Size = new System.Drawing.Size(413, 60);
             this.busquedaPanel.TabIndex = 144;
-            this.busquedaPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.busquedaPanel_Paint);
+            //this.busquedaPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.busquedaPanel_Paint);
             // 
             // busquedaTextBox
             // 
@@ -146,7 +146,7 @@ namespace presentationLayer
             this.busquedaTextBox.Name = "busquedaTextBox";
             this.busquedaTextBox.Size = new System.Drawing.Size(225, 22);
             this.busquedaTextBox.TabIndex = 12;
-            this.busquedaTextBox.TextChanged += new System.EventHandler(this.busquedaTextBox_TextChanged_1);
+            //this.busquedaTextBox.TextChanged += new System.EventHandler(this.busquedaTextBox_TextChanged_1);
             // 
             // buscarButton
             // 
