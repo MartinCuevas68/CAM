@@ -13,10 +13,19 @@ namespace presentationLayer
     public partial class fichaTecnica : Form
     {
 
-        public fichaTecnica()
+        public fichaTecnica(int id_alumno)
         {
             InitializeComponent();
-            
+
+            _1dataLayer.SP_FichaTecnicaAlumno_Result alumno = new _1dataLayer.SP_FichaTecnicaAlumno_Result();
+            _1dataLayer.SP_FichaTecnicaAlumnoTutor_Result tutor = new _1dataLayer.SP_FichaTecnicaAlumnoTutor_Result();
+            _1dataLayer.SP_ListaTelefonosTutor_Result telefonos = new _1dataLayer.SP_ListaTelefonosTutor_Result();
+            _1dataLayer.SP_FichaTecnicaAlumnoMedica_Result infoMed = new _1dataLayer.SP_FichaTecnicaAlumnoMedica_Result();
+            _1dataLayer.SP_ListaDiscapacidad_Result discapacidad = new _1dataLayer.SP_ListaDiscapacidad_Result();
+            _1dataLayer.SP_ListaEnfermedad_Result enfermedad = new _1dataLayer.SP_ListaEnfermedad_Result();
+            _1dataLayer.SP_ListaAlergia_Result alergia = new _1dataLayer.SP_ListaAlergia_Result();
+            _1dataLayer.SP_ListaTratamiento_Result tratamiento = new _1dataLayer.SP_ListaTratamiento_Result();
+
             infoGeneralPanel.Visible = true;
             infoEscolarPanel.Visible = false;
             infoTutorPanel.Visible = false;
@@ -43,14 +52,75 @@ namespace presentationLayer
 
 
             //Ejemplo de alumno
-            nombreAl.Text = "Marcos";apellidoP.Text = "Zavala";apellidoM.Text = "Martinez"; edad.Text = "21";
+            /*nombreAl.Text = "Marcos";apellidoP.Text = "Zavala";apellidoM.Text = "Martinez"; edad.Text = "21";
             ciudad.Text = "Mexicali"; estado.Text = "Baja California Sur"; calle.Text = "Av. San Luis Potosi"; numeroCasa.Text = "2563"; colonia.Text = "Azteca";
             curp.Text = "SASAS5D4555555455"; telPersonal.Text = "6867895266"; matricula.Text = "10236"; tipoIngreso.Text = "Nuevo Ingreso";
             escuelaP.Text = "Esc. Estatal Prof. Emilio Miramontes Ordoñez"; canalizado.Text = "";cicloEsc.Text = "";
             nombreT.Text = "Armando"; apellidoMT.Text = "Alvarez"; apellidoPT.Text = "Apodaca"; ocupacion.Text = "Supervisor de Area de Calidad"; telCasaT.Text = "6867894102";
             telMovilT.Text = "6861236985";telTrabajoT.Text = "6867418523";servMedico.Text = "IMSS"; telefono.Text = "6867894561";grupoSanguineo.Text = "B+";
-            canalizado.Text = "Lic. Maria Leticia Sepulveda Ruiz"; calleT.Text = "Av. Rio San Lorenzo"; numeroCasaT.Text = "2365"; coloniaT.Text = "Independencia";
+            canalizado.Text = "Lic. Maria Leticia Sepulveda Ruiz"; calleT.Text = "Av. Rio San Lorenzo"; numeroCasaT.Text = "2365"; coloniaT.Text = "Independencia";*/
 
+            //Información del alumno
+            alumno = _1dataLayer.DLConsultaAlumno.FichaTenicaAlumno(id_alumno);
+            nombreAl.Text = alumno.nombre;
+            apellidoP.Text = alumno.apellido_paterno;
+            apellidoM.Text = alumno.apellido_materno;
+            edad.Text = alumno.edad_alumno;
+            matricula.Text = alumno.id_alumno.ToString();
+            fechaNa.Text = alumno.fecha_nacimiento.Day.ToString() + "/" + alumno.fecha_nacimiento.Month.ToString() + "/" + alumno.fecha_nacimiento.Year.ToString();
+            ciudad.Text = alumno.ciudad_nacimiento_alumno;
+            estado.Text = alumno.estado_nacimiento_alumno;
+            curp.Text = alumno.CURP_alumno;
+            telPersonal.Text = alumno.telefono_personal_alumno;
+            calle.Text = alumno.calle_alumno;
+            numeroCasa.Text = alumno.numero_alumno;
+            colonia.Text = alumno.colonia_alumno;
+            //foto.Image = alumno.
+
+            //Informacion escolar del alumno
+            tipoIngreso.Text = alumno.tipo_ingreso;
+            escuelaP.Text = alumno.escuela_procedencia_alumno;
+            canalizado.Text = alumno.atendido_por;
+            cicloEsc.Text = alumno.ciclo_escolar;
+
+            //Información del tutor
+            tutor = _1dataLayer.DLConsultaAlumno.FichaTecnicaTutor(id_alumno);
+            nombreT.Text = tutor.nombre;
+            apellidoPT.Text = tutor.apellido_paterno;
+            apellidoMT.Text = tutor.apellido_materno;
+            calleT.Text = tutor.calle_tutor;
+            numeroCasaT.Text = tutor.numero_tutor;
+            coloniaT.Text = tutor.colonia_tutor;
+            ocupacion.Text = tutor.ocupacion_tutor;
+            /*telCasaT.Text = telefonos.telefono;
+            telMovilT.Text = telefonos.telefono;
+            telTrabajoT.Text = telefonos.telefono;*/
+
+            //Información médica
+            infoMed = _1dataLayer.DLConsultaAlumno.FichaTecnicaMedica(id_alumno);
+            servMedico.Text = infoMed.servicio_medico;
+            telefono.Text = infoMed.telefono_contacto;
+            grupoSanguineo.Text = infoMed.grupo_sanguineo;
+
+            //Discapacidades
+            discapacidades.Text = discapacidad.discapacidades;
+
+            //Enfermedades
+            enfermedades.Text = enfermedad.enfermedad;
+
+            //Alergias
+            alergias.Text = alergia.alergia;
+
+            //Tratamientos
+            tratamientos.Text = tratamiento.Tratamiento;
+
+            //Sentencia que manda a llamar el método para cerrar Consultas usando la X
+            //this.FormClosed += new FormClosedEventHandler(cerrarForm);
+
+
+            //foto = _1dataLayer.DLConsultaAlumno.ConsultaFoto(id);
+            //MessageBox.Show(foto.nombre);
+            // fotopictureBox.Image = byteArrayToImage(foto.imagen_alumno.ToArray());
 
         }
 
