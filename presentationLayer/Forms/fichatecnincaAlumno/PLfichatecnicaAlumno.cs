@@ -11,136 +11,317 @@ namespace presentationLayer
     public class PLfichatecnicaAlumno
     {
 
-        public static void posicionLabel(PictureBox logo, Label fichaLabel, Label nombreLabel, TextBox nombretxtBox, Label matriculaLabel,
-           TextBox matriculatxtBox, Label edadLabel, TextBox edadtxtBox, Label tipoingresoLabel, TextBox tipoingresotxtBox,
-           PictureBox fotopictureBox, Panel informaciontutorPanel, Button generalButton, Button escolarButton, Button TutorButton, Button medicaButton,
-           Label nombretutorLabel, TextBox nombretutortextBox, Label direccionLabel, TextBox direcciontextBox, Label ocupacionLabel,
-           TextBox ocupaciontextBox, Label telefonosLabel, Label casaLabel, Label movilLabel, Label trabajoLabel, TextBox casatextBox,
-           TextBox moviltextBox, TextBox trabajotextBox, Button regresarButton, Button editarButton, Button subirfotoButton,
-           Label servicioLabel, Label telefonoLabel, Label grupoLabel, TextBox serviciotextBox, TextBox telefonotextBox,
-           TextBox grupotextBox, Label discapacidadesLabel, Label enfermedadesLabel, Label alergiasLabel, Label tratamientosLabel,
-           RichTextBox discapacidadesrichTextBox, RichTextBox enfermedadesrichTextBox, RichTextBox alergiasrichTextBox, RichTextBox tratamientosrichTextBox
-            )
-            //, Label info, Label nombre, Label nombreq, Label edad, Label edadq,
-            //                            Label fecha, Label fechaq, Label lugar, Label lugarq, Label curp, Label curpq, 
-            //                            Label direccion, Label direccionq, Label telefono, Label telefonoq, Label escuela, Label escuelaq,
-            //                            Label canalizado, Label canalizadoq, Label ciclo, Label cicloq, Label ingreso, Label ingresoq)
+        public static void centrarLabel(Label fichaLabel, PictureBox logo, Label nombreAlLabel, TextBox nombreAl, Label matriculaLabel, TextBox matricula,
+            Label edadLabel, TextBox edad, PictureBox foto, Panel infoGeneralPanel, Panel infoEscolarPanel, Panel infoTutorPanel, Panel infoMedicaPanel, Button infoGeneral, Button infoEscolar, Button infoTutor, Button infoMedica,
+            Button regresarMenuButton, Button editarInfoButton, Button cancelarEdicion, Button terminarEdicion)
         {
-           // int centro = (fichaTecnica.ActiveForm.Width / 2) - ficha.Width;
-           // int pos = fichaTecnica.ActiveForm.Width / 5;
 
-            //seccion 3
-            fichaLabel.Location = new Point(565, 11);
+            logo.Location = new Point(50, 20);
+            logo.Size = new Size(150, 148);
 
-            logo.Location = new Point(25, 25);
-            matriculaLabel.Location = new Point(205, 161);
-            matriculatxtBox.Location = new Point(312, 164);
+            //TITULO PRINCIPAL
+            fichaLabel.Location = new Point(530, 50);
+
+            //Foto
+            foto.Size = new Size(160, 180);
+            foto.Location = new Point(1175, 50);
+
+            //Botones
+            infoGeneral.Size = new Size(285, 50);
+            infoGeneral.Location = new Point(200, 300);
+
+            infoEscolar.Size = new Size(285, 50);
+            infoEscolar.Location = new Point(485, 300);
+
+            infoTutor.Size = new Size(285, 50);
+            infoTutor.Location = new Point(770, 300);
+
+            infoMedica.Size = new Size(285, 50);
+            infoMedica.Location = new Point(1055, 300);
+
+            //Paneles
+            infoGeneralPanel.Size = new Size(1140, 330);
+            infoGeneralPanel.Location = new Point(200, 350);
+
+            infoEscolarPanel.Size = new Size(1140, 330);
+            infoEscolarPanel.Location = new Point(200, 350);
+
+            infoTutorPanel.Size = new Size(1140, 330);
+            infoTutorPanel.Location = new Point(200, 350);
+
+            infoMedicaPanel.Size = new Size(1140, 330);
+            infoMedicaPanel.Location = new Point(200, 350);
+
+            //Botones
+            regresarMenuButton.Location = new Point(200, 700);
+            editarInfoButton.Location = new Point(1090, 700);
+            cancelarEdicion.Location = new Point(200, 700);
+            terminarEdicion.Location = new Point(1090, 700);
+
+            regresarMenuButton.Size = new Size(300,55);
+            editarInfoButton.Size = new Size(250,55);
+            cancelarEdicion.Size = new Size(250, 55);
+            terminarEdicion.Size = new Size(250, 55);
+        }
+
+        public static void infoAlumno(Label nombreAlLabel, TextBox nombreAl, TextBox apellidoP, TextBox apellidoM, Label matriculaLabel, TextBox matricula, Label edadLabel, TextBox edad)
+        {
+            nombreAl.Size = new Size(220, 40);
+            apellidoP.Size = new Size(220, 40);
+            apellidoM.Size = new Size(220, 40);
+            matricula.Size = new Size(100, 40);
+            edad.Size = new Size(50, 40);
+
+            nombreAlLabel.Location = new Point(300, 150);
+            nombreAl.Location = new Point(400, 150);
+            apellidoP.Location = new Point(630, 150);
+            apellidoM.Location = new Point(860, 150);
+
+            matriculaLabel.Location = new Point(300, 220);
+            matricula.Location = new Point(400, 220);
+            matricula.ReadOnly = true;
+
+            edadLabel.Location = new Point(970, 220);
+            edad.Location = new Point(1030, 220);
+        }
+
+        public static void infoGeneral(Label fechaNaLabel, DateTimePicker fechaNa, Label lugarNaLabel, TextBox ciudad, TextBox estado,
+            Label direccionLabel, TextBox calle, TextBox numero, TextBox colonia, Label curpLabel, TextBox curp, Label telPersonalLabel, TextBox telPersonal)
+        {
+            fechaNa.Size = new Size(220, 40);
+            //fechaNa.Enabled = false;
+            ciudad.Size = new Size(250, 40);
+            estado.Size = new Size(250, 40);
+            calle.Size = new Size(300, 40);
+            numero.Size = new Size(100, 40);
+            colonia.Size = new Size(300, 30);
+            curp.Size = new Size(230, 40);
+            telPersonal.Size = new Size(120, 30);
+            //
+            fechaNaLabel.Location = new Point(50,40);
+            fechaNa.Location = new Point(250,40);
+
+            lugarNaLabel.Location = new Point(50,120);
+            ciudad.Location = new Point(250,120);
+            estado.Location = new Point(510, 120);
+
+            direccionLabel.Location = new Point(50, 210);
+            calle.Location = new Point(150, 210);
+            numero.Location = new Point(460, 210);
+            colonia.Location = new Point(570, 210);
+
+            //
+            curpLabel.Location = new Point(790, 40);
+            curp.Location = new Point(860, 40);
+
+            telPersonalLabel.Location = new Point(790, 120);
+            telPersonal.Location = new Point(970, 120);
+
+        }
+
+        public static void infoEscolar(Label tipoIngresoLabel, TextBox tipoIngreso, Label escuelaPLabel, TextBox escuelaP, Label canalizadoLabel, TextBox canalizado,
+            Label cicloEscLabel, TextBox cicloEsc)
+        {
+            tipoIngreso.Size = new Size(280, 30);
+            escuelaP.Size = new Size(350, 30);
+            canalizado.Size = new Size(420, 30);
+            cicloEsc.Size = new Size(80, 30);
+
+            tipoIngresoLabel.Location = new Point(50, 40);
+            tipoIngreso.Location = new Point(210, 40);
+
+            escuelaPLabel.Location = new Point(50, 120);
+            escuelaP.Location = new Point(280, 120);
+
+            canalizadoLabel.Location = new Point(50, 210);
+            canalizado.Location = new Point(210, 210);
+
+            cicloEscLabel.Location = new Point(860, 40);
+            cicloEsc.Location = new Point(990, 40);
+        }
+
+        public static void infoTutor(Label nombreL, TextBox nombre, TextBox apellidoP, TextBox apellidoM, Label direccionL, TextBox calle, TextBox numero,
+                                    TextBox colonia, Label ocupacionL, TextBox ocupacion, Label telefonos , Label casaL, Label movilL, Label trabajoL, 
+                                    TextBox casa, TextBox movil, TextBox trabajo) {
             
+            nombre.Size = new Size(220, 40);
+            apellidoP.Size = new Size(220, 40);
+            apellidoM.Size = new Size(220, 40);
 
-            nombreLabel.Location = new Point(204, 100);
-            nombretxtBox.Location = new Point(301, 105);
+            nombreL.Location = new Point(50, 40);
+            nombre.Location = new Point(150, 40);
+            apellidoP.Location = new Point(380, 40);
+            apellidoM.Location = new Point(610, 40);
 
-            edadLabel.Location = new Point(703, 101);
-            edadtxtBox.Location = new Point(769, 101);
+            calle.Size = new Size(300, 40);
+            numero.Size = new Size(100, 40);
+            colonia.Size = new Size(300, 30);
+            
+            direccionL.Location = new Point(50, 120);
+            calle.Location = new Point(150, 120);
+            numero.Location = new Point(460, 120);
+            colonia.Location = new Point(570, 120);
 
-            tipoingresoLabel.Location = new Point(704, 167);
-            tipoingresotxtBox.Location = new Point(865, 167);
+            ocupacion.Size = new Size(400,40);
+            ocupacionL.Location = new Point(50, 210);
+            ocupacion.Location = new Point(160, 210);
 
-            fotopictureBox.Location = new Point(1186, 24);
-            subirfotoButton.Location = new Point(1186, 157);
-
-            informaciontutorPanel.Size = new Size(972, 366);
-            informaciontutorPanel.Location = new Point(209, 323);
-
-            generalButton.Location = new Point(209, 292);
-            escolarButton.Location = new Point(418, 292);
-            TutorButton.Location = new Point(613, 292);
-            medicaButton.Location = new Point(793, 292);
-
-            nombretutorLabel.Location = new Point(132, 79);
-            nombretutortextBox.Location = new Point(227, 79);
-
-            direccionLabel.Location = new Point(132, 133);
-            direcciontextBox.Location = new Point(237, 133);
-
-            ocupacionLabel.Location = new Point(132, 186);
-            ocupaciontextBox.Location = new Point(249, 186);
-
-            telefonosLabel.Location = new Point(742, 36);
-            casaLabel.Location = new Point(678, 79);
-            movilLabel.Location = new Point(678, 133);
-            trabajoLabel.Location = new Point(678, 186);
-            casatextBox.Location = new Point(739, 79);
-            moviltextBox.Location = new Point(750, 133);
-            trabajotextBox.Location = new Point(767, 186);
-
-            regresarButton.Location = new Point(209, 683);
-            editarButton.Location = new Point(937, 683);
-
-            //seccion 4
-
-            servicioLabel.Location = new Point(132, 76);
-            telefonoLabel.Location = new Point(132, 133);
-            grupoLabel.Location = new Point(652, 76);
-            serviciotextBox.Location = new Point(291, 76);
-            telefonotextBox.Location = new Point(342, 133);
-            grupotextBox.Location = new Point(829, 79);
-
-            discapacidadesLabel.Location = new Point(51, 180);
-            enfermedadesLabel.Location = new Point(303, 180);
-            alergiasLabel.Location = new Point(562, 180);
-            tratamientosLabel.Location = new Point(786, 180);
-
-            discapacidadesrichTextBox.Location = new Point(16, 202);
-            enfermedadesrichTextBox.Location = new Point(259, 202);
-            alergiasrichTextBox.Location = new Point(498, 202);
-            tratamientosrichTextBox.Location = new Point(738, 202);
-            discapacidadesrichTextBox.Size = new Size(205, 128);
-            enfermedadesrichTextBox.Size = new Size(205, 128);
-            alergiasrichTextBox.Size = new Size(205, 128);
-            tratamientosrichTextBox.Size = new Size(205, 128);
-
-            // edad.Location = new Point(pos, 180);
-            // edadq.Location = new Point(pos + edad.Width + 10, 180);
-
-            // fecha.Location = new Point(pos, 220);
-            // fechaq.Location = new Point(pos + fecha.Width + 10, 220);
-
-            // lugar.Location = new Point(pos, 260);
-            // lugarq.Location = new Point(pos + lugar.Width + 10, 260);
-
-            // curp.Location = new Point(pos, 300);
-            // curpq.Location = new Point(pos + curp.Width + 10, 300);
-
-            // direccion.Location = new Point(pos, 340);
-            // direccionq.Location = new Point(pos + direccion.Width + 10, 340);
-
-            // telefono.Location = new Point(pos, 380);
-            // telefonoq.Location = new Point(pos + telefono.Width + 10, 380);
-
-            // escuela.Location = new Point(pos, 420);
-            // escuelaq.Location = new Point(pos + escuela.Width + 10, 420);
-
-            // canalizado.Location = new Point(pos, 460);
-            // canalizadoq.Location = new Point(pos + canalizado.Width + 10, 460);
-
-            // ciclo.Location = new Point(pos, 500); 
-            //cicloq.Location = new Point(pos + ciclo.Width + 10, 500);
-
-            // ingreso.Location = new Point(pos, 540);
-            // ingresoq.Location = new Point(pos + ingreso.Width + 10, 540);
+            telefonos.Location = new Point(1000, 85);
+            casaL.Location = new Point(900, 120);
+            movilL.Location = new Point(900, 170);
+            trabajoL.Location = new Point(900, 220);
+            casa.Location = new Point(990, 120);
+            movil.Location = new Point(990, 170);
+            trabajo.Location = new Point(990, 220);
         }
 
-        public static void posicionFotoButtons(PictureBox foto, Button tutor, Button medico)
+        public static void infoMedica(Label servicioL, TextBox servicioTB, Label telefonoL, TextBox telefonoTB, Label grupoL, 
+                                    TextBox grupoTB,Label discapacidadesL, Label enfermedadesL, Label alergiasL, Label tratamientosL, 
+                                    RichTextBox discapacidadesRTB, RichTextBox enfermedadesRTB, RichTextBox alergiasRTB, RichTextBox tratamientosRTB,
+                                    Panel discapacidadesP, Panel enfermedadesP, Panel alergiasP, Panel tratamientosP, ComboBox grupoSanComboBox) {
+
+            servicioL.Location = new Point(50, 40);
+            telefonoL.Location = new Point(50, 90);
+            grupoL.Location = new Point(860, 40);
+
+            servicioTB.Location = new Point(210, 40);
+            telefonoTB.Location = new Point(270, 90);
+            grupoTB.Location = new Point(1050, 40);
+            grupoSanComboBox.Location = new Point(1050, 40);
+            grupoSanComboBox.Size = new Size(60,40);
+
+            discapacidadesL.Location = new Point(50, 145);
+            enfermedadesL.Location = new Point(320, 145);
+            alergiasL.Location = new Point(590, 145);
+            tratamientosL.Location = new Point(860, 145);
+
+            discapacidadesRTB.Location = new Point(10,10);
+            enfermedadesRTB.Location = new Point(10, 10);
+            alergiasRTB.Location = new Point(10, 10);
+            tratamientosRTB.Location = new Point(10, 10);
+
+            discapacidadesRTB.Enabled = true;
+            enfermedadesRTB.Enabled = true;
+            alergiasRTB.Enabled = true;
+            tratamientosRTB.Enabled = true;
+
+            discapacidadesRTB.Size = new Size(225, 128);
+            discapacidadesRTB.ReadOnly = true;
+            enfermedadesRTB.Size = new Size(225, 128);
+            enfermedadesRTB.ReadOnly = true;
+            alergiasRTB.Size = new Size(225, 128);
+            alergiasRTB.ReadOnly = true;
+            tratamientosRTB.Size = new Size(225, 128);
+            tratamientosRTB.ReadOnly = true;
+
+            discapacidadesP.Location = new Point(50, 165);
+            discapacidadesP.Size = new Size(240, 150);
+            enfermedadesP.Location = new Point(320, 165);
+            enfermedadesP.Size = new Size(240, 150);
+            alergiasP.Location = new Point(590, 165);
+            alergiasP.Size = new Size(240, 150);
+            tratamientosP.Location = new Point(860, 165);
+            tratamientosP.Size = new Size(240, 150);
+
+        }
+
+        public static void mostrarEditarInformacion(Button regresarMenu, Button editarInfo, Button cancelar, Button terminar, Button añadirFoto, TextBox nombreAl,
+                                TextBox apellidoP, TextBox apellidoM, Label edadL, TextBox edad, TextBox ciudadNac, TextBox estadoNac, DateTimePicker fechaNac,
+                                TextBox curp, TextBox telefonoP, TextBox calleAl, TextBox numCasaAl, TextBox coloniaAl, TextBox ingreso, TextBox ciclo,
+                                TextBox escuela, TextBox canalizado, TextBox nomTutor, TextBox apePTutor, TextBox apeMTutor, TextBox calleTu,
+                                TextBox numCasaTu, TextBox colTu, TextBox ocupacion, TextBox telCasa, TextBox telMovil, TextBox telTrabajo,
+                                TextBox servicioM, TextBox telContacto, TextBox grupoS, Panel discapacidades, Panel enferemedades,
+                                Panel alergias, Panel tratamiento, TableLayoutPanel infoMedica, ComboBox tipoIngresoCB, ComboBox grupoSan)
         {
-           // int pos = fichaTecnica.ActiveForm.Width / 4;
-           // pos = pos *3;
-         //   foto.Location = new Point(pos - (foto.Width/2), 140);
-         //   tutor.Location = new Point(pos - (tutor.Width/2), foto.Location.Y + foto.Height + 50);
-        //    medico.Location = new Point(pos - (medico.Width/2), tutor.Location.Y + tutor.Height + 50);
+
+            //Mostrar 
+            regresarMenu.Visible = false;
+            editarInfo.Visible = false;
+            cancelar.Visible = true;
+            terminar.Visible = true;
+            añadirFoto.Visible = true;
+
+            //Posisionar en...
+            añadirFoto.Size = new Size(160, 45);
+            añadirFoto.Location = new Point(1175, 235);
+
+            //Encabezado
+            nombreAl.ReadOnly = false; apellidoP.ReadOnly = false; apellidoM.ReadOnly = false; edad.Visible = false; edadL.Visible = false;
+
+            //Seccion 1
+            ciudadNac.ReadOnly = false; estadoNac.ReadOnly = false; fechaNac.Enabled = true; curp.ReadOnly = false; telefonoP.ReadOnly = false;
+            calleAl.ReadOnly = false; numCasaAl.ReadOnly = false; coloniaAl.ReadOnly = false;
+
+            //Seccion 2
+            ingreso.Visible = true; ciclo.ReadOnly = false; escuela.ReadOnly = false; canalizado.ReadOnly = false;
+            tipoIngresoCB.Visible = false;
+
+            //Seccion 3
+            nomTutor.ReadOnly = false; apePTutor.ReadOnly = false; apeMTutor.ReadOnly = false;
+            calleTu.ReadOnly = false; numCasaTu.ReadOnly = false; colTu.ReadOnly = false; ocupacion.ReadOnly = false;
+            telCasa.ReadOnly = false; telMovil.ReadOnly = false; telTrabajo.ReadOnly = false;
+
+            //Seccion 4
+            servicioM.ReadOnly = false; telContacto.ReadOnly = false; grupoS.Visible = false; grupoSan.Visible = true; ;
+            discapacidades.Visible = false; enferemedades.Visible = false; alergias.Visible = false; tratamiento.Visible = false;
+
+            infoMedica.Enabled = true;
+            infoMedica.Location = new Point(50, 165);
+            infoMedica.Size = new Size(1000, 150);
+            infoMedica.Visible = true;
+
+            tipoIngresoCB.Size = new Size(280, 40);
+            tipoIngresoCB.Location = new Point(210, 40);
+            tipoIngresoCB.Visible = true;
 
         }
 
+        public static void ocultarEditarInformacion(Button regresarMenu, Button editarInfo, Button cancelar, Button terminar, Button añadirFoto,TextBox  nombreAl, 
+                                            TextBox  apellidoP, TextBox  apellidoM, Label edadL, TextBox  edad, TextBox ciudadNac,TextBox estadoNac, DateTimePicker fechaNac,
+                                            TextBox  curp, TextBox telefonoP, TextBox  calleAl, TextBox  numCasaAl, TextBox  coloniaAl, TextBox  ingreso, TextBox  ciclo,
+                                            TextBox  escuela,TextBox  canalizado, TextBox  nomTutor, TextBox  apePTutor, TextBox  apeMTutor,TextBox  calleTu,
+                                            TextBox  numCasaTu,TextBox  colTu, TextBox  ocupacion, TextBox telCasa,TextBox telMovil, TextBox  telTrabajo,                                                     
+                                            TextBox  servicioM, TextBox  telContacto, TextBox  grupoS,Panel discapacidades, Panel enferemedades, 
+                                            Panel alergias, Panel tratamiento, TableLayoutPanel infoMedica, ComboBox tipoIngresoCB, ComboBox grupoSan)
+        {
+            regresarMenu.Visible = true;
+            editarInfo.Visible = true;
+            cancelar.Visible = false;
+            terminar.Visible = false;
+            añadirFoto.Visible = false;
 
+            //Encabezado
+            nombreAl.Enabled = true; apellidoP.Enabled = true; apellidoM.Enabled = true; edad.Visible  = true; edadL.Visible = true;
+            nombreAl.ReadOnly = true; apellidoP.ReadOnly = true; apellidoM.ReadOnly = true; edad.ReadOnly = true;
+
+            //Seccion 1
+            ciudadNac.Enabled = true; fechaNac.Enabled = false; curp.Enabled = true; telefonoP.Enabled = true;
+            ciudadNac.ReadOnly = true; curp.ReadOnly = true; telefonoP.ReadOnly = true;
+            estadoNac.Enabled = true; estadoNac.ReadOnly = true;
+            calleAl.Enabled = true; numCasaAl.Enabled = true; coloniaAl.Enabled = true;
+            calleAl.ReadOnly = true; numCasaAl.ReadOnly = true; coloniaAl.ReadOnly = true;
+
+            //Seccion 2
+            ingreso.Enabled = true; ciclo.Enabled = true; escuela.Enabled = true; canalizado.Enabled = true;
+            ingreso.ReadOnly = true; ciclo.ReadOnly = true; escuela.ReadOnly = true; canalizado.ReadOnly = true;
+
+            //Seccion 3
+            nomTutor.Enabled = true; apePTutor.Enabled = true; apeMTutor.Enabled = true;
+            nomTutor.ReadOnly = true; apePTutor.ReadOnly = true; apeMTutor.ReadOnly = true;
+            calleTu.Enabled = true; numCasaTu.Enabled = true; colTu.Enabled = true; ocupacion.Enabled = true;
+            calleTu.ReadOnly = true; numCasaTu.ReadOnly = true; colTu.ReadOnly = true; ocupacion.ReadOnly = true;
+            telCasa.Enabled = true; telMovil.Enabled = true; telTrabajo.Enabled = true;
+            telCasa.ReadOnly = true; telMovil.ReadOnly = true; telTrabajo.ReadOnly = true;
+
+            //Seccion 4
+            servicioM.Enabled = true; telContacto.Enabled = true; grupoS.Enabled = true; grupoS.Visible = true;
+            servicioM.ReadOnly = true; telContacto.ReadOnly = true; grupoS.ReadOnly = true; grupoSan.Visible = false;
+            discapacidades.Visible = true; enferemedades.Visible = true; alergias.Visible = true; tratamiento.Visible = true;
+
+            infoMedica.Enabled = false;
+            infoMedica.Visible = false;
+
+            tipoIngresoCB.Visible = false;
+        }
     }
 }
