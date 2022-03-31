@@ -12,7 +12,7 @@ namespace presentationLayer
             ComboBox grupoSanCB, Label telL, TextBox tel, Panel telP, Label discapacidadL, RichTextBox discapacidad, Panel discapacidadP,
             Label enfermedadL, RichTextBox enfermedad, Panel enfermedadP, Label alergiaL, RichTextBox alergia, Panel alergiaP,
             Label tratamientoL, RichTextBox tratamiento, Panel tratamientoP, ComboBox discapacidadCB, ComboBox enfermedadCB, ComboBox alergiaCB,
-            Button eliTra, Button eliDisc, Button eliEnf, Button eliAle, Button agregarDisc, Button agregarEnf, Button agregarAler)
+            Button eliEnf, Button eliDisc, Button eliAle, Button eliTra,Button agregarDisc, Button agregarEnf, Button agregarAler)
         {
             servMedicoL.Location = new Point(50, 50);
             servMedP.Location = new Point(210, 50);
@@ -29,11 +29,21 @@ namespace presentationLayer
             telP.Location = new Point(1030, 50);
             telP.Size = new Size(150, 45);
 
+            discapacidad.ReadOnly = true;
+            enfermedad.ReadOnly = true;
+            alergia.ReadOnly = true;
+
+            discapacidad.BackColor = Color.White;
+            enfermedad.BackColor = Color.White;
+            alergia.BackColor = Color.White;
+
             discapacidadL.Location = new Point(50, 150);
             eliDisc.Location = new Point(290, 150);
-            discapacidad.Location = new Point(50, 170);
+            discapacidad.Location = new Point(10, 10);
             discapacidadCB.Location = new Point(50, 340);
             discapacidadP.Location = new Point(50, 180);
+
+            discapacidad.Size = new Size(250, 125);
             discapacidadP.Size = new Size(270, 150);
             discapacidadCB.Size = new Size(230, 60);
             agregarDisc.Size = new Size(35, 35);
@@ -42,9 +52,11 @@ namespace presentationLayer
 
             enfermedadL.Location = new Point(340, 150);
             eliEnf.Location = new Point(580, 150);
-            enfermedad.Location = new Point(340, 210);
+            enfermedad.Location = new Point(10, 10);
             enfermedadCB.Location = new Point(340, 340);
             enfermedadP.Location = new Point(340, 180);
+
+            enfermedad.Size = new Size(250, 125);
             enfermedadP.Size = new Size(270, 150);
             enfermedadCB.Size = new Size(230, 60);
             agregarEnf.Size = new Size(35, 35);
@@ -53,15 +65,18 @@ namespace presentationLayer
 
             alergiaL.Location = new Point(630, 150);
             eliAle.Location = new Point(870, 150);
-            alergia.Location = new Point(630, 210);
+            alergia.Location = new Point(10, 10);
             alergiaCB.Location = new Point(630, 340);
             alergiaP.Location = new Point(630, 180);
+
+            alergia.Size = new Size(250, 125);
             alergiaP.Size = new Size(270, 150);
             alergiaCB.Size = new Size(230, 60);
             agregarAler.Size = new Size(35, 35);
             agregarAler.Location = new Point(865, 335);
             agregarAler.Text = "";
 
+            tratamiento.Size = new Size(250, 125);
             tratamientoL.Location = new Point(920, 150);
             eliTra.Location = new Point(1160, 150);
             tratamientoP.Location = new Point(920, 180);
