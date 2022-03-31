@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -129,6 +130,13 @@ namespace presentationLayer
             //MessageBox.Show(foto.nombre);
             // fotopictureBox.Image = byteArrayToImage(foto.imagen_alumno.ToArray());
 
+        }
+
+        public Image byteArrayToImage(byte[] byteArrayIn)
+        {
+            MemoryStream ms = new MemoryStream(byteArrayIn);
+            Image returnImage = Image.FromStream(ms);
+            return returnImage;
         }
 
         private void infoGeneralButton_Click(object sender, EventArgs e)
