@@ -8,8 +8,8 @@ namespace _1dataLayer
 {
     public class DLModificacionAlumno
     {
-       
-        public static void Modificacionalumno(int id, alumnoDTO alumno)
+
+        public static void Modificacionalumno(int id, SP_FichaTecnicaAlumno_Result alumno)
         {
             using (BDCAMEntities db = new BDCAMEntities())
             {
@@ -41,9 +41,9 @@ namespace _1dataLayer
             }
         }
 
-        public static void ModificacionTutor(int id,SP_FichaTecnicaAlumnoTutor_Result tutor)
+        public static void ModificacionTutor(int id, SP_FichaTecnicaAlumnoTutor_Result tutor)
         {
-           using (BDCAMEntities db = new BDCAMEntities())
+            using (BDCAMEntities db = new BDCAMEntities())
             {
                 Console.WriteLine("Desde data layer: ", tutor.nombre);
                 Console.WriteLine("ID: " + id);
@@ -51,7 +51,7 @@ namespace _1dataLayer
             }
         }
 
-        public static void modificacionmedica(int id,SP_FichaTecnicaAlumnoMedica_Result medica)
+        public static void modificacionmedica(int id, SP_FichaTecnicaAlumnoMedica_Result medica)
         {
             using (BDCAMEntities db = new BDCAMEntities())
             {

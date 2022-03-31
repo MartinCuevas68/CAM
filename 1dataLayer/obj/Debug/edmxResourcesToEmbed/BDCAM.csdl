@@ -501,6 +501,10 @@
       <Parameter Name="id_alergia" Mode="In" Type="Int32" />
       <Parameter Name="alergia" Mode="In" Type="String" />
     </FunctionImport>
+    <FunctionImport Name="SP_AltaTratamientos">
+      <Parameter Name="id_car" Mode="In" Type="Int32" />
+      <Parameter Name="tratamiento" Mode="In" Type="String" />
+    </FunctionImport>
   </EntityContainer>
   <ComplexType Name="SP_FichaTecnicaAlumno_Result">
     <Property Type="String" Name="nombre" Nullable="false" MaxLength="30" />
@@ -520,6 +524,7 @@
     <Property Type="Int32" Name="id_alumno" Nullable="false" />
     <Property Type="String" Name="numero_alumno" Nullable="false" MaxLength="30" />
     <Property Type="String" Name="tipo_ingreso" Nullable="true" MaxLength="40" />
+    <Property Type="String" Name="documentacion_alumno" Nullable="true" />
   </ComplexType>
   <ComplexType Name="SP_FichaTecnicaAlumnoMedica_Result">
     <Property Type="String" Name="grupo_sanguineo" Nullable="false" MaxLength="30" />

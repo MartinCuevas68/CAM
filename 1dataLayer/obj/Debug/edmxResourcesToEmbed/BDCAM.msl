@@ -198,6 +198,7 @@
           <ScalarProperty Name="id_alumno" ColumnName="id_alumno" />
           <ScalarProperty Name="numero_alumno" ColumnName="numero_alumno" />
           <ScalarProperty Name="tipo_ingreso" ColumnName="tipo_ingreso" />
+          <ScalarProperty Name="documentacion_alumno" ColumnName="documentacion_alumno" />
         </ComplexTypeMapping>
       </ResultMapping>
     </FunctionImportMapping>
@@ -396,5 +397,6 @@
       </ResultMapping>
     </FunctionImportMapping>
     <FunctionImportMapping FunctionImportName="SP_Modificar_alergias" FunctionName="BDCAMModel.Store.SP_Modificar_alergias" />
+    <FunctionImportMapping FunctionImportName="SP_AltaTratamientos" FunctionName="BDCAMModel.Store.SP_AltaTratamientos" />
   </EntityContainerMapping>
 </Mapping>

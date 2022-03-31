@@ -1406,6 +1406,7 @@ warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a prima
           <Property Type="Int32" Name="id_alumno" Nullable="false" />
           <Property Type="String" Name="numero_alumno" Nullable="false" MaxLength="30" />
           <Property Type="String" Name="tipo_ingreso" Nullable="true" MaxLength="40" />
+          <Property Type="String" Name="documentacion_alumno" Nullable="true" />
         </ComplexType>
         <ComplexType Name="SP_FichaTecnicaAlumnoMedica_Result">
           <Property Type="String" Name="grupo_sanguineo" Nullable="false" MaxLength="30" />
@@ -1820,6 +1821,7 @@ warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a prima
                 <ScalarProperty Name="id_alumno" ColumnName="id_alumno" />
                 <ScalarProperty Name="numero_alumno" ColumnName="numero_alumno" />
                 <ScalarProperty Name="tipo_ingreso" ColumnName="tipo_ingreso" />
+                <ScalarProperty Name="documentacion_alumno" ColumnName="documentacion_alumno" />
               </ComplexTypeMapping>
             </ResultMapping>
           </FunctionImportMapping>
