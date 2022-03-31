@@ -77,15 +77,9 @@ namespace presentationLayer
             calle.Text = alumno.calle_alumno;
             numeroCasa.Text = alumno.numero_alumno;
             colonia.Text = alumno.colonia_alumno;
+            tipoIngreso.Text = alumno.tipo_ingreso;
 
             businessLayer.BLFichaTecnica.infoGenAlumno(nombreAl, id_alumno);
-
-
-
-            //(nombreAl.Text, id_alumno);
-
-
-            //foto.Image = alumno.
 
             //Informacion escolar del alumno
             tipoIngreso.Text = alumno.tipo_ingreso;
@@ -103,7 +97,6 @@ namespace presentationLayer
             coloniaT.Text = tutor.colonia_tutor;
             ocupacion.Text = tutor.ocupacion_tutor;
             telCasaT.Text = telefonos.telefono;
-            //telMovilT.Text = tutor.;
             telTrabajoT.Text = telefonos.telefono;
            
 

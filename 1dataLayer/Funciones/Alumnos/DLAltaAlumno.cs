@@ -23,15 +23,11 @@ namespace _1dataLayer
             }
         }
 
-        public static void Altaenfermedades(int id, List<enfermedadesDTO> enfermedad)
+        public static void Altaenfermedades(int id, enfermedadesDTO enfermedad)
         {
             using (BDCAMEntities db = new BDCAMEntities())
             {
-                foreach (enfermedadesDTO enfer in enfermedad)
-                {
-                    db.sp_altaenfermedades(id, enfer.enfermedad);
-                }
-
+                    db.sp_altaenfermedades(id, enfermedad.enfermedad);
             }
         }
 
