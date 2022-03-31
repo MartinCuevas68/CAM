@@ -40,7 +40,7 @@ namespace businessLayer
                 al.escuela_procedencia_alumno = escuelaP;
                 al.documentacion_alumno = "";
                 al.atendido_por = canalizado;
-                al.tipo_ingreso = tipoIngresoGroupBox;
+                //al.tipo_ingreso = tipoIngresoGroupBox;
 
                 id_alumno = _1dataLayer.DLAltaAlumno.Altaalumno(al);
 
@@ -53,15 +53,13 @@ namespace businessLayer
 
         //Altas tutor
         public static void SetTutor2(string nombreT, string apellidoPT, string apellidoMT, string coloniaT, string calleT, string numeroCasaT,
-            string ocupacion, string colonia_trabajo_tutor, string calle_trabajo_tutor, string numero_trabajo_tutor, string telMovilT)
+            string ocupacion, string colonia_trabajo_tutor, string calle_trabajo_tutor, string telTrabajoT)
         //, string telCasaT, string telMovilT, string telTrabajoT
         {
             //byte[] x = { (byte)204, 29, (byte)207, (byte)217 };
             //int y = 1;
 
             _1dataLayer.tutorDTO tuto = new _1dataLayer.tutorDTO();
-            _1dataLayer.telefono_tutores teltuto = new _1dataLayer.telefono_tutores();
-
             try
             {
                 tuto.nombre = nombreT;
@@ -73,12 +71,9 @@ namespace businessLayer
                 tuto.ocupacion_tutor = ocupacion;
                 tuto.colonia_trabajo_tutor = colonia_trabajo_tutor;
                 tuto.calle_trabajo_tutor = calle_trabajo_tutor;
-                tuto.numero_trabajo_tutor = numero_trabajo_tutor;
-                teltuto.telefono = telMovilT;
+                tuto.numero_trabajo_tutor = telTrabajoT;
+                
 
-                //telCasaT = telCasaT,
-                //telMovilT = telMovilT,
-                //telTrabajoT = telTrabajoT
                 id_tutor = _1dataLayer.DLAltaAlumno.Altatutor(tuto);
             }
             catch (Exception)
