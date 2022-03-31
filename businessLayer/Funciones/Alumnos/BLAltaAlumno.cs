@@ -13,13 +13,29 @@ namespace businessLayer
         static int id_discapacidad;
         static int id_tratamiento;
 
+        //Altas Enfermedades
+        public static void SetEnfermedades(string enfermedades)
+        {
+            _1dataLayer.enfermedadesDTO enf = new _1dataLayer.enfermedadesDTO();
+
+            try
+            {
+                enf.enfermedad = enfermedades;
+                _1dataLayer.DLAltaAlumno.Altaenfermedades(13, enf);
+
+               // id_alumno = _1dataLayer.DLAltaAlumno.Altaalumno(al);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
         //Altas alumno
         public static void SetAlumno2(string cicloEsc, string nombreAl, string apellidoP, string apellidoM,
             DateTime fechaNa, string añosCum, string curp, string estado, string ciudad, string colonia,
-            string calle, string numeroCasa, string telPersonal, string escuelaP, string canalizado, string tipoIngresoGroupBox)
+            string calle, string numeroCasa, string telPersonal, string escuelaP, string canalizado, string value)
         {
-            //byte[] x = { (byte)204, 29, (byte)207, (byte)217 };
-            //int y = 1;
             _1dataLayer.alumnoDTO al = new _1dataLayer.alumnoDTO();
             try
             {
@@ -40,7 +56,7 @@ namespace businessLayer
                 al.escuela_procedencia_alumno = escuelaP;
                 al.documentacion_alumno = "";
                 al.atendido_por = canalizado;
-                //al.tipo_ingreso = tipoIngresoGroupBox;
+                al.tipo_ingreso = value;
 
                 id_alumno = _1dataLayer.DLAltaAlumno.Altaalumno(al);
 
@@ -137,23 +153,7 @@ namespace businessLayer
             }
         }
 
-        //Altas Enfermedades
-        public static void SetEnfermedades(string enfermedades)
-        {
-            _1dataLayer.enfermedadesDTO enf = new _1dataLayer.enfermedadesDTO();
-
-            List<_1dataLayer.enfermedadesDTO> lista_enfermedad = new List<_1dataLayer.enfermedadesDTO>();
-
-            try
-            {
-                enf.enfermedad = enfermedades;
-                _1dataLayer.DLAltaAlumno.Altaenfermedades(id_enfermedad, lista_enfermedad);
-            }
-            catch (Exception)
-            {
-                throw;
-            }
-        }
+        
 
         //Altas Discapacidades
         public static void SetDiscapacidades(string discapacidad)
