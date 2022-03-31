@@ -208,13 +208,11 @@ F:\Github\UABC\CAM\presentationLayer\bin\Debug\presentationLayer.exe.config
 F:\Github\UABC\CAM\presentationLayer\bin\Debug\presentationLayer.exe
 F:\Github\UABC\CAM\presentationLayer\bin\Debug\presentationLayer.pdb
 F:\Github\UABC\CAM\presentationLayer\bin\Debug\1dataLayer.dll
-F:\Github\UABC\CAM\presentationLayer\bin\Debug\businessLayer.dll
 F:\Github\UABC\CAM\presentationLayer\bin\Debug\EntityFramework.dll
 F:\Github\UABC\CAM\presentationLayer\bin\Debug\EntityFramework.SqlServer.dll
 F:\Github\UABC\CAM\presentationLayer\bin\Debug\1dataLayer.pdb
 F:\Github\UABC\CAM\presentationLayer\bin\Debug\1dataLayer.dll.config
 F:\Github\UABC\CAM\presentationLayer\bin\Debug\businessLayer.pdb
-F:\Github\UABC\CAM\presentationLayer\bin\Debug\businessLayer.dll.config
 F:\Github\UABC\CAM\presentationLayer\bin\Debug\EntityFramework.xml
 F:\Github\UABC\CAM\presentationLayer\bin\Debug\EntityFramework.SqlServer.xml
 F:\Github\UABC\CAM\presentationLayer\obj\Debug\presentationLayer.csproj.AssemblyReference.cache
@@ -318,3 +316,5 @@ C:\Users\ferna\source\repos\CAM\presentationLayer\bin\Debug\businessLayer.exe.co
 C:\Users\ferna\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.csproj.CopyComplete
 C:\Users\galle\source\repos\CAM3\presentationLayer\bin\Debug\businessLayer.exe
 C:\Users\galle\source\repos\CAM3\presentationLayer\bin\Debug\businessLayer.exe.config
+F:\Github\UABC\CAM\presentationLayer\bin\Debug\businessLayer.exe
+F:\Github\UABC\CAM\presentationLayer\bin\Debug\businessLayer.exe.config

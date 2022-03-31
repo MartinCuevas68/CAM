@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace businessLayer
 {
@@ -53,6 +54,16 @@ namespace businessLayer
                 throw;
             }
 
+
+        }
+
+        public static void InformacionGeneral(TextBox nombreAL, int id_alumno)
+        {
+            _1dataLayer.SP_FichaTecnicaAlumno_Result alumno = new _1dataLayer.SP_FichaTecnicaAlumno_Result();
+
+            alumno = _1dataLayer.DLConsultaAlumno.FichaTenicaAlumno(id_alumno);
+
+            nombreAL.Text = alumno.nombre;
 
         }
 

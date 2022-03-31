@@ -62,7 +62,6 @@ namespace presentationLayer
 
             //Información del alumno
             alumno = _1dataLayer.DLConsultaAlumno.FichaTenicaAlumno(id_alumno);
-            nombreAl.Text = alumno.nombre;
             apellidoP.Text = alumno.apellido_paterno;
             apellidoM.Text = alumno.apellido_materno;
             edad.Text = alumno.edad_alumno;
@@ -75,6 +74,14 @@ namespace presentationLayer
             calle.Text = alumno.calle_alumno;
             numeroCasa.Text = alumno.numero_alumno;
             colonia.Text = alumno.colonia_alumno;
+
+            businessLayer.BLFichaTecnica.infoGenAlumno(nombreAl, id_alumno);
+
+
+
+            //(nombreAl.Text, id_alumno);
+
+
             //foto.Image = alumno.
 
             //Informacion escolar del alumno
@@ -229,6 +236,11 @@ namespace presentationLayer
         private void terminarEdiButton_Click(object sender, EventArgs e)
         {
             ocultarEditarInformacion();
+        }
+
+        private void fichaTecnica_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

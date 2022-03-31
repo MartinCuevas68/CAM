@@ -46,6 +46,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -56,6 +57,7 @@
   <ItemGroup>
     <Compile Include="Funciones\Alumnos\BLConsultaAlumno.cs" />
     <Compile Include="Funciones\Alumnos\BLAltaAlumno.cs" />
+    <Compile Include="Funciones\Alumnos\BLFichaTecnica.cs" />
     <Compile Include="Funciones\Alumnos\BLModificacionAlumno.cs" />
     <Compile Include="Funciones\Alumnos\BLEliminacionAlumno.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

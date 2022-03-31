@@ -161,8 +161,6 @@ G:\Visual studio programs\GIT\CAM\businessLayer\obj\Debug\businessLayer.csproj.C
 G:\Visual studio programs\GIT\CAM\businessLayer\obj\Debug\businessLayer.csproj.CopyComplete
 G:\Visual studio programs\GIT\CAM\businessLayer\obj\Debug\businessLayer.dll
 G:\Visual studio programs\GIT\CAM\businessLayer\obj\Debug\businessLayer.pdb
-F:\Github\UABC\CAM\businessLayer\bin\Debug\businessLayer.dll.config
-F:\Github\UABC\CAM\businessLayer\bin\Debug\businessLayer.dll
 F:\Github\UABC\CAM\businessLayer\bin\Debug\businessLayer.pdb
 F:\Github\UABC\CAM\businessLayer\bin\Debug\1dataLayer.dll
 F:\Github\UABC\CAM\businessLayer\bin\Debug\EntityFramework.dll
@@ -174,7 +172,6 @@ F:\Github\UABC\CAM\businessLayer\bin\Debug\EntityFramework.SqlServer.xml
 F:\Github\UABC\CAM\businessLayer\obj\Debug\businessLayer.csproj.AssemblyReference.cache
 F:\Github\UABC\CAM\businessLayer\obj\Debug\businessLayer.csproj.CoreCompileInputs.cache
 F:\Github\UABC\CAM\businessLayer\obj\Debug\businessLayer.csproj.CopyComplete
-F:\Github\UABC\CAM\businessLayer\obj\Debug\businessLayer.dll
 F:\Github\UABC\CAM\businessLayer\obj\Debug\businessLayer.pdb
 C:\Users\DELL\Source\Repos\CAM\businessLayer\bin\Debug\businessLayer.dll.config
 C:\Users\DELL\Source\Repos\CAM\businessLayer\bin\Debug\businessLayer.dll
@@ -216,3 +213,7 @@ C:\Users\ferna\source\repos\CAM\businessLayer\bin\Debug\EntityFramework.SqlServe
 C:\Users\ferna\source\repos\CAM\businessLayer\bin\Debug\businessLayer.exe.config
 C:\Users\ferna\source\repos\CAM\businessLayer\bin\Debug\businessLayer.exe
 C:\Users\ferna\source\repos\CAM\businessLayer\obj\Debug\businessLayer.exe
+F:\Github\UABC\CAM\businessLayer\bin\Debug\businessLayer.exe.config
+F:\Github\UABC\CAM\businessLayer\bin\Debug\businessLayer.exe
+F:\Github\UABC\CAM\businessLayer\obj\Debug\businessLayer.csproj.SuggestedBindingRedirects.cache
+F:\Github\UABC\CAM\businessLayer\obj\Debug\businessLayer.exe
