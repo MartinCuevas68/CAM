@@ -13,22 +13,7 @@ namespace businessLayer
         static int id_tratamiento;
 
         //Altas Enfermedades
-        public static void SetEnfermedades(string enfermedades)
-        {
-            _1dataLayer.enfermedadesDTO enf = new _1dataLayer.enfermedadesDTO();
-
-            try
-            {
-                enf.enfermedad = enfermedades;
-                _1dataLayer.DLAltaAlumno.Altaenfermedades(13, enf);
-
-               // id_alumno = _1dataLayer.DLAltaAlumno.Altaalumno(al);
-            }
-            catch (Exception)
-            {
-                throw;
-            }
-        }
+      
 
         //Altas alumno
         public static void SetAlumno2(string cicloEsc, string nombreAl, string apellidoP, string apellidoM,
