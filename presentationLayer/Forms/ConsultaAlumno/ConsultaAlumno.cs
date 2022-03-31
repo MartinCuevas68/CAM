@@ -230,13 +230,28 @@ namespace presentationLayer
 
         private void fichaTecnicaButton_Click(object sender, EventArgs e)
         {
-            Int32 selectedCellCount =  altaDataGridView.GetCellCount(DataGridViewElementStates.Selected);
-            int id = 0;
-            /*foreach (DataGridViewRow row in this.altaDataGridView.Rows)
+            String id;
+            
+            int id2 = 0;
+
+            if (checkboxDgv.Selected == false)
+                {
+                    MessageBox.Show("Marca la casilla para consultar la ficha tecnica de un alumno", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+
+            foreach (DataGridViewRow row in this.altaDataGridView.Rows) 
             {
-                if (Convert.ToBoolean(row.Cells[0].Value) == true)
+                
+                if (Convert.ToBoolean(row.Cells[5].Value) == true)
                 {
                     id = Convert.ToString(row.Cells[0].Value);
+                    id2 = int.Parse(id);
+                    //MessageBox.Show(id);
+                    ConsultaAlumno consultas = new ConsultaAlumno();
+                    consultas.Close();
+                    this.Hide();
+                    fichaTecnica ficha = new fichaTecnica(id2);
+                    ficha.Show();
                 }
             }*/
             //int codigo_hab = Convert.ToInt32(((DataRowView)dgvHabitaciones.Items[dgvHabitaciones.SelectedIndex])[0]);
@@ -245,11 +260,7 @@ namespace presentationLayer
                id = int.Parse(altaDataGridView.SelectedCells[i].Value.ToString());
             }
 
-            ConsultaAlumno consultas = new ConsultaAlumno();
-            consultas.Close();
-            this.Hide();
-            fichaTecnica ficha = new fichaTecnica(id);
-            ficha.Show();
+            
         }
 
         private void busquedaTextBox_TextChanged(object sender, EventArgs e)
