@@ -109,7 +109,6 @@ F:\Github\UABC\CAM\1dataLayer\bin\Debug\EntityFramework.dll
 F:\Github\UABC\CAM\1dataLayer\bin\Debug\EntityFramework.SqlServer.dll
 F:\Github\UABC\CAM\1dataLayer\bin\Debug\EntityFramework.xml
 F:\Github\UABC\CAM\1dataLayer\bin\Debug\EntityFramework.SqlServer.xml
-F:\Github\UABC\CAM\1dataLayer\obj\Debug\1dataLayer.csproj.AssemblyReference.cache
 F:\Github\UABC\CAM\1dataLayer\obj\Debug\1dataLayer.csproj.CoreCompileInputs.cache
 F:\Github\UABC\CAM\1dataLayer\obj\Debug\1dataLayer.csproj.CopyComplete
 F:\Github\UABC\CAM\1dataLayer\obj\Debug\1dataLayer.dll

@@ -1,10 +1,5 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 
 namespace businessLayer
 {
@@ -13,31 +8,15 @@ namespace businessLayer
         static int id_alumno;
         static int id_tutor;
         static int id_medica;
-        //Altas
+        static int id_alergia;
+        static int id_enfermedad;
+        static int id_discapacidad;
+        static int id_tratamiento;
 
-       /* //Altas alergias
-        public static void SetAlergias(_1dataLayer.alergias alergia)
-        {
-            // foto.id_alumno = id_alumno;
-            // _1dataLayer.DLAltaAlumno.AltaImagenAlumno(foto);
-
-
-            ArrayList alergiasAl = new ArrayList();
-            _1dataLayer.alergiasDTO alergiasAL = new _1dataLayer.alergiasDTO();
-            try
-            {
-                alergiasAL.alergia = alergiasAl.Add();
-            }
-            catch (Exception)
-            {
-                throw;
-            }
-        }*/
-     
         //Altas alumno
         public static void SetAlumno2(string cicloEsc, string nombreAl, string apellidoP, string apellidoM,
             DateTime fechaNa, string añosCum, string curp, string estado, string ciudad, string colonia,
-            string calle, string numeroCasa, string telPersonal, string escuelaP, string canalizado)
+            string calle, string numeroCasa, string telPersonal, string escuelaP, string canalizado, string tipoIngresoGroupBox)
         {
             //byte[] x = { (byte)204, 29, (byte)207, (byte)217 };
             //int y = 1;
@@ -61,7 +40,8 @@ namespace businessLayer
                 al.escuela_procedencia_alumno = escuelaP;
                 al.documentacion_alumno = "";
                 al.atendido_por = canalizado;
-                
+                al.tipo_ingreso = tipoIngresoGroupBox;
+
                 id_alumno = _1dataLayer.DLAltaAlumno.Altaalumno(al);
 
             }
@@ -73,17 +53,17 @@ namespace businessLayer
 
         //Altas tutor
         public static void SetTutor2(string nombreT, string apellidoPT, string apellidoMT, string coloniaT, string calleT, string numeroCasaT,
-            string ocupacion, string colonia_trabajo_tutor, string calle_trabajo_tutor, string numero_trabajo_tutor)
+            string ocupacion, string colonia_trabajo_tutor, string calle_trabajo_tutor, string numero_trabajo_tutor, string telMovilT)
         //, string telCasaT, string telMovilT, string telTrabajoT
         {
             //byte[] x = { (byte)204, 29, (byte)207, (byte)217 };
             //int y = 1;
 
             _1dataLayer.tutorDTO tuto = new _1dataLayer.tutorDTO();
+            _1dataLayer.telefono_tutores teltuto = new _1dataLayer.telefono_tutores();
 
             try
             {
-
                 tuto.nombre = nombreT;
                 tuto.apellido_paterno = apellidoPT;
                 tuto.apellido_materno = apellidoMT;
@@ -94,6 +74,8 @@ namespace businessLayer
                 tuto.colonia_trabajo_tutor = colonia_trabajo_tutor;
                 tuto.calle_trabajo_tutor = calle_trabajo_tutor;
                 tuto.numero_trabajo_tutor = numero_trabajo_tutor;
+                teltuto.telefono = telMovilT;
+
                 //telCasaT = telCasaT,
                 //telMovilT = telMovilT,
                 //telTrabajoT = telTrabajoT
@@ -104,36 +86,6 @@ namespace businessLayer
                 throw;
             }
         }
-
-        //Altas telefono tutor
-        /*public static void SetTelefonoTutor(telCasa, telMovil, telTrabajo)
-        {
-            byte[] x = { (byte)204, 29, (byte)207, (byte)217 };
-            int y = 1;
-
-
-
-            try
-            {
-                using (_1dataLayer.BDCAMEntities db = new _1dataLayer.BDCAMEntities())
-
-                {
-                    var query = db.Set<_1dataLayer.telefono_tutores>();
-                    query.Add(new _1dataLayer.telefono_tutores
-                    {
-                        telCsa =
-                    });
-
-                    db.SaveChanges();
-
-                }
-            }
-            catch (Exception)
-            {
-                throw;
-            }
-        }*/
-
 
         //Altas información médica del alumno
         public static void SetInfoMedAlumno2(string servMedico, string grupoSanguineoComboBox, string telefono, string peso, string color_textura_piel, string estatura)
@@ -152,11 +104,11 @@ namespace businessLayer
                 tablita.peso = 82;
                 tablita.color_textura_piel = "aaa";
                 tablita.estatura = 1.98;
-                
-               
+
+
                 id_medica = _1dataLayer.DLAltaAlumno.Altacartilla(tablita);
-                
-                Console.WriteLine(id_medica+" "+ id_alumno+" "+ id_tutor);
+
+                Console.WriteLine(id_medica + " " + id_alumno + " " + id_tutor);
                 _1dataLayer.DLAltaAlumno.Altaalumnocartilla(id_alumno, id_medica);
                 _1dataLayer.DLAltaAlumno.Altaalumnotutor(id_alumno, id_tutor);
             }
@@ -171,89 +123,18 @@ namespace businessLayer
             foto.id_alumno = id_alumno;
             _1dataLayer.DLAltaAlumno.AltaImagenAlumno(foto);
         }
-        //Altas Discapacidad
-       /* public static void SetDiscapacidades(string discapacidad)
-        {
-            byte[] x = { (byte)204, 29, (byte)207, (byte)217 };
-            int y = 1;
-
-
-
-            try
-            {
-                using (_1dataLayer.BDCAMEntities db = new _1dataLayer.BDCAMEntities())
-
-                {
-                    var query = db.Set<_1dataLayer.discapacidade>();
-                    query.Add(new _1dataLayer.discapacidade
-                    {
-                        id_cartilla_medica = y++,
-                        discapacidades = discapacidad
-                    });
-
-                    db.SaveChanges();
-
-                }
-            }
-            catch (Exception)
-            {
-                throw;
-            }
-        }*/
-
-        //Altas Enfermedad
-        /*public static void SetEnfermedades(string enfermedades)
-        {
-            byte[] x = { (byte)204, 29, (byte)207, (byte)217 };
-            int y = 1;
-
-
-
-            try
-            {
-                using (_1dataLayer.BDCAMEntities db = new _1dataLayer.BDCAMEntities())
-
-                {
-                    var query = db.Set<_1dataLayer.enfermedade>();
-                    query.Add(new _1dataLayer.enfermedade
-                    {
-                        id_cartilla_medica = y++,
-                        enfermedad = enfermedades
-                    });
-
-                    db.SaveChanges();
-
-                }
-            }
-            catch (Exception)
-            {
-                throw;
-            }
-        }*/
 
         //Altas Alergias
         public static void SetAlergias(string alergias)
         {
-            byte[] x = { (byte)204, 29, (byte)207, (byte)217 };
-            int y = 1;
+            _1dataLayer.alergiasDTO alg = new _1dataLayer.alergiasDTO();
 
-
+            List<_1dataLayer.alergiasDTO> lista_alergia = new List<_1dataLayer.alergiasDTO>();
 
             try
             {
-                using (_1dataLayer.BDCAMEntities db = new _1dataLayer.BDCAMEntities())
-
-                {
-                    var query = db.Set<_1dataLayer.alergias>();
-                    query.Add(new _1dataLayer.alergias
-                    {
-                        id_cartilla_medica = y++,
-                        alergia = alergias
-                    });
-
-                    db.SaveChanges();
-
-                }
+                alg.alergia = alergias;
+                _1dataLayer.DLAltaAlumno.Altaalergias(id_alergia, lista_alergia);
             }
             catch (Exception)
             {
@@ -261,35 +142,59 @@ namespace businessLayer
             }
         }
 
-        //Altas Tratamiento
-        /*public static void SetTratamiento(string tratamiento)
+        //Altas Enfermedades
+        public static void SetEnfermedades(string enfermedades)
         {
-            byte[] x = { (byte)204, 29, (byte)207, (byte)217 };
-            int y = 1;
+            _1dataLayer.enfermedadesDTO enf = new _1dataLayer.enfermedadesDTO();
 
-
+            List<_1dataLayer.enfermedadesDTO> lista_enfermedad = new List<_1dataLayer.enfermedadesDTO>();
 
             try
             {
-                using (_1dataLayer.BDCAMEntities db = new _1dataLayer.BDCAMEntities())
-
-                {
-                    var query = db.Set<_1dataLayer.tratamientos>();
-                    query.Add(new _1dataLayer.tratamientos
-                    {
-                        id_cartilla_medica = y++,
-                        tratamiento = tratamiento
-                    });
-
-                    db.SaveChanges();
-
-                }
+                enf.enfermedad = enfermedades;
+                _1dataLayer.DLAltaAlumno.Altaenfermedades(id_enfermedad, lista_enfermedad);
             }
             catch (Exception)
             {
                 throw;
             }
-        }*/
+        }
+
+        //Altas Discapacidades
+        public static void SetDiscapacidades(string discapacidad)
+        {
+            _1dataLayer.discapacidadesDTO disc = new _1dataLayer.discapacidadesDTO();
+
+            List<_1dataLayer.discapacidadesDTO> lista_discapacidad = new List<_1dataLayer.discapacidadesDTO>();
+
+            try
+            {
+                disc.discapacidades = discapacidad;
+                _1dataLayer.DLAltaAlumno.Altadiscapacidades(id_discapacidad, lista_discapacidad);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        //Altas Tratamientos
+        public static void SetTratamiento(string tratamiento)
+        {
+            _1dataLayer.Tratamientos trat = new _1dataLayer.Tratamientos();
+
+            List<_1dataLayer.Tratamientos> lista_tratamiento = new List<_1dataLayer.Tratamientos>();
+
+            try
+            {
+                trat.Tratamiento = tratamiento;
+                //_1dataLayer.DLAltaAlumno.Altatratamiento(id_tratamiento, lista_tratamiento);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
 
     }
 

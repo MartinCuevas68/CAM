@@ -1,14 +1,8 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Data.Entity.Validation;
 using System.Drawing;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace presentationLayer
@@ -34,8 +28,8 @@ namespace presentationLayer
                 tipoIngresoGroupBox);
 
             infoTutor(nombreTLabel, nombreT, nombreTPanel, apellidoPTLabel, apellidoPT, apellidoPTPanel, apellidoMTLabel, apellidoMT, apellidoMTPanel, direccionTLabel,
-                calleTLabel, calleT, calleTPanel, numeroCasaTLabel, numeroCasaT, numeroCasaTPanel, coloniaTLabel, coloniaT, coloniaTPanel, 
-                calleDatoLabel, numeroDatoLabel, coloniaDatoLabel, infContactoLabel,telCasaTLabel, telCasaT, telCasaTPanel, telMovilTLabel, telMovilT, telMovilTPanel,
+                calleTLabel, calleT, calleTPanel, numeroCasaTLabel, numeroCasaT, numeroCasaTPanel, coloniaTLabel, coloniaT, coloniaTPanel,
+                calleDatoLabel, numeroDatoLabel, coloniaDatoLabel, infContactoLabel, telCasaTLabel, telCasaT, telCasaTPanel, telMovilTLabel, telMovilT, telMovilTPanel,
                 telTrabajoTLabel, telTrabajoT, telTrabajoTPanel, ocupacionLabel, ocupacion, ocupacionTPanel, direccionCheckBox);
 
             PLAltaAlumno.infoMedica(servMedicoLabel, servMedico, servMedicoPanel, grupoSanguineoLabel, grupoSanguineo, grupoSanguineoPanel, grupoSanguineoComboBox, telefonoLabel,
@@ -199,9 +193,9 @@ namespace presentationLayer
 
         //INFORMACION TUTOR
         private void infoTutor(Label nombreL, TextBox nombre, Panel nombreP, Label apellidoPL, TextBox apellidoP, Panel apellidoPP,
-            Label apellidoML, TextBox apellidoM, Panel apellidoMP, Label direccion, Label calleL, TextBox calle, Panel calleP, 
+            Label apellidoML, TextBox apellidoM, Panel apellidoMP, Label direccion, Label calleL, TextBox calle, Panel calleP,
             Label numL, TextBox num, Panel numP, Label coloniaL, TextBox colonia, Panel coloniaP, Label datoCalle, Label datoNumeroCasa, Label datoColonia,
-            Label infoCon, Label telCasaL,TextBox telCasa, Panel telCasaP, Label telMovilL, TextBox telMovil, Panel telMovilP, Label telTrabajoL, TextBox telTrabajo, Panel telTrabajoP,
+            Label infoCon, Label telCasaL, TextBox telCasa, Panel telCasaP, Label telMovilL, TextBox telMovil, Panel telMovilP, Label telTrabajoL, TextBox telTrabajo, Panel telTrabajoP,
             Label ocupacionL, TextBox ocupacion, Panel ocupacionP, CheckBox mismaDireccion)
         {
 
@@ -254,7 +248,7 @@ namespace presentationLayer
         }
 
         //INFORMACION MEDICA
-        
+
 
         private void altaAlumno_Load(object sender, EventArgs e)
         {
@@ -657,7 +651,7 @@ namespace presentationLayer
                     }
                     else
                     {
-                        if (tipoIngresoGroupBox.Controls == null)
+                        if (!nuevoIngreso.Checked && !reingreso.Checked)
                         {
                             MessageBox.Show("¡No se ha seleccionado si el alumno es nuevo Ingreso o reingreso", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         }
@@ -755,20 +749,26 @@ namespace presentationLayer
                             {
                                 MessageBox.Show("¡Ingresar al menos un telefono de contacto!", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                             }
-                            else {
-                                if (!telCasaT.Text.Equals("") && telCasaT.TextLength < 10) { 
+                            else
+                            {
+                                if (!telCasaT.Text.Equals("") && telCasaT.TextLength < 10)
+                                {
                                     MessageBox.Show("¡El telefono de casa está incompleto, debe contener 10 digitos ", "Formato incorrecto", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                                 }
                                 else
                                 {
-                                    if (!telMovilT.Text.Equals("") && telMovilT.TextLength < 10) { 
+                                    if (!telMovilT.Text.Equals("") && telMovilT.TextLength < 10)
+                                    {
                                         MessageBox.Show("¡El telefono móvil está incompleto, debe contener 10 digitos ", "Formato incorrecto", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                                     }
-                                    else {
-                                        if (!telTrabajoT.Text.Equals("") && telTrabajoT.TextLength < 10) { 
+                                    else
+                                    {
+                                        if (!telTrabajoT.Text.Equals("") && telTrabajoT.TextLength < 10)
+                                        {
                                             MessageBox.Show("¡El telefono del trabajo está incompleto, debe contener 10 digitos ", "Formato incorrecto", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                                         }
-                                        else { 
+                                        else
+                                        {
                                             informacionTutor.Visible = false;
                                             informacionMedicaAlumnoGroupBox.Visible = true;
 
@@ -857,7 +857,8 @@ namespace presentationLayer
                                                              numeroCasa.Text,
                                                              telPersonal.Text,
                                                              escuelaP.Text,
-                                                             canalizado.Text
+                                                             canalizado.Text,
+                                                             tipoIngresoGroupBox.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked).ToString()
                                                              );
 
                         businessLayer.BLAltaAlumno.SetTutor2(nombreT.Text,
@@ -869,14 +870,22 @@ namespace presentationLayer
                                                              ocupacion.Text,
                                                              colonia_trabajo_tutor,
                                                              calle_trabajo_tutor,
-                                                             numero_trabajo_tutor);
+                                                             numero_trabajo_tutor,
+                                                             telMovilT.ToString()
+                                                             );
 
                         businessLayer.BLAltaAlumno.SetInfoMedAlumno2(servMedico.Text,
-                                                                     grupoSanguineo.Text,
+                                                                     grupoSanguineoComboBox.Text,
                                                                      telefono.Text,
                                                                      peso,
                                                                      color_textura_piel,
                                                                      estatura);
+
+                        businessLayer.BLAltaAlumno.SetAlergias(alergias);
+
+                        businessLayer.BLAltaAlumno.SetEnfermedades(enfermedades);
+
+                        businessLayer.BLAltaAlumno.SetDiscapacidades(discapacidad);
 
                         //Guardar Foto alumno   **NO BORRAR LO QUE ESTÁ COMENTADO!!!!!**
                         byte[] archivo = null;
@@ -952,7 +961,7 @@ namespace presentationLayer
             DateTime fechaActual = DateTime.Now;
             TimeSpan diferencia = fechaActual - fechaNacimiento;
             double dias = diferencia.TotalDays;
-            double anios = Math.Floor(dias/365);
+            double anios = Math.Floor(dias / 365);
             añosCum.Text = anios.ToString();
         }
 
@@ -1572,9 +1581,12 @@ namespace presentationLayer
         //Metodo para dar de alta enfermedades
         private void agregarEnfermedadesButton_Click_1(object sender, EventArgs e)
         {
-            ArrayList agregarEnfermedad = new ArrayList(); // Aquí está creado el arraylist
+            //List<string> lista_enfermedad_auxiliar = new List<string>();
+            //businessLayer.BLAltaAlumno.SetEnfermedades(lista_enfermedad_auxiliar.ToString());
+            //ArrayList agregarEnfermedad = new ArrayList(); // Aquí está creado el arraylist
             // _1dataLayer.enfermedadDTO al = _1dataLayer.enfermedadDTO(); // instancia de enfermedad DTO *me sale error*
-            int id_cartilla_medica = 1;
+            //int id_cartilla_medica = 1;
+
             try
             {
                 if (discapacidadesCombobox.SelectedItem == null)
@@ -1584,8 +1596,8 @@ namespace presentationLayer
                 else
                 {
                     enfermedades.AppendText(enfermedadesCombobox.SelectedItem + "\n"); //aqui se agrega la enfermedad del combobox al richtextbox y se le concatena un salto de linea
-                    agregarEnfermedad.Add(enfermedades); //agregar la info del richtextbox a la lista
-
+                    String info_enfermedades = enfermedades.Text;
+                    //lista_enfermedad_auxiliar.Add(enfermedades.Text); //agregar la info del richtextbox a la lista
                     //id_cartilla_medica = _1dataLayer.DLAltaAlumno.Altadiscapacidades(); //aqui se supone que mando a llamar el metodo para dar de alta la enfermedad pero me marca error, no sé cómo implementarlo correctamente
                 }
             }
@@ -1598,9 +1610,9 @@ namespace presentationLayer
         //Metodo para dar de alta discapacidades
         private void agregarDiscapacidadesButton_Click(object sender, EventArgs e)
         {
-            ArrayList agregarDiscapacidad = new ArrayList(); // Aquí está creado el arraylist
+            //ArrayList agregarDiscapacidad = new ArrayList(); // Aquí está creado el arraylist
             // _1dataLayer.discapacidadDTO al = _1dataLayer.discapacidadDTO(); // instancia de discapacidad DTO *me sale error*
-            int id_cartilla_medica = 1;
+            //int id_cartilla_medica = 1;
             try
             {
                 if (discapacidadesCombobox.SelectedItem == null)
@@ -1610,7 +1622,8 @@ namespace presentationLayer
                 else
                 {
                     discapacidad.AppendText(discapacidadesCombobox.SelectedItem + "\n"); //aqui se agrega la discapacidad del combobox al richtextbox y se le concatena un salto de linea
-                    agregarDiscapacidad.Add(discapacidad); //agregar la info del richtextbox a la lista
+                    String info_discapacidades = discapacidad.Text;
+                    //agregarDiscapacidad.Add(discapacidad); //agregar la info del richtextbox a la lista
 
                     //id_cartilla_medica = _1dataLayer.DLAltaAlumno.Altadiscapacidades(); //aqui se supone que mando a llamar el metodo para dar de alta la discapacidad pero me marca error, no sé cómo implementarlo correctamente
                 }
@@ -1618,15 +1631,15 @@ namespace presentationLayer
             catch (Exception)
             {
                 MessageBox.Show("Error al agregar una discapacidad!");
-            } 
+            }
         }
 
         //Metodo para dar de alta alergias
         private void agregarAlergiasButton_Click_1(object sender, EventArgs e)
         {
-            ArrayList agregarAlergias = new ArrayList(); // Aquí está creado el arraylist
+            //ArrayList agregarAlergias = new ArrayList(); // Aquí está creado el arraylist
             // _1dataLayer.alergiasDTO al = _1dataLayer.alergiasDTO(); // instancia de alergias DTO *me sale error*
-            int id_cartilla_medica = 1;
+            //int id_cartilla_medica = 1;
             try
             {
                 if (discapacidadesCombobox.SelectedItem == null)
@@ -1636,7 +1649,8 @@ namespace presentationLayer
                 else
                 {
                     alergias.AppendText(alergiasCombobox.SelectedItem + "\n"); //aqui se agrega la discapacidad del combobox al richtextbox y se le concatena un salto de linea
-                    agregarAlergias.Add(alergias); //agregar la info del richtextbox a la lista
+                    String info_alergias = alergias.Text;
+                    //agregarAlergias.Add(alergias); //agregar la info del richtextbox a la lista
 
                     //id_cartilla_medica = _1dataLayer.DLAltaAlumno.Altaalergias(); //aqui se supone que mando a llamar el metodo para dar de alta la alergia pero me marca error, no sé cómo implementarlo correctamente
                 }
@@ -1648,5 +1662,4 @@ namespace presentationLayer
         }
     }
 }
-
 
