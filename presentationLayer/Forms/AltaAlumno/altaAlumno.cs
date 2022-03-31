@@ -802,7 +802,7 @@ namespace presentationLayer
 
         private void realizarAltaButton_Click_1(object sender, EventArgs e)
         {
-            string colonia_trabajo_tutor = "", calle_trabajo_tutor = "", numero_trabajo_tutor = "";
+            string colonia_trabajo_tutor = "", calle_trabajo_tutor = "";
             string peso = "", color_textura_piel = "", estatura = "", discapacidad = "", enfermedades = "", alergias = "";
 
 
@@ -870,8 +870,7 @@ namespace presentationLayer
                                                              ocupacion.Text,
                                                              colonia_trabajo_tutor,
                                                              calle_trabajo_tutor,
-                                                             numero_trabajo_tutor,
-                                                             telMovilT.ToString()
+                                                             telTrabajoT.Text
                                                              );
 
                         businessLayer.BLAltaAlumno.SetInfoMedAlumno2(servMedico.Text,
@@ -886,6 +885,8 @@ namespace presentationLayer
                         businessLayer.BLAltaAlumno.SetEnfermedades(enfermedades);
 
                         businessLayer.BLAltaAlumno.SetDiscapacidades(discapacidad);
+
+                        businessLayer.BLAltaAlumno.SetTratamiento(tratamiento.Text);
 
                         //Guardar Foto alumno   **NO BORRAR LO QUE ESTÁ COMENTADO!!!!!**
                         byte[] archivo = null;
@@ -1589,7 +1590,7 @@ namespace presentationLayer
 
             try
             {
-                if (discapacidadesCombobox.SelectedItem == null)
+                if (enfermedadesCombobox.SelectedItem == null)
                 {
                     MessageBox.Show("No puedes agregar espacio en blanco a la lista de enfermedades!");
                 }
@@ -1642,7 +1643,7 @@ namespace presentationLayer
             //int id_cartilla_medica = 1;
             try
             {
-                if (discapacidadesCombobox.SelectedItem == null)
+                if (alergiasCombobox.SelectedItem == null)
                 {
                     MessageBox.Show("No puedes agregar espacio en blanco a la lista de alergias!");
                 }

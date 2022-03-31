@@ -68,7 +68,8 @@ namespace presentationLayer
             apellidoM.Text = alumno.apellido_materno;
             edad.Text = alumno.edad_alumno;
             matricula.Text = alumno.id_alumno.ToString();
-            fechaNa.Text = alumno.fecha_nacimiento.Day.ToString() + "/" + alumno.fecha_nacimiento.Month.ToString() + "/" + alumno.fecha_nacimiento.Year.ToString();
+            fechaNa.Value = alumno.fecha_nacimiento;
+            //fechaNa.Text = alumno.fecha_nacimiento.Day.ToString() + "/" + alumno.fecha_nacimiento.Month.ToString() + "/" + alumno.fecha_nacimiento.Year.ToString();
             ciudad.Text = alumno.ciudad_nacimiento_alumno;
             estado.Text = alumno.estado_nacimiento_alumno;
             curp.Text = alumno.CURP_alumno;
@@ -101,9 +102,10 @@ namespace presentationLayer
             numeroCasaT.Text = tutor.numero_tutor;
             coloniaT.Text = tutor.colonia_tutor;
             ocupacion.Text = tutor.ocupacion_tutor;
-            /*telCasaT.Text = telefonos.telefono;
-            telMovilT.Text = telefonos.telefono;
-            telTrabajoT.Text = telefonos.telefono;*/
+            telCasaT.Text = telefonos.telefono;
+            //telMovilT.Text = tutor.;
+            telTrabajoT.Text = telefonos.telefono;
+           
 
             //Información médica
             infoMed = _1dataLayer.DLConsultaAlumno.FichaTecnicaMedica(id_alumno);
