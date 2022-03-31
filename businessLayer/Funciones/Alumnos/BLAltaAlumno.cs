@@ -9,7 +9,6 @@ namespace businessLayer
         static int id_tutor;
         static int id_medica;
         static int id_alergia;
-        static int id_enfermedad;
         static int id_discapacidad;
         static int id_tratamiento;
 
@@ -153,7 +152,22 @@ namespace businessLayer
             }
         }
 
-        
+        //Altas Enfermedades
+        public static void SetEnfermedades(List<String> enfermedades)
+        {
+            //_1dataLayer.enfermedadesDTO enf = new _1dataLayer.enfermedadesDTO();
+
+            //List<_1dataLayer.enfermedadesDTO> lista_enfermedad = new List<_1dataLayer.enfermedadesDTO>();
+
+                try
+                {
+                    _1dataLayer.DLAltaAlumno.Altaenfermedades(id_medica, enfermedades);
+                }
+                catch (Exception)
+                {
+                    throw;
+                }
+        }
 
         //Altas Discapacidades
         public static void SetDiscapacidades(string discapacidad)

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Data.Entity.Validation;
 using System.Drawing;
 using System.IO;
@@ -9,6 +10,14 @@ namespace presentationLayer
 {
     public partial class altaAlumno : Form
     {
+
+
+        List<string> lista_enfermedad = new List<string>();
+
+        List<string> lista_auxiliar = new List<string>();
+
+        List<string> lista_alergias = new List<string>();
+
         public altaAlumno()
         {
 
@@ -754,7 +763,24 @@ namespace presentationLayer
         private void realizarAltaButton_Click_1(object sender, EventArgs e)
         {
             string colonia_trabajo_tutor = "", calle_trabajo_tutor = "";
-            string peso = "", color_textura_piel = "", estatura = "";
+
+            string peso = "", color_textura_piel = "", estatura = "",  enfermedades = "";
+
+
+
+            //businessLayer.Hueso.SetDiscapacidades(discapacidad);
+
+            //businessLayer.Hueso.SetEnfermedades(enfermedades);
+
+            //businessLayer.Hueso.SetAlergias(alergias);
+
+            //businessLayer.Hueso.setTratamiento(tratamiento);
+
+            //this.Hide();
+            //Consultas consultas = new Consultas();
+            //consultas.Show();
+
+
 
             //Aquí se puede ingresar el método para realizar la alta de alumno...
             if (servMedico.Text.Equals(""))
@@ -831,7 +857,8 @@ namespace presentationLayer
 
                         businessLayer.BLAltaAlumno.SetAlergias(alergias.Text);
 
-                        businessLayer.BLAltaAlumno.SetEnfermedades(enfermedades.Text);
+
+                        businessLayer.BLAltaAlumno.SetEnfermedades(lista_enfermedad);
 
                         businessLayer.BLAltaAlumno.SetDiscapacidades(discapacidad.Text);
 
@@ -1531,12 +1558,12 @@ namespace presentationLayer
         //Metodo para dar de alta enfermedades
         private void agregarEnfermedadesButton_Click_1(object sender, EventArgs e)
         {
-            //List<string> lista_enfermedad_auxiliar = new List<string>();
             //businessLayer.BLAltaAlumno.SetEnfermedades(lista_enfermedad_auxiliar.ToString());
             //ArrayList agregarEnfermedad = new ArrayList(); // Aquí está creado el arraylist
             // _1dataLayer.enfermedadDTO al = _1dataLayer.enfermedadDTO(); // instancia de enfermedad DTO *me sale error*
             //int id_cartilla_medica = 1;
 
+      
             try
             {
                 if (enfermedadesCombobox.SelectedItem == null)
@@ -1546,10 +1573,15 @@ namespace presentationLayer
                 else
                 {
                     enfermedades.AppendText(enfermedadesCombobox.SelectedItem + "\n"); //aqui se agrega la enfermedad del combobox al richtextbox y se le concatena un salto de linea
-                    String info_enfermedades = enfermedades.Text;
-                    //lista_enfermedad_auxiliar.Add(enfermedades.Text); //agregar la info del richtextbox a la lista
+             
+                    
+
+                    lista_enfermedad.Add(enfermedadesCombobox.SelectedItem.ToString());
+                    
+                    //agregar la info del richtextbox a la lista
                     //id_cartilla_medica = _1dataLayer.DLAltaAlumno.Altadiscapacidades(); //aqui se supone que mando a llamar el metodo para dar de alta la enfermedad pero me marca error, no sé cómo implementarlo correctamente
                 }
+
             }
             catch (Exception)
             {
