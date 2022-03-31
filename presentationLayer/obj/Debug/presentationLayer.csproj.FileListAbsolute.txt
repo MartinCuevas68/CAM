@@ -317,3 +317,4 @@ C:\Users\edder\source\repos\CAM2\presentationLayer\bin\Debug\businessLayer.exe
 C:\Users\edder\source\repos\CAM2\presentationLayer\bin\Debug\businessLayer.exe.config
 C:\Users\edder\source\repos\CAM2\presentationLayer\obj\Debug\presentationLayer.ConsultaAlumno.resources
 C:\Users\edder\source\repos\CAM2\presentationLayer\obj\Debug\presentationLayer.imprimirFormatosAlumno.resources
+C:\Users\ferna\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.csproj.CopyComplete

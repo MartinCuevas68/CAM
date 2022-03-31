@@ -30,5 +30,6 @@ namespace _1dataLayer
         public int id_alumno { get; set; }
         public string numero_alumno { get; set; }
         public string tipo_ingreso { get; set; }
+        public string documentacion_alumno { get; set; }
     }
 }

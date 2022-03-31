@@ -198,6 +198,7 @@
           <ScalarProperty Name="id_alumno" ColumnName="id_alumno" />
           <ScalarProperty Name="numero_alumno" ColumnName="numero_alumno" />
           <ScalarProperty Name="tipo_ingreso" ColumnName="tipo_ingreso" />
+          <ScalarProperty Name="documentacion_alumno" ColumnName="documentacion_alumno" />
         </ComplexTypeMapping>
       </ResultMapping>
     </FunctionImportMapping>
