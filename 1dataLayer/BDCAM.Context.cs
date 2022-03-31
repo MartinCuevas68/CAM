@@ -709,5 +709,18 @@ namespace _1dataLayer
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_Modificar_alergias", id_alergiaParameter, alergiaParameter);
         }
+    
+        public virtual int SP_AltaTratamientos(Nullable<int> id_car, string tratamiento)
+        {
+            var id_carParameter = id_car.HasValue ?
+                new ObjectParameter("id_car", id_car) :
+                new ObjectParameter("id_car", typeof(int));
+    
+            var tratamientoParameter = tratamiento != null ?
+                new ObjectParameter("tratamiento", tratamiento) :
+                new ObjectParameter("tratamiento", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_AltaTratamientos", id_carParameter, tratamientoParameter);
+        }
     }
 }

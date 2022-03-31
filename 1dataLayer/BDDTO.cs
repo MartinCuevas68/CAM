@@ -138,4 +138,10 @@ namespace _1dataLayer
         public byte[] imagen { get; set; }
         public string nombre { get; set; }
     }
+
+    public class tratamientoDTO
+    {
+        public int id_cartilla { get; set; }
+        public string tratamiento { get; set; }
+    }
 }

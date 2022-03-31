@@ -26,6 +26,7 @@ namespace presentationLayer
             _1dataLayer.SP_ListaEnfermedad_Result enfermedad = new _1dataLayer.SP_ListaEnfermedad_Result();
             _1dataLayer.SP_ListaAlergia_Result alergia = new _1dataLayer.SP_ListaAlergia_Result();
             _1dataLayer.SP_ListaTratamiento_Result tratamiento = new _1dataLayer.SP_ListaTratamiento_Result();
+            _1dataLayer.foto_alumno fotol = new _1dataLayer.foto_alumno();
 
             infoGeneralPanel.Visible = true;
             infoEscolarPanel.Visible = false;
@@ -126,9 +127,8 @@ namespace presentationLayer
             //this.FormClosed += new FormClosedEventHandler(cerrarForm);
 
 
-            //foto = _1dataLayer.DLConsultaAlumno.ConsultaFoto(id);
-            //MessageBox.Show(foto.nombre);
-            // fotopictureBox.Image = byteArrayToImage(foto.imagen_alumno.ToArray());
+            fotol = _1dataLayer.DLConsultaAlumno.ConsultaFoto(id_alumno);
+            foto.Image = byteArrayToImage(fotol.imagen_alumno.ToArray());
 
         }
 

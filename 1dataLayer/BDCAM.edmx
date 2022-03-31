@@ -591,6 +591,10 @@ warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a prima
           <Parameter Name="imagen_alumno" Type="image" Mode="In" />
           <Parameter Name="nombre" Type="varchar" Mode="In" />
         </Function>
+        <Function Name="SP_AltaTratamientos" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id_car" Type="int" Mode="In" />
+          <Parameter Name="tratamiento" Type="varchar" Mode="In" />
+        </Function>
         <Function Name="sp_altatutor" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="nombre" Type="varchar" Mode="In" />
           <Parameter Name="apellidopat" Type="varchar" Mode="In" />
@@ -1379,6 +1383,10 @@ warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a prima
             <Parameter Name="id_alergia" Mode="In" Type="Int32" />
             <Parameter Name="alergia" Mode="In" Type="String" />
           </FunctionImport>
+          <FunctionImport Name="SP_AltaTratamientos">
+            <Parameter Name="id_car" Mode="In" Type="Int32" />
+            <Parameter Name="tratamiento" Mode="In" Type="String" />
+          </FunctionImport>
         </EntityContainer>
         <ComplexType Name="SP_FichaTecnicaAlumno_Result">
           <Property Type="String" Name="nombre" Nullable="false" MaxLength="30" />
@@ -2010,6 +2018,7 @@ warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a prima
             </ResultMapping>
           </FunctionImportMapping>
           <FunctionImportMapping FunctionImportName="SP_Modificar_alergias" FunctionName="BDCAMModel.Store.SP_Modificar_alergias" />
+          <FunctionImportMapping FunctionImportName="SP_AltaTratamientos" FunctionName="BDCAMModel.Store.SP_AltaTratamientos" />
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

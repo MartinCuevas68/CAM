@@ -130,7 +130,13 @@ namespace _1dataLayer
             }
         }
 
-
+        public static void altatratamiento(int cartilla,tratamientoDTO tratamiento)
+        {
+            using (BDCAMEntities db = new BDCAMEntities())
+            {
+                db.SP_AltaTratamientos(cartilla, tratamiento.tratamiento);
+            }
+        }
        
 
     }

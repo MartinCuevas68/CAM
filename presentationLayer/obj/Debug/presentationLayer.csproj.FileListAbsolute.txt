@@ -309,7 +309,6 @@ C:\Users\ferna\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.ex
 C:\Users\ferna\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.pdb
 C:\Users\ferna\source\repos\CAM\presentationLayer\bin\Debug\businessLayer.exe
 C:\Users\ferna\source\repos\CAM\presentationLayer\bin\Debug\businessLayer.exe.config
-C:\Users\ferna\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.csproj.CopyComplete
 C:\Users\galle\source\repos\CAM3\presentationLayer\bin\Debug\businessLayer.exe
 C:\Users\galle\source\repos\CAM3\presentationLayer\bin\Debug\businessLayer.exe.config
 F:\Github\UABC\CAM\presentationLayer\bin\Debug\businessLayer.exe

@@ -148,3 +148,4 @@ C:\Users\ferna\source\repos\CAM\1dataLayer\bin\Debug\EntityFramework.SqlServer.x
 C:\Users\ferna\source\repos\CAM\1dataLayer\obj\Debug\1dataLayer.csproj.CoreCompileInputs.cache
 C:\Users\ferna\source\repos\CAM\1dataLayer\obj\Debug\1dataLayer.dll
 C:\Users\ferna\source\repos\CAM\1dataLayer\obj\Debug\1dataLayer.pdb
+C:\Users\ferna\source\repos\CAM\1dataLayer\obj\Debug\1dataLayer.csproj.AssemblyReference.cache

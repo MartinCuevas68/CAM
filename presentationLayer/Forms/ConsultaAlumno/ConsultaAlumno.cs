@@ -230,22 +230,25 @@ namespace presentationLayer
 
         private void fichaTecnicaButton_Click(object sender, EventArgs e)
         {
-            String id;
-            int id2 = 0;
-            foreach (DataGridViewRow row in this.altaDataGridView.Rows) 
+            Int32 selectedCellCount =  altaDataGridView.GetCellCount(DataGridViewElementStates.Selected);
+            int id = 0;
+            /*foreach (DataGridViewRow row in this.altaDataGridView.Rows)
             {
-                if (Convert.ToBoolean(row.Cells[5].Value) == true)
+                if (Convert.ToBoolean(row.Cells[0].Value) == true)
                 {
                     id = Convert.ToString(row.Cells[0].Value);
-                    id2 = int.Parse(id);
-                    MessageBox.Show(id);
                 }
+            }*/
+            //int codigo_hab = Convert.ToInt32(((DataRowView)dgvHabitaciones.Items[dgvHabitaciones.SelectedIndex])[0]);
+            for (int i = 0;i < selectedCellCount; i++)
+            {
+               id = int.Parse(altaDataGridView.SelectedCells[i].Value.ToString());
             }
 
             ConsultaAlumno consultas = new ConsultaAlumno();
             consultas.Close();
             this.Hide();
-            fichaTecnica ficha = new fichaTecnica(id2);
+            fichaTecnica ficha = new fichaTecnica(id);
             ficha.Show();
         }
 
@@ -263,7 +266,6 @@ namespace presentationLayer
                 }
                 else
                 {
-
                     altaDataGridView.DataSource = re.CopyToDataTable();
                 }
             }
