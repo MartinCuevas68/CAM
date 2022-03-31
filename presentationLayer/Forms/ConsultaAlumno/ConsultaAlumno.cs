@@ -232,22 +232,31 @@ namespace presentationLayer
         private void fichaTecnicaButton_Click(object sender, EventArgs e)
         {
             String id;
+            
             int id2 = 0;
+
+            if (checkboxDgv.Selected == false)
+                {
+                    MessageBox.Show("Marca la casilla para consultar la ficha tecnica de un alumno", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+
             foreach (DataGridViewRow row in this.altaDataGridView.Rows) 
             {
+                
                 if (Convert.ToBoolean(row.Cells[5].Value) == true)
                 {
                     id = Convert.ToString(row.Cells[0].Value);
                     id2 = int.Parse(id);
-                    MessageBox.Show(id);
+                    //MessageBox.Show(id);
+                    ConsultaAlumno consultas = new ConsultaAlumno();
+                    consultas.Close();
+                    this.Hide();
+                    fichaTecnica ficha = new fichaTecnica(id2);
+                    ficha.Show();
                 }
             }
 
-            ConsultaAlumno consultas = new ConsultaAlumno();
-            consultas.Close();
-            this.Hide();
-            fichaTecnica ficha = new fichaTecnica(id2);
-            ficha.Show();
+            
         }
     }
 }

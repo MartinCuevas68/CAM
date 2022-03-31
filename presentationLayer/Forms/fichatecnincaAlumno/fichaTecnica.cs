@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,7 +13,7 @@ namespace presentationLayer
 {
     public partial class fichaTecnica : Form
     {
-
+        public static int id;
         public fichaTecnica(int id_alumno)
         {
             InitializeComponent();
@@ -25,6 +26,7 @@ namespace presentationLayer
             _1dataLayer.SP_ListaEnfermedad_Result enfermedad = new _1dataLayer.SP_ListaEnfermedad_Result();
             _1dataLayer.SP_ListaAlergia_Result alergia = new _1dataLayer.SP_ListaAlergia_Result();
             _1dataLayer.SP_ListaTratamiento_Result tratamiento = new _1dataLayer.SP_ListaTratamiento_Result();
+            _1dataLayer.SP_consulta_foto_alumno_Result consultar_foto = new _1dataLayer.SP_consulta_foto_alumno_Result();
 
             infoGeneralPanel.Visible = true;
             infoEscolarPanel.Visible = false;
@@ -99,9 +101,9 @@ namespace presentationLayer
             numeroCasaT.Text = tutor.numero_tutor;
             coloniaT.Text = tutor.colonia_tutor;
             ocupacion.Text = tutor.ocupacion_tutor;
-            /*telCasaT.Text = telefonos.telefono;
+            //telCasaT.Text = telefonos.telefono;
             telMovilT.Text = telefonos.telefono;
-            telTrabajoT.Text = telefonos.telefono;*/
+            //telTrabajoT.Text = telefonos.telefono;
 
             //Información médica
             infoMed = _1dataLayer.DLConsultaAlumno.FichaTecnicaMedica(id_alumno);
@@ -122,13 +124,20 @@ namespace presentationLayer
             tratamientos.Text = tratamiento.Tratamiento;
 
             //Sentencia que manda a llamar el método para cerrar Consultas usando la X
-            //this.FormClosed += new FormClosedEventHandler(cerrarForm);
+            this.FormClosed += new FormClosedEventHandler(cerrarForm);
+        }
 
-
-            //foto = _1dataLayer.DLConsultaAlumno.ConsultaFoto(id);
-            //MessageBox.Show(foto.nombre);
-            // fotopictureBox.Image = byteArrayToImage(foto.imagen_alumno.ToArray());
-
+        //Metodo para cerrar Consultas usando la X ya que antes se cerraba pero se seguía ejecutando.
+        private void cerrarForm(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+        
+        public Image byteArrayToImage(byte[] byteArrayIn)
+        {
+            MemoryStream ms = new MemoryStream(byteArrayIn);
+            Image returnImage = Image.FromStream(ms);
+            return returnImage;
         }
 
         private void infoGeneralButton_Click(object sender, EventArgs e)

@@ -13,8 +13,6 @@ C:\Users\ferna\Source\Repos\CAM\businessLayer\bin\Debug\businessLayer.pdb
 C:\Users\ferna\Source\Repos\CAM\businessLayer\obj\Debug\businessLayer.csproj.AssemblyReference.cache
 C:\Users\ferna\Source\Repos\CAM\businessLayer\obj\Debug\businessLayer.csproj.CoreCompileInputs.cache
 C:\Users\ferna\Source\Repos\CAM\businessLayer\obj\Debug\businessLayer.pdb
-C:\Users\Juan2\Source\Repos\CAM\businessLayer\bin\Debug\businessLayer.dll.config
-C:\Users\Juan2\Source\Repos\CAM\businessLayer\bin\Debug\businessLayer.dll
 C:\Users\Juan2\Source\Repos\CAM\businessLayer\bin\Debug\businessLayer.pdb
 C:\Users\Juan2\Source\Repos\CAM\businessLayer\bin\Debug\1dataLayer.dll
 C:\Users\Juan2\Source\Repos\CAM\businessLayer\bin\Debug\EntityFramework.dll
@@ -25,7 +23,6 @@ C:\Users\Juan2\Source\Repos\CAM\businessLayer\bin\Debug\EntityFramework.xml
 C:\Users\Juan2\Source\Repos\CAM\businessLayer\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Juan2\Source\Repos\CAM\businessLayer\obj\Debug\businessLayer.csproj.AssemblyReference.cache
 C:\Users\Juan2\Source\Repos\CAM\businessLayer\obj\Debug\businessLayer.csproj.CoreCompileInputs.cache
-C:\Users\Juan2\Source\Repos\CAM\businessLayer\obj\Debug\businessLayer.dll
 C:\Users\Juan2\Source\Repos\CAM\businessLayer\obj\Debug\businessLayer.pdb
 C:\Users\diosk\source\repos\CAM\Principal\businessLayer\bin\Debug\businessLayer.dll.config
 C:\Users\diosk\source\repos\CAM\Principal\businessLayer\bin\Debug\businessLayer.dll
@@ -217,3 +214,6 @@ F:\Github\UABC\CAM\businessLayer\bin\Debug\businessLayer.exe.config
 F:\Github\UABC\CAM\businessLayer\bin\Debug\businessLayer.exe
 F:\Github\UABC\CAM\businessLayer\obj\Debug\businessLayer.csproj.SuggestedBindingRedirects.cache
 F:\Github\UABC\CAM\businessLayer\obj\Debug\businessLayer.exe
+C:\Users\Juan2\source\repos\CAM\businessLayer\bin\Debug\businessLayer.exe.config
+C:\Users\Juan2\source\repos\CAM\businessLayer\bin\Debug\businessLayer.exe
+C:\Users\Juan2\source\repos\CAM\businessLayer\obj\Debug\businessLayer.exe
