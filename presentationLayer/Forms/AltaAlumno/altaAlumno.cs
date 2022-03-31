@@ -494,7 +494,6 @@ namespace presentationLayer
 
         private void siguiente1Button_Click(object sender, EventArgs e)
         {
-
             int curple = curp.TextLength; //Variable int que guarda la longitud de caracteres del CURP
 
             if (nombreAl.Text.Equals("") || apellidoP.Text.Equals(""))
@@ -669,54 +668,6 @@ namespace presentationLayer
                     }
                 }
             }
-
-
-            /*if (canalizado.Text.Equals(""))
-            {
-                MessageBox.Show("¡No se ha respondido el campo \"Canalizado por\" ", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-            else
-            {
-                if (cicloEsc.Text.Equals(""))
-                {
-                    MessageBox.Show("¡No se ha ingresado el ciclo escolar", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                }
-                else
-                {
-                    if (telPersonal.Text == "") //POR PULIR
-                    {
-                        DialogResult dr = MessageBox.Show("¡El telefono personal del alumno está vacio! ¿Deseas registrarlo?", "Dato requerido", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                        if (dr == DialogResult.No)
-                        {
-                            informacionGeneralAlumno2.Visible = false;
-                            informacionTutor.Visible = true;
-
-                            infGeneralAlLabel.Visible = false;
-                            infoTutorLabel.Visible = true;
-
-                            siguiente2Button.Visible = false;
-                            siguiente3Button.Visible = true;
-                        }
-                        if (dr == DialogResult.Yes)
-                        {
-                            return;
-
-                        }
-                    }
-
-                    else
-                    {
-                        informacionGeneralAlumno2.Visible = false;
-                        informacionTutor.Visible = true;
-
-                        infGeneralAlLabel.Visible = false;
-                        infoTutorLabel.Visible = true;
-
-                        siguiente2Button.Visible = false;
-                        siguiente3Button.Visible = true;
-                    }
-                }
-            }*/
         }
 
         private void siguiente3Button_Click(object sender, EventArgs e)
@@ -803,23 +754,7 @@ namespace presentationLayer
         private void realizarAltaButton_Click_1(object sender, EventArgs e)
         {
             string colonia_trabajo_tutor = "", calle_trabajo_tutor = "";
-            string peso = "", color_textura_piel = "", estatura = "", discapacidad = "", enfermedades = "", alergias = "";
-
-
-
-
-            //businessLayer.Hueso.SetDiscapacidades(discapacidad);
-
-            //businessLayer.Hueso.SetEnfermedades(enfermedades);
-
-            //businessLayer.Hueso.SetAlergias(alergias);
-
-            //businessLayer.Hueso.setTratamiento(tratamiento);
-
-            //this.Hide();
-            //Consultas consultas = new Consultas();
-            //consultas.Show();
-
+            string peso = "", color_textura_piel = "", estatura = "";
 
             //Aquí se puede ingresar el método para realizar la alta de alumno...
             if (servMedico.Text.Equals(""))
@@ -842,7 +777,21 @@ namespace presentationLayer
                     {
                         //La validacion de Discapacidad, Enfermedad, Alergias y Tratamiento para que no se pueda hacer el alta sin dichos datos queda pendiente
                         //Para poder hacer pruebas, ya que esos datos aun no funcionan
+                        string value = "";
 
+                        if (nuevoIngreso.Checked)
+                        {
+                            value = "Nuevo Ingreso";
+                            MessageBox.Show(value);
+                        }
+                        else
+                        {
+                            if (reingreso.Checked)
+                            {
+                                value = "Reingreso";
+                                MessageBox.Show(value);
+                            }
+                        }
                         businessLayer.BLAltaAlumno.SetAlumno2(cicloEsc.Text,
                                                              nombreAl.Text,
                                                              apellidoP.Text,
@@ -858,7 +807,7 @@ namespace presentationLayer
                                                              telPersonal.Text,
                                                              escuelaP.Text,
                                                              canalizado.Text,
-                                                             tipoIngresoGroupBox.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked).ToString()
+                                                             value
                                                              );
 
                         businessLayer.BLAltaAlumno.SetTutor2(nombreT.Text,
@@ -880,11 +829,11 @@ namespace presentationLayer
                                                                      color_textura_piel,
                                                                      estatura);
 
-                        businessLayer.BLAltaAlumno.SetAlergias(alergias);
+                        businessLayer.BLAltaAlumno.SetAlergias(alergias.Text);
 
-                        businessLayer.BLAltaAlumno.SetEnfermedades(enfermedades);
+                        businessLayer.BLAltaAlumno.SetEnfermedades(enfermedades.Text);
 
-                        businessLayer.BLAltaAlumno.SetDiscapacidades(discapacidad);
+                        businessLayer.BLAltaAlumno.SetDiscapacidades(discapacidad.Text);
 
                         businessLayer.BLAltaAlumno.SetTratamiento(tratamiento.Text);
 
@@ -1660,6 +1609,26 @@ namespace presentationLayer
             {
                 MessageBox.Show("Error al agregar una alergia!");
             }
+        }
+
+        private void eliminarAlergiasButton_Click_1(object sender, EventArgs e)
+        {
+            alergias.Clear();
+        }
+
+        private void eliminarDiscapacidadesButton_Click_1(object sender, EventArgs e)
+        {
+            discapacidad.Clear();
+        }
+
+        private void eliminarEnfermedadesButton_Click(object sender, EventArgs e)
+        {
+            enfermedades.Clear();
+        }
+
+        private void eliminarTratamientosButton_Click(object sender, EventArgs e)
+        {
+            tratamiento.Clear();
         }
     }
 }

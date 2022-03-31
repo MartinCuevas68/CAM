@@ -1204,6 +1204,7 @@ namespace presentationLayer
             this.eliminarDiscapacidadesButton.Size = new System.Drawing.Size(36, 36);
             this.eliminarDiscapacidadesButton.TabIndex = 151;
             this.eliminarDiscapacidadesButton.UseVisualStyleBackColor = true;
+            this.eliminarDiscapacidadesButton.Click += new System.EventHandler(this.eliminarDiscapacidadesButton_Click_1);
             // 
             // eliminarEnfermedadesButton
             // 
@@ -1219,6 +1220,7 @@ namespace presentationLayer
             this.eliminarEnfermedadesButton.Size = new System.Drawing.Size(36, 36);
             this.eliminarEnfermedadesButton.TabIndex = 150;
             this.eliminarEnfermedadesButton.UseVisualStyleBackColor = true;
+            this.eliminarEnfermedadesButton.Click += new System.EventHandler(this.eliminarEnfermedadesButton_Click);
             // 
             // grupoSanguineoComboBox
             // 
@@ -1253,6 +1255,7 @@ namespace presentationLayer
             this.eliminarTratamientosButton.Size = new System.Drawing.Size(36, 36);
             this.eliminarTratamientosButton.TabIndex = 148;
             this.eliminarTratamientosButton.UseVisualStyleBackColor = true;
+            this.eliminarTratamientosButton.Click += new System.EventHandler(this.eliminarTratamientosButton_Click);
             // 
             // alergiasPanel
             // 
@@ -1464,7 +1467,7 @@ namespace presentationLayer
             this.eliminarAlergiasButton.Size = new System.Drawing.Size(36, 36);
             this.eliminarAlergiasButton.TabIndex = 139;
             this.eliminarAlergiasButton.UseVisualStyleBackColor = true;
-            this.eliminarAlergiasButton.Click += new System.EventHandler(this.eliminarAlergiasButton_Click);
+            this.eliminarAlergiasButton.Click += new System.EventHandler(this.eliminarAlergiasButton_Click_1);
             // 
             // discapacidadPanel
             // 
