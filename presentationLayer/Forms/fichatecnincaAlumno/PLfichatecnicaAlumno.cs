@@ -64,7 +64,8 @@ namespace presentationLayer
             terminarEdicion.Size = new Size(250, 55);
         }
 
-        public static void infoAlumno(Label nombreAlLabel, TextBox nombreAl, TextBox apellidoP, TextBox apellidoM, Label matriculaLabel, TextBox matricula, Label edadLabel, TextBox edad)
+        public static void infoAlumno(Label nombreAlLabel, TextBox nombreAl, TextBox apellidoP, TextBox apellidoM, Label matriculaLabel, TextBox matricula, Label edadLabel, TextBox edad,
+            Label nombreL,Label apellidoPL, Label apellidoML)
         {
             nombreAl.Size = new Size(220, 40);
             apellidoP.Size = new Size(220, 40);
@@ -77,6 +78,10 @@ namespace presentationLayer
             apellidoP.Location = new Point(630, 150);
             apellidoM.Location = new Point(860, 150);
 
+            nombreL.Location = new Point(300, 190);
+            apellidoPL.Location = new Point(400, 190);
+            apellidoML.Location = new Point(500, 190);
+
             matriculaLabel.Location = new Point(300, 220);
             matricula.Location = new Point(400, 220);
             matricula.ReadOnly = true;
@@ -86,7 +91,8 @@ namespace presentationLayer
         }
 
         public static void infoGeneral(Label fechaNaLabel, DateTimePicker fechaNa, Label lugarNaLabel, TextBox ciudad, TextBox estado,
-            Label direccionLabel, TextBox calle, TextBox numero, TextBox colonia, Label curpLabel, TextBox curp, Label telPersonalLabel, TextBox telPersonal)
+            Label direccionLabel, TextBox calle, TextBox numero, TextBox colonia, Label curpLabel, TextBox curp, Label telPersonalLabel, TextBox telPersonal,
+            Label calleALl, Label numCasaAlL, Label coloniaAlL, Label ciudadAlL, Label estadoAlL)
         {
             fechaNa.Size = new Size(220, 40);
             //fechaNa.Enabled = false;
@@ -97,20 +103,27 @@ namespace presentationLayer
             colonia.Size = new Size(300, 30);
             curp.Size = new Size(230, 40);
             telPersonal.Size = new Size(120, 30);
-            //
-            fechaNaLabel.Location = new Point(50,40);
-            fechaNa.Location = new Point(250,40);
 
-            lugarNaLabel.Location = new Point(50,120);
-            ciudad.Location = new Point(250,120);
+            fechaNaLabel.Location = new Point(50, 40);
+            fechaNa.Location = new Point(250, 40);
+
+            lugarNaLabel.Location = new Point(50, 120);
+            ciudad.Location = new Point(250, 120);
             estado.Location = new Point(510, 120);
+
+            ciudadAlL.Location = new Point(350, 160);
+            estadoAlL.Location = new Point(610, 160);
 
             direccionLabel.Location = new Point(50, 210);
             calle.Location = new Point(150, 210);
             numero.Location = new Point(460, 210);
             colonia.Location = new Point(570, 210);
 
-            //
+            calleALl.Location = new Point(280, 250);
+            numCasaAlL.Location = new Point(485, 250);
+            coloniaAlL.Location = new Point(700, 250);
+
+
             curpLabel.Location = new Point(790, 40);
             curp.Location = new Point(860, 40);
 
@@ -141,9 +154,10 @@ namespace presentationLayer
         }
 
         public static void infoTutor(Label nombreL, TextBox nombre, TextBox apellidoP, TextBox apellidoM, Label direccionL, TextBox calle, TextBox numero,
-                                    TextBox colonia, Label ocupacionL, TextBox ocupacion, Label telefonos , Label casaL, Label movilL, Label trabajoL, 
-                                    TextBox casa, TextBox movil, TextBox trabajo) {
-            
+                                    TextBox colonia, Label ocupacionL, TextBox ocupacion, Label telefonos, Label casaL, Label movilL, Label trabajoL,
+                                    TextBox casa, TextBox movil, TextBox trabajo, Label nombreTL, Label apePTL, Label apeMTL, Label calleTL, Label numCasaTL, Label coloniaTL)
+        {
+
             nombre.Size = new Size(220, 40);
             apellidoP.Size = new Size(220, 40);
             apellidoM.Size = new Size(220, 40);
@@ -153,16 +167,24 @@ namespace presentationLayer
             apellidoP.Location = new Point(380, 40);
             apellidoM.Location = new Point(610, 40);
 
+            nombreTL.Location = new Point(230, 80);
+            apePTL.Location = new Point(440, 80);
+            apeMTL.Location = new Point(670, 80);
+
             calle.Size = new Size(300, 40);
             numero.Size = new Size(100, 40);
             colonia.Size = new Size(300, 30);
-            
+
             direccionL.Location = new Point(50, 120);
             calle.Location = new Point(150, 120);
             numero.Location = new Point(460, 120);
             colonia.Location = new Point(570, 120);
 
-            ocupacion.Size = new Size(400,40);
+            calleTL.Location = new Point(280, 160);
+            numCasaTL.Location = new Point(485, 160);
+            coloniaTL.Location = new Point(700, 160);
+
+            ocupacion.Size = new Size(400, 40);
             ocupacionL.Location = new Point(50, 210);
             ocupacion.Location = new Point(160, 210);
 
@@ -231,7 +253,9 @@ namespace presentationLayer
                                 TextBox escuela, TextBox canalizado, TextBox nomTutor, TextBox apePTutor, TextBox apeMTutor, TextBox calleTu,
                                 TextBox numCasaTu, TextBox colTu, TextBox ocupacion, TextBox telCasa, TextBox telMovil, TextBox telTrabajo,
                                 TextBox servicioM, TextBox telContacto, TextBox grupoS, Panel discapacidades, Panel enferemedades,
-                                Panel alergias, Panel tratamiento, TableLayoutPanel infoMedica, ComboBox tipoIngresoCB, ComboBox grupoSan)
+                                Panel alergias, Panel tratamiento, TableLayoutPanel infoMedica, ComboBox tipoIngresoCB, ComboBox grupoSan,
+                                Label nombreTL, Label apePTL, Label apeMTL, Label calleTL, Label numCasaTL, Label coloniaTL,
+                                Label calleAlL, Label numCasaAlL, Label coloniaAlL, Label ciudadAlL, Label estadoAlL)
         {
 
             //Mostrar 
@@ -248,9 +272,12 @@ namespace presentationLayer
             //Encabezado
             nombreAl.ReadOnly = false; apellidoP.ReadOnly = false; apellidoM.ReadOnly = false; edad.Visible = false; edadL.Visible = false;
 
+
             //Seccion 1
             ciudadNac.ReadOnly = false; estadoNac.ReadOnly = false; fechaNac.Enabled = true; curp.ReadOnly = false; telefonoP.ReadOnly = false;
+            ciudadAlL.Visible = true; estadoAlL.Visible = true;
             calleAl.ReadOnly = false; numCasaAl.ReadOnly = false; coloniaAl.ReadOnly = false;
+            calleAlL.Visible = true; numCasaAlL.Visible = true; coloniaAlL.Visible = true;
 
             //Seccion 2
             ingreso.Visible = true; ciclo.ReadOnly = false; escuela.ReadOnly = false; canalizado.ReadOnly = false;
@@ -260,6 +287,8 @@ namespace presentationLayer
             nomTutor.ReadOnly = false; apePTutor.ReadOnly = false; apeMTutor.ReadOnly = false;
             calleTu.ReadOnly = false; numCasaTu.ReadOnly = false; colTu.ReadOnly = false; ocupacion.ReadOnly = false;
             telCasa.ReadOnly = false; telMovil.ReadOnly = false; telTrabajo.ReadOnly = false;
+            nombreTL.Visible = true; apePTL.Visible = true; apeMTL.Visible = true; calleTL.Visible = true; numCasaTL.Visible = true; coloniaTL.Visible = true;
+
 
             //Seccion 4
             servicioM.ReadOnly = false; telContacto.ReadOnly = false; grupoS.Visible = false; grupoSan.Visible = true; ;
@@ -276,13 +305,15 @@ namespace presentationLayer
 
         }
 
-        public static void ocultarEditarInformacion(Button regresarMenu, Button editarInfo, Button cancelar, Button terminar, Button añadirFoto,TextBox  nombreAl, 
-                                            TextBox  apellidoP, TextBox  apellidoM, Label edadL, TextBox  edad, TextBox ciudadNac,TextBox estadoNac, DateTimePicker fechaNac,
-                                            TextBox  curp, TextBox telefonoP, TextBox  calleAl, TextBox  numCasaAl, TextBox  coloniaAl, TextBox  ingreso, TextBox  ciclo,
-                                            TextBox  escuela,TextBox  canalizado, TextBox  nomTutor, TextBox  apePTutor, TextBox  apeMTutor,TextBox  calleTu,
-                                            TextBox  numCasaTu,TextBox  colTu, TextBox  ocupacion, TextBox telCasa,TextBox telMovil, TextBox  telTrabajo,                                                     
-                                            TextBox  servicioM, TextBox  telContacto, TextBox  grupoS,Panel discapacidades, Panel enferemedades, 
-                                            Panel alergias, Panel tratamiento, TableLayoutPanel infoMedica, ComboBox tipoIngresoCB, ComboBox grupoSan)
+        public static void ocultarEditarInformacion(Button regresarMenu, Button editarInfo, Button cancelar, Button terminar, Button añadirFoto, TextBox nombreAl,
+                                            TextBox apellidoP, TextBox apellidoM, Label edadL, TextBox edad, TextBox ciudadNac, TextBox estadoNac, DateTimePicker fechaNac,
+                                            TextBox curp, TextBox telefonoP, TextBox calleAl, TextBox numCasaAl, TextBox coloniaAl, TextBox ingreso, TextBox ciclo,
+                                            TextBox escuela, TextBox canalizado, TextBox nomTutor, TextBox apePTutor, TextBox apeMTutor, TextBox calleTu,
+                                            TextBox numCasaTu, TextBox colTu, TextBox ocupacion, TextBox telCasa, TextBox telMovil, TextBox telTrabajo,
+                                            TextBox servicioM, TextBox telContacto, TextBox grupoS, Panel discapacidades, Panel enferemedades,
+                                            Panel alergias, Panel tratamiento, TableLayoutPanel infoMedica, ComboBox tipoIngresoCB, ComboBox grupoSan,
+                                            Label nombreTL, Label apePTL, Label apeMTL, Label calleTL, Label numCasaTL, Label coloniaTL,
+                                            Label calleAlL, Label numCasaAlL, Label coloniaAlL, Label ciudadAlL, Label estadoAlL)
         {
             regresarMenu.Visible = true;
             editarInfo.Visible = true;
@@ -291,15 +322,17 @@ namespace presentationLayer
             añadirFoto.Visible = false;
 
             //Encabezado
-            nombreAl.Enabled = true; apellidoP.Enabled = true; apellidoM.Enabled = true; edad.Visible  = true; edadL.Visible = true;
+            nombreAl.Enabled = true; apellidoP.Enabled = true; apellidoM.Enabled = true; edad.Visible = true; edadL.Visible = true;
             nombreAl.ReadOnly = true; apellidoP.ReadOnly = true; apellidoM.ReadOnly = true; edad.ReadOnly = true;
 
             //Seccion 1
             ciudadNac.Enabled = true; fechaNac.Enabled = false; curp.Enabled = true; telefonoP.Enabled = true;
             ciudadNac.ReadOnly = true; curp.ReadOnly = true; telefonoP.ReadOnly = true;
             estadoNac.Enabled = true; estadoNac.ReadOnly = true;
+            ciudadAlL.Visible = false; estadoAlL.Visible = false;
             calleAl.Enabled = true; numCasaAl.Enabled = true; coloniaAl.Enabled = true;
             calleAl.ReadOnly = true; numCasaAl.ReadOnly = true; coloniaAl.ReadOnly = true;
+            calleAlL.Visible = false; numCasaAlL.Visible = false; coloniaAlL.Visible = false;
 
             //Seccion 2
             ingreso.Enabled = true; ciclo.Enabled = true; escuela.Enabled = true; canalizado.Enabled = true;
@@ -312,6 +345,8 @@ namespace presentationLayer
             calleTu.ReadOnly = true; numCasaTu.ReadOnly = true; colTu.ReadOnly = true; ocupacion.ReadOnly = true;
             telCasa.Enabled = true; telMovil.Enabled = true; telTrabajo.Enabled = true;
             telCasa.ReadOnly = true; telMovil.ReadOnly = true; telTrabajo.ReadOnly = true;
+            nombreTL.Visible = false; apePTL.Visible = false; apeMTL.Visible = false; calleTL.Visible = false; numCasaTL.Visible = false; coloniaTL.Visible = false;
+
 
             //Seccion 4
             servicioM.Enabled = true; telContacto.Enabled = true; grupoS.Enabled = true; grupoS.Visible = true;
