@@ -216,7 +216,7 @@ namespace presentationLayer
                                 ocupacion, telCasaT, telMovilT, telTrabajoT, servMedico, telefono, grupoSanguineo, discapacidadPanel, enfermedadesPanel,
                                 alergiasPanel, tratamientoPanel, infoMedicaTableLayoutPanel, tipoIngresoComboBox, grupoSanguineoComboBox,
                                 nombreTLabel, apellidoPTLabel, apellidoMTLabel, calleTLabel, numeroCasaTLabel, coloniaTLabel, calleAlL, numeroCasaAlL, coloniaAlL,
-                                ciudadAlL, estadoAlL);
+                                ciudadAlL, estadoAlL,nombreL,apellidoPL,apellidoML);
         }
 
         private void ocultarEditarInformacion()
@@ -227,7 +227,7 @@ namespace presentationLayer
                                         ocupacion, telCasaT, telMovilT, telTrabajoT, servMedico, telefono, grupoSanguineo, discapacidadPanel, enfermedadesPanel,
                                         alergiasPanel, tratamientoPanel, infoMedicaTableLayoutPanel, tipoIngresoComboBox, grupoSanguineoComboBox
                                         , nombreTLabel, apellidoPTLabel, apellidoMTLabel, calleTLabel, numeroCasaTLabel, coloniaTLabel, calleAlL, numeroCasaAlL, coloniaAlL,
-                                        ciudadAlL, estadoAlL);
+                                        ciudadAlL, estadoAlL, nombreL, apellidoPL, apellidoML);
         }
 
         private void editarInfoButton_Click(object sender, EventArgs e)

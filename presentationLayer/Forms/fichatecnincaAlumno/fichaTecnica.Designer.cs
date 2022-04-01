@@ -102,6 +102,11 @@ namespace presentationLayer
             this.cicloEscLabel = new System.Windows.Forms.Label();
             this.tipoIngresoLabel = new System.Windows.Forms.Label();
             this.infoGeneralPanel = new System.Windows.Forms.Panel();
+            this.ciudadAlL = new System.Windows.Forms.Label();
+            this.estadoAlL = new System.Windows.Forms.Label();
+            this.calleAlL = new System.Windows.Forms.Label();
+            this.numeroCasaAlL = new System.Windows.Forms.Label();
+            this.coloniaAlL = new System.Windows.Forms.Label();
             this.estado = new System.Windows.Forms.TextBox();
             this.colonia = new System.Windows.Forms.TextBox();
             this.numeroCasa = new System.Windows.Forms.TextBox();
@@ -130,11 +135,6 @@ namespace presentationLayer
             this.fichaLabel = new System.Windows.Forms.Label();
             this.apellidoM = new System.Windows.Forms.TextBox();
             this.apellidoP = new System.Windows.Forms.TextBox();
-            this.calleAlL = new System.Windows.Forms.Label();
-            this.numeroCasaAlL = new System.Windows.Forms.Label();
-            this.coloniaAlL = new System.Windows.Forms.Label();
-            this.ciudadAlL = new System.Windows.Forms.Label();
-            this.estadoAlL = new System.Windows.Forms.Label();
             this.terminarEdiButton = new presentationLayer.buttonSystem();
             this.editarInfoButton = new presentationLayer.buttonSystem();
             this.cancelarEdiButton = new presentationLayer.buttonSystem();
@@ -1067,6 +1067,71 @@ namespace presentationLayer
             this.infoGeneralPanel.Size = new System.Drawing.Size(872, 140);
             this.infoGeneralPanel.TabIndex = 211;
             // 
+            // ciudadAlL
+            // 
+            this.ciudadAlL.AutoSize = true;
+            this.ciudadAlL.Font = new System.Drawing.Font("Gadugi", 10F);
+            this.ciudadAlL.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.ciudadAlL.Location = new System.Drawing.Point(239, 68);
+            this.ciudadAlL.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.ciudadAlL.Name = "ciudadAlL";
+            this.ciudadAlL.Size = new System.Drawing.Size(51, 17);
+            this.ciudadAlL.TabIndex = 206;
+            this.ciudadAlL.Text = "Ciudad";
+            this.ciudadAlL.Visible = false;
+            // 
+            // estadoAlL
+            // 
+            this.estadoAlL.AutoSize = true;
+            this.estadoAlL.Font = new System.Drawing.Font("Gadugi", 10F);
+            this.estadoAlL.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.estadoAlL.Location = new System.Drawing.Point(345, 68);
+            this.estadoAlL.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.estadoAlL.Name = "estadoAlL";
+            this.estadoAlL.Size = new System.Drawing.Size(49, 17);
+            this.estadoAlL.TabIndex = 207;
+            this.estadoAlL.Text = "Estado";
+            this.estadoAlL.Visible = false;
+            // 
+            // calleAlL
+            // 
+            this.calleAlL.AutoSize = true;
+            this.calleAlL.Font = new System.Drawing.Font("Gadugi", 10F);
+            this.calleAlL.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.calleAlL.Location = new System.Drawing.Point(144, 118);
+            this.calleAlL.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.calleAlL.Name = "calleAlL";
+            this.calleAlL.Size = new System.Drawing.Size(37, 17);
+            this.calleAlL.TabIndex = 203;
+            this.calleAlL.Text = "Calle";
+            this.calleAlL.Visible = false;
+            // 
+            // numeroCasaAlL
+            // 
+            this.numeroCasaAlL.AutoSize = true;
+            this.numeroCasaAlL.Font = new System.Drawing.Font("Gadugi", 10F);
+            this.numeroCasaAlL.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.numeroCasaAlL.Location = new System.Drawing.Point(250, 118);
+            this.numeroCasaAlL.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.numeroCasaAlL.Name = "numeroCasaAlL";
+            this.numeroCasaAlL.Size = new System.Drawing.Size(58, 17);
+            this.numeroCasaAlL.TabIndex = 204;
+            this.numeroCasaAlL.Text = "Número";
+            this.numeroCasaAlL.Visible = false;
+            // 
+            // coloniaAlL
+            // 
+            this.coloniaAlL.AutoSize = true;
+            this.coloniaAlL.Font = new System.Drawing.Font("Gadugi", 10F);
+            this.coloniaAlL.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.coloniaAlL.Location = new System.Drawing.Point(359, 118);
+            this.coloniaAlL.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.coloniaAlL.Name = "coloniaAlL";
+            this.coloniaAlL.Size = new System.Drawing.Size(54, 17);
+            this.coloniaAlL.TabIndex = 205;
+            this.coloniaAlL.Text = "Colonia";
+            this.coloniaAlL.Visible = false;
+            // 
             // estado
             // 
             this.estado.BackColor = System.Drawing.Color.White;
@@ -1301,10 +1366,11 @@ namespace presentationLayer
             // nombreAl
             // 
             this.nombreAl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.nombreAl.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.nombreAl.Font = new System.Drawing.Font("Gadugi", 14.25F);
             this.nombreAl.Location = new System.Drawing.Point(269, 58);
             this.nombreAl.Name = "nombreAl";
-            this.nombreAl.Size = new System.Drawing.Size(99, 33);
+            this.nombreAl.Size = new System.Drawing.Size(99, 26);
             this.nombreAl.TabIndex = 204;
             this.nombreAl.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1372,91 +1438,28 @@ namespace presentationLayer
             // apellidoM
             // 
             this.apellidoM.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.apellidoM.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.apellidoM.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.apellidoM.Font = new System.Drawing.Font("Gadugi", 14.25F);
             this.apellidoM.Location = new System.Drawing.Point(472, 58);
             this.apellidoM.Margin = new System.Windows.Forms.Padding(2);
             this.apellidoM.Name = "apellidoM";
-            this.apellidoM.Size = new System.Drawing.Size(106, 33);
+            this.apellidoM.Size = new System.Drawing.Size(106, 26);
             this.apellidoM.TabIndex = 234;
             this.apellidoM.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // apellidoP
             // 
             this.apellidoP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.apellidoP.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.apellidoP.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.apellidoP.Font = new System.Drawing.Font("Gadugi", 14.25F);
             this.apellidoP.Location = new System.Drawing.Point(374, 58);
             this.apellidoP.Margin = new System.Windows.Forms.Padding(2);
             this.apellidoP.Name = "apellidoP";
-            this.apellidoP.Size = new System.Drawing.Size(94, 33);
+            this.apellidoP.Size = new System.Drawing.Size(94, 26);
             this.apellidoP.TabIndex = 233;
             this.apellidoP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // calleAlL
-            // 
-            this.calleAlL.AutoSize = true;
-            this.calleAlL.Font = new System.Drawing.Font("Gadugi", 10F);
-            this.calleAlL.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.calleAlL.Location = new System.Drawing.Point(144, 118);
-            this.calleAlL.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.calleAlL.Name = "calleAlL";
-            this.calleAlL.Size = new System.Drawing.Size(37, 17);
-            this.calleAlL.TabIndex = 203;
-            this.calleAlL.Text = "Calle";
-            this.calleAlL.Visible = false;
-            // 
-            // numeroCasaAlL
-            // 
-            this.numeroCasaAlL.AutoSize = true;
-            this.numeroCasaAlL.Font = new System.Drawing.Font("Gadugi", 10F);
-            this.numeroCasaAlL.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.numeroCasaAlL.Location = new System.Drawing.Point(250, 118);
-            this.numeroCasaAlL.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.numeroCasaAlL.Name = "numeroCasaAlL";
-            this.numeroCasaAlL.Size = new System.Drawing.Size(58, 17);
-            this.numeroCasaAlL.TabIndex = 204;
-            this.numeroCasaAlL.Text = "Número";
-            this.numeroCasaAlL.Visible = false;
-            // 
-            // coloniaAlL
-            // 
-            this.coloniaAlL.AutoSize = true;
-            this.coloniaAlL.Font = new System.Drawing.Font("Gadugi", 10F);
-            this.coloniaAlL.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.coloniaAlL.Location = new System.Drawing.Point(359, 118);
-            this.coloniaAlL.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.coloniaAlL.Name = "coloniaAlL";
-            this.coloniaAlL.Size = new System.Drawing.Size(54, 17);
-            this.coloniaAlL.TabIndex = 205;
-            this.coloniaAlL.Text = "Colonia";
-            this.coloniaAlL.Visible = false;
-            // 
-            // ciudadAlL
-            // 
-            this.ciudadAlL.AutoSize = true;
-            this.ciudadAlL.Font = new System.Drawing.Font("Gadugi", 10F);
-            this.ciudadAlL.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.ciudadAlL.Location = new System.Drawing.Point(239, 68);
-            this.ciudadAlL.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.ciudadAlL.Name = "ciudadAlL";
-            this.ciudadAlL.Size = new System.Drawing.Size(51, 17);
-            this.ciudadAlL.TabIndex = 206;
-            this.ciudadAlL.Text = "Ciudad";
-            this.ciudadAlL.Visible = false;
-            // 
-            // estadoAlL
-            // 
-            this.estadoAlL.AutoSize = true;
-            this.estadoAlL.Font = new System.Drawing.Font("Gadugi", 10F);
-            this.estadoAlL.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.estadoAlL.Location = new System.Drawing.Point(345, 68);
-            this.estadoAlL.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.estadoAlL.Name = "estadoAlL";
-            this.estadoAlL.Size = new System.Drawing.Size(49, 17);
-            this.estadoAlL.TabIndex = 207;
-            this.estadoAlL.Text = "Estado";
-            this.estadoAlL.Visible = false;
             // 
             // terminarEdiButton
             // 
@@ -1574,7 +1577,6 @@ namespace presentationLayer
             this.nombreL.Size = new System.Drawing.Size(58, 17);
             this.nombreL.TabIndex = 235;
             this.nombreL.Text = "Nombre";
-            this.nombreL.Visible = false;
             // 
             // apellidoPL
             // 
@@ -1587,7 +1589,6 @@ namespace presentationLayer
             this.apellidoPL.Size = new System.Drawing.Size(109, 17);
             this.apellidoPL.TabIndex = 236;
             this.apellidoPL.Text = "Apellido paterno";
-            this.apellidoPL.Visible = false;
             // 
             // apellidoML
             // 
@@ -1600,7 +1601,6 @@ namespace presentationLayer
             this.apellidoML.Size = new System.Drawing.Size(113, 17);
             this.apellidoML.TabIndex = 237;
             this.apellidoML.Text = "Apellido materno";
-            this.apellidoML.Visible = false;
             // 
             // fichaTecnica
             // 
