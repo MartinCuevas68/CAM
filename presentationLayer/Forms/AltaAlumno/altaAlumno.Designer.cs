@@ -1037,7 +1037,6 @@ namespace presentationLayer
             this.escuelaP.Name = "escuelaP";
             this.escuelaP.Size = new System.Drawing.Size(291, 32);
             this.escuelaP.TabIndex = 25;
-            this.escuelaP.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.escuelaP_KeyPress);
             // 
             // cicloEscPanel
             // 

@@ -1222,7 +1222,7 @@ namespace presentationLayer
 
         private void escuelaP_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (Char.IsLetter(e.KeyChar))
+           if (Char.IsLetter(e.KeyChar))
             {
                 e.Handled = false;
             }
