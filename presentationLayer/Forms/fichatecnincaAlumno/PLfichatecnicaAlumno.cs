@@ -78,16 +78,16 @@ namespace presentationLayer
             apellidoP.Location = new Point(630, 150);
             apellidoM.Location = new Point(860, 150);
 
-            nombreL.Location = new Point(300, 190);
-            apellidoPL.Location = new Point(400, 190);
-            apellidoML.Location = new Point(500, 190);
+            nombreL.Location = new Point(475, 190);
+            apellidoPL.Location = new Point(690, 190);
+            apellidoML.Location = new Point(915, 190);
 
-            matriculaLabel.Location = new Point(300, 220);
-            matricula.Location = new Point(400, 220);
+            matriculaLabel.Location = new Point(300, 230);
+            matricula.Location = new Point(400, 230);
             matricula.ReadOnly = true;
 
-            edadLabel.Location = new Point(970, 220);
-            edad.Location = new Point(1030, 220);
+            edadLabel.Location = new Point(970, 230);
+            edad.Location = new Point(1030, 230);
         }
 
         public static void infoGeneral(Label fechaNaLabel, DateTimePicker fechaNa, Label lugarNaLabel, TextBox ciudad, TextBox estado,
@@ -255,7 +255,7 @@ namespace presentationLayer
                                 TextBox servicioM, TextBox telContacto, TextBox grupoS, Panel discapacidades, Panel enferemedades,
                                 Panel alergias, Panel tratamiento, TableLayoutPanel infoMedica, ComboBox tipoIngresoCB, ComboBox grupoSan,
                                 Label nombreTL, Label apePTL, Label apeMTL, Label calleTL, Label numCasaTL, Label coloniaTL,
-                                Label calleAlL, Label numCasaAlL, Label coloniaAlL, Label ciudadAlL, Label estadoAlL)
+                                Label calleAlL, Label numCasaAlL, Label coloniaAlL, Label ciudadAlL, Label estadoAlL,Label nombreL, Label apellidoPL, Label apellidoML)
         {
 
             //Mostrar 
@@ -271,7 +271,7 @@ namespace presentationLayer
 
             //Encabezado
             nombreAl.ReadOnly = false; apellidoP.ReadOnly = false; apellidoM.ReadOnly = false; edad.Visible = false; edadL.Visible = false;
-
+            nombreL.Visible = true; apellidoPL.Visible = true; apellidoML.Visible = true;
 
             //Seccion 1
             ciudadNac.ReadOnly = false; estadoNac.ReadOnly = false; fechaNac.Enabled = true; curp.ReadOnly = false; telefonoP.ReadOnly = false;
@@ -313,7 +313,7 @@ namespace presentationLayer
                                             TextBox servicioM, TextBox telContacto, TextBox grupoS, Panel discapacidades, Panel enferemedades,
                                             Panel alergias, Panel tratamiento, TableLayoutPanel infoMedica, ComboBox tipoIngresoCB, ComboBox grupoSan,
                                             Label nombreTL, Label apePTL, Label apeMTL, Label calleTL, Label numCasaTL, Label coloniaTL,
-                                            Label calleAlL, Label numCasaAlL, Label coloniaAlL, Label ciudadAlL, Label estadoAlL)
+                                            Label calleAlL, Label numCasaAlL, Label coloniaAlL, Label ciudadAlL, Label estadoAlL, Label nombreL, Label apellidoPL, Label apellidoML)
         {
             regresarMenu.Visible = true;
             editarInfo.Visible = true;
@@ -324,6 +324,7 @@ namespace presentationLayer
             //Encabezado
             nombreAl.Enabled = true; apellidoP.Enabled = true; apellidoM.Enabled = true; edad.Visible = true; edadL.Visible = true;
             nombreAl.ReadOnly = true; apellidoP.ReadOnly = true; apellidoM.ReadOnly = true; edad.ReadOnly = true;
+            nombreL.Visible = false; apellidoPL.Visible = false; apellidoML.Visible = false;
 
             //Seccion 1
             ciudadNac.Enabled = true; fechaNac.Enabled = false; curp.Enabled = true; telefonoP.Enabled = true;
