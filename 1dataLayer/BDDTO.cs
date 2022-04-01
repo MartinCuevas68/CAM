@@ -97,8 +97,8 @@ namespace _1dataLayer
 
     public class telefono_tutorDTO
     {
-        public int id_tutor { get; }
-        public int id_telefono { get; }
+        public int id_tutor { get; set; }
+        public int id_telefono { get; set; }
         public int telefono { get; set; }
     }
 

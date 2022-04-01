@@ -398,5 +398,6 @@
     </FunctionImportMapping>
     <FunctionImportMapping FunctionImportName="SP_Modificar_alergias" FunctionName="BDCAMModel.Store.SP_Modificar_alergias" />
     <FunctionImportMapping FunctionImportName="SP_AltaTratamientos" FunctionName="BDCAMModel.Store.SP_AltaTratamientos" />
+    <FunctionImportMapping FunctionImportName="SP_ModificarTelefonoTutor" FunctionName="BDCAMModel.Store.SP_ModificarTelefonoTutor" />
   </EntityContainerMapping>
 </Mapping>

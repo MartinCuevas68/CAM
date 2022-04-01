@@ -505,6 +505,11 @@
       <Parameter Name="id_car" Mode="In" Type="Int32" />
       <Parameter Name="tratamiento" Mode="In" Type="String" />
     </FunctionImport>
+    <FunctionImport Name="SP_ModificarTelefonoTutor">
+      <Parameter Name="idtutor" Mode="In" Type="Int32" />
+      <Parameter Name="idtipotelefono" Mode="In" Type="Int32" />
+      <Parameter Name="telefono" Mode="In" Type="String" />
+    </FunctionImport>
   </EntityContainer>
   <ComplexType Name="SP_FichaTecnicaAlumno_Result">
     <Property Type="String" Name="nombre" Nullable="false" MaxLength="30" />

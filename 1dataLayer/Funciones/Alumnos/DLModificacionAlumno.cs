@@ -59,6 +59,13 @@ namespace _1dataLayer
             }
         }
 
+         public static void modificaciontelefono(int id_tutor, telefono_tutorDTO tuto)
+        {
+            using(BDCAMEntities db = new BDCAMEntities())
+            {
+                db.SP_ModificarTelefonoTutor(id_tutor, tuto.id_telefono, tuto.telefono.ToString());
+            }
+        }
 
     }
 }

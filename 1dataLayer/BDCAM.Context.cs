@@ -722,5 +722,22 @@ namespace _1dataLayer
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_AltaTratamientos", id_carParameter, tratamientoParameter);
         }
+    
+        public virtual int SP_ModificarTelefonoTutor(Nullable<int> idtutor, Nullable<int> idtipotelefono, string telefono)
+        {
+            var idtutorParameter = idtutor.HasValue ?
+                new ObjectParameter("idtutor", idtutor) :
+                new ObjectParameter("idtutor", typeof(int));
+    
+            var idtipotelefonoParameter = idtipotelefono.HasValue ?
+                new ObjectParameter("idtipotelefono", idtipotelefono) :
+                new ObjectParameter("idtipotelefono", typeof(int));
+    
+            var telefonoParameter = telefono != null ?
+                new ObjectParameter("telefono", telefono) :
+                new ObjectParameter("telefono", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_ModificarTelefonoTutor", idtutorParameter, idtipotelefonoParameter, telefonoParameter);
+        }
     }
 }

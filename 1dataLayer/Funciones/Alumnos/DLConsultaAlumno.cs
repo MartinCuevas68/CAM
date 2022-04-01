@@ -214,9 +214,23 @@ namespace _1dataLayer
                     foto.imagen_alumno = result.imagen_alumno;
                     foto.nombre = result.nombre;
                 }
-
             }
             return foto;
+        }
+
+
+        public static List<SP_ListaTelefonosTutor_Result> consultartelefonotutor(int id)
+        {
+            List<SP_ListaTelefonosTutor_Result> telefonos = new List<SP_ListaTelefonosTutor_Result>();
+            using (BDCAMEntities db = new BDCAMEntities())
+            {
+                ObjectResult<SP_ListaTelefonosTutor_Result> x = db.SP_ListaTelefonosTutor(id);
+                foreach (SP_ListaTelefonosTutor_Result result in x)
+                {
+                    telefonos.Add(result);
+                }
+            }
+            return telefonos;
         }
 
 

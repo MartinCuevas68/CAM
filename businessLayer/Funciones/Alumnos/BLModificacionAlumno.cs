@@ -15,8 +15,9 @@ namespace businessLayer
             _1dataLayer.SP_FichaTecnicaAlumno_Result alumnobuscado = new _1dataLayer.SP_FichaTecnicaAlumno_Result();
             _1dataLayer.SP_FichaTecnicaAlumnoTutor_Result tutor = new _1dataLayer.SP_FichaTecnicaAlumnoTutor_Result();
             _1dataLayer.SP_FichaTecnicaAlumnoMedica_Result medica = new _1dataLayer.SP_FichaTecnicaAlumnoMedica_Result();
-
-
+            _1dataLayer.telefono_tutorDTO telito = new _1dataLayer.telefono_tutorDTO();
+            List< _1dataLayer.SP_ListaTelefonosTutor_Result> teletuto = new List<_1dataLayer.SP_ListaTelefonosTutor_Result>();
+           
 
             int opc = 1;
             int opa = 1;
@@ -28,6 +29,7 @@ namespace businessLayer
             do
             {
                 alumnos = listaAlumnos.AlumnoLista();
+                Console.Clear();
                 Console.WriteLine("Menu de modificaciones ");
                 foreach (_1dataLayer.SP_ListaAlumnos_Result alu in alumnos)
                 {
@@ -39,18 +41,20 @@ namespace businessLayer
                 alumnobuscado = _1dataLayer.DLConsultaAlumno.FichaTenicaAlumno(id_alumno);
                 tutor = _1dataLayer.DLConsultaAlumno.FichaTecnicaTutor(id_alumno);
                 medica = _1dataLayer.DLConsultaAlumno.FichaTecnicaMedica(id_alumno);
-
+                teletuto = _1dataLayer.DLConsultaAlumno.consultartelefonotutor(tutor.id_tutor);
+                Console.Clear();
                 Console.WriteLine("Seleccione la opcion que desea modificar para el alumno: " + alumnobuscado.nombre + " " + alumnobuscado.apellido_paterno + " " + alumnobuscado.apellido_materno);
                 Console.WriteLine("Su tutor siendo: " + tutor.nombre + " " + tutor.apellido_paterno + " " + tutor.apellido_materno);
+                Console.WriteLine("Su información medica siendo: " + medica.servicio_medico + " " + medica.grupo_sanguineo + " " + medica.telefono_contacto);
                 Console.WriteLine("Modificar infomacion sobre el alumno [1]");
                 Console.WriteLine("Modificar informacion sobre el tutor [2]");
-                //Console.WriteLine("Modificar informacion sobre sus datos medicos [3]");
+                Console.WriteLine("Modificar informacion sobre sus datos medicos [3]");
                 Console.WriteLine("Salir [0]");
                 opc = int.Parse(Console.ReadLine());
                 switch (opc)
                 {
                     case 1:
-
+                        Console.Clear();
                         Console.WriteLine("Selecciona la opcion que desees modificar del alumno: ");
                         Console.WriteLine("1.-Nombre del alumno");
                         Console.WriteLine("2.-Apellido paterno");
@@ -81,11 +85,12 @@ namespace businessLayer
 
 
                     case 2:
-
+                        Console.Clear();
                         Console.WriteLine("Selecciona la opcion que desees modificar del tutor: ");
                         Console.WriteLine("1.-Nombre");
                         Console.WriteLine("2.-Apellido paterno");
                         Console.WriteLine("3.-Apellido Materno");
+                        Console.WriteLine("4.-Telefono");
                         opa = int.Parse(Console.ReadLine());
                         switch (opa)
                         {
@@ -106,12 +111,74 @@ namespace businessLayer
                                 tutor.apellido_materno = Console.ReadLine();
                                 _1dataLayer.DLModificacionAlumno.ModificacionTutor(tutor.id_tutor, tutor);
                                 break;
-                        }
 
+                            case 4:
+                                Console.WriteLine("Seleccione el telefono a modificar");
+                                foreach(_1dataLayer.SP_ListaTelefonosTutor_Result papa in teletuto)
+                                {
+                                    Console.WriteLine(papa.id_telefono+" "+papa.telefono);
+                                }
+
+                                int opt = int.Parse(Console.ReadLine());
+
+                                switch (opt)
+                                {
+                                    case 1:
+                                        Console.WriteLine("Ingrese el nuevo telefono personal");
+                                        telito.telefono = int.Parse(Console.ReadLine());
+                                        telito.id_telefono = opt;
+                                        _1dataLayer.DLModificacionAlumno.modificaciontelefono(tutor.id_tutor, telito);
+                                        break;
+
+                                    case 2:
+                                        Console.WriteLine("Ingrese el nuevo telefono de casa");
+                                        telito.telefono = int.Parse(Console.ReadLine());
+                                        telito.id_telefono = opt;
+                                        _1dataLayer.DLModificacionAlumno.modificaciontelefono(tutor.id_tutor, telito);
+                                        break;
+
+                                    case 3:
+                                        Console.WriteLine("Ingrese el nuevo telefono de trabajo");
+                                        telito.telefono = int.Parse(Console.ReadLine());
+                                        telito.id_telefono = opt;
+                                        _1dataLayer.DLModificacionAlumno.modificaciontelefono(tutor.id_tutor, telito);
+                                        break;
+                                }
+                                    
+                                break;
+                        }
                         break;
 
-                }
 
+                    case 3:
+                        Console.Clear();
+                        Console.WriteLine("Selecciona la opcion que desees modificar de la tabla medica: ");
+                        Console.WriteLine("1.-Tipo de sangre");
+                        Console.WriteLine("2.-Telefono de contacto");
+                        Console.WriteLine("3.-Servicio medico");
+                        opa = int.Parse(Console.ReadLine());
+                        switch (opa)
+                        {
+                            case 1:
+                                Console.WriteLine("Ingrese el tipo de sangre:");
+                                medica.grupo_sanguineo = Console.ReadLine();
+                                _1dataLayer.DLModificacionAlumno.modificacionmedica(medica.id_cartilla_medica, medica);
+                                break;
+
+                            case 2:
+                                Console.WriteLine("Ingrese el telefono de contacto:");
+                                medica.telefono_contacto = Console.ReadLine();
+                                _1dataLayer.DLModificacionAlumno.modificacionmedica(medica.id_cartilla_medica, medica);
+                                break;
+
+                            case 3:
+                                Console.WriteLine("Ingrese el servicio medico:");
+                                medica.servicio_medico = Console.ReadLine();
+                                _1dataLayer.DLModificacionAlumno.modificacionmedica(medica.id_cartilla_medica, medica);
+                                break;
+                        }
+                        break;
+                }
             } while (opc != 0);
         }
     }
