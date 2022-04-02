@@ -272,6 +272,7 @@ namespace presentationLayer
             //Encabezado
             nombreAl.ReadOnly = false; apellidoP.ReadOnly = false; apellidoM.ReadOnly = false; edad.Visible = false; edadL.Visible = false;
             nombreL.Visible = true; apellidoPL.Visible = true; apellidoML.Visible = true;
+            //nombreAl.
 
             //Seccion 1
             ciudadNac.ReadOnly = false; estadoNac.ReadOnly = false; fechaNac.Enabled = true; curp.ReadOnly = false; telefonoP.ReadOnly = false;
