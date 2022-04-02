@@ -126,7 +126,6 @@ namespace presentationLayer
             this.infoGeneralButton = new System.Windows.Forms.Button();
             this.edad = new System.Windows.Forms.TextBox();
             this.matricula = new System.Windows.Forms.TextBox();
-            this.nombreAl = new System.Windows.Forms.TextBox();
             this.matriculaLabel = new System.Windows.Forms.Label();
             this.foto = new System.Windows.Forms.PictureBox();
             this.logo = new System.Windows.Forms.PictureBox();
@@ -135,14 +134,15 @@ namespace presentationLayer
             this.fichaLabel = new System.Windows.Forms.Label();
             this.apellidoM = new System.Windows.Forms.TextBox();
             this.apellidoP = new System.Windows.Forms.TextBox();
+            this.nombreL = new System.Windows.Forms.Label();
+            this.apellidoPL = new System.Windows.Forms.Label();
+            this.apellidoML = new System.Windows.Forms.Label();
             this.terminarEdiButton = new presentationLayer.buttonSystem();
             this.editarInfoButton = new presentationLayer.buttonSystem();
             this.cancelarEdiButton = new presentationLayer.buttonSystem();
             this.fotoBtn = new presentationLayer.buttonSystem();
             this.regresarMenuButton = new presentationLayer.buttonSystem();
-            this.nombreL = new System.Windows.Forms.Label();
-            this.apellidoPL = new System.Windows.Forms.Label();
-            this.apellidoML = new System.Windows.Forms.Label();
+            this.nombreAl = new System.Windows.Forms.TextBox();
             this.coloniaTPanel.SuspendLayout();
             this.numeroCasaTPanel.SuspendLayout();
             this.calleTPanel.SuspendLayout();
@@ -1363,17 +1363,6 @@ namespace presentationLayer
             this.matricula.Size = new System.Drawing.Size(99, 26);
             this.matricula.TabIndex = 205;
             // 
-            // nombreAl
-            // 
-            this.nombreAl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.nombreAl.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.nombreAl.Font = new System.Drawing.Font("Gadugi", 14.25F);
-            this.nombreAl.Location = new System.Drawing.Point(269, 58);
-            this.nombreAl.Name = "nombreAl";
-            this.nombreAl.Size = new System.Drawing.Size(99, 26);
-            this.nombreAl.TabIndex = 204;
-            this.nombreAl.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // matriculaLabel
             // 
             this.matriculaLabel.AutoSize = true;
@@ -1460,6 +1449,42 @@ namespace presentationLayer
             this.apellidoP.Size = new System.Drawing.Size(94, 26);
             this.apellidoP.TabIndex = 233;
             this.apellidoP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // nombreL
+            // 
+            this.nombreL.AutoSize = true;
+            this.nombreL.Font = new System.Drawing.Font("Gadugi", 10F);
+            this.nombreL.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.nombreL.Location = new System.Drawing.Point(289, 82);
+            this.nombreL.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.nombreL.Name = "nombreL";
+            this.nombreL.Size = new System.Drawing.Size(58, 17);
+            this.nombreL.TabIndex = 235;
+            this.nombreL.Text = "Nombre";
+            // 
+            // apellidoPL
+            // 
+            this.apellidoPL.AutoSize = true;
+            this.apellidoPL.Font = new System.Drawing.Font("Gadugi", 10F);
+            this.apellidoPL.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.apellidoPL.Location = new System.Drawing.Point(395, 82);
+            this.apellidoPL.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.apellidoPL.Name = "apellidoPL";
+            this.apellidoPL.Size = new System.Drawing.Size(109, 17);
+            this.apellidoPL.TabIndex = 236;
+            this.apellidoPL.Text = "Apellido paterno";
+            // 
+            // apellidoML
+            // 
+            this.apellidoML.AutoSize = true;
+            this.apellidoML.Font = new System.Drawing.Font("Gadugi", 10F);
+            this.apellidoML.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.apellidoML.Location = new System.Drawing.Point(519, 82);
+            this.apellidoML.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.apellidoML.Name = "apellidoML";
+            this.apellidoML.Size = new System.Drawing.Size(113, 17);
+            this.apellidoML.TabIndex = 237;
+            this.apellidoML.Text = "Apellido materno";
             // 
             // terminarEdiButton
             // 
@@ -1566,41 +1591,16 @@ namespace presentationLayer
             this.regresarMenuButton.UseVisualStyleBackColor = false;
             this.regresarMenuButton.Click += new System.EventHandler(this.regresarMenuButton_Click);
             // 
-            // nombreL
+            // nombreAl
             // 
-            this.nombreL.AutoSize = true;
-            this.nombreL.Font = new System.Drawing.Font("Gadugi", 10F);
-            this.nombreL.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.nombreL.Location = new System.Drawing.Point(289, 82);
-            this.nombreL.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.nombreL.Name = "nombreL";
-            this.nombreL.Size = new System.Drawing.Size(58, 17);
-            this.nombreL.TabIndex = 235;
-            this.nombreL.Text = "Nombre";
-            // 
-            // apellidoPL
-            // 
-            this.apellidoPL.AutoSize = true;
-            this.apellidoPL.Font = new System.Drawing.Font("Gadugi", 10F);
-            this.apellidoPL.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.apellidoPL.Location = new System.Drawing.Point(395, 82);
-            this.apellidoPL.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.apellidoPL.Name = "apellidoPL";
-            this.apellidoPL.Size = new System.Drawing.Size(109, 17);
-            this.apellidoPL.TabIndex = 236;
-            this.apellidoPL.Text = "Apellido paterno";
-            // 
-            // apellidoML
-            // 
-            this.apellidoML.AutoSize = true;
-            this.apellidoML.Font = new System.Drawing.Font("Gadugi", 10F);
-            this.apellidoML.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.apellidoML.Location = new System.Drawing.Point(519, 82);
-            this.apellidoML.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.apellidoML.Name = "apellidoML";
-            this.apellidoML.Size = new System.Drawing.Size(113, 17);
-            this.apellidoML.TabIndex = 237;
-            this.apellidoML.Text = "Apellido materno";
+            this.nombreAl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.nombreAl.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.nombreAl.Font = new System.Drawing.Font("Gadugi", 14.25F);
+            this.nombreAl.Location = new System.Drawing.Point(269, 58);
+            this.nombreAl.Name = "nombreAl";
+            this.nombreAl.Size = new System.Drawing.Size(99, 26);
+            this.nombreAl.TabIndex = 204;
+            this.nombreAl.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // fichaTecnica
             // 
@@ -1767,7 +1767,6 @@ namespace presentationLayer
         private System.Windows.Forms.Button infoGeneralButton;
         private System.Windows.Forms.TextBox edad;
         private System.Windows.Forms.TextBox matricula;
-        private System.Windows.Forms.TextBox nombreAl;
         private System.Windows.Forms.Label matriculaLabel;
         private System.Windows.Forms.PictureBox foto;
         private System.Windows.Forms.PictureBox logo;
@@ -1794,5 +1793,6 @@ namespace presentationLayer
         private System.Windows.Forms.Label nombreL;
         private System.Windows.Forms.Label apellidoPL;
         private System.Windows.Forms.Label apellidoML;
+        private System.Windows.Forms.TextBox nombreAl;
     }
 }

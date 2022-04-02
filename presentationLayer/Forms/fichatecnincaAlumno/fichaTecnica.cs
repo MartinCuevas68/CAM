@@ -34,9 +34,9 @@ namespace presentationLayer
             infoMedicaPanel.Visible = false;
             colorearEtiqueta(infoGeneralButton, infoEscolarButton, infoTutorButton, infoMedicaButton);
 
-            PLfichatecnicaAlumno.centrarLabel(fichaLabel, logo, nombreAlLabel, nombreAl, matriculaLabel, matricula, edadLabel, edad, foto, infoGeneralPanel, infoEscolarPanel,infoTutorPanel, 
+            PLfichatecnicaAlumno.centrarLabel(fichaLabel, logo, nombreAlLabel, textBox1, matriculaLabel, matricula, edadLabel, edad, foto, infoGeneralPanel, infoEscolarPanel,infoTutorPanel, 
                                 infoMedicaPanel, infoGeneralButton, infoEscolarButton, infoTutorButton, infoMedicaButton, regresarMenuButton, editarInfoButton, cancelarEdiButton, terminarEdiButton);
-            PLfichatecnicaAlumno.infoAlumno(nombreAlLabel, nombreAl, apellidoP, apellidoM, matriculaLabel, matricula, edadLabel, edad, nombreL, apellidoPL, apellidoML);
+            PLfichatecnicaAlumno.infoAlumno(nombreAlLabel, textBox1, apellidoP, apellidoM, matriculaLabel, matricula, edadLabel, edad, nombreL, apellidoPL, apellidoML);
             PLfichatecnicaAlumno.infoGeneral(fechaNaLabel, fechaNa, lugarNaLabel, ciudad, estado, direccionLabel, calle, numeroCasa, colonia, curpLabel, curp, telPersonalLabel, telPersonal, calleAlL, numeroCasaAlL, coloniaAlL, ciudadAlL, estadoAlL);
             PLfichatecnicaAlumno.infoEscolar(tipoIngresoLabel, tipoIngreso, escuelaPLabel, escuelaP, canalizadoLabel, canalizado, cicloEscLabel, cicloEsc);
             PLfichatecnicaAlumno.infoTutor(nombreCTLabel, nombreT, apellidoPT, apellidoMT, direccionTLabel, calleT, numeroCasaT, coloniaT, ocupacionLabel, ocupacion, telefonosTLabel,
@@ -79,7 +79,7 @@ namespace presentationLayer
             colonia.Text = alumno.colonia_alumno;
             tipoIngreso.Text = alumno.tipo_ingreso;
 
-            businessLayer.BLFichaTecnica.infoGenAlumno(nombreAl, id_alumno);
+            businessLayer.BLFichaTecnica.infoGenAlumno(textBox1, id_alumno);
 
             //Informacion escolar del alumno
             tipoIngreso.Text = alumno.tipo_ingreso;
@@ -211,7 +211,7 @@ namespace presentationLayer
         private void mostrarEditarInformacion()
         {
             PLfichatecnicaAlumno.mostrarEditarInformacion(regresarMenuButton, editarInfoButton, cancelarEdiButton, terminarEdiButton, fotoBtn,
-                                nombreAl, apellidoP, apellidoM, edadLabel, edad, ciudad, estado, fechaNa, curp, telPersonal, calle, numeroCasa, colonia,
+                                textBox1, apellidoP, apellidoM, edadLabel, edad, ciudad, estado, fechaNa, curp, telPersonal, calle, numeroCasa, colonia,
                                 tipoIngreso, cicloEsc, escuelaP, canalizado, nombreT, apellidoPT, apellidoMT, calleT, numeroCasaT, coloniaT,
                                 ocupacion, telCasaT, telMovilT, telTrabajoT, servMedico, telefono, grupoSanguineo, discapacidadPanel, enfermedadesPanel,
                                 alergiasPanel, tratamientoPanel, infoMedicaTableLayoutPanel, tipoIngresoComboBox, grupoSanguineoComboBox,
@@ -222,7 +222,7 @@ namespace presentationLayer
         private void ocultarEditarInformacion()
         {
         PLfichatecnicaAlumno.ocultarEditarInformacion(regresarMenuButton, editarInfoButton, cancelarEdiButton, terminarEdiButton, fotoBtn,
-                                        nombreAl, apellidoP, apellidoM, edadLabel, edad, ciudad, estado, fechaNa, curp, telPersonal, calle, numeroCasa, colonia,
+                                        textBox1, apellidoP, apellidoM, edadLabel, edad, ciudad, estado, fechaNa, curp, telPersonal, calle, numeroCasa, colonia,
                                         tipoIngreso, cicloEsc, escuelaP, canalizado, nombreT, apellidoPT, apellidoMT, calleT, numeroCasaT, coloniaT,
                                         ocupacion, telCasaT, telMovilT, telTrabajoT, servMedico, telefono, grupoSanguineo, discapacidadPanel, enfermedadesPanel,
                                         alergiasPanel, tratamientoPanel, infoMedicaTableLayoutPanel, tipoIngresoComboBox, grupoSanguineoComboBox
