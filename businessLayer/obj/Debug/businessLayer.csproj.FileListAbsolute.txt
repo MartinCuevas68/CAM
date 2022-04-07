@@ -54,8 +54,6 @@ C:\Users\diosk\source\repos\CAM\pruebas\businessLayer\obj\Debug\businessLayer.cs
 C:\Users\diosk\source\repos\CAM\pruebas\businessLayer\obj\Debug\businessLayer.csproj.CopyComplete
 C:\Users\diosk\source\repos\CAM\pruebas\businessLayer\obj\Debug\businessLayer.dll
 C:\Users\diosk\source\repos\CAM\pruebas\businessLayer\obj\Debug\businessLayer.pdb
-C:\Users\vanes\Source\Repos\CAM\businessLayer\bin\Debug\businessLayer.dll.config
-C:\Users\vanes\Source\Repos\CAM\businessLayer\bin\Debug\businessLayer.dll
 C:\Users\vanes\Source\Repos\CAM\businessLayer\bin\Debug\businessLayer.pdb
 C:\Users\vanes\Source\Repos\CAM\businessLayer\bin\Debug\1dataLayer.dll
 C:\Users\vanes\Source\Repos\CAM\businessLayer\bin\Debug\EntityFramework.dll
@@ -67,7 +65,6 @@ C:\Users\vanes\Source\Repos\CAM\businessLayer\bin\Debug\EntityFramework.SqlServe
 C:\Users\vanes\Source\Repos\CAM\businessLayer\obj\Debug\businessLayer.csproj.AssemblyReference.cache
 C:\Users\vanes\Source\Repos\CAM\businessLayer\obj\Debug\businessLayer.csproj.CoreCompileInputs.cache
 C:\Users\vanes\Source\Repos\CAM\businessLayer\obj\Debug\businessLayer.csproj.CopyComplete
-C:\Users\vanes\Source\Repos\CAM\businessLayer\obj\Debug\businessLayer.dll
 C:\Users\vanes\Source\Repos\CAM\businessLayer\obj\Debug\businessLayer.pdb
 C:\Users\Juan2\source\repos\Desarrollo\businessLayer\obj\Debug\businessLayer.csproj.AssemblyReference.cache
 C:\Users\Juan2\source\repos\Desarrollo\businessLayer\obj\Debug\businessLayer.csproj.CoreCompileInputs.cache
@@ -217,3 +214,6 @@ C:\Users\edder\source\repos\CAM2\businessLayer\obj\Debug\businessLayer.exe
 C:\Users\Juan2\source\repos\CAM\businessLayer\obj\Debug\businessLayer.exe
 C:\Users\Juan2\source\repos\CAM\businessLayer\bin\Debug\businessLayer.exe.config
 C:\Users\Juan2\source\repos\CAM\businessLayer\bin\Debug\businessLayer.exe
+C:\Users\vanes\source\repos\CAM\businessLayer\bin\Debug\businessLayer.exe.config
+C:\Users\vanes\source\repos\CAM\businessLayer\bin\Debug\businessLayer.exe
+C:\Users\vanes\source\repos\CAM\businessLayer\obj\Debug\businessLayer.exe

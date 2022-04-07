@@ -135,14 +135,39 @@ namespace presentationLayer
             this.fichaLabel = new System.Windows.Forms.Label();
             this.apellidoM = new System.Windows.Forms.TextBox();
             this.apellidoP = new System.Windows.Forms.TextBox();
+            this.nombreL = new System.Windows.Forms.Label();
+            this.apellidoPL = new System.Windows.Forms.Label();
+            this.apellidoML = new System.Windows.Forms.Label();
+            this.apellidoMLinea = new presentationLayer.Forms.fichatecnincaAlumno.LineaControl();
+            this.apellidoPLinea = new presentationLayer.Forms.fichatecnincaAlumno.LineaControl();
+            this.nombreAlLinea = new presentationLayer.Forms.fichatecnincaAlumno.LineaControl();
             this.terminarEdiButton = new presentationLayer.buttonSystem();
             this.editarInfoButton = new presentationLayer.buttonSystem();
             this.cancelarEdiButton = new presentationLayer.buttonSystem();
             this.fotoBtn = new presentationLayer.buttonSystem();
             this.regresarMenuButton = new presentationLayer.buttonSystem();
-            this.nombreL = new System.Windows.Forms.Label();
-            this.apellidoPL = new System.Windows.Forms.Label();
-            this.apellidoML = new System.Windows.Forms.Label();
+            this.telefonoLinea = new presentationLayer.Forms.fichatecnincaAlumno.LineaControl();
+            this.servMedicoLinea = new presentationLayer.Forms.fichatecnincaAlumno.LineaControl();
+            this.telTrabajoTLinea = new presentationLayer.Forms.fichatecnincaAlumno.LineaControl();
+            this.telMovilTLinea = new presentationLayer.Forms.fichatecnincaAlumno.LineaControl();
+            this.telCasaTLinea = new presentationLayer.Forms.fichatecnincaAlumno.LineaControl();
+            this.ocupacionLinea = new presentationLayer.Forms.fichatecnincaAlumno.LineaControl();
+            this.coloniaTLinea = new presentationLayer.Forms.fichatecnincaAlumno.LineaControl();
+            this.numeroCasaTLinea = new presentationLayer.Forms.fichatecnincaAlumno.LineaControl();
+            this.calleTLinea = new presentationLayer.Forms.fichatecnincaAlumno.LineaControl();
+            this.apellidoMTLinea = new presentationLayer.Forms.fichatecnincaAlumno.LineaControl();
+            this.apellidoPTLinea = new presentationLayer.Forms.fichatecnincaAlumno.LineaControl();
+            this.nombreTLinea = new presentationLayer.Forms.fichatecnincaAlumno.LineaControl();
+            this.cicloEscLinea = new presentationLayer.Forms.fichatecnincaAlumno.LineaControl();
+            this.canalizadoLinea = new presentationLayer.Forms.fichatecnincaAlumno.LineaControl();
+            this.escuelaPLinea = new presentationLayer.Forms.fichatecnincaAlumno.LineaControl();
+            this.telPersonalLinea = new presentationLayer.Forms.fichatecnincaAlumno.LineaControl();
+            this.curpLinea = new presentationLayer.Forms.fichatecnincaAlumno.LineaControl();
+            this.coloniaLinea = new presentationLayer.Forms.fichatecnincaAlumno.LineaControl();
+            this.numeroCasaLinea = new presentationLayer.Forms.fichatecnincaAlumno.LineaControl();
+            this.calleLinea = new presentationLayer.Forms.fichatecnincaAlumno.LineaControl();
+            this.estadoLinea = new presentationLayer.Forms.fichatecnincaAlumno.LineaControl();
+            this.ciudadLinea = new presentationLayer.Forms.fichatecnincaAlumno.LineaControl();
             this.coloniaTPanel.SuspendLayout();
             this.numeroCasaTPanel.SuspendLayout();
             this.calleTPanel.SuspendLayout();
@@ -329,6 +354,8 @@ namespace presentationLayer
             // infoMedicaPanel
             // 
             this.infoMedicaPanel.BackColor = System.Drawing.Color.White;
+            this.infoMedicaPanel.Controls.Add(this.telefonoLinea);
+            this.infoMedicaPanel.Controls.Add(this.servMedicoLinea);
             this.infoMedicaPanel.Controls.Add(this.grupoSanguineoComboBox);
             this.infoMedicaPanel.Controls.Add(this.infoMedicaTableLayoutPanel);
             this.infoMedicaPanel.Controls.Add(this.telefono);
@@ -594,6 +621,16 @@ namespace presentationLayer
             // infoTutorPanel
             // 
             this.infoTutorPanel.BackColor = System.Drawing.Color.White;
+            this.infoTutorPanel.Controls.Add(this.telTrabajoTLinea);
+            this.infoTutorPanel.Controls.Add(this.telMovilTLinea);
+            this.infoTutorPanel.Controls.Add(this.telCasaTLinea);
+            this.infoTutorPanel.Controls.Add(this.ocupacionLinea);
+            this.infoTutorPanel.Controls.Add(this.coloniaTLinea);
+            this.infoTutorPanel.Controls.Add(this.numeroCasaTLinea);
+            this.infoTutorPanel.Controls.Add(this.calleTLinea);
+            this.infoTutorPanel.Controls.Add(this.apellidoMTLinea);
+            this.infoTutorPanel.Controls.Add(this.apellidoPTLinea);
+            this.infoTutorPanel.Controls.Add(this.nombreTLinea);
             this.infoTutorPanel.Controls.Add(this.telTrabajoT);
             this.infoTutorPanel.Controls.Add(this.telMovilT);
             this.infoTutorPanel.Controls.Add(this.telefonosTLabel);
@@ -928,6 +965,9 @@ namespace presentationLayer
             // infoEscolarPanel
             // 
             this.infoEscolarPanel.BackColor = System.Drawing.Color.White;
+            this.infoEscolarPanel.Controls.Add(this.cicloEscLinea);
+            this.infoEscolarPanel.Controls.Add(this.canalizadoLinea);
+            this.infoEscolarPanel.Controls.Add(this.escuelaPLinea);
             this.infoEscolarPanel.Controls.Add(this.tipoIngresoComboBox);
             this.infoEscolarPanel.Controls.Add(this.cicloEsc);
             this.infoEscolarPanel.Controls.Add(this.canalizado);
@@ -1044,6 +1084,13 @@ namespace presentationLayer
             // infoGeneralPanel
             // 
             this.infoGeneralPanel.BackColor = System.Drawing.Color.White;
+            this.infoGeneralPanel.Controls.Add(this.telPersonalLinea);
+            this.infoGeneralPanel.Controls.Add(this.curpLinea);
+            this.infoGeneralPanel.Controls.Add(this.coloniaLinea);
+            this.infoGeneralPanel.Controls.Add(this.numeroCasaLinea);
+            this.infoGeneralPanel.Controls.Add(this.calleLinea);
+            this.infoGeneralPanel.Controls.Add(this.estadoLinea);
+            this.infoGeneralPanel.Controls.Add(this.ciudadLinea);
             this.infoGeneralPanel.Controls.Add(this.ciudadAlL);
             this.infoGeneralPanel.Controls.Add(this.estadoAlL);
             this.infoGeneralPanel.Controls.Add(this.calleAlL);
@@ -1220,7 +1267,7 @@ namespace presentationLayer
             this.curp.Font = new System.Drawing.Font("Gadugi", 14.25F);
             this.curp.Location = new System.Drawing.Point(628, 11);
             this.curp.Name = "curp";
-            this.curp.Size = new System.Drawing.Size(230, 26);
+            this.curp.Size = new System.Drawing.Size(240, 26);
             this.curp.TabIndex = 12;
             this.curp.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1461,6 +1508,78 @@ namespace presentationLayer
             this.apellidoP.TabIndex = 233;
             this.apellidoP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // nombreL
+            // 
+            this.nombreL.AutoSize = true;
+            this.nombreL.Font = new System.Drawing.Font("Gadugi", 10F);
+            this.nombreL.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.nombreL.Location = new System.Drawing.Point(289, 82);
+            this.nombreL.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.nombreL.Name = "nombreL";
+            this.nombreL.Size = new System.Drawing.Size(58, 17);
+            this.nombreL.TabIndex = 235;
+            this.nombreL.Text = "Nombre";
+            // 
+            // apellidoPL
+            // 
+            this.apellidoPL.AutoSize = true;
+            this.apellidoPL.Font = new System.Drawing.Font("Gadugi", 10F);
+            this.apellidoPL.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.apellidoPL.Location = new System.Drawing.Point(395, 82);
+            this.apellidoPL.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.apellidoPL.Name = "apellidoPL";
+            this.apellidoPL.Size = new System.Drawing.Size(109, 17);
+            this.apellidoPL.TabIndex = 236;
+            this.apellidoPL.Text = "Apellido paterno";
+            // 
+            // apellidoML
+            // 
+            this.apellidoML.AutoSize = true;
+            this.apellidoML.Font = new System.Drawing.Font("Gadugi", 10F);
+            this.apellidoML.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.apellidoML.Location = new System.Drawing.Point(519, 82);
+            this.apellidoML.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.apellidoML.Name = "apellidoML";
+            this.apellidoML.Size = new System.Drawing.Size(113, 17);
+            this.apellidoML.TabIndex = 237;
+            this.apellidoML.Text = "Apellido materno";
+            // 
+            // apellidoMLinea
+            // 
+            this.apellidoMLinea.BackColor = System.Drawing.Color.Transparent;
+            this.apellidoMLinea.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.apellidoMLinea.BorderFocusColor = System.Drawing.Color.MediumPurple;
+            this.apellidoMLinea.BorderSize = 2;
+            this.apellidoMLinea.Location = new System.Drawing.Point(522, 74);
+            this.apellidoMLinea.Name = "apellidoMLinea";
+            this.apellidoMLinea.Size = new System.Drawing.Size(78, 10);
+            this.apellidoMLinea.TabIndex = 240;
+            this.apellidoMLinea.UnderlinedStyle = true;
+            // 
+            // apellidoPLinea
+            // 
+            this.apellidoPLinea.BackColor = System.Drawing.Color.Transparent;
+            this.apellidoPLinea.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.apellidoPLinea.BorderFocusColor = System.Drawing.Color.MediumPurple;
+            this.apellidoPLinea.BorderSize = 2;
+            this.apellidoPLinea.Location = new System.Drawing.Point(411, 69);
+            this.apellidoPLinea.Name = "apellidoPLinea";
+            this.apellidoPLinea.Size = new System.Drawing.Size(78, 10);
+            this.apellidoPLinea.TabIndex = 239;
+            this.apellidoPLinea.UnderlinedStyle = true;
+            // 
+            // nombreAlLinea
+            // 
+            this.nombreAlLinea.BackColor = System.Drawing.Color.Transparent;
+            this.nombreAlLinea.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.nombreAlLinea.BorderFocusColor = System.Drawing.Color.MediumPurple;
+            this.nombreAlLinea.BorderSize = 2;
+            this.nombreAlLinea.Location = new System.Drawing.Point(276, 69);
+            this.nombreAlLinea.Name = "nombreAlLinea";
+            this.nombreAlLinea.Size = new System.Drawing.Size(78, 10);
+            this.nombreAlLinea.TabIndex = 238;
+            this.nombreAlLinea.UnderlinedStyle = true;
+            // 
             // terminarEdiButton
             // 
             this.terminarEdiButton.BackColor = System.Drawing.Color.White;
@@ -1566,41 +1685,269 @@ namespace presentationLayer
             this.regresarMenuButton.UseVisualStyleBackColor = false;
             this.regresarMenuButton.Click += new System.EventHandler(this.regresarMenuButton_Click);
             // 
-            // nombreL
+            // telefonoLinea
             // 
-            this.nombreL.AutoSize = true;
-            this.nombreL.Font = new System.Drawing.Font("Gadugi", 10F);
-            this.nombreL.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.nombreL.Location = new System.Drawing.Point(289, 82);
-            this.nombreL.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.nombreL.Name = "nombreL";
-            this.nombreL.Size = new System.Drawing.Size(58, 17);
-            this.nombreL.TabIndex = 235;
-            this.nombreL.Text = "Nombre";
+            this.telefonoLinea.BackColor = System.Drawing.Color.Transparent;
+            this.telefonoLinea.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.telefonoLinea.BorderFocusColor = System.Drawing.Color.MediumPurple;
+            this.telefonoLinea.BorderSize = 2;
+            this.telefonoLinea.Location = new System.Drawing.Point(242, 64);
+            this.telefonoLinea.Name = "telefonoLinea";
+            this.telefonoLinea.Size = new System.Drawing.Size(78, 10);
+            this.telefonoLinea.TabIndex = 216;
+            this.telefonoLinea.UnderlinedStyle = true;
             // 
-            // apellidoPL
+            // servMedicoLinea
             // 
-            this.apellidoPL.AutoSize = true;
-            this.apellidoPL.Font = new System.Drawing.Font("Gadugi", 10F);
-            this.apellidoPL.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.apellidoPL.Location = new System.Drawing.Point(395, 82);
-            this.apellidoPL.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.apellidoPL.Name = "apellidoPL";
-            this.apellidoPL.Size = new System.Drawing.Size(109, 17);
-            this.apellidoPL.TabIndex = 236;
-            this.apellidoPL.Text = "Apellido paterno";
+            this.servMedicoLinea.BackColor = System.Drawing.Color.Transparent;
+            this.servMedicoLinea.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.servMedicoLinea.BorderFocusColor = System.Drawing.Color.MediumPurple;
+            this.servMedicoLinea.BorderSize = 2;
+            this.servMedicoLinea.Location = new System.Drawing.Point(172, 31);
+            this.servMedicoLinea.Name = "servMedicoLinea";
+            this.servMedicoLinea.Size = new System.Drawing.Size(78, 10);
+            this.servMedicoLinea.TabIndex = 215;
+            this.servMedicoLinea.UnderlinedStyle = true;
             // 
-            // apellidoML
+            // telTrabajoTLinea
             // 
-            this.apellidoML.AutoSize = true;
-            this.apellidoML.Font = new System.Drawing.Font("Gadugi", 10F);
-            this.apellidoML.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.apellidoML.Location = new System.Drawing.Point(519, 82);
-            this.apellidoML.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.apellidoML.Name = "apellidoML";
-            this.apellidoML.Size = new System.Drawing.Size(113, 17);
-            this.apellidoML.TabIndex = 237;
-            this.apellidoML.Text = "Apellido materno";
+            this.telTrabajoTLinea.BackColor = System.Drawing.Color.Transparent;
+            this.telTrabajoTLinea.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.telTrabajoTLinea.BorderFocusColor = System.Drawing.Color.MediumPurple;
+            this.telTrabajoTLinea.BorderSize = 2;
+            this.telTrabajoTLinea.Location = new System.Drawing.Point(732, 135);
+            this.telTrabajoTLinea.Name = "telTrabajoTLinea";
+            this.telTrabajoTLinea.Size = new System.Drawing.Size(78, 10);
+            this.telTrabajoTLinea.TabIndex = 217;
+            this.telTrabajoTLinea.UnderlinedStyle = true;
+            // 
+            // telMovilTLinea
+            // 
+            this.telMovilTLinea.BackColor = System.Drawing.Color.Transparent;
+            this.telMovilTLinea.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.telMovilTLinea.BorderFocusColor = System.Drawing.Color.MediumPurple;
+            this.telMovilTLinea.BorderSize = 2;
+            this.telMovilTLinea.Location = new System.Drawing.Point(704, 100);
+            this.telMovilTLinea.Name = "telMovilTLinea";
+            this.telMovilTLinea.Size = new System.Drawing.Size(78, 10);
+            this.telMovilTLinea.TabIndex = 216;
+            this.telMovilTLinea.UnderlinedStyle = true;
+            // 
+            // telCasaTLinea
+            // 
+            this.telCasaTLinea.BackColor = System.Drawing.Color.Transparent;
+            this.telCasaTLinea.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.telCasaTLinea.BorderFocusColor = System.Drawing.Color.MediumPurple;
+            this.telCasaTLinea.BorderSize = 2;
+            this.telCasaTLinea.Location = new System.Drawing.Point(704, 53);
+            this.telCasaTLinea.Name = "telCasaTLinea";
+            this.telCasaTLinea.Size = new System.Drawing.Size(78, 10);
+            this.telCasaTLinea.TabIndex = 215;
+            this.telCasaTLinea.UnderlinedStyle = true;
+            // 
+            // ocupacionLinea
+            // 
+            this.ocupacionLinea.BackColor = System.Drawing.Color.Transparent;
+            this.ocupacionLinea.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.ocupacionLinea.BorderFocusColor = System.Drawing.Color.MediumPurple;
+            this.ocupacionLinea.BorderSize = 2;
+            this.ocupacionLinea.Location = new System.Drawing.Point(146, 139);
+            this.ocupacionLinea.Name = "ocupacionLinea";
+            this.ocupacionLinea.Size = new System.Drawing.Size(78, 10);
+            this.ocupacionLinea.TabIndex = 214;
+            this.ocupacionLinea.UnderlinedStyle = true;
+            // 
+            // coloniaTLinea
+            // 
+            this.coloniaTLinea.BackColor = System.Drawing.Color.Transparent;
+            this.coloniaTLinea.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.coloniaTLinea.BorderFocusColor = System.Drawing.Color.MediumPurple;
+            this.coloniaTLinea.BorderSize = 2;
+            this.coloniaTLinea.Location = new System.Drawing.Point(364, 86);
+            this.coloniaTLinea.Name = "coloniaTLinea";
+            this.coloniaTLinea.Size = new System.Drawing.Size(78, 10);
+            this.coloniaTLinea.TabIndex = 213;
+            this.coloniaTLinea.UnderlinedStyle = true;
+            // 
+            // numeroCasaTLinea
+            // 
+            this.numeroCasaTLinea.BackColor = System.Drawing.Color.Transparent;
+            this.numeroCasaTLinea.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.numeroCasaTLinea.BorderFocusColor = System.Drawing.Color.MediumPurple;
+            this.numeroCasaTLinea.BorderSize = 2;
+            this.numeroCasaTLinea.Location = new System.Drawing.Point(271, 82);
+            this.numeroCasaTLinea.Name = "numeroCasaTLinea";
+            this.numeroCasaTLinea.Size = new System.Drawing.Size(78, 10);
+            this.numeroCasaTLinea.TabIndex = 212;
+            this.numeroCasaTLinea.UnderlinedStyle = true;
+            // 
+            // calleTLinea
+            // 
+            this.calleTLinea.BackColor = System.Drawing.Color.Transparent;
+            this.calleTLinea.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.calleTLinea.BorderFocusColor = System.Drawing.Color.MediumPurple;
+            this.calleTLinea.BorderSize = 2;
+            this.calleTLinea.Location = new System.Drawing.Point(147, 82);
+            this.calleTLinea.Name = "calleTLinea";
+            this.calleTLinea.Size = new System.Drawing.Size(78, 10);
+            this.calleTLinea.TabIndex = 211;
+            this.calleTLinea.UnderlinedStyle = true;
+            // 
+            // apellidoMTLinea
+            // 
+            this.apellidoMTLinea.BackColor = System.Drawing.Color.Transparent;
+            this.apellidoMTLinea.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.apellidoMTLinea.BorderFocusColor = System.Drawing.Color.MediumPurple;
+            this.apellidoMTLinea.BorderSize = 2;
+            this.apellidoMTLinea.Location = new System.Drawing.Point(382, 31);
+            this.apellidoMTLinea.Name = "apellidoMTLinea";
+            this.apellidoMTLinea.Size = new System.Drawing.Size(78, 10);
+            this.apellidoMTLinea.TabIndex = 178;
+            this.apellidoMTLinea.UnderlinedStyle = true;
+            // 
+            // apellidoPTLinea
+            // 
+            this.apellidoPTLinea.BackColor = System.Drawing.Color.Transparent;
+            this.apellidoPTLinea.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.apellidoPTLinea.BorderFocusColor = System.Drawing.Color.MediumPurple;
+            this.apellidoPTLinea.BorderSize = 2;
+            this.apellidoPTLinea.Location = new System.Drawing.Point(259, 28);
+            this.apellidoPTLinea.Name = "apellidoPTLinea";
+            this.apellidoPTLinea.Size = new System.Drawing.Size(78, 10);
+            this.apellidoPTLinea.TabIndex = 177;
+            this.apellidoPTLinea.UnderlinedStyle = true;
+            // 
+            // nombreTLinea
+            // 
+            this.nombreTLinea.BackColor = System.Drawing.Color.Transparent;
+            this.nombreTLinea.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.nombreTLinea.BorderFocusColor = System.Drawing.Color.MediumPurple;
+            this.nombreTLinea.BorderSize = 2;
+            this.nombreTLinea.Location = new System.Drawing.Point(146, 28);
+            this.nombreTLinea.Name = "nombreTLinea";
+            this.nombreTLinea.Size = new System.Drawing.Size(78, 10);
+            this.nombreTLinea.TabIndex = 176;
+            this.nombreTLinea.UnderlinedStyle = true;
+            // 
+            // cicloEscLinea
+            // 
+            this.cicloEscLinea.BackColor = System.Drawing.Color.Transparent;
+            this.cicloEscLinea.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.cicloEscLinea.BorderFocusColor = System.Drawing.Color.MediumPurple;
+            this.cicloEscLinea.BorderSize = 2;
+            this.cicloEscLinea.Location = new System.Drawing.Point(754, 53);
+            this.cicloEscLinea.Name = "cicloEscLinea";
+            this.cicloEscLinea.Size = new System.Drawing.Size(78, 10);
+            this.cicloEscLinea.TabIndex = 217;
+            this.cicloEscLinea.UnderlinedStyle = true;
+            // 
+            // canalizadoLinea
+            // 
+            this.canalizadoLinea.BackColor = System.Drawing.Color.Transparent;
+            this.canalizadoLinea.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.canalizadoLinea.BorderFocusColor = System.Drawing.Color.MediumPurple;
+            this.canalizadoLinea.BorderSize = 2;
+            this.canalizadoLinea.Location = new System.Drawing.Point(198, 88);
+            this.canalizadoLinea.Name = "canalizadoLinea";
+            this.canalizadoLinea.Size = new System.Drawing.Size(78, 10);
+            this.canalizadoLinea.TabIndex = 216;
+            this.canalizadoLinea.UnderlinedStyle = true;
+            // 
+            // escuelaPLinea
+            // 
+            this.escuelaPLinea.BackColor = System.Drawing.Color.Transparent;
+            this.escuelaPLinea.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.escuelaPLinea.BorderFocusColor = System.Drawing.Color.MediumPurple;
+            this.escuelaPLinea.BorderSize = 2;
+            this.escuelaPLinea.Location = new System.Drawing.Point(255, 61);
+            this.escuelaPLinea.Name = "escuelaPLinea";
+            this.escuelaPLinea.Size = new System.Drawing.Size(78, 10);
+            this.escuelaPLinea.TabIndex = 215;
+            this.escuelaPLinea.UnderlinedStyle = true;
+            // 
+            // telPersonalLinea
+            // 
+            this.telPersonalLinea.BackColor = System.Drawing.Color.Transparent;
+            this.telPersonalLinea.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.telPersonalLinea.BorderFocusColor = System.Drawing.Color.MediumPurple;
+            this.telPersonalLinea.BorderSize = 2;
+            this.telPersonalLinea.Location = new System.Drawing.Point(734, 61);
+            this.telPersonalLinea.Name = "telPersonalLinea";
+            this.telPersonalLinea.Size = new System.Drawing.Size(78, 10);
+            this.telPersonalLinea.TabIndex = 214;
+            this.telPersonalLinea.UnderlinedStyle = true;
+            // 
+            // curpLinea
+            // 
+            this.curpLinea.BackColor = System.Drawing.Color.Transparent;
+            this.curpLinea.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.curpLinea.BorderFocusColor = System.Drawing.Color.MediumPurple;
+            this.curpLinea.BorderSize = 2;
+            this.curpLinea.Location = new System.Drawing.Point(628, 27);
+            this.curpLinea.Name = "curpLinea";
+            this.curpLinea.Size = new System.Drawing.Size(78, 10);
+            this.curpLinea.TabIndex = 213;
+            this.curpLinea.UnderlinedStyle = true;
+            // 
+            // coloniaLinea
+            // 
+            this.coloniaLinea.BackColor = System.Drawing.Color.Transparent;
+            this.coloniaLinea.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.coloniaLinea.BorderFocusColor = System.Drawing.Color.MediumPurple;
+            this.coloniaLinea.BorderSize = 2;
+            this.coloniaLinea.Location = new System.Drawing.Point(354, 109);
+            this.coloniaLinea.Name = "coloniaLinea";
+            this.coloniaLinea.Size = new System.Drawing.Size(78, 10);
+            this.coloniaLinea.TabIndex = 212;
+            this.coloniaLinea.UnderlinedStyle = true;
+            // 
+            // numeroCasaLinea
+            // 
+            this.numeroCasaLinea.BackColor = System.Drawing.Color.Transparent;
+            this.numeroCasaLinea.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.numeroCasaLinea.BorderFocusColor = System.Drawing.Color.MediumPurple;
+            this.numeroCasaLinea.BorderSize = 2;
+            this.numeroCasaLinea.Location = new System.Drawing.Point(237, 109);
+            this.numeroCasaLinea.Name = "numeroCasaLinea";
+            this.numeroCasaLinea.Size = new System.Drawing.Size(78, 10);
+            this.numeroCasaLinea.TabIndex = 211;
+            this.numeroCasaLinea.UnderlinedStyle = true;
+            // 
+            // calleLinea
+            // 
+            this.calleLinea.BackColor = System.Drawing.Color.Transparent;
+            this.calleLinea.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.calleLinea.BorderFocusColor = System.Drawing.Color.MediumPurple;
+            this.calleLinea.BorderSize = 2;
+            this.calleLinea.Location = new System.Drawing.Point(128, 109);
+            this.calleLinea.Name = "calleLinea";
+            this.calleLinea.Size = new System.Drawing.Size(78, 10);
+            this.calleLinea.TabIndex = 210;
+            this.calleLinea.UnderlinedStyle = true;
+            // 
+            // estadoLinea
+            // 
+            this.estadoLinea.BackColor = System.Drawing.Color.Transparent;
+            this.estadoLinea.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.estadoLinea.BorderFocusColor = System.Drawing.Color.MediumPurple;
+            this.estadoLinea.BorderSize = 2;
+            this.estadoLinea.Location = new System.Drawing.Point(338, 61);
+            this.estadoLinea.Name = "estadoLinea";
+            this.estadoLinea.Size = new System.Drawing.Size(78, 10);
+            this.estadoLinea.TabIndex = 209;
+            this.estadoLinea.UnderlinedStyle = true;
+            // 
+            // ciudadLinea
+            // 
+            this.ciudadLinea.BackColor = System.Drawing.Color.Transparent;
+            this.ciudadLinea.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.ciudadLinea.BorderFocusColor = System.Drawing.Color.MediumPurple;
+            this.ciudadLinea.BorderSize = 2;
+            this.ciudadLinea.Location = new System.Drawing.Point(230, 61);
+            this.ciudadLinea.Name = "ciudadLinea";
+            this.ciudadLinea.Size = new System.Drawing.Size(78, 10);
+            this.ciudadLinea.TabIndex = 208;
+            this.ciudadLinea.UnderlinedStyle = true;
             // 
             // fichaTecnica
             // 
@@ -1609,6 +1956,9 @@ namespace presentationLayer
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.apellidoMLinea);
+            this.Controls.Add(this.apellidoPLinea);
+            this.Controls.Add(this.nombreAlLinea);
             this.Controls.Add(this.apellidoML);
             this.Controls.Add(this.nombreL);
             this.Controls.Add(this.apellidoPL);
@@ -1794,5 +2144,30 @@ namespace presentationLayer
         private System.Windows.Forms.Label nombreL;
         private System.Windows.Forms.Label apellidoPL;
         private System.Windows.Forms.Label apellidoML;
+        private Forms.fichatecnincaAlumno.LineaControl nombreTLinea;
+        private Forms.fichatecnincaAlumno.LineaControl apellidoMTLinea;
+        private Forms.fichatecnincaAlumno.LineaControl apellidoPTLinea;
+        private Forms.fichatecnincaAlumno.LineaControl nombreAlLinea;
+        private Forms.fichatecnincaAlumno.LineaControl apellidoPLinea;
+        private Forms.fichatecnincaAlumno.LineaControl apellidoMLinea;
+        private Forms.fichatecnincaAlumno.LineaControl estadoLinea;
+        private Forms.fichatecnincaAlumno.LineaControl ciudadLinea;
+        private Forms.fichatecnincaAlumno.LineaControl coloniaLinea;
+        private Forms.fichatecnincaAlumno.LineaControl numeroCasaLinea;
+        private Forms.fichatecnincaAlumno.LineaControl calleLinea;
+        private Forms.fichatecnincaAlumno.LineaControl telPersonalLinea;
+        private Forms.fichatecnincaAlumno.LineaControl curpLinea;
+        private Forms.fichatecnincaAlumno.LineaControl cicloEscLinea;
+        private Forms.fichatecnincaAlumno.LineaControl canalizadoLinea;
+        private Forms.fichatecnincaAlumno.LineaControl escuelaPLinea;
+        private Forms.fichatecnincaAlumno.LineaControl coloniaTLinea;
+        private Forms.fichatecnincaAlumno.LineaControl numeroCasaTLinea;
+        private Forms.fichatecnincaAlumno.LineaControl calleTLinea;
+        private Forms.fichatecnincaAlumno.LineaControl ocupacionLinea;
+        private Forms.fichatecnincaAlumno.LineaControl telefonoLinea;
+        private Forms.fichatecnincaAlumno.LineaControl servMedicoLinea;
+        private Forms.fichatecnincaAlumno.LineaControl telTrabajoTLinea;
+        private Forms.fichatecnincaAlumno.LineaControl telMovilTLinea;
+        private Forms.fichatecnincaAlumno.LineaControl telCasaTLinea;
     }
 }

@@ -98,3 +98,4 @@ C:\Users\ferna\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.cs
 C:\Users\ferna\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.csproj.CopyComplete
 C:\Users\ferna\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.exe
 C:\Users\ferna\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.pdb
+C:\Users\vanes\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.Forms.fichatecnincaAlumno.LineaControl.resources
