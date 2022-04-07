@@ -11,15 +11,11 @@ namespace _1dataLayer
     {
 
         //Metodo para dar de alta alergias
-        public static void Altaalergias(int id, List<alergiasDTO> alergia)
+        public static void Altaalergias(int id, string alergia)
         {
             using (BDCAMEntities db = new BDCAMEntities())
             {
-                foreach (alergiasDTO alergias in alergia)
-                {
-                    db.sp_altaenfermedades(id, alergias.alergia);
-                }
-
+                    db.sp_altaenfermedades(id, alergia);
             }
         }
 
@@ -103,12 +99,13 @@ namespace _1dataLayer
             return id;
         }
 
-        public static void Altatelefonotutor(telefono_tutorDTO telefono)
+        public static void Altatelefonotutor(int id_tutor, string tel_personal, string tel_casa, string tel_trabajo)
         {
-            String tel = telefono.telefono.ToString();
             using (BDCAMEntities db = new BDCAMEntities())
             {
-                db.sp_telefonotutores(telefono.id_tutor, telefono.id_telefono, tel);
+                db.sp_telefonotutores(id_tutor,1, tel_personal);
+                db.sp_telefonotutores(id_tutor, 2, tel_casa);
+                db.sp_telefonotutores(id_tutor, 3, tel_trabajo);
             }
         }
 

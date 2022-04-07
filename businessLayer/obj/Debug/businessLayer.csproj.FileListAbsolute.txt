@@ -217,3 +217,4 @@ C:\Users\Juan2\source\repos\CAM\businessLayer\bin\Debug\businessLayer.exe
 C:\Users\vanes\source\repos\CAM\businessLayer\bin\Debug\businessLayer.exe.config
 C:\Users\vanes\source\repos\CAM\businessLayer\bin\Debug\businessLayer.exe
 C:\Users\vanes\source\repos\CAM\businessLayer\obj\Debug\businessLayer.exe
+C:\Users\ferna\source\repos\CAM\businessLayer\obj\Debug\businessLayer.csproj.CopyComplete
