@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace businessLayer
 {
-    class BLModificacionAlumno
+    public class BLModificacionAlumno
     {
         _1dataLayer.DLConsultaAlumno listaAlumnos = new _1dataLayer.DLConsultaAlumno();
         public static void Main(String[] args)
         {
-            _1dataLayer.DLConsultaAlumno listaAlumnos = new _1dataLayer.DLConsultaAlumno();
+            /*_1dataLayer.DLConsultaAlumno listaAlumnos = new _1dataLayer.DLConsultaAlumno();
             _1dataLayer.SP_FichaTecnicaAlumno_Result alumnobuscado = new _1dataLayer.SP_FichaTecnicaAlumno_Result();
             _1dataLayer.SP_FichaTecnicaAlumnoTutor_Result tutor = new _1dataLayer.SP_FichaTecnicaAlumnoTutor_Result();
             _1dataLayer.SP_FichaTecnicaAlumnoMedica_Result medica = new _1dataLayer.SP_FichaTecnicaAlumnoMedica_Result();
@@ -180,6 +180,23 @@ namespace businessLayer
                         break;
                 }
             } while (opc != 0);
+            */
+        }
+
+
+        public static void modificarAlumno(_1dataLayer.SP_FichaTecnicaAlumno_Result alumno)
+        {
+            _1dataLayer.DLModificacionAlumno.Modificacionalumno(alumno.id_alumno, alumno);
+        }
+
+        public static void modificartutor(_1dataLayer.SP_FichaTecnicaAlumnoTutor_Result tutor)
+        {
+            _1dataLayer.DLModificacionAlumno.ModificacionTutor(tutor.id_tutor, tutor);
+        }
+
+        public static void modificarinfomed(_1dataLayer.SP_FichaTecnicaAlumnoMedica_Result medica)
+        {
+            _1dataLayer.DLModificacionAlumno.modificacionmedica(medica.id_cartilla_medica, medica);
         }
     }
 }

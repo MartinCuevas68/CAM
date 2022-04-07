@@ -13,20 +13,21 @@ namespace presentationLayer
 {
     public partial class fichaTecnica : Form
     {
+        _1dataLayer.SP_FichaTecnicaAlumno_Result alumno = new _1dataLayer.SP_FichaTecnicaAlumno_Result();
+        _1dataLayer.SP_FichaTecnicaAlumnoTutor_Result tutor = new _1dataLayer.SP_FichaTecnicaAlumnoTutor_Result();
+        _1dataLayer.SP_ListaTelefonosTutor_Result telefonos = new _1dataLayer.SP_ListaTelefonosTutor_Result();
+        _1dataLayer.SP_FichaTecnicaAlumnoMedica_Result infoMed = new _1dataLayer.SP_FichaTecnicaAlumnoMedica_Result();
+        _1dataLayer.SP_ListaDiscapacidad_Result discapacidad = new _1dataLayer.SP_ListaDiscapacidad_Result();
+        _1dataLayer.SP_ListaEnfermedad_Result enfermedad = new _1dataLayer.SP_ListaEnfermedad_Result();
+        _1dataLayer.SP_ListaAlergia_Result alergia = new _1dataLayer.SP_ListaAlergia_Result();
+        _1dataLayer.SP_ListaTratamiento_Result tratamiento = new _1dataLayer.SP_ListaTratamiento_Result();
+        _1dataLayer.foto_alumno fotol = new _1dataLayer.foto_alumno();
 
         public fichaTecnica(int id_alumno)
         {
             InitializeComponent();
 
-            _1dataLayer.SP_FichaTecnicaAlumno_Result alumno = new _1dataLayer.SP_FichaTecnicaAlumno_Result();
-            _1dataLayer.SP_FichaTecnicaAlumnoTutor_Result tutor = new _1dataLayer.SP_FichaTecnicaAlumnoTutor_Result();
-            _1dataLayer.SP_ListaTelefonosTutor_Result telefonos = new _1dataLayer.SP_ListaTelefonosTutor_Result();
-            _1dataLayer.SP_FichaTecnicaAlumnoMedica_Result infoMed = new _1dataLayer.SP_FichaTecnicaAlumnoMedica_Result();
-            _1dataLayer.SP_ListaDiscapacidad_Result discapacidad = new _1dataLayer.SP_ListaDiscapacidad_Result();
-            _1dataLayer.SP_ListaEnfermedad_Result enfermedad = new _1dataLayer.SP_ListaEnfermedad_Result();
-            _1dataLayer.SP_ListaAlergia_Result alergia = new _1dataLayer.SP_ListaAlergia_Result();
-            _1dataLayer.SP_ListaTratamiento_Result tratamiento = new _1dataLayer.SP_ListaTratamiento_Result();
-            _1dataLayer.foto_alumno fotol = new _1dataLayer.foto_alumno();
+            
 
             infoGeneralPanel.Visible = true;
             infoEscolarPanel.Visible = false;
@@ -242,7 +243,50 @@ namespace presentationLayer
 
         private void terminarEdiButton_Click(object sender, EventArgs e)
         {
+            alumno.nombre = nombreAl.Text;
+            alumno.apellido_paterno = apellidoP.Text;
+            alumno.apellido_materno = apellidoM.Text;
+            alumno.ciudad_nacimiento_alumno = ciudad.Text;
+            alumno.fecha_nacimiento = fechaNa.Value;
+            alumno.edad_alumno = edad.Text;
+            alumno.calle_alumno = calle.Text;
+            alumno.colonia_alumno = colonia.Text;
+            alumno.CURP_alumno = curp.Text;
+            alumno.tipo_ingreso = tipoIngreso.Text;
+            alumno.numero_alumno = numeroCasa.Text;
+            alumno.atendido_por = canalizado.Text;
+            alumno.escuela_procedencia_alumno = escuelaP.Text;
+            alumno.telefono_personal_alumno = telPersonal.Text;
+            alumno.ciclo_escolar = cicloEsc.Text;
+            tutor.nombre = nombreT.Text;
+            tutor.apellido_paterno = apellidoPT.Text;
+            tutor.apellido_materno = apellidoMT.Text;
+            tutor.ocupacion_tutor = ocupacion.Text;
+            tutor.calle_tutor = calleT.Text;
+            tutor.colonia_tutor = coloniaT.Text;
+            tutor.numero_tutor = numeroCasaT.Text;
+            if(grupoSanguineoComboBox.SelectedItem != null)
+            {
+                infoMed.grupo_sanguineo = grupoSanguineoComboBox.SelectedItem.ToString();
+            }
+            infoMed.servicio_medico = servMedico.Text;
+            infoMed.telefono_contacto = telefono.Text;
+            MessageBox.Show(alumno.nombre);
+            businessLayer.BLModificacionAlumno.modificarAlumno(alumno);
+            businessLayer.BLModificacionAlumno.modificartutor(tutor);
+            businessLayer.BLModificacionAlumno.modificarinfomed(infoMed);
             ocultarEditarInformacion();
+        }
+
+
+        private void fechaNa_ValueChanged(object sender, EventArgs e)
+        {
+            DateTime fechaNacimiento = fechaNa.Value;
+            DateTime fechaActual = DateTime.Now;
+            TimeSpan diferencia = fechaActual - fechaNacimiento;
+            double dias = diferencia.TotalDays;
+            double anios = Math.Floor(dias / 365);
+            edad.Text = anios.ToString();
         }
 
         private void fichaTecnica_Load(object sender, EventArgs e)
