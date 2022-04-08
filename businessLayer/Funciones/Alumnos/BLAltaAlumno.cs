@@ -129,7 +129,7 @@ namespace businessLayer
             try
             {
                 alg.alergia = alergias;
-                _1dataLayer.DLAltaAlumno.Altaalergias(id_alergia, lista_alergia);
+       //        _1dataLayer.DLAltaAlumno.Altaalergias(id_alergia, lista_alergia);
             }
             catch (Exception)
             {

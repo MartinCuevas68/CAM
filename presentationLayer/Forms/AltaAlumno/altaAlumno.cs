@@ -439,18 +439,18 @@ namespace presentationLayer
         private void loaddata()
         {
 
-            foreach (var item in businessLayer.BLEliminacionAlumno.alergiasGet())
-            {
-                alergiasCombobox.Items.Add(item.alergia);
-            }
-            foreach (var item2 in businessLayer.BLEliminacionAlumno.enfermedadesGet())
-            {
-                enfermedadesCombobox.Items.Add(item2.enfermedad);
-            }
-            foreach (var item3 in businessLayer.BLEliminacionAlumno.discapacidadesGet())
-            {
-                discapacidadesCombobox.Items.Add(item3.discapacidades);
-            }
+            //foreach (var item in businessLayer.BLEliminacionAlumno.alergiasGet())
+            //{
+            //    alergiasCombobox.Items.Add(item.alergia);
+            //}
+            //foreach (var item2 in businessLayer.BLEliminacionAlumno.enfermedadesGet())
+            //{
+            //    enfermedadesCombobox.Items.Add(item2.enfermedad);
+            //}
+            //foreach (var item3 in businessLayer.BLEliminacionAlumno.discapacidadesGet())
+            //{
+            //    discapacidadesCombobox.Items.Add(item3.discapacidades);
+            //}
 
         }
 

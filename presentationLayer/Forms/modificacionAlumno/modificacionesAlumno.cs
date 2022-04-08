@@ -104,10 +104,10 @@ namespace presentationLayer
             
 
 
-            foreach (var item in businessLayer.BLEliminacionAlumno.nombreGetid(Contenedor.id))
-            {
-                nombreLabel.Text = item.nombre;
-            }
+            //foreach (var item in businessLayer.BLEliminacionAlumno.nombreGetid(Contenedor.id))
+            //{
+            //    nombreLabel.Text = item.nombre;
+            //}
 
           
         }
@@ -191,23 +191,23 @@ namespace presentationLayer
         {
             if (!nombreAlumnoTextBox.Text.Equals("") && !apellidoPaternoAlumnoTextBox.Text.Equals("") && !apellidoMaternoAlumnoTextBox.Text.Equals(""))
             {
-                MessageBox.Show("MODIFICACION EXITOSA!");
-                businessLayer.BLEliminacionAlumno.ModAlumno(cicloEscolarTextBox.Text,
-                                              nombreAlumnoTextBox.Text,
-                                              apellidoPaternoAlumnoTextBox.Text,
-                                              apellidoMaternoAlumnoTextBox.Text,
-                                              fechaNacimientoDateTimePicker.Value,
-                                              añosCumplidosTextBox.Text,
-                                              curpTextBox.Text,
-                                              estadoNacimientoAlumnoTextBox.Text,
-                                              ciudadNacimientoAlumnoTextBox.Text,
-                                              coloniaDireccionAlumnoTextBox.Text,
-                                              calleDireccionAlumnoTextBox.Text,
-                                              numeroDireccionAlumnoTextBox.Text,
-                                              telefonoAlumnoTextBox.Text,
-                                              escuelaProcedenciaTextBox.Text,
-                                              canalizadoPorTextBox.Text,
-                                              Contenedor.id);
+                //MessageBox.Show("MODIFICACION EXITOSA!");
+                //businessLayer.BLEliminacionAlumno.ModAlumno(cicloEscolarTextBox.Text,
+                //                              nombreAlumnoTextBox.Text,
+                //                              apellidoPaternoAlumnoTextBox.Text,
+                //                              apellidoMaternoAlumnoTextBox.Text,
+                //                              fechaNacimientoDateTimePicker.Value,
+                //                              añosCumplidosTextBox.Text,
+                //                              curpTextBox.Text,
+                //                              estadoNacimientoAlumnoTextBox.Text,
+                //                              ciudadNacimientoAlumnoTextBox.Text,
+                //                              coloniaDireccionAlumnoTextBox.Text,
+                //                              calleDireccionAlumnoTextBox.Text,
+                //                              numeroDireccionAlumnoTextBox.Text,
+                //                              telefonoAlumnoTextBox.Text,
+                //                              escuelaProcedenciaTextBox.Text,
+                //                              canalizadoPorTextBox.Text,
+                //                              Contenedor.id);
 
                 this.Hide();
                 ConsultaAlumno consultas = new ConsultaAlumno();
@@ -231,18 +231,18 @@ namespace presentationLayer
 
         private void loaddata()
         {
-            foreach (var item in businessLayer.BLEliminacionAlumno.alergiasGet())
-            {
-                alergiasCombobox.Items.Add(item.alergia);
-            }
-            foreach (var item in businessLayer.BLEliminacionAlumno.alergiasGet())
-            {
-                enfermedadesCombobox.Items.Add(item.alergia);
-            }
-            foreach (var item in businessLayer.BLEliminacionAlumno.alergiasGet())
-            {
-                discapacidadesCombobox.Items.Add(item.alergia);
-            }
+            //foreach (var item in businessLayer.BLEliminacionAlumno.alergiasGet())
+            //{
+            //    alergiasCombobox.Items.Add(item.alergia);
+            //}
+            //foreach (var item in businessLayer.BLEliminacionAlumno.alergiasGet())
+            //{
+            //    enfermedadesCombobox.Items.Add(item.alergia);
+            //}
+            //foreach (var item in businessLayer.BLEliminacionAlumno.alergiasGet())
+            //{
+            //    discapacidadesCombobox.Items.Add(item.alergia);
+            //}
         }
 
         private void agregarEnfermedadesButton_Click(object sender, EventArgs e)
