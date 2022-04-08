@@ -490,8 +490,8 @@
     <Property Type="Int32" Name="OwnerID" Nullable="false" />
   </ComplexType>
   <ComplexType Name="SP_ListaAlergia_Result">
-    <Property Type="Int32" Name="id_cartilla_medica" Nullable="false" />
     <Property Type="String" Name="alergia" Nullable="false" MaxLength="30" />
+    <Property Type="Int32" Name="id_alergias" Nullable="false" />
   </ComplexType>
   <ComplexType Name="SP_ListaAlumnos_Result">
     <Property Type="Int32" Name="id_alumno" Nullable="false" />
@@ -501,8 +501,8 @@
     <Property Type="String" Name="telefono_contacto" Nullable="false" MaxLength="30" />
   </ComplexType>
   <ComplexType Name="SP_ListaDiscapacidad_Result">
-    <Property Type="Int32" Name="id_cartilla_medica" Nullable="false" />
     <Property Type="String" Name="discapacidades" Nullable="false" MaxLength="30" />
+    <Property Type="Int32" Name="id_discapacidades" Nullable="false" />
   </ComplexType>
   <ComplexType Name="SP_ListaEnfermedad_Result">
     <Property Type="Int32" Name="id_cartilla_medica" Nullable="false" />

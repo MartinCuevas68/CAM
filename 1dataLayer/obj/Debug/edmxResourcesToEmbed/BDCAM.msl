@@ -202,8 +202,8 @@
     <FunctionImportMapping FunctionImportName="SP_ListaAlergia" FunctionName="BDCAMModel.Store.SP_ListaAlergia">
       <ResultMapping>
         <ComplexTypeMapping TypeName="BDCAMModel.SP_ListaAlergia_Result">
-          <ScalarProperty Name="id_cartilla_medica" ColumnName="id_cartilla_medica" />
           <ScalarProperty Name="alergia" ColumnName="alergia" />
+          <ScalarProperty Name="id_alergias" ColumnName="id_alergias" />
         </ComplexTypeMapping>
       </ResultMapping>
     </FunctionImportMapping>
@@ -221,8 +221,8 @@
     <FunctionImportMapping FunctionImportName="SP_ListaDiscapacidad" FunctionName="BDCAMModel.Store.SP_ListaDiscapacidad">
       <ResultMapping>
         <ComplexTypeMapping TypeName="BDCAMModel.SP_ListaDiscapacidad_Result">
-          <ScalarProperty Name="id_cartilla_medica" ColumnName="id_cartilla_medica" />
           <ScalarProperty Name="discapacidades" ColumnName="discapacidades" />
+          <ScalarProperty Name="id_discapacidades" ColumnName="id_discapacidades" />
         </ComplexTypeMapping>
       </ResultMapping>
     </FunctionImportMapping>

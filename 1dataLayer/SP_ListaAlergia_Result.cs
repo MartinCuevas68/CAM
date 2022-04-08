@@ -13,7 +13,7 @@ namespace _1dataLayer
     
     public partial class SP_ListaAlergia_Result
     {
-        public int id_cartilla_medica { get; set; }
         public string alergia { get; set; }
+        public int id_alergias { get; set; }
     }
 }

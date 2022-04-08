@@ -13,7 +13,7 @@ namespace _1dataLayer
     
     public partial class SP_ListaDiscapacidad_Result
     {
-        public int id_cartilla_medica { get; set; }
         public string discapacidades { get; set; }
+        public int id_discapacidades { get; set; }
     }
 }

@@ -1440,8 +1440,8 @@ warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a prima
           <Property Type="Int32" Name="OwnerID" Nullable="false" />
         </ComplexType>
         <ComplexType Name="SP_ListaAlergia_Result">
-          <Property Type="Int32" Name="id_cartilla_medica" Nullable="false" />
           <Property Type="String" Name="alergia" Nullable="false" MaxLength="30" />
+          <Property Type="Int32" Name="id_alergias" Nullable="false" />
         </ComplexType>
         <ComplexType Name="SP_ListaAlumnos_Result">
           <Property Type="Int32" Name="id_alumno" Nullable="false" />
@@ -1451,8 +1451,8 @@ warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a prima
           <Property Type="String" Name="telefono_contacto" Nullable="false" MaxLength="30" />
         </ComplexType>
         <ComplexType Name="SP_ListaDiscapacidad_Result">
-          <Property Type="Int32" Name="id_cartilla_medica" Nullable="false" />
           <Property Type="String" Name="discapacidades" Nullable="false" MaxLength="30" />
+          <Property Type="Int32" Name="id_discapacidades" Nullable="false" />
         </ComplexType>
         <ComplexType Name="SP_ListaEnfermedad_Result">
           <Property Type="Int32" Name="id_cartilla_medica" Nullable="false" />
@@ -1865,8 +1865,8 @@ warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a prima
           <FunctionImportMapping FunctionImportName="SP_ListaAlergia" FunctionName="BDCAMModel.Store.SP_ListaAlergia">
             <ResultMapping>
               <ComplexTypeMapping TypeName="BDCAMModel.SP_ListaAlergia_Result">
-                <ScalarProperty Name="id_cartilla_medica" ColumnName="id_cartilla_medica" />
                 <ScalarProperty Name="alergia" ColumnName="alergia" />
+                <ScalarProperty Name="id_alergias" ColumnName="id_alergias" />
               </ComplexTypeMapping>
             </ResultMapping>
           </FunctionImportMapping>
@@ -1884,8 +1884,8 @@ warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a prima
           <FunctionImportMapping FunctionImportName="SP_ListaDiscapacidad" FunctionName="BDCAMModel.Store.SP_ListaDiscapacidad">
             <ResultMapping>
               <ComplexTypeMapping TypeName="BDCAMModel.SP_ListaDiscapacidad_Result">
-                <ScalarProperty Name="id_cartilla_medica" ColumnName="id_cartilla_medica" />
                 <ScalarProperty Name="discapacidades" ColumnName="discapacidades" />
+                <ScalarProperty Name="id_discapacidades" ColumnName="id_discapacidades" />
               </ComplexTypeMapping>
             </ResultMapping>
           </FunctionImportMapping>

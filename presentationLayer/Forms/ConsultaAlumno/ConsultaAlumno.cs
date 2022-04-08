@@ -28,7 +28,7 @@ namespace presentationLayer
 
         private void Consultas_Load(object sender, EventArgs e)
         {
-            //altaDataGridView.DataSource = businessLayer.BLConsultaAlumno.alumnosGet();
+            altaDataGridView.DataSource = businessLayer.BLConsultaAlumno.alumnosGet();
 
             altaDataGridView.AllowUserToOrderColumns = true;
             altaDataGridView.AllowUserToResizeColumns = true;
