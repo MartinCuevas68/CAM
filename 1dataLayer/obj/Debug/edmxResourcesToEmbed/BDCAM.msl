@@ -95,33 +95,6 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="alergias">
-      <EntityTypeMapping TypeName="BDCAMModel.alergias">
-        <MappingFragment StoreEntitySet="alergias">
-          <ScalarProperty Name="id_alergia" ColumnName="id_alergia" />
-          <ScalarProperty Name="id_cartilla_medica" ColumnName="id_cartilla_medica" />
-          <ScalarProperty Name="alergia" ColumnName="alergia" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="discapacidades">
-      <EntityTypeMapping TypeName="BDCAMModel.discapacidades">
-        <MappingFragment StoreEntitySet="discapacidades">
-          <ScalarProperty Name="id_discapacidades" ColumnName="id_discapacidades" />
-          <ScalarProperty Name="id_cartilla_medica" ColumnName="id_cartilla_medica" />
-          <ScalarProperty Name="discapacidades1" ColumnName="discapacidades" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="enfermedades">
-      <EntityTypeMapping TypeName="BDCAMModel.enfermedades">
-        <MappingFragment StoreEntitySet="enfermedades">
-          <ScalarProperty Name="id_enfermedades" ColumnName="id_enfermedades" />
-          <ScalarProperty Name="id_cartilla_medica" ColumnName="id_cartilla_medica" />
-          <ScalarProperty Name="enfermedad" ColumnName="enfermedad" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="telefono_tutores">
       <EntityTypeMapping TypeName="BDCAMModel.telefono_tutores">
         <MappingFragment StoreEntitySet="telefono-tutores">
@@ -399,5 +372,53 @@
     <FunctionImportMapping FunctionImportName="SP_Modificar_alergias" FunctionName="BDCAMModel.Store.SP_Modificar_alergias" />
     <FunctionImportMapping FunctionImportName="SP_AltaTratamientos" FunctionName="BDCAMModel.Store.SP_AltaTratamientos" />
     <FunctionImportMapping FunctionImportName="SP_ModificarTelefonoTutor" FunctionName="BDCAMModel.Store.SP_ModificarTelefonoTutor" />
+    <EntitySetMapping Name="catalogo_alergia">
+      <EntityTypeMapping TypeName="BDCAMModel.catalogo_alergia">
+        <MappingFragment StoreEntitySet="catalogo_alergia">
+          <ScalarProperty Name="alergia" ColumnName="alergia" />
+          <ScalarProperty Name="id_alergias" ColumnName="id_alergias" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="catalogo_discapacidades">
+      <EntityTypeMapping TypeName="BDCAMModel.catalogo_discapacidades">
+        <MappingFragment StoreEntitySet="catalogo_discapacidades">
+          <ScalarProperty Name="discapacidades" ColumnName="discapacidades" />
+          <ScalarProperty Name="id_discapacidades" ColumnName="id_discapacidades" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="catalogo_enfermedades">
+      <EntityTypeMapping TypeName="BDCAMModel.catalogo_enfermedades">
+        <MappingFragment StoreEntitySet="catalogo_enfermedades">
+          <ScalarProperty Name="enfermedades" ColumnName="enfermedades" />
+          <ScalarProperty Name="id_enfermedades" ColumnName="id_enfermedades" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="medica_alergia" TypeName="BDCAMModel.medica_alergia" StoreEntitySet="medica-alergia">
+      <EndProperty Name="tabla_medica">
+        <ScalarProperty Name="id_cartilla_medica" ColumnName="id_cartilla" />
+      </EndProperty>
+      <EndProperty Name="catalogo_alergia">
+        <ScalarProperty Name="id_alergias" ColumnName="id_alergia" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="medica_discapacidad" TypeName="BDCAMModel.medica_discapacidad" StoreEntitySet="medica-discapacidad">
+      <EndProperty Name="catalogo_discapacidades">
+        <ScalarProperty Name="id_discapacidades" ColumnName="id_discapacidad" />
+      </EndProperty>
+      <EndProperty Name="tabla_medica">
+        <ScalarProperty Name="id_cartilla_medica" ColumnName="id_cartillamedica" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="medica_enfermedades" TypeName="BDCAMModel.medica_enfermedades" StoreEntitySet="medica-enfermedades">
+      <EndProperty Name="catalogo_enfermedades">
+        <ScalarProperty Name="id_enfermedades" ColumnName="id_enfermedades" />
+      </EndProperty>
+      <EndProperty Name="tabla_medica">
+        <ScalarProperty Name="id_cartilla_medica" ColumnName="id_cartilla_medica" />
+      </EndProperty>
+    </AssociationSetMapping>
   </EntityContainerMapping>
 </Mapping>

@@ -48,9 +48,10 @@ namespace businessLayer
                 throw;
             }
         }*/
-
+        
         public static List<_1dataLayer.alumnoenfermedadDTO> alumnosGet()
         {
+            /*
             try
             {
                 List<_1dataLayer.alumnoenfermedadDTO> student = new List<_1dataLayer.alumnoenfermedadDTO>();
@@ -98,6 +99,9 @@ namespace businessLayer
             {
                 throw;
             }
+            */
+            List<_1dataLayer.alumnoenfermedadDTO> student = new List<_1dataLayer.alumnoenfermedadDTO>();
+            return student;
         }
 
         public static String alumnosGetAlergias()

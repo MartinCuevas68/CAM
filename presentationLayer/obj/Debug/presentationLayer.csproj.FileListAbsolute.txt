@@ -95,7 +95,6 @@ C:\Users\ferna\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.mo
 C:\Users\ferna\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.Properties.Resources.resources
 C:\Users\ferna\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.csproj.GenerateResource.cache
 C:\Users\ferna\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.csproj.CoreCompileInputs.cache
-C:\Users\ferna\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.csproj.CopyComplete
 C:\Users\ferna\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.exe
 C:\Users\ferna\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.pdb
 C:\Users\vanes\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.Forms.fichatecnincaAlumno.LineaControl.resources

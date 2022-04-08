@@ -28,7 +28,7 @@ namespace presentationLayer
 
         private void Consultas_Load(object sender, EventArgs e)
         {
-            altaDataGridView.DataSource = businessLayer.BLConsultaAlumno.alumnosGet();
+            //altaDataGridView.DataSource = businessLayer.BLConsultaAlumno.alumnosGet();
 
             altaDataGridView.AllowUserToOrderColumns = true;
             altaDataGridView.AllowUserToResizeColumns = true;
@@ -64,19 +64,19 @@ namespace presentationLayer
             altaDataGridView.AutoResizeColumns();
             altaDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
 
-            altaDataGridView.Columns[0].HeaderCell.Value = "Matrícula";
+            /*altaDataGridView.Columns[0].HeaderCell.Value = "Matrícula";
             altaDataGridView.Columns[1].HeaderCell.Value = "Nombre";
             altaDataGridView.Columns[2].HeaderCell.Value = "Teléfono contacto de emergencia";
             altaDataGridView.Columns[3].HeaderCell.Value = "Alergias";
             altaDataGridView.Columns[4].HeaderCell.Value = "Discapacidades";
-
+            */
             altaDataGridView.Location = new Point(230,220);
             altaDataGridView.Size = new Size(1070, 420);
 
             //Sentencia que manda a llamar el método para cerrar Consultas usando la X
             this.FormClosed += new FormClosedEventHandler(cerrarForm);
 
-            data = businessLayer.BLConsultaAlumno.ConvertToDatatable((List<_1dataLayer.alumnoenfermedadDTO>)altaDataGridView.DataSource);
+            //data = businessLayer.BLConsultaAlumno.ConvertToDatatable((List<_1dataLayer.alumnoenfermedadDTO>)altaDataGridView.DataSource);
         }
 
         //Metodo para cerrar Consultas usando la X ya que antes se cerraba pero se seguía ejecutando.
@@ -146,7 +146,7 @@ namespace presentationLayer
                 if (confirm == DialogResult.Yes)
                 {
 
-                    businessLayer.BLEliminacionAlumno.EliminarColaborador(id);
+                    //businessLayer.BLEliminacionAlumno.EliminarColaborador(id);
 
                     altaDataGridView.DataSource = businessLayer.BLConsultaAlumno.alumnosGet();
 
@@ -248,7 +248,7 @@ namespace presentationLayer
             ConsultaAlumno consultas = new ConsultaAlumno();
             consultas.Close();
             this.Hide();
-            fichaTecnica ficha = new fichaTecnica(id);
+            fichaTecnica ficha = new fichaTecnica(54);
             ficha.Show();
         }
 

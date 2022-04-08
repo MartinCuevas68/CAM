@@ -12,21 +12,18 @@ namespace _1dataLayer
     using System;
     using System.Collections.Generic;
     
-    public partial class roles
+    public partial class catalogo_alergia
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public roles()
+        public catalogo_alergia()
         {
-            this.rol_tiene_permiso = new HashSet<rol_tiene_permiso>();
-            this.usuario = new HashSet<usuario>();
+            this.tabla_medica = new HashSet<tabla_medica>();
         }
     
-        public int id_rol { get; set; }
-        public string nombre_rol { get; set; }
+        public int id_alergias { get; set; }
+        public string alergia { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<rol_tiene_permiso> rol_tiene_permiso { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<usuario> usuario { get; set; }
+        public virtual ICollection<tabla_medica> tabla_medica { get; set; }
     }
 }

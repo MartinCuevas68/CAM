@@ -50,9 +50,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="alergias.cs">
-      <DependentUpon>BDCAM.tt</DependentUpon>
-    </Compile>
     <Compile Include="alumno.cs">
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>
@@ -72,16 +69,19 @@
       <DependentUpon>BDCAM.edmx</DependentUpon>
     </Compile>
     <Compile Include="BDDTO.cs" />
-    <Compile Include="discapacidades.cs">
+    <Compile Include="catalogo_alergia.cs">
+      <DependentUpon>BDCAM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="catalogo_discapacidades.cs">
+      <DependentUpon>BDCAM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="catalogo_enfermedades.cs">
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>
     <Compile Include="Funciones\Alumnos\DLAltaAlumno.cs" />
     <Compile Include="Funciones\Alumnos\DLConsultaAlumno.cs" />
     <Compile Include="Funciones\Alumnos\DLEliminacionAlumno.cs" />
     <Compile Include="Funciones\Alumnos\DLModificacionAlumno.cs" />
-    <Compile Include="enfermedades.cs">
-      <DependentUpon>BDCAM.tt</DependentUpon>
-    </Compile>
     <Compile Include="foto_alumno.cs">
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>

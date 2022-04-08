@@ -9,7 +9,7 @@ namespace businessLayer
 {
     public class BLEliminacionAlumno
     {
-
+        /*
         public static void EliminarColaborador(int id)
         {
 
@@ -194,6 +194,6 @@ namespace businessLayer
 
         }
 
-    }
+    }*/
 }
 

@@ -5,18 +5,6 @@
     <!-- SSDL content -->
     <edmx:StorageModels>
     <Schema Namespace="BDCAMModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-        <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BDCAM.dbo.alergias' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
-        <EntityType Name="alergias">
-          <Key>
-            <PropertyRef Name="id_alergia" />
-            <PropertyRef Name="id_cartilla_medica" />
-            <PropertyRef Name="alergia" />
-          </Key>
-          <Property Name="id_alergia" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="id_cartilla_medica" Type="int" Nullable="false" />
-          <Property Name="alergia" Type="varchar" MaxLength="30" Nullable="false" />
-        </EntityType>
         <EntityType Name="alumno">
           <Key>
             <PropertyRef Name="id_alumno" />
@@ -41,8 +29,8 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.alergias' no tiene definida ningun
           <Property Name="atendido_por" Type="varchar" MaxLength="30" Nullable="false" />
           <Property Name="tipo_ingreso" Type="varchar" MaxLength="40" />
         </EntityType>
-        <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BDCAM.dbo.alumno-cartilla' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.alumno-cartilla' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="alumno-cartilla">
           <Key>
             <PropertyRef Name="id_alumno" />
@@ -51,8 +39,8 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.alumno-cartilla' no tiene definida
           <Property Name="id_alumno" Type="int" Nullable="false" />
           <Property Name="id_cartilla" Type="int" Nullable="false" />
         </EntityType>
-        <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BDCAM.dbo.alumno-programa' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.alumno-programa' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="alumno-programa">
           <Key>
             <PropertyRef Name="id_alumno" />
@@ -61,32 +49,29 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.alumno-programa' no tiene definida
           <Property Name="id_alumno" Type="int" Nullable="false" />
           <Property Name="id_programa" Type="int" Nullable="false" />
         </EntityType>
-        <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BDCAM.dbo.discapacidades' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
-        <EntityType Name="discapacidades">
+        <EntityType Name="catalogo_alergia">
+          <Key>
+            <PropertyRef Name="id_alergias" />
+          </Key>
+          <Property Name="id_alergias" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="alergia" Type="varchar(max)" Nullable="false" />
+        </EntityType>
+        <EntityType Name="catalogo_discapacidades">
           <Key>
             <PropertyRef Name="id_discapacidades" />
-            <PropertyRef Name="id_cartilla_medica" />
-            <PropertyRef Name="discapacidades" />
           </Key>
           <Property Name="id_discapacidades" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="id_cartilla_medica" Type="int" Nullable="false" />
-          <Property Name="discapacidades" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="discapacidades" Type="varchar(max)" Nullable="false" />
         </EntityType>
-        <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BDCAM.dbo.enfermedades' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
-        <EntityType Name="enfermedades">
+        <EntityType Name="catalogo_enfermedades">
           <Key>
             <PropertyRef Name="id_enfermedades" />
-            <PropertyRef Name="id_cartilla_medica" />
-            <PropertyRef Name="enfermedad" />
           </Key>
           <Property Name="id_enfermedades" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="id_cartilla_medica" Type="int" Nullable="false" />
-          <Property Name="enfermedad" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="enfermedades" Type="varchar(max)" Nullable="false" />
         </EntityType>
-        <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BDCAM.dbo.foto-alumno' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.foto-alumno' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="foto-alumno">
           <Key>
             <PropertyRef Name="id_alumno" />
@@ -96,6 +81,36 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.foto-alumno' no tiene definida nin
           <Property Name="id_alumno" Type="int" Nullable="false" />
           <Property Name="imagen_alumno" Type="image" Nullable="false" />
           <Property Name="nombre" Type="varchar" MaxLength="100" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.medica-alergia' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="medica-alergia">
+          <Key>
+            <PropertyRef Name="id_cartilla" />
+            <PropertyRef Name="id_alergia" />
+          </Key>
+          <Property Name="id_cartilla" Type="int" Nullable="false" />
+          <Property Name="id_alergia" Type="int" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.medica-discapacidad' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="medica-discapacidad">
+          <Key>
+            <PropertyRef Name="id_discapacidad" />
+            <PropertyRef Name="id_cartillamedica" />
+          </Key>
+          <Property Name="id_discapacidad" Type="int" Nullable="false" />
+          <Property Name="id_cartillamedica" Type="int" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.medica-enfermedades' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="medica-enfermedades">
+          <Key>
+            <PropertyRef Name="id_cartilla_medica" />
+            <PropertyRef Name="id_enfermedades" />
+          </Key>
+          <Property Name="id_cartilla_medica" Type="int" Nullable="false" />
+          <Property Name="id_enfermedades" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="permisos">
           <Key>
@@ -117,8 +132,8 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.foto-alumno' no tiene definida nin
           <Property Name="modulos" Type="varchar" MaxLength="30" Nullable="false" />
           <Property Name="proyecto" Type="varchar" MaxLength="30" Nullable="false" />
         </EntityType>
-        <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BDCAM.dbo.programa-turno' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.programa-turno' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="programa-turno">
           <Key>
             <PropertyRef Name="id_turno" />
@@ -127,8 +142,8 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.programa-turno' no tiene definida 
           <Property Name="id_turno" Type="int" Nullable="false" />
           <Property Name="id_programa" Type="int" Nullable="false" />
         </EntityType>
-        <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BDCAM.dbo.recurso-programa' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.recurso-programa' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="recurso-programa">
           <Key>
             <PropertyRef Name="id_recurso" />
@@ -151,8 +166,8 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.recurso-programa' no tiene definid
           <Property Name="id_rol" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="nombre_rol" Type="varchar" MaxLength="50" Nullable="false" />
         </EntityType>
-        <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BDCAM.dbo.rol-tiene-permiso' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.rol-tiene-permiso' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="rol-tiene-permiso">
           <Key>
             <PropertyRef Name="id_rol" />
@@ -190,8 +205,8 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.rol-tiene-permiso' no tiene defini
           <Property Name="color_textura_piel" Type="varchar" MaxLength="50" />
           <Property Name="estatura" Type="varchar" MaxLength="50" />
         </EntityType>
-        <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BDCAM.dbo.telefono-tutores' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.telefono-tutores' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="telefono-tutores">
           <Key>
             <PropertyRef Name="id_tutor" />
@@ -202,8 +217,8 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.telefono-tutores' no tiene definid
           <Property Name="id_telefono" Type="int" Nullable="false" />
           <Property Name="telefono" Type="varchar" MaxLength="30" Nullable="false" />
         </EntityType>
-        <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BDCAM.dbo.Tratamientos' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.Tratamientos' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="Tratamientos">
           <Key>
             <PropertyRef Name="id_tratamiento" />
@@ -237,8 +252,8 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.Tratamientos' no tiene definida ni
           <Property Name="calle_trabajo_tutor" Type="varchar" MaxLength="30" Nullable="false" />
           <Property Name="numero_trabajo_tutor" Type="varchar" MaxLength="30" Nullable="false" />
         </EntityType>
-        <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BDCAM.dbo.tutor-alumno' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.tutor-alumno' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="tutor-alumno">
           <Key>
             <PropertyRef Name="id_tutor" />
@@ -255,8 +270,8 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.tutor-alumno' no tiene definida ni
           <Property Name="nombre" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="contraseña" Type="varchar" MaxLength="50" Nullable="false" />
         </EntityType>
-        <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'BDCAM.dbo.usuario-tiene-rol' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="usuario-tiene-rol">
           <Key>
             <PropertyRef Name="id_usuario" />
@@ -265,15 +280,15 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.usuario-tiene-rol' no tiene defini
           <Property Name="id_usuario" Type="int" Nullable="false" />
           <Property Name="id_roles" Type="int" Nullable="false" />
         </EntityType>
-        <Association Name="FK_alergias_tabla_medica">
-          <End Role="tabla_medica" Type="Self.tabla_medica" Multiplicity="1" />
-          <End Role="alergias" Type="Self.alergias" Multiplicity="*" />
+        <Association Name="FK_alergia">
+          <End Role="catalogo_alergia" Type="Self.catalogo_alergia" Multiplicity="1" />
+          <End Role="medica-alergia" Type="Self.medica-alergia" Multiplicity="*" />
           <ReferentialConstraint>
-            <Principal Role="tabla_medica">
-              <PropertyRef Name="id_cartilla_medica" />
+            <Principal Role="catalogo_alergia">
+              <PropertyRef Name="id_alergias" />
             </Principal>
-            <Dependent Role="alergias">
-              <PropertyRef Name="id_cartilla_medica" />
+            <Dependent Role="medica-alergia">
+              <PropertyRef Name="id_alergia" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -325,6 +340,18 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.usuario-tiene-rol' no tiene defini
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="FK_cartilla">
+          <End Role="tabla_medica" Type="Self.tabla_medica" Multiplicity="1" />
+          <End Role="medica-enfermedades" Type="Self.medica-enfermedades" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tabla_medica">
+              <PropertyRef Name="id_cartilla_medica" />
+            </Principal>
+            <Dependent Role="medica-enfermedades">
+              <PropertyRef Name="id_cartilla_medica" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK_cartilla-alumno">
           <End Role="tabla_medica" Type="Self.tabla_medica" Multiplicity="1" />
           <End Role="alumno-cartilla" Type="Self.alumno-cartilla" Multiplicity="*" />
@@ -337,27 +364,51 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.usuario-tiene-rol' no tiene defini
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK_discapacidades_tabla_medica">
+        <Association Name="FK_cm">
           <End Role="tabla_medica" Type="Self.tabla_medica" Multiplicity="1" />
-          <End Role="discapacidades" Type="Self.discapacidades" Multiplicity="*" />
+          <End Role="medica-discapacidad" Type="Self.medica-discapacidad" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="tabla_medica">
               <PropertyRef Name="id_cartilla_medica" />
             </Principal>
-            <Dependent Role="discapacidades">
-              <PropertyRef Name="id_cartilla_medica" />
+            <Dependent Role="medica-discapacidad">
+              <PropertyRef Name="id_cartillamedica" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK_enfermedades_tabla_medica">
+        <Association Name="FK_disc">
+          <End Role="catalogo_discapacidades" Type="Self.catalogo_discapacidades" Multiplicity="1" />
+          <End Role="medica-discapacidad" Type="Self.medica-discapacidad" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="catalogo_discapacidades">
+              <PropertyRef Name="id_discapacidades" />
+            </Principal>
+            <Dependent Role="medica-discapacidad">
+              <PropertyRef Name="id_discapacidad" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_enfermedades">
+          <End Role="catalogo_enfermedades" Type="Self.catalogo_enfermedades" Multiplicity="1" />
+          <End Role="medica-enfermedades" Type="Self.medica-enfermedades" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="catalogo_enfermedades">
+              <PropertyRef Name="id_enfermedades" />
+            </Principal>
+            <Dependent Role="medica-enfermedades">
+              <PropertyRef Name="id_enfermedades" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_id_cartilla">
           <End Role="tabla_medica" Type="Self.tabla_medica" Multiplicity="1" />
-          <End Role="enfermedades" Type="Self.enfermedades" Multiplicity="*" />
+          <End Role="medica-alergia" Type="Self.medica-alergia" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="tabla_medica">
               <PropertyRef Name="id_cartilla_medica" />
             </Principal>
-            <Dependent Role="enfermedades">
-              <PropertyRef Name="id_cartilla_medica" />
+            <Dependent Role="medica-alergia">
+              <PropertyRef Name="id_cartilla" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -699,6 +750,9 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.usuario-tiene-rol' no tiene defini
         </Function>
         <EntityContainer Name="BDCAMModelStoreContainer">
           <EntitySet Name="alumno" EntityType="Self.alumno" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="catalogo_alergia" EntityType="Self.catalogo_alergia" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="catalogo_discapacidades" EntityType="Self.catalogo_discapacidades" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="catalogo_enfermedades" EntityType="Self.catalogo_enfermedades" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="permisos" EntityType="Self.permisos" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="programa" EntityType="Self.programa" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="recursos" EntityType="Self.recursos" Schema="dbo" store:Type="Tables" />
@@ -709,13 +763,6 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.usuario-tiene-rol' no tiene defini
           <EntitySet Name="turnos" EntityType="Self.turnos" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="tutor" EntityType="Self.tutor" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="usuario" EntityType="Self.usuario" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="alergias" EntityType="Self.alergias" store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [alergias].[id_alergia] AS [id_alergia], 
-    [alergias].[id_cartilla_medica] AS [id_cartilla_medica], 
-    [alergias].[alergia] AS [alergia]
-    FROM [dbo].[alergias] AS [alergias]</DefiningQuery>
-          </EntitySet>
           <EntitySet Name="alumno-cartilla" EntityType="Self.alumno-cartilla" store:Type="Tables" store:Schema="dbo">
             <DefiningQuery>SELECT 
     [alumno-cartilla].[id_alumno] AS [id_alumno], 
@@ -728,26 +775,30 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.usuario-tiene-rol' no tiene defini
     [alumno-programa].[id_programa] AS [id_programa]
     FROM [dbo].[alumno-programa] AS [alumno-programa]</DefiningQuery>
           </EntitySet>
-          <EntitySet Name="discapacidades" EntityType="Self.discapacidades" store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [discapacidades].[id_discapacidades] AS [id_discapacidades], 
-    [discapacidades].[id_cartilla_medica] AS [id_cartilla_medica], 
-    [discapacidades].[discapacidades] AS [discapacidades]
-    FROM [dbo].[discapacidades] AS [discapacidades]</DefiningQuery>
-          </EntitySet>
-          <EntitySet Name="enfermedades" EntityType="Self.enfermedades" store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [enfermedades].[id_enfermedades] AS [id_enfermedades], 
-    [enfermedades].[id_cartilla_medica] AS [id_cartilla_medica], 
-    [enfermedades].[enfermedad] AS [enfermedad]
-    FROM [dbo].[enfermedades] AS [enfermedades]</DefiningQuery>
-          </EntitySet>
           <EntitySet Name="foto-alumno" EntityType="Self.foto-alumno" store:Type="Tables" store:Schema="dbo">
             <DefiningQuery>SELECT 
     [foto-alumno].[id_alumno] AS [id_alumno], 
     [foto-alumno].[imagen_alumno] AS [imagen_alumno], 
     [foto-alumno].[nombre] AS [nombre]
     FROM [dbo].[foto-alumno] AS [foto-alumno]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="medica-alergia" EntityType="Self.medica-alergia" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [medica-alergia].[id_cartilla] AS [id_cartilla], 
+    [medica-alergia].[id_alergia] AS [id_alergia]
+    FROM [dbo].[medica-alergia] AS [medica-alergia]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="medica-discapacidad" EntityType="Self.medica-discapacidad" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [medica-discapacidad].[id_discapacidad] AS [id_discapacidad], 
+    [medica-discapacidad].[id_cartillamedica] AS [id_cartillamedica]
+    FROM [dbo].[medica-discapacidad] AS [medica-discapacidad]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="medica-enfermedades" EntityType="Self.medica-enfermedades" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [medica-enfermedades].[id_cartilla_medica] AS [id_cartilla_medica], 
+    [medica-enfermedades].[id_enfermedades] AS [id_enfermedades]
+    FROM [dbo].[medica-enfermedades] AS [medica-enfermedades]</DefiningQuery>
           </EntitySet>
           <EntitySet Name="programa-turno" EntityType="Self.programa-turno" store:Type="Tables" store:Schema="dbo">
             <DefiningQuery>SELECT 
@@ -794,9 +845,9 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.usuario-tiene-rol' no tiene defini
     [usuario-tiene-rol].[id_roles] AS [id_roles]
     FROM [dbo].[usuario-tiene-rol] AS [usuario-tiene-rol]</DefiningQuery>
           </EntitySet>
-          <AssociationSet Name="FK_alergias_tabla_medica" Association="Self.FK_alergias_tabla_medica">
-            <End Role="tabla_medica" EntitySet="tabla_medica" />
-            <End Role="alergias" EntitySet="alergias" />
+          <AssociationSet Name="FK_alergia" Association="Self.FK_alergia">
+            <End Role="catalogo_alergia" EntitySet="catalogo_alergia" />
+            <End Role="medica-alergia" EntitySet="medica-alergia" />
           </AssociationSet>
           <AssociationSet Name="FK_alumno-cartilla" Association="Self.FK_alumno-cartilla">
             <End Role="alumno" EntitySet="alumno" />
@@ -814,17 +865,29 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.usuario-tiene-rol' no tiene defini
             <End Role="alumno" EntitySet="alumno" />
             <End Role="tutor-alumno" EntitySet="tutor-alumno" />
           </AssociationSet>
+          <AssociationSet Name="FK_cartilla" Association="Self.FK_cartilla">
+            <End Role="tabla_medica" EntitySet="tabla_medica" />
+            <End Role="medica-enfermedades" EntitySet="medica-enfermedades" />
+          </AssociationSet>
           <AssociationSet Name="FK_cartilla-alumno" Association="Self.FK_cartilla-alumno">
             <End Role="tabla_medica" EntitySet="tabla_medica" />
             <End Role="alumno-cartilla" EntitySet="alumno-cartilla" />
           </AssociationSet>
-          <AssociationSet Name="FK_discapacidades_tabla_medica" Association="Self.FK_discapacidades_tabla_medica">
+          <AssociationSet Name="FK_cm" Association="Self.FK_cm">
             <End Role="tabla_medica" EntitySet="tabla_medica" />
-            <End Role="discapacidades" EntitySet="discapacidades" />
+            <End Role="medica-discapacidad" EntitySet="medica-discapacidad" />
           </AssociationSet>
-          <AssociationSet Name="FK_enfermedades_tabla_medica" Association="Self.FK_enfermedades_tabla_medica">
+          <AssociationSet Name="FK_disc" Association="Self.FK_disc">
+            <End Role="catalogo_discapacidades" EntitySet="catalogo_discapacidades" />
+            <End Role="medica-discapacidad" EntitySet="medica-discapacidad" />
+          </AssociationSet>
+          <AssociationSet Name="FK_enfermedades" Association="Self.FK_enfermedades">
+            <End Role="catalogo_enfermedades" EntitySet="catalogo_enfermedades" />
+            <End Role="medica-enfermedades" EntitySet="medica-enfermedades" />
+          </AssociationSet>
+          <AssociationSet Name="FK_id_cartilla" Association="Self.FK_id_cartilla">
             <End Role="tabla_medica" EntitySet="tabla_medica" />
-            <End Role="enfermedades" EntitySet="enfermedades" />
+            <End Role="medica-alergia" EntitySet="medica-alergia" />
           </AssociationSet>
           <AssociationSet Name="FK_pro" Association="Self.FK_pro">
             <End Role="programa" EntitySet="programa" />
@@ -959,11 +1022,11 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.usuario-tiene-rol' no tiene defini
           <Property Name="genero" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="color_textura_piel" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="estatura" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-          <NavigationProperty Name="alergias" Relationship="Self.FK_alergias_tabla_medica" FromRole="tabla_medica" ToRole="alergias" />
-          <NavigationProperty Name="discapacidades" Relationship="Self.FK_discapacidades_tabla_medica" FromRole="tabla_medica" ToRole="discapacidades" />
-          <NavigationProperty Name="enfermedades" Relationship="Self.FK_enfermedades_tabla_medica" FromRole="tabla_medica" ToRole="enfermedades" />
           <NavigationProperty Name="alumno" Relationship="Self.alumno_cartilla" FromRole="tabla_medica" ToRole="alumno" />
           <NavigationProperty Name="Tratamientos" Relationship="BDCAMModel.FK_Tabla_Medica_Tratamiento" FromRole="tabla_medica" ToRole="Tratamientos" />
+          <NavigationProperty Name="catalogo_alergia" Relationship="BDCAMModel.medica_alergia" FromRole="tabla_medica" ToRole="catalogo_alergia" />
+          <NavigationProperty Name="catalogo_discapacidades" Relationship="BDCAMModel.medica_discapacidad" FromRole="tabla_medica" ToRole="catalogo_discapacidades" />
+          <NavigationProperty Name="catalogo_enfermedades" Relationship="BDCAMModel.medica_enfermedades" FromRole="tabla_medica" ToRole="catalogo_enfermedades" />
         </EntityType>
         <EntityType Name="turnos">
           <Key>
@@ -991,39 +1054,6 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.usuario-tiene-rol' no tiene defini
           <NavigationProperty Name="telefono_tutores" Relationship="Self.FK_Tuto" FromRole="tutor" ToRole="telefono_tutores" />
           <NavigationProperty Name="alumno" Relationship="Self.tutor_alumno" FromRole="tutor" ToRole="alumno" />
         </EntityType>
-        <EntityType Name="alergias">
-          <Key>
-            <PropertyRef Name="id_cartilla_medica" />
-            <PropertyRef Name="alergia" />
-            <PropertyRef Name="id_alergia" />
-          </Key>
-          <Property Name="id_cartilla_medica" Type="Int32" Nullable="false" />
-          <Property Name="alergia" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
-          <NavigationProperty Name="tabla_medica" Relationship="Self.FK_alergias_tabla_medica" FromRole="alergias" ToRole="tabla_medica" />
-          <Property Name="id_alergia" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-        </EntityType>
-        <EntityType Name="discapacidades">
-          <Key>
-            <PropertyRef Name="id_cartilla_medica" />
-            <PropertyRef Name="discapacidades1" />
-            <PropertyRef Name="id_discapacidades" />
-          </Key>
-          <Property Name="id_cartilla_medica" Type="Int32" Nullable="false" />
-          <Property Name="discapacidades1" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
-          <NavigationProperty Name="tabla_medica" Relationship="Self.FK_discapacidades_tabla_medica" FromRole="discapacidades" ToRole="tabla_medica" />
-          <Property Name="id_discapacidades" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-        </EntityType>
-        <EntityType Name="enfermedades">
-          <Key>
-            <PropertyRef Name="id_cartilla_medica" />
-            <PropertyRef Name="enfermedad" />
-            <PropertyRef Name="id_enfermedades" />
-          </Key>
-          <Property Name="id_cartilla_medica" Type="Int32" Nullable="false" />
-          <Property Name="enfermedad" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
-          <NavigationProperty Name="tabla_medica" Relationship="Self.FK_enfermedades_tabla_medica" FromRole="enfermedades" ToRole="tabla_medica" />
-          <Property Name="id_enfermedades" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-        </EntityType>
         <EntityType Name="telefono_tutores">
           <Key>
             <PropertyRef Name="id_tutor" />
@@ -1045,42 +1075,6 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.usuario-tiene-rol' no tiene defini
             </Principal>
             <Dependent Role="telefono_tutores">
               <PropertyRef Name="id_telefono" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_alergias_tabla_medica">
-          <End Role="tabla_medica" Type="Self.tabla_medica" Multiplicity="1" />
-          <End Role="alergias" Type="Self.alergias" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="tabla_medica">
-              <PropertyRef Name="id_cartilla_medica" />
-            </Principal>
-            <Dependent Role="alergias">
-              <PropertyRef Name="id_cartilla_medica" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_discapacidades_tabla_medica">
-          <End Role="tabla_medica" Type="Self.tabla_medica" Multiplicity="1" />
-          <End Role="discapacidades" Type="Self.discapacidades" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="tabla_medica">
-              <PropertyRef Name="id_cartilla_medica" />
-            </Principal>
-            <Dependent Role="discapacidades">
-              <PropertyRef Name="id_cartilla_medica" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_enfermedades_tabla_medica">
-          <End Role="tabla_medica" Type="Self.tabla_medica" Multiplicity="1" />
-          <End Role="enfermedades" Type="Self.enfermedades" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="tabla_medica">
-              <PropertyRef Name="id_cartilla_medica" />
-            </Principal>
-            <Dependent Role="enfermedades">
-              <PropertyRef Name="id_cartilla_medica" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -1124,25 +1118,10 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.usuario-tiene-rol' no tiene defini
           <EntitySet Name="tabla_medica" EntityType="Self.tabla_medica" />
           <EntitySet Name="turnos" EntityType="Self.turnos" />
           <EntitySet Name="tutor" EntityType="Self.tutor" />
-          <EntitySet Name="alergias" EntityType="Self.alergias" />
-          <EntitySet Name="discapacidades" EntityType="Self.discapacidades" />
-          <EntitySet Name="enfermedades" EntityType="Self.enfermedades" />
           <EntitySet Name="telefono_tutores" EntityType="Self.telefono_tutores" />
           <AssociationSet Name="FK_Tele" Association="Self.FK_Tele">
             <End Role="tabla_indicadores_telefono" EntitySet="tabla_indicadores_telefono" />
             <End Role="telefono_tutores" EntitySet="telefono_tutores" />
-          </AssociationSet>
-          <AssociationSet Name="FK_alergias_tabla_medica" Association="Self.FK_alergias_tabla_medica">
-            <End Role="tabla_medica" EntitySet="tabla_medica" />
-            <End Role="alergias" EntitySet="alergias" />
-          </AssociationSet>
-          <AssociationSet Name="FK_discapacidades_tabla_medica" Association="Self.FK_discapacidades_tabla_medica">
-            <End Role="tabla_medica" EntitySet="tabla_medica" />
-            <End Role="discapacidades" EntitySet="discapacidades" />
-          </AssociationSet>
-          <AssociationSet Name="FK_enfermedades_tabla_medica" Association="Self.FK_enfermedades_tabla_medica">
-            <End Role="tabla_medica" EntitySet="tabla_medica" />
-            <End Role="enfermedades" EntitySet="enfermedades" />
           </AssociationSet>
           <AssociationSet Name="FK_Tuto" Association="Self.FK_Tuto">
             <End Role="tutor" EntitySet="tutor" />
@@ -1397,6 +1376,21 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.usuario-tiene-rol' no tiene defini
             <Parameter Name="idtipotelefono" Mode="In" Type="Int32" />
             <Parameter Name="telefono" Mode="In" Type="String" />
           </FunctionImport>
+          <EntitySet Name="catalogo_alergia" EntityType="BDCAMModel.catalogo_alergia" />
+          <EntitySet Name="catalogo_discapacidades" EntityType="BDCAMModel.catalogo_discapacidades" />
+          <EntitySet Name="catalogo_enfermedades" EntityType="BDCAMModel.catalogo_enfermedades" />
+          <AssociationSet Name="medica_alergia" Association="BDCAMModel.medica_alergia">
+            <End Role="catalogo_alergia" EntitySet="catalogo_alergia" />
+            <End Role="tabla_medica" EntitySet="tabla_medica" />
+          </AssociationSet>
+          <AssociationSet Name="medica_discapacidad" Association="BDCAMModel.medica_discapacidad">
+            <End Role="tabla_medica" EntitySet="tabla_medica" />
+            <End Role="catalogo_discapacidades" EntitySet="catalogo_discapacidades" />
+          </AssociationSet>
+          <AssociationSet Name="medica_enfermedades" Association="BDCAMModel.medica_enfermedades">
+            <End Role="tabla_medica" EntitySet="tabla_medica" />
+            <End Role="catalogo_enfermedades" EntitySet="catalogo_enfermedades" />
+          </AssociationSet>
         </EntityContainer>
         <ComplexType Name="SP_FichaTecnicaAlumno_Result">
           <Property Type="String" Name="nombre" Nullable="false" MaxLength="30" />
@@ -1628,6 +1622,42 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.usuario-tiene-rol' no tiene defini
           <Property Type="Binary" Name="imagen_alumno" Nullable="false" MaxLength="Max" />
           <Property Type="String" Name="nombre" Nullable="false" MaxLength="100" />
         </ComplexType>
+        <EntityType Name="catalogo_alergia">
+          <Key>
+            <PropertyRef Name="id_alergias" />
+          </Key>
+          <Property Name="id_alergias" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="alergia" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="tabla_medica" Relationship="BDCAMModel.medica_alergia" FromRole="catalogo_alergia" ToRole="tabla_medica" />
+        </EntityType>
+        <EntityType Name="catalogo_discapacidades">
+          <Key>
+            <PropertyRef Name="id_discapacidades" />
+          </Key>
+          <Property Name="id_discapacidades" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="discapacidades" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="tabla_medica" Relationship="BDCAMModel.medica_discapacidad" FromRole="catalogo_discapacidades" ToRole="tabla_medica" />
+        </EntityType>
+        <EntityType Name="catalogo_enfermedades">
+          <Key>
+            <PropertyRef Name="id_enfermedades" />
+          </Key>
+          <Property Name="id_enfermedades" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="enfermedades" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="tabla_medica" Relationship="BDCAMModel.medica_enfermedades" FromRole="catalogo_enfermedades" ToRole="tabla_medica" />
+        </EntityType>
+        <Association Name="medica_alergia">
+          <End Type="BDCAMModel.catalogo_alergia" Role="catalogo_alergia" Multiplicity="*" />
+          <End Type="BDCAMModel.tabla_medica" Role="tabla_medica" Multiplicity="*" />
+        </Association>
+        <Association Name="medica_discapacidad">
+          <End Type="BDCAMModel.tabla_medica" Role="tabla_medica" Multiplicity="*" />
+          <End Type="BDCAMModel.catalogo_discapacidades" Role="catalogo_discapacidades" Multiplicity="*" />
+        </Association>
+        <Association Name="medica_enfermedades">
+          <End Type="BDCAMModel.tabla_medica" Role="tabla_medica" Multiplicity="*" />
+          <End Type="BDCAMModel.catalogo_enfermedades" Role="catalogo_enfermedades" Multiplicity="*" />
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -1725,33 +1755,6 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.usuario-tiene-rol' no tiene defini
                 <ScalarProperty Name="colonia_trabajo_tutor" ColumnName="colonia_trabajo_tutor" />
                 <ScalarProperty Name="calle_trabajo_tutor" ColumnName="calle_trabajo_tutor" />
                 <ScalarProperty Name="numero_trabajo_tutor" ColumnName="numero_trabajo_tutor" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="alergias">
-            <EntityTypeMapping TypeName="BDCAMModel.alergias">
-              <MappingFragment StoreEntitySet="alergias">
-                <ScalarProperty Name="id_alergia" ColumnName="id_alergia" />
-                <ScalarProperty Name="id_cartilla_medica" ColumnName="id_cartilla_medica" />
-                <ScalarProperty Name="alergia" ColumnName="alergia" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="discapacidades">
-            <EntityTypeMapping TypeName="BDCAMModel.discapacidades">
-              <MappingFragment StoreEntitySet="discapacidades">
-                <ScalarProperty Name="id_discapacidades" ColumnName="id_discapacidades" />
-                <ScalarProperty Name="id_cartilla_medica" ColumnName="id_cartilla_medica" />
-                <ScalarProperty Name="discapacidades1" ColumnName="discapacidades" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="enfermedades">
-            <EntityTypeMapping TypeName="BDCAMModel.enfermedades">
-              <MappingFragment StoreEntitySet="enfermedades">
-                <ScalarProperty Name="id_enfermedades" ColumnName="id_enfermedades" />
-                <ScalarProperty Name="id_cartilla_medica" ColumnName="id_cartilla_medica" />
-                <ScalarProperty Name="enfermedad" ColumnName="enfermedad" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -2032,6 +2035,54 @@ advertencia 6002: La tabla o vista 'BDCAM.dbo.usuario-tiene-rol' no tiene defini
           <FunctionImportMapping FunctionImportName="SP_Modificar_alergias" FunctionName="BDCAMModel.Store.SP_Modificar_alergias" />
           <FunctionImportMapping FunctionImportName="SP_AltaTratamientos" FunctionName="BDCAMModel.Store.SP_AltaTratamientos" />
           <FunctionImportMapping FunctionImportName="SP_ModificarTelefonoTutor" FunctionName="BDCAMModel.Store.SP_ModificarTelefonoTutor" />
+          <EntitySetMapping Name="catalogo_alergia">
+            <EntityTypeMapping TypeName="BDCAMModel.catalogo_alergia">
+              <MappingFragment StoreEntitySet="catalogo_alergia">
+                <ScalarProperty Name="alergia" ColumnName="alergia" />
+                <ScalarProperty Name="id_alergias" ColumnName="id_alergias" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="catalogo_discapacidades">
+            <EntityTypeMapping TypeName="BDCAMModel.catalogo_discapacidades">
+              <MappingFragment StoreEntitySet="catalogo_discapacidades">
+                <ScalarProperty Name="discapacidades" ColumnName="discapacidades" />
+                <ScalarProperty Name="id_discapacidades" ColumnName="id_discapacidades" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="catalogo_enfermedades">
+            <EntityTypeMapping TypeName="BDCAMModel.catalogo_enfermedades">
+              <MappingFragment StoreEntitySet="catalogo_enfermedades">
+                <ScalarProperty Name="enfermedades" ColumnName="enfermedades" />
+                <ScalarProperty Name="id_enfermedades" ColumnName="id_enfermedades" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <AssociationSetMapping Name="medica_alergia" TypeName="BDCAMModel.medica_alergia" StoreEntitySet="medica-alergia">
+            <EndProperty Name="tabla_medica">
+              <ScalarProperty Name="id_cartilla_medica" ColumnName="id_cartilla" />
+            </EndProperty>
+            <EndProperty Name="catalogo_alergia">
+              <ScalarProperty Name="id_alergias" ColumnName="id_alergia" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="medica_discapacidad" TypeName="BDCAMModel.medica_discapacidad" StoreEntitySet="medica-discapacidad">
+            <EndProperty Name="catalogo_discapacidades">
+              <ScalarProperty Name="id_discapacidades" ColumnName="id_discapacidad" />
+            </EndProperty>
+            <EndProperty Name="tabla_medica">
+              <ScalarProperty Name="id_cartilla_medica" ColumnName="id_cartillamedica" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="medica_enfermedades" TypeName="BDCAMModel.medica_enfermedades" StoreEntitySet="medica-enfermedades">
+            <EndProperty Name="catalogo_enfermedades">
+              <ScalarProperty Name="id_enfermedades" ColumnName="id_enfermedades" />
+            </EndProperty>
+            <EndProperty Name="tabla_medica">
+              <ScalarProperty Name="id_cartilla_medica" ColumnName="id_cartilla_medica" />
+            </EndProperty>
+          </AssociationSetMapping>
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>
