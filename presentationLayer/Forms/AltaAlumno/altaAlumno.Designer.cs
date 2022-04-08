@@ -809,6 +809,7 @@ namespace presentationLayer
             this.numeroCasa.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.numeroCasa.Location = new System.Drawing.Point(20, 10);
             this.numeroCasa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.numeroCasa.MaxLength = 10;
             this.numeroCasa.Name = "numeroCasa";
             this.numeroCasa.Size = new System.Drawing.Size(149, 32);
             this.numeroCasa.TabIndex = 76;
@@ -1318,6 +1319,7 @@ namespace presentationLayer
             this.telefono.Font = new System.Drawing.Font("Gadugi", 14.25F);
             this.telefono.Location = new System.Drawing.Point(20, 10);
             this.telefono.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.telefono.MaxLength = 10;
             this.telefono.Name = "telefono";
             this.telefono.Size = new System.Drawing.Size(160, 32);
             this.telefono.TabIndex = 124;
@@ -1802,6 +1804,7 @@ namespace presentationLayer
             this.numeroCasaT.Font = new System.Drawing.Font("Gadugi", 14.25F);
             this.numeroCasaT.Location = new System.Drawing.Point(20, 10);
             this.numeroCasaT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.numeroCasaT.MaxLength = 10;
             this.numeroCasaT.Name = "numeroCasaT";
             this.numeroCasaT.Size = new System.Drawing.Size(149, 32);
             this.numeroCasaT.TabIndex = 93;
