@@ -201,6 +201,7 @@
   <ItemGroup>
     <None Include="Resources\TextBox032.png" />
     <None Include="Resources\agregar.png" />
+    <None Include="Resources\botonMenos.png" />
     <Content Include="Resources\TextBox2.png" />
     <None Include="Resources\TextBox22.png" />
   </ItemGroup>
