@@ -108,8 +108,6 @@ C:\Users\arias\source\repos\CAMDefinitivo\businessLayer\obj\Debug\businessLayer.
 C:\Users\arias\source\repos\CAMDefinitivo\businessLayer\obj\Debug\businessLayer.csproj.CopyComplete
 C:\Users\arias\source\repos\CAMDefinitivo\businessLayer\obj\Debug\businessLayer.dll
 C:\Users\arias\source\repos\CAMDefinitivo\businessLayer\obj\Debug\businessLayer.pdb
-C:\Users\galle\source\repos\CAM3\businessLayer\bin\Debug\businessLayer.dll.config
-C:\Users\galle\source\repos\CAM3\businessLayer\bin\Debug\businessLayer.dll
 C:\Users\galle\source\repos\CAM3\businessLayer\bin\Debug\businessLayer.pdb
 C:\Users\galle\source\repos\CAM3\businessLayer\bin\Debug\1dataLayer.dll
 C:\Users\galle\source\repos\CAM3\businessLayer\bin\Debug\EntityFramework.dll
@@ -121,7 +119,6 @@ C:\Users\galle\source\repos\CAM3\businessLayer\bin\Debug\EntityFramework.SqlServ
 C:\Users\galle\source\repos\CAM3\businessLayer\obj\Debug\businessLayer.csproj.AssemblyReference.cache
 C:\Users\galle\source\repos\CAM3\businessLayer\obj\Debug\businessLayer.csproj.CoreCompileInputs.cache
 C:\Users\galle\source\repos\CAM3\businessLayer\obj\Debug\businessLayer.csproj.CopyComplete
-C:\Users\galle\source\repos\CAM3\businessLayer\obj\Debug\businessLayer.dll
 C:\Users\galle\source\repos\CAM3\businessLayer\obj\Debug\businessLayer.pdb
 B:\GitKraken\Github\CAM\Development\CAM\businessLayer\bin\Debug\businessLayer.dll.config
 B:\GitKraken\Github\CAM\Development\CAM\businessLayer\bin\Debug\businessLayer.dll
@@ -218,3 +215,6 @@ C:\Users\vanes\source\repos\CAM\businessLayer\bin\Debug\businessLayer.exe.config
 C:\Users\vanes\source\repos\CAM\businessLayer\bin\Debug\businessLayer.exe
 C:\Users\vanes\source\repos\CAM\businessLayer\obj\Debug\businessLayer.exe
 C:\Users\ferna\source\repos\CAM\businessLayer\obj\Debug\businessLayer.csproj.CopyComplete
+C:\Users\galle\source\repos\CAM3\businessLayer\bin\Debug\businessLayer.exe.config
+C:\Users\galle\source\repos\CAM3\businessLayer\bin\Debug\businessLayer.exe
+C:\Users\galle\source\repos\CAM3\businessLayer\obj\Debug\businessLayer.exe

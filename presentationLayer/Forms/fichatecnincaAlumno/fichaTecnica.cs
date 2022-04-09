@@ -62,68 +62,26 @@ namespace presentationLayer
             canalizado.Text = "Lic. Maria Leticia Sepulveda Ruiz"; calleT.Text = "Av. Rio San Lorenzo"; numeroCasaT.Text = "2365"; coloniaT.Text = "Independencia";*/
 
             //Información del alumno
-            alumno = _1dataLayer.DLConsultaAlumno.FichaTenicaAlumno(id_alumno);
-            apellidoP.Text = alumno.apellido_paterno;
-            apellidoM.Text = alumno.apellido_materno;
-            edad.Text = alumno.edad_alumno;
-            matricula.Text = alumno.id_alumno.ToString();
-            fechaNa.Value = alumno.fecha_nacimiento;
-            //fechaNa.Text = alumno.fecha_nacimiento.Day.ToString() + "/" + alumno.fecha_nacimiento.Month.ToString() + "/" + alumno.fecha_nacimiento.Year.ToString();
-            ciudad.Text = alumno.ciudad_nacimiento_alumno;
-            estado.Text = alumno.estado_nacimiento_alumno;
-            curp.Text = alumno.CURP_alumno;
-            telPersonal.Text = alumno.telefono_personal_alumno;
-            calle.Text = alumno.calle_alumno;
-            numeroCasa.Text = alumno.numero_alumno;
-            colonia.Text = alumno.colonia_alumno;
-            tipoIngreso.Text = alumno.tipo_ingreso;
-
-            businessLayer.BLFichaTecnica.infoGenAlumno(nombreAl, id_alumno);
+            businessLayer.BLFichaTecnica.infoGenAlumno(nombreAl, apellidoP, apellidoM, edad, matricula, fechaNa, ciudad, estado, curp, telPersonal, calle, numeroCasa, colonia, tipoIngreso, id_alumno);
 
             //Informacion escolar del alumno
-            tipoIngreso.Text = alumno.tipo_ingreso;
-            escuelaP.Text = alumno.escuela_procedencia_alumno;
-            canalizado.Text = alumno.atendido_por;
-            cicloEsc.Text = alumno.ciclo_escolar;
+            businessLayer.BLFichaTecnica.infoEscAlumno(tipoIngreso, escuelaP, canalizado, cicloEsc, id_alumno);
 
             //Información del tutor
-            tutor = _1dataLayer.DLConsultaAlumno.FichaTecnicaTutor(id_alumno);
-            nombreT.Text = tutor.nombre;
-            apellidoPT.Text = tutor.apellido_paterno;
-            apellidoMT.Text = tutor.apellido_materno;
-            calleT.Text = tutor.calle_tutor;
-            numeroCasaT.Text = tutor.numero_tutor;
-            coloniaT.Text = tutor.colonia_tutor;
-            ocupacion.Text = tutor.ocupacion_tutor;
-            telCasaT.Text = telefonos.telefono;
-            telTrabajoT.Text = telefonos.telefono;
+            businessLayer.BLFichaTecnica.infoTutor(nombreT, apellidoPT, apellidoMT, calleT, numeroCasaT, coloniaT, ocupacion, telCasaT, telTrabajoT, id_alumno);
            
-
             //Información médica
-            infoMed = _1dataLayer.DLConsultaAlumno.FichaTecnicaMedica(id_alumno);
-            servMedico.Text = infoMed.servicio_medico;
-            telefono.Text = infoMed.telefono_contacto;
-            grupoSanguineo.Text = infoMed.grupo_sanguineo;
+            businessLayer.BLFichaTecnica.infoMedAlumno(servMedico, telefono, grupoSanguineo, id_alumno);
 
-            //Discapacidades
-            discapacidades.Text = discapacidad.discapacidades;
+            //Discapacidades, enfermedades, alergias y tratamientos
+            businessLayer.BLFichaTecnica.infoMedAlumno2(discapacidades, enfermedades, alergias, tratamientos, id_alumno);
 
-            //Enfermedades
-            enfermedades.Text = enfermedad.enfermedad;
-
-            //Alergias
-            alergias.Text = alergia.alergia;
-
-            //Tratamientos
-            tratamientos.Text = tratamiento.Tratamiento;
-
-            //Sentencia que manda a llamar el método para cerrar Consultas usando la X
-            //this.FormClosed += new FormClosedEventHandler(cerrarForm);
-
-
+            //Foto
             fotol = _1dataLayer.DLConsultaAlumno.ConsultaFoto(id_alumno);
             foto.Image = byteArrayToImage(fotol.imagen_alumno.ToArray());
 
+            //Sentencia que manda a llamar el método para cerrar Consultas usando la X
+            //this.FormClosed += new FormClosedEventHandler(cerrarForm);
         }
 
         public Image byteArrayToImage(byte[] byteArrayIn)
