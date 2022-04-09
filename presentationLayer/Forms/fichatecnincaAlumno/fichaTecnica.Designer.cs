@@ -291,6 +291,7 @@ namespace presentationLayer
             this.servMedico.Name = "servMedico";
             this.servMedico.Size = new System.Drawing.Size(360, 32);
             this.servMedico.TabIndex = 122;
+            this.servMedico.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.letras_KeyPress);
             // 
             // tratamientoPanel
             // 
@@ -696,7 +697,7 @@ namespace presentationLayer
             this.ocupacion.Font = new System.Drawing.Font("Gadugi", 14.25F);
             this.ocupacion.Location = new System.Drawing.Point(188, 156);
             this.ocupacion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ocupacion.MaxLength = 50;
+            this.ocupacion.MaxLength = 40;
             this.ocupacion.Name = "ocupacion";
             this.ocupacion.Size = new System.Drawing.Size(360, 32);
             this.ocupacion.TabIndex = 41;

@@ -8,7 +8,7 @@ namespace presentationLayer
     class PLAltaAlumno
     {
 
-        public static void infoMedica(Label servMedicoL, TextBox servMed, Panel servMedP, Label grupoSanL, TextBox grupoSan, Panel grupoSanP,
+        public static void infoMedica(Label servMedicoL, TextBox servMed, Panel servMedP, Label grupoSanL,
             ComboBox grupoSanCB, Label telL, TextBox tel, Panel telP, Label discapacidadL, RichTextBox discapacidad, Panel discapacidadP,
             Label enfermedadL, RichTextBox enfermedad, Panel enfermedadP, Label alergiaL, RichTextBox alergia, Panel alergiaP,
             Label tratamientoL, RichTextBox tratamiento, Panel tratamientoP, ComboBox discapacidadCB, ComboBox enfermedadCB, ComboBox alergiaCB,
@@ -19,9 +19,6 @@ namespace presentationLayer
             servMedP.Size = new Size(300, 50);
 
             grupoSanL.Location = new Point(530, 50);
-            grupoSanP.Location = new Point(700, 50);
-            grupoSanP.Size = new Size(110, 50);
-            grupoSanP.Visible = false;
             grupoSanCB.Location = new Point(700, 50);
             grupoSanCB.Size = new Size(110, 50);
 
