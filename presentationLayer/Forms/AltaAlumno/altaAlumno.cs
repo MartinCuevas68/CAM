@@ -41,7 +41,7 @@ namespace presentationLayer
                 calleDatoLabel, numeroDatoLabel, coloniaDatoLabel, infContactoLabel, telCasaTLabel, telCasaT, telCasaTPanel, telMovilTLabel, telMovilT, telMovilTPanel,
                 telTrabajoTLabel, telTrabajoT, telTrabajoTPanel, ocupacionLabel, ocupacion, ocupacionTPanel, direccionCheckBox);
 
-            PLAltaAlumno.infoMedica(servMedicoLabel, servMedico, servMedicoPanel, grupoSanguineoLabel, grupoSanguineo, grupoSanguineoPanel, grupoSanguineoComboBox, telefonoLabel,
+            PLAltaAlumno.infoMedica(servMedicoLabel, servMedico, servMedicoPanel, grupoSanguineoLabel, grupoSanguineoComboBox, telefonoLabel,
                 telefono, telefonoPanel, discapacidadLabel, discapacidad, discapacidadPanel, enfermedadesLabel, enfermedades, enfermedadesPanel,
                 alergiasLabel, alergias, alergiasPanel, tratamientoLabel, tratamiento, tratamientoPanel, discapacidadesCombobox, enfermedadesCombobox, alergiasCombobox,
                 eliminarEnfermedadesButton, eliminarDiscapacidadesButton, eliminarAlergiasButton, eliminarTratamientosButton,
@@ -337,13 +337,6 @@ namespace presentationLayer
         }
 
 
-        private void alumnosButton_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            ConsultaAlumno formConsulta = new ConsultaAlumno();
-            formConsulta.Show();
-        }
-
         //AGREGAR ENFERMEDADES AL RICHTXTBOX
         private void agregarEnfermedadesButton_Click(object sender, EventArgs e)
         {
@@ -413,7 +406,7 @@ namespace presentationLayer
             servMedico.Clear();
 
             telefono.Clear();
-            grupoSanguineo.Clear();
+            //grupoSanguineoComboBox.Clear();
             //documentacionListBox.SetItemChecked = false; *CLAUDIA CAMBIARÁ ESTO POR UN CONJUNTO DE CHECKBUTTONS*
         }
 

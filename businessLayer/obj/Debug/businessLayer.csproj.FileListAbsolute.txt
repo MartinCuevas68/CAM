@@ -164,8 +164,6 @@ F:\Github\UABC\CAM\businessLayer\obj\Debug\businessLayer.csproj.AssemblyReferenc
 F:\Github\UABC\CAM\businessLayer\obj\Debug\businessLayer.csproj.CoreCompileInputs.cache
 F:\Github\UABC\CAM\businessLayer\obj\Debug\businessLayer.csproj.CopyComplete
 F:\Github\UABC\CAM\businessLayer\obj\Debug\businessLayer.pdb
-C:\Users\DELL\Source\Repos\CAM\businessLayer\bin\Debug\businessLayer.dll.config
-C:\Users\DELL\Source\Repos\CAM\businessLayer\bin\Debug\businessLayer.dll
 C:\Users\DELL\Source\Repos\CAM\businessLayer\bin\Debug\businessLayer.pdb
 C:\Users\DELL\Source\Repos\CAM\businessLayer\bin\Debug\1dataLayer.dll
 C:\Users\DELL\Source\Repos\CAM\businessLayer\bin\Debug\EntityFramework.dll
@@ -177,7 +175,6 @@ C:\Users\DELL\Source\Repos\CAM\businessLayer\bin\Debug\EntityFramework.SqlServer
 C:\Users\DELL\Source\Repos\CAM\businessLayer\obj\Debug\businessLayer.csproj.AssemblyReference.cache
 C:\Users\DELL\Source\Repos\CAM\businessLayer\obj\Debug\businessLayer.csproj.CoreCompileInputs.cache
 C:\Users\DELL\Source\Repos\CAM\businessLayer\obj\Debug\businessLayer.csproj.CopyComplete
-C:\Users\DELL\Source\Repos\CAM\businessLayer\obj\Debug\businessLayer.dll
 C:\Users\DELL\Source\Repos\CAM\businessLayer\obj\Debug\businessLayer.pdb
 D:\Canela\Documents\GitHub\CAM\businessLayer\bin\Debug\businessLayer.dll.config
 D:\Canela\Documents\GitHub\CAM\businessLayer\bin\Debug\businessLayer.dll
@@ -218,3 +215,6 @@ C:\Users\vanes\source\repos\CAM\businessLayer\bin\Debug\businessLayer.exe.config
 C:\Users\vanes\source\repos\CAM\businessLayer\bin\Debug\businessLayer.exe
 C:\Users\vanes\source\repos\CAM\businessLayer\obj\Debug\businessLayer.exe
 C:\Users\ferna\source\repos\CAM\businessLayer\obj\Debug\businessLayer.csproj.CopyComplete
+C:\Users\DELL\source\repos\CAM\businessLayer\bin\Debug\businessLayer.exe.config
+C:\Users\DELL\source\repos\CAM\businessLayer\bin\Debug\businessLayer.exe
+C:\Users\DELL\source\repos\CAM\businessLayer\obj\Debug\businessLayer.exe
