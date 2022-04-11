@@ -46,17 +46,17 @@ namespace _1dataLayer
         public virtual DbSet<catalogo_discapacidades> catalogo_discapacidades { get; set; }
         public virtual DbSet<catalogo_enfermedades> catalogo_enfermedades { get; set; }
     
-        public virtual int sp_altaalergias(Nullable<int> id, string alergia)
+        public virtual int sp_altaalergias(Nullable<int> id, Nullable<int> id_alergia)
         {
             var idParameter = id.HasValue ?
                 new ObjectParameter("id", id) :
                 new ObjectParameter("id", typeof(int));
     
-            var alergiaParameter = alergia != null ?
-                new ObjectParameter("alergia", alergia) :
-                new ObjectParameter("alergia", typeof(string));
+            var id_alergiaParameter = id_alergia.HasValue ?
+                new ObjectParameter("id_alergia", id_alergia) :
+                new ObjectParameter("id_alergia", typeof(int));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("sp_altaalergias", idParameter, alergiaParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("sp_altaalergias", idParameter, id_alergiaParameter);
         }
     
         public virtual ObjectResult<Nullable<decimal>> SP_AltaAlumno(Nullable<System.DateTime> fecha_registro, string cicloescolar, string nombre, string apellido_pat, string apellido_mat, Nullable<System.DateTime> fecha_nac, string edad_alumno, string curp, string estadonac, string ciudadnac, string colonia, string calle, string numero_alumno, string telefonoper, string escuela, string documentacion, string tipo_ingreso, string atendidopor)
@@ -182,30 +182,30 @@ namespace _1dataLayer
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("sp_altacartilla", servicioParameter, grupoParameter, telefonoParameter, pesoParameter, generoParameter, color_texturaParameter, estaturaParameter);
         }
     
-        public virtual int sp_altadiscapacidades(Nullable<int> id_car, string dis)
+        public virtual int sp_altadiscapacidades(Nullable<int> id_car, Nullable<int> id_discapacidad)
         {
             var id_carParameter = id_car.HasValue ?
                 new ObjectParameter("id_car", id_car) :
                 new ObjectParameter("id_car", typeof(int));
     
-            var disParameter = dis != null ?
-                new ObjectParameter("dis", dis) :
-                new ObjectParameter("dis", typeof(string));
+            var id_discapacidadParameter = id_discapacidad.HasValue ?
+                new ObjectParameter("id_discapacidad", id_discapacidad) :
+                new ObjectParameter("id_discapacidad", typeof(int));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("sp_altadiscapacidades", id_carParameter, disParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("sp_altadiscapacidades", id_carParameter, id_discapacidadParameter);
         }
     
-        public virtual int sp_altaenfermedades(Nullable<int> id_car, string enf)
+        public virtual int sp_altaenfermedades(Nullable<int> id_car, Nullable<int> id_enfermedades)
         {
             var id_carParameter = id_car.HasValue ?
                 new ObjectParameter("id_car", id_car) :
                 new ObjectParameter("id_car", typeof(int));
     
-            var enfParameter = enf != null ?
-                new ObjectParameter("enf", enf) :
-                new ObjectParameter("enf", typeof(string));
+            var id_enfermedadesParameter = id_enfermedades.HasValue ?
+                new ObjectParameter("id_enfermedades", id_enfermedades) :
+                new ObjectParameter("id_enfermedades", typeof(int));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("sp_altaenfermedades", id_carParameter, enfParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("sp_altaenfermedades", id_carParameter, id_enfermedadesParameter);
         }
     
         public virtual int sp_altatutor(string nombre, string apellidopat, string apellidomat, string colonia, string calle, string numero, string ocupacion, string coloniatrabajo, string calletrabajo, string numerotrabajo)
