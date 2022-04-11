@@ -144,7 +144,14 @@ namespace _1dataLayer
             }
         }
 
-       
+        public static void altatelefono(int cartilla, int tipotelefono, string telefono)
+        {
+            using (BDCAMEntities db = new BDCAMEntities())
+            {
+                db.sp_telefonotutores(1, 1, "686568868");
+            }
+        }
+
     }
 }
 

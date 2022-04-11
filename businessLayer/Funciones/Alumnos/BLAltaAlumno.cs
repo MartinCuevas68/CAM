@@ -54,11 +54,7 @@ namespace businessLayer
         //Altas tutor
         public static void SetTutor2(string nombreT, string apellidoPT, string apellidoMT, string coloniaT, string calleT, string numeroCasaT,
             string ocupacion, string colonia_trabajo_tutor, string calle_trabajo_tutor, string telTrabajoT)
-        //, string telCasaT, string telMovilT, string telTrabajoT
         {
-            //byte[] x = { (byte)204, 29, (byte)207, (byte)217 };
-            //int y = 1;
-
             _1dataLayer.tutorDTO tuto = new _1dataLayer.tutorDTO();
             try
             {
@@ -75,6 +71,20 @@ namespace businessLayer
                 
 
                 id_tutor = _1dataLayer.DLAltaAlumno.Altatutor(tuto);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+
+        public static void SetTelefonos()
+        { 
+            try
+            {
+          
+                _1dataLayer.DLAltaAlumno.altatelefono(1,1,"hola");
             }
             catch (Exception)
             {

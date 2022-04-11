@@ -857,6 +857,9 @@ namespace presentationLayer
 
                         businessLayer.BLAltaAlumno.SetTratamiento(tratamiento.Text);
 
+                        businessLayer.BLAltaAlumno
+
+
                         //Guardar Foto alumno   **NO BORRAR LO QUE ESTÁ COMENTADO!!!!!**
                         byte[] archivo = null;
                         try
