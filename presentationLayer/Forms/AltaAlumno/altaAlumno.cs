@@ -851,9 +851,9 @@ namespace presentationLayer
                         businessLayer.BLAltaAlumno.SetAlergias(alergias.Text);
 
 
-                        businessLayer.BLAltaAlumno.SetEnfermedades(lista_enfermedad);
+                      //  businessLayer.BLAltaAlumno.SetEnfermedades(lista_enfermedad);
 
-                        businessLayer.BLAltaAlumno.SetDiscapacidades(discapacidad.Text);
+                      //  businessLayer.BLAltaAlumno.SetDiscapacidades(discapacidad.Text);
 
                         businessLayer.BLAltaAlumno.SetTratamiento(tratamiento.Text);
 

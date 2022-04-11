@@ -138,7 +138,7 @@ namespace businessLayer
         }
 
         //Altas Enfermedades
-        public static void SetEnfermedades(List<String> enfermedades)
+        public static void SetEnfermedades()
         {
             //_1dataLayer.enfermedadesDTO enf = new _1dataLayer.enfermedadesDTO();
 
@@ -146,7 +146,7 @@ namespace businessLayer
 
                 try
                 {
-                    _1dataLayer.DLAltaAlumno.Altaenfermedades(id_medica, enfermedades);
+                   // _1dataLayer.DLAltaAlumno.Altaenfermedades(id_medica, enfermedades);
                 }
                 catch (Exception)
                 {
@@ -155,15 +155,13 @@ namespace businessLayer
         }
 
         //Altas Discapacidades
-        public static void SetDiscapacidades(string discapacidad)
+        public static void SetDiscapacidades()
         {
-            _1dataLayer.discapacidadesDTO disc = new _1dataLayer.discapacidadesDTO();
-
-            List<_1dataLayer.discapacidadesDTO> lista_discapacidad = new List<_1dataLayer.discapacidadesDTO>();
+            List<int> lista_discapacidad = new List<int>();
 
             try
             {
-                disc.discapacidades = discapacidad;
+    
                 _1dataLayer.DLAltaAlumno.Altadiscapacidades(id_discapacidad, lista_discapacidad);
             }
             catch (Exception)
