@@ -594,7 +594,7 @@ warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a prima
         </Function>
         <Function Name="sp_altaalergias" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="id" Type="int" Mode="In" />
-          <Parameter Name="alergia" Type="varchar" Mode="In" />
+          <Parameter Name="id_alergia" Type="int" Mode="In" />
         </Function>
         <Function Name="SP_AltaAlumno" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="fecha_registro" Type="date" Mode="In" />
@@ -631,11 +631,11 @@ warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a prima
         </Function>
         <Function Name="sp_altadiscapacidades" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="id_car" Type="int" Mode="In" />
-          <Parameter Name="dis" Type="varchar" Mode="In" />
+          <Parameter Name="id_discapacidad" Type="int" Mode="In" />
         </Function>
         <Function Name="sp_altaenfermedades" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="id_car" Type="int" Mode="In" />
-          <Parameter Name="enf" Type="varchar" Mode="In" />
+          <Parameter Name="id_enfermedades" Type="int" Mode="In" />
         </Function>
         <Function Name="SP_AltaImagenAlumno" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="id_alumno" Type="int" Mode="In" />
@@ -1149,7 +1149,7 @@ warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a prima
           </AssociationSet>
           <FunctionImport Name="sp_altaalergias">
             <Parameter Name="id" Mode="In" Type="Int32" />
-            <Parameter Name="alergia" Mode="In" Type="String" />
+            <Parameter Name="id_alergia" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="SP_AltaAlumno" ReturnType="Collection(Decimal)">
             <Parameter Name="fecha_registro" Mode="In" Type="DateTime" />
@@ -1186,11 +1186,11 @@ warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a prima
           </FunctionImport>
           <FunctionImport Name="sp_altadiscapacidades">
             <Parameter Name="id_car" Mode="In" Type="Int32" />
-            <Parameter Name="dis" Mode="In" Type="String" />
+            <Parameter Name="id_discapacidad" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="sp_altaenfermedades">
             <Parameter Name="id_car" Mode="In" Type="Int32" />
-            <Parameter Name="enf" Mode="In" Type="String" />
+            <Parameter Name="id_enfermedades" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="sp_altatutor">
             <Parameter Name="nombre" Mode="In" Type="String" />

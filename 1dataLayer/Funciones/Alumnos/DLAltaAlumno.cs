@@ -18,7 +18,7 @@ namespace _1dataLayer
             {
                 foreach (int al in alergia)
                 {
-                    //db.sp_altaenfermedades(id, al);
+                    db.sp_altaenfermedades(id, al);
                 }
             }
         }
@@ -30,7 +30,7 @@ namespace _1dataLayer
             {
                 foreach (int enfer in enfermedad)
                 {
-                    //db.sp_altaenfermedades(id, enfer);
+                    db.sp_altaenfermedades(id, enfer);
                 }
             }
         }
@@ -42,7 +42,7 @@ namespace _1dataLayer
             {
                 foreach (int disc in discapacidad)
                 {
-                    //db.sp_altaenfermedades(id, disc.discapacidades);
+                    db.sp_altaenfermedades(id, disc);
                 }
 
             }
