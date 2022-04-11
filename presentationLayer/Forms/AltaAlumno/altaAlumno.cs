@@ -24,6 +24,8 @@ namespace presentationLayer
             InitializeComponent();
             loaddata();
 
+            grupoSanguineoComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+
 
             //CODIGO NUEVO
             centrarLabel(altaalumnoLabel, infoTutorLabel, informacionMedLabel, logo, infGeneralAlLabel, informacionGeneralAlumno,

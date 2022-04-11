@@ -1455,8 +1455,8 @@ warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a prima
           <Property Type="Int32" Name="id_discapacidades" Nullable="false" />
         </ComplexType>
         <ComplexType Name="SP_ListaEnfermedad_Result">
-          <Property Type="Int32" Name="id_cartilla_medica" Nullable="false" />
-          <Property Type="String" Name="enfermedad" Nullable="false" MaxLength="30" />
+          <Property Type="Int32" Name="id_enfermedades" Nullable="false" />
+          <Property Type="String" Name="enfermedades" Nullable="false" />
         </ComplexType>
         <EntityType Name="permisos">
           <Key>
@@ -1892,8 +1892,8 @@ warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a prima
           <FunctionImportMapping FunctionImportName="SP_ListaEnfermedad" FunctionName="BDCAMModel.Store.SP_ListaEnfermedad">
             <ResultMapping>
               <ComplexTypeMapping TypeName="BDCAMModel.SP_ListaEnfermedad_Result">
-                <ScalarProperty Name="id_cartilla_medica" ColumnName="id_cartilla_medica" />
-                <ScalarProperty Name="enfermedad" ColumnName="enfermedad" />
+                <ScalarProperty Name="id_enfermedades" ColumnName="id_enfermedades" />
+                <ScalarProperty Name="enfermedades" ColumnName="enfermedades" />
               </ComplexTypeMapping>
             </ResultMapping>
           </FunctionImportMapping>

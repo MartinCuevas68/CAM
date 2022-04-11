@@ -132,7 +132,7 @@ namespace _1dataLayer
         }
         //regresa la lista de todas las enfermedades que 1 alumno tiene
 
-        public List<SP_ListaEnfermedad_Result> ListaEnfermedades(int id)
+        public static List<SP_ListaEnfermedad_Result> ListaEnfermedades(int id)
         {
             List<SP_ListaEnfermedad_Result> enfermedades = new List<SP_ListaEnfermedad_Result>();
 
@@ -151,7 +151,7 @@ namespace _1dataLayer
         }
         //regresa la lista de todas las discapacidades que 1 alumno tiene
 
-        public List<SP_ListaDiscapacidad_Result> ListaDiscapacidad(int id)
+        public  List<SP_ListaDiscapacidad_Result> ListaDiscapacidad(int id)
         {
             List<SP_ListaDiscapacidad_Result> discapacidades = new List<SP_ListaDiscapacidad_Result>();
 
@@ -167,7 +167,7 @@ namespace _1dataLayer
 
             return discapacidades;
         }
-        public List<SP_ListaTratamiento_Result> ListaTratamiento(int id)
+        public  List<SP_ListaTratamiento_Result> ListaTratamiento(int id)
         {
             List<SP_ListaTratamiento_Result> tratamientos = new List<SP_ListaTratamiento_Result>();
 

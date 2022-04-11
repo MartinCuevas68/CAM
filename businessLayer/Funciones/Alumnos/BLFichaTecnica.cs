@@ -71,21 +71,25 @@ namespace businessLayer
             grupoSanguineo.Text = infoMed.grupo_sanguineo;
         }
 
-        public static void infoMedAlumno2(RichTextBox discapacidades, RichTextBox enfermedades, RichTextBox alergias, RichTextBox tratamientos, int id_alumno)
-        { 
-            _1dataLayer.SP_ListaDiscapacidad_Result discapacidad = new _1dataLayer.SP_ListaDiscapacidad_Result();
-            _1dataLayer.SP_ListaEnfermedad_Result enfermedad = new _1dataLayer.SP_ListaEnfermedad_Result();
-            _1dataLayer.SP_ListaAlergia_Result alergia = new _1dataLayer.SP_ListaAlergia_Result();
-            _1dataLayer.SP_ListaTratamiento_Result tratamiento = new _1dataLayer.SP_ListaTratamiento_Result();
+        public static void infoMedAlumno2(RichTextBox enfermedades, int id_alumno)
+        {
 
-            /*discapacidad = _1dataLayer.DLConsultaAlumno.ListaDiscapacidad(id_alumno);
-            enfermedad = _1dataLayer.DLConsultaAlumno.ListaEnfermedades(id_alumno);
-            alergia = _1dataLayer.DLConsultaAlumno.ListaAlergias(id_alumno);
-            tratamiento = _1dataLayer.DLConsultaAlumno.ListaTratamiento(id_alumno);*/
-            discapacidades.Text = discapacidad.discapacidades;
-            enfermedades.Text = enfermedad.enfermedad;
-            alergias.Text = alergia.alergia;
-            tratamientos.Text = tratamiento.Tratamiento;
+            List<_1dataLayer.SP_ListaEnfermedad_Result>  ListaEnfermedades = new List <_1dataLayer.SP_ListaEnfermedad_Result>();
+
+
+            ListaEnfermedades = _1dataLayer.DLConsultaAlumno.ListaEnfermedades(id_alumno);
+
+            foreach (var enfermedad in ListaEnfermedades)
+            {
+                enfermedades.Text = enfermedades.Text + enfermedad.enfermedades + "\n";
+            }
+          
+         
+            MessageBox.Show(enfermedades.Text);
         }
+
+
+     
+
     }
 }

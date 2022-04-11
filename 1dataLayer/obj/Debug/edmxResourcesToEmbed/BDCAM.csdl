@@ -505,8 +505,8 @@
     <Property Type="Int32" Name="id_discapacidades" Nullable="false" />
   </ComplexType>
   <ComplexType Name="SP_ListaEnfermedad_Result">
-    <Property Type="Int32" Name="id_cartilla_medica" Nullable="false" />
-    <Property Type="String" Name="enfermedad" Nullable="false" MaxLength="30" />
+    <Property Type="Int32" Name="id_enfermedades" Nullable="false" />
+    <Property Type="String" Name="enfermedades" Nullable="false" />
   </ComplexType>
   <EntityType Name="permisos">
     <Key>

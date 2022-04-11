@@ -13,3 +13,4 @@ F:\Github\UABC\CAM\businessLayer\obj\Debug\businessLayer.csproj.CoreCompileInput
 F:\Github\UABC\CAM\businessLayer\obj\Debug\businessLayer.csproj.CopyComplete
 F:\Github\UABC\CAM\businessLayer\obj\Debug\businessLayer.exe
 F:\Github\UABC\CAM\businessLayer\obj\Debug\businessLayer.pdb
+F:\Github\UABC\CAM\businessLayer\obj\Debug\businessLayer.csproj.AssemblyReference.cache
