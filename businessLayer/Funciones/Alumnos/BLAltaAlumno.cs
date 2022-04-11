@@ -146,7 +146,7 @@ namespace businessLayer
 
                 try
                 {
-                    _1dataLayer.DLAltaAlumno.Altaenfermedades(id_medica, enfermedades);
+            //        _1dataLayer.DLAltaAlumno.Altaenfermedades(id_medica, enfermedades);
                 }
                 catch (Exception)
                 {
@@ -164,7 +164,7 @@ namespace businessLayer
             try
             {
                 disc.discapacidades = discapacidad;
-                _1dataLayer.DLAltaAlumno.Altadiscapacidades(id_discapacidad, lista_discapacidad);
+                //_1dataLayer.DLAltaAlumno.Altadiscapacidades(id_discapacidad, lista_discapacidad);
             }
             catch (Exception)
             {
@@ -177,7 +177,7 @@ namespace businessLayer
         {
             _1dataLayer.Tratamientos trat = new _1dataLayer.Tratamientos();
 
-            List<_1dataLayer.Tratamientos> lista_tratamiento = new List<_1dataLayer.Tratamientos>();
+           // List<_1dataLayer.Tratamientos> lista_tratamiento = new List<_1dataLayer.Tratamientos>();
 
             try
             {
