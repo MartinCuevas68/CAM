@@ -79,12 +79,12 @@ namespace businessLayer
         }
 
 
-        public static void SetTelefonos()
+        public static void SetTelefonos(String tel_casa, String tel_personal, string tel_trabajo )
         { 
             try
             {
-          
-                _1dataLayer.DLAltaAlumno.altatelefono(1,1,"hola");
+
+                _1dataLayer.DLAltaAlumno.Altatelefonotutor(id_tutor, tel_casa, tel_personal, tel_trabajo);
             }
             catch (Exception)
             {
