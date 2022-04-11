@@ -248,7 +248,7 @@ namespace presentationLayer
             ConsultaAlumno consultas = new ConsultaAlumno();
             consultas.Close();
             this.Hide();
-            fichaTecnica ficha = new fichaTecnica(54);
+            fichaTecnica ficha = new fichaTecnica(id);
             ficha.Show();
         }
 
