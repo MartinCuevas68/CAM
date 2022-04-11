@@ -10,33 +10,39 @@ namespace _1dataLayer
     public class DLAltaAlumno
     {
 
-        //Metodo para dar de alta alergias
-        public static void Altaalergias(int id, string alergia)
+        //Metodo para dar de alta alergias. Mandas el id del alumno despues de dar la alta y el listado con los ints de la alergia (QUEDA PENDIENTE CHECAR EL PROCEDIMIENTO EN LA SQL MANAGER)
+        public static void Altaalergias(int id, List<int> alergia)
         {
+           
             using (BDCAMEntities db = new BDCAMEntities())
             {
-                    db.sp_altaenfermedades(id, alergia);
-            }
-        }
-
-        public static void Altaenfermedades(int id, List<string> enfermedad)
-        {
-            using (BDCAMEntities db = new BDCAMEntities())
-            {
-                foreach (string enfer in enfermedad)
+                foreach (int al in alergia)
                 {
-                    db.sp_altaenfermedades(id, enfer);
+                    //db.sp_altaenfermedades(id, al);
                 }
             }
         }
 
-        public static void Altadiscapacidades(int id, List<discapacidadesDTO> discapacidad)
+        //Metodo para dar de alta enfermedades. Mandas el id del alumno despues de dar la alta y el listado con los ints de la enfermedad(QUEDA PENDIENTE CHECAR EL PROCEDIMIENTO EN LA SQL MANAGER)
+        public static void Altaenfermedades(int id, List<int> enfermedad)
         {
             using (BDCAMEntities db = new BDCAMEntities())
             {
-                foreach (discapacidadesDTO disc in discapacidad)
+                foreach (int enfer in enfermedad)
                 {
-                    db.sp_altaenfermedades(id, disc.discapacidades);
+                    //db.sp_altaenfermedades(id, enfer);
+                }
+            }
+        }
+
+        //Metodo para dar de alta discapacidades. Mandas el id del alumno despues de dar la alta y el listado con los ints de la discapacidad(QUEDA PENDIENTE CHECAR EL PROCEDIMIENTO EN LA SQL MANAGER)
+        public static void Altadiscapacidades(int id, List<int> discapacidad)
+        {
+            using (BDCAMEntities db = new BDCAMEntities())
+            {
+                foreach (int disc in discapacidad)
+                {
+                    //db.sp_altaenfermedades(id, disc.discapacidades);
                 }
 
             }
@@ -99,12 +105,16 @@ namespace _1dataLayer
             return id;
         }
 
+        //Primero manda el id del tutor, despues manda el telefono personal, despues el telefono de casa y al final el telefono del trabajo.
         public static void Altatelefonotutor(int id_tutor, string tel_personal, string tel_casa, string tel_trabajo)
         {
             using (BDCAMEntities db = new BDCAMEntities())
             {
+                //ID 1 PARA EL PERSONAL
                 db.sp_telefonotutores(id_tutor,1, tel_personal);
+                //ID 2 PARA EL CASA
                 db.sp_telefonotutores(id_tutor, 2, tel_casa);
+                //ID 3 PARA EL TRABAJO
                 db.sp_telefonotutores(id_tutor, 3, tel_trabajo);
             }
         }
