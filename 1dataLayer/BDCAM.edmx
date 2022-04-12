@@ -658,6 +658,9 @@ warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a prima
           <Parameter Name="calletrabajo" Type="varchar" Mode="In" />
           <Parameter Name="numerotrabajo" Type="varchar" Mode="In" />
         </Function>
+        <Function Name="sp_catalogoalergias" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="sp_catalogodiscapacidades" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="sp_catalogoenfermedades" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <Function Name="SP_consulta_foto_alumno" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="id_alumno" Type="int" Mode="In" />
         </Function>
@@ -1391,6 +1394,9 @@ warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a prima
             <End Role="tabla_medica" EntitySet="tabla_medica" />
             <End Role="catalogo_enfermedades" EntitySet="catalogo_enfermedades" />
           </AssociationSet>
+          <FunctionImport Name="sp_catalogoalergias" ReturnType="Collection(BDCAMModel.sp_catalogoalergias_Result)" />
+          <FunctionImport Name="sp_catalogodiscapacidades" ReturnType="Collection(BDCAMModel.sp_catalogodiscapacidades_Result)" />
+          <FunctionImport Name="sp_catalogoenfermedades" ReturnType="Collection(BDCAMModel.sp_catalogoenfermedades_Result)" />
         </EntityContainer>
         <ComplexType Name="SP_FichaTecnicaAlumno_Result">
           <Property Type="String" Name="nombre" Nullable="false" MaxLength="30" />
@@ -1658,6 +1664,18 @@ warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a prima
           <End Type="BDCAMModel.tabla_medica" Role="tabla_medica" Multiplicity="*" />
           <End Type="BDCAMModel.catalogo_enfermedades" Role="catalogo_enfermedades" Multiplicity="*" />
         </Association>
+        <ComplexType Name="sp_catalogoalergias_Result">
+          <Property Type="Int32" Name="id_alergias" Nullable="false" />
+          <Property Type="String" Name="alergia" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="sp_catalogodiscapacidades_Result">
+          <Property Type="Int32" Name="id_discapacidades" Nullable="false" />
+          <Property Type="String" Name="discapacidades" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="sp_catalogoenfermedades_Result">
+          <Property Type="Int32" Name="id_enfermedades" Nullable="false" />
+          <Property Type="String" Name="enfermedades" Nullable="false" />
+        </ComplexType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -2083,6 +2101,30 @@ warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a prima
               <ScalarProperty Name="id_cartilla_medica" ColumnName="id_cartilla_medica" />
             </EndProperty>
           </AssociationSetMapping>
+          <FunctionImportMapping FunctionImportName="sp_catalogoalergias" FunctionName="BDCAMModel.Store.sp_catalogoalergias">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="BDCAMModel.sp_catalogoalergias_Result">
+                <ScalarProperty Name="id_alergias" ColumnName="id_alergias" />
+                <ScalarProperty Name="alergia" ColumnName="alergia" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_catalogodiscapacidades" FunctionName="BDCAMModel.Store.sp_catalogodiscapacidades">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="BDCAMModel.sp_catalogodiscapacidades_Result">
+                <ScalarProperty Name="id_discapacidades" ColumnName="id_discapacidades" />
+                <ScalarProperty Name="discapacidades" ColumnName="discapacidades" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_catalogoenfermedades" FunctionName="BDCAMModel.Store.sp_catalogoenfermedades">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="BDCAMModel.sp_catalogoenfermedades_Result">
+                <ScalarProperty Name="id_enfermedades" ColumnName="id_enfermedades" />
+                <ScalarProperty Name="enfermedades" ColumnName="enfermedades" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

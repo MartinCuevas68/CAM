@@ -101,7 +101,6 @@ C:\Users\ferna\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.ex
 C:\Users\ferna\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.pdb
 C:\Users\vanes\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.Forms.fichatecnincaAlumno.LineaControl.resources
 C:\Users\ferna\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.Forms.fichatecnincaAlumno.LineaControl.resources
-F:\Github\UABC\CAM\presentationLayer\obj\Debug\presentationLayer.Forms.fichatecnincaAlumno.LineaControl.resources
 C:\Users\edder\source\repos\CAM2\presentationLayer\bin\Debug\presentationLayer.exe.config
 C:\Users\edder\source\repos\CAM2\presentationLayer\bin\Debug\presentationLayer.exe
 C:\Users\edder\source\repos\CAM2\presentationLayer\bin\Debug\presentationLayer.pdb
@@ -154,3 +153,4 @@ C:\Users\galle\source\repos\CAM3\presentationLayer\obj\Debug\presentationLayer.c
 C:\Users\galle\source\repos\CAM3\presentationLayer\obj\Debug\presentationLayer.exe
 C:\Users\galle\source\repos\CAM3\presentationLayer\obj\Debug\presentationLayer.pdb
 >>>>>>> Gabriel_08_04_2022
+C:\Users\ferna\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.csproj.CopyComplete
