@@ -11,6 +11,7 @@ namespace businessLayer
         static int id_alergia;
         static int id_discapacidad;
         static int id_tratamiento;
+        static int id_cartilla;
 
         //Altas Enfermedades
       
@@ -182,17 +183,20 @@ namespace businessLayer
             }
         }
 
-        //Altas Tratamientos
+         //Altas Tratamientos
         public static void SetTratamiento(string tratamiento)
         {
-            _1dataLayer.Tratamientos trat = new _1dataLayer.Tratamientos();
+            _1dataLayer.tratamientoDTO trat = new _1dataLayer.tratamientoDTO();
 
            // List<_1dataLayer.Tratamientos> lista_tratamiento = new List<_1dataLayer.Tratamientos>();
 
             try
             {
-                trat.Tratamiento = tratamiento;
-                //_1dataLayer.DLAltaAlumno.Altatratamiento(id_tratamiento, lista_tratamiento);
+                trat.tratamiento = tratamiento;
+
+                //id_cartilla = _1dataLayer.DLAltaAlumno.altatratamiento(trat);
+
+                _1dataLayer.DLAltaAlumno.altatratamiento(id_alumno, trat);
             }
             catch (Exception)
             {
