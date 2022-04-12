@@ -25,6 +25,7 @@ F:\Github\UABC\CAM\presentationLayer\obj\Debug\presentationLayer.csproj.CopyComp
 F:\Github\UABC\CAM\presentationLayer\obj\Debug\presentationLayer.exe
 F:\Github\UABC\CAM\presentationLayer\obj\Debug\presentationLayer.pdb
 F:\Github\UABC\CAM\presentationLayer\obj\Debug\presentationLayer.csproj.AssemblyReference.cache
+<<<<<<< HEAD
 C:\Users\galle\source\repos\CAM3\presentationLayer\bin\Debug\presentationLayer.exe.config
 C:\Users\galle\source\repos\CAM3\presentationLayer\bin\Debug\presentationLayer.exe
 C:\Users\galle\source\repos\CAM3\presentationLayer\bin\Debug\presentationLayer.pdb
@@ -51,3 +52,31 @@ C:\Users\galle\source\repos\CAM3\presentationLayer\obj\Debug\presentationLayer.c
 C:\Users\galle\source\repos\CAM3\presentationLayer\obj\Debug\presentationLayer.csproj.CopyComplete
 C:\Users\galle\source\repos\CAM3\presentationLayer\obj\Debug\presentationLayer.exe
 C:\Users\galle\source\repos\CAM3\presentationLayer\obj\Debug\presentationLayer.pdb
+=======
+C:\Users\Juan2\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.csproj.AssemblyReference.cache
+C:\Users\Juan2\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.altaAlumno.resources
+C:\Users\Juan2\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.ConsultaAlumno.resources
+C:\Users\Juan2\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.fichaTecnica.resources
+C:\Users\Juan2\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.Forms.fichatecnincaAlumno.LineaControl.resources
+C:\Users\Juan2\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.imprimirFormatosAlumno.resources
+C:\Users\Juan2\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.modificacionesAlumno.resources
+C:\Users\Juan2\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.Properties.Resources.resources
+C:\Users\Juan2\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.csproj.GenerateResource.cache
+C:\Users\Juan2\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.csproj.CoreCompileInputs.cache
+C:\Users\Juan2\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.exe
+C:\Users\Juan2\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.pdb
+C:\Users\Juan2\source\repos\CAM\presentationLayer\bin\Debug\presentationLayer.exe.config
+C:\Users\Juan2\source\repos\CAM\presentationLayer\bin\Debug\presentationLayer.exe
+C:\Users\Juan2\source\repos\CAM\presentationLayer\bin\Debug\presentationLayer.pdb
+C:\Users\Juan2\source\repos\CAM\presentationLayer\bin\Debug\1dataLayer.dll
+C:\Users\Juan2\source\repos\CAM\presentationLayer\bin\Debug\businessLayer.exe
+C:\Users\Juan2\source\repos\CAM\presentationLayer\bin\Debug\EntityFramework.dll
+C:\Users\Juan2\source\repos\CAM\presentationLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Juan2\source\repos\CAM\presentationLayer\bin\Debug\1dataLayer.pdb
+C:\Users\Juan2\source\repos\CAM\presentationLayer\bin\Debug\1dataLayer.dll.config
+C:\Users\Juan2\source\repos\CAM\presentationLayer\bin\Debug\businessLayer.pdb
+C:\Users\Juan2\source\repos\CAM\presentationLayer\bin\Debug\businessLayer.exe.config
+C:\Users\Juan2\source\repos\CAM\presentationLayer\bin\Debug\EntityFramework.xml
+C:\Users\Juan2\source\repos\CAM\presentationLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Juan2\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.csproj.CopyComplete
+>>>>>>> Hueso_4_11_2022_4

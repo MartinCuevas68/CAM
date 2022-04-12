@@ -114,7 +114,7 @@ namespace _1dataLayer
             return FTMedica;
         }
         //regresa la lista de todas las alergias que 1 alumno tiene
-        public List<SP_ListaAlergia_Result> ListaAlergias(int id)
+        public static List<SP_ListaAlergia_Result> ListaAlergias(int id)
         {
             List<SP_ListaAlergia_Result> alergias = new List<SP_ListaAlergia_Result>();
             using (BDCAMEntities db = new BDCAMEntities())
@@ -151,7 +151,7 @@ namespace _1dataLayer
         }
         //regresa la lista de todas las discapacidades que 1 alumno tiene
 
-        public  List<SP_ListaDiscapacidad_Result> ListaDiscapacidad(int id)
+        public static List<SP_ListaDiscapacidad_Result> ListaDiscapacidad(int id)
         {
             List<SP_ListaDiscapacidad_Result> discapacidades = new List<SP_ListaDiscapacidad_Result>();
 
@@ -167,7 +167,7 @@ namespace _1dataLayer
 
             return discapacidades;
         }
-        public  List<SP_ListaTratamiento_Result> ListaTratamiento(int id)
+        public static List<SP_ListaTratamiento_Result> ListaTratamiento(int id)
         {
             List<SP_ListaTratamiento_Result> tratamientos = new List<SP_ListaTratamiento_Result>();
 

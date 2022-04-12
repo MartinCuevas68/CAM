@@ -71,21 +71,39 @@ namespace businessLayer
             grupoSanguineo.Text = infoMed.grupo_sanguineo;
         }
 
-        public static void infoMedAlumno2(RichTextBox enfermedades, int id_alumno)
+        public static void infoMedAlumno2(RichTextBox discapacidades, RichTextBox enfermedades, RichTextBox alergias, RichTextBox tratamientos, int id_alumno)
         {
-
+            List<_1dataLayer.SP_ListaDiscapacidad_Result> ListaDiscapacidades = new List<_1dataLayer.SP_ListaDiscapacidad_Result>();
             List<_1dataLayer.SP_ListaEnfermedad_Result>  ListaEnfermedades = new List <_1dataLayer.SP_ListaEnfermedad_Result>();
+            List<_1dataLayer.SP_ListaAlergia_Result> ListaAlergias = new List<_1dataLayer.SP_ListaAlergia_Result>();
+            List<_1dataLayer.SP_ListaTratamiento_Result> ListaTratamientos = new List<_1dataLayer.SP_ListaTratamiento_Result>();
 
-
+            ListaDiscapacidades = _1dataLayer.DLConsultaAlumno.ListaDiscapacidad(id_alumno);
             ListaEnfermedades = _1dataLayer.DLConsultaAlumno.ListaEnfermedades(id_alumno);
+            ListaAlergias = _1dataLayer.DLConsultaAlumno.ListaAlergias(id_alumno);
+            ListaTratamientos = _1dataLayer.DLConsultaAlumno.ListaTratamiento(id_alumno);
+
+            foreach (var discapacidad in ListaDiscapacidades)
+            {
+                discapacidades.Text = discapacidades.Text + discapacidad.discapacidades + "\n";
+            }
 
             foreach (var enfermedad in ListaEnfermedades)
             {
                 enfermedades.Text = enfermedades.Text + enfermedad.enfermedades + "\n";
             }
-          
-         
-            MessageBox.Show(enfermedades.Text);
+
+            foreach (var alergia in ListaAlergias)
+            {
+                alergias.Text = alergias.Text + alergia.alergia + "\n";
+            }
+
+            foreach (var tratamiento in ListaTratamientos)
+            {
+                tratamientos.Text = tratamientos.Text + tratamiento.Tratamiento + "\n";
+            }
+
+
         }
 
 

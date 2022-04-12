@@ -74,7 +74,7 @@ namespace presentationLayer
             businessLayer.BLFichaTecnica.infoMedAlumno(servMedico, telefono, grupoSanguineo, id_alumno);
 
             //Discapacidades, enfermedades, alergias y tratamientos
-            businessLayer.BLFichaTecnica.infoMedAlumno2(enfermedades, 54);
+            businessLayer.BLFichaTecnica.infoMedAlumno2(discapacidades, enfermedades, alergias, tratamientos, id_alumno);
 
             //Foto
             fotol = _1dataLayer.DLConsultaAlumno.ConsultaFoto(id_alumno);
