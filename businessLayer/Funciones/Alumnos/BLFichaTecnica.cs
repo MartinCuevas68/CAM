@@ -53,8 +53,9 @@ namespace businessLayer
             List<_1dataLayer.SP_ListaTelefonosTutor_Result> ListaTelefonoTutor = new List<_1dataLayer.SP_ListaTelefonosTutor_Result>();
             _1dataLayer.SP_FichaTecnicaAlumnoTutor_Result tutor = new _1dataLayer.SP_FichaTecnicaAlumnoTutor_Result();
 
-            ListaTelefonoTutor = _1dataLayer.DLConsultaAlumno.consultartelefonotutor(77);
+            
             tutor = _1dataLayer.DLConsultaAlumno.FichaTecnicaTutor(id_alumno);
+            ListaTelefonoTutor = _1dataLayer.DLConsultaAlumno.consultartelefonotutor(tutor.id_tutor);
 
             nombreT.Text = tutor.nombre;
             apellidoPT.Text = tutor.apellido_paterno;
