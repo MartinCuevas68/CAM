@@ -45,11 +45,18 @@ namespace businessLayer
             cicloEsc.Text = alumno.ciclo_escolar;
         }
 
-        public static void infoTutor(TextBox nombreT, TextBox apellidoPT, TextBox apellidoMT, TextBox calleT, TextBox numeroCasaT, TextBox coloniaT, TextBox ocupacion, TextBox telCasaT, TextBox telTrabajoT, int id_alumno)
-        { 
+        public static void infoTutor(TextBox nombreT, TextBox apellidoPT, TextBox apellidoMT, TextBox calleT, TextBox numeroCasaT, TextBox coloniaT, TextBox ocupacion, TextBox telCasaT, TextBox telMovilT, TextBox telTrabajoT, int id_alumno)
+        {
+            
+            //id alumno: 92 tiene el id tutor: 77 y el tutor tiene los 3 numeros
+
+            List<_1dataLayer.SP_ListaTelefonosTutor_Result> ListaTelefonoTutor = new List<_1dataLayer.SP_ListaTelefonosTutor_Result>();
             _1dataLayer.SP_FichaTecnicaAlumnoTutor_Result tutor = new _1dataLayer.SP_FichaTecnicaAlumnoTutor_Result();
 
+            
             tutor = _1dataLayer.DLConsultaAlumno.FichaTecnicaTutor(id_alumno);
+            ListaTelefonoTutor = _1dataLayer.DLConsultaAlumno.consultartelefonotutor(tutor.id_tutor);
+
             nombreT.Text = tutor.nombre;
             apellidoPT.Text = tutor.apellido_paterno;
             apellidoMT.Text = tutor.apellido_materno;
@@ -57,8 +64,11 @@ namespace businessLayer
             numeroCasaT.Text = tutor.numero_tutor;
             coloniaT.Text = tutor.colonia_tutor;
             ocupacion.Text = tutor.ocupacion_tutor;
-            //telCasaT.Text = telefonos.telefono;
-            //telTrabajoT.Text = telefonos.telefono;
+
+            telCasaT.Text = ListaTelefonoTutor.ElementAt(0).telefono.ToString();
+            telMovilT.Text = ListaTelefonoTutor.ElementAt(1).telefono.ToString();
+            telTrabajoT.Text = ListaTelefonoTutor.ElementAt(2).telefono.ToString();
+
         }
 
         public static void infoMedAlumno(TextBox servMedico, TextBox telefono, TextBox grupoSanguineo, int id_alumno)
