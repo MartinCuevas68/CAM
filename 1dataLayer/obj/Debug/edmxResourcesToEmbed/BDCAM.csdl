@@ -441,6 +441,40 @@
       <End Role="tabla_medica" EntitySet="tabla_medica" />
       <End Role="catalogo_enfermedades" EntitySet="catalogo_enfermedades" />
     </AssociationSet>
+    <FunctionImport Name="sp_catalogoalergias" ReturnType="Collection(BDCAMModel.sp_catalogoalergias_Result)" />
+    <FunctionImport Name="sp_catalogodiscapacidades" ReturnType="Collection(BDCAMModel.sp_catalogodiscapacidades_Result)" />
+    <FunctionImport Name="sp_catalogoenfermedades" ReturnType="Collection(BDCAMModel.sp_catalogoenfermedades_Result)" />
+    <EntitySet Name="sysdiagrams" EntityType="BDCAMModel.sysdiagrams" />
+    <FunctionImport Name="sp_alterdiagram1">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_creatediagram1">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_dropdiagram1">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagramdefinition1" ReturnType="Collection(BDCAMModel.sp_helpdiagramdefinition1_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagrams1" ReturnType="Collection(BDCAMModel.sp_helpdiagrams1_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_renamediagram1">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="new_diagramname" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_upgraddiagrams1" />
   </EntityContainer>
   <ComplexType Name="SP_FichaTecnicaAlumno_Result">
     <Property Type="String" Name="nombre" Nullable="false" MaxLength="30" />
@@ -708,4 +742,37 @@
     <End Type="BDCAMModel.tabla_medica" Role="tabla_medica" Multiplicity="*" />
     <End Type="BDCAMModel.catalogo_enfermedades" Role="catalogo_enfermedades" Multiplicity="*" />
   </Association>
+  <ComplexType Name="sp_catalogoalergias_Result">
+    <Property Type="Int32" Name="id_alergias" Nullable="false" />
+    <Property Type="String" Name="alergia" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="sp_catalogodiscapacidades_Result">
+    <Property Type="Int32" Name="id_discapacidades" Nullable="false" />
+    <Property Type="String" Name="discapacidades" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="sp_catalogoenfermedades_Result">
+    <Property Type="Int32" Name="id_enfermedades" Nullable="false" />
+    <Property Type="String" Name="enfermedades" Nullable="false" />
+  </ComplexType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <ComplexType Name="sp_helpdiagramdefinition1_Result">
+    <Property Type="Int32" Name="version" Nullable="true" />
+    <Property Type="Binary" Name="definition" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagrams1_Result">
+    <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
+    <Property Type="Int32" Name="OwnerID" Nullable="false" />
+  </ComplexType>
 </Schema>

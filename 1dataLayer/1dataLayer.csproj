@@ -101,6 +101,15 @@
     <Compile Include="rol_tiene_permiso.cs">
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>
+    <Compile Include="sp_catalogoalergias_Result.cs">
+      <DependentUpon>BDCAM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_catalogodiscapacidades_Result.cs">
+      <DependentUpon>BDCAM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_catalogoenfermedades_Result.cs">
+      <DependentUpon>BDCAM.tt</DependentUpon>
+    </Compile>
     <Compile Include="SP_consulta_foto_alumno_Result.cs">
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>
@@ -113,7 +122,13 @@
     <Compile Include="SP_FichaTecnicaAlumno_Result.cs">
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>
+    <Compile Include="sp_helpdiagramdefinition1_Result.cs">
+      <DependentUpon>BDCAM.tt</DependentUpon>
+    </Compile>
     <Compile Include="sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>BDCAM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagrams1_Result.cs">
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>
     <Compile Include="sp_helpdiagrams_Result.cs">
@@ -147,6 +162,9 @@
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>
     <Compile Include="subpermisos.cs">
+      <DependentUpon>BDCAM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagrams.cs">
       <DependentUpon>BDCAM.tt</DependentUpon>
     </Compile>
     <Compile Include="tabla_indicadores_telefono.cs">
