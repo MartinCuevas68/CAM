@@ -33,7 +33,7 @@
         <AssociationConnector Association="BDCAMModel.FK_alumno_foto" />
         <EntityTypeShape EntityType="BDCAMModel.Tratamientos" Width="1.5" PointX="7.5" PointY="14.875" />
         <AssociationConnector Association="BDCAMModel.FK_Tabla_Medica_Tratamiento" />
-        <EntityTypeShape EntityType="BDCAMModel.catalogo_alergia" Width="1.5" PointX="3" PointY="12.125" />
+        <EntityTypeShape EntityType="BDCAMModel.catalogo_alergia" Width="1.5" PointX="2.75" PointY="14.375" />
         <EntityTypeShape EntityType="BDCAMModel.catalogo_discapacidades" Width="1.5" PointX="7.5" PointY="18" />
         <EntityTypeShape EntityType="BDCAMModel.catalogo_enfermedades" Width="1.5" PointX="7.5" PointY="20.375" />
         <AssociationConnector Association="BDCAMModel.medica_alergia" />

@@ -739,5 +739,20 @@ namespace _1dataLayer
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_ModificarTelefonoTutor", idtutorParameter, idtipotelefonoParameter, telefonoParameter);
         }
+    
+        public virtual ObjectResult<sp_catalogoalergias_Result> sp_catalogoalergias()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_catalogoalergias_Result>("sp_catalogoalergias");
+        }
+    
+        public virtual ObjectResult<sp_catalogodiscapacidades_Result> sp_catalogodiscapacidades()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_catalogodiscapacidades_Result>("sp_catalogodiscapacidades");
+        }
+    
+        public virtual ObjectResult<sp_catalogoenfermedades_Result> sp_catalogoenfermedades()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_catalogoenfermedades_Result>("sp_catalogoenfermedades");
+        }
     }
 }

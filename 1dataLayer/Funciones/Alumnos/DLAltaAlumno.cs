@@ -143,6 +143,51 @@ namespace _1dataLayer
                 db.SP_AltaTratamientos(cartilla, tratamiento.tratamiento);
             }
         }
+        public static List<sp_catalogoenfermedades_Result> catalogoenfermedades()
+        {
+            List<sp_catalogoenfermedades_Result> enfermedades = new List<sp_catalogoenfermedades_Result>();
+            using (BDCAMEntities db = new BDCAMEntities())
+            {
+                ObjectResult<sp_catalogoenfermedades_Result> x = db.sp_catalogoenfermedades();
+
+                foreach (sp_catalogoenfermedades_Result result in x)
+                {
+                    enfermedades.Add(result);
+                }
+            }
+            return enfermedades;
+        }
+
+        public static List<sp_catalogoalergias_Result> catalogoalergias()
+        {
+            List<sp_catalogoalergias_Result> alergias = new List<sp_catalogoalergias_Result>();
+            using (BDCAMEntities db = new BDCAMEntities())
+            {
+                ObjectResult<sp_catalogoalergias_Result> x = db.sp_catalogoalergias();
+
+                foreach (sp_catalogoalergias_Result result in x)
+                {
+                    alergias.Add(result);
+                }
+            }
+            return alergias;
+        }
+
+
+        public static List<sp_catalogodiscapacidades_Result> catalogodiscapacidades()
+        {
+            List<sp_catalogodiscapacidades_Result> discapacidades = new List<sp_catalogodiscapacidades_Result>();
+            using (BDCAMEntities db = new BDCAMEntities())
+            {
+                ObjectResult<sp_catalogodiscapacidades_Result> x = db.sp_catalogodiscapacidades();
+
+                foreach (sp_catalogodiscapacidades_Result result in x)
+                {
+                    discapacidades.Add(result);
+                }
+            }
+            return discapacidades;
+        }
 
     }
 }
