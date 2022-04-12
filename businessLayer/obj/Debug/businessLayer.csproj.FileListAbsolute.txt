@@ -1,43 +1,3 @@
-F:\Github\UABC\CAM\businessLayer\bin\Debug\businessLayer.exe.config
-F:\Github\UABC\CAM\businessLayer\bin\Debug\businessLayer.exe
-F:\Github\UABC\CAM\businessLayer\bin\Debug\businessLayer.pdb
-F:\Github\UABC\CAM\businessLayer\bin\Debug\1dataLayer.dll
-F:\Github\UABC\CAM\businessLayer\bin\Debug\EntityFramework.dll
-F:\Github\UABC\CAM\businessLayer\bin\Debug\EntityFramework.SqlServer.dll
-F:\Github\UABC\CAM\businessLayer\bin\Debug\1dataLayer.pdb
-F:\Github\UABC\CAM\businessLayer\bin\Debug\1dataLayer.dll.config
-F:\Github\UABC\CAM\businessLayer\bin\Debug\EntityFramework.xml
-F:\Github\UABC\CAM\businessLayer\bin\Debug\EntityFramework.SqlServer.xml
-F:\Github\UABC\CAM\businessLayer\obj\Debug\businessLayer.csproj.SuggestedBindingRedirects.cache
-F:\Github\UABC\CAM\businessLayer\obj\Debug\businessLayer.csproj.CoreCompileInputs.cache
-F:\Github\UABC\CAM\businessLayer\obj\Debug\businessLayer.csproj.CopyComplete
-F:\Github\UABC\CAM\businessLayer\obj\Debug\businessLayer.exe
-F:\Github\UABC\CAM\businessLayer\obj\Debug\businessLayer.pdb
-<<<<<<< HEAD
-F:\Github\UABC\CAM\businessLayer\obj\Debug\businessLayer.csproj.AssemblyReference.cache
-<<<<<<< HEAD
-=======
-C:\Users\galle\source\repos\CAM3\businessLayer\bin\Debug\businessLayer.exe.config
-C:\Users\galle\source\repos\CAM3\businessLayer\bin\Debug\businessLayer.exe
-C:\Users\galle\source\repos\CAM3\businessLayer\bin\Debug\businessLayer.pdb
-C:\Users\galle\source\repos\CAM3\businessLayer\bin\Debug\1dataLayer.dll
-C:\Users\galle\source\repos\CAM3\businessLayer\bin\Debug\EntityFramework.dll
-C:\Users\galle\source\repos\CAM3\businessLayer\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\galle\source\repos\CAM3\businessLayer\bin\Debug\1dataLayer.pdb
-C:\Users\galle\source\repos\CAM3\businessLayer\bin\Debug\1dataLayer.dll.config
-C:\Users\galle\source\repos\CAM3\businessLayer\bin\Debug\EntityFramework.xml
-C:\Users\galle\source\repos\CAM3\businessLayer\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\galle\source\repos\CAM3\businessLayer\obj\Debug\businessLayer.csproj.CoreCompileInputs.cache
-C:\Users\galle\source\repos\CAM3\businessLayer\obj\Debug\businessLayer.csproj.CopyComplete
-C:\Users\galle\source\repos\CAM3\businessLayer\obj\Debug\businessLayer.exe
-C:\Users\galle\source\repos\CAM3\businessLayer\obj\Debug\businessLayer.pdb
-C:\Users\galle\source\repos\CAM3\businessLayer\obj\Debug\businessLayer.csproj.AssemblyReference.cache
->>>>>>> Gabriel_11_04_2022_6
-=======
-C:\Users\Juan2\source\repos\CAM\businessLayer\obj\Debug\businessLayer.csproj.AssemblyReference.cache
-C:\Users\Juan2\source\repos\CAM\businessLayer\obj\Debug\businessLayer.csproj.CoreCompileInputs.cache
-C:\Users\Juan2\source\repos\CAM\businessLayer\obj\Debug\businessLayer.exe
-C:\Users\Juan2\source\repos\CAM\businessLayer\obj\Debug\businessLayer.pdb
 C:\Users\Juan2\source\repos\CAM\businessLayer\bin\Debug\businessLayer.exe.config
 C:\Users\Juan2\source\repos\CAM\businessLayer\bin\Debug\businessLayer.exe
 C:\Users\Juan2\source\repos\CAM\businessLayer\bin\Debug\businessLayer.pdb
@@ -48,5 +8,8 @@ C:\Users\Juan2\source\repos\CAM\businessLayer\bin\Debug\1dataLayer.pdb
 C:\Users\Juan2\source\repos\CAM\businessLayer\bin\Debug\1dataLayer.dll.config
 C:\Users\Juan2\source\repos\CAM\businessLayer\bin\Debug\EntityFramework.xml
 C:\Users\Juan2\source\repos\CAM\businessLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Juan2\source\repos\CAM\businessLayer\obj\Debug\businessLayer.csproj.CoreCompileInputs.cache
 C:\Users\Juan2\source\repos\CAM\businessLayer\obj\Debug\businessLayer.csproj.CopyComplete
->>>>>>> Hueso_4_11_2022_4
+C:\Users\Juan2\source\repos\CAM\businessLayer\obj\Debug\businessLayer.exe
+C:\Users\Juan2\source\repos\CAM\businessLayer\obj\Debug\businessLayer.pdb
+C:\Users\Juan2\source\repos\CAM\businessLayer\obj\Debug\businessLayer.csproj.AssemblyReference.cache

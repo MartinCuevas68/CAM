@@ -68,7 +68,7 @@ namespace presentationLayer
             businessLayer.BLFichaTecnica.infoEscAlumno(tipoIngreso, escuelaP, canalizado, cicloEsc, id_alumno);
 
             //Información del tutor
-            businessLayer.BLFichaTecnica.infoTutor(nombreT, apellidoPT, apellidoMT, calleT, numeroCasaT, coloniaT, ocupacion, telCasaT, telTrabajoT, id_alumno);
+            businessLayer.BLFichaTecnica.infoTutor(nombreT, apellidoPT, apellidoMT, calleT, numeroCasaT, coloniaT, ocupacion, telCasaT, telMovilT, telTrabajoT, id_alumno);
            
             //Información médica
             businessLayer.BLFichaTecnica.infoMedAlumno(servMedico, telefono, grupoSanguineo, id_alumno);
