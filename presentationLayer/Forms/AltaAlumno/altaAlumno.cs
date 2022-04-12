@@ -24,6 +24,8 @@ namespace presentationLayer
             InitializeComponent();
             loaddata();
 
+            grupoSanguineoComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+
 
             //CODIGO NUEVO
             centrarLabel(altaalumnoLabel, infoTutorLabel, informacionMedLabel, logo, infGeneralAlLabel, informacionGeneralAlumno,
@@ -33,13 +35,13 @@ namespace presentationLayer
                 añosCum, añosCumPanel, curpLabel, curp, curpPanel, direccionAlumnoLabel, calleLabel, calle, callePanel, numeroCasaLabel, numeroCasa, numeroCasaPanel, coloniaLabel, colonia, coloniaPanel, lugarNaLabel,
                 ciudadLabel, ciudad, ciudadPanel, estadoLabel, estado, estadoPanel, fotoAl, fotoBtn);
 
-            infoGen2(telPersonalLabel, telPersonal, telPersonalPanel, escuelaPLabel, escuelaP, escuelaPPanel, canalizadoLabel, canalizado, canalizadoPanel, cicloEscLabel, cicloEsc, cicloEscPanel, tipoIngLabel,
+            infoGen2(telPersonalLabel, telefonopersonalTextBox, telPersonalPanel, escuelaPLabel, escuelaP, escuelaPPanel, canalizadoLabel, canalizado, canalizadoPanel, cicloEscLabel, cicloEsc, cicloEscPanel, tipoIngLabel,
                 tipoIngresoGroupBox);
 
             infoTutor(nombreTLabel, nombreT, nombreTPanel, apellidoPTLabel, apellidoPT, apellidoPTPanel, apellidoMTLabel, apellidoMT, apellidoMTPanel, direccionTLabel,
                 calleTLabel, calleT, calleTPanel, numeroCasaTLabel, numeroCasaT, numeroCasaTPanel, coloniaTLabel, coloniaT, coloniaTPanel,
-                calleDatoLabel, numeroDatoLabel, coloniaDatoLabel, infContactoLabel, telCasaTLabel, telCasaT, telCasaTPanel, telMovilTLabel, telMovilT, telMovilTPanel,
-                telTrabajoTLabel, telTrabajoT, telTrabajoTPanel, ocupacionLabel, ocupacion, ocupacionTPanel, direccionCheckBox);
+                calleDatoLabel, numeroDatoLabel, coloniaDatoLabel, infContactoLabel, telCasaTLabel, telefonocasatutorTextBox, telCasaTPanel, telMovilTLabel, telefonomoviltutorTextBox, telMovilTPanel,
+                telTrabajoTLabel, telefonotrabajotutorTextBox, telTrabajoTPanel, ocupacionLabel, ocupacion, ocupacionTPanel, direccionCheckBox);
 
             PLAltaAlumno.infoMedica(servMedicoLabel, servMedico, servMedicoPanel, grupoSanguineoLabel, grupoSanguineoComboBox, telefonoLabel,
                 telefono, telefonoPanel, discapacidadLabel, discapacidad, discapacidadPanel, enfermedadesLabel, enfermedades, enfermedadesPanel,
@@ -374,7 +376,7 @@ namespace presentationLayer
             calle.Clear();
             numeroCasa.Clear();
             colonia.Clear();
-            telPersonal.Clear();
+            telefonopersonalTextBox.Clear();
             escuelaP.Clear();
             canalizado.Clear();
             cicloEsc.Clear();
@@ -395,9 +397,9 @@ namespace presentationLayer
             numeroCasaT.Clear();
             coloniaT.Clear();
             ocupacion.Clear();
-            telCasaT.Clear();
-            telMovilT.Clear();
-            telTrabajoT.Clear();
+            telefonocasatutorTextBox.Clear();
+            telefonomoviltutorTextBox.Clear();
+            telefonotrabajotutorTextBox.Clear();
         }
 
         //LIMPIAR INFORMACIÓN MEDICA ALUMNO
@@ -587,7 +589,7 @@ namespace presentationLayer
 
         private void siguiente2Button_Click(object sender, EventArgs e)
         {
-            if (telPersonal.Text == "") //POR PULIR
+            if (telefonopersonalTextBox.Text == "") //POR PULIR
             {
                 DialogResult dr = MessageBox.Show("¡El telefono personal del alumno está vacio! ¿Deseas registrarlo?", "Dato requerido", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (dr == DialogResult.No)
@@ -630,13 +632,13 @@ namespace presentationLayer
                     return;
                 }
             }
-            else if (telPersonal.TextLength < 10) //Validación si se da siguiente y el telefono está incompleto
+            else if (telefonopersonalTextBox.TextLength < 10) //Validación si se da siguiente y el telefono está incompleto
             {
-                String telPersonalAl = Convert.ToString(10 - telPersonal.TextLength);
+                String telPersonalAl = Convert.ToString(10 - telefonopersonalTextBox.TextLength);
                 MessageBox.Show("¡El telefono personal del alumno está incompleto, falta " + telPersonalAl + " numero(s)", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            else if (telPersonal.TextLength == 10)
+            else if (telefonopersonalTextBox.TextLength == 10)
             {
                 if (canalizado.Text.Equals(""))
                 {
@@ -698,25 +700,25 @@ namespace presentationLayer
                         }
                         else
                         {
-                            if (telCasaT.Text.Equals("") && telMovilT.Text.Equals("") && telTrabajoT.Text.Equals(""))
+                            if (telefonocasatutorTextBox.Text.Equals("") && telefonomoviltutorTextBox.Text.Equals("") && telefonotrabajotutorTextBox.Text.Equals(""))
                             {
                                 MessageBox.Show("¡Ingresar al menos un telefono de contacto!", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                             }
                             else
                             {
-                                if (!telCasaT.Text.Equals("") && telCasaT.TextLength < 10)
+                                if (!telefonocasatutorTextBox.Text.Equals("") && telefonocasatutorTextBox.TextLength < 10)
                                 {
                                     MessageBox.Show("¡El telefono de casa está incompleto, debe contener 10 digitos ", "Formato incorrecto", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                                 }
                                 else
                                 {
-                                    if (!telMovilT.Text.Equals("") && telMovilT.TextLength < 10)
+                                    if (!telefonomoviltutorTextBox.Text.Equals("") && telefonomoviltutorTextBox.TextLength < 10)
                                     {
                                         MessageBox.Show("¡El telefono móvil está incompleto, debe contener 10 digitos ", "Formato incorrecto", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                                     }
                                     else
                                     {
-                                        if (!telTrabajoT.Text.Equals("") && telTrabajoT.TextLength < 10)
+                                        if (!telefonotrabajotutorTextBox.Text.Equals("") && telefonotrabajotutorTextBox.TextLength < 10)
                                         {
                                             MessageBox.Show("¡El telefono del trabajo está incompleto, debe contener 10 digitos ", "Formato incorrecto", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                                         }
@@ -823,7 +825,7 @@ namespace presentationLayer
                                                              colonia.Text,
                                                              calle.Text,
                                                              numeroCasa.Text,
-                                                             telPersonal.Text,
+                                                             telefonopersonalTextBox.Text,
                                                              escuelaP.Text,
                                                              canalizado.Text,
                                                              value
@@ -838,7 +840,7 @@ namespace presentationLayer
                                                              ocupacion.Text,
                                                              colonia_trabajo_tutor,
                                                              calle_trabajo_tutor,
-                                                             telTrabajoT.Text
+                                                             telefonotrabajotutorTextBox.Text
                                                              );
 
                         businessLayer.BLAltaAlumno.SetInfoMedAlumno2(servMedico.Text,
@@ -856,6 +858,9 @@ namespace presentationLayer
                         businessLayer.BLAltaAlumno.SetDiscapacidades(discapacidad.Text);
 
                         businessLayer.BLAltaAlumno.SetTratamiento(tratamiento.Text);
+
+                        businessLayer.BLAltaAlumno.SetTelefonos(telefonocasatutorTextBox.Text,telefonomoviltutorTextBox.Text, telefonotrabajotutorTextBox.Text);
+
 
                         //Guardar Foto alumno   **NO BORRAR LO QUE ESTÁ COMENTADO!!!!!**
                         byte[] archivo = null;

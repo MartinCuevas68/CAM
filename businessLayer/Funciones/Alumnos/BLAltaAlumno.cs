@@ -11,6 +11,7 @@ namespace businessLayer
         static int id_alergia;
         static int id_discapacidad;
         static int id_tratamiento;
+        static int id_cartilla;
 
         //Altas Enfermedades
       
@@ -54,11 +55,7 @@ namespace businessLayer
         //Altas tutor
         public static void SetTutor2(string nombreT, string apellidoPT, string apellidoMT, string coloniaT, string calleT, string numeroCasaT,
             string ocupacion, string colonia_trabajo_tutor, string calle_trabajo_tutor, string telTrabajoT)
-        //, string telCasaT, string telMovilT, string telTrabajoT
         {
-            //byte[] x = { (byte)204, 29, (byte)207, (byte)217 };
-            //int y = 1;
-
             _1dataLayer.tutorDTO tuto = new _1dataLayer.tutorDTO();
             try
             {
@@ -75,6 +72,20 @@ namespace businessLayer
                 
 
                 id_tutor = _1dataLayer.DLAltaAlumno.Altatutor(tuto);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+
+        public static void SetTelefonos(String tel_casa, String tel_personal, string tel_trabajo )
+        { 
+            try
+            {
+
+                _1dataLayer.DLAltaAlumno.Altatelefonotutor(id_tutor, tel_casa, tel_personal, tel_trabajo);
             }
             catch (Exception)
             {
@@ -146,7 +157,7 @@ namespace businessLayer
 
                 try
                 {
-                    _1dataLayer.DLAltaAlumno.Altaenfermedades(id_medica, enfermedades);
+            //        _1dataLayer.DLAltaAlumno.Altaenfermedades(id_medica, enfermedades);
                 }
                 catch (Exception)
                 {
@@ -164,7 +175,7 @@ namespace businessLayer
             try
             {
                 disc.discapacidades = discapacidad;
-                _1dataLayer.DLAltaAlumno.Altadiscapacidades(id_discapacidad, lista_discapacidad);
+                //_1dataLayer.DLAltaAlumno.Altadiscapacidades(id_discapacidad, lista_discapacidad);
             }
             catch (Exception)
             {
@@ -172,17 +183,20 @@ namespace businessLayer
             }
         }
 
-        //Altas Tratamientos
+         //Altas Tratamientos
         public static void SetTratamiento(string tratamiento)
         {
-            _1dataLayer.Tratamientos trat = new _1dataLayer.Tratamientos();
+            _1dataLayer.tratamientoDTO trat = new _1dataLayer.tratamientoDTO();
 
-            List<_1dataLayer.Tratamientos> lista_tratamiento = new List<_1dataLayer.Tratamientos>();
+           // List<_1dataLayer.Tratamientos> lista_tratamiento = new List<_1dataLayer.Tratamientos>();
 
             try
             {
-                trat.Tratamiento = tratamiento;
-                //_1dataLayer.DLAltaAlumno.Altatratamiento(id_tratamiento, lista_tratamiento);
+                trat.tratamiento = tratamiento;
+
+                //id_cartilla = _1dataLayer.DLAltaAlumno.altatratamiento(trat);
+
+                _1dataLayer.DLAltaAlumno.altatratamiento(id_alumno, trat);
             }
             catch (Exception)
             {

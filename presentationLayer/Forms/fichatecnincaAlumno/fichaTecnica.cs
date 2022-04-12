@@ -80,6 +80,8 @@ namespace presentationLayer
             fotol = _1dataLayer.DLConsultaAlumno.ConsultaFoto(id_alumno);
             foto.Image = byteArrayToImage(fotol.imagen_alumno.ToArray());
 
+           
+
             //Sentencia que manda a llamar el método para cerrar Consultas usando la X
             //this.FormClosed += new FormClosedEventHandler(cerrarForm);
         }
@@ -289,6 +291,11 @@ namespace presentationLayer
             {
                 e.Handled = true;
             }
+
+        }
+
+        private void fichaTecnica_Load(object sender, EventArgs e)
+        {
 
         }
     }

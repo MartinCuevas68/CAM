@@ -72,20 +72,42 @@ namespace businessLayer
         }
 
         public static void infoMedAlumno2(RichTextBox discapacidades, RichTextBox enfermedades, RichTextBox alergias, RichTextBox tratamientos, int id_alumno)
-        { 
-            _1dataLayer.SP_ListaDiscapacidad_Result discapacidad = new _1dataLayer.SP_ListaDiscapacidad_Result();
-            _1dataLayer.SP_ListaEnfermedad_Result enfermedad = new _1dataLayer.SP_ListaEnfermedad_Result();
-            _1dataLayer.SP_ListaAlergia_Result alergia = new _1dataLayer.SP_ListaAlergia_Result();
-            _1dataLayer.SP_ListaTratamiento_Result tratamiento = new _1dataLayer.SP_ListaTratamiento_Result();
+        {
+            List<_1dataLayer.SP_ListaDiscapacidad_Result> ListaDiscapacidades = new List<_1dataLayer.SP_ListaDiscapacidad_Result>();
+            List<_1dataLayer.SP_ListaEnfermedad_Result>  ListaEnfermedades = new List <_1dataLayer.SP_ListaEnfermedad_Result>();
+            List<_1dataLayer.SP_ListaAlergia_Result> ListaAlergias = new List<_1dataLayer.SP_ListaAlergia_Result>();
+            List<_1dataLayer.SP_ListaTratamiento_Result> ListaTratamientos = new List<_1dataLayer.SP_ListaTratamiento_Result>();
 
-            /*discapacidad = _1dataLayer.DLConsultaAlumno.ListaDiscapacidad(id_alumno);
-            enfermedad = _1dataLayer.DLConsultaAlumno.ListaEnfermedades(id_alumno);
-            alergia = _1dataLayer.DLConsultaAlumno.ListaAlergias(id_alumno);
-            tratamiento = _1dataLayer.DLConsultaAlumno.ListaTratamiento(id_alumno);*/
-            discapacidades.Text = discapacidad.discapacidades;
-            enfermedades.Text = enfermedad.enfermedad;
-            alergias.Text = alergia.alergia;
-            tratamientos.Text = tratamiento.Tratamiento;
+            ListaDiscapacidades = _1dataLayer.DLConsultaAlumno.ListaDiscapacidad(id_alumno);
+            ListaEnfermedades = _1dataLayer.DLConsultaAlumno.ListaEnfermedades(id_alumno);
+            ListaAlergias = _1dataLayer.DLConsultaAlumno.ListaAlergias(id_alumno);
+            ListaTratamientos = _1dataLayer.DLConsultaAlumno.ListaTratamiento(id_alumno);
+
+            foreach (var discapacidad in ListaDiscapacidades)
+            {
+                discapacidades.Text = discapacidades.Text + discapacidad.discapacidades + "\n";
+            }
+
+            foreach (var enfermedad in ListaEnfermedades)
+            {
+                enfermedades.Text = enfermedades.Text + enfermedad.enfermedades + "\n";
+            }
+
+            foreach (var alergia in ListaAlergias)
+            {
+                alergias.Text = alergias.Text + alergia.alergia + "\n";
+            }
+
+            foreach (var tratamiento in ListaTratamientos)
+            {
+                tratamientos.Text = tratamientos.Text + tratamiento.Tratamiento + "\n";
+            }
+
+
         }
+
+
+     
+
     }
 }

@@ -199,7 +199,7 @@
     </AssociationSet>
     <FunctionImport Name="sp_altaalergias">
       <Parameter Name="id" Mode="In" Type="Int32" />
-      <Parameter Name="alergia" Mode="In" Type="String" />
+      <Parameter Name="id_alergia" Mode="In" Type="Int32" />
     </FunctionImport>
     <FunctionImport Name="SP_AltaAlumno" ReturnType="Collection(Decimal)">
       <Parameter Name="fecha_registro" Mode="In" Type="DateTime" />
@@ -236,11 +236,11 @@
     </FunctionImport>
     <FunctionImport Name="sp_altadiscapacidades">
       <Parameter Name="id_car" Mode="In" Type="Int32" />
-      <Parameter Name="dis" Mode="In" Type="String" />
+      <Parameter Name="id_discapacidad" Mode="In" Type="Int32" />
     </FunctionImport>
     <FunctionImport Name="sp_altaenfermedades">
       <Parameter Name="id_car" Mode="In" Type="Int32" />
-      <Parameter Name="enf" Mode="In" Type="String" />
+      <Parameter Name="id_enfermedades" Mode="In" Type="Int32" />
     </FunctionImport>
     <FunctionImport Name="sp_altatutor">
       <Parameter Name="nombre" Mode="In" Type="String" />
@@ -505,8 +505,8 @@
     <Property Type="Int32" Name="id_discapacidades" Nullable="false" />
   </ComplexType>
   <ComplexType Name="SP_ListaEnfermedad_Result">
-    <Property Type="Int32" Name="id_cartilla_medica" Nullable="false" />
-    <Property Type="String" Name="enfermedad" Nullable="false" MaxLength="30" />
+    <Property Type="Int32" Name="id_enfermedades" Nullable="false" />
+    <Property Type="String" Name="enfermedades" Nullable="false" />
   </ComplexType>
   <EntityType Name="permisos">
     <Key>
