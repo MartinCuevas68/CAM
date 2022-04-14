@@ -8,11 +8,7 @@ namespace businessLayer
         static int id_alumno;
         static int id_tutor;
         static int id_medica;
-        static int id_alergia;
-        static int id_discapacidad;
-        static int id_tratamiento;
-        static int id_cartilla;
-
+     
         //Altas Enfermedades
       
 
@@ -135,8 +131,6 @@ namespace businessLayer
         {
             _1dataLayer.alergiasDTO alg = new _1dataLayer.alergiasDTO();
 
-            List<_1dataLayer.alergiasDTO> lista_alergia = new List<_1dataLayer.alergiasDTO>();
-
             try
             {
                 alg.alergia = alergias;
@@ -148,22 +142,20 @@ namespace businessLayer
             }
         }
 
-        //Altas Enfermedades
-        public static void SetEnfermedades(List<String> enfermedades)
+        public static void SetEnfermedades(List<int> enfermedades)
         {
-            //_1dataLayer.enfermedadesDTO enf = new _1dataLayer.enfermedadesDTO();
 
-            //List<_1dataLayer.enfermedadesDTO> lista_enfermedad = new List<_1dataLayer.enfermedadesDTO>();
+            try
+            {
 
-                try
-                {
-            //        _1dataLayer.DLAltaAlumno.Altaenfermedades(id_medica, enfermedades);
-                }
-                catch (Exception)
-                {
-                    throw;
-                }
+                _1dataLayer.DLAltaAlumno.Altaenfermedades(id_medica, enfermedades);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
+
 
         //Altas Discapacidades
         public static void SetDiscapacidades(string discapacidad)
@@ -196,13 +188,14 @@ namespace businessLayer
 
                 //id_cartilla = _1dataLayer.DLAltaAlumno.altatratamiento(trat);
 
-                _1dataLayer.DLAltaAlumno.altatratamiento(id_alumno, trat);
+                _1dataLayer.DLAltaAlumno.altatratamiento(id_medica, trat);
             }
             catch (Exception)
             {
                 throw;
             }
         }
+
 
     }
 

@@ -10,13 +10,21 @@ namespace presentationLayer
 {
     public partial class altaAlumno : Form
     {
+        ComboBox enfermedadestempcmb = new ComboBox();
 
+        List<string> listaEnfermedades = new List<string>();
 
-        List<string> lista_enfermedad = new List<string>();
+        List<string> listaDiscapacidades = new List<string>();
 
-        List<string> lista_auxiliar = new List<string>();
+        List<string> listaAlergias = new List<string>();
 
-        List<string> lista_alergias = new List<string>();
+        List<int> idenfermedadesLista = new List<int>();
+
+        List<int> idenfermedadesListaAlta = new List<int>();
+
+        List<int> iddiscapacidadesLista = new List<int>();
+
+        List<int> idalergiasLista = new List<int>();
 
         public altaAlumno()
         {
@@ -44,7 +52,7 @@ namespace presentationLayer
                 telTrabajoTLabel, telefonotrabajotutorTextBox, telTrabajoTPanel, ocupacionLabel, ocupacion, ocupacionTPanel, direccionCheckBox);
 
             PLAltaAlumno.infoMedica(servMedicoLabel, servMedico, servMedicoPanel, grupoSanguineoLabel, grupoSanguineoComboBox, telefonoLabel,
-                telefono, telefonoPanel, discapacidadLabel, discapacidad, discapacidadPanel, enfermedadesLabel, enfermedades, enfermedadesPanel,
+                telefono, telefonoPanel, discapacidadLabel, discapacidad, discapacidadPanel, enfermedadesLabel, enfermedadesRichTextBox, enfermedadesPanel,
                 alergiasLabel, alergias, alergiasPanel, tratamientoLabel, tratamiento, tratamientoPanel, discapacidadesCombobox, enfermedadesCombobox, alergiasCombobox,
                 eliminarEnfermedadesButton, eliminarDiscapacidadesButton, eliminarAlergiasButton, eliminarTratamientosButton,
                  agregarDiscapacidadesButton, agregarEnfermedadesButton, agregarAlergiasButton, eliminardiscapacidadButton1, eliminarenfButton, eliminarAlegiasButton1);
@@ -343,7 +351,7 @@ namespace presentationLayer
         private void agregarEnfermedadesButton_Click(object sender, EventArgs e)
         {
             string informacion = this.enfermedadesCombobox.GetItemText(this.enfermedadesCombobox.SelectedItem);
-            enfermedades.Text = enfermedades.Text + informacion + "\n";
+            enfermedadesRichTextBox.Text = enfermedadesRichTextBox.Text + informacion + "\n";
 
         }
 
@@ -421,7 +429,7 @@ namespace presentationLayer
         //LIMPIAR ENFERMEDADES
         private void eliminarEnfermedadButton_Click(object sender, EventArgs e)
         {
-            enfermedades.Clear();
+            enfermedadesRichTextBox.Clear();
         }
 
         //LIMPIAR ALERGIAS
@@ -440,7 +448,10 @@ namespace presentationLayer
             }
             foreach (var item2 in _1dataLayer.DLAltaAlumno.catalogoenfermedades())
             {
+
                 enfermedadesCombobox.Items.Add(item2.enfermedades);
+                enfermedadestempcmb.Items.Add(item2.id_enfermedades);
+
             }
            foreach (var item3 in _1dataLayer.DLAltaAlumno.catalogodiscapacidades())
             {
@@ -759,23 +770,7 @@ namespace presentationLayer
         {
             string colonia_trabajo_tutor = "", calle_trabajo_tutor = "";
 
-            string peso = "", color_textura_piel = "", estatura = "",  enfermedades = "";
-
-
-
-            //businessLayer.Hueso.SetDiscapacidades(discapacidad);
-
-            //businessLayer.Hueso.SetEnfermedades(enfermedades);
-
-            //businessLayer.Hueso.SetAlergias(alergias);
-
-            //businessLayer.Hueso.setTratamiento(tratamiento);
-
-            //this.Hide();
-            //Consultas consultas = new Consultas();
-            //consultas.Show();
-
-
+            string peso = "", color_textura_piel = "", estatura = "";
 
             //Aquí se puede ingresar el método para realizar la alta de alumno...
             if (servMedico.Text.Equals(""))
@@ -852,8 +847,7 @@ namespace presentationLayer
 
                         businessLayer.BLAltaAlumno.SetAlergias(alergias.Text);
 
-
-                        businessLayer.BLAltaAlumno.SetEnfermedades(lista_enfermedad);
+                        businessLayer.BLAltaAlumno.SetEnfermedades(idenfermedadesListaAlta);
 
                         businessLayer.BLAltaAlumno.SetDiscapacidades(discapacidad.Text);
 
@@ -1556,43 +1550,79 @@ namespace presentationLayer
         //Metodo para dar de alta enfermedades
         private void agregarEnfermedadesButton_Click_1(object sender, EventArgs e)
         {
-            //businessLayer.BLAltaAlumno.SetEnfermedades(lista_enfermedad_auxiliar.ToString());
-            //ArrayList agregarEnfermedad = new ArrayList(); // Aquí está creado el arraylist
-            // _1dataLayer.enfermedadDTO al = _1dataLayer.enfermedadDTO(); // instancia de enfermedad DTO *me sale error*
-            //int id_cartilla_medica = 1;
+            enfermedadesRichTextBox.Clear();
 
-      
             try
             {
                 if (enfermedadesCombobox.SelectedItem == null)
                 {
+
                     MessageBox.Show("No puedes agregar espacio en blanco a la lista de enfermedades!");
+
                 }
                 else
                 {
-                    enfermedades.AppendText(enfermedadesCombobox.SelectedItem + "\n"); //aqui se agrega la enfermedad del combobox al richtextbox y se le concatena un salto de linea
-             
-                    
 
-                    lista_enfermedad.Add(enfermedadesCombobox.SelectedItem.ToString());
-                    
-                    //agregar la info del richtextbox a la lista
-                    //id_cartilla_medica = _1dataLayer.DLAltaAlumno.Altadiscapacidades(); //aqui se supone que mando a llamar el metodo para dar de alta la enfermedad pero me marca error, no sé cómo implementarlo correctamente
+                    if (listaEnfermedades.Contains(enfermedadesCombobox.SelectedItem.ToString())) 
+                    {
+
+                        MessageBox.Show("No se admiten registros duplicados");
+
+                    }
+                    else
+                    {
+
+                        listaEnfermedades.Add(enfermedadesCombobox.SelectedItem.ToString());
+                       
+
+                    }
+
+                    if (idenfermedadesLista.ToString().Contains(enfermedadesCombobox.SelectedItem.ToString()))
+                    {
+
+                        idenfermedadesLista.Add()
+
+                    }
+                    else
+                    {
+
+                        listaEnfermedades.Add(enfermedadesCombobox.SelectedItem.ToString());
+
+
+                    }
+               
+
+                    foreach (var item in listaEnfermedades)
+                    {
+
+                        enfermedadesRichTextBox.AppendText(item.ToString()+ "\n");
+                      
+
+                    }
+
+               
+
+
+
+
                 }
 
             }
             catch (Exception)
             {
+
                 MessageBox.Show("Error al agregar una enfermedad!");
+
             }
         }
 
         //Metodo para dar de alta discapacidades
         private void agregarDiscapacidadesButton_Click(object sender, EventArgs e)
         {
-            //ArrayList agregarDiscapacidad = new ArrayList(); // Aquí está creado el arraylist
-            // _1dataLayer.discapacidadDTO al = _1dataLayer.discapacidadDTO(); // instancia de discapacidad DTO *me sale error*
-            //int id_cartilla_medica = 1;
+          
+
+
+
             try
             {
                 if (discapacidadesCombobox.SelectedItem == null)
@@ -1653,7 +1683,7 @@ namespace presentationLayer
 
         private void eliminarEnfermedadesButton_Click(object sender, EventArgs e)
         {
-            enfermedades.Clear();
+            enfermedadesRichTextBox.Clear();
         }
 
         private void eliminarTratamientosButton_Click(object sender, EventArgs e)
