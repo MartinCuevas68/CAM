@@ -24,6 +24,7 @@ namespace presentationLayer
             consultaBotonesParaNavegar(cerrarSesionButton,imprimirFormatosButton,fichaTecnicaButton);
             consultaBusquedaAlumnos(busquedaPanel,busquedaTextBox, buscarButton);
             tituloAlumnos(consultaLabel);
+             altaDataGridView.ReadOnly = true;
         }
 
         private void Consultas_Load(object sender, EventArgs e)
@@ -63,6 +64,7 @@ namespace presentationLayer
 
             altaDataGridView.AutoResizeColumns();
             altaDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+             altaDataGridView.ReadOnly = true;
 
             /*altaDataGridView.Columns[0].HeaderCell.Value = "Matrícula";
             altaDataGridView.Columns[1].HeaderCell.Value = "Nombre";
@@ -230,20 +232,11 @@ namespace presentationLayer
 
         private void fichaTecnicaButton_Click(object sender, EventArgs e)
         {
-            Int32 selectedCellCount =  altaDataGridView.GetCellCount(DataGridViewElementStates.Selected);
+            //Int32 selectedCellCount =  altaDataGridView.GetCellCount(DataGridViewElementStates.Selected);
             int id = 0;
-            /*foreach (DataGridViewRow row in this.altaDataGridView.Rows)
-            {
-                if (Convert.ToBoolean(row.Cells[0].Value) == true)
-                {
-                    id = Convert.ToString(row.Cells[0].Value);
-                }
-            }*/
-            //int codigo_hab = Convert.ToInt32(((DataRowView)dgvHabitaciones.Items[dgvHabitaciones.SelectedIndex])[0]);
-            for (int i = 0;i < selectedCellCount; i++)
-            {
-               id = int.Parse(altaDataGridView.SelectedCells[i].Value.ToString());
-            }
+
+            id = int.Parse(altaDataGridView.CurrentRow.Cells[0].Value.ToString());
+            MessageBox.Show(id.ToString());
 
             ConsultaAlumno consultas = new ConsultaAlumno();
             consultas.Close();
