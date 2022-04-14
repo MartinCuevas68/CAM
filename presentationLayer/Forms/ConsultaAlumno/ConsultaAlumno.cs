@@ -1,4 +1,5 @@
-﻿using System;
+﻿using presentationLayer.Forms.BajaAlumno;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -222,7 +223,8 @@ namespace presentationLayer
 
         private void eliminarButton_Click_1(object sender, EventArgs e)
         {
-
+            bajaAlumno baja = new bajaAlumno();
+            baja.Show();
         }
 
         private void imprimirFormatosButton_Click(object sender, EventArgs e)
