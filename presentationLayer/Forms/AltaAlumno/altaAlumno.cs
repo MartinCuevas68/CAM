@@ -1580,7 +1580,7 @@ namespace presentationLayer
                     if (idenfermedadesLista.ToString().Contains(enfermedadesCombobox.SelectedItem.ToString()))
                     {
 
-                        idenfermedadesLista.Add()
+                      //  idenfermedadesLista.Add();
 
                     }
                     else
