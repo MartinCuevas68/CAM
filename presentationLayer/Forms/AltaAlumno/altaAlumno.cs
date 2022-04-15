@@ -12,19 +12,21 @@ namespace presentationLayer
     {
         ComboBox enfermedadestempcmb = new ComboBox();
 
+        ComboBox discapacidadestempcmb = new ComboBox();
+
+        ComboBox alergiastempcmb = new ComboBox();
+
         List<string> listaEnfermedades = new List<string>();
 
         List<string> listaDiscapacidades = new List<string>();
 
         List<string> listaAlergias = new List<string>();
 
-        List<int> idenfermedadesLista = new List<int>();
+        List<int> idenfermermedadesListaAlta = new List<int>();
 
-        List<int> idenfermedadesListaAlta = new List<int>();
+        List<int> iddiscapacidadesListaAlta = new List<int>();
 
-        List<int> iddiscapacidadesLista = new List<int>();
-
-        List<int> idalergiasLista = new List<int>();
+        List<int> idalergiasListaAlta = new List<int>();
 
         public altaAlumno()
         {
@@ -52,8 +54,8 @@ namespace presentationLayer
                 telTrabajoTLabel, telefonotrabajotutorTextBox, telTrabajoTPanel, ocupacionLabel, ocupacion, ocupacionTPanel, direccionCheckBox);
 
             PLAltaAlumno.infoMedica(servMedicoLabel, servMedico, servMedicoPanel, grupoSanguineoLabel, grupoSanguineoComboBox, telefonoLabel,
-                telefono, telefonoPanel, discapacidadLabel, discapacidad, discapacidadPanel, enfermedadesLabel, enfermedadesRichTextBox, enfermedadesPanel,
-                alergiasLabel, alergias, alergiasPanel, tratamientoLabel, tratamiento, tratamientoPanel, discapacidadesCombobox, enfermedadesCombobox, alergiasCombobox,
+                telefono, telefonoPanel, discapacidadLabel, discapacidadesRichTextBox, discapacidadPanel, enfermedadesLabel, enfermedadesRichTextBox, enfermedadesPanel,
+                alergiasLabel, alergiasRichTextBox, alergiasPanel, tratamientoLabel, tratamiento, tratamientoPanel, discapacidadesCombobox, enfermedadesCombobox, alergiasCombobox,
                 eliminarEnfermedadesButton, eliminarDiscapacidadesButton, eliminarAlergiasButton, eliminarTratamientosButton,
                  agregarDiscapacidadesButton, agregarEnfermedadesButton, agregarAlergiasButton, eliminardiscapacidadButton1, eliminarenfButton, eliminarAlegiasButton1);
 
@@ -359,7 +361,7 @@ namespace presentationLayer
         private void agregarDiscapacidadButton_Click(object sender, EventArgs e)
         {
             string informacion = this.discapacidadesCombobox.GetItemText(this.discapacidadesCombobox.SelectedItem);
-            discapacidad.Text = discapacidad.Text + informacion + "\n";
+            discapacidadesRichTextBox.Text = discapacidadesRichTextBox.Text + informacion + "\n";
 
         }
 
@@ -368,7 +370,7 @@ namespace presentationLayer
         {
 
             string informacion = this.alergiasCombobox.GetItemText(this.alergiasCombobox.SelectedItem);
-            alergias.Text = alergias.Text + informacion + "\n";
+            alergiasRichTextBox.Text = alergiasRichTextBox.Text + informacion + "\n";
 
         }
 
@@ -423,7 +425,7 @@ namespace presentationLayer
         //LIMPIAR DISCAPACIDADES
         private void eliminarDiscapacidadesButton_Click(object sender, EventArgs e)
         {
-            discapacidad.Clear();
+            discapacidadesRichTextBox.Clear();
         }
 
         //LIMPIAR ENFERMEDADES
@@ -435,7 +437,7 @@ namespace presentationLayer
         //LIMPIAR ALERGIAS
         private void eliminarAlergiasButton_Click(object sender, EventArgs e)
         {
-            alergias.Clear();
+            alergiasRichTextBox.Clear();
         }
 
         //FILLCOMBOBOX METODO PARA ALERGIAS, ENFERMEDADES Y DISCAPACIDADES
@@ -445,6 +447,7 @@ namespace presentationLayer
             foreach (var item in _1dataLayer.DLAltaAlumno.catalogoalergias())
             {
                 alergiasCombobox.Items.Add(item.alergia);
+                alergiastempcmb.Items.Add(item.id_alergias);
             }
             foreach (var item2 in _1dataLayer.DLAltaAlumno.catalogoenfermedades())
             {
@@ -456,6 +459,7 @@ namespace presentationLayer
            foreach (var item3 in _1dataLayer.DLAltaAlumno.catalogodiscapacidades())
             {
                 discapacidadesCombobox.Items.Add(item3.discapacidades);
+                discapacidadestempcmb.Items.Add(item3.id_discapacidades);
             }
 
         }
@@ -845,11 +849,11 @@ namespace presentationLayer
                                                                      color_textura_piel,
                                                                      estatura);
 
-                        businessLayer.BLAltaAlumno.SetAlergias(alergias.Text);
+                        businessLayer.BLAltaAlumno.SetAlergias(idalergiasListaAlta);
 
-                        businessLayer.BLAltaAlumno.SetEnfermedades(idenfermedadesListaAlta);
+                        businessLayer.BLAltaAlumno.SetEnfermedades(idenfermermedadesListaAlta);
 
-                        businessLayer.BLAltaAlumno.SetDiscapacidades(discapacidad.Text);
+                        businessLayer.BLAltaAlumno.SetDiscapacidades(iddiscapacidadesListaAlta);
 
                         businessLayer.BLAltaAlumno.SetTratamiento(tratamiento.Text);
 
@@ -1551,13 +1555,14 @@ namespace presentationLayer
         private void agregarEnfermedadesButton_Click_1(object sender, EventArgs e)
         {
             enfermedadesRichTextBox.Clear();
+            int posicioncomboboxTemporal = 0;
 
             try
             {
                 if (enfermedadesCombobox.SelectedItem == null)
                 {
 
-                    MessageBox.Show("No puedes agregar espacio en blanco a la lista de enfermedades!");
+                    MessageBox.Show("Seleccione una enfermedad!");
 
                 }
                 else
@@ -1573,37 +1578,24 @@ namespace presentationLayer
                     {
 
                         listaEnfermedades.Add(enfermedadesCombobox.SelectedItem.ToString());
-                       
+
+
+                        posicioncomboboxTemporal = enfermedadesCombobox.SelectedIndex;
+
+
+                        enfermedadestempcmb.SelectedIndex = posicioncomboboxTemporal;
+
+                    
+                        idenfermermedadesListaAlta.Add(int.Parse(enfermedadestempcmb.SelectedItem.ToString()));
 
                     }
-
-                    if (idenfermedadesLista.ToString().Contains(enfermedadesCombobox.SelectedItem.ToString()))
-                    {
-
-                      //  idenfermedadesLista.Add();
-
-                    }
-                    else
-                    {
-
-                        listaEnfermedades.Add(enfermedadesCombobox.SelectedItem.ToString());
-
-
-                    }
-               
 
                     foreach (var item in listaEnfermedades)
                     {
 
                         enfermedadesRichTextBox.AppendText(item.ToString()+ "\n");
-                      
 
                     }
-
-               
-
-
-
 
                 }
 
@@ -1619,66 +1611,130 @@ namespace presentationLayer
         //Metodo para dar de alta discapacidades
         private void agregarDiscapacidadesButton_Click(object sender, EventArgs e)
         {
-          
-
-
+            discapacidadesRichTextBox.Clear();
+            int posicioncomboboxTemporal = 0;
 
             try
             {
                 if (discapacidadesCombobox.SelectedItem == null)
                 {
-                    MessageBox.Show("No puedes agregar espacio en blanco a la lista de discapacidades!");
+
+                    MessageBox.Show("Seleccione una discapacidad!");
+
                 }
                 else
                 {
-                    discapacidad.AppendText(discapacidadesCombobox.SelectedItem + "\n"); //aqui se agrega la discapacidad del combobox al richtextbox y se le concatena un salto de linea
-                    String info_discapacidades = discapacidad.Text;
-                    //agregarDiscapacidad.Add(discapacidad); //agregar la info del richtextbox a la lista
 
-                    //id_cartilla_medica = _1dataLayer.DLAltaAlumno.Altadiscapacidades(); //aqui se supone que mando a llamar el metodo para dar de alta la discapacidad pero me marca error, no sé cómo implementarlo correctamente
+                    if (listaDiscapacidades.Contains(discapacidadesCombobox.SelectedItem.ToString()))
+                    {
+
+                        MessageBox.Show("No se admiten registros duplicados");
+
+                    }
+                    else
+                    {
+
+                        listaDiscapacidades.Add(discapacidadesCombobox.SelectedItem.ToString());
+
+
+                        posicioncomboboxTemporal = discapacidadesCombobox.SelectedIndex;
+
+                        discapacidadestempcmb.SelectedIndex = posicioncomboboxTemporal;
+
+
+                        iddiscapacidadesListaAlta.Add(int.Parse(discapacidadestempcmb.SelectedItem.ToString()));
+
+
+                    }
+
+                    foreach (var item in listaDiscapacidades)
+                    {
+
+                        discapacidadesRichTextBox.AppendText(item.ToString() + "\n");
+
+
+                    }
+
                 }
+
             }
             catch (Exception)
             {
-                MessageBox.Show("Error al agregar una discapacidad!");
+
+                MessageBox.Show("Error al agregar una discapacidad");
+
             }
         }
 
-        //Metodo para dar de alta alergias
+
         private void agregarAlergiasButton_Click_1(object sender, EventArgs e)
         {
-            //ArrayList agregarAlergias = new ArrayList(); // Aquí está creado el arraylist
-            // _1dataLayer.alergiasDTO al = _1dataLayer.alergiasDTO(); // instancia de alergias DTO *me sale error*
-            //int id_cartilla_medica = 1;
+            alergiasRichTextBox.Clear();
+            int posicioncomboboxTemporal = 0;
+
             try
             {
                 if (alergiasCombobox.SelectedItem == null)
                 {
-                    MessageBox.Show("No puedes agregar espacio en blanco a la lista de alergias!");
+
+                    MessageBox.Show("Seleccione una alergia!");
+
                 }
                 else
                 {
-                    alergias.AppendText(alergiasCombobox.SelectedItem + "\n"); //aqui se agrega la discapacidad del combobox al richtextbox y se le concatena un salto de linea
-                    String info_alergias = alergias.Text;
-                    //agregarAlergias.Add(alergias); //agregar la info del richtextbox a la lista
 
-                    //id_cartilla_medica = _1dataLayer.DLAltaAlumno.Altaalergias(); //aqui se supone que mando a llamar el metodo para dar de alta la alergia pero me marca error, no sé cómo implementarlo correctamente
+                    if (listaAlergias.Contains(alergiasCombobox.SelectedItem.ToString()))
+                    {
+
+                        MessageBox.Show("No se admiten registros duplicados");
+
+                    }
+                    else
+                    {
+
+                        listaAlergias.Add(alergiasCombobox.SelectedItem.ToString());
+
+
+                        posicioncomboboxTemporal = alergiasCombobox.SelectedIndex;
+
+
+                        alergiastempcmb.SelectedIndex = posicioncomboboxTemporal;
+
+
+                        idalergiasListaAlta.Add(int.Parse(alergiastempcmb.SelectedItem.ToString()));
+
+
+                    }
+
+                    foreach (var item in listaAlergias)
+                    {
+
+                        alergiasRichTextBox.AppendText(item.ToString() + "\n");
+
+                    }
+
                 }
+
             }
             catch (Exception)
             {
-                MessageBox.Show("Error al agregar una alergia!");
+
+                MessageBox.Show("Error al agregar la alaergia");
+
             }
         }
 
+
+
+
         private void eliminarAlergiasButton_Click_1(object sender, EventArgs e)
         {
-            alergias.Clear();
+            alergiasRichTextBox.Clear();
         }
 
         private void eliminarDiscapacidadesButton_Click_1(object sender, EventArgs e)
         {
-            discapacidad.Clear();
+            discapacidadesRichTextBox.Clear();
         }
 
         private void eliminarEnfermedadesButton_Click(object sender, EventArgs e)

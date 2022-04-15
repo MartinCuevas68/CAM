@@ -25,3 +25,4 @@ F:\Github\UABC\CAM\presentationLayer\obj\Debug\presentationLayer.csproj.CoreComp
 F:\Github\UABC\CAM\presentationLayer\obj\Debug\presentationLayer.csproj.CopyComplete
 F:\Github\UABC\CAM\presentationLayer\obj\Debug\presentationLayer.exe
 F:\Github\UABC\CAM\presentationLayer\obj\Debug\presentationLayer.pdb
+F:\Github\UABC\CAM\presentationLayer\obj\Debug\presentationLayer.csproj.AssemblyReference.cache
