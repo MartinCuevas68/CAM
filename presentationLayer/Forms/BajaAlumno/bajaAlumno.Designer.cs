@@ -218,6 +218,7 @@ namespace presentationLayer.Forms.BajaAlumno
             this.continuarBajaButton.TabIndex = 249;
             this.continuarBajaButton.Text = "Continuar con la baja";
             this.continuarBajaButton.UseVisualStyleBackColor = false;
+            this.continuarBajaButton.Click += new System.EventHandler(this.continuarBajaButton_Click);
             // 
             // cancelarBajaButton
             // 

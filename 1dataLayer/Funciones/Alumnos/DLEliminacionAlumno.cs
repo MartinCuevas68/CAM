@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace _1dataLayer
 {
-    internal class DLEliminacionAlumno
+    public class DLEliminacionAlumno
     {
+
+        public static void eliminacion(int id)
+        {
+            using(BDCAMEntities db = new BDCAMEntities())
+            {
+                db.SP_Eliminar_Alumno(id);
+            }
+        }
     }
 }

@@ -858,5 +858,14 @@ namespace _1dataLayer
         {
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("sp_upgraddiagrams1");
         }
+    
+        public virtual int SP_Eliminar_Alumno(Nullable<int> id_alumno)
+        {
+            var id_alumnoParameter = id_alumno.HasValue ?
+                new ObjectParameter("id_alumno", id_alumno) :
+                new ObjectParameter("id_alumno", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_Eliminar_Alumno", id_alumnoParameter);
+        }
     }
 }

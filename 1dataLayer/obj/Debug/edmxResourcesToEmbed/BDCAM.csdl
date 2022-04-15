@@ -475,6 +475,9 @@
       <Parameter Name="new_diagramname" Mode="In" Type="String" />
     </FunctionImport>
     <FunctionImport Name="sp_upgraddiagrams1" />
+    <FunctionImport Name="SP_Eliminar_Alumno">
+      <Parameter Name="id_alumno" Mode="In" Type="Int32" />
+    </FunctionImport>
   </EntityContainer>
   <ComplexType Name="SP_FichaTecnicaAlumno_Result">
     <Property Type="String" Name="nombre" Nullable="false" MaxLength="30" />

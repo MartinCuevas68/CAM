@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,27 +13,50 @@ namespace presentationLayer.Forms.BajaAlumno
 {
     public partial class bajaAlumno : Form
     {
-        public bajaAlumno()
+        _1dataLayer.SP_FichaTecnicaAlumno_Result alumno = new _1dataLayer.SP_FichaTecnicaAlumno_Result();
+        _1dataLayer.foto_alumno fotol = new _1dataLayer.foto_alumno();
+        int id;
+
+
+        public bajaAlumno(int id_alumno)
         {
+            id = id_alumno;
             InitializeComponent();
             PLBajaAlumno.datosAlumno(foto, nombreAlLabel, nombreAl, matriculaLabel, matricula, tipoIngresoLabel,
                                     tipoIngreso, edadLabel, edad, curpLabel, curp);
             PLBajaAlumno.plantillaBajas(tituloLabel, pregunta, cancelarBajaButton, continuarBajaButton);
 
+            alumno = _1dataLayer.DLConsultaAlumno.FichaTenicaAlumno(id_alumno);
             //Ejemplo
-            nombreAl.Text = "MARCOS DANIEL ZAVALA MARTINEZ";
-            matricula.Text = "1002";
-            tipoIngreso.Text = "NUEVO INGRESO";
-            edad.Text = "23";
-            curp.Text = "ZAMM990220MBCMZV2F";
-
+            nombreAl.Text = alumno.nombre +" "+ alumno.apellido_paterno + " "+alumno.apellido_materno;
+            matricula.Text = alumno.id_alumno.ToString();
+            tipoIngreso.Text = alumno.tipo_ingreso;
+            edad.Text = alumno.edad_alumno;
+            curp.Text = alumno.CURP_alumno;
+            fotol = _1dataLayer.DLConsultaAlumno.ConsultaFoto(id_alumno);
+            foto.Image = byteArrayToImage(fotol.imagen_alumno.ToArray());
         }
 
+        public Image byteArrayToImage(byte[] byteArrayIn)
+        {
+            MemoryStream ms = new MemoryStream(byteArrayIn);
+            Image returnImage = Image.FromStream(ms);
+            return returnImage;
+        }
+
+        
         private void cancelarBajaButton_Click(object sender, EventArgs e)
         {
-            bajaAlumno baja = new bajaAlumno();
+            bajaAlumno baja = new bajaAlumno(id);
             baja.Close();
             this.Hide();
+        }
+        //Manda el metodo que se encuentra en el DataLayer para eliminar el alumno
+        private void continuarBajaButton_Click(object sender, EventArgs e)
+        {
+            businessLayer.BLEliminacionAlumno.eliminaralumno(id);
+            ConsultaAlumno.ActiveForm.ParentForm.Refresh();
+            this.Close();
         }
     }
 }

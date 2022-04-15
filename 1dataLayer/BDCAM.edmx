@@ -303,7 +303,9 @@ warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a prima
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_alumno-cartilla">
-          <End Role="alumno" Type="Self.alumno" Multiplicity="1" />
+          <End Role="alumno" Type="Self.alumno" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
           <End Role="alumno-cartilla" Type="Self.alumno-cartilla" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="alumno">
@@ -315,7 +317,9 @@ warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a prima
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_alumno-foto">
-          <End Role="alumno" Type="Self.alumno" Multiplicity="1" />
+          <End Role="alumno" Type="Self.alumno" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
           <End Role="foto-alumno" Type="Self.foto-alumno" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="alumno">
@@ -339,7 +343,9 @@ warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a prima
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_Alumno-tutor">
-          <End Role="alumno" Type="Self.alumno" Multiplicity="1" />
+          <End Role="alumno" Type="Self.alumno" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
           <End Role="tutor-alumno" Type="Self.tutor-alumno" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="alumno">
@@ -351,7 +357,9 @@ warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a prima
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_cartilla">
-          <End Role="tabla_medica" Type="Self.tabla_medica" Multiplicity="1" />
+          <End Role="tabla_medica" Type="Self.tabla_medica" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
           <End Role="medica-enfermedades" Type="Self.medica-enfermedades" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="tabla_medica">
@@ -363,7 +371,9 @@ warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a prima
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_cartilla-alumno">
-          <End Role="tabla_medica" Type="Self.tabla_medica" Multiplicity="1" />
+          <End Role="tabla_medica" Type="Self.tabla_medica" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
           <End Role="alumno-cartilla" Type="Self.alumno-cartilla" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="tabla_medica">
@@ -375,7 +385,9 @@ warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a prima
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_cm">
-          <End Role="tabla_medica" Type="Self.tabla_medica" Multiplicity="1" />
+          <End Role="tabla_medica" Type="Self.tabla_medica" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
           <End Role="medica-discapacidad" Type="Self.medica-discapacidad" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="tabla_medica">
@@ -411,7 +423,9 @@ warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a prima
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_id_cartilla">
-          <End Role="tabla_medica" Type="Self.tabla_medica" Multiplicity="1" />
+          <End Role="tabla_medica" Type="Self.tabla_medica" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
           <End Role="medica-alergia" Type="Self.medica-alergia" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="tabla_medica">
@@ -483,7 +497,9 @@ warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a prima
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_Tabla_Medica_Tratamiento">
-          <End Role="tabla_medica" Type="Self.tabla_medica" Multiplicity="1" />
+          <End Role="tabla_medica" Type="Self.tabla_medica" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
           <End Role="Tratamientos" Type="Self.Tratamientos" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="tabla_medica">
@@ -495,7 +511,9 @@ warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a prima
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_Tele">
-          <End Role="tabla_indicadores_telefono" Type="Self.tabla_indicadores_telefono" Multiplicity="1" />
+          <End Role="tabla_indicadores_telefono" Type="Self.tabla_indicadores_telefono" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
           <End Role="telefono-tutores" Type="Self.telefono-tutores" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="tabla_indicadores_telefono">
@@ -507,7 +525,9 @@ warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a prima
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_Tuto">
-          <End Role="tutor" Type="Self.tutor" Multiplicity="1" />
+          <End Role="tutor" Type="Self.tutor" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
           <End Role="telefono-tutores" Type="Self.telefono-tutores" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="tutor">
@@ -519,7 +539,9 @@ warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a prima
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_tutor_id">
-          <End Role="tutor" Type="Self.tutor" Multiplicity="1" />
+          <End Role="tutor" Type="Self.tutor" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
           <End Role="tutor-alumno" Type="Self.tutor-alumno" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="tutor">
@@ -690,6 +712,9 @@ warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a prima
         <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
           <Parameter Name="owner_id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_Eliminar_Alumno" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id_alumno" Type="int" Mode="In" />
         </Function>
         <Function Name="SP_FichaTecnicaAlumno" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="id_alumno" Type="int" Mode="In" />
@@ -1470,6 +1495,9 @@ warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a prima
             <Parameter Name="new_diagramname" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="sp_upgraddiagrams1" />
+          <FunctionImport Name="SP_Eliminar_Alumno">
+            <Parameter Name="id_alumno" Mode="In" Type="Int32" />
+          </FunctionImport>
         </EntityContainer>
         <ComplexType Name="SP_FichaTecnicaAlumno_Result">
           <Property Type="String" Name="nombre" Nullable="false" MaxLength="30" />
@@ -2254,6 +2282,7 @@ warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a prima
           </FunctionImportMapping>
           <FunctionImportMapping FunctionImportName="sp_renamediagram1" FunctionName="BDCAMModel.Store.sp_renamediagram" />
           <FunctionImportMapping FunctionImportName="sp_upgraddiagrams1" FunctionName="BDCAMModel.Store.sp_upgraddiagrams" />
+          <FunctionImportMapping FunctionImportName="SP_Eliminar_Alumno" FunctionName="BDCAMModel.Store.SP_Eliminar_Alumno" />
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

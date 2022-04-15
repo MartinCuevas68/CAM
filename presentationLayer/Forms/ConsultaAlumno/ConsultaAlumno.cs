@@ -223,8 +223,11 @@ namespace presentationLayer
 
         private void eliminarButton_Click_1(object sender, EventArgs e)
         {
-            bajaAlumno baja = new bajaAlumno();
+            int id = 0;
+            id = int.Parse(altaDataGridView.CurrentRow.Cells[0].Value.ToString());
+            bajaAlumno baja = new bajaAlumno(id);
             baja.Show();
+            this.Update();
         }
 
         private void imprimirFormatosButton_Click(object sender, EventArgs e)
@@ -238,8 +241,6 @@ namespace presentationLayer
             int id = 0;
 
             id = int.Parse(altaDataGridView.CurrentRow.Cells[0].Value.ToString());
-            MessageBox.Show(id.ToString());
-
             ConsultaAlumno consultas = new ConsultaAlumno();
             consultas.Close();
             this.Hide();
@@ -270,5 +271,7 @@ namespace presentationLayer
             }
 
         }
+
+      
     }
 }
