@@ -75,7 +75,7 @@ namespace businessLayer
                     var.nombre += result.apellido_paterno + " ";
                     var.nombre += result.apellido_materno;
                     var.telefono_contacto = result.telefono_contacto;
-                    //mostrarAlergias = listaAlumnos.ListaAlergias(result.id_alumno);
+                    mostrarAlergias = _1dataLayer.DLConsultaAlumno.ListaAlergias(result.id_alumno);
                     foreach (_1dataLayer.SP_ListaAlergia_Result a in mostrarAlergias)
                     {
                         alergias += ("• " + a.alergia + "\n");
@@ -83,7 +83,8 @@ namespace businessLayer
                     var.alergias = alergias;
                     alergias = "";
 
-                    //mostrarDiscapacidades = listaAlumnos.ListaDiscapacidad(result.id_alumno);
+
+                    mostrarDiscapacidades = _1dataLayer.DLConsultaAlumno.ListaDiscapacidad(result.id_alumno);
                     foreach (_1dataLayer.SP_ListaDiscapacidad_Result d in mostrarDiscapacidades)
                     {
                         discapacidades += ("• " + d.discapacidades + "\n");
