@@ -10,7 +10,7 @@ namespace businessLayer
     public class BLFichaTecnica
     {
 
-        public static void infoGenAlumno(TextBox alumnoAl, TextBox apellidoP, TextBox apellidoM, TextBox edad, TextBox matricula,
+        public static int infoGenAlumno(TextBox alumnoAl, TextBox apellidoP, TextBox apellidoM, TextBox edad, TextBox matricula,
             DateTimePicker fechaNa, TextBox ciudad, TextBox estado, TextBox curp, TextBox telPersonal, TextBox calle, TextBox numeroCasa,
             TextBox colonia, TextBox tipoIngreso, int id_alumno)
         {
@@ -32,6 +32,8 @@ namespace businessLayer
             numeroCasa.Text = alumno.numero_alumno;
             colonia.Text = alumno.colonia_alumno;
             tipoIngreso.Text = alumno.tipo_ingreso;
+
+            return alumno.id_alumno;
         }
 
         public static void infoEscAlumno(TextBox tipoIngreso, TextBox escuelaP, TextBox canalizado, TextBox cicloEsc, int id_alumno) 
@@ -45,7 +47,7 @@ namespace businessLayer
             cicloEsc.Text = alumno.ciclo_escolar;
         }
 
-        public static void infoTutor(TextBox nombreT, TextBox apellidoPT, TextBox apellidoMT, TextBox calleT, TextBox numeroCasaT, TextBox coloniaT, TextBox ocupacion, TextBox telCasaT, TextBox telMovilT, TextBox telTrabajoT, int id_alumno)
+        public static int infoTutor(TextBox nombreT, TextBox apellidoPT, TextBox apellidoMT, TextBox calleT, TextBox numeroCasaT, TextBox coloniaT, TextBox ocupacion, TextBox telCasaT, TextBox telMovilT, TextBox telTrabajoT, int id_alumno)
         {
             
             //id alumno: 92 tiene el id tutor: 77 y el tutor tiene los 3 numeros
@@ -57,6 +59,7 @@ namespace businessLayer
             tutor = _1dataLayer.DLConsultaAlumno.FichaTecnicaTutor(id_alumno);
             ListaTelefonoTutor = _1dataLayer.DLConsultaAlumno.consultartelefonotutor(tutor.id_tutor);
 
+            
             nombreT.Text = tutor.nombre;
             apellidoPT.Text = tutor.apellido_paterno;
             apellidoMT.Text = tutor.apellido_materno;
@@ -69,6 +72,7 @@ namespace businessLayer
             telMovilT.Text = ListaTelefonoTutor.ElementAt(1).telefono.ToString();
             telTrabajoT.Text = ListaTelefonoTutor.ElementAt(2).telefono.ToString();
 
+            return tutor.id_tutor;
         }
 
         public static void infoMedAlumno(TextBox servMedico, TextBox telefono, TextBox grupoSanguineo, int id_alumno)

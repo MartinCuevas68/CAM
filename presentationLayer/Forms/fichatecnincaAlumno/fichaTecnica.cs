@@ -22,6 +22,8 @@ namespace presentationLayer
         _1dataLayer.SP_ListaAlergia_Result alergia = new _1dataLayer.SP_ListaAlergia_Result();
         _1dataLayer.SP_ListaTratamiento_Result tratamiento = new _1dataLayer.SP_ListaTratamiento_Result();
         _1dataLayer.foto_alumno fotol = new _1dataLayer.foto_alumno();
+        int idalumno;
+        int idtutor;
 
         public fichaTecnica(int id_alumno)
         {
@@ -62,14 +64,14 @@ namespace presentationLayer
             canalizado.Text = "Lic. Maria Leticia Sepulveda Ruiz"; calleT.Text = "Av. Rio San Lorenzo"; numeroCasaT.Text = "2365"; coloniaT.Text = "Independencia";*/
 
             //Información del alumno
-            businessLayer.BLFichaTecnica.infoGenAlumno(nombreAl, apellidoP, apellidoM, edad, matricula, fechaNa, ciudad, estado, curp, telPersonal, calle, numeroCasa, colonia, tipoIngreso, id_alumno);
+            idalumno = businessLayer.BLFichaTecnica.infoGenAlumno(nombreAl, apellidoP, apellidoM, edad, matricula, fechaNa, ciudad, estado, curp, telPersonal, calle, numeroCasa, colonia, tipoIngreso, id_alumno);
 
             //Informacion escolar del alumno
             businessLayer.BLFichaTecnica.infoEscAlumno(tipoIngreso, escuelaP, canalizado, cicloEsc, id_alumno);
 
             //Información del tutor
-            businessLayer.BLFichaTecnica.infoTutor(nombreT, apellidoPT, apellidoMT, calleT, numeroCasaT, coloniaT, ocupacion, telCasaT, telMovilT, telTrabajoT, id_alumno);
-           
+            idtutor = businessLayer.BLFichaTecnica.infoTutor(nombreT, apellidoPT, apellidoMT, calleT, numeroCasaT, coloniaT, ocupacion, telCasaT, telMovilT, telTrabajoT, id_alumno);
+            
             //Información médica
             businessLayer.BLFichaTecnica.infoMedAlumno(servMedico, telefono, grupoSanguineo, id_alumno);
 
@@ -79,8 +81,8 @@ namespace presentationLayer
             //Foto
             fotol = _1dataLayer.DLConsultaAlumno.ConsultaFoto(id_alumno);
             foto.Image = byteArrayToImage(fotol.imagen_alumno.ToArray());
-
-           
+            
+            
 
             //Sentencia que manda a llamar el método para cerrar Consultas usando la X
             //this.FormClosed += new FormClosedEventHandler(cerrarForm);
@@ -201,43 +203,393 @@ namespace presentationLayer
         private void cancelarEdiButton_Click(object sender, EventArgs e)
         {
             ocultarEditarInformacion();
+            
         }
 
         private void terminarEdiButton_Click(object sender, EventArgs e)
         {
-            alumno.nombre = nombreAl.Text;
-            alumno.apellido_paterno = apellidoP.Text;
-            alumno.apellido_materno = apellidoM.Text;
-            alumno.ciudad_nacimiento_alumno = ciudad.Text;
-            alumno.fecha_nacimiento = fechaNa.Value;
-            alumno.edad_alumno = edad.Text;
-            alumno.calle_alumno = calle.Text;
-            alumno.colonia_alumno = colonia.Text;
-            alumno.CURP_alumno = curp.Text;
-            alumno.tipo_ingreso = tipoIngreso.Text;
-            alumno.numero_alumno = numeroCasa.Text;
-            alumno.atendido_por = canalizado.Text;
-            alumno.escuela_procedencia_alumno = escuelaP.Text;
-            alumno.telefono_personal_alumno = telPersonal.Text;
-            alumno.ciclo_escolar = cicloEsc.Text;
-            tutor.nombre = nombreT.Text;
-            tutor.apellido_paterno = apellidoPT.Text;
-            tutor.apellido_materno = apellidoMT.Text;
-            tutor.ocupacion_tutor = ocupacion.Text;
-            tutor.calle_tutor = calleT.Text;
-            tutor.colonia_tutor = coloniaT.Text;
-            tutor.numero_tutor = numeroCasaT.Text;
-            if (grupoSanguineoComboBox.SelectedItem != null)
+            int bandera = 0;
+            int bandera2 = 0;
+            string mensaje = "";
+
+            if (nombreAl.Text.Trim().Equals(""))
             {
-                infoMed.grupo_sanguineo = grupoSanguineoComboBox.SelectedItem.ToString();
+                if (bandera == 0)
+                {
+                    bandera = 1;
+                    mensaje += "No puede dejar espacios en blanco en los siguientes campos:\n\n";
+                }
+                mensaje += "◉Nombre del alumno\n";
             }
-            infoMed.servicio_medico = servMedico.Text;
-            infoMed.telefono_contacto = telefono.Text;
-            MessageBox.Show(alumno.nombre);
-            businessLayer.BLModificacionAlumno.modificarAlumno(alumno);
-            businessLayer.BLModificacionAlumno.modificartutor(tutor);
-            businessLayer.BLModificacionAlumno.modificarinfomed(infoMed);
-            ocultarEditarInformacion();
+
+            if(apellidoP.Text.Trim().Equals(""))
+            {
+                if (bandera == 0)
+                {
+                    bandera = 1;
+                    mensaje += "No puede dejar espacios en blanco en los siguientes campos:\n\n";
+                }
+                mensaje +=("◉Apellido paterno del alumno\n");
+            }
+
+            if(apellidoM.Text.Trim().Equals(""))
+            {
+                if (bandera == 0)
+                {
+                    bandera = 1;
+                    mensaje += "No puede dejar espacios en blanco en los siguientes campos:\n\n";
+                }
+                mensaje +=("◉Apellido Materno del alumno\n");
+            }
+
+            if (ciudad.Text.Trim().Equals(""))
+            {
+                if (bandera == 0)
+                {
+                    bandera = 1;
+                    mensaje += "No puede dejar espacios en blanco en los siguientes campos:\n\n";
+                }
+                mensaje +=("◉Ciudad del alumno\n");
+            }
+
+            if (edad.Text.Trim().Equals(""))
+            {
+                if (bandera == 0)
+                {
+                    bandera = 1;
+                    mensaje += "No puede dejar espacios en blanco en los siguientes campos:\n\n";
+                }
+                mensaje +=("◉Edad del alumno\n");
+            }
+
+            if (calle.Text.Trim().Equals(""))
+            {
+                if (bandera == 0)
+                {
+                    bandera = 1;
+                    mensaje += "No puede dejar espacios en blanco en los siguientes campos:\n\n";
+                }
+                mensaje +=("◉Calle del alumno\n");
+            }
+
+            if (colonia.Text.Trim().Equals(""))
+            {
+                if (bandera == 0)
+                {
+                    bandera = 1;
+                    mensaje += "No puede dejar espacios en blanco en los siguientes campos:\n\n";
+                }
+                mensaje +=("◉Colonia del alumno\n");
+            }
+
+            if (estado.Text.Trim().Equals(""))
+            {
+                if (bandera == 0)
+                {
+                    bandera = 1;
+                    mensaje += "No puede dejar espacios en blanco en los siguientes campos:\n\n";
+                }
+                mensaje += ("◉Estado del alumno\n");
+            }
+
+            if (curp.Text.Trim().Equals(""))
+            {
+                if (bandera == 0)
+                {
+                    bandera = 1;
+                    mensaje += "No puede dejar espacios en blanco en los siguientes campos:\n\n";
+                }
+                mensaje +=("◉Curp del alumno\n");
+            }
+
+            if (tipoIngreso.Text.Trim().Equals(""))
+            {
+                if (bandera == 0)
+                {
+                    bandera = 1;
+                    mensaje += "No puede dejar espacios en blanco en los siguientes campos:\n\n";
+                }
+                mensaje +=("◉Tipo de ingreso del alumno\n");
+            }
+
+            if (numeroCasa.Text.Trim().Equals(""))
+            {
+                if (bandera == 0)
+                {
+                    bandera = 1;
+                    mensaje += "No puede dejar espacios en blanco en los siguientes campos:\n\n";
+                }
+                mensaje +=("◉Número de casa del alumno\n");
+            }
+
+            if (canalizado.Text.Trim().Equals(""))
+            {
+                if (bandera == 0)
+                {
+                    bandera = 1;
+                    mensaje += "No puede dejar espacios en blanco en los siguientes campos:\n\n";
+                }
+                mensaje +=("◉Nombre del que canalizo al alumno\n");
+            }
+
+            if (escuelaP.Text.Trim().Equals(""))
+            {
+                if (bandera == 0)
+                {
+                    bandera = 1;
+                    mensaje += "No puede dejar espacios en blanco en los siguientes campos:\n\n";
+                }
+                mensaje +=("◉Escuela de procedencia del alumno\n");
+            }
+
+            if (telPersonal.Text.Trim().Equals(""))
+            {
+                if (bandera == 0)
+                {
+                    bandera = 1;
+                    mensaje += "No puede dejar espacios en blanco en los siguientes campos:\n\n";
+                }
+                mensaje +=("◉Teléfono personal del alumno\n");
+            }
+
+            if (cicloEsc.Text.Trim().Equals(""))
+            {
+                if (bandera == 0)
+                {
+                    bandera = 1;
+                    mensaje += "No puede dejar espacios en blanco en los siguientes campos:\n\n";
+                }
+                mensaje +=("◉Ciclo escolar del alumno\n");
+            }
+
+            if (nombreT.Text.Trim().Equals(""))
+            {
+                if (bandera == 0)
+                {
+                    bandera = 1;
+                    mensaje += "No puede dejar espacios en blanco en los siguientes campos:\n\n";
+                }
+                mensaje +=("◉Nombre del tutor\n");
+            }
+
+            if (apellidoPT.Text.Trim().Equals(""))
+            {
+                if (bandera == 0)
+                {
+                    bandera = 1;
+                    mensaje += "No puede dejar espacios en blanco en los siguientes campos:\n\n";
+                }
+                mensaje +=("◉Apellido paterno del tutor\n");
+            }
+
+            if (apellidoMT.Text.Trim().Equals(""))
+            {
+                if (bandera == 0)
+                {
+                    bandera = 1;
+                    mensaje += "No puede dejar espacios en blanco en los siguientes campos:\n\n";
+                }
+                mensaje +=("◉Apellido materno del tutor\n");
+            }
+
+            if (ocupacion.Text.Trim().Equals(""))
+            {
+                if (bandera == 0)
+                {
+                    bandera = 1;
+                    mensaje += "No puede dejar espacios en blanco en los siguientes campos:\n\n";
+                }
+                mensaje +=("◉Ocupación del tutor\n");
+            }
+
+            if (calleT.Text.Trim().Equals(""))
+            {
+                if (bandera == 0)
+                {
+                    bandera = 1;
+                    mensaje += "No puede dejar espacios en blanco en los siguientes campos:\n\n";
+                }
+                mensaje +=("◉Calle del tutor\n");
+            }
+
+            if (coloniaT.Text.Trim().Equals(""))
+            {
+                if (bandera == 0)
+                {
+                    bandera = 1;
+                    mensaje += "No puede dejar espacios en blanco en los siguientes campos:\n\n";
+                }
+                mensaje +=("◉Colonia del tutor\n");
+            }
+
+            if (numeroCasaT.Text.Trim().Equals(""))
+            {
+                if (bandera == 0)
+                {
+                    bandera = 1;
+                    mensaje += "No puede dejar espacios en blanco en los siguientes campos:\n\n";
+                }
+                mensaje +=("◉Número de casa del tutor\n");
+            }
+            if (telCasaT.Text.Trim().Equals(""))
+            {
+                if (bandera == 0)
+                {
+                    bandera = 1;
+                    mensaje += "No puede dejar espacios en blanco en los siguientes campos:\n\n";
+                }
+                mensaje += ("◉Teléfono de casa del tutor\n");
+            }
+
+            if (telMovilT.Text.Trim().Equals(""))
+            {
+                if (bandera == 0)
+                {
+                    bandera = 1;
+                    mensaje += "No puede dejar espacios en blanco en los siguientes campos:\n\n";
+                }
+                mensaje += ("◉Teléfono móvil del tutor\n");
+            }
+
+            if (telTrabajoT.Text.Trim().Equals(""))
+            {
+                if (bandera == 0)
+                {
+                    bandera = 1;
+                    mensaje += "No puede dejar espacios en blanco en los siguientes campos:\n\n";
+                }
+                mensaje += ("◉Teléfono de trabajo del tutor\n");
+            }
+
+            if (servMedico.Text.Trim().Equals(""))
+            {
+                if (bandera == 0)
+                {
+                    bandera = 1;
+                    mensaje += "No puede dejar espacios en blanco en los siguientes campos:\n\n";
+                }
+                mensaje +=("◉Servicio médico del alumno\n");
+            }
+
+            if (telefono.Text.Trim().Equals(""))
+            {
+                if (bandera == 0)
+                {
+                    bandera = 1;
+                    mensaje += "No puede dejar espacios en blanco en los siguientes campos:\n\n";
+                }
+                mensaje +=("◉Teléfono de contacto del alumno en caso de emergencia\n");
+            }
+
+            if(telPersonal.Text.Length != 10)
+            {
+                
+                if(bandera2 == 0)
+                {
+                    bandera2 = 1;
+                    mensaje += "\n\nCampos inválidos \n\n";
+                }
+                string res = Convert.ToString(10 - telPersonal.Text.Length);
+                mensaje += "◉Le faltan " + res + " caracteres al telefono personal del alumno\n";
+            }
+
+
+            if (telCasaT.Text.Length != 10)
+            {
+
+                if (bandera2 == 0)
+                {
+                    bandera2 = 1;
+                    mensaje += "\n\nCampos inválidos \n\n";
+                }
+                string res = Convert.ToString(10 - telCasaT.Text.Length);
+                mensaje += "◉Le faltan " + res + " caracteres al telefono de casa del tutor\n";
+            }
+
+            if (telMovilT.Text.Length != 10)
+            {
+
+                if (bandera2 == 0)
+                {
+                    bandera2 = 1;
+                    mensaje += "\n\nCampos inválidos \n\n";
+                }
+                string res = Convert.ToString(10 - telMovilT.Text.Length);
+                mensaje += "◉Le faltan " + res + " caracteres al telefono móvil del tutor\n";
+            }
+
+            if (telTrabajoT.Text.Length != 10)
+            {
+
+                if (bandera2 == 0)
+                {
+                    bandera2 = 1;
+                    mensaje += "\n\nCampos inválidos \n\n";
+                }
+                string res = Convert.ToString(10 - telTrabajoT.Text.Length);
+                mensaje += "◉Le faltan " + res + " caracteres al telefono de trabajo del tutor\n";
+            }
+
+            if (telefono.Text.Length != 10)
+            {
+
+                if (bandera2 == 0)
+                {
+                    bandera2 = 1;
+                    mensaje += "\n\nCampos inválidos \n\n";
+                }
+                string res = Convert.ToString(10 - telefono.Text.Length);
+                mensaje += "◉Le faltan " + res + " caracteres al telefono de contacto en caso de emergencia\n";
+            }
+
+
+
+
+
+            if (bandera == 1 || bandera2 == 1)
+            {
+                MessageBox.Show(mensaje, "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                alumno.id_alumno = idalumno;
+                alumno.nombre = nombreAl.Text;
+                alumno.apellido_paterno = apellidoP.Text;
+                alumno.apellido_materno = apellidoM.Text;
+                alumno.estado_nacimiento_alumno = estado.Text;
+                alumno.ciudad_nacimiento_alumno = ciudad.Text;
+                alumno.fecha_nacimiento = fechaNa.Value;
+                alumno.edad_alumno = edad.Text;
+                alumno.calle_alumno = calle.Text;
+                alumno.colonia_alumno = colonia.Text;
+                alumno.CURP_alumno = curp.Text;
+                alumno.tipo_ingreso = tipoIngreso.Text;
+                alumno.numero_alumno = numeroCasa.Text;
+                alumno.atendido_por = canalizado.Text;
+                alumno.escuela_procedencia_alumno = escuelaP.Text;
+                alumno.telefono_personal_alumno = telPersonal.Text;
+                alumno.ciclo_escolar = cicloEsc.Text;
+                tutor.nombre = nombreT.Text;
+                tutor.apellido_paterno = apellidoPT.Text;
+                tutor.apellido_materno = apellidoMT.Text;
+                tutor.ocupacion_tutor = ocupacion.Text;
+                tutor.calle_tutor = calleT.Text;
+                tutor.colonia_tutor = coloniaT.Text;
+                tutor.numero_tutor = numeroCasaT.Text;
+                if (grupoSanguineoComboBox.SelectedItem != null)
+                {
+                    infoMed.grupo_sanguineo = grupoSanguineoComboBox.SelectedItem.ToString();
+                }
+                infoMed.servicio_medico = servMedico.Text;
+                infoMed.telefono_contacto = telefono.Text;
+                businessLayer.BLModificacionAlumno.modificarAlumno(alumno);
+                businessLayer.BLModificacionAlumno.modificartutor(tutor);
+                businessLayer.BLModificacionAlumno.modificarinfomed(infoMed);
+                businessLayer.BLModificacionAlumno.modificartelefonotutor(idtutor, telMovilT.Text, 1);
+                businessLayer.BLModificacionAlumno.modificartelefonotutor(idtutor, telCasaT.Text,2);
+                businessLayer.BLModificacionAlumno.modificartelefonotutor(idtutor, telTrabajoT.Text,3);
+                ocultarEditarInformacion();
+            }
         }
 
 
@@ -270,8 +622,9 @@ namespace presentationLayer
             {
                 e.Handled = true;
             }
-
         }
+
+       
 
         private void letras_KeyPress(object sender, KeyPressEventArgs e)
         {

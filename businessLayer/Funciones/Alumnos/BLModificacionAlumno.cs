@@ -192,6 +192,11 @@ namespace businessLayer
             _1dataLayer.DLModificacionAlumno.ModificacionTutor(tutor.id_tutor, tutor);
         }
 
+        public static void modificartelefonotutor(int idtutor, string telefono,int id_telefono)
+        {
+            _1dataLayer.DLModificacionAlumno.modificaciontelefono(idtutor, telefono, id_telefono);
+        }
+
         public static void modificarinfomed(_1dataLayer.SP_FichaTecnicaAlumnoMedica_Result medica)
         {
             _1dataLayer.DLModificacionAlumno.modificacionmedica(medica.id_cartilla_medica, medica);

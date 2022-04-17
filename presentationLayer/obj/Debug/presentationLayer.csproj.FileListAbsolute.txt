@@ -79,3 +79,5 @@ C:\Users\ferna\source\repos\CAM\presentationLayer\bin\Debug\EntityFramework.xml
 C:\Users\ferna\source\repos\CAM\presentationLayer\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\ferna\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.exe
 C:\Users\ferna\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.pdb
+C:\Users\ferna\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.csproj.SuggestedBindingRedirects.cache
+C:\Users\ferna\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.csproj.CopyComplete
