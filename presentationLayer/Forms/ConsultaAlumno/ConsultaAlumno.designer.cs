@@ -90,7 +90,7 @@ namespace presentationLayer
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.altaDataGridView.DefaultCellStyle = dataGridViewCellStyle3;
             this.altaDataGridView.Location = new System.Drawing.Point(38, 184);
-            this.altaDataGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.altaDataGridView.Margin = new System.Windows.Forms.Padding(2);
             this.altaDataGridView.Name = "altaDataGridView";
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
@@ -152,7 +152,7 @@ namespace presentationLayer
             this.buscarButton.FlatAppearance.BorderSize = 0;
             this.buscarButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buscarButton.Location = new System.Drawing.Point(11, 9);
-            this.buscarButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buscarButton.Margin = new System.Windows.Forms.Padding(2);
             this.buscarButton.Name = "buscarButton";
             this.buscarButton.Size = new System.Drawing.Size(27, 24);
             this.buscarButton.TabIndex = 11;
@@ -261,7 +261,7 @@ namespace presentationLayer
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1028, 609);
+            this.ClientSize = new System.Drawing.Size(1271, 609);
             this.Controls.Add(this.logo);
             this.Controls.Add(this.cerrarSesionButton);
             this.Controls.Add(this.imprimirFormatosButton);
