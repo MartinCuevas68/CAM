@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using presentationLayer.Forms.BajaAlumno;
 
 namespace presentationLayer
 {
@@ -650,6 +651,15 @@ namespace presentationLayer
         private void fichaTecnica_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void eliminarButton_Click(object sender, EventArgs e)
+        {
+            int id = 0;
+            id = idalumno;
+            bajaAlumno baja = new bajaAlumno(id);
+            baja.Show();
+            this.Update();
         }
     }
 }
