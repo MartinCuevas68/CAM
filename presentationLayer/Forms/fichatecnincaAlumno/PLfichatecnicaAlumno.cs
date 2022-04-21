@@ -13,14 +13,14 @@ namespace presentationLayer
 
         public static void centrarLabel(Label fichaLabel, PictureBox logo, Label nombreAlLabel, TextBox nombreAl, Label matriculaLabel, TextBox matricula,
             Label edadLabel, TextBox edad, PictureBox foto, Panel infoGeneralPanel, Panel infoEscolarPanel, Panel infoTutorPanel, Panel infoMedicaPanel, Button infoGeneral, Button infoEscolar, Button infoTutor, Button infoMedica,
-            Button regresarMenuButton, Button editarInfoButton, Button cancelarEdicion, Button terminarEdicion)
+            Button regresarMenuButton, Button editarInfoButton, Button cancelarEdicion, Button terminarEdicion, Button bajaAlumno)
         {
 
             logo.Location = new Point(50, 20);
             logo.Size = new Size(150, 148);
 
             //TITULO PRINCIPAL
-            fichaLabel.Location = new Point(530, 50);
+            fichaLabel.Location = new Point(560, 50);
 
             //Foto
             foto.Size = new Size(160, 180);
@@ -56,12 +56,15 @@ namespace presentationLayer
             regresarMenuButton.Location = new Point(200, 700);
             editarInfoButton.Location = new Point(1090, 700);
             cancelarEdicion.Location = new Point(200, 700);
+            bajaAlumno.Location = new Point(820, 700);
             terminarEdicion.Location = new Point(1090, 700);
 
             regresarMenuButton.Size = new Size(300,55);
             editarInfoButton.Size = new Size(250,55);
             cancelarEdicion.Size = new Size(250, 55);
+            bajaAlumno.Size = new Size(250, 55);
             terminarEdicion.Size = new Size(250, 55);
+            
         }
 
         public static void infoAlumno(Label nombreAlLabel, TextBox nombreAl, TextBox apellidoP, TextBox apellidoM, Label matriculaLabel, TextBox matricula, Label edadLabel, TextBox edad,
@@ -266,7 +269,9 @@ namespace presentationLayer
                                     TextBox grupoTB,Label discapacidadesL, Label enfermedadesL, Label alergiasL, Label tratamientosL, 
                                     RichTextBox discapacidadesRTB, RichTextBox enfermedadesRTB, RichTextBox alergiasRTB, RichTextBox tratamientosRTB,
                                     Panel discapacidadesP, Panel enfermedadesP, Panel alergiasP, Panel tratamientosP, ComboBox grupoSanComboBox,
-                                    UserControl servMedicoLinea, UserControl telefonoLinea) {
+                                    UserControl servMedicoLinea, UserControl telefonoLinea,  Button eliDiscapacidad,Button eliEnfermedad,
+                                    Button eliAlergia, ComboBox discapacidadesCB, ComboBox enfermedadesCB, ComboBox alergiasCB,
+                                    Button agrDiscapacidad, Button agrEnfermedad, Button agrAlergia) {
 
             servicioL.Location = new Point(50, 40);
             telefonoL.Location = new Point(50, 90);
@@ -285,10 +290,10 @@ namespace presentationLayer
             servMedicoLinea.Location = new Point(210, 60);
             telefonoLinea.Location = new Point(270, 110);
 
-            discapacidadesL.Location = new Point(50, 145);
-            enfermedadesL.Location = new Point(320, 145);
-            alergiasL.Location = new Point(590, 145);
-            tratamientosL.Location = new Point(860, 145);
+            discapacidadesL.Location = new Point(50, 130);
+            enfermedadesL.Location = new Point(320, 130);
+            alergiasL.Location = new Point(590, 130);
+            tratamientosL.Location = new Point(860, 130);
 
             discapacidadesRTB.Location = new Point(10,10);
             enfermedadesRTB.Location = new Point(10, 10);
@@ -300,39 +305,64 @@ namespace presentationLayer
             alergiasRTB.Enabled = true;
             tratamientosRTB.Enabled = true;
 
-            discapacidadesRTB.Size = new Size(225, 128);
+            discapacidadesRTB.Size = new Size(230, 110);
             discapacidadesRTB.ReadOnly = true;
-            enfermedadesRTB.Size = new Size(225, 128);
+            enfermedadesRTB.Size = new Size(230, 110);
             enfermedadesRTB.ReadOnly = true;
-            alergiasRTB.Size = new Size(225, 128);
+            alergiasRTB.Size = new Size(230, 110);
             alergiasRTB.ReadOnly = true;
-            tratamientosRTB.Size = new Size(225, 128);
+            tratamientosRTB.Size = new Size(230, 110);
             tratamientosRTB.ReadOnly = true;
 
-            discapacidadesP.Location = new Point(50, 165);
-            discapacidadesP.Size = new Size(240, 150);
-            enfermedadesP.Location = new Point(320, 165);
-            enfermedadesP.Size = new Size(240, 150);
-            alergiasP.Location = new Point(590, 165);
-            alergiasP.Size = new Size(240, 150);
-            tratamientosP.Location = new Point(860, 165);
-            tratamientosP.Size = new Size(240, 150);
+            discapacidadesP.Location = new Point(50, 150);
+            discapacidadesP.Size = new Size(250, 135);
+            enfermedadesP.Location = new Point(320, 150);
+            enfermedadesP.Size = new Size(250, 135);
+            alergiasP.Location = new Point(590, 150);
+            alergiasP.Size = new Size(250, 135);
+            tratamientosP.Location = new Point(860, 150);
+            tratamientosP.Size = new Size(250, 135);
+
+            eliDiscapacidad.Size = new Size(30, 30);
+            eliDiscapacidad.Location = new Point(50, 290);
+            eliEnfermedad.Size = new Size(30, 30);
+            eliEnfermedad.Location = new Point(320, 290);
+            eliAlergia.Size = new Size(30, 30);
+            eliAlergia.Location = new Point(590, 290);
+
+            discapacidadesCB.Size = new Size(175, 25);
+            discapacidadesCB.Location = new Point(85, 290);
+            enfermedadesCB.Size = new Size(175, 25);
+            enfermedadesCB.Location = new Point(355, 290);
+            alergiasCB.Size = new Size(175, 25);
+            alergiasCB.Location = new Point(625, 290);
+
+            agrDiscapacidad.Size = new Size(30, 30);
+            agrDiscapacidad.Location = new Point(265, 290);
+            agrEnfermedad.Size = new Size(30, 30);
+            agrEnfermedad.Location = new Point(535, 290);
+            agrAlergia.Size = new Size(30, 30);
+            agrAlergia.Location = new Point(805, 290);
+
 
         }
 
-        public static void mostrarEditarInformacion(Button regresarMenu, Button editarInfo, Button cancelar, Button terminar, Button añadirFoto, TextBox nombreAl,
+        public static void mostrarEditarInformacion(Button regresarMenu, Button editarInfo, Button cancelar, Button terminar, Button bajaAlumno, Button añadirFoto, TextBox nombreAl,
                                 TextBox apellidoP, TextBox apellidoM, Label edadL, TextBox edad, TextBox ciudadNac, TextBox estadoNac, DateTimePicker fechaNac,
                                 TextBox curp, TextBox telefonoP, TextBox calleAl, TextBox numCasaAl, TextBox coloniaAl, TextBox ingreso, TextBox ciclo,
                                 TextBox escuela, TextBox canalizado, TextBox nomTutor, TextBox apePTutor, TextBox apeMTutor, TextBox calleTu,
                                 TextBox numCasaTu, TextBox colTu, TextBox ocupacion, TextBox telCasa, TextBox telMovil, TextBox telTrabajo,
                                 TextBox servicioM, TextBox telContacto, TextBox grupoS, Panel discapacidades, Panel enferemedades,
-                                Panel alergias, Panel tratamiento, TableLayoutPanel infoMedica, ComboBox tipoIngresoCB, ComboBox grupoSan,
+                                Panel alergias, Panel tratamiento, RichTextBox tratamientosRTB, ComboBox tipoIngresoCB, ComboBox grupoSan,
                                 Label nombreTL, Label apePTL, Label apeMTL, Label calleTL, Label numCasaTL, Label coloniaTL,
                                 Label calleAlL, Label numCasaAlL, Label coloniaAlL, Label ciudadAlL, Label estadoAlL,Label nombreL, Label apellidoPL, Label apellidoML,
                                 UserControl nombreAlLinea, UserControl apellidoPLinea, UserControl apellidoMLinea, UserControl ciudadLinea,UserControl estadoLinea,
                                 UserControl calleAlLinea,UserControl numCasaAlLinea, UserControl coloniaAlLinea, UserControl curpLinea, UserControl telPersonalLinea,
                                 UserControl escuelaPLinea, UserControl canalizadoLinea, UserControl cicloEscLinea, UserControl nombreTLinea, UserControl apellidoPTLinea, UserControl apellidoMTLinea,
-                                UserControl calleLinea, UserControl numCasaLinea, UserControl coloniaLinea, UserControl ocupacionLinea, UserControl telCasaTLinea, UserControl telMovilTLinea, UserControl telTrabajoTLinea, UserControl servMedicoLinea, UserControl telefonoLinea)
+                                UserControl calleLinea, UserControl numCasaLinea, UserControl coloniaLinea, UserControl ocupacionLinea, UserControl telCasaTLinea,
+                                UserControl telMovilTLinea, UserControl telTrabajoTLinea, UserControl servMedicoLinea, UserControl telefonoLinea,
+                                Button eliDiscapacidad,Button eliEnfermedad, Button eliAlergia, ComboBox discapacidadesCB, ComboBox enfermedadesCB, ComboBox alergiasCB,
+                                Button agrDiscapacidad, Button agrEnfermedad, Button agrAlergia)
         {
 
             //Mostrar 
@@ -341,6 +371,7 @@ namespace presentationLayer
             cancelar.Visible = true;
             terminar.Visible = true;
             añadirFoto.Visible = true;
+            bajaAlumno.Visible = false;
 
             //Posisionar en...
             añadirFoto.Size = new Size(160, 45);
@@ -376,39 +407,43 @@ namespace presentationLayer
 
             //Seccion 4
             servicioM.ReadOnly = false; telContacto.ReadOnly = false; grupoS.Visible = false; grupoSan.Visible = true; ;
-            discapacidades.Visible = false; enferemedades.Visible = false; alergias.Visible = false; tratamiento.Visible = false;
             servMedicoLinea.Visible = true; telefonoLinea.Visible = true;
 
-            infoMedica.Enabled = true;
-            infoMedica.Location = new Point(50, 165);
-            infoMedica.Size = new Size(1000, 150);
-            infoMedica.Visible = true;
 
             tipoIngresoCB.Size = new Size(280, 40);
             tipoIngresoCB.Location = new Point(210, 40);
             tipoIngresoCB.Visible = true;
 
+            eliEnfermedad.Visible = true; eliDiscapacidad.Visible = true; eliAlergia.Visible = true;
+            enfermedadesCB.Visible = true; discapacidadesCB.Visible = true; alergiasCB.Visible = true;
+            tratamientosRTB.ReadOnly = false;
+            agrEnfermedad.Visible = true; agrDiscapacidad.Visible = true; agrAlergia.Visible = true;
+
         }
 
-        public static void ocultarEditarInformacion(Button regresarMenu, Button editarInfo, Button cancelar, Button terminar, Button añadirFoto, TextBox nombreAl,
+        public static void ocultarEditarInformacion(Button regresarMenu, Button editarInfo, Button cancelar, Button terminar, Button bajaAlumno, Button añadirFoto, TextBox nombreAl,
                                             TextBox apellidoP, TextBox apellidoM, Label edadL, TextBox edad, TextBox ciudadNac, TextBox estadoNac, DateTimePicker fechaNac,
                                             TextBox curp, TextBox telefonoP, TextBox calleAl, TextBox numCasaAl, TextBox coloniaAl, TextBox ingreso, TextBox ciclo,
                                             TextBox escuela, TextBox canalizado, TextBox nomTutor, TextBox apePTutor, TextBox apeMTutor, TextBox calleTu,
                                             TextBox numCasaTu, TextBox colTu, TextBox ocupacion, TextBox telCasa, TextBox telMovil, TextBox telTrabajo,
                                             TextBox servicioM, TextBox telContacto, TextBox grupoS, Panel discapacidades, Panel enferemedades,
-                                            Panel alergias, Panel tratamiento, TableLayoutPanel infoMedica, ComboBox tipoIngresoCB, ComboBox grupoSan,
+                                            Panel alergias, Panel tratamiento, RichTextBox tratamientosRTB,  ComboBox tipoIngresoCB, ComboBox grupoSan,
                                             Label nombreTL, Label apePTL, Label apeMTL, Label calleTL, Label numCasaTL, Label coloniaTL,
                                             Label calleAlL, Label numCasaAlL, Label coloniaAlL, Label ciudadAlL, Label estadoAlL, Label nombreL, Label apellidoPL, Label apellidoML,
                                             UserControl nombreAlLinea, UserControl apellidoPLinea, UserControl apellidoMLinea, UserControl ciudadLinea, UserControl estadoLinea,
                                             UserControl calleAlLinea,UserControl numCasaAlLinea, UserControl coloniaAlLinea, UserControl curpLinea, UserControl telPersonalLinea,
                                             UserControl escuelaPLinea, UserControl canalizadoLinea, UserControl cicloEscLinea, UserControl nombreTLinea, UserControl apellidoPTLinea, 
-                                            UserControl apellidoMTLinea, UserControl calleLinea, UserControl numCasaLinea, UserControl coloniaLinea, UserControl ocupacionLinea,UserControl telCasaTLinea, UserControl telMovilTLinea, UserControl telTrabajoTLinea, UserControl servMedicoLinea, UserControl telefonoLinea)
+                                            UserControl apellidoMTLinea, UserControl calleLinea, UserControl numCasaLinea, UserControl coloniaLinea, UserControl ocupacionLinea,
+                                            UserControl telCasaTLinea, UserControl telMovilTLinea, UserControl telTrabajoTLinea, UserControl servMedicoLinea, UserControl telefonoLinea,
+                                            Button eliDiscapacidad,Button eliEnfermedad, Button eliAlergia, ComboBox discapacidadesCB, ComboBox enfermedadesCB, ComboBox alergiasCB,
+                                            Button agrDiscapacidad, Button agrEnfermedad, Button agrAlergia)
         {
             regresarMenu.Visible = true;
             editarInfo.Visible = true;
             cancelar.Visible = false;
             terminar.Visible = false;
             añadirFoto.Visible = false;
+            bajaAlumno.Visible = true;
 
             //Encabezado
             nombreAl.Enabled = true; apellidoP.Enabled = true; apellidoM.Enabled = true; edad.Visible = true; edadL.Visible = true;
@@ -451,10 +486,11 @@ namespace presentationLayer
             discapacidades.Visible = true; enferemedades.Visible = true; alergias.Visible = true; tratamiento.Visible = true;
             servMedicoLinea.Visible = false; telefonoLinea.Visible = false;
 
-            infoMedica.Enabled = false;
-            infoMedica.Visible = false;
-
             tipoIngresoCB.Visible = false;
+            tratamientosRTB.ReadOnly = true;
+            eliEnfermedad.Visible = false; eliDiscapacidad.Visible = false; eliAlergia.Visible = false;
+            enfermedadesCB.Visible = false; discapacidadesCB.Visible = false; alergiasCB.Visible = false;
+            agrEnfermedad.Visible = false; agrDiscapacidad.Visible = false; agrAlergia.Visible = false;
         }
     }
 }

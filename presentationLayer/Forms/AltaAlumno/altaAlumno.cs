@@ -1746,6 +1746,7 @@ namespace presentationLayer
         {
             tratamiento.Clear();
         }
+
     }
 }
 
