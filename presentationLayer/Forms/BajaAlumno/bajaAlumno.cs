@@ -16,9 +16,10 @@ namespace presentationLayer.Forms.BajaAlumno
         _1dataLayer.SP_FichaTecnicaAlumno_Result alumno = new _1dataLayer.SP_FichaTecnicaAlumno_Result();
         _1dataLayer.foto_alumno fotol = new _1dataLayer.foto_alumno();
         int id;
+        ConsultaAlumno cons;
 
 
-        public bajaAlumno(int id_alumno)
+        public bajaAlumno(int id_alumno,Form consultas)
         {
             id = id_alumno;
             InitializeComponent();
@@ -35,6 +36,14 @@ namespace presentationLayer.Forms.BajaAlumno
             curp.Text = alumno.CURP_alumno;
             fotol = _1dataLayer.DLConsultaAlumno.ConsultaFoto(id_alumno);
             foto.Image = byteArrayToImage(fotol.imagen_alumno.ToArray());
+            if (consultas == null)
+            {
+
+            }
+            else
+            {
+                cons = (ConsultaAlumno)consultas;
+            }
         }
 
         public Image byteArrayToImage(byte[] byteArrayIn)
@@ -47,16 +56,25 @@ namespace presentationLayer.Forms.BajaAlumno
         
         private void cancelarBajaButton_Click(object sender, EventArgs e)
         {
-            bajaAlumno baja = new bajaAlumno(id);
+            bajaAlumno baja = new bajaAlumno(id,cons);
             baja.Close();
             this.Hide();
         }
         //Manda el metodo que se encuentra en el DataLayer para eliminar el alumno
         private void continuarBajaButton_Click(object sender, EventArgs e)
         {
+
             businessLayer.BLEliminacionAlumno.eliminaralumno(id);
-            ConsultaAlumno.ActiveForm.ParentForm.Refresh();
-            this.Close();
+            if (cons != null)
+            {
+                ConsultaAlumno a = cons;
+                cons.actualizartabla();
+                this.Close();
+            }
+            else
+            {
+                this.Close();
+            }
         }
     }
 }

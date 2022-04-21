@@ -203,8 +203,28 @@ namespace presentationLayer
 
         private void cancelarEdiButton_Click(object sender, EventArgs e)
         {
-            ocultarEditarInformacion();
-            
+            discapacidades.Text = "";
+            enfermedades.Text = "";
+            alergias.Text = "";
+            tratamientos.Text = "";
+            ocultarEditarInformacion();//Información del alumno
+            idalumno = businessLayer.BLFichaTecnica.infoGenAlumno(nombreAl, apellidoP, apellidoM, edad, matricula, fechaNa, ciudad, estado, curp, telPersonal, calle, numeroCasa, colonia, tipoIngreso, idalumno);
+
+            //Informacion escolar del alumno
+            businessLayer.BLFichaTecnica.infoEscAlumno(tipoIngreso, escuelaP, canalizado, cicloEsc, idalumno);
+
+            //Información del tutor
+            idtutor = businessLayer.BLFichaTecnica.infoTutor(nombreT, apellidoPT, apellidoMT, calleT, numeroCasaT, coloniaT, ocupacion, telCasaT, telMovilT, telTrabajoT, idalumno);
+
+            //Información médica
+            businessLayer.BLFichaTecnica.infoMedAlumno(servMedico, telefono, grupoSanguineo, idalumno);
+
+            //Discapacidades, enfermedades, alergias y tratamientos
+            businessLayer.BLFichaTecnica.infoMedAlumno2(discapacidades, enfermedades, alergias, tratamientos, idalumno);
+
+            //Foto
+            fotol = _1dataLayer.DLConsultaAlumno.ConsultaFoto(idalumno);
+            foto.Image = byteArrayToImage(fotol.imagen_alumno.ToArray());
         }
 
         private void terminarEdiButton_Click(object sender, EventArgs e)
@@ -657,7 +677,7 @@ namespace presentationLayer
         {
             int id = 0;
             id = idalumno;
-            bajaAlumno baja = new bajaAlumno(id);
+            bajaAlumno baja = new bajaAlumno(id,null);
             baja.Show();
             this.Update();
         }

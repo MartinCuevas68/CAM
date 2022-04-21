@@ -28,6 +28,15 @@ namespace presentationLayer
              altaDataGridView.ReadOnly = true;
         }
 
+       
+
+        public void actualizartabla()
+        {
+            altaDataGridView.DataSource = businessLayer.BLConsultaAlumno.alumnosGet();
+            altaDataGridView.Refresh();
+            this.Refresh();
+        }
+
         private void Consultas_Load(object sender, EventArgs e)
         {
             altaDataGridView.DataSource = businessLayer.BLConsultaAlumno.alumnosGet();
@@ -225,9 +234,8 @@ namespace presentationLayer
         {
             int id = 0;
             id = int.Parse(altaDataGridView.CurrentRow.Cells[0].Value.ToString());
-            bajaAlumno baja = new bajaAlumno(id);
+            bajaAlumno baja = new bajaAlumno(id,this);
             baja.Show();
-            this.Update();
         }
 
         private void imprimirFormatosButton_Click(object sender, EventArgs e)
