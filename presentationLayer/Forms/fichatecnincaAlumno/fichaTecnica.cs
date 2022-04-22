@@ -667,8 +667,8 @@ namespace presentationLayer
         {
             int id = 0;
             id = idalumno;
-            bajaAlumno baja = new bajaAlumno(id,null);
-            baja.Show();
+            bajaAlumnoFicha bajaFT = new bajaAlumnoFicha(id,this);
+            bajaFT.ShowDialog();
             this.Update();
         }
     }

@@ -25,6 +25,7 @@ namespace presentationLayer.Forms.BajaAlumno
             InitializeComponent();
             PLBajaAlumno.datosAlumno(foto, nombreAlLabel, nombreAl, matriculaLabel, matricula, tipoIngresoLabel,
                                     tipoIngreso, edadLabel, edad, curpLabel, curp);
+
             PLBajaAlumno.plantillaBajas(tituloLabel, pregunta, cancelarBajaButton, continuarBajaButton);
 
             alumno = _1dataLayer.DLConsultaAlumno.FichaTenicaAlumno(id_alumno);
@@ -45,6 +46,8 @@ namespace presentationLayer.Forms.BajaAlumno
                 cons = (ConsultaAlumno)consultas;
             }
         }
+
+
 
         public Image byteArrayToImage(byte[] byteArrayIn)
         {
