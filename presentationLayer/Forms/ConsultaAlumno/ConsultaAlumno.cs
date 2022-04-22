@@ -235,7 +235,7 @@ namespace presentationLayer
             int id = 0;
             id = int.Parse(altaDataGridView.CurrentRow.Cells[0].Value.ToString());
             bajaAlumno baja = new bajaAlumno(id,this);
-            baja.Show();
+            baja.ShowDialog();
         }
 
         private void imprimirFormatosButton_Click(object sender, EventArgs e)

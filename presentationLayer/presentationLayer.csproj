@@ -70,6 +70,13 @@
     <Compile Include="Forms\BajaAlumno\bajaAlumno.Designer.cs">
       <DependentUpon>bajaAlumno.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\BajaAlumno\bajaAlumnoFicha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BajaAlumno\bajaAlumnoFicha.Designer.cs">
+      <DependentUpon>bajaAlumnoFicha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BajaAlumno\PLBajaAlumnoFicha.cs" />
     <Compile Include="Forms\BajaAlumno\PLBajaAlumno.cs" />
     <Compile Include="Forms\ConsultaAlumno\ConsultaAlumno.cs">
       <SubType>Form</SubType>
@@ -118,6 +125,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\BajaAlumno\bajaAlumno.resx">
       <DependentUpon>bajaAlumno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BajaAlumno\bajaAlumnoFicha.resx">
+      <DependentUpon>bajaAlumnoFicha.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ConsultaAlumno\ConsultaAlumno.resx">
       <DependentUpon>ConsultaAlumno.cs</DependentUpon>

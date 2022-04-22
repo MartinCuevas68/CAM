@@ -51,20 +51,18 @@ namespace presentationLayer.Forms.BajaAlumno
             // 
             this.tituloLabel.AutoSize = true;
             this.tituloLabel.Font = new System.Drawing.Font("Trebuchet MS", 20F, System.Drawing.FontStyle.Bold);
-            this.tituloLabel.Location = new System.Drawing.Point(283, 30);
-            this.tituloLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.tituloLabel.Location = new System.Drawing.Point(212, 24);
             this.tituloLabel.Name = "tituloLabel";
-            this.tituloLabel.Size = new System.Drawing.Size(405, 43);
+            this.tituloLabel.Size = new System.Drawing.Size(324, 35);
             this.tituloLabel.TabIndex = 16;
             this.tituloLabel.Text = "B a j a   D e   A l u m n o ";
             // 
             // foto
             // 
             this.foto.BackColor = System.Drawing.Color.White;
-            this.foto.Location = new System.Drawing.Point(52, 87);
-            this.foto.Margin = new System.Windows.Forms.Padding(4);
+            this.foto.Location = new System.Drawing.Point(39, 71);
             this.foto.Name = "foto";
-            this.foto.Size = new System.Drawing.Size(155, 196);
+            this.foto.Size = new System.Drawing.Size(116, 159);
             this.foto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.foto.TabIndex = 203;
             this.foto.TabStop = false;
@@ -74,11 +72,10 @@ namespace presentationLayer.Forms.BajaAlumno
             this.edad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.edad.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.edad.Font = new System.Drawing.Font("Gadugi", 14.25F);
-            this.edad.Location = new System.Drawing.Point(292, 244);
-            this.edad.Margin = new System.Windows.Forms.Padding(4);
+            this.edad.Location = new System.Drawing.Point(219, 198);
             this.edad.Name = "edad";
             this.edad.ReadOnly = true;
-            this.edad.Size = new System.Drawing.Size(62, 32);
+            this.edad.Size = new System.Drawing.Size(46, 26);
             this.edad.TabIndex = 240;
             // 
             // matricula
@@ -86,11 +83,10 @@ namespace presentationLayer.Forms.BajaAlumno
             this.matricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.matricula.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.matricula.Font = new System.Drawing.Font("Gadugi", 14.25F);
-            this.matricula.Location = new System.Drawing.Point(344, 178);
-            this.matricula.Margin = new System.Windows.Forms.Padding(4);
+            this.matricula.Location = new System.Drawing.Point(258, 145);
             this.matricula.Name = "matricula";
             this.matricula.ReadOnly = true;
-            this.matricula.Size = new System.Drawing.Size(82, 32);
+            this.matricula.Size = new System.Drawing.Size(62, 26);
             this.matricula.TabIndex = 239;
             // 
             // nombreAl
@@ -99,22 +95,20 @@ namespace presentationLayer.Forms.BajaAlumno
             this.nombreAl.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.nombreAl.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.nombreAl.Font = new System.Drawing.Font("Gadugi", 14.25F);
-            this.nombreAl.Location = new System.Drawing.Point(326, 107);
-            this.nombreAl.Margin = new System.Windows.Forms.Padding(4);
+            this.nombreAl.Location = new System.Drawing.Point(244, 87);
             this.nombreAl.MaxLength = 25;
             this.nombreAl.Name = "nombreAl";
             this.nombreAl.ReadOnly = true;
-            this.nombreAl.Size = new System.Drawing.Size(515, 32);
+            this.nombreAl.Size = new System.Drawing.Size(386, 26);
             this.nombreAl.TabIndex = 238;
             // 
             // matriculaLabel
             // 
             this.matriculaLabel.AutoSize = true;
             this.matriculaLabel.Font = new System.Drawing.Font("Gadugi", 14.25F, System.Drawing.FontStyle.Bold);
-            this.matriculaLabel.Location = new System.Drawing.Point(213, 178);
-            this.matriculaLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.matriculaLabel.Location = new System.Drawing.Point(160, 145);
             this.matriculaLabel.Name = "matriculaLabel";
-            this.matriculaLabel.Size = new System.Drawing.Size(128, 28);
+            this.matriculaLabel.Size = new System.Drawing.Size(99, 21);
             this.matriculaLabel.TabIndex = 237;
             this.matriculaLabel.Text = "Matricula:";
             // 
@@ -122,10 +116,9 @@ namespace presentationLayer.Forms.BajaAlumno
             // 
             this.edadLabel.AutoSize = true;
             this.edadLabel.Font = new System.Drawing.Font("Gadugi", 14.25F, System.Drawing.FontStyle.Bold);
-            this.edadLabel.Location = new System.Drawing.Point(213, 244);
-            this.edadLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.edadLabel.Location = new System.Drawing.Point(160, 198);
             this.edadLabel.Name = "edadLabel";
-            this.edadLabel.Size = new System.Drawing.Size(75, 28);
+            this.edadLabel.Size = new System.Drawing.Size(59, 21);
             this.edadLabel.TabIndex = 236;
             this.edadLabel.Text = "Edad:";
             // 
@@ -133,10 +126,9 @@ namespace presentationLayer.Forms.BajaAlumno
             // 
             this.nombreAlLabel.AutoSize = true;
             this.nombreAlLabel.Font = new System.Drawing.Font("Gadugi", 14.25F, System.Drawing.FontStyle.Bold);
-            this.nombreAlLabel.Location = new System.Drawing.Point(213, 107);
-            this.nombreAlLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.nombreAlLabel.Location = new System.Drawing.Point(160, 87);
             this.nombreAlLabel.Name = "nombreAlLabel";
-            this.nombreAlLabel.Size = new System.Drawing.Size(113, 28);
+            this.nombreAlLabel.Size = new System.Drawing.Size(89, 21);
             this.nombreAlLabel.TabIndex = 235;
             this.nombreAlLabel.Text = "Nombre:";
             // 
@@ -146,21 +138,19 @@ namespace presentationLayer.Forms.BajaAlumno
             this.tipoIngreso.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tipoIngreso.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.tipoIngreso.Font = new System.Drawing.Font("Gadugi", 14.25F);
-            this.tipoIngreso.Location = new System.Drawing.Point(637, 178);
-            this.tipoIngreso.Margin = new System.Windows.Forms.Padding(4);
+            this.tipoIngreso.Location = new System.Drawing.Point(478, 145);
             this.tipoIngreso.Name = "tipoIngreso";
             this.tipoIngreso.ReadOnly = true;
-            this.tipoIngreso.Size = new System.Drawing.Size(204, 32);
+            this.tipoIngreso.Size = new System.Drawing.Size(153, 26);
             this.tipoIngreso.TabIndex = 246;
             // 
             // tipoIngresoLabel
             // 
             this.tipoIngresoLabel.AutoSize = true;
             this.tipoIngresoLabel.Font = new System.Drawing.Font("Gadugi", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tipoIngresoLabel.Location = new System.Drawing.Point(439, 178);
-            this.tipoIngresoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.tipoIngresoLabel.Location = new System.Drawing.Point(329, 145);
             this.tipoIngresoLabel.Name = "tipoIngresoLabel";
-            this.tipoIngresoLabel.Size = new System.Drawing.Size(198, 28);
+            this.tipoIngresoLabel.Size = new System.Drawing.Size(154, 21);
             this.tipoIngresoLabel.TabIndex = 244;
             this.tipoIngresoLabel.Text = "Tipo de ingreso:";
             // 
@@ -170,22 +160,20 @@ namespace presentationLayer.Forms.BajaAlumno
             this.curp.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.curp.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.curp.Font = new System.Drawing.Font("Gadugi", 14.25F);
-            this.curp.Location = new System.Drawing.Point(521, 244);
-            this.curp.Margin = new System.Windows.Forms.Padding(4);
+            this.curp.Location = new System.Drawing.Point(391, 198);
             this.curp.MaxLength = 18;
             this.curp.Name = "curp";
             this.curp.ReadOnly = true;
-            this.curp.Size = new System.Drawing.Size(273, 32);
+            this.curp.Size = new System.Drawing.Size(205, 26);
             this.curp.TabIndex = 245;
             // 
             // curpLabel
             // 
             this.curpLabel.AutoSize = true;
             this.curpLabel.Font = new System.Drawing.Font("Gadugi", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.curpLabel.Location = new System.Drawing.Point(439, 244);
-            this.curpLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.curpLabel.Location = new System.Drawing.Point(329, 198);
             this.curpLabel.Name = "curpLabel";
-            this.curpLabel.Size = new System.Drawing.Size(82, 28);
+            this.curpLabel.Size = new System.Drawing.Size(65, 21);
             this.curpLabel.TabIndex = 243;
             this.curpLabel.Text = "CURP:";
             // 
@@ -193,10 +181,9 @@ namespace presentationLayer.Forms.BajaAlumno
             // 
             this.pregunta.AutoSize = true;
             this.pregunta.Font = new System.Drawing.Font("Gadugi", 14.25F, System.Drawing.FontStyle.Bold);
-            this.pregunta.Location = new System.Drawing.Point(231, 341);
-            this.pregunta.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.pregunta.Location = new System.Drawing.Point(173, 277);
             this.pregunta.Name = "pregunta";
-            this.pregunta.Size = new System.Drawing.Size(529, 28);
+            this.pregunta.Size = new System.Drawing.Size(408, 21);
             this.pregunta.TabIndex = 247;
             this.pregunta.Text = "¿Se encuentra seguro de realizar esta acción?";
             // 
@@ -210,11 +197,11 @@ namespace presentationLayer.Forms.BajaAlumno
             this.continuarBajaButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.continuarBajaButton.Font = new System.Drawing.Font("Gadugi", 14F, System.Drawing.FontStyle.Bold);
             this.continuarBajaButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(98)))), ((int)(((byte)(242)))));
-            this.continuarBajaButton.Location = new System.Drawing.Point(468, 391);
-            this.continuarBajaButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.continuarBajaButton.Location = new System.Drawing.Point(351, 318);
+            this.continuarBajaButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.continuarBajaButton.Name = "continuarBajaButton";
             this.continuarBajaButton.Padding = new System.Windows.Forms.Padding(1);
-            this.continuarBajaButton.Size = new System.Drawing.Size(312, 44);
+            this.continuarBajaButton.Size = new System.Drawing.Size(234, 36);
             this.continuarBajaButton.TabIndex = 249;
             this.continuarBajaButton.Text = "Continuar con la baja";
             this.continuarBajaButton.UseVisualStyleBackColor = false;
@@ -230,11 +217,11 @@ namespace presentationLayer.Forms.BajaAlumno
             this.cancelarBajaButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cancelarBajaButton.Font = new System.Drawing.Font("Gadugi", 14F, System.Drawing.FontStyle.Bold);
             this.cancelarBajaButton.ForeColor = System.Drawing.Color.White;
-            this.cancelarBajaButton.Location = new System.Drawing.Point(218, 391);
-            this.cancelarBajaButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cancelarBajaButton.Location = new System.Drawing.Point(164, 318);
+            this.cancelarBajaButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cancelarBajaButton.Name = "cancelarBajaButton";
             this.cancelarBajaButton.Padding = new System.Windows.Forms.Padding(1);
-            this.cancelarBajaButton.Size = new System.Drawing.Size(215, 44);
+            this.cancelarBajaButton.Size = new System.Drawing.Size(161, 36);
             this.cancelarBajaButton.TabIndex = 248;
             this.cancelarBajaButton.Text = "Cancelar baja";
             this.cancelarBajaButton.UseVisualStyleBackColor = false;
@@ -242,10 +229,10 @@ namespace presentationLayer.Forms.BajaAlumno
             // 
             // bajaAlumno
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(996, 467);
+            this.ClientSize = new System.Drawing.Size(747, 379);
             this.ControlBox = false;
             this.Controls.Add(this.continuarBajaButton);
             this.Controls.Add(this.cancelarBajaButton);
@@ -262,6 +249,7 @@ namespace presentationLayer.Forms.BajaAlumno
             this.Controls.Add(this.nombreAlLabel);
             this.Controls.Add(this.foto);
             this.Controls.Add(this.tituloLabel);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "bajaAlumno";
