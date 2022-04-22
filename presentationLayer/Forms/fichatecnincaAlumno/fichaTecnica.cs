@@ -687,7 +687,7 @@ namespace presentationLayer
             int id = 0;
             id = idalumno;
             bajaAlumno baja = new bajaAlumno(id,null);
-            baja.Show();
+            baja.ShowDialog();
             this.Update();
         }
 

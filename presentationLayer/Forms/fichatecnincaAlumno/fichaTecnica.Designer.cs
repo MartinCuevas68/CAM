@@ -553,7 +553,7 @@ namespace presentationLayer
             this.grupoSanguineoLabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.grupoSanguineoLabel.Location = new System.Drawing.Point(685, 18);
             this.grupoSanguineoLabel.Name = "grupoSanguineoLabel";
-            this.grupoSanguineoLabel.Size = new System.Drawing.Size(202, 27);
+            this.grupoSanguineoLabel.Size = new System.Drawing.Size(217, 28);
             this.grupoSanguineoLabel.TabIndex = 185;
             this.grupoSanguineoLabel.Text = "Grupo sanguíneo:";
             // 
@@ -586,7 +586,7 @@ namespace presentationLayer
             this.servMedicoLabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.servMedicoLabel.Location = new System.Drawing.Point(23, 7);
             this.servMedicoLabel.Name = "servMedicoLabel";
-            this.servMedicoLabel.Size = new System.Drawing.Size(188, 27);
+            this.servMedicoLabel.Size = new System.Drawing.Size(200, 28);
             this.servMedicoLabel.TabIndex = 184;
             this.servMedicoLabel.Text = "Servicio médico:";
             // 
@@ -597,7 +597,7 @@ namespace presentationLayer
             this.telefonoLabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.telefonoLabel.Location = new System.Drawing.Point(23, 50);
             this.telefonoLabel.Name = "telefonoLabel";
-            this.telefonoLabel.Size = new System.Drawing.Size(245, 27);
+            this.telefonoLabel.Size = new System.Drawing.Size(262, 28);
             this.telefonoLabel.TabIndex = 188;
             this.telefonoLabel.Text = "Teléfono de contacto:";
             // 
@@ -871,7 +871,6 @@ namespace presentationLayer
             this.coloniaT.Size = new System.Drawing.Size(121, 32);
             this.coloniaT.TabIndex = 94;
             this.coloniaT.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.coloniaT.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.letras_KeyPress);
             // 
             // numeroCasaT
             // 
@@ -895,7 +894,7 @@ namespace presentationLayer
             this.nombreCTLabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.nombreCTLabel.Location = new System.Drawing.Point(43, 21);
             this.nombreCTLabel.Name = "nombreCTLabel";
-            this.nombreCTLabel.Size = new System.Drawing.Size(106, 27);
+            this.nombreCTLabel.Size = new System.Drawing.Size(113, 28);
             this.nombreCTLabel.TabIndex = 170;
             this.nombreCTLabel.Text = "Nombre:";
             // 
@@ -1474,7 +1473,6 @@ namespace presentationLayer
             this.colonia.Size = new System.Drawing.Size(96, 32);
             this.colonia.TabIndex = 201;
             this.colonia.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.colonia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.letras_KeyPress);
             // 
             // numeroCasa
             // 
