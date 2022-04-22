@@ -201,5 +201,128 @@ namespace businessLayer
         {
             _1dataLayer.DLModificacionAlumno.modificacionmedica(medica.id_cartilla_medica, medica);
         }
+
+
+        public static void modificaralergias(List<int> alergiasids, List<int> alergiasvar, int idcartilla)
+        {
+            List<int> eliminar = new List<int>();
+            List<int> nuevas = new List<int>();
+
+            foreach (int id in alergiasids)
+            {
+                Console.WriteLine(id);
+                if (!alergiasvar.Contains(id))
+                {
+                    nuevas.Add(id);
+                }
+            }
+
+            foreach (int id in alergiasvar)
+            {
+                Console.WriteLine(id);
+                if (!alergiasids.Contains(id))
+                {
+                    eliminar.Add(id);
+                }
+            }
+
+            foreach(int id in nuevas)
+            {
+                _1dataLayer.DLModificacionAlumno.agregaralergia(idcartilla,id);
+                
+            }
+
+            foreach (int id in eliminar)
+            {
+                Console.WriteLine(id + " " + idcartilla);
+                _1dataLayer.DLModificacionAlumno.eliminaralergia(idcartilla,id);
+            }
+        }
+
+        public static void modificarenfermedades(List<int> enfermedadesids, List<int> enfermedadesvar, int idcartilla)
+        {
+            List<int> eliminar = new List<int>();
+            List<int> nuevas = new List<int>();
+            
+            foreach (int id in enfermedadesids)
+            {
+                Console.WriteLine("Nuevas: " + id);
+                if (!enfermedadesvar.Contains(id))
+                {
+                    nuevas.Add(id);
+                }
+            }
+
+            foreach (int id in enfermedadesvar)
+            {
+                Console.WriteLine("Eliminar: " + id);
+                if (!enfermedadesids.Contains(id))
+                {
+                    eliminar.Add(id);
+                }
+            }
+
+            foreach (int id in nuevas)
+            {
+                Console.WriteLine("Nuevas enfermedades " + id);
+                _1dataLayer.DLModificacionAlumno.agregarenfermedad(idcartilla, id);
+
+            }
+
+            foreach (int id in eliminar)
+            {
+                Console.WriteLine("Viejas enfermedades" + id);
+                _1dataLayer.DLModificacionAlumno.eliminarenfermedad(idcartilla, id);
+            }
+        }
+
+
+
+
+        public static void modificardiscapacidades(List<int> discapacidadesids, List<int> discapacidadesvar, int idcartilla)
+        {
+            List<int> eliminar = new List<int>();
+            List<int> nuevas = new List<int>();
+
+            foreach (int id in discapacidadesids)
+            {
+                Console.WriteLine(id);
+                if (!discapacidadesvar.Contains(id))
+                {
+                    nuevas.Add(id);
+                }
+            }
+
+            foreach (int id in discapacidadesvar)
+            {
+                Console.WriteLine(id);
+                if (!discapacidadesids.Contains(id))
+                {
+                    eliminar.Add(id);
+                }
+            }
+
+            foreach (int id in nuevas)
+            {
+                _1dataLayer.DLModificacionAlumno.agregardiscapacidad(idcartilla, id);
+
+            }
+
+            foreach (int id in eliminar)
+            {
+                Console.WriteLine(id + " " + idcartilla);
+                _1dataLayer.DLModificacionAlumno.eliminardiscapacidad(idcartilla, id);
+            }
+        }
+
+
+
+        public static void actualizartratamiento(string tratamiento, int cartilla)
+        {
+            _1dataLayer.DLModificacionAlumno.modificartratamiento(cartilla, tratamiento);
+        }
     }
+
+
+
 }

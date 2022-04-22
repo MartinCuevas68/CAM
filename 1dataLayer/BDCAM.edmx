@@ -622,7 +622,7 @@ warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a prima
           <Parameter Name="enfermedad" Type="varchar" Mode="In" />
         </Function>
         <Function Name="Modificar_tratamiento" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
-          <Parameter Name="idtratamiento" Type="int" Mode="In" />
+          <Parameter Name="Id_Cartilla" Type="int" Mode="In" />
           <Parameter Name="tratamiento" Type="varchar" Mode="In" />
         </Function>
         <Function Name="sp_altaalergias" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
@@ -712,6 +712,22 @@ warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a prima
         <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
           <Parameter Name="owner_id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_Eliminacion_Alergia" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id_cartilla" Type="int" Mode="In" />
+          <Parameter Name="id_Alergia" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_Eliminacion_Discapacidad" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id_cartilla" Type="int" Mode="In" />
+          <Parameter Name="id_Discapacidad" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_Eliminacion_Enfermedad" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id_cartilla" Type="int" Mode="In" />
+          <Parameter Name="id_enfermedad" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_Eliminacion_Tratamiento" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id_cartilla" Type="int" Mode="In" />
+          <Parameter Name="id_Tratamiento" Type="int" Mode="In" />
         </Function>
         <Function Name="SP_Eliminar_Alumno" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="id_alumno" Type="int" Mode="In" />
@@ -1408,7 +1424,7 @@ warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a prima
             <Parameter Name="enfermedad" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="Modificar_tratamiento">
-            <Parameter Name="idtratamiento" Mode="In" Type="Int32" />
+            <Parameter Name="Id_Cartilla" Mode="In" Type="Int32" />
             <Parameter Name="tratamiento" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="SP_consulta_foto_alumno" ReturnType="Collection(BDCAMModel.SP_consulta_foto_alumno_Result)">
@@ -1496,7 +1512,23 @@ warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a prima
           </FunctionImport>
           <FunctionImport Name="sp_upgraddiagrams1" />
           <FunctionImport Name="SP_Eliminar_Alumno">
-            <Parameter Name="id_alumno" Mode="In" Type="Int32" />
+          <Parameter Name="id_alumno" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Eliminacion_Alergia">
+            <Parameter Name="id_cartilla" Mode="In" Type="Int32" />
+            <Parameter Name="id_Alergia" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Eliminacion_Discapacidad">
+            <Parameter Name="id_cartilla" Mode="In" Type="Int32" />
+            <Parameter Name="id_Discapacidad" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Eliminacion_Enfermedad">
+            <Parameter Name="id_cartilla" Mode="In" Type="Int32" />
+            <Parameter Name="id_enfermedad" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Eliminacion_Tratamiento">
+            <Parameter Name="id_cartilla" Mode="In" Type="Int32" />
+            <Parameter Name="id_Tratamiento" Mode="In" Type="Int32" />
           </FunctionImport>
         </EntityContainer>
         <ComplexType Name="SP_FichaTecnicaAlumno_Result">
@@ -2283,6 +2315,10 @@ warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a prima
           <FunctionImportMapping FunctionImportName="sp_renamediagram1" FunctionName="BDCAMModel.Store.sp_renamediagram" />
           <FunctionImportMapping FunctionImportName="sp_upgraddiagrams1" FunctionName="BDCAMModel.Store.sp_upgraddiagrams" />
           <FunctionImportMapping FunctionImportName="SP_Eliminar_Alumno" FunctionName="BDCAMModel.Store.SP_Eliminar_Alumno" />
+          <FunctionImportMapping FunctionImportName="SP_Eliminacion_Alergia" FunctionName="BDCAMModel.Store.SP_Eliminacion_Alergia" />
+          <FunctionImportMapping FunctionImportName="SP_Eliminacion_Discapacidad" FunctionName="BDCAMModel.Store.SP_Eliminacion_Discapacidad" />
+          <FunctionImportMapping FunctionImportName="SP_Eliminacion_Enfermedad" FunctionName="BDCAMModel.Store.SP_Eliminacion_Enfermedad" />
+          <FunctionImportMapping FunctionImportName="SP_Eliminacion_Tratamiento" FunctionName="BDCAMModel.Store.SP_Eliminacion_Tratamiento" />
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

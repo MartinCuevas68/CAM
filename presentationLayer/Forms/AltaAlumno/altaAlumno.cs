@@ -515,7 +515,7 @@ namespace presentationLayer
         {
             int curple = curp.TextLength; //Variable int que guarda la longitud de caracteres del CURP
 
-            if (nombreAl.Text.Equals(""))
+            if (nombreAl.Text.Equals("") || apellidoP.Text.Equals(""))
             {
                 MessageBox.Show("¡No se ha ingresado el nombre completo del alumno!", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
@@ -691,7 +691,7 @@ namespace presentationLayer
 
         private void siguiente3Button_Click(object sender, EventArgs e)
         {
-            if (nombreT.Text.Equals(""))
+            if (nombreT.Text.Equals("") || apellidoPT.Text.Equals(""))
             {
                 MessageBox.Show("¡No se ha ingresado el nombre completo del tutor!", "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
@@ -802,15 +802,16 @@ namespace presentationLayer
                         if (nuevoIngreso.Checked)
                         {
                             value = "Nuevo Ingreso";
+                            MessageBox.Show(value);
                         }
                         else
                         {
                             if (reingreso.Checked)
                             {
                                 value = "Reingreso";
+                                MessageBox.Show(value);
                             }
                         }
-                        try {
                         businessLayer.BLAltaAlumno.SetAlumno2(cicloEsc.Text,
                                                              nombreAl.Text,
                                                              apellidoP.Text,
@@ -857,12 +858,6 @@ namespace presentationLayer
                         businessLayer.BLAltaAlumno.SetTratamiento(tratamiento.Text);
 
                         businessLayer.BLAltaAlumno.SetTelefonos(telefonocasatutorTextBox.Text,telefonomoviltutorTextBox.Text, telefonotrabajotutorTextBox.Text);
-                        
-                            MessageBox.Show("Registro exitoso", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        }
-                        catch (Exception ex) { 
-                            MessageBox.Show("Error al dar de alta", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        }
 
 
                         //Guardar Foto alumno   **NO BORRAR LO QUE ESTÁ COMENTADO!!!!!**

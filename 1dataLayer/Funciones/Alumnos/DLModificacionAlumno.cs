@@ -19,29 +19,6 @@ namespace _1dataLayer
             }
         }
 
-        public static void ModificacionEnfermedad(int id, String en)
-        {
-            using (BDCAMEntities db = new BDCAMEntities())
-            {
-                db.Modificar_enfermedades(id, en);
-            }
-        }
-
-        public static void ModificacionDiscapacidad(int id, string disc)
-        {
-            using (BDCAMEntities db = new BDCAMEntities())
-            {
-                db.Modificar_discapacidades(id, disc);
-            }
-        }
-
-        public static void ModificacionAlergia(int id, string alergia)
-        {
-            using (BDCAMEntities db = new BDCAMEntities())
-            {
-                db.SP_Modificar_alergias(id, alergia);
-            }
-        }
 
         public static void ModificacionTutor(int id, SP_FichaTecnicaAlumnoTutor_Result tutor)
         {
@@ -69,5 +46,69 @@ namespace _1dataLayer
             }
         }
 
+
+        public static void agregaralergia(int cartilla,int alergia)
+        {
+            using(BDCAMEntities db = new BDCAMEntities())
+            {
+                
+                db.sp_altaalergias(cartilla, alergia);
+                
+            }
+        }
+
+        public static void eliminaralergia(int cartilla, int alergia)
+        {
+            using (BDCAMEntities db = new BDCAMEntities())
+            {
+                db.SP_Eliminacion_Alergia(cartilla, alergia);   
+            }
+        }
+
+
+        public static void agregarenfermedad(int cartilla, int enfermedad)
+        {
+            using (BDCAMEntities db = new BDCAMEntities())
+            {
+
+                db.sp_altaenfermedades(cartilla, enfermedad);
+
+            }
+        }
+
+        public static void eliminarenfermedad(int cartilla, int enfermedad)
+        {
+            using (BDCAMEntities db = new BDCAMEntities())
+            {
+                db.SP_Eliminacion_Enfermedad(cartilla,enfermedad);
+            }
+        }
+
+        public static void agregardiscapacidad(int cartilla, int discapacidad)
+        {
+            using (BDCAMEntities db = new BDCAMEntities())
+            {
+
+                db.sp_altadiscapacidades(cartilla, discapacidad);
+
+            }
+        }
+
+        public static void eliminardiscapacidad(int cartilla, int discapacidad)
+        {
+            using (BDCAMEntities db = new BDCAMEntities())
+            {
+                db.SP_Eliminacion_Discapacidad(cartilla, discapacidad);
+            }
+        }
+
+
+        public static void modificartratamiento(int cartilla,string tratamiento)
+        {
+            using (BDCAMEntities db = new BDCAMEntities())
+            {
+                db.Modificar_tratamiento(cartilla,tratamiento); ; 
+            }
+        }
     }
 }

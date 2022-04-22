@@ -609,17 +609,17 @@ namespace _1dataLayer
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Modificar_enfermedades", idenfermedadParameter, enfermedadParameter);
         }
     
-        public virtual int Modificar_tratamiento(Nullable<int> idtratamiento, string tratamiento)
+        public virtual int Modificar_tratamiento(Nullable<int> id_Cartilla, string tratamiento)
         {
-            var idtratamientoParameter = idtratamiento.HasValue ?
-                new ObjectParameter("idtratamiento", idtratamiento) :
-                new ObjectParameter("idtratamiento", typeof(int));
+            var id_CartillaParameter = id_Cartilla.HasValue ?
+                new ObjectParameter("Id_Cartilla", id_Cartilla) :
+                new ObjectParameter("Id_Cartilla", typeof(int));
     
             var tratamientoParameter = tratamiento != null ?
                 new ObjectParameter("tratamiento", tratamiento) :
                 new ObjectParameter("tratamiento", typeof(string));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Modificar_tratamiento", idtratamientoParameter, tratamientoParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Modificar_tratamiento", id_CartillaParameter, tratamientoParameter);
         }
     
         public virtual ObjectResult<SP_consulta_foto_alumno_Result> SP_consulta_foto_alumno(Nullable<int> id_alumno)
@@ -866,6 +866,58 @@ namespace _1dataLayer
                 new ObjectParameter("id_alumno", typeof(int));
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_Eliminar_Alumno", id_alumnoParameter);
+        }
+    
+        public virtual int SP_Eliminacion_Alergia(Nullable<int> id_cartilla, Nullable<int> id_Alergia)
+        {
+            var id_cartillaParameter = id_cartilla.HasValue ?
+                new ObjectParameter("id_cartilla", id_cartilla) :
+                new ObjectParameter("id_cartilla", typeof(int));
+    
+            var id_AlergiaParameter = id_Alergia.HasValue ?
+                new ObjectParameter("id_Alergia", id_Alergia) :
+                new ObjectParameter("id_Alergia", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_Eliminacion_Alergia", id_cartillaParameter, id_AlergiaParameter);
+        }
+    
+        public virtual int SP_Eliminacion_Discapacidad(Nullable<int> id_cartilla, Nullable<int> id_Discapacidad)
+        {
+            var id_cartillaParameter = id_cartilla.HasValue ?
+                new ObjectParameter("id_cartilla", id_cartilla) :
+                new ObjectParameter("id_cartilla", typeof(int));
+    
+            var id_DiscapacidadParameter = id_Discapacidad.HasValue ?
+                new ObjectParameter("id_Discapacidad", id_Discapacidad) :
+                new ObjectParameter("id_Discapacidad", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_Eliminacion_Discapacidad", id_cartillaParameter, id_DiscapacidadParameter);
+        }
+    
+        public virtual int SP_Eliminacion_Enfermedad(Nullable<int> id_cartilla, Nullable<int> id_enfermedad)
+        {
+            var id_cartillaParameter = id_cartilla.HasValue ?
+                new ObjectParameter("id_cartilla", id_cartilla) :
+                new ObjectParameter("id_cartilla", typeof(int));
+    
+            var id_enfermedadParameter = id_enfermedad.HasValue ?
+                new ObjectParameter("id_enfermedad", id_enfermedad) :
+                new ObjectParameter("id_enfermedad", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_Eliminacion_Enfermedad", id_cartillaParameter, id_enfermedadParameter);
+        }
+    
+        public virtual int SP_Eliminacion_Tratamiento(Nullable<int> id_cartilla, Nullable<int> id_Tratamiento)
+        {
+            var id_cartillaParameter = id_cartilla.HasValue ?
+                new ObjectParameter("id_cartilla", id_cartilla) :
+                new ObjectParameter("id_cartilla", typeof(int));
+    
+            var id_TratamientoParameter = id_Tratamiento.HasValue ?
+                new ObjectParameter("id_Tratamiento", id_Tratamiento) :
+                new ObjectParameter("id_Tratamiento", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_Eliminacion_Tratamiento", id_cartillaParameter, id_TratamientoParameter);
         }
     }
 }

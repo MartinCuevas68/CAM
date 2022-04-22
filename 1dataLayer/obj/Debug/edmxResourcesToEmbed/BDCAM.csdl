@@ -388,7 +388,7 @@
       <Parameter Name="enfermedad" Mode="In" Type="String" />
     </FunctionImport>
     <FunctionImport Name="Modificar_tratamiento">
-      <Parameter Name="idtratamiento" Mode="In" Type="Int32" />
+      <Parameter Name="Id_Cartilla" Mode="In" Type="Int32" />
       <Parameter Name="tratamiento" Mode="In" Type="String" />
     </FunctionImport>
     <FunctionImport Name="SP_consulta_foto_alumno" ReturnType="Collection(BDCAMModel.SP_consulta_foto_alumno_Result)">
@@ -477,6 +477,22 @@
     <FunctionImport Name="sp_upgraddiagrams1" />
     <FunctionImport Name="SP_Eliminar_Alumno">
       <Parameter Name="id_alumno" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_Eliminacion_Alergia">
+      <Parameter Name="id_cartilla" Mode="In" Type="Int32" />
+      <Parameter Name="id_Alergia" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_Eliminacion_Discapacidad">
+      <Parameter Name="id_cartilla" Mode="In" Type="Int32" />
+      <Parameter Name="id_Discapacidad" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_Eliminacion_Enfermedad">
+      <Parameter Name="id_cartilla" Mode="In" Type="Int32" />
+      <Parameter Name="id_enfermedad" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_Eliminacion_Tratamiento">
+      <Parameter Name="id_cartilla" Mode="In" Type="Int32" />
+      <Parameter Name="id_Tratamiento" Mode="In" Type="Int32" />
     </FunctionImport>
   </EntityContainer>
   <ComplexType Name="SP_FichaTecnicaAlumno_Result">

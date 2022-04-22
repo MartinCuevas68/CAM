@@ -22,13 +22,28 @@ namespace presentationLayer
         _1dataLayer.SP_ListaEnfermedad_Result enfermedad = new _1dataLayer.SP_ListaEnfermedad_Result();
         _1dataLayer.SP_ListaAlergia_Result alergia = new _1dataLayer.SP_ListaAlergia_Result();
         _1dataLayer.SP_ListaTratamiento_Result tratamiento = new _1dataLayer.SP_ListaTratamiento_Result();
+
         _1dataLayer.foto_alumno fotol = new _1dataLayer.foto_alumno();
+
+        ComboBox enfermedadestempcmb = new ComboBox();
+        ComboBox discapacidadestempcmb = new ComboBox();
+        ComboBox alergiastempcmb = new ComboBox();
+
+        List<int> alergiasids = new List<int>();
+        List<int> discapacidadesids = new List<int>();
+        List<int> enfermedadesids = new List<int>();
+        List<int> alergiasidsvar = new List<int>();
+        List<int> discapacidadesidsvar = new List<int>();
+        List<int> enfermedadesidsvar = new List<int>();
+
         int idalumno;
         int idtutor;
+        int idcartilla;
 
         public fichaTecnica(int id_alumno)
         {
             InitializeComponent();
+            loaddata();
             infoGeneralPanel.Visible = true;
             infoEscolarPanel.Visible = false;
             infoTutorPanel.Visible = false;
@@ -67,15 +82,14 @@ namespace presentationLayer
             idtutor = businessLayer.BLFichaTecnica.infoTutor(nombreT, apellidoPT, apellidoMT, calleT, numeroCasaT, coloniaT, ocupacion, telCasaT, telMovilT, telTrabajoT, id_alumno);
             
             //Información médica
-            businessLayer.BLFichaTecnica.infoMedAlumno(servMedico, telefono, grupoSanguineo, id_alumno);
+            idcartilla = businessLayer.BLFichaTecnica.infoMedAlumno(servMedico, telefono, grupoSanguineo, id_alumno);
 
             //Discapacidades, enfermedades, alergias y tratamientos
-            businessLayer.BLFichaTecnica.infoMedAlumno2(discapacidades, enfermedades, alergias, tratamientos, id_alumno);
+            businessLayer.BLFichaTecnica.infoMedAlumno2(discapacidades, enfermedades, alergias, tratamientos, id_alumno,alergiasids,discapacidadesids,enfermedadesids, alergiasidsvar, discapacidadesidsvar, enfermedadesidsvar);
 
             //Foto
             fotol = _1dataLayer.DLConsultaAlumno.ConsultaFoto(id_alumno);
             foto.Image = byteArrayToImage(fotol.imagen_alumno.ToArray());
-            
             
 
             //Sentencia que manda a llamar el método para cerrar Consultas usando la X
@@ -215,7 +229,7 @@ namespace presentationLayer
             businessLayer.BLFichaTecnica.infoMedAlumno(servMedico, telefono, grupoSanguineo, idalumno);
 
             //Discapacidades, enfermedades, alergias y tratamientos
-            businessLayer.BLFichaTecnica.infoMedAlumno2(discapacidades, enfermedades, alergias, tratamientos, idalumno);
+            businessLayer.BLFichaTecnica.infoMedAlumno2(discapacidades, enfermedades, alergias, tratamientos, idalumno, alergiasids, discapacidadesids,enfermedadesids, alergiasidsvar, discapacidadesidsvar, enfermedadesidsvar);
 
             //Foto
             fotol = _1dataLayer.DLConsultaAlumno.ConsultaFoto(idalumno);
@@ -585,6 +599,7 @@ namespace presentationLayer
                 alumno.escuela_procedencia_alumno = escuelaP.Text;
                 alumno.telefono_personal_alumno = telPersonal.Text;
                 alumno.ciclo_escolar = cicloEsc.Text;
+                tutor.id_tutor = idtutor;
                 tutor.nombre = nombreT.Text;
                 tutor.apellido_paterno = apellidoPT.Text;
                 tutor.apellido_materno = apellidoMT.Text;
@@ -604,6 +619,10 @@ namespace presentationLayer
                 businessLayer.BLModificacionAlumno.modificartelefonotutor(idtutor, telMovilT.Text, 1);
                 businessLayer.BLModificacionAlumno.modificartelefonotutor(idtutor, telCasaT.Text,2);
                 businessLayer.BLModificacionAlumno.modificartelefonotutor(idtutor, telTrabajoT.Text,3);
+                businessLayer.BLModificacionAlumno.modificaralergias(alergiasids, alergiasidsvar,idcartilla);
+                businessLayer.BLModificacionAlumno.modificarenfermedades(enfermedadesids, enfermedadesidsvar, idcartilla);
+                businessLayer.BLModificacionAlumno.modificardiscapacidades(discapacidadesids, discapacidadesidsvar, idcartilla);
+                businessLayer.BLModificacionAlumno.actualizartratamiento(tratamientos.Text, idcartilla);
                 ocultarEditarInformacion();
             }
         }
@@ -670,6 +689,132 @@ namespace presentationLayer
             bajaAlumno baja = new bajaAlumno(id,null);
             baja.Show();
             this.Update();
+        }
+
+        private void loaddata()
+        {
+
+            foreach (var item in _1dataLayer.DLAltaAlumno.catalogoalergias())
+            {
+                alergiasCombobox.Items.Add(item.alergia);
+                alergiastempcmb.Items.Add(item.id_alergias);
+                
+            }
+            foreach (var item2 in _1dataLayer.DLAltaAlumno.catalogoenfermedades())
+            {
+
+                enfermedadesCombobox.Items.Add(item2.enfermedades);
+                enfermedadestempcmb.Items.Add(item2.id_enfermedades);
+
+            }
+            foreach (var item3 in _1dataLayer.DLAltaAlumno.catalogodiscapacidades())
+            {
+                discapacidadesCombobox.Items.Add(item3.discapacidades);
+                discapacidadestempcmb.Items.Add(item3.id_discapacidades);
+            }
+
+        }
+
+        private void agregarEnfermedadesButton_Click(object sender, EventArgs e)
+        {
+            int idseleccionado;
+            string informacion = this.enfermedadesCombobox.GetItemText(this.enfermedadesCombobox.SelectedItem);
+            if (enfermedades.Text.Contains(informacion))
+            {
+                MessageBox.Show("No se puede ingresar información duplicada");
+            }
+            else
+            {
+                enfermedades.Text = enfermedades.Text + informacion + "\n"; 
+                idseleccionado = enfermedadesCombobox.SelectedIndex + 1;
+                enfermedadesids.Add(idseleccionado);
+            }
+        }
+
+        private void eliminarEnfermedadesButton_Click(object sender, EventArgs e)
+        {
+            int idseleccionada;
+            string informacion = this.enfermedadesCombobox.GetItemText(this.enfermedadesCombobox.SelectedItem);
+            enfermedades.Text = enfermedades.Text.Replace("\n"+informacion, " ");
+            enfermedades.Text = enfermedades.Text.Replace(informacion+"\n", "");
+
+            idseleccionada = enfermedadesCombobox.SelectedIndex + 1;
+
+            for (int i = 0; i < enfermedadesids.Count(); i++)
+            {
+                if (enfermedadesids[i] == idseleccionada)
+                {
+                    enfermedadesids.Remove(idseleccionada);
+                }
+            }
+        }
+
+        private void agregarDiscapacidadesButton_Click(object sender, EventArgs e)
+        {
+            int idseleccionado;
+            string informacion = this.discapacidadesCombobox.GetItemText(this.discapacidadesCombobox.SelectedItem);
+            if (discapacidades.Text.Contains(informacion))
+            {
+                MessageBox.Show("No se puede ingresar información duplicada");
+            }
+            else
+            {
+                discapacidades.Text = discapacidades.Text + informacion + "\n"; 
+                idseleccionado = discapacidadesCombobox.SelectedIndex + 1;
+                discapacidadesids.Add(idseleccionado);
+            }
+        }
+
+        private void eliminarDiscapacidadesButton_Click(object sender, EventArgs e)
+        {
+            int idseleccionada;
+
+            string informacion = this.discapacidadesCombobox.GetItemText(this.discapacidadesCombobox.SelectedItem);
+            discapacidades.Text = discapacidades.Text.Replace("\n" + informacion, " ");
+            discapacidades.Text = discapacidades.Text.Replace(informacion+"\n", "");
+
+            idseleccionada = discapacidadesCombobox.SelectedIndex + 1;
+
+            for (int i = 0; i < discapacidadesids.Count(); i++)
+            {
+                if (discapacidadesids[i] == idseleccionada)
+                {
+                    discapacidadesids.Remove(idseleccionada);
+                }
+            }
+        }
+
+        private void agregarAlergiasButton_Click(object sender, EventArgs e)
+        {
+            string informacion = this.alergiasCombobox.GetItemText(this.alergiasCombobox.SelectedItem);
+            int posicioncomboboxTemporal;
+
+            if (alergias.Text.Contains(informacion))
+            {
+                MessageBox.Show("No se puede ingresar información duplicada");
+            }
+            else
+            {
+                alergias.Text = alergias.Text + informacion + "\n";
+                posicioncomboboxTemporal = alergiasCombobox.SelectedIndex+1;
+                alergiasids.Add(posicioncomboboxTemporal);
+            }
+        }
+
+        private void eliminarAlergiasButton_Click(object sender, EventArgs e)
+        {
+            int idseleccionada;
+            string informacion = this.alergiasCombobox.GetItemText(this.alergiasCombobox.SelectedItem);
+            alergias.Text = alergias.Text.Replace("\n" + informacion, " ");
+            alergias.Text = alergias.Text.Replace( informacion+"\n", " ");
+            idseleccionada = alergiasCombobox.SelectedIndex+1;
+             for(int i = 0; i < alergiasids.Count(); i++)
+            {
+                if (alergiasids[i] == idseleccionada)
+                {
+                    alergiasids.Remove(idseleccionada);
+                }
+            }
         }
     }
 }

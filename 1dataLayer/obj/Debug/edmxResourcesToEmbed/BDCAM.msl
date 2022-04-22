@@ -480,5 +480,9 @@
     <FunctionImportMapping FunctionImportName="sp_renamediagram1" FunctionName="BDCAMModel.Store.sp_renamediagram" />
     <FunctionImportMapping FunctionImportName="sp_upgraddiagrams1" FunctionName="BDCAMModel.Store.sp_upgraddiagrams" />
     <FunctionImportMapping FunctionImportName="SP_Eliminar_Alumno" FunctionName="BDCAMModel.Store.SP_Eliminar_Alumno" />
+    <FunctionImportMapping FunctionImportName="SP_Eliminacion_Alergia" FunctionName="BDCAMModel.Store.SP_Eliminacion_Alergia" />
+    <FunctionImportMapping FunctionImportName="SP_Eliminacion_Discapacidad" FunctionName="BDCAMModel.Store.SP_Eliminacion_Discapacidad" />
+    <FunctionImportMapping FunctionImportName="SP_Eliminacion_Enfermedad" FunctionName="BDCAMModel.Store.SP_Eliminacion_Enfermedad" />
+    <FunctionImportMapping FunctionImportName="SP_Eliminacion_Tratamiento" FunctionName="BDCAMModel.Store.SP_Eliminacion_Tratamiento" />
   </EntityContainerMapping>
 </Mapping>

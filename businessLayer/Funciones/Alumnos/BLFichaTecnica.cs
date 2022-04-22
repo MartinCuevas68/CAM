@@ -75,7 +75,7 @@ namespace businessLayer
             return tutor.id_tutor;
         }
 
-        public static void infoMedAlumno(TextBox servMedico, TextBox telefono, TextBox grupoSanguineo, int id_alumno)
+        public static int infoMedAlumno(TextBox servMedico, TextBox telefono, TextBox grupoSanguineo, int id_alumno)
         { 
             _1dataLayer.SP_FichaTecnicaAlumnoMedica_Result infoMed = new _1dataLayer.SP_FichaTecnicaAlumnoMedica_Result();
 
@@ -83,9 +83,10 @@ namespace businessLayer
             servMedico.Text = infoMed.servicio_medico;
             telefono.Text = infoMed.telefono_contacto;
             grupoSanguineo.Text = infoMed.grupo_sanguineo;
+            return infoMed.id_cartilla_medica;
         }
 
-        public static void infoMedAlumno2(RichTextBox discapacidades, RichTextBox enfermedades, RichTextBox alergias, RichTextBox tratamientos, int id_alumno)
+        public static void infoMedAlumno2(RichTextBox discapacidades, RichTextBox enfermedades, RichTextBox alergias, RichTextBox tratamientos, int id_alumno,List<int> alergiasid,List<int> discapacidadesids,List<int> enfermedadesids,List<int> alergiasidsvar,List<int> discapacidadesidsvar, List<int> enfermedadesidsvar)
         {
             List<_1dataLayer.SP_ListaDiscapacidad_Result> ListaDiscapacidades = new List<_1dataLayer.SP_ListaDiscapacidad_Result>();
             List<_1dataLayer.SP_ListaEnfermedad_Result>  ListaEnfermedades = new List <_1dataLayer.SP_ListaEnfermedad_Result>();
@@ -100,16 +101,22 @@ namespace businessLayer
             foreach (var discapacidad in ListaDiscapacidades)
             {
                 discapacidades.Text = discapacidades.Text + discapacidad.discapacidades + "\n";
+                discapacidadesids.Add(discapacidad.id_discapacidades);
+                discapacidadesidsvar.Add(discapacidad.id_discapacidades);
             }
 
             foreach (var enfermedad in ListaEnfermedades)
             {
                 enfermedades.Text = enfermedades.Text + enfermedad.enfermedades + "\n";
+                enfermedadesids.Add(enfermedad.id_enfermedades);
+                enfermedadesidsvar.Add(enfermedad.id_enfermedades);
             }
 
             foreach (var alergia in ListaAlergias)
             {
                 alergias.Text = alergias.Text + alergia.alergia + "\n";
+                alergiasid.Add(alergia.id_alergias);
+                alergiasidsvar.Add(alergia.id_alergias);
             }
 
             foreach (var tratamiento in ListaTratamientos)
