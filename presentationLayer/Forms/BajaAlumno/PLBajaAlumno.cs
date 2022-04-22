@@ -34,7 +34,8 @@ namespace presentationLayer
 
                 curp.Location = new Point(395, 190);
                 curpTB.Location = new Point(460, 190);
-                curpTB.Size = new Size(240, 40);
+                curpTB.Size = new Size(300, 40);
+
         }
 
 
