@@ -40,7 +40,7 @@ namespace presentationLayer
         int idtutor;
         int idcartilla;
 
-        public fichaTecnica(int id_alumno)
+        public fichaTecnica(int id_alumno, int bandera)
         {
             InitializeComponent();
             loaddata();
@@ -91,6 +91,10 @@ namespace presentationLayer
             fotol = _1dataLayer.DLConsultaAlumno.ConsultaFoto(id_alumno);
             foto.Image = byteArrayToImage(fotol.imagen_alumno.ToArray());
             
+            if(bandera == 1)
+            {
+                mostrarEditarInformacion();
+            }
 
             //Sentencia que manda a llamar el método para cerrar Consultas usando la X
             //this.FormClosed += new FormClosedEventHandler(cerrarForm);
@@ -252,25 +256,17 @@ namespace presentationLayer
                 mensaje += "◉Nombre del alumno\n";
             }
 
-            if(apellidoP.Text.Trim().Equals(""))
+            if(apellidoP.Text.Trim().Equals("") && apellidoM.Text.Trim().Equals(""))
             {
                 if (bandera == 0)
                 {
                     bandera = 1;
                     mensaje += "No puede dejar espacios en blanco en los siguientes campos:\n\n";
                 }
-                mensaje +=("◉Apellido paterno del alumno\n");
+                mensaje +=("◉Apellido del alumno\n");
             }
 
-            if(apellidoM.Text.Trim().Equals(""))
-            {
-                if (bandera == 0)
-                {
-                    bandera = 1;
-                    mensaje += "No puede dejar espacios en blanco en los siguientes campos:\n\n";
-                }
-                mensaje +=("◉Apellido Materno del alumno\n");
-            }
+            
 
             if (ciudad.Text.Trim().Equals(""))
             {
@@ -402,25 +398,17 @@ namespace presentationLayer
                 mensaje +=("◉Nombre del tutor\n");
             }
 
-            if (apellidoPT.Text.Trim().Equals(""))
+            if (apellidoPT.Text.Trim().Equals("") && apellidoMT.Text.Trim().Equals(""))
             {
                 if (bandera == 0)
                 {
                     bandera = 1;
                     mensaje += "No puede dejar espacios en blanco en los siguientes campos:\n\n";
                 }
-                mensaje +=("◉Apellido paterno del tutor\n");
+                mensaje +=("◉Apellido del tutor\n");
             }
 
-            if (apellidoMT.Text.Trim().Equals(""))
-            {
-                if (bandera == 0)
-                {
-                    bandera = 1;
-                    mensaje += "No puede dejar espacios en blanco en los siguientes campos:\n\n";
-                }
-                mensaje +=("◉Apellido materno del tutor\n");
-            }
+          
 
             if (ocupacion.Text.Trim().Equals(""))
             {

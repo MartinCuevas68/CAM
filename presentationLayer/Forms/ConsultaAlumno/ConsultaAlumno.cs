@@ -88,7 +88,7 @@ namespace presentationLayer
             //Sentencia que manda a llamar el método para cerrar Consultas usando la X
             this.FormClosed += new FormClosedEventHandler(cerrarForm);
 
-            //data = businessLayer.BLConsultaAlumno.ConvertToDatatable((List<_1dataLayer.alumnoenfermedadDTO>)altaDataGridView.DataSource);
+            data = businessLayer.BLConsultaAlumno.ConvertToDatatable((List<_1dataLayer.alumnoenfermedadDTO>)altaDataGridView.DataSource);
         }
 
         //Metodo para cerrar Consultas usando la X ya que antes se cerraba pero se seguía ejecutando.
@@ -218,7 +218,14 @@ namespace presentationLayer
 
         private void modificarButton_Click(object sender, EventArgs e)
         {
+            int id = 0;
 
+            id = int.Parse(altaDataGridView.CurrentRow.Cells[0].Value.ToString());
+            ConsultaAlumno consultas = new ConsultaAlumno();
+            consultas.Close();
+            this.Hide();
+            fichaTecnica ficha = new fichaTecnica(id,1);
+            ficha.Show();
         }
 
         private void agregarButton_Click(object sender, EventArgs e)
@@ -247,17 +254,17 @@ namespace presentationLayer
         {
             //Int32 selectedCellCount =  altaDataGridView.GetCellCount(DataGridViewElementStates.Selected);
             int id = 0;
-
             id = int.Parse(altaDataGridView.CurrentRow.Cells[0].Value.ToString());
             ConsultaAlumno consultas = new ConsultaAlumno();
             consultas.Close();
             this.Hide();
-            fichaTecnica ficha = new fichaTecnica(id);
+            fichaTecnica ficha = new fichaTecnica(id,0);
             ficha.Show();
         }
 
         private void busquedaTextBox_TextChanged(object sender, EventArgs e)
         {
+           
             string searchValue = busquedaTextBox.Text.Trim().ToUpper();
             try
             {

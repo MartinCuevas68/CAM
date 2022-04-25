@@ -135,3 +135,4 @@ C:\Users\DELL\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.csp
 C:\Users\DELL\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.exe
 C:\Users\DELL\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.pdb
 C:\Users\vanes\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.Forms.BajaAlumno.bajaAlumnoFicha.resources
+C:\Users\ferna\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.Forms.BajaAlumno.bajaAlumnoFicha.resources
