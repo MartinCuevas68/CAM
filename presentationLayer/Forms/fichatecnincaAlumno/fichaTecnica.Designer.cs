@@ -211,12 +211,12 @@ namespace presentationLayer
             // 
             // alergiasCombobox
             // 
-            this.alergiasCombobox.Font = new System.Drawing.Font("Gadugi", 14.25F);
+            this.alergiasCombobox.Font = new System.Drawing.Font("Gadugi", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.alergiasCombobox.FormattingEnabled = true;
             this.alergiasCombobox.Location = new System.Drawing.Point(585, 184);
             this.alergiasCombobox.Margin = new System.Windows.Forms.Padding(4);
             this.alergiasCombobox.Name = "alergiasCombobox";
-            this.alergiasCombobox.Size = new System.Drawing.Size(135, 36);
+            this.alergiasCombobox.Size = new System.Drawing.Size(135, 29);
             this.alergiasCombobox.TabIndex = 244;
             this.alergiasCombobox.Visible = false;
             // 
@@ -239,12 +239,12 @@ namespace presentationLayer
             // 
             // discapacidadesCombobox
             // 
-            this.discapacidadesCombobox.Font = new System.Drawing.Font("Gadugi", 14.25F);
+            this.discapacidadesCombobox.Font = new System.Drawing.Font("Gadugi", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.discapacidadesCombobox.FormattingEnabled = true;
             this.discapacidadesCombobox.Location = new System.Drawing.Point(323, 185);
             this.discapacidadesCombobox.Margin = new System.Windows.Forms.Padding(4);
             this.discapacidadesCombobox.Name = "discapacidadesCombobox";
-            this.discapacidadesCombobox.Size = new System.Drawing.Size(134, 36);
+            this.discapacidadesCombobox.Size = new System.Drawing.Size(134, 29);
             this.discapacidadesCombobox.TabIndex = 243;
             this.discapacidadesCombobox.Visible = false;
             // 
@@ -267,12 +267,12 @@ namespace presentationLayer
             // 
             // enfermedadesCombobox
             // 
-            this.enfermedadesCombobox.Font = new System.Drawing.Font("Gadugi", 14.25F);
+            this.enfermedadesCombobox.Font = new System.Drawing.Font("Gadugi", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.enfermedadesCombobox.FormattingEnabled = true;
             this.enfermedadesCombobox.Location = new System.Drawing.Point(63, 184);
             this.enfermedadesCombobox.Margin = new System.Windows.Forms.Padding(4);
             this.enfermedadesCombobox.Name = "enfermedadesCombobox";
-            this.enfermedadesCombobox.Size = new System.Drawing.Size(134, 36);
+            this.enfermedadesCombobox.Size = new System.Drawing.Size(134, 29);
             this.enfermedadesCombobox.TabIndex = 242;
             this.enfermedadesCombobox.Visible = false;
             // 
@@ -446,7 +446,7 @@ namespace presentationLayer
             // 
             this.tratamientos.BackColor = System.Drawing.Color.White;
             this.tratamientos.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tratamientos.Font = new System.Drawing.Font("Gadugi", 14.25F);
+            this.tratamientos.Font = new System.Drawing.Font("Gadugi", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tratamientos.Location = new System.Drawing.Point(13, 6);
             this.tratamientos.Margin = new System.Windows.Forms.Padding(4);
             this.tratamientos.Name = "tratamientos";
@@ -469,7 +469,7 @@ namespace presentationLayer
             // 
             this.alergias.BackColor = System.Drawing.Color.White;
             this.alergias.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.alergias.Font = new System.Drawing.Font("Gadugi", 14.25F);
+            this.alergias.Font = new System.Drawing.Font("Gadugi", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.alergias.Location = new System.Drawing.Point(20, 10);
             this.alergias.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.alergias.Name = "alergias";
@@ -492,7 +492,7 @@ namespace presentationLayer
             // 
             this.enfermedades.BackColor = System.Drawing.Color.White;
             this.enfermedades.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.enfermedades.Font = new System.Drawing.Font("Gadugi", 14.25F);
+            this.enfermedades.Font = new System.Drawing.Font("Gadugi", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.enfermedades.Location = new System.Drawing.Point(11, 2);
             this.enfermedades.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.enfermedades.Name = "enfermedades";
@@ -527,7 +527,7 @@ namespace presentationLayer
             // 
             this.discapacidades.BackColor = System.Drawing.Color.White;
             this.discapacidades.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.discapacidades.Font = new System.Drawing.Font("Gadugi", 14.25F);
+            this.discapacidades.Font = new System.Drawing.Font("Gadugi", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.discapacidades.Location = new System.Drawing.Point(20, 10);
             this.discapacidades.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.discapacidades.Name = "discapacidades";
@@ -1856,7 +1856,7 @@ namespace presentationLayer
             this.bajaAlumnoButton.BackgroundColor = System.Drawing.Color.White;
             this.bajaAlumnoButton.BorderRadius = 20;
             this.bajaAlumnoButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bajaAlumnoButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.bajaAlumnoButton.FlatAppearance.BorderColor = System.Drawing.SystemColors.Desktop;
             this.bajaAlumnoButton.FlatAppearance.CheckedBackColor = System.Drawing.Color.GhostWhite;
             this.bajaAlumnoButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(152)))), ((int)(((byte)(244)))));
             this.bajaAlumnoButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -1917,7 +1917,7 @@ namespace presentationLayer
             this.terminarEdiButton.BackgroundColor = System.Drawing.Color.White;
             this.terminarEdiButton.BorderRadius = 20;
             this.terminarEdiButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.terminarEdiButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.terminarEdiButton.FlatAppearance.BorderColor = System.Drawing.SystemColors.Desktop;
             this.terminarEdiButton.FlatAppearance.CheckedBackColor = System.Drawing.Color.GhostWhite;
             this.terminarEdiButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(152)))), ((int)(((byte)(244)))));
             this.terminarEdiButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -1940,7 +1940,7 @@ namespace presentationLayer
             this.editarInfoButton.BackgroundColor = System.Drawing.Color.White;
             this.editarInfoButton.BorderRadius = 20;
             this.editarInfoButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.editarInfoButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.editarInfoButton.FlatAppearance.BorderColor = System.Drawing.SystemColors.Desktop;
             this.editarInfoButton.FlatAppearance.CheckedBackColor = System.Drawing.Color.GhostWhite;
             this.editarInfoButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(152)))), ((int)(((byte)(244)))));
             this.editarInfoButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -1962,7 +1962,7 @@ namespace presentationLayer
             this.cancelarEdiButton.BackgroundColor = System.Drawing.Color.White;
             this.cancelarEdiButton.BorderRadius = 20;
             this.cancelarEdiButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cancelarEdiButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.cancelarEdiButton.FlatAppearance.BorderColor = System.Drawing.SystemColors.Desktop;
             this.cancelarEdiButton.FlatAppearance.CheckedBackColor = System.Drawing.Color.GhostWhite;
             this.cancelarEdiButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(152)))), ((int)(((byte)(244)))));
             this.cancelarEdiButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
