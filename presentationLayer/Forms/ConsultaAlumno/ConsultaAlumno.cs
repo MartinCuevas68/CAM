@@ -14,7 +14,6 @@ namespace presentationLayer
     public partial class ConsultaAlumno : Form
     {
 
-      
         DataTable data = new DataTable();
 
 
@@ -247,7 +246,9 @@ namespace presentationLayer
 
         private void imprimirFormatosButton_Click(object sender, EventArgs e)
         {
-
+            Formatosprueba a = new Formatosprueba();
+            a.Show();
+            this.Hide();
         }
 
         private void fichaTecnicaButton_Click(object sender, EventArgs e)

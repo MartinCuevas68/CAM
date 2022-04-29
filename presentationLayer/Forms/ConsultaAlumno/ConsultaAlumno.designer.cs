@@ -272,7 +272,7 @@ namespace presentationLayer
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1695, 792);
+            this.ClientSize = new System.Drawing.Size(1695, 933);
             this.Controls.Add(this.logo);
             this.Controls.Add(this.cerrarSesionButton);
             this.Controls.Add(this.imprimirFormatosButton);
