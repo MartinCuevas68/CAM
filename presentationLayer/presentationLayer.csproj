@@ -85,6 +85,13 @@
       <DependentUpon>ConsultaAlumno.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\ConsultaAlumno\PLConsultaAlumno.cs" />
+    <Compile Include="Forms\ConsultaFormatos\consultaFormatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ConsultaFormatos\consultaFormatos.Designer.cs">
+      <DependentUpon>consultaFormatos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ConsultaFormatos\PLConsultaFormatos.cs" />
     <Compile Include="Forms\fichatecnincaAlumno\LineaControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -105,13 +112,6 @@
     <Compile Include="Forms\fichatecnincaAlumno\fichaTecnica.Designer.cs">
       <DependentUpon>fichaTecnica.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\imprimirformatos\imprimirFormatos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\imprimirformatos\imprimirFormatos.Designer.cs">
-      <DependentUpon>imprimirFormatos.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\imprimirformatos\PLimprimirFormatos.cs" />
     <Compile Include="Forms\modificacionAlumno\modificacionesAlumno.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,15 +132,15 @@
     <EmbeddedResource Include="Forms\ConsultaAlumno\ConsultaAlumno.resx">
       <DependentUpon>ConsultaAlumno.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConsultaFormatos\consultaFormatos.resx">
+      <DependentUpon>consultaFormatos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\fichatecnincaAlumno\fichaTecnica.resx">
       <DependentUpon>fichaTecnica.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\fichatecnincaAlumno\LineaControl.resx">
       <DependentUpon>LineaControl.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\imprimirformatos\imprimirFormatos.resx">
-      <DependentUpon>imprimirFormatos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\modificacionAlumno\modificacionesAlumno.resx">
       <DependentUpon>modificacionesAlumno.cs</DependentUpon>
@@ -222,6 +222,7 @@
     <None Include="Resources\TextBox032.png" />
     <None Include="Resources\agregar.png" />
     <None Include="Resources\botonMenos.png" />
+    <None Include="Resources\carpeta_formatos.png" />
     <Content Include="Resources\TextBox2.png" />
     <None Include="Resources\TextBox22.png" />
   </ItemGroup>

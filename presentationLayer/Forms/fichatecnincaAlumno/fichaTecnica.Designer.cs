@@ -2062,6 +2062,7 @@ namespace presentationLayer
             this.Name = "fichaTecnica";
             this.Text = "Ficha Tecnica";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.fichaTecnica_Load);
             this.infoMedicaPanel.ResumeLayout(false);
             this.infoMedicaPanel.PerformLayout();
             this.tratamientoPanel.ResumeLayout(false);

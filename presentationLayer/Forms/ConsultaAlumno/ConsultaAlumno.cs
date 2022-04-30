@@ -1,4 +1,5 @@
 ﻿using presentationLayer.Forms.BajaAlumno;
+using presentationLayer.Forms.ConsultaFormatos;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -247,7 +248,11 @@ namespace presentationLayer
 
         private void imprimirFormatosButton_Click(object sender, EventArgs e)
         {
-
+            ConsultaAlumno consultas = new ConsultaAlumno();
+            consultas.Close();
+            this.Hide();
+            consultaFormatos consultaF = new consultaFormatos();
+            consultaF.Show();
         }
 
         private void fichaTecnicaButton_Click(object sender, EventArgs e)

@@ -804,5 +804,12 @@ namespace presentationLayer
                 }
             }
         }
+
+        private void fichaTecnica_Load(object sender, FormClosedEventArgs e)
+        {
+            ConsultaAlumno formConsultas = new ConsultaAlumno();
+            this.Hide();
+            formConsultas.Show();
+        }
     }
 }
