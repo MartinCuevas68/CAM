@@ -15,8 +15,10 @@ namespace presentationLayer.Forms.ConsultaFormatos
         public consultaFormatos()
         {
             InitializeComponent();
-            PLConsultaFormatos.plantillaConsulta(logo,regresarMenuButton);
+            PLConsultaFormatos.plantillaConsulta(logo,regresarMenuButton,formatoLabel);
             PLConsultaFormatos.carpetasFormatos(FCI1Panel,FCI2Panel,FCI3Panel,FCI4Panel,FCI5Panel,FCI6Panel,FCI7Panel,FCI8Panel,FCI9Panel);
+            PLConsultaFormatos.titulosCarpetasFormatos(FCI1Label, FCI2Label, FCI3Label, FCI4Label, FCI5Label, FCI6Label, FCI7Label, FCI8Label, FCI9Label);
+            PLConsultaFormatos.pestañasCarpetasFormatos(FCILabel1, FCILabel2, FCILabel3, FCILabel4, FCILabel5, FCILabel6, FCILabel7, FCILabel8, FCILabel9);
         }
 
         private void regresarMenuButton_Click(object sender, EventArgs e)
