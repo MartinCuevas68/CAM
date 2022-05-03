@@ -58,10 +58,10 @@ namespace presentationLayer.Forms.ConsultaFormatos
 
         public static void titulosCarpetasFormatos(Label FCI1, Label FCI2, Label FCI3, Label FCI4, Label FCI5, Label FCI6, Label FCI7, Label FCI8, Label FCI9)
         {
-            FCI1.Location = new Point(5, 80);
-            FCI1.Size = new Size(180, 140);
+            FCI1.Location = new Point(45, 70);
+            FCI1.Size = new Size(200, 140);
 
-            FCI2.Location = new Point(10, 70);
+            FCI2.Location = new Point(30, 70);
             FCI2.Size = new Size(160, 140);
 
             FCI3.Location = new Point(20, 70);
@@ -116,5 +116,13 @@ namespace presentationLayer.Forms.ConsultaFormatos
             FCI9.Size = new Size(60, 20);
         }
 
+        public static void Panel_MouseEnter(Label titulo)
+        {
+            titulo.ForeColor = Color.White;
+        }
+        public static void Panel_MouseLeave(Label titulo)
+        {
+            titulo.ForeColor = Color.Black;
+        }
     }
 }
