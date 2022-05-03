@@ -59,16 +59,16 @@ namespace businessLayer
 
                 _1dataLayer.DLConsultaAlumno listaAlumnos = new _1dataLayer.DLConsultaAlumno();
 
-                List<_1dataLayer.SP_ListaAlumnos_Result> mostrarAlumnos = new List<_1dataLayer.SP_ListaAlumnos_Result>();
+                List<_1dataLayer.SP_Lista_Egresados_Result> mostrarAlumnos = new List<_1dataLayer.SP_Lista_Egresados_Result>();
                 List<_1dataLayer.SP_ListaAlergia_Result> mostrarAlergias = new List<_1dataLayer.SP_ListaAlergia_Result>();
                 List<_1dataLayer.SP_ListaDiscapacidad_Result> mostrarDiscapacidades = new List<_1dataLayer.SP_ListaDiscapacidad_Result>();
                 String discapacidades = null;
                 String alergias = null;
 
-                mostrarAlumnos = listaAlumnos.AlumnoLista();
+                mostrarAlumnos = listaAlumnos.EgresadoLista();
 
-                List<_1dataLayer.SP_ListaAlumnos_Result> alumnos = new List<_1dataLayer.SP_ListaAlumnos_Result>();
-                foreach (_1dataLayer.SP_ListaAlumnos_Result result in mostrarAlumnos)
+                List<_1dataLayer.SP_Lista_Egresados_Result> alumnos = new List<_1dataLayer.SP_Lista_Egresados_Result>();
+                foreach (_1dataLayer.SP_Lista_Egresados_Result result in mostrarAlumnos)
                 {
                     var.id_alumno = result.id_alumno;
                     var.nombre = result.nombre + " ";
