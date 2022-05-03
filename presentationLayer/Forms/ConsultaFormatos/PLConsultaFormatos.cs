@@ -20,7 +20,7 @@ namespace presentationLayer.Forms.ConsultaFormatos
             regresarMenuButton.Size = new Size(300, 55);
             regresarMenuButton.Location = new Point(210, 700);
 
-            titulo.Location = new Point(600, 40);
+            titulo.Location = new Point(640, 40);
         }
 
         public static void carpetasFormatos(Panel carpetaFCI1, Panel carpetaFCI2, Panel carpetaFCI3, Panel carpetaFCI4,
