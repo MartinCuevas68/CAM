@@ -919,5 +919,10 @@ namespace _1dataLayer
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_Eliminacion_Tratamiento", id_cartillaParameter, id_TratamientoParameter);
         }
+    
+        public virtual ObjectResult<SP_Lista_Egresados_Result> SP_Lista_Egresados()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_Lista_Egresados_Result>("SP_Lista_Egresados");
+        }
     }
 }
