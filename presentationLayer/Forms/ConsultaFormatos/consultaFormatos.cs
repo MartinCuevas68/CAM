@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.IO;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -55,11 +56,11 @@ namespace presentationLayer.Forms.ConsultaFormatos
         private void FCI1Pane9_MouseEnter(object sender, EventArgs e) { PLConsultaFormatos.Panel_MouseEnter(FCI9Label); }
         private void FCI1Pane9_MouseLeave(object sender, EventArgs e) { PLConsultaFormatos.Panel_MouseLeave(FCI9Label); }
 
-        private void button1_Click(object sender, EventArgs e)
+        /*private void button1_Click(object sender, EventArgs e)
         {
             string RunningPath = AppDomain.CurrentDomain.BaseDirectory;
             string FileName = string.Format("{0}Resources\\Formatos\\FCI1.pdf", Path.GetFullPath(Path.Combine(RunningPath, @"..\..\")));
-            PDF.src = FileName;
+            //PDF.src = FileName;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -116,6 +117,6 @@ namespace presentationLayer.Forms.ConsultaFormatos
             string RunningPath = AppDomain.CurrentDomain.BaseDirectory;
             string FileName = string.Format("{0}Resources\\Formatos\\FCI9.pdf", Path.GetFullPath(Path.Combine(RunningPath, @"..\..\")));
             PDF.src = FileName;
-        }
+        }*/
     }
 }
