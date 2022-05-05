@@ -59,7 +59,6 @@ C:\Users\ferna\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.Fo
 C:\Users\ferna\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.ConsultaAlumno.resources
 C:\Users\ferna\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.fichaTecnica.resources
 C:\Users\ferna\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.Forms.fichatecnincaAlumno.LineaControl.resources
-C:\Users\ferna\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.imprimirFormatosAlumno.resources
 C:\Users\ferna\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.modificacionesAlumno.resources
 C:\Users\ferna\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.Properties.Resources.resources
 C:\Users\ferna\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.csproj.GenerateResource.cache
@@ -143,3 +142,10 @@ C:\Users\DELL\source\repos\CAM\presentationLayer\obj\Debug\Interop.AcroPDFLib.dl
 C:\Users\DELL\source\repos\CAM\presentationLayer\obj\Debug\AxInterop.AcroPDFLib.dll
 C:\Users\DELL\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.csproj.ResolveComReference.cache
 C:\Users\DELL\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.Forms.ConsultaFormatos.vistaPreviaFormato.resources
+C:\Users\ferna\source\repos\CAM\presentationLayer\bin\Debug\Interop.AcroPDFLib.dll
+C:\Users\ferna\source\repos\CAM\presentationLayer\bin\Debug\AxInterop.AcroPDFLib.dll
+C:\Users\ferna\source\repos\CAM\presentationLayer\obj\Debug\Interop.AcroPDFLib.dll
+C:\Users\ferna\source\repos\CAM\presentationLayer\obj\Debug\AxInterop.AcroPDFLib.dll
+C:\Users\ferna\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.csproj.ResolveComReference.cache
+C:\Users\ferna\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.Forms.ConsultaFormatos.consultaFormatos.resources
+C:\Users\ferna\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.Forms.ConsultaFormatos.vistaPreviaFormato.resources

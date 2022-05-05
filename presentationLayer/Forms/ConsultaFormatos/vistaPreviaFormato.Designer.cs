@@ -43,7 +43,7 @@ namespace presentationLayer.Forms.ConsultaFormatos
             this.formatoLabel.Location = new System.Drawing.Point(177, 19);
             this.formatoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.formatoLabel.Name = "formatoLabel";
-            this.formatoLabel.Size = new System.Drawing.Size(267, 52);
+            this.formatoLabel.Size = new System.Drawing.Size(266, 52);
             this.formatoLabel.TabIndex = 243;
             this.formatoLabel.Text = "F o r m a t o";
             // 
@@ -85,6 +85,7 @@ namespace presentationLayer.Forms.ConsultaFormatos
             this.Text = "Vista Previa";
             this.TopMost = true;
             this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.vistaPreviaFormato_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.vistaPreviaPDF)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -13,6 +13,15 @@ namespace presentationLayer.Forms.ConsultaFormatos
 {
     public partial class consultaFormatos : Form
     {
+        int fc1ban = 0;
+        int fc2ban = 0;
+        int fc3ban = 0;
+        int fc4ban = 0;
+        int fc5ban = 0;
+        int fc6ban = 0;
+        int fc7ban = 0;
+        int fc8ban = 0;
+        int fc9ban = 0;
         public consultaFormatos()
         {
             InitializeComponent();
@@ -57,74 +66,304 @@ namespace presentationLayer.Forms.ConsultaFormatos
         private void FCI9Panel_MouseLeave(object sender, EventArgs e) { PLConsultaFormatos.Panel_MouseLeave(FCI9Label); }
 
 
+        //Metodo para cambiar las banderas para poder abrir otro form en caso de haber cerrado el anterior
+        public void cambiarbandera(int formato)
+        {
+            switch (formato)
+            {
+                case 1:
+                    fc1ban = 0;
+                    break;
 
+                case 2:
+                    fc2ban = 0;
+                    break;
+
+                case 3:
+                    fc3ban = 0;
+                    break;
+
+                case 4:
+                    fc4ban = 0;
+                    break;
+
+                case 5:
+                    fc5ban = 0;
+                    break;
+
+                case 6:
+                    fc6ban = 0;
+                    break;
+
+                case 7:
+                    fc7ban = 0;
+                    break;
+
+                case 8:
+                    fc8ban = 0;
+                    break;
+
+                case 9:
+                    fc9ban = 0;
+                    break;
+
+            }
+
+          
+        }
+
+        //Metodo donde se manda el formato al form
         private void vistaFormato_Click(object sender, EventArgs e)
         {
-            vistaPreviaFormato vistaFormato = new vistaPreviaFormato();
-            vistaFormato.Show();
-        }
+            try
+            {
+                Label lb = (Label)sender;
+                switch (lb.Name)
+                {
+                    case "FCI1Label":
+                        if (fc1ban == 0)
+                        {
+                            fc1ban = 1;
+                            vistaPreviaFormato vistaFormato = new vistaPreviaFormato(1,this);
+                            vistaFormato.Show();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Ya se encuentra abierta una ventana con el pdf seleccionado");
+                        }
+                        break;
 
-        /*private void button1_Click(object sender, EventArgs e)
-        {
-            string RunningPath = AppDomain.CurrentDomain.BaseDirectory;
-            string FileName = string.Format("{0}Resources\\Formatos\\FCI1.pdf", Path.GetFullPath(Path.Combine(RunningPath, @"..\..\")));
-            //PDF.src = FileName;
-        }
+                    case "FCI2Label":
+                        if (fc2ban == 0)
+                        {
+                            fc2ban = 1;
+                            vistaPreviaFormato vistaFormato = new vistaPreviaFormato(2,this);
+                            vistaFormato.Show();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Ya se encuentra abierta una ventana con el pdf seleccionado");
+                        }
+                        break;
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            string RunningPath = AppDomain.CurrentDomain.BaseDirectory;
-            string FileName = string.Format("{0}Resources\\Formatos\\FCI2.pdf", Path.GetFullPath(Path.Combine(RunningPath, @"..\..\")));
-            PDF.src = FileName;
-        }
+                    case "FCI3Label":
+                        if (fc3ban == 0)
+                        {
+                            fc3ban = 1;
+                            vistaPreviaFormato vistaFormato = new vistaPreviaFormato(3, this);
+                            vistaFormato.Show();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Ya se encuentra abierta una ventana con el pdf seleccionado");
+                        }
+                        break;
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            string RunningPath = AppDomain.CurrentDomain.BaseDirectory;
-            string FileName = string.Format("{0}Resources\\Formatos\\FCI3.pdf", Path.GetFullPath(Path.Combine(RunningPath, @"..\..\")));
-            PDF.src = FileName;
-        }
+                    case "FCI4Label":
+                        if (fc4ban == 0)
+                        {
+                            fc4ban = 1;
+                            vistaPreviaFormato vistaFormato = new vistaPreviaFormato(4,this);
+                            vistaFormato.Show();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Ya se encuentra abierta una ventana con el pdf seleccionado");
+                        }
+                        break;
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            string RunningPath = AppDomain.CurrentDomain.BaseDirectory;
-            string FileName = string.Format("{0}Resources\\Formatos\\FCI4.pdf", Path.GetFullPath(Path.Combine(RunningPath, @"..\..\")));
-            PDF.src = FileName;
-        }
+                    case "FCI5Label":
+                        if (fc5ban == 0)
+                        {
+                            fc5ban = 1;
+                            vistaPreviaFormato vistaFormato = new vistaPreviaFormato(5,this);
+                            vistaFormato.Show();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Ya se encuentra abierta una ventana con el pdf seleccionado");
+                        }
+                        break;
 
-        private void button5_Click(object sender, EventArgs e)
-        {
-            string RunningPath = AppDomain.CurrentDomain.BaseDirectory;
-            string FileName = string.Format("{0}Resources\\Formatos\\FCI5.pdf", Path.GetFullPath(Path.Combine(RunningPath, @"..\..\")));
-            PDF.src = FileName;
-        }
+                    case "FCI6Label":
+                        if (fc6ban == 0)
+                        {
+                            fc6ban = 1;
+                            vistaPreviaFormato vistaFormato = new vistaPreviaFormato(6, this);
+                            vistaFormato.Show();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Ya se encuentra abierta una ventana con el pdf seleccionado");
+                        }
+                        break;
 
-        private void button6_Click(object sender, EventArgs e)
-        {
-            string RunningPath = AppDomain.CurrentDomain.BaseDirectory;
-            string FileName = string.Format("{0}Resources\\Formatos\\FCI6.pdf", Path.GetFullPath(Path.Combine(RunningPath, @"..\..\")));
-            PDF.src = FileName;
-        }
+                    case "FCI7Label":
+                        if (fc7ban == 0)
+                        {
+                            fc7ban = 1;
+                            vistaPreviaFormato vistaFormato = new vistaPreviaFormato(7,this);
+                            vistaFormato.Show();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Ya se encuentra abierta una ventana con el pdf seleccionado");
+                        }
+                        break;
 
-        private void button7_Click(object sender, EventArgs e)
-        {
-            string RunningPath = AppDomain.CurrentDomain.BaseDirectory;
-            string FileName = string.Format("{0}Resources\\Formatos\\FCI7.pdf", Path.GetFullPath(Path.Combine(RunningPath, @"..\..\")));
-            PDF.src = FileName;
-        }
+                    case "FCI8Label":
+                        if (fc8ban == 0)
+                        {
+                            fc8ban = 1;
+                            vistaPreviaFormato vistaFormato = new vistaPreviaFormato(8, this);
+                            vistaFormato.Show();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Ya se encuentra abierta una ventana con el pdf seleccionado");
+                        }
+                        break;
 
-        private void button8_Click(object sender, EventArgs e)
-        {
-            string RunningPath = AppDomain.CurrentDomain.BaseDirectory;
-            string FileName = string.Format("{0}Resources\\Formatos\\FCI8.pdf", Path.GetFullPath(Path.Combine(RunningPath, @"..\..\")));
-            PDF.src = FileName;
-        }
+                    case "FCI9Label":
+                        if (fc9ban == 0)
+                        {
+                            fc9ban = 1;
+                            vistaPreviaFormato vistaFormato = new vistaPreviaFormato(9,this);
+                            vistaFormato.Show();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Ya se encuentra abierta una ventana con el pdf seleccionado");
+                        }
+                        break;
 
-        private void button9_Click(object sender, EventArgs e)
-        {
-            string RunningPath = AppDomain.CurrentDomain.BaseDirectory;
-            string FileName = string.Format("{0}Resources\\Formatos\\FCI9.pdf", Path.GetFullPath(Path.Combine(RunningPath, @"..\..\")));
-            PDF.src = FileName;
-        }*/
+                }
+            }
+            catch (Exception ex)
+            {
+                Panel lb = (Panel)sender;
+                MessageBox.Show(lb.Name);
+                switch (lb.Name)
+                {
+                    case "FCI1Panel":
+                        if (fc1ban == 0)
+                        {
+                            fc1ban = 1;
+                            vistaPreviaFormato vistaFormato = new vistaPreviaFormato(1,this);
+                            vistaFormato.Show();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Ya se encuentra abierta una ventana con el pdf seleccionado");
+                        }
+                        break;
+
+                    case "FCI2Panel":
+                        if (fc2ban == 0)
+                        {
+                            fc2ban = 1;
+                            vistaPreviaFormato vistaFormato = new vistaPreviaFormato(2,this);
+                            vistaFormato.Show();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Ya se encuentra abierta una ventana con el pdf seleccionado");
+                        }
+                        break;
+
+                    case "FCI3Panel":
+                        if (fc3ban == 0)
+                        {
+                            fc3ban = 1;
+                            vistaPreviaFormato vistaFormato = new vistaPreviaFormato(3,this);
+                            vistaFormato.Show();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Ya se encuentra abierta una ventana con el pdf seleccionado");
+                        }
+                        break;
+
+                    case "FCI4Panel":
+                        if (fc4ban == 0)
+                        {
+                            fc4ban = 1;
+                            vistaPreviaFormato vistaFormato = new vistaPreviaFormato(4,this);
+                            vistaFormato.Show();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Ya se encuentra abierta una ventana con el pdf seleccionado");
+                        }
+                        break;
+
+                    case "FCI5Panel":
+                        if (fc5ban == 0)
+                        {
+                            fc5ban = 1;
+                            vistaPreviaFormato vistaFormato = new vistaPreviaFormato(5,this);
+                            vistaFormato.Show();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Ya se encuentra abierta una ventana con el pdf seleccionado");
+                        }
+                        break;
+
+                    case "FCI6Panel":
+                        if (fc6ban == 0)
+                        {
+                            fc6ban = 1;
+                            vistaPreviaFormato vistaFormato = new vistaPreviaFormato(6,this);
+                            vistaFormato.Show();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Ya se encuentra abierta una ventana con el pdf seleccionado");
+                        }
+                        break;
+
+                    case "FCI7Panel":
+                        if (fc7ban == 0)
+                        {
+                            fc7ban = 1;
+                            vistaPreviaFormato vistaFormato = new vistaPreviaFormato(7,this);
+                            vistaFormato.Show();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Ya se encuentra abierta una ventana con el pdf seleccionado");
+                        }
+                        break;
+
+                    case "FCI8Panel":
+                        if (fc8ban == 0)
+                        {
+                            fc8ban = 1;
+                            vistaPreviaFormato vistaFormato = new vistaPreviaFormato(8,this);
+                            vistaFormato.Show();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Ya se encuentra abierta una ventana con el pdf seleccionado");
+                        }
+                        break;
+
+                    case "FCI9Panel":
+                        if (fc9ban == 0)
+                        {
+                            fc9ban = 1;
+                            vistaPreviaFormato vistaFormato = new vistaPreviaFormato(9,this);
+                            vistaFormato.Show();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Ya se encuentra abierta una ventana con el pdf seleccionado");
+                        }
+                        break;
+                }
+
+            }
+        }
     }
 }
