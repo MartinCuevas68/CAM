@@ -137,3 +137,9 @@ C:\Users\ferna\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.Fo
 C:\Users\DELL\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.Forms.BajaAlumno.bajaAlumnoFicha.resources
 C:\Users\DELL\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.Forms.ConsultaFormatos.consultaFormatos.resources
 C:\Users\vanes\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.Forms.ConsultaFormatos.consultaFormatos.resources
+C:\Users\DELL\source\repos\CAM\presentationLayer\bin\Debug\Interop.AcroPDFLib.dll
+C:\Users\DELL\source\repos\CAM\presentationLayer\bin\Debug\AxInterop.AcroPDFLib.dll
+C:\Users\DELL\source\repos\CAM\presentationLayer\obj\Debug\Interop.AcroPDFLib.dll
+C:\Users\DELL\source\repos\CAM\presentationLayer\obj\Debug\AxInterop.AcroPDFLib.dll
+C:\Users\DELL\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.csproj.ResolveComReference.cache
+C:\Users\DELL\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.Forms.ConsultaFormatos.vistaPreviaFormato.resources

@@ -23,6 +23,20 @@ namespace presentationLayer.Forms.ConsultaFormatos
             titulo.Location = new Point(640, 40);
         }
 
+        public static void vistaPrevia(AxAcroPDFLib.AxAcroPDF vistaPreviaPDF, Label titulo, Label formato)
+        {
+           
+            formato.Location = new Point(265, 40);
+            formato.Size = new Size(100, 40); 
+
+            titulo.Location = new Point(150, 100);
+            titulo.Size = new Size(100, 40);
+            titulo.Visible = false;
+
+           vistaPreviaPDF.Location = new Point(120, 140);
+            vistaPreviaPDF.Size = new Size(500, 590);
+        }
+
         public static void carpetasFormatos(Panel carpetaFCI1, Panel carpetaFCI2, Panel carpetaFCI3, Panel carpetaFCI4,
                                             Panel carpetaFCI5, Panel carpetaFCI6, Panel carpetaFCI7, Panel carpetaFCI8,
                                             Panel carpetaFCI9)
