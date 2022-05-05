@@ -168,7 +168,7 @@ namespace presentationLayer
         public static void infoEscolar(Label tipoIngresoLabel, TextBox tipoIngreso, Label escuelaPLabel, TextBox escuelaP, Label canalizadoLabel, TextBox canalizado,
             Label cicloEscLabel, TextBox cicloEsc, UserControl escuelaPLinea, UserControl canalizadoLinea, UserControl cicloEscLinea)
         {
-            tipoIngreso.Size = new Size(280, 30);
+            tipoIngreso.Size = new Size(260, 30);
             escuelaP.Size = new Size(350, 30);
             canalizado.Size = new Size(420, 30);
             cicloEsc.Size = new Size(80, 30);
@@ -177,7 +177,7 @@ namespace presentationLayer
             cicloEscLinea.Size = new Size(80, 5);
 
             tipoIngresoLabel.Location = new Point(50, 40);
-            tipoIngreso.Location = new Point(210, 40);
+            tipoIngreso.Location = new Point(240, 40);
 
             escuelaPLabel.Location = new Point(50, 120);
             escuelaP.Location = new Point(280, 120);
@@ -410,8 +410,8 @@ namespace presentationLayer
             servMedicoLinea.Visible = true; telefonoLinea.Visible = true;
 
 
-            tipoIngresoCB.Size = new Size(280, 40);
-            tipoIngresoCB.Location = new Point(210, 40);
+            tipoIngresoCB.Size = new Size(230, 40);
+            tipoIngresoCB.Location = new Point(240, 40);
             tipoIngresoCB.Visible = true;
 
             eliEnfermedad.Visible = true; eliDiscapacidad.Visible = true; eliAlergia.Visible = true;

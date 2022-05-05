@@ -484,5 +484,16 @@
     <FunctionImportMapping FunctionImportName="SP_Eliminacion_Discapacidad" FunctionName="BDCAMModel.Store.SP_Eliminacion_Discapacidad" />
     <FunctionImportMapping FunctionImportName="SP_Eliminacion_Enfermedad" FunctionName="BDCAMModel.Store.SP_Eliminacion_Enfermedad" />
     <FunctionImportMapping FunctionImportName="SP_Eliminacion_Tratamiento" FunctionName="BDCAMModel.Store.SP_Eliminacion_Tratamiento" />
+    <FunctionImportMapping FunctionImportName="SP_Lista_Egresados" FunctionName="BDCAMModel.Store.SP_Lista_Egresados">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BDCAMModel.SP_Lista_Egresados_Result">
+          <ScalarProperty Name="id_alumno" ColumnName="id_alumno" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="apellido_paterno" ColumnName="apellido_paterno" />
+          <ScalarProperty Name="apellido_materno" ColumnName="apellido_materno" />
+          <ScalarProperty Name="telefono_contacto" ColumnName="telefono_contacto" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
   </EntityContainerMapping>
 </Mapping>

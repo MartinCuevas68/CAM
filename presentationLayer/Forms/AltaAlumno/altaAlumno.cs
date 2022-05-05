@@ -38,17 +38,17 @@ namespace presentationLayer
 
 
             //CODIGO NUEVO
-            centrarLabel(altaalumnoLabel, infoTutorLabel, informacionMedLabel, logo, infGeneralAlLabel, informacionGeneralAlumno,
-                informacionGeneralAlumno2, informacionTutor, informacionMedicaAlumnoGroupBox);
+            PLAltaAlumno.centrarLabel(altaalumnoLabel, infoTutorLabel, informacionMedLabel, logo, infGeneralAlLabel, informacionGeneralAlumno,
+                informacionGeneralAlumno2, informacionTutor, informacionMedicaAlumnoGroupBox, infoTutorLabel);
 
-            infoGen(nombreAlLabel, nombreAl, nombreAlPanel, apellidoPLabel, apellidoP, apellidoPPanel, apellidoMLabel, apellidoM, apellidoMPanel, fechaNaLabel, fechaNa, añosCumLabel,
+            PLAltaAlumno.infoGen(nombreAlLabel, nombreAl, nombreAlPanel, apellidoPLabel, apellidoP, apellidoPPanel, apellidoMLabel, apellidoM, apellidoMPanel, fechaNaLabel, fechaNa, añosCumLabel,
                 añosCum, añosCumPanel, curpLabel, curp, curpPanel, direccionAlumnoLabel, calleLabel, calle, callePanel, numeroCasaLabel, numeroCasa, numeroCasaPanel, coloniaLabel, colonia, coloniaPanel, lugarNaLabel,
                 ciudadLabel, ciudad, ciudadPanel, estadoLabel, estado, estadoPanel, fotoAl, fotoBtn);
 
-            infoGen2(telPersonalLabel, telefonopersonalTextBox, telPersonalPanel, escuelaPLabel, escuelaP, escuelaPPanel, canalizadoLabel, canalizado, canalizadoPanel, cicloEscLabel, cicloEsc, cicloEscPanel, tipoIngLabel,
+            PLAltaAlumno.infoGen2(telPersonalLabel, telefonopersonalTextBox, telPersonalPanel, escuelaPLabel, escuelaP, escuelaPPanel, canalizadoLabel, canalizado, canalizadoPanel, cicloEscLabel, cicloEsc, cicloEscPanel, tipoIngLabel,
                 tipoIngresoGroupBox);
 
-            infoTutor(nombreTLabel, nombreT, nombreTPanel, apellidoPTLabel, apellidoPT, apellidoPTPanel, apellidoMTLabel, apellidoMT, apellidoMTPanel, direccionTLabel,
+            PLAltaAlumno.infoTutor(nombreTLabel, nombreT, nombreTPanel, apellidoPTLabel, apellidoPT, apellidoPTPanel, apellidoMTLabel, apellidoMT, apellidoMTPanel, direccionTLabel,
                 calleTLabel, calleT, calleTPanel, numeroCasaTLabel, numeroCasaT, numeroCasaTPanel, coloniaTLabel, coloniaT, coloniaTPanel,
                 calleDatoLabel, numeroDatoLabel, coloniaDatoLabel, infContactoLabel, telCasaTLabel, telefonocasatutorTextBox, telCasaTPanel, telMovilTLabel, telefonomoviltutorTextBox, telMovilTPanel,
                 telTrabajoTLabel, telefonotrabajotutorTextBox, telTrabajoTPanel, ocupacionLabel, ocupacion, ocupacionTPanel, direccionCheckBox);
@@ -86,191 +86,7 @@ namespace presentationLayer
             añosCum.Text = edadConvertidaI;
         }
 
-        //CENTRAR TITULO
-        private void centrarLabel(Label nomLabel, Label infoTutorL, Label infoMedLabel, PictureBox logo, Label infGenLabel, GroupBox infoGeneral,
-            GroupBox infoGeneral2, GroupBox infoTutor, GroupBox infoMedica)
-        {
-            //tamaño pantalla
-
-            logo.Location = new Point(50, 20);
-            logo.Size = new Size(150, 148);
-
-            //TITULO PRINCIPAL
-            nomLabel.Location = new Point(620, 50);
-
-            //SUBTITULOS
-            infGenLabel.Location = new Point(620, 120);
-            infoTutorLabel.Location = new Point(670, 120);
-            infoMedLabel.Location = new Point(620, 120);
-
-
-            //GROUPBOXS
-            infoGeneral.Size = new Size(1220, 480);
-            infoGeneral.Location = new Point(180, 180);
-
-            infoGeneral2.Size = new Size(580, 460);
-            infoGeneral2.Location = new Point(510, 180);
-
-            infoTutor.Size = new Size(1100, 480);
-            infoTutor.Location = new Point(260, 180);
-
-            infoMedica.Size = new Size(1220, 440);
-            infoMedica.Location = new Point(180, 180);
-        }
-
-
-        //INFORMACION GENERAL ALUMNO
-        private void infoGen(Label nombreL, TextBox nombre, Panel nombreP, Label apellidoPL, TextBox apellidoP, Panel apellidoPP, Label apellidoML,
-            TextBox apellidoM, Panel apellidoMP,
-            Label fechaNaL, DateTimePicker fechaNa, Label añosCumL, TextBox añosCum, Panel añosCumP, Label curpL, TextBox curp, Panel curpP,
-            Label direccion, Label calleL,
-            TextBox calle, Panel calleP, Label numL, TextBox num, Panel numP, Label coloniaL, TextBox colonia, Panel coloniaP, Label lugarNa,
-            Label ciudadL, TextBox ciudad, Panel ciudadP, Label estadoL, TextBox estado, Panel estadoP, PictureBox foto, Button fotoB)
-        {
-
-            foto.Location = new Point(1000, 50);
-            foto.Size = new Size(200, 220);
-            fotoB.Location = new Point(1000, 285);
-            fotoB.Size = new Size(200, 45);
-            fotoB.Font = new Font("Gadugi", 14);
-
-            nombreL.Location = new Point(50, 50);
-            nombreP.Location = new Point(260, 50);
-            nombreP.Size = new Size(300, 45);
-            //nombreP.Padding = new Padding(2,2,2,2);
-
-            apellidoPL.Location = new Point(50, 110);
-            apellidoPP.Location = new Point(260, 110);
-            apellidoPP.Size = new Size(300, 45);
-
-            apellidoML.Location = new Point(50, 170);
-            apellidoMP.Location = new Point(260, 170);
-            apellidoMP.Size = new Size(300, 45);
-
-            fechaNaL.Location = new Point(50, 230);
-            fechaNa.Location = new Point(260, 230);
-
-            añosCumL.Location = new Point(50, 290);
-            añosCumP.Location = new Point(260, 290);
-            añosCumP.Size = new Size(150, 45);
-
-            curpL.Location = new Point(50, 350);
-            curpP.Location = new Point(260, 350);
-            curpP.Size = new Size(300, 45);
-
-            //DIRECCION
-            direccion.Location = new Point(650, 50);
-
-            calleL.Location = new Point(650, 110);
-            calleP.Location = new Point(740, 110);
-            calleP.Size = new Size(240, 45);
-
-            numL.Location = new Point(650, 170);
-            numP.Location = new Point(740, 170);
-            numP.Size = new Size(150, 45);
-
-            coloniaL.Location = new Point(650, 230);
-            coloniaP.Location = new Point(740, 230);
-            coloniaP.Size = new Size(240, 45);
-
-            //LUGAR NACIMIENTO
-            lugarNa.Location = new Point(650, 290);
-
-
-            ciudadL.Location = new Point(650, 350);
-            ciudadP.Location = new Point(740, 350);
-            ciudadP.Size = new Size(240, 45);
-
-            estadoL.Location = new Point(650, 410);
-            estadoP.Location = new Point(740, 410);
-            estadoP.Size = new Size(240, 45);
-        }
-
-
-        //INFORMACION GENERAL ALUMNO 2
-        private void infoGen2(Label telL, TextBox tel, Panel telP, Label escuelaPL, TextBox escuelaP, Panel escuelaPP, Label canalizadoL, TextBox canalizado, Panel canalizadoP, Label cicloL,
-            TextBox ciclo, Panel cicloP, Label tipoIng, GroupBox ingresos)
-        {
-            telL.Location = new Point(50, 50);
-            telP.Location = new Point(280, 50);
-            telP.Size = new Size(150, 45);
-
-            escuelaPL.Location = new Point(50, 110);
-            escuelaPP.Location = new Point(280, 110);
-            escuelaPP.Size = new Size(250, 45);
-
-            canalizadoL.Location = new Point(50, 170);
-            canalizadoP.Location = new Point(280, 170);
-            canalizadoP.Size = new Size(250, 45);
-
-            cicloL.Location = new Point(50, 230);
-            cicloP.Location = new Point(280, 230);
-            cicloP.Size = new Size(150, 45);
-
-            tipoIng.Location = new Point(50, 290);
-
-            ingresos.Location = new Point(50, 330);
-        }
-
-        //INFORMACION TUTOR
-        private void infoTutor(Label nombreL, TextBox nombre, Panel nombreP, Label apellidoPL, TextBox apellidoP, Panel apellidoPP,
-            Label apellidoML, TextBox apellidoM, Panel apellidoMP, Label direccion, Label calleL, TextBox calle, Panel calleP,
-            Label numL, TextBox num, Panel numP, Label coloniaL, TextBox colonia, Panel coloniaP, Label datoCalle, Label datoNumeroCasa, Label datoColonia,
-            Label infoCon, Label telCasaL, TextBox telCasa, Panel telCasaP, Label telMovilL, TextBox telMovil, Panel telMovilP, Label telTrabajoL, TextBox telTrabajo, Panel telTrabajoP,
-            Label ocupacionL, TextBox ocupacion, Panel ocupacionP, CheckBox mismaDireccion)
-        {
-
-            nombreL.Location = new Point(50, 50);
-            nombreP.Location = new Point(215, 50);
-            nombreP.Size = new Size(300, 50);
-
-            apellidoPL.Location = new Point(50, 110);
-            apellidoPP.Location = new Point(215, 110);
-            apellidoPP.Size = new Size(300, 50);
-
-            apellidoML.Location = new Point(50, 170);
-            apellidoMP.Location = new Point(215, 170);
-            apellidoMP.Size = new Size(300, 50);
-
-            direccion.Location = new Point(650, 45);
-
-            mismaDireccion.Location = new Point(770, 45);
-            mismaDireccion.Checked = false;
-
-            calleL.Location = new Point(650, 90);
-            calleP.Location = new Point(740, 90);
-            calleP.Size = new Size(300, 50);
-
-            numL.Location = new Point(650, 150);
-            numP.Location = new Point(740, 150);
-            numP.Size = new Size(150, 50);
-
-            coloniaL.Location = new Point(650, 210);
-            coloniaP.Location = new Point(740, 210);
-            coloniaP.Size = new Size(300, 50);
-
-            infoCon.Location = new Point(50, 250);
-
-            telCasaL.Location = new Point(50, 290);
-            telCasaP.Location = new Point(215, 290);
-            telCasaP.Size = new Size(150, 50);
-
-            telMovilL.Location = new Point(400, 290);
-            telMovilP.Location = new Point(550, 290);
-            telMovilP.Size = new Size(150, 50);
-
-            telTrabajoL.Location = new Point(50, 410);
-            telTrabajoP.Location = new Point(215, 410);
-            telTrabajoP.Size = new Size(150, 50);
-
-            ocupacionL.Location = new Point(50, 350);
-            ocupacionP.Location = new Point(215, 350);
-            ocupacionP.Size = new Size(300, 50);
-        }
-
-        //INFORMACION MEDICA
-
-
+   
         private void altaAlumno_Load(object sender, EventArgs e)
         {
             limpiarFormato1Button.Hide();
