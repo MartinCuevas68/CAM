@@ -18,7 +18,7 @@ namespace presentationLayer.Forms.ConsultaFormatos
         public vistaPreviaFormato(int formato,Form consultaform)
         {
             InitializeComponent();
-            PLConsultaFormatos.vistaPrevia(vistaPreviaPDF,tituloLabel,formatoLabel);
+            PLConsultaFormatos.vistaPrevia(vistaPreviaPDF,formatoLabel);
             string RunningPath = "";
             string FileName = "";
             format = formato;
@@ -85,5 +85,6 @@ namespace presentationLayer.Forms.ConsultaFormatos
         {
             formvar.cambiarbandera(format);
         }
+
     }
 }
