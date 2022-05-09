@@ -246,6 +246,15 @@ namespace presentationLayer
             int bandera2 = 0;
             string mensaje = "";
 
+
+
+            if (curp.Text.Length != 18)
+            {
+                mensaje += "Error de formato:\n\n";
+                mensaje += ("◉Curp del alumno, debe ser de 18 caracteres\n");
+                bandera = 1;
+            }
+
             if (nombreAl.Text.Trim().Equals(""))
             {
                 if (bandera == 0)
@@ -327,6 +336,7 @@ namespace presentationLayer
                 }
                 mensaje +=("◉Curp del alumno\n");
             }
+
 
             if (tipoIngreso.Text.Trim().Equals(""))
             {
@@ -562,8 +572,6 @@ namespace presentationLayer
 
 
 
-
-
             if (bandera == 1 || bandera2 == 1)
             {
                 MessageBox.Show(mensaje, "Dato requerido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -723,7 +731,7 @@ namespace presentationLayer
         {
             int idseleccionada;
             string informacion = this.enfermedadesCombobox.GetItemText(this.enfermedadesCombobox.SelectedItem);
-            enfermedades.Text = enfermedades.Text.Replace("\n"+informacion, " ");
+            enfermedades.Text = enfermedades.Text.Replace("\n"+informacion, "");
             enfermedades.Text = enfermedades.Text.Replace(informacion+"\n", "");
 
             idseleccionada = enfermedadesCombobox.SelectedIndex + 1;
@@ -758,7 +766,7 @@ namespace presentationLayer
             int idseleccionada;
 
             string informacion = this.discapacidadesCombobox.GetItemText(this.discapacidadesCombobox.SelectedItem);
-            discapacidades.Text = discapacidades.Text.Replace("\n" + informacion, " ");
+            discapacidades.Text = discapacidades.Text.Replace("\n" + informacion, "");
             discapacidades.Text = discapacidades.Text.Replace(informacion+"\n", "");
 
             idseleccionada = discapacidadesCombobox.SelectedIndex + 1;
@@ -793,8 +801,8 @@ namespace presentationLayer
         {
             int idseleccionada;
             string informacion = this.alergiasCombobox.GetItemText(this.alergiasCombobox.SelectedItem);
-            alergias.Text = alergias.Text.Replace("\n" + informacion, " ");
-            alergias.Text = alergias.Text.Replace( informacion+"\n", " ");
+            alergias.Text = alergias.Text.Replace("\n" + informacion, "");
+            alergias.Text = alergias.Text.Replace( informacion+"\n", "");
             idseleccionada = alergiasCombobox.SelectedIndex+1;
              for(int i = 0; i < alergiasids.Count(); i++)
             {

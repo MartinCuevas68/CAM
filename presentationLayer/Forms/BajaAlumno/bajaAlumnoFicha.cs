@@ -18,6 +18,7 @@ namespace presentationLayer.Forms.BajaAlumno
 
         public bajaAlumnoFicha(int id_alumno, Form fichaT)
         {
+            MessageBox.Show("Aqui es hijo");
                 id = id_alumno;
                 InitializeComponent();
                 PLBajaAlumnoFicha.datosAlumnoFicha(nombreAlLabelFT, nombreAlFT, matriculaLabelFT, matriculaFT);
@@ -27,7 +28,7 @@ namespace presentationLayer.Forms.BajaAlumno
                 //Ejemplo
                 nombreAlFT.Text = alumno.nombre + " " + alumno.apellido_paterno + " " + alumno.apellido_materno;
                 matriculaFT.Text = alumno.id_alumno.ToString();
-              
+                ficha = (fichaTecnica)fichaT;
                 if (ficha == null)
                 {
 
@@ -43,6 +44,14 @@ namespace presentationLayer.Forms.BajaAlumno
             bajaAlumnoFicha bajaFT = new bajaAlumnoFicha(id, ficha);
             bajaFT.Close();
             this.Hide();
+        }
+
+        private void continuarBajaButtonFT_Click(object sender, EventArgs e)
+        {
+            businessLayer.BLEliminacionAlumno.eliminaralumno(id);
+            ConsultaAlumno cons = new ConsultaAlumno();
+            ficha.Close();
+            cons.Show();
         }
     }
     }
