@@ -47,6 +47,7 @@ namespace presentationLayer
             this.cerrarSesionButton = new presentationLayer.buttonSystem();
             this.imprimirFormatosButton = new presentationLayer.buttonSystem();
             this.fichaTecnicaButton = new presentationLayer.buttonSystem();
+            this.filtroeg = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.altaDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             this.busquedaPanel.SuspendLayout();
@@ -267,12 +268,24 @@ namespace presentationLayer
             this.fichaTecnicaButton.UseVisualStyleBackColor = false;
             this.fichaTecnicaButton.Click += new System.EventHandler(this.fichaTecnicaButton_Click);
             // 
+            // filtroeg
+            // 
+            this.filtroeg.AutoSize = true;
+            this.filtroeg.Location = new System.Drawing.Point(1212, 195);
+            this.filtroeg.Name = "filtroeg";
+            this.filtroeg.Size = new System.Drawing.Size(129, 21);
+            this.filtroeg.TabIndex = 149;
+            this.filtroeg.Text = "Solo egresados";
+            this.filtroeg.UseVisualStyleBackColor = true;
+            this.filtroeg.CheckedChanged += new System.EventHandler(this.filtroeg_CheckedChanged);
+            // 
             // ConsultaAlumno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1695, 792);
+            this.Controls.Add(this.filtroeg);
             this.Controls.Add(this.logo);
             this.Controls.Add(this.cerrarSesionButton);
             this.Controls.Add(this.imprimirFormatosButton);
@@ -313,5 +326,6 @@ namespace presentationLayer
         private buttonSystem imprimirFormatosButton;
         private buttonSystem cerrarSesionButton;
         private System.Windows.Forms.PictureBox logo;
+        private System.Windows.Forms.CheckBox filtroeg;
     }
 }

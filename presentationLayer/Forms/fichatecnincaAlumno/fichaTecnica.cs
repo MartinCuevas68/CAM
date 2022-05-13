@@ -338,7 +338,7 @@ namespace presentationLayer
             }
 
 
-            if (tipoIngreso.Text.Trim().Equals(""))
+            if (tipoIngresoComboBox.SelectedItem == null)
             {
                 if (bandera == 0)
                 {
@@ -588,8 +588,10 @@ namespace presentationLayer
                 alumno.edad_alumno = edad.Text;
                 alumno.calle_alumno = calle.Text;
                 alumno.colonia_alumno = colonia.Text;
+                MessageBox.Show(curp.Text);
                 alumno.CURP_alumno = curp.Text;
-                alumno.tipo_ingreso = tipoIngreso.Text;
+                MessageBox.Show(tipoIngresoComboBox.SelectedItem.ToString());
+                alumno.tipo_ingreso = tipoIngresoComboBox.Text;
                 alumno.numero_alumno = numeroCasa.Text;
                 alumno.atendido_por = canalizado.Text;
                 alumno.escuela_procedencia_alumno = escuelaP.Text;
@@ -609,6 +611,7 @@ namespace presentationLayer
                 }
                 infoMed.servicio_medico = servMedico.Text;
                 infoMed.telefono_contacto = telefono.Text;
+                MessageBox.Show(alumno.CURP_alumno);
                 businessLayer.BLModificacionAlumno.modificarAlumno(alumno);
                 businessLayer.BLModificacionAlumno.modificartutor(tutor);
                 businessLayer.BLModificacionAlumno.modificarinfomed(infoMed);
@@ -619,7 +622,25 @@ namespace presentationLayer
                 businessLayer.BLModificacionAlumno.modificarenfermedades(enfermedadesids, enfermedadesidsvar, idcartilla);
                 businessLayer.BLModificacionAlumno.modificardiscapacidades(discapacidadesids, discapacidadesidsvar, idcartilla);
                 businessLayer.BLModificacionAlumno.actualizartratamiento(tratamientos.Text, idcartilla);
-                ocultarEditarInformacion();
+                ocultarEditarInformacion();//Información del alumno
+
+                idalumno = businessLayer.BLFichaTecnica.infoGenAlumno(nombreAl, apellidoP, apellidoM, edad, matricula, fechaNa, ciudad, estado, curp, telPersonal, calle, numeroCasa, colonia, tipoIngreso, idalumno);
+
+                //Informacion escolar del alumno
+                businessLayer.BLFichaTecnica.infoEscAlumno(tipoIngreso, escuelaP, canalizado, cicloEsc, idalumno);
+
+                //Información del tutor
+                idtutor = businessLayer.BLFichaTecnica.infoTutor(nombreT, apellidoPT, apellidoMT, calleT, numeroCasaT, coloniaT, ocupacion, telCasaT, telMovilT, telTrabajoT, idalumno);
+
+                //Información médica
+                idcartilla = businessLayer.BLFichaTecnica.infoMedAlumno(servMedico, telefono, grupoSanguineo, idalumno);
+
+                //Discapacidades, enfermedades, alergias y tratamientos
+                businessLayer.BLFichaTecnica.infoMedAlumno2(discapacidades, enfermedades, alergias, tratamientos, idalumno, alergiasids, discapacidadesids, enfermedadesids, alergiasidsvar, discapacidadesidsvar, enfermedadesidsvar);
+
+                //Foto
+                fotol = _1dataLayer.DLConsultaAlumno.ConsultaFoto(idalumno);
+                foto.Image = byteArrayToImage(fotol.imagen_alumno.ToArray());
             }
         }
 
