@@ -147,3 +147,5 @@ C:\Users\ferna\source\repos\CAM\presentationLayer\obj\Debug\AxInterop.AcroPDFLib
 C:\Users\ferna\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.csproj.ResolveComReference.cache
 C:\Users\ferna\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.Forms.ConsultaFormatos.consultaFormatos.resources
 C:\Users\ferna\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.Forms.ConsultaFormatos.vistaPreviaFormato.resources
+C:\Users\ferna\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.csproj.SuggestedBindingRedirects.cache
+C:\Users\ferna\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.csproj.CopyComplete

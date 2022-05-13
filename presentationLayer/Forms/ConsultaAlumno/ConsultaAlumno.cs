@@ -295,7 +295,11 @@ namespace presentationLayer
 
         private void filtroeg_CheckedChanged(object sender, EventArgs e)
         {
-            if(filtroeg.Checked == true)
+        }
+
+        private void egresadoCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (egresadoCheckBox.Checked == true)
             {
                 altaDataGridView.DataSource = businessLayer.BLConsultaAlumno.alumnosegresadosGet();
                 data = businessLayer.BLConsultaAlumno.ConvertToDatatable((List<_1dataLayer.alumnoenfermedadDTO>)altaDataGridView.DataSource);

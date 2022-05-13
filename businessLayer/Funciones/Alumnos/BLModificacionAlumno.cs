@@ -184,7 +184,6 @@ namespace businessLayer
 
         public static void modificarAlumno(_1dataLayer.SP_FichaTecnicaAlumno_Result alumno)
         {
-            Console.WriteLine(alumno.CURP_alumno);
             _1dataLayer.DLModificacionAlumno.Modificacionalumno(alumno.id_alumno, alumno);
         }
 

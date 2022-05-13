@@ -588,9 +588,7 @@ namespace presentationLayer
                 alumno.edad_alumno = edad.Text;
                 alumno.calle_alumno = calle.Text;
                 alumno.colonia_alumno = colonia.Text;
-                MessageBox.Show(curp.Text);
                 alumno.CURP_alumno = curp.Text;
-                MessageBox.Show(tipoIngresoComboBox.SelectedItem.ToString());
                 alumno.tipo_ingreso = tipoIngresoComboBox.Text;
                 alumno.numero_alumno = numeroCasa.Text;
                 alumno.atendido_por = canalizado.Text;
@@ -611,7 +609,6 @@ namespace presentationLayer
                 }
                 infoMed.servicio_medico = servMedico.Text;
                 infoMed.telefono_contacto = telefono.Text;
-                MessageBox.Show(alumno.CURP_alumno);
                 businessLayer.BLModificacionAlumno.modificarAlumno(alumno);
                 businessLayer.BLModificacionAlumno.modificartutor(tutor);
                 businessLayer.BLModificacionAlumno.modificarinfomed(infoMed);
