@@ -19,5 +19,11 @@ namespace presentationLayer
             eliminar.Size = new Size(50, 50);
         }
 
+        public static void egresados(CheckBox egresado)
+        {
+            egresado.Size = new Size(50, 30);
+            egresado.Location = new Point(230,190);
+        }
+
     }
 }

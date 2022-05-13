@@ -23,6 +23,7 @@ namespace presentationLayer
         {
             InitializeComponent();
             PLConsultaAlumno.consultaBotonesAlumnos(agregarButton,modificarButton,eliminarButton);
+            PLConsultaAlumno.egresados(egresadoCheckBox);
             consultaBotonesParaNavegar(cerrarSesionButton,imprimirFormatosButton,fichaTecnicaButton);
             consultaBusquedaAlumnos(busquedaPanel,busquedaTextBox, buscarButton);
             tituloAlumnos(consultaLabel);

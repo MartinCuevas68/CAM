@@ -137,3 +137,4 @@ C:\Users\ferna\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.Fo
 C:\Users\DELL\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.Forms.BajaAlumno.bajaAlumnoFicha.resources
 C:\Users\DELL\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.Forms.ConsultaFormatos.consultaFormatos.resources
 C:\Users\vanes\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.Forms.ConsultaFormatos.consultaFormatos.resources
+C:\Users\vanes\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.csproj.CopyComplete
