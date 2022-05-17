@@ -29,10 +29,10 @@ namespace presentationLayer
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConsultaAlumno));
             this.consultaLabel = new System.Windows.Forms.Label();
             this.altaDataGridView = new System.Windows.Forms.DataGridView();
@@ -48,6 +48,8 @@ namespace presentationLayer
             this.imprimirFormatosButton = new presentationLayer.buttonSystem();
             this.fichaTecnicaButton = new presentationLayer.buttonSystem();
             this.egresadoCheckBox = new System.Windows.Forms.CheckBox();
+            this.filtrarPorCheckBox = new System.Windows.Forms.ComboBox();
+            this.filtrarPorLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.altaDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             this.busquedaPanel.SuspendLayout();
@@ -66,42 +68,42 @@ namespace presentationLayer
             // 
             // altaDataGridView
             // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Gadugi", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(2);
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(98)))), ((int)(((byte)(242)))));
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.altaDataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Gadugi", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle13.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(98)))), ((int)(((byte)(242)))));
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.altaDataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
             this.altaDataGridView.BackgroundColor = System.Drawing.Color.White;
             this.altaDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Gadugi", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(98)))), ((int)(((byte)(242)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.altaDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Gadugi", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(98)))), ((int)(((byte)(242)))));
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.altaDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
             this.altaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Gadugi", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(98)))), ((int)(((byte)(242)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.altaDataGridView.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Gadugi", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(98)))), ((int)(((byte)(242)))));
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.altaDataGridView.DefaultCellStyle = dataGridViewCellStyle15;
             this.altaDataGridView.Location = new System.Drawing.Point(51, 226);
             this.altaDataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.altaDataGridView.Name = "altaDataGridView";
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Gadugi", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.altaDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle16.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Gadugi", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.altaDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle16;
             this.altaDataGridView.RowHeadersWidth = 51;
             this.altaDataGridView.Size = new System.Drawing.Size(1629, 598);
             this.altaDataGridView.TabIndex = 10;
@@ -118,7 +120,7 @@ namespace presentationLayer
             this.logo.Image = global::presentationLayer.Properties.Resources.log_fondo_blanco;
             this.logo.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.logo.Location = new System.Drawing.Point(51, 14);
-            this.logo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.logo.Margin = new System.Windows.Forms.Padding(4);
             this.logo.Name = "logo";
             this.logo.Size = new System.Drawing.Size(200, 185);
             this.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -132,7 +134,7 @@ namespace presentationLayer
             this.busquedaPanel.Controls.Add(this.busquedaTextBox);
             this.busquedaPanel.Controls.Add(this.buscarButton);
             this.busquedaPanel.Location = new System.Drawing.Point(695, 146);
-            this.busquedaPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.busquedaPanel.Margin = new System.Windows.Forms.Padding(4);
             this.busquedaPanel.Name = "busquedaPanel";
             this.busquedaPanel.Size = new System.Drawing.Size(413, 60);
             this.busquedaPanel.TabIndex = 144;
@@ -142,7 +144,7 @@ namespace presentationLayer
             this.busquedaTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.busquedaTextBox.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.busquedaTextBox.Location = new System.Drawing.Point(69, 14);
-            this.busquedaTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.busquedaTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.busquedaTextBox.Name = "busquedaTextBox";
             this.busquedaTextBox.Size = new System.Drawing.Size(225, 22);
             this.busquedaTextBox.TabIndex = 12;
@@ -171,7 +173,7 @@ namespace presentationLayer
             this.modificarButton.FlatAppearance.BorderSize = 0;
             this.modificarButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.modificarButton.Location = new System.Drawing.Point(1575, 167);
-            this.modificarButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.modificarButton.Margin = new System.Windows.Forms.Padding(4);
             this.modificarButton.Name = "modificarButton";
             this.modificarButton.Size = new System.Drawing.Size(57, 53);
             this.modificarButton.TabIndex = 142;
@@ -186,7 +188,7 @@ namespace presentationLayer
             this.eliminarButton.FlatAppearance.BorderSize = 0;
             this.eliminarButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.eliminarButton.Location = new System.Drawing.Point(1625, 167);
-            this.eliminarButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.eliminarButton.Margin = new System.Windows.Forms.Padding(4);
             this.eliminarButton.Name = "eliminarButton";
             this.eliminarButton.Size = new System.Drawing.Size(57, 50);
             this.eliminarButton.TabIndex = 141;
@@ -201,7 +203,7 @@ namespace presentationLayer
             this.agregarButton.FlatAppearance.BorderSize = 0;
             this.agregarButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.agregarButton.Location = new System.Drawing.Point(1525, 167);
-            this.agregarButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.agregarButton.Margin = new System.Windows.Forms.Padding(4);
             this.agregarButton.Name = "agregarButton";
             this.agregarButton.Size = new System.Drawing.Size(57, 53);
             this.agregarButton.TabIndex = 140;
@@ -220,7 +222,7 @@ namespace presentationLayer
             this.cerrarSesionButton.Font = new System.Drawing.Font("Gadugi", 14F, System.Drawing.FontStyle.Bold);
             this.cerrarSesionButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(98)))), ((int)(((byte)(242)))));
             this.cerrarSesionButton.Location = new System.Drawing.Point(51, 849);
-            this.cerrarSesionButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cerrarSesionButton.Margin = new System.Windows.Forms.Padding(4);
             this.cerrarSesionButton.Name = "cerrarSesionButton";
             this.cerrarSesionButton.Padding = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.cerrarSesionButton.Size = new System.Drawing.Size(219, 55);
@@ -239,7 +241,7 @@ namespace presentationLayer
             this.imprimirFormatosButton.Font = new System.Drawing.Font("Gadugi", 14F, System.Drawing.FontStyle.Bold);
             this.imprimirFormatosButton.ForeColor = System.Drawing.Color.White;
             this.imprimirFormatosButton.Location = new System.Drawing.Point(969, 849);
-            this.imprimirFormatosButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.imprimirFormatosButton.Margin = new System.Windows.Forms.Padding(4);
             this.imprimirFormatosButton.Name = "imprimirFormatosButton";
             this.imprimirFormatosButton.Padding = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.imprimirFormatosButton.Size = new System.Drawing.Size(269, 55);
@@ -259,7 +261,7 @@ namespace presentationLayer
             this.fichaTecnicaButton.Font = new System.Drawing.Font("Gadugi", 14F, System.Drawing.FontStyle.Bold);
             this.fichaTecnicaButton.ForeColor = System.Drawing.Color.White;
             this.fichaTecnicaButton.Location = new System.Drawing.Point(1381, 849);
-            this.fichaTecnicaButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.fichaTecnicaButton.Margin = new System.Windows.Forms.Padding(4);
             this.fichaTecnicaButton.Name = "fichaTecnicaButton";
             this.fichaTecnicaButton.Padding = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.fichaTecnicaButton.Size = new System.Drawing.Size(219, 55);
@@ -273,13 +275,39 @@ namespace presentationLayer
             this.egresadoCheckBox.AutoSize = true;
             this.egresadoCheckBox.Font = new System.Drawing.Font("Gadugi", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.egresadoCheckBox.Location = new System.Drawing.Point(51, 188);
-            this.egresadoCheckBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.egresadoCheckBox.Margin = new System.Windows.Forms.Padding(4);
             this.egresadoCheckBox.Name = "egresadoCheckBox";
             this.egresadoCheckBox.Size = new System.Drawing.Size(131, 32);
             this.egresadoCheckBox.TabIndex = 149;
             this.egresadoCheckBox.Text = "Egresado";
             this.egresadoCheckBox.UseVisualStyleBackColor = true;
+            this.egresadoCheckBox.Visible = false;
             this.egresadoCheckBox.CheckedChanged += new System.EventHandler(this.egresadoCheckBox_CheckedChanged);
+            // 
+            // filtrarPorCheckBox
+            // 
+            this.filtrarPorCheckBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.filtrarPorCheckBox.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.filtrarPorCheckBox.Font = new System.Drawing.Font("Gadugi", 11.25F);
+            this.filtrarPorCheckBox.FormattingEnabled = true;
+            this.filtrarPorCheckBox.Items.AddRange(new object[] {
+            "Nuevo ingreso",
+            "Reingreso",
+            "Egresado"});
+            this.filtrarPorCheckBox.Location = new System.Drawing.Point(482, 188);
+            this.filtrarPorCheckBox.Name = "filtrarPorCheckBox";
+            this.filtrarPorCheckBox.Size = new System.Drawing.Size(121, 30);
+            this.filtrarPorCheckBox.TabIndex = 150;
+            // 
+            // filtrarPorLabel
+            // 
+            this.filtrarPorLabel.AutoSize = true;
+            this.filtrarPorLabel.Font = new System.Drawing.Font("Gadugi", 11.25F);
+            this.filtrarPorLabel.Location = new System.Drawing.Point(349, 192);
+            this.filtrarPorLabel.Name = "filtrarPorLabel";
+            this.filtrarPorLabel.Size = new System.Drawing.Size(102, 22);
+            this.filtrarPorLabel.TabIndex = 151;
+            this.filtrarPorLabel.Text = "Filtrar por: ";
             // 
             // ConsultaAlumno
             // 
@@ -287,6 +315,8 @@ namespace presentationLayer
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1556, 750);
+            this.Controls.Add(this.filtrarPorLabel);
+            this.Controls.Add(this.filtrarPorCheckBox);
             this.Controls.Add(this.egresadoCheckBox);
             this.Controls.Add(this.logo);
             this.Controls.Add(this.cerrarSesionButton);
@@ -300,7 +330,7 @@ namespace presentationLayer
             this.Controls.Add(this.consultaLabel);
             this.Controls.Add(this.altaDataGridView);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ConsultaAlumno";
             this.Text = "CONSULTAS";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -329,5 +359,7 @@ namespace presentationLayer
         private buttonSystem cerrarSesionButton;
         private System.Windows.Forms.PictureBox logo;
         private System.Windows.Forms.CheckBox egresadoCheckBox;
+        private System.Windows.Forms.ComboBox filtrarPorCheckBox;
+        private System.Windows.Forms.Label filtrarPorLabel;
     }
 }
