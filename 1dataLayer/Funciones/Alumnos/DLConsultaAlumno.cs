@@ -92,6 +92,26 @@ namespace _1dataLayer
 
             return alumnos;
         }
+
+
+        public List<SP_Lista_Egresado_Filtro_Result> Listafiltrada(string cond)
+        {
+            List<SP_Lista_Egresado_Filtro_Result> alumnos = new List<SP_Lista_Egresado_Filtro_Result>();
+            using (BDCAMEntities db = new BDCAMEntities())
+            {
+                ObjectResult<SP_Lista_Egresado_Filtro_Result> y = db.SP_Lista_Egresado_Filtro(cond);
+                foreach (SP_Lista_Egresado_Filtro_Result result in y)
+                {
+                    alumnos.Add(result);
+
+                }
+            }
+
+            return alumnos;
+        }
+
+
+
         //regresa la ficha tecnica de 1 solo alumno 
         public static SP_FichaTecnicaAlumno_Result FichaTenicaAlumno(int id)
         {

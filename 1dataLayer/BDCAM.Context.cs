@@ -924,5 +924,14 @@ namespace _1dataLayer
         {
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_Lista_Egresados_Result>("SP_Lista_Egresados");
         }
+    
+        public virtual ObjectResult<SP_Lista_Egresado_Filtro_Result> SP_Lista_Egresado_Filtro(string tipo)
+        {
+            var tipoParameter = tipo != null ?
+                new ObjectParameter("tipo", tipo) :
+                new ObjectParameter("tipo", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_Lista_Egresado_Filtro_Result>("SP_Lista_Egresado_Filtro", tipoParameter);
+        }
     }
 }

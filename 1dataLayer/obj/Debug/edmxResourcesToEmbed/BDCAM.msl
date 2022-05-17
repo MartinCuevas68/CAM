@@ -495,5 +495,16 @@
         </ComplexTypeMapping>
       </ResultMapping>
     </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_Lista_Egresado_Filtro" FunctionName="BDCAMModel.Store.SP_Lista_Egresado_Filtro">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BDCAMModel.SP_Lista_Egresado_Filtro_Result">
+          <ScalarProperty Name="id_alumno" ColumnName="id_alumno" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="apellido_paterno" ColumnName="apellido_paterno" />
+          <ScalarProperty Name="apellido_materno" ColumnName="apellido_materno" />
+          <ScalarProperty Name="telefono_contacto" ColumnName="telefono_contacto" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
   </EntityContainerMapping>
 </Mapping>

@@ -157,9 +157,63 @@ namespace businessLayer
         }
 
 
+        public static List<_1dataLayer.alumnoenfermedadDTO> alumnosfiltradosGet(string cond)
+        {
+            
+            try
+            {
+                List<_1dataLayer.alumnoenfermedadDTO> student = new List<_1dataLayer.alumnoenfermedadDTO>();
+                _1dataLayer.alumnoenfermedadDTO var = new _1dataLayer.alumnoenfermedadDTO();
+
+                _1dataLayer.DLConsultaAlumno listaAlumnos = new _1dataLayer.DLConsultaAlumno();
+
+                List<_1dataLayer.SP_Lista_Egresado_Filtro_Result> mostrarAlumnos = new List<_1dataLayer.SP_Lista_Egresado_Filtro_Result>();
+                List<_1dataLayer.SP_ListaAlergia_Result> mostrarAlergias = new List<_1dataLayer.SP_ListaAlergia_Result>();
+                List<_1dataLayer.SP_ListaDiscapacidad_Result> mostrarDiscapacidades = new List<_1dataLayer.SP_ListaDiscapacidad_Result>();
+                String discapacidades = null;
+                String alergias = null;
+
+                mostrarAlumnos = listaAlumnos.Listafiltrada(cond);
+
+                List<_1dataLayer.SP_Lista_Egresado_Filtro_Result> alumnos = new List<_1dataLayer.SP_Lista_Egresado_Filtro_Result>();
+                foreach (_1dataLayer.SP_Lista_Egresado_Filtro_Result result in mostrarAlumnos)
+                {
+                    var.id_alumno = result.id_alumno;
+                    var.nombre = result.nombre + " ";
+                    var.nombre += result.apellido_paterno + " ";
+                    var.nombre += result.apellido_materno;
+                    var.telefono_contacto = result.telefono_contacto;
+                    mostrarAlergias = _1dataLayer.DLConsultaAlumno.ListaAlergias(result.id_alumno);
+                    foreach (_1dataLayer.SP_ListaAlergia_Result a in mostrarAlergias)
+                    {
+                        alergias += ("• " + a.alergia + "\n");
+                    }
+                    var.alergias = alergias;
+                    alergias = "";
 
 
-            public static String alumnosGetAlergias()
+                    mostrarDiscapacidades = _1dataLayer.DLConsultaAlumno.ListaDiscapacidad(result.id_alumno);
+                    foreach (_1dataLayer.SP_ListaDiscapacidad_Result d in mostrarDiscapacidades)
+                    {
+                        discapacidades += ("• " + d.discapacidades + "\n");
+                    }
+                    var.discapacidad = discapacidades;
+                    discapacidades = "";
+                    student.Add(var);
+                    var = new _1dataLayer.alumnoenfermedadDTO();
+                }
+                return student;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+
+
+
+        public static String alumnosGetAlergias()
             {
             try
             {

@@ -89,4 +89,3 @@ C:\Users\vanes\source\repos\CAM\businessLayer\obj\Debug\businessLayer.csproj.Cor
 C:\Users\vanes\source\repos\CAM\businessLayer\obj\Debug\businessLayer.csproj.CopyComplete
 C:\Users\vanes\source\repos\CAM\businessLayer\obj\Debug\businessLayer.exe
 C:\Users\vanes\source\repos\CAM\businessLayer\obj\Debug\businessLayer.pdb
-C:\Users\ferna\source\repos\CAM\businessLayer\obj\Debug\businessLayer.csproj.SuggestedBindingRedirects.cache

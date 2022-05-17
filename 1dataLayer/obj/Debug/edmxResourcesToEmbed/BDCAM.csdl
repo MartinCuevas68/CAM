@@ -495,6 +495,9 @@
       <Parameter Name="id_Tratamiento" Mode="In" Type="Int32" />
     </FunctionImport>
     <FunctionImport Name="SP_Lista_Egresados" ReturnType="Collection(BDCAMModel.SP_Lista_Egresados_Result)" />
+    <FunctionImport Name="SP_Lista_Egresado_Filtro" ReturnType="Collection(BDCAMModel.SP_Lista_Egresado_Filtro_Result)">
+      <Parameter Name="tipo" Mode="In" Type="String" />
+    </FunctionImport>
   </EntityContainer>
   <ComplexType Name="SP_FichaTecnicaAlumno_Result">
     <Property Type="String" Name="nombre" Nullable="false" MaxLength="30" />
@@ -796,6 +799,13 @@
     <Property Type="Int32" Name="OwnerID" Nullable="false" />
   </ComplexType>
   <ComplexType Name="SP_Lista_Egresados_Result">
+    <Property Type="Int32" Name="id_alumno" Nullable="false" />
+    <Property Type="String" Name="nombre" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="apellido_paterno" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="apellido_materno" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="telefono_contacto" Nullable="false" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="SP_Lista_Egresado_Filtro_Result">
     <Property Type="Int32" Name="id_alumno" Nullable="false" />
     <Property Type="String" Name="nombre" Nullable="false" MaxLength="30" />
     <Property Type="String" Name="apellido_paterno" Nullable="false" MaxLength="30" />

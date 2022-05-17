@@ -255,22 +255,13 @@ namespace presentationLayer
 
         }
 
-        private void filtroeg_CheckedChanged(object sender, EventArgs e)
-        {
-        }
 
-        private void egresadoCheckBox_CheckedChanged(object sender, EventArgs e)
+        
+
+        private void filtrarPorCheckBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (egresadoCheckBox.Checked == true)
-            {
-                altaDataGridView.DataSource = businessLayer.BLConsultaAlumno.alumnosegresadosGet();
-                data = businessLayer.BLConsultaAlumno.ConvertToDatatable((List<_1dataLayer.alumnoenfermedadDTO>)altaDataGridView.DataSource);
-            }
-            else
-            {
-                altaDataGridView.DataSource = businessLayer.BLConsultaAlumno.alumnosGet();
-                data = businessLayer.BLConsultaAlumno.ConvertToDatatable((List<_1dataLayer.alumnoenfermedadDTO>)altaDataGridView.DataSource);
-            }
+            altaDataGridView.DataSource = businessLayer.BLConsultaAlumno.alumnosfiltradosGet(filtrarPorCheckBox.SelectedItem.ToString());
+            data = businessLayer.BLConsultaAlumno.ConvertToDatatable((List<_1dataLayer.alumnoenfermedadDTO>)altaDataGridView.DataSource);
         }
     }
 }

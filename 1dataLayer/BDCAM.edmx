@@ -749,6 +749,9 @@ warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a prima
           <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
           <Parameter Name="owner_id" Type="int" Mode="In" />
         </Function>
+        <Function Name="SP_Lista_Egresado_Filtro" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="tipo" Type="varchar" Mode="In" />
+        </Function>
         <Function Name="SP_Lista_Egresados" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <Function Name="SP_ListaAlergia" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="id_alumno" Type="int" Mode="In" />
@@ -1532,6 +1535,9 @@ warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a prima
             <Parameter Name="id_Tratamiento" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="SP_Lista_Egresados" ReturnType="Collection(BDCAMModel.SP_Lista_Egresados_Result)" />
+          <FunctionImport Name="SP_Lista_Egresado_Filtro" ReturnType="Collection(BDCAMModel.SP_Lista_Egresado_Filtro_Result)">
+            <Parameter Name="tipo" Mode="In" Type="String" />
+          </FunctionImport>
         </EntityContainer>
         <ComplexType Name="SP_FichaTecnicaAlumno_Result">
           <Property Type="String" Name="nombre" Nullable="false" MaxLength="30" />
@@ -1833,6 +1839,13 @@ warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a prima
           <Property Type="Int32" Name="OwnerID" Nullable="false" />
         </ComplexType>
         <ComplexType Name="SP_Lista_Egresados_Result">
+          <Property Type="Int32" Name="id_alumno" Nullable="false" />
+          <Property Type="String" Name="nombre" Nullable="false" MaxLength="30" />
+          <Property Type="String" Name="apellido_paterno" Nullable="false" MaxLength="30" />
+          <Property Type="String" Name="apellido_materno" Nullable="false" MaxLength="30" />
+          <Property Type="String" Name="telefono_contacto" Nullable="false" MaxLength="30" />
+        </ComplexType>
+        <ComplexType Name="SP_Lista_Egresado_Filtro_Result">
           <Property Type="Int32" Name="id_alumno" Nullable="false" />
           <Property Type="String" Name="nombre" Nullable="false" MaxLength="30" />
           <Property Type="String" Name="apellido_paterno" Nullable="false" MaxLength="30" />
@@ -2331,6 +2344,17 @@ warning 6002: The table/view 'BDCAM.dbo.usuario-tiene-rol' does not have a prima
           <FunctionImportMapping FunctionImportName="SP_Lista_Egresados" FunctionName="BDCAMModel.Store.SP_Lista_Egresados">
             <ResultMapping>
               <ComplexTypeMapping TypeName="BDCAMModel.SP_Lista_Egresados_Result">
+                <ScalarProperty Name="id_alumno" ColumnName="id_alumno" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="apellido_paterno" ColumnName="apellido_paterno" />
+                <ScalarProperty Name="apellido_materno" ColumnName="apellido_materno" />
+                <ScalarProperty Name="telefono_contacto" ColumnName="telefono_contacto" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_Lista_Egresado_Filtro" FunctionName="BDCAMModel.Store.SP_Lista_Egresado_Filtro">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="BDCAMModel.SP_Lista_Egresado_Filtro_Result">
                 <ScalarProperty Name="id_alumno" ColumnName="id_alumno" />
                 <ScalarProperty Name="nombre" ColumnName="nombre" />
                 <ScalarProperty Name="apellido_paterno" ColumnName="apellido_paterno" />
