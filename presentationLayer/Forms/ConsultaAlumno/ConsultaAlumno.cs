@@ -17,7 +17,7 @@ namespace presentationLayer
 
       
         DataTable data = new DataTable();
-
+        string varfiltro;
 
         public ConsultaAlumno()
         {
@@ -232,7 +232,6 @@ namespace presentationLayer
 
         private void busquedaTextBox_TextChanged(object sender, EventArgs e)
         {
-           
             string searchValue = busquedaTextBox.Text.Trim().ToUpper();
             try
             {
@@ -260,8 +259,18 @@ namespace presentationLayer
 
         private void filtrarPorCheckBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            altaDataGridView.DataSource = businessLayer.BLConsultaAlumno.alumnosfiltradosGet(filtrarPorCheckBox.SelectedItem.ToString());
-            data = businessLayer.BLConsultaAlumno.ConvertToDatatable((List<_1dataLayer.alumnoenfermedadDTO>)altaDataGridView.DataSource);
+            if (filtrarPorCheckBox.SelectedItem.ToString().Equals(varfiltro))
+            {
+                
+                altaDataGridView.DataSource = businessLayer.BLConsultaAlumno.alumnosGet();
+                data = businessLayer.BLConsultaAlumno.ConvertToDatatable((List<_1dataLayer.alumnoenfermedadDTO>)altaDataGridView.DataSource);
+            }
+            else
+            {
+                varfiltro = filtrarPorCheckBox.SelectedItem.ToString();
+                altaDataGridView.DataSource = businessLayer.BLConsultaAlumno.alumnosfiltradosGet(filtrarPorCheckBox.SelectedItem.ToString());
+                data = businessLayer.BLConsultaAlumno.ConvertToDatatable((List<_1dataLayer.alumnoenfermedadDTO>)altaDataGridView.DataSource);
+            }
         }
     }
 }

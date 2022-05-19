@@ -148,3 +148,4 @@ C:\Users\ferna\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.cs
 C:\Users\ferna\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.Forms.ConsultaFormatos.consultaFormatos.resources
 C:\Users\ferna\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.Forms.ConsultaFormatos.vistaPreviaFormato.resources
 C:\Users\ferna\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.csproj.CopyComplete
+C:\Users\ferna\source\repos\CAM\presentationLayer\obj\Debug\presentationLayer.csproj.SuggestedBindingRedirects.cache

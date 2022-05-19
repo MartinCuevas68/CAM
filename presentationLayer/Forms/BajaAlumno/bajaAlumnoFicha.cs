@@ -18,7 +18,6 @@ namespace presentationLayer.Forms.BajaAlumno
 
         public bajaAlumnoFicha(int id_alumno, Form fichaT)
         {
-            MessageBox.Show("Aqui es hijo");
                 id = id_alumno;
                 InitializeComponent();
                 PLBajaAlumnoFicha.datosAlumnoFicha(nombreAlLabelFT, nombreAlFT, matriculaLabelFT, matriculaFT);
