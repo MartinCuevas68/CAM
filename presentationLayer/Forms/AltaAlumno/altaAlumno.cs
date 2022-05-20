@@ -89,6 +89,7 @@ namespace presentationLayer
    
         private void altaAlumno_Load(object sender, EventArgs e)
         {
+            ActiveControl = nombreAl;
             limpiarFormato1Button.Hide();
             limpiarFormato2Button.Hide();
             limpiarFormato3Button.Hide();
