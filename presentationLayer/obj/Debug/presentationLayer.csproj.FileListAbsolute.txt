@@ -17,7 +17,6 @@ F:\Github\UABC\CAM\presentationLayer\obj\Debug\presentationLayer.Forms.BajaAlumn
 F:\Github\UABC\CAM\presentationLayer\obj\Debug\presentationLayer.ConsultaAlumno.resources
 F:\Github\UABC\CAM\presentationLayer\obj\Debug\presentationLayer.fichaTecnica.resources
 F:\Github\UABC\CAM\presentationLayer\obj\Debug\presentationLayer.Forms.fichatecnincaAlumno.LineaControl.resources
-F:\Github\UABC\CAM\presentationLayer\obj\Debug\presentationLayer.imprimirFormatosAlumno.resources
 F:\Github\UABC\CAM\presentationLayer\obj\Debug\presentationLayer.modificacionesAlumno.resources
 F:\Github\UABC\CAM\presentationLayer\obj\Debug\presentationLayer.Properties.Resources.resources
 F:\Github\UABC\CAM\presentationLayer\obj\Debug\presentationLayer.csproj.GenerateResource.cache
@@ -156,3 +155,11 @@ C:\Users\galle\source\repos\CAM3\presentationLayer\obj\Debug\presentationLayer.c
 C:\Users\galle\source\repos\CAM3\presentationLayer\obj\Debug\presentationLayer.Forms.BajaAlumno.bajaAlumnoFicha.resources
 C:\Users\galle\source\repos\CAM3\presentationLayer\obj\Debug\presentationLayer.Forms.ConsultaFormatos.consultaFormatos.resources
 C:\Users\galle\source\repos\CAM3\presentationLayer\obj\Debug\presentationLayer.Forms.ConsultaFormatos.vistaPreviaFormato.resources
+F:\Github\UABC\CAM\presentationLayer\obj\Debug\presentationLayer.csproj.ResolveComReference.cache
+F:\Github\UABC\CAM\presentationLayer\obj\Debug\presentationLayer.Forms.BajaAlumno.bajaAlumnoFicha.resources
+F:\Github\UABC\CAM\presentationLayer\obj\Debug\presentationLayer.Forms.ConsultaFormatos.consultaFormatos.resources
+F:\Github\UABC\CAM\presentationLayer\obj\Debug\presentationLayer.Forms.ConsultaFormatos.vistaPreviaFormato.resources
+F:\Github\UABC\CAM\presentationLayer\bin\Debug\Interop.AcroPDFLib.dll
+F:\Github\UABC\CAM\presentationLayer\bin\Debug\AxInterop.AcroPDFLib.dll
+F:\Github\UABC\CAM\presentationLayer\obj\Debug\Interop.AcroPDFLib.dll
+F:\Github\UABC\CAM\presentationLayer\obj\Debug\AxInterop.AcroPDFLib.dll

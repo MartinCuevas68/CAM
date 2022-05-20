@@ -137,7 +137,6 @@ D:\Canela\Documents\GitHub\CAM\1dataLayer\obj\Debug\1dataLayer.csproj.CoreCompil
 D:\Canela\Documents\GitHub\CAM\1dataLayer\obj\Debug\1dataLayer.csproj.CopyComplete
 D:\Canela\Documents\GitHub\CAM\1dataLayer\obj\Debug\1dataLayer.dll
 D:\Canela\Documents\GitHub\CAM\1dataLayer\obj\Debug\1dataLayer.pdb
-F:\Github\UABC\CAM\1dataLayer\obj\Debug\1dataLayer.csproj.AssemblyReference.cache
 C:\Users\ferna\source\repos\CAM\1dataLayer\bin\Debug\1dataLayer.dll.config
 C:\Users\ferna\source\repos\CAM\1dataLayer\bin\Debug\1dataLayer.dll
 C:\Users\ferna\source\repos\CAM\1dataLayer\bin\Debug\1dataLayer.pdb

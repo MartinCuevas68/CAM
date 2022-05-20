@@ -1489,16 +1489,19 @@ namespace presentationLayer
 
         private void eliminarAlergiasButton_Click_1(object sender, EventArgs e)
         {
+            listaAlergias.Clear();
             alergiasRichTextBox.Clear();
         }
 
         private void eliminarDiscapacidadesButton_Click_1(object sender, EventArgs e)
         {
+            listaDiscapacidades.Clear();
             discapacidadesRichTextBox.Clear();
         }
 
         private void eliminarEnfermedadesButton_Click(object sender, EventArgs e)
         {
+            listaEnfermedades.Clear();
             enfermedadesRichTextBox.Clear();
         }
 
@@ -1507,6 +1510,120 @@ namespace presentationLayer
             tratamiento.Clear();
         }
 
+        private void eliminardiscapacidadButton1_Click(object sender, EventArgs e)
+        {
+            int posicioncomboboxTemporal = 0;
+
+            try
+            { 
+                if (discapacidadesRichTextBox.Text.Contains(discapacidadesCombobox.SelectedItem.ToString()))
+                {
+                    posicioncomboboxTemporal = discapacidadesCombobox.SelectedIndex;
+
+                    listaDiscapacidades.Remove(discapacidadesCombobox.SelectedItem.ToString());
+
+                    discapacidadesRichTextBox.Clear();
+
+
+                    foreach (var item in listaDiscapacidades)
+                    {
+
+                        discapacidadesRichTextBox.AppendText(item.ToString() + "\n");
+
+                    }
+
+                }
+                else
+                {
+                    MessageBox.Show("no se pueden eliminar discapacidades no registradas");
+
+                }
+
+            }
+            catch (Exception) 
+            {
+
+                MessageBox.Show("error al eliminar registros");
+
+            }
+
+        }
+
+        private void eliminarenfButton_Click(object sender, EventArgs e)
+        {
+     
+
+            try
+            {
+                if (enfermedadesRichTextBox.Text.Contains(enfermedadesCombobox.SelectedItem.ToString()))
+                {
+
+                    listaEnfermedades.Remove(enfermedadesCombobox.SelectedItem.ToString());
+
+                    enfermedadesRichTextBox.Clear();
+
+
+                    foreach (var item in listaEnfermedades)
+                    {
+
+                        enfermedadesRichTextBox.AppendText(item.ToString() + "\n");
+
+                    }
+
+                }
+                else
+                {
+                    MessageBox.Show("no se pueden eliminar discapacidades no registradas");
+
+                }
+
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("error al eliminar registros");
+
+            }
+
+        }
+
+        private void eliminarAlegiasButton1_Click(object sender, EventArgs e)
+        {
+        
+            try
+            {
+                if (alergiasRichTextBox.Text.Contains(alergiasCombobox.SelectedItem.ToString()))
+                {
+
+
+                    listaAlergias.Remove(alergiasCombobox.SelectedItem.ToString());
+
+                    alergiasRichTextBox.Clear();
+
+
+                    foreach (var item in listaAlergias)
+                    {
+
+                        alergiasRichTextBox.AppendText(item.ToString() + "\n");
+
+                    }
+
+                }
+                else
+                {
+                    MessageBox.Show("no se pueden eliminar discapacidades no registradas");
+
+                }
+
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("error al eliminar registros");
+
+            }
+
+        }
     }
 }
 
