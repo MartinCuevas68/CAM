@@ -338,7 +338,7 @@ namespace presentationLayer
             }
 
 
-            if (tipoIngresoComboBox.SelectedItem == null)
+            /*if (tipoIngresoComboBox.SelectedItem == null)
             {
                 if (bandera == 0)
                 {
@@ -346,7 +346,7 @@ namespace presentationLayer
                     mensaje += "No puede dejar espacios en blanco en los siguientes campos:\n\n";
                 }
                 mensaje +=("◉Tipo de ingreso del alumno\n");
-            }
+            }*/
 
             if (numeroCasa.Text.Trim().Equals(""))
             {
@@ -589,7 +589,14 @@ namespace presentationLayer
                 alumno.calle_alumno = calle.Text;
                 alumno.colonia_alumno = colonia.Text;
                 alumno.CURP_alumno = curp.Text;
-                alumno.tipo_ingreso = tipoIngresoComboBox.Text;
+                if (tipoIngresoComboBox.Text == "")
+                {
+                    alumno.tipo_ingreso = tipoIngreso.Text;
+                }
+                else
+                {
+                    alumno.tipo_ingreso = tipoIngresoComboBox.Text;
+                }
                 alumno.numero_alumno = numeroCasa.Text;
                 alumno.atendido_por = canalizado.Text;
                 alumno.escuela_procedencia_alumno = escuelaP.Text;
