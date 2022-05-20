@@ -612,8 +612,8 @@ namespace presentationLayer
                 businessLayer.BLModificacionAlumno.modificarAlumno(alumno);
                 businessLayer.BLModificacionAlumno.modificartutor(tutor);
                 businessLayer.BLModificacionAlumno.modificarinfomed(infoMed);
-                businessLayer.BLModificacionAlumno.modificartelefonotutor(idtutor, telMovilT.Text, 1);
-                businessLayer.BLModificacionAlumno.modificartelefonotutor(idtutor, telCasaT.Text,2);
+                businessLayer.BLModificacionAlumno.modificartelefonotutor(idtutor, telMovilT.Text, 2);
+                businessLayer.BLModificacionAlumno.modificartelefonotutor(idtutor, telCasaT.Text,1);
                 businessLayer.BLModificacionAlumno.modificartelefonotutor(idtutor, telTrabajoT.Text,3);
                 businessLayer.BLModificacionAlumno.modificaralergias(alergiasids, alergiasidsvar,idcartilla);
                 businessLayer.BLModificacionAlumno.modificarenfermedades(enfermedadesids, enfermedadesidsvar, idcartilla);

@@ -18,7 +18,7 @@ namespace presentationLayer
       
         DataTable data = new DataTable();
         string varfiltro;
-
+        int bandera = 0;
         public ConsultaAlumno()
         {
             InitializeComponent();
@@ -240,10 +240,21 @@ namespace presentationLayer
                          select row;
                 if (re.Count() == 0)
                 {
-                    //MessageBox.Show("No row");
+                    if (bandera == 0)
+                    {
+                        bandera = 1;
+                        MessageBox.Show("No se encuentra el alumno");
+                        altaDataGridView.DataSource = "";
+                    }
                 }
                 else
                 {
+                    if(bandera == 1)
+                    {
+                        altaDataGridView.DataSource = businessLayer.BLConsultaAlumno.alumnosGet();
+                        data = businessLayer.BLConsultaAlumno.ConvertToDatatable((List<_1dataLayer.alumnoenfermedadDTO>)altaDataGridView.DataSource);
+                    }
+                    bandera = 0;
                     altaDataGridView.DataSource = re.CopyToDataTable();
                 }
             }
@@ -261,7 +272,6 @@ namespace presentationLayer
         {
             if (filtrarPorCheckBox.SelectedItem.ToString().Equals(varfiltro))
             {
-                
                 altaDataGridView.DataSource = businessLayer.BLConsultaAlumno.alumnosGet();
                 data = businessLayer.BLConsultaAlumno.ConvertToDatatable((List<_1dataLayer.alumnoenfermedadDTO>)altaDataGridView.DataSource);
             }
