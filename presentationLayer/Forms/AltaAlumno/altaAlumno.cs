@@ -618,16 +618,17 @@ namespace presentationLayer
                         if (nuevoIngreso.Checked)
                         {
                             value = "Nuevo Ingreso";
-                            MessageBox.Show(value);
+                            //MessageBox.Show(value);
                         }
                         else
                         {
                             if (reingreso.Checked)
                             {
                                 value = "Reingreso";
-                                MessageBox.Show(value);
+                                //MessageBox.Show(value);
                             }
                         }
+                        try {
                         businessLayer.BLAltaAlumno.SetAlumno2(cicloEsc.Text,
                                                              nombreAl.Text,
                                                              apellidoP.Text,
@@ -675,6 +676,11 @@ namespace presentationLayer
 
                         businessLayer.BLAltaAlumno.SetTelefonos(telefonocasatutorTextBox.Text,telefonomoviltutorTextBox.Text, telefonotrabajotutorTextBox.Text);
 
+                            MessageBox.Show("Registro exitoso", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        catch (Exception ex) { 
+                            MessageBox.Show("Error al dar de alta", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
 
                         //Guardar Foto alumno   **NO BORRAR LO QUE ESTÁ COMENTADO!!!!!**
                         byte[] archivo = null;
