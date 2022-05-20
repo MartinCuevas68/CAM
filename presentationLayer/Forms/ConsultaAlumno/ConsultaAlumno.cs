@@ -270,7 +270,7 @@ namespace presentationLayer
 
         private void filtrarPorCheckBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (filtrarPorCheckBox.SelectedItem.ToString().Equals(varfiltro))
+            if (filtrarPorCheckBox.SelectedItem.ToString().Equals("Todos"))
             {
                 altaDataGridView.DataSource = businessLayer.BLConsultaAlumno.alumnosGet();
                 data = businessLayer.BLConsultaAlumno.ConvertToDatatable((List<_1dataLayer.alumnoenfermedadDTO>)altaDataGridView.DataSource);
