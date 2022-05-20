@@ -29,10 +29,10 @@ namespace presentationLayer
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConsultaAlumno));
             this.consultaLabel = new System.Windows.Forms.Label();
             this.altaDataGridView = new System.Windows.Forms.DataGridView();
@@ -47,7 +47,6 @@ namespace presentationLayer
             this.cerrarSesionButton = new presentationLayer.buttonSystem();
             this.imprimirFormatosButton = new presentationLayer.buttonSystem();
             this.fichaTecnicaButton = new presentationLayer.buttonSystem();
-            this.egresadoCheckBox = new System.Windows.Forms.CheckBox();
             this.filtrarPorCheckBox = new System.Windows.Forms.ComboBox();
             this.filtrarPorLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.altaDataGridView)).BeginInit();
@@ -68,42 +67,42 @@ namespace presentationLayer
             // 
             // altaDataGridView
             // 
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Gadugi", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.Padding = new System.Windows.Forms.Padding(2);
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(98)))), ((int)(((byte)(242)))));
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.altaDataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Gadugi", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(98)))), ((int)(((byte)(242)))));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.altaDataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.altaDataGridView.BackgroundColor = System.Drawing.Color.White;
             this.altaDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Gadugi", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(98)))), ((int)(((byte)(242)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.altaDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Gadugi", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(98)))), ((int)(((byte)(242)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.altaDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.altaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Gadugi", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(98)))), ((int)(((byte)(242)))));
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.altaDataGridView.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Gadugi", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(98)))), ((int)(((byte)(242)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.altaDataGridView.DefaultCellStyle = dataGridViewCellStyle3;
             this.altaDataGridView.Location = new System.Drawing.Point(51, 226);
             this.altaDataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.altaDataGridView.Name = "altaDataGridView";
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Gadugi", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.altaDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Gadugi", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.altaDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.altaDataGridView.RowHeadersWidth = 51;
             this.altaDataGridView.Size = new System.Drawing.Size(1629, 598);
             this.altaDataGridView.TabIndex = 10;
@@ -270,26 +269,15 @@ namespace presentationLayer
             this.fichaTecnicaButton.UseVisualStyleBackColor = false;
             this.fichaTecnicaButton.Click += new System.EventHandler(this.fichaTecnicaButton_Click);
             // 
-            // egresadoCheckBox
-            // 
-            this.egresadoCheckBox.AutoSize = true;
-            this.egresadoCheckBox.Font = new System.Drawing.Font("Gadugi", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.egresadoCheckBox.Location = new System.Drawing.Point(51, 188);
-            this.egresadoCheckBox.Margin = new System.Windows.Forms.Padding(4);
-            this.egresadoCheckBox.Name = "egresadoCheckBox";
-            this.egresadoCheckBox.Size = new System.Drawing.Size(131, 32);
-            this.egresadoCheckBox.TabIndex = 149;
-            this.egresadoCheckBox.Text = "Egresado";
-            this.egresadoCheckBox.UseVisualStyleBackColor = true;
-            this.egresadoCheckBox.Visible = false;
-            // 
             // filtrarPorCheckBox
             // 
+            this.filtrarPorCheckBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.filtrarPorCheckBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.filtrarPorCheckBox.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.filtrarPorCheckBox.Font = new System.Drawing.Font("Gadugi", 11.25F);
             this.filtrarPorCheckBox.FormattingEnabled = true;
             this.filtrarPorCheckBox.Items.AddRange(new object[] {
+            "Todos",
             "Nuevo ingreso",
             "Reingreso",
             "Egresado"});
@@ -317,7 +305,6 @@ namespace presentationLayer
             this.ClientSize = new System.Drawing.Size(1556, 750);
             this.Controls.Add(this.filtrarPorLabel);
             this.Controls.Add(this.filtrarPorCheckBox);
-            this.Controls.Add(this.egresadoCheckBox);
             this.Controls.Add(this.logo);
             this.Controls.Add(this.cerrarSesionButton);
             this.Controls.Add(this.imprimirFormatosButton);
@@ -358,7 +345,6 @@ namespace presentationLayer
         private buttonSystem imprimirFormatosButton;
         private buttonSystem cerrarSesionButton;
         private System.Windows.Forms.PictureBox logo;
-        private System.Windows.Forms.CheckBox egresadoCheckBox;
         private System.Windows.Forms.ComboBox filtrarPorCheckBox;
         private System.Windows.Forms.Label filtrarPorLabel;
     }
