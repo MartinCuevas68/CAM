@@ -282,5 +282,10 @@ namespace presentationLayer
                 data = businessLayer.BLConsultaAlumno.ConvertToDatatable((List<_1dataLayer.alumnoenfermedadDTO>)altaDataGridView.DataSource);
             }
         }
+
+        private void egresadoCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
