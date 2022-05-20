@@ -62,7 +62,7 @@ namespace presentationLayer
             PLfichatecnicaAlumno.infoMedica(servMedicoLabel, servMedico, telefonoLabel, telefono, grupoSanguineoLabel, grupoSanguineo, discapacidadLabel, enfermedadesLabel, alergiasLabel,
                                             tratamientoLabel, discapacidades, enfermedades, alergias, tratamientos, discapacidadPanel, enfermedadesPanel, alergiasPanel, tratamientoPanel, grupoSanguineoComboBox, servMedicoLinea, telefonoLinea,
                                               eliminarDiscapacidadesButton, eliminarEnfermedadesButton,eliminarAlergiasButton, discapacidadesCombobox, enfermedadesCombobox,alergiasCombobox, agregarDiscapacidadesButton,agregarEnfermedadesButton, agregarAlergiasButton);
-
+            
             String vista = "";
             vista = "consulta informacion";
 
@@ -212,6 +212,7 @@ namespace presentationLayer
         private void editarInfoButton_Click(object sender, EventArgs e)
         {
             mostrarEditarInformacion();
+            ActiveControl = null;
         }
 
         private void cancelarEdiButton_Click(object sender, EventArgs e)
@@ -836,6 +837,12 @@ namespace presentationLayer
             ConsultaAlumno formConsultas = new ConsultaAlumno();
             this.Hide();
             formConsultas.Show();
+        }
+
+        private void fichaTecnica_Load(object sender, EventArgs e)
+        {
+            ActiveControl = null;
+            ActiveControl = fechaNa;
         }
     }
 }
