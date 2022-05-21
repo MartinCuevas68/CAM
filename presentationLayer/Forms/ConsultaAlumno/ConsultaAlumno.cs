@@ -239,24 +239,42 @@ namespace presentationLayer
                 var re = from row in data.AsEnumerable()
                          where row[1].ToString().ToUpper().Contains(searchValue)
                          select row;
-                if (re.Count() == 0)
+
+                var re2 = from row in data.AsEnumerable()
+                         where row[0].ToString().ToUpper().Contains(searchValue)
+                         select row;
+
+                if (re.Count() == 0 && re2.Count() == 0)
                 {
                     if (bandera == 0)
                     {
                         bandera = 1;
-                        MessageBox.Show("No se encuentra el alumno");
+                        MessageBox.Show("No se ha encontrado el alumno", "Dato no encontrado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         altaDataGridView.DataSource = "";
                     }
                 }
                 else
                 {
-                    if(bandera == 1)
+                    if (re2.Count() == 0)
                     {
-                        altaDataGridView.DataSource = businessLayer.BLConsultaAlumno.alumnosGet();
-                        data = businessLayer.BLConsultaAlumno.ConvertToDatatable((List<_1dataLayer.alumnoenfermedadDTO>)altaDataGridView.DataSource);
+                        if (bandera == 1)
+                        {
+                            altaDataGridView.DataSource = businessLayer.BLConsultaAlumno.alumnosGet();
+                            data = businessLayer.BLConsultaAlumno.ConvertToDatatable((List<_1dataLayer.alumnoenfermedadDTO>)altaDataGridView.DataSource);
+                        }
+                        bandera = 0;
+                        altaDataGridView.DataSource = re.CopyToDataTable();
                     }
-                    bandera = 0;
-                    altaDataGridView.DataSource = re.CopyToDataTable();
+                    else
+                    {
+                        if (bandera == 1)
+                        {
+                            altaDataGridView.DataSource = businessLayer.BLConsultaAlumno.alumnosGet();
+                            data = businessLayer.BLConsultaAlumno.ConvertToDatatable((List<_1dataLayer.alumnoenfermedadDTO>)altaDataGridView.DataSource);
+                        }
+                        bandera = 0;
+                        altaDataGridView.DataSource = re2.CopyToDataTable();
+                    }
                 }
             }
             catch (Exception ex)
