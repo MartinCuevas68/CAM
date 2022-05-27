@@ -142,15 +142,15 @@ namespace presentationLayer
 
             nombreL.Location = new Point(50, 50);
             nombreP.Location = new Point(215, 50);
-            nombreP.Size = new Size(300, 50);
+            nombreP.Size = new Size(310, 50);
 
             apellidoPL.Location = new Point(50, 110);
             apellidoPP.Location = new Point(215, 110);
-            apellidoPP.Size = new Size(300, 50);
+            apellidoPP.Size = new Size(310, 50);
 
             apellidoML.Location = new Point(50, 170);
             apellidoMP.Location = new Point(215, 170);
-            apellidoMP.Size = new Size(300, 50);
+            apellidoMP.Size = new Size(310, 50);
 
             direccion.Location = new Point(650, 45);
 
@@ -159,7 +159,9 @@ namespace presentationLayer
 
             calleL.Location = new Point(650, 90);
             calleP.Location = new Point(740, 90);
-            calleP.Size = new Size(300, 50);
+            calleP.Size = new Size(320, 50);
+            calle.Location = new Point(20, 10);
+            calle.Size = new Size(270, 32);
 
             numL.Location = new Point(650, 150);
             numP.Location = new Point(740, 150);
@@ -167,7 +169,9 @@ namespace presentationLayer
 
             coloniaL.Location = new Point(650, 210);
             coloniaP.Location = new Point(740, 210);
-            coloniaP.Size = new Size(300, 50);
+            coloniaP.Size = new Size(320, 50);
+            colonia.Location = new Point(20, 10);
+            colonia.Size = new Size(270, 32);
 
             infoCon.Location = new Point(50, 250);
 
@@ -186,13 +190,16 @@ namespace presentationLayer
             ocupacionL.Location = new Point(50, 350);
             ocupacionP.Location = new Point(215, 350);
             ocupacionP.Size = new Size(300, 50);
+            ocupacion.Location = new Point(10,10);
+            ocupacion.Size = new Size(270, 30);
         }
 
         public static void infoMedica(Label servMedicoL, TextBox servMed, Panel servMedP, Label grupoSanL,
             ComboBox grupoSanCB, Label telL, TextBox tel, Panel telP, Label discapacidadL, RichTextBox discapacidad, Panel discapacidadP,
             Label enfermedadL, RichTextBox enfermedad, Panel enfermedadP, Label alergiaL, RichTextBox alergia, Panel alergiaP,
             Label tratamientoL, RichTextBox tratamiento, Panel tratamientoP, ComboBox discapacidadCB, ComboBox enfermedadCB, ComboBox alergiaCB,
-            Button eliEnf, Button eliDisc, Button eliAle, Button eliTra,Button agregarDisc, Button agregarEnf, Button agregarAler, Button eliminarDisc, Button eliminarEnf, Button eliminarAler)
+            Button eliEnf, Button eliDisc, Button eliAle, Button eliTra,Button agregarDisc, Button agregarEnf, Button agregarAler, Button eliminarDisc, 
+            Button eliminarEnf, Button eliminarAler)
         {
             servMedicoL.Location = new Point(50, 50);
             servMedP.Location = new Point(210, 50);

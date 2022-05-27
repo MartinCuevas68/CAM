@@ -92,7 +92,7 @@ namespace presentationLayer
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.altaDataGridView.DefaultCellStyle = dataGridViewCellStyle3;
-            this.altaDataGridView.Location = new System.Drawing.Point(51, 226);
+            this.altaDataGridView.Location = new System.Drawing.Point(260, 254);
             this.altaDataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.altaDataGridView.Name = "altaDataGridView";
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -104,7 +104,7 @@ namespace presentationLayer
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.altaDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.altaDataGridView.RowHeadersWidth = 51;
-            this.altaDataGridView.Size = new System.Drawing.Size(1629, 598);
+            this.altaDataGridView.Size = new System.Drawing.Size(1164, 243);
             this.altaDataGridView.TabIndex = 10;
             // 
             // vScrollBar1
@@ -171,7 +171,7 @@ namespace presentationLayer
             this.modificarButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.modificarButton.FlatAppearance.BorderSize = 0;
             this.modificarButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.modificarButton.Location = new System.Drawing.Point(1575, 167);
+            this.modificarButton.Location = new System.Drawing.Point(1319, 192);
             this.modificarButton.Margin = new System.Windows.Forms.Padding(4);
             this.modificarButton.Name = "modificarButton";
             this.modificarButton.Size = new System.Drawing.Size(57, 53);
@@ -186,7 +186,7 @@ namespace presentationLayer
             this.eliminarButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.eliminarButton.FlatAppearance.BorderSize = 0;
             this.eliminarButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.eliminarButton.Location = new System.Drawing.Point(1625, 167);
+            this.eliminarButton.Location = new System.Drawing.Point(1384, 193);
             this.eliminarButton.Margin = new System.Windows.Forms.Padding(4);
             this.eliminarButton.Name = "eliminarButton";
             this.eliminarButton.Size = new System.Drawing.Size(57, 50);
@@ -201,7 +201,7 @@ namespace presentationLayer
             this.agregarButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.agregarButton.FlatAppearance.BorderSize = 0;
             this.agregarButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.agregarButton.Location = new System.Drawing.Point(1525, 167);
+            this.agregarButton.Location = new System.Drawing.Point(1254, 188);
             this.agregarButton.Margin = new System.Windows.Forms.Padding(4);
             this.agregarButton.Name = "agregarButton";
             this.agregarButton.Size = new System.Drawing.Size(57, 53);
@@ -220,7 +220,7 @@ namespace presentationLayer
             this.cerrarSesionButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cerrarSesionButton.Font = new System.Drawing.Font("Gadugi", 14F, System.Drawing.FontStyle.Bold);
             this.cerrarSesionButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(98)))), ((int)(((byte)(242)))));
-            this.cerrarSesionButton.Location = new System.Drawing.Point(51, 849);
+            this.cerrarSesionButton.Location = new System.Drawing.Point(260, 529);
             this.cerrarSesionButton.Margin = new System.Windows.Forms.Padding(4);
             this.cerrarSesionButton.Name = "cerrarSesionButton";
             this.cerrarSesionButton.Padding = new System.Windows.Forms.Padding(8, 7, 8, 7);
@@ -228,6 +228,7 @@ namespace presentationLayer
             this.cerrarSesionButton.TabIndex = 147;
             this.cerrarSesionButton.Text = "Cerrar sesión";
             this.cerrarSesionButton.UseVisualStyleBackColor = false;
+            this.cerrarSesionButton.Visible = false;
             // 
             // imprimirFormatosButton
             // 
@@ -239,7 +240,7 @@ namespace presentationLayer
             this.imprimirFormatosButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.imprimirFormatosButton.Font = new System.Drawing.Font("Gadugi", 14F, System.Drawing.FontStyle.Bold);
             this.imprimirFormatosButton.ForeColor = System.Drawing.Color.White;
-            this.imprimirFormatosButton.Location = new System.Drawing.Point(969, 849);
+            this.imprimirFormatosButton.Location = new System.Drawing.Point(885, 529);
             this.imprimirFormatosButton.Margin = new System.Windows.Forms.Padding(4);
             this.imprimirFormatosButton.Name = "imprimirFormatosButton";
             this.imprimirFormatosButton.Padding = new System.Windows.Forms.Padding(8, 7, 8, 7);
@@ -259,7 +260,7 @@ namespace presentationLayer
             this.fichaTecnicaButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.fichaTecnicaButton.Font = new System.Drawing.Font("Gadugi", 14F, System.Drawing.FontStyle.Bold);
             this.fichaTecnicaButton.ForeColor = System.Drawing.Color.White;
-            this.fichaTecnicaButton.Location = new System.Drawing.Point(1381, 849);
+            this.fichaTecnicaButton.Location = new System.Drawing.Point(1205, 529);
             this.fichaTecnicaButton.Margin = new System.Windows.Forms.Padding(4);
             this.fichaTecnicaButton.Name = "fichaTecnicaButton";
             this.fichaTecnicaButton.Padding = new System.Windows.Forms.Padding(8, 7, 8, 7);

@@ -48,17 +48,19 @@ namespace presentationLayer
             PLAltaAlumno.infoGen2(telPersonalLabel, telefonopersonalTextBox, telPersonalPanel, escuelaPLabel, escuelaP, escuelaPPanel, canalizadoLabel, canalizado, canalizadoPanel, cicloEscLabel, cicloEsc, cicloEscPanel, tipoIngLabel,
                 tipoIngresoGroupBox);
 
-            PLAltaAlumno.infoTutor(nombreTLabel, nombreT, nombreTPanel, apellidoPTLabel, apellidoPT, apellidoPTPanel, apellidoMTLabel, apellidoMT, apellidoMTPanel, direccionTLabel,
+            PLAltaAlumno.infoTutor(nombreTLabel, nombreT, nombreTPanel, apellidoPTLabel, apellidoPT, apellidoPTPanel, apellidoMTLabel, 
+                apellidoMT, apellidoMTPanel, direccionTLabel,
                 calleTLabel, calleT, calleTPanel, numeroCasaTLabel, numeroCasaT, numeroCasaTPanel, coloniaTLabel, coloniaT, coloniaTPanel,
-                calleDatoLabel, numeroDatoLabel, coloniaDatoLabel, infContactoLabel, telCasaTLabel, telefonocasatutorTextBox, telCasaTPanel, telMovilTLabel, telefonomoviltutorTextBox, telMovilTPanel,
+                calleDatoLabel, numeroDatoLabel, coloniaDatoLabel, infContactoLabel, telCasaTLabel, telefonocasatutorTextBox, telCasaTPanel, 
+                telMovilTLabel, telefonomoviltutorTextBox, telMovilTPanel,
                 telTrabajoTLabel, telefonotrabajotutorTextBox, telTrabajoTPanel, ocupacionLabel, ocupacion, ocupacionTPanel, direccionCheckBox);
 
             PLAltaAlumno.infoMedica(servMedicoLabel, servMedico, servMedicoPanel, grupoSanguineoLabel, grupoSanguineoComboBox, telefonoLabel,
-                telefono, telefonoPanel, discapacidadLabel, discapacidadesRichTextBox, discapacidadPanel, enfermedadesLabel, enfermedadesRichTextBox, enfermedadesPanel,
-                alergiasLabel, alergiasRichTextBox, alergiasPanel, tratamientoLabel, tratamiento, tratamientoPanel, discapacidadesCombobox, enfermedadesCombobox, alergiasCombobox,
-                eliminarEnfermedadesButton, eliminarDiscapacidadesButton, eliminarAlergiasButton, eliminarTratamientosButton,
-                 agregarDiscapacidadesButton, agregarEnfermedadesButton, agregarAlergiasButton, eliminardiscapacidadButton1, eliminarenfButton, eliminarAlegiasButton1);
-
+                telefono, telefonoPanel, discapacidadLabel, discapacidadesRichTextBox, discapacidadPanel, enfermedadesLabel, enfermedadesRichTextBox,
+                enfermedadesPanel, alergiasLabel, alergiasRichTextBox, alergiasPanel, tratamientoLabel, tratamiento, tratamientoPanel, 
+                discapacidadesCombobox, enfermedadesCombobox, alergiasCombobox, eliminarEnfermedadesButton, eliminarDiscapacidadesButton, 
+                eliminarAlergiasButton, eliminarTratamientosButton, agregarDiscapacidadesButton, agregarEnfermedadesButton, agregarAlergiasButton, 
+                eliminardiscapacidadButton1, eliminarenfButton, eliminarAlegiasButton1);
 
             informacionGeneralAlumno.Visible = true;
             informacionGeneralAlumno2.Visible = false;
@@ -1289,10 +1291,15 @@ namespace presentationLayer
             calleDatoLabel.Text = calle.Text;
             numeroDatoLabel.Text = numeroCasa.Text;
             coloniaDatoLabel.Text = colonia.Text;
-
+            
+            calleT.Size = new Size(270, 32);
+            coloniaT.Size = new Size(270, 32);
+            
             calleT.Text = calle.Text;
             numeroCasaT.Text = numeroCasa.Text;
             coloniaT.Text = colonia.Text;
+
+            
 
             if (direccionCheckBox.Checked == false)
             {
@@ -1625,6 +1632,7 @@ namespace presentationLayer
             }
 
         }
+        
     }
 }
 
