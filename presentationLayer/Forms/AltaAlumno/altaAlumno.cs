@@ -1316,6 +1316,9 @@ namespace presentationLayer
                 calleDatoLabel.Visible = false;
                 numeroDatoLabel.Visible = false;
                 coloniaDatoLabel.Visible = false;
+
+                calleT.Size = new Size(270, 32);
+                coloniaT.Size = new Size(270, 32);
             }
         }
 

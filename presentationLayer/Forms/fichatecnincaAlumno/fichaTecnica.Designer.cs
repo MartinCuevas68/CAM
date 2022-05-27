@@ -1734,7 +1734,7 @@ namespace presentationLayer
             // 
             // foto
             // 
-            this.foto.BackColor = System.Drawing.Color.White;
+            this.foto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.foto.Location = new System.Drawing.Point(1045, 38);
             this.foto.Margin = new System.Windows.Forms.Padding(4);
             this.foto.Name = "foto";
