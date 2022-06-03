@@ -56,7 +56,7 @@ namespace presentationLayer.Forms.BajaAlumno
             this.matriculaFT.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.matriculaFT.Font = new System.Drawing.Font("Gadugi", 14.25F);
             this.matriculaFT.Location = new System.Drawing.Point(191, 203);
-            this.matriculaFT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.matriculaFT.Margin = new System.Windows.Forms.Padding(4);
             this.matriculaFT.Name = "matriculaFT";
             this.matriculaFT.ReadOnly = true;
             this.matriculaFT.Size = new System.Drawing.Size(83, 32);
@@ -69,7 +69,7 @@ namespace presentationLayer.Forms.BajaAlumno
             this.nombreAlFT.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.nombreAlFT.Font = new System.Drawing.Font("Gadugi", 14.25F);
             this.nombreAlFT.Location = new System.Drawing.Point(148, 102);
-            this.nombreAlFT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nombreAlFT.Margin = new System.Windows.Forms.Padding(4);
             this.nombreAlFT.MaxLength = 25;
             this.nombreAlFT.Name = "nombreAlFT";
             this.nombreAlFT.ReadOnly = true;
@@ -165,10 +165,11 @@ namespace presentationLayer.Forms.BajaAlumno
             this.Controls.Add(this.matriculaLabelFT);
             this.Controls.Add(this.nombreAlLabelFT);
             this.Controls.Add(this.tituloLabelFT);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "bajaAlumnoFicha";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.TransparencyKey = System.Drawing.Color.Red;
+            this.Load += new System.EventHandler(this.bajaAlumnoFicha_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

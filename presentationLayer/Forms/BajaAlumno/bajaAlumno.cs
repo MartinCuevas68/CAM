@@ -79,5 +79,10 @@ namespace presentationLayer.Forms.BajaAlumno
                 this.Close();
             }
         }
+
+        private void bajaAlumno_Load(object sender, EventArgs e)
+        {
+            ActiveControl = cancelarBajaButton;
+        }
     }
 }

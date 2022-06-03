@@ -52,6 +52,11 @@ namespace presentationLayer.Forms.BajaAlumno
             ficha.Close();
             cons.Show();
         }
+
+        private void bajaAlumnoFicha_Load(object sender, EventArgs e)
+        {
+            ActiveControl = cancelarBajaButtonFT;
+        }
     }
     }
 
